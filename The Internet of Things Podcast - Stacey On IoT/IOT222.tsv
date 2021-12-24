@@ -1,0 +1,1341 @@
+EDL	Record In	Record Out	Clipname	Subtitle
+EDL	00:00:08,960	00:00:15,104	| IOT222 |	Hey everyone welcome to the 222nd episode of The Internet of Things podcast
+EDL	00:00:15,104	00:00:16,128	| IOT222 |	This is your house
+EDL	00:00:16,128	00:00:17,664	| IOT222 |	Stacey Higginbotham
+EDL	00:00:18,944	00:00:19,712	| IOT222 |	Kevin tofel
+EDL	00:00:20,480	00:00:24,832	| IOT222 |	And we have a stupendous show for you today we're going to talk about the smaller Echo Show
+EDL	00:00:25,600	00:00:26,368	| IOT222 |	Little bit about
+EDL	00:00:27,136	00:00:29,184	| IOT222 |	Google assistant and what it can do
+EDL	00:00:29,696	00:00:34,560	| IOT222 |	SmartThings Samsung SmartThings released
+EDL	00:00:35,584	00:00:36,352	| IOT222 |	Malware that
+EDL	00:00:36,352	00:00:37,376	| IOT222 |	Bricking iot devices
+EDL	00:00:39,168	00:00:42,496	| IOT222 |	And we've got some cool use cases for
+EDL	00:00:43,776	00:00:46,336	| IOT222 |	Smart factories are coming to the US
+EDL	00:00:46,336	00:00:47,872	| IOT222 |	There's a new Raspberry Pi
+EDL	00:00:47,872	00:00:48,384	| IOT222 |	And
+EDL	00:00:48,896	00:00:52,480	| IOT222 |	I found a watch that's really smart and then Kevin tells me he's already had
+EDL	00:00:54,016	00:00:54,528	| IOT222 |	So
+EDL	00:00:55,040	00:00:56,064	| IOT222 |	All of this
+EDL	00:00:56,064	00:00:57,600	| IOT222 |	Plus a little bit more including
+EDL	00:00:58,112	00:00:59,648	| IOT222 |	Our Guest this week who is
+EDL	00:00:59,648	00:01:02,720	| IOT222 |	Comedy stem the CEO of Monarch bio
+EDL	00:01:02,720	00:01:04,256	| IOT222 |	She's going to be talking about
+EDL	00:01:04,768	00:01:06,560	| IOT222 |	How the world of
+EDL	00:01:06,560	00:01:08,608	| IOT222 |	Clinical testing is influencing
+EDL	00:01:09,120	00:01:12,192	| IOT222 |	How we think about wearables and medical devices for the future
+EDL	00:01:12,960	00:01:15,520	| IOT222 |	We're also going to hear from our sponsor Dell technology
+EDL	00:01:15,520	00:01:18,080	| IOT222 |	She's all about the open-source Edge
+EDL	00:01:18,080	00:01:18,592	| IOT222 |	Foundry
+EDL	00:01:19,616	00:01:20,128	| IOT222 |	So
+EDL	00:01:20,640	00:01:21,152	| IOT222 |	Gear Up
+EDL	00:01:21,664	00:01:22,176	| IOT222 |	Get ready
+EDL	00:01:22,688	00:01:26,784	| IOT222 |	Here we go starting with a message from another one of our sponsors nordics
+EDL	00:01:28,064	00:01:34,208	| IOT222 |	Nordic semiconductor is launching an exciting new cellular iot prototyping platform this August
+EDL	00:01:34,720	00:01:41,120	| IOT222 |	Nordic thingy 91 cellular iot prototyping platform is perfect for building a
+EDL	00:01:41,120	00:01:42,912	| IOT222 |	Applications using lte-m
+EDL	00:01:42,912	00:01:49,312	| IOT222 |	Nb-iot GPS different sensors including hygiene
+EDL	00:01:49,312	00:01:55,712	| IOT222 |	Accelerometers air quality in altitude and many more the Nordic thingy 91 comes with
+EDL	00:01:55,712	00:02:02,112	| IOT222 |	Application pre-installed and with a free SIM card for my bases to use anywhere in the world
+EDL	00:02:02,112	00:02:08,512	| IOT222 |	In addition to Cellular that stinky 91 has an nrf52 8:40 multi-protocol SOC
+EDL	00:02:08,512	00:02:14,912	| IOT222 |	I'm bored so you could build exciting hybrid applications
+EDL	00:02:14,912	00:02:20,032	| IOT222 |	At Nordic thingy 91 will be available in August and it is
+EDL	00:02:20,032	00:02:26,176	| IOT222 |	The most exciting thing in cellular right now.com
+EDL	00:02:28,992	00:02:29,504	| IOT222 |	It looks fun
+EDL	00:02:30,016	00:02:33,344	| IOT222 |	I kind of do too I mean I like to Tinker with these kind of things so
+EDL	00:02:34,624	00:02:38,208	| IOT222 |	Well that's the Nordic thingy 91 but I have
+EDL	00:02:38,208	00:02:38,976	| IOT222 |	The Amazon
+EDL	00:02:39,744	00:02:41,024	| IOT222 |	Tiny thingy which is the
+EDL	00:02:41,792	00:02:42,816	| IOT222 |	Echo Show 2
+EDL	00:02:43,584	00:02:44,608	| IOT222 |	Released
+EDL	00:02:44,608	00:02:45,888	| IOT222 |	Not with much fanfare
+EDL	00:02:45,888	00:02:46,912	| IOT222 |	What's released this week
+EDL	00:02:46,912	00:02:49,728	| IOT222 |	Actually so it's a $90 5 in
+EDL	00:02:50,496	00:02:52,544	| IOT222 |	Smaller Echo Show that supposed to go in your
+EDL	00:02:53,056	00:02:56,384	| IOT222 |	Nightstand is probably the ideal location for this it's got a
+EDL	00:02:56,384	00:02:56,896	| IOT222 |	Camera
+EDL	00:02:57,408	00:02:58,688	| IOT222 |	You can shut her that cameraman
+EDL	00:02:59,200	00:03:00,224	| IOT222 |	He is got the microphone
+EDL	00:03:00,224	00:03:01,760	| IOT222 |	It does everything else that
+EDL	00:03:02,272	00:03:04,064	| IOT222 |	An Echo Show does like tok
+EDL	00:03:04,064	00:03:04,576	| IOT222 |	People
+EDL	00:03:05,344	00:03:06,112	| IOT222 |	And show your
+EDL	00:03:07,904	00:03:09,184	| IOT222 |	I don't know certain certain
+EDL	00:03:09,952	00:03:10,720	| IOT222 |	Certain
+EDL	00:03:13,792	00:03:17,120	| IOT222 |	It will not show your nest security cameras but it will show your ring
+EDL	00:03:17,120	00:03:18,400	| IOT222 |	Pro doorbell in
+EDL	00:03:18,400	00:03:20,192	| IOT222 |	I believe still your Arlo's so
+EDL	00:03:20,960	00:03:21,728	| IOT222 |	But yes
+EDL	00:03:22,240	00:03:24,800	| IOT222 |	Alright so this looks like a direct response
+EDL	00:03:24,800	00:03:25,568	| IOT222 |	Monster Google
+EDL	00:03:26,080	00:03:28,896	| IOT222 |	Messed up I was like I don't even know what it's called
+EDL	00:03:28,896	00:03:29,664	| IOT222 |	Yeah
+EDL	00:03:29,664	00:03:30,944	| IOT222 |	And you have that so what do you think
+EDL	00:03:31,456	00:03:36,832	| IOT222 |	I do have I have the police because of Google home however I guess you can't open Desktop now
+EDL	00:03:36,832	00:03:41,952	| IOT222 |	Mine has a 7-inch display if I recall correctly sitting right in front of me with the microphone off
+EDL	00:03:43,488	00:03:46,048	| IOT222 |	We actually have two of them I wanted the office I have
+EDL	00:03:46,560	00:03:48,096	| IOT222 |	One in the
+EDL	00:03:48,096	00:03:48,608	| IOT222 |	Bedroom
+EDL	00:03:49,120	00:03:49,632	| IOT222 |	There is
+EDL	00:03:50,144	00:03:51,424	| IOT222 |	No camera on it
+EDL	00:03:52,192	00:03:53,472	| IOT222 |	Which I kind of like
+EDL	00:03:53,984	00:03:56,032	| IOT222 |	But with Echo Show V
+EDL	00:03:56,032	00:03:57,568	| IOT222 |	Even though it has a camera
+EDL	00:03:57,568	00:04:00,128	| IOT222 |	You can shut her that you said which is
+EDL	00:04:00,896	00:04:01,408	| IOT222 |	Import
+EDL	00:04:04,992	00:04:06,528	| IOT222 |	Having
+EDL	00:04:07,552	00:04:13,696	| IOT222 |	Yeah I mean we have a manual shutter on the Lenovo smart display the tonnage one that is down on our kitchen island
+EDL	00:04:14,208	00:04:17,024	| IOT222 |	And it's usually shuddered Hemingway
+EDL	00:04:17,024	00:04:18,815	| IOT222 |	Need to hang out with other cameras
+EDL	00:04:19,327	00:04:22,143	| IOT222 |	In that area anyway for security reasons and such but
+EDL	00:04:22,143	00:04:23,423	| IOT222 |	I think it's important
+EDL	00:04:23,423	00:04:25,727	| IOT222 |	It's a smarter than hooking up at the camera and I think
+EDL	00:04:25,727	00:04:27,263	| IOT222 |	Honestly every
+EDL	00:04:27,263	00:04:29,567	| IOT222 |	If I saw the camera should have a shutter at this point
+EDL	00:04:29,567	00:04:30,591	| IOT222 |	I agree
+EDL	00:04:30,591	00:04:31,615	| IOT222 |	The original Echo Show
+EDL	00:04:33,151	00:04:35,199	| IOT222 |	Right so the question is really
+EDL	00:04:35,711	00:04:36,223	| IOT222 |	Should I buy the
+EDL	00:04:36,991	00:04:37,503	| IOT222 |	Who should buy
+EDL	00:04:38,271	00:04:42,623	| IOT222 |	Well I mean if you're on the Madam a platform and
+EDL	00:04:42,623	00:04:47,231	| IOT222 |	You're in the market for a small display that's not too expensive 90 bucks is reasonable
+EDL	00:04:47,231	00:04:49,023	| IOT222 |	Yeah I think it's
+EDL	00:04:49,023	00:04:50,047	| IOT222 |	Worth it
+EDL	00:04:50,047	00:04:51,583	| IOT222 |	Do you like your eggs smaller
+EDL	00:04:52,607	00:04:53,119	| IOT222 |	Viceroy
+EDL	00:04:53,631	00:04:54,655	| IOT222 |	Baidu
+EDL	00:04:56,191	00:04:58,495	| IOT222 |	I think it does a little bit more
+EDL	00:04:58,495	00:04:59,007	| IOT222 |	Then the
+EDL	00:05:00,031	00:05:04,127	| IOT222 |	Devices unless something has changed like YouTube TV iOS
+EDL	00:05:04,127	00:05:05,151	| IOT222 |	Stream on this thing
+EDL	00:05:05,663	00:05:09,247	| IOT222 |	Sometimes as I'm working and walking to go watch a soccer match or something
+EDL	00:05:09,247	00:05:13,855	| IOT222 |	The services that I use may not be fully supported on the Echo Show us that's about the best way to say
+EDL	00:05:14,623	00:05:15,135	| IOT222 |	Fairy taipei
+EDL	00:05:16,159	00:05:17,183	| IOT222 |	All right
+EDL	00:05:17,951	00:05:19,743	| IOT222 |	But if you're all in on Amazon
+EDL	00:05:19,743	00:05:21,023	| IOT222 |	You don't want to watch a lot of YouTube
+EDL	00:05:21,535	00:05:23,583	| IOT222 |	You know what the other thing is I will say the Google
+EDL	00:05:24,095	00:05:26,143	| IOT222 |	My favorite thing about my Google displays actually
+EDL	00:05:26,143	00:05:26,911	| IOT222 |	The photos of shows
+EDL	00:05:27,423	00:05:28,191	| IOT222 |	And
+EDL	00:05:28,703	00:05:32,031	| IOT222 |	With Amazon do you have the option of storing your photos in it
+EDL	00:05:33,311	00:05:34,591	| IOT222 |	Storage place
+EDL	00:05:34,591	00:05:37,919	| IOT222 |	Does my phone automatically
+EDL	00:05:37,919	00:05:38,943	| IOT222 |	Google photos which is
+EDL	00:05:38,943	00:05:40,735	| IOT222 |	Is awesome and so everything I get
+EDL	00:05:40,735	00:05:42,527	| IOT222 |	Not everything but anything that's in a certain
+EDL	00:05:43,295	00:05:44,063	| IOT222 |	File folder
+EDL	00:05:44,063	00:05:45,599	| IOT222 |	Basically there's a picture
+EDL	00:05:45,599	00:05:47,135	| IOT222 |	In there that face matches to my
+EDL	00:05:47,647	00:05:48,159	| IOT222 |	My daughter
+EDL	00:05:48,927	00:05:49,951	| IOT222 |	My family or friends
+EDL	00:05:51,231	00:05:53,023	| IOT222 |	Pops right up on my Google photos
+EDL	00:05:54,303	00:05:59,935	| IOT222 |	Right I do the same thing I actually use a custom photo album that are just nothing but pictures of Norm the dog
+EDL	00:06:00,447	00:06:01,983	| IOT222 |	Works great
+EDL	00:06:01,983	00:06:03,007	| IOT222 |	Even if you're looking
+EDL	00:06:03,007	00:06:05,823	| IOT222 |	IPhone user like even are both using Android right now
+EDL	00:06:05,823	00:06:10,431	| IOT222 |	Maybe you're not tied to Google photos some people do actually use Google photos for
+EDL	00:06:10,431	00:06:12,223	| IOT222 |	The free storage on iOS
+EDL	00:06:12,735	00:06:17,087	| IOT222 |	You not likely uploading from IOS to Amazon's total Locker
+EDL	00:06:20,415	00:06:21,183	| IOT222 |	Alright so
+EDL	00:06:22,207	00:06:25,023	| IOT222 |	Let's talk about the new smart
+EDL	00:06:25,535	00:06:26,303	| IOT222 |	Kiss
+EDL	00:06:26,303	00:06:27,071	| IOT222 |	Samsung
+EDL	00:06:27,583	00:06:29,631	| IOT222 |	Basically launched a bunch of new stuff
+EDL	00:06:32,191	00:06:32,959	| IOT222 |	Breathing
+EDL	00:06:32,959	00:06:36,543	| IOT222 |	They're not terribly expensive cuz I think he's a really aim towards like
+EDL	00:06:36,543	00:06:39,359	| IOT222 |	You don't have a smart home yet you want like a store
+EDL	00:06:39,871	00:06:42,943	| IOT222 |	Couple things to get right what do you start with you obviously
+EDL	00:06:42,943	00:06:44,223	| IOT222 |	You get the SmartThings Hub
+EDL	00:06:44,735	00:06:47,295	| IOT222 |	Now they have a new $90 SmartThings camera
+EDL	00:06:47,295	00:06:49,343	| IOT222 |	Which of the Wi-Fi camera that have a
+EDL	00:06:49,343	00:06:51,647	| IOT222 |	$18 Wi-Fi smart plug
+EDL	00:06:52,159	00:06:54,975	| IOT222 |	And a $10 smart bulb
+EDL	00:06:54,975	00:06:55,999	| IOT222 |	Which
+EDL	00:06:55,999	00:06:57,791	| IOT222 |	Might be
+EDL	00:06:57,791	00:07:01,119	| IOT222 |	Bluetooth is actually sick me so you do neither the hub for that
+EDL	00:07:01,119	00:07:01,887	| IOT222 |	And that makes sense
+EDL	00:07:01,887	00:07:04,447	| IOT222 |	By the way you can get the 3rd Generation SmartThings Hub
+EDL	00:07:04,447	00:07:04,959	| IOT222 |	Amazon
+EDL	00:07:07,263	00:07:08,543	| IOT222 |	Yes it's relatively cheap
+EDL	00:07:09,055	00:07:09,823	| IOT222 |	So
+EDL	00:07:09,823	00:07:12,895	| IOT222 |	Yay I will say for anybody contemplating SmartThings
+EDL	00:07:13,919	00:07:20,319	| IOT222 |	It's not the most user-friendly platform very powerful you can do a lot especially with automations but there is
+EDL	00:07:20,319	00:07:21,087	| IOT222 |	Learning curve
+EDL	00:07:21,087	00:07:21,855	| IOT222 |	They're so
+EDL	00:07:21,855	00:07:23,903	| IOT222 |	Be aware it's fun I like it
+EDL	00:07:23,903	00:07:24,415	| IOT222 |	I have smart
+EDL	00:07:25,439	00:07:27,999	| IOT222 |	There's a lot of people are happier than them and I don't
+EDL	00:07:27,999	00:07:30,303	| IOT222 |	Think they're wrong obviously they're happy they're happy that's fine
+EDL	00:07:30,815	00:07:34,399	| IOT222 |	I find smart things to be very sensible as well you could actually
+EDL	00:07:34,399	00:07:35,423	| IOT222 |	A non-supportive
+EDL	00:07:35,935	00:07:37,983	| IOT222 |	Device on either find or
+EDL	00:07:37,983	00:07:39,519	| IOT222 |	Build your own driver to make it work
+EDL	00:07:40,031	00:07:41,823	| IOT222 |	Door device Handler is what they call them
+EDL	00:07:42,335	00:07:43,615	| IOT222 |	So we can figure out
+EDL	00:07:43,615	00:07:50,015	| IOT222 |	Programmer you can do a lot more with us than you can with I think the other hubs on the market so for everyday people I ate
+EDL	00:07:50,015	00:07:51,551	| IOT222 |	Know that the problem that
+EDL	00:07:51,551	00:07:55,903	| IOT222 |	I guess I have is that we kind of stop recommending wink as that user friendly hub
+EDL	00:07:56,927	00:07:57,695	| IOT222 |	Yeah disposal
+EDL	00:07:58,463	00:07:58,975	| IOT222 |	But wait
+EDL	00:07:59,487	00:08:02,047	| IOT222 |	Wait we just got an email from
+EDL	00:08:02,815	00:08:03,327	| IOT222 |	Scary
+EDL	00:08:04,607	00:08:06,143	| IOT222 |	Yasso carry
+EDL	00:08:06,143	00:08:06,911	| IOT222 |	In a very sunny
+EDL	00:08:07,679	00:08:08,447	| IOT222 |	Set us
+EDL	00:08:08,447	00:08:08,959	| IOT222 |	Wink
+EDL	00:08:09,727	00:08:10,751	| IOT222 |	Is alive
+EDL	00:08:12,287	00:08:13,311	| IOT222 |	Dirty sprite
+EDL	00:08:13,311	00:08:18,175	| IOT222 |	Link appears to be in I got this just a few hours ago so I can shut off an email to the week
+EDL	00:08:18,175	00:08:18,687	| IOT222 |	People
+EDL	00:08:20,991	00:08:21,759	| IOT222 |	Got an email from
+EDL	00:08:22,271	00:08:24,575	| IOT222 |	Wing said they were reaching out to long-time customers
+EDL	00:08:24,575	00:08:26,111	| IOT222 |	To purchase the wink Hub 2
+EDL	00:08:26,623	00:08:30,975	| IOT222 |	And he expected to be. But lo and behold it was not we went to check in
+EDL	00:08:31,487	00:08:32,511	| IOT222 |	Yep
+EDL	00:08:33,535	00:08:37,375	| IOT222 |	No they have actually a lot of it or Wing It branded products available now
+EDL	00:08:37,375	00:08:41,215	| IOT222 |	If you're interested I'll probably buy them from the wing site the wreck I know you can buy
+EDL	00:08:41,215	00:08:43,263	| IOT222 |	Some of these devices on Amazon
+EDL	00:08:43,775	00:08:45,567	| IOT222 |	And even though it's sold by
+EDL	00:08:45,567	00:08:47,103	| IOT222 |	Amazon from wink the
+EDL	00:08:47,615	00:08:50,175	| IOT222 |	How to raise $150 for some reason on Amazon
+EDL	00:08:50,175	00:08:51,455	| IOT222 |	Wow is supposed to 99
+EDL	00:08:52,223	00:08:54,527	| IOT222 |	Yes as opposed to 99 so
+EDL	00:08:54,527	00:08:57,855	| IOT222 |	Interesting bit to this news is we've been wondering for
+EDL	00:08:57,855	00:08:59,135	| IOT222 |	How many year
+EDL	00:08:59,135	00:09:00,927	| IOT222 |	Just cuz we haven't heard anything
+EDL	00:09:00,927	00:09:02,719	| IOT222 |	Newsworthy out of Lincoln
+EDL	00:09:02,719	00:09:03,231	| IOT222 |	That long
+EDL	00:09:03,743	00:09:06,303	| IOT222 |	Are they still open the business
+EDL	00:09:06,303	00:09:08,607	| IOT222 |	Sending that still making products in the answer is yes
+EDL	00:09:09,119	00:09:10,911	| IOT222 |	Yes cuz it may have been out of stock
+EDL	00:09:12,191	00:09:12,959	| IOT222 |	We'll see
+EDL	00:09:12,959	00:09:15,519	| IOT222 |	We also get software updates for the Hub recently though
+EDL	00:09:16,031	00:09:17,055	| IOT222 |	So who knows
+EDL	00:09:17,055	00:09:18,079	| IOT222 |	We'll keep an eye on wink
+EDL	00:09:18,591	00:09:19,871	| IOT222 |	Maybe
+EDL	00:09:19,871	00:09:20,383	| IOT222 |	Gyarados
+EDL	00:09:21,663	00:09:22,175	| IOT222 |	How he feels
+EDL	00:09:22,943	00:09:23,455	| IOT222 |	All right
+EDL	00:09:23,967	00:09:24,479	| IOT222 |	Okay
+EDL	00:09:26,015	00:09:26,783	| IOT222 |	That's
+EDL	00:09:26,783	00:09:27,551	| IOT222 |	Good news
+EDL	00:09:27,551	00:09:28,063	| IOT222 |	Wink
+EDL	00:09:28,831	00:09:29,599	| IOT222 |	Sarcasm
+EDL	00:09:31,135	00:09:31,647	| IOT222 |	Oh that's
+EDL	00:09:32,671	00:09:33,695	| IOT222 |	It's actually
+EDL	00:09:33,695	00:09:38,815	| IOT222 |	Been a couple episodes where we talk about are needed to talk about a raise awareness of a
+EDL	00:09:38,815	00:09:42,143	| IOT222 |	I'm making a malware or any kind of security issues
+EDL	00:09:42,655	00:09:43,679	| IOT222 |	And
+EDL	00:09:43,679	00:09:46,751	| IOT222 |	This one is really scary that happened this week it's
+EDL	00:09:47,263	00:09:51,103	| IOT222 |	Called Cyrax and it is basically breaking iot devices
+EDL	00:09:51,615	00:09:53,151	| IOT222 |	The only way to
+EDL	00:09:53,663	00:09:54,175	| IOT222 |	Fix
+EDL	00:09:54,687	00:09:56,479	| IOT222 |	This if you are infected
+EDL	00:09:56,479	00:09:57,503	| IOT222 |	Instalike
+EDL	00:09:57,503	00:09:59,551	| IOT222 |	Kohler install the device firmware which
+EDL	00:10:00,063	00:10:03,647	| IOT222 |	Most people don't have access to the front of the devices to do that number one
+EDL	00:10:04,159	00:10:06,719	| IOT222 |	Number to the probably don't know how to do with that
+EDL	00:10:06,719	00:10:07,231	| IOT222 |	So
+EDL	00:10:07,743	00:10:09,023	| IOT222 |	Ice not good
+EDL	00:10:09,023	00:10:11,327	| IOT222 |	What's really scary is what we started
+EDL	00:10:11,327	00:10:12,095	| IOT222 |	Finding out
+EDL	00:10:12,607	00:10:14,655	| IOT222 |	We just came from and
+EDL	00:10:14,655	00:10:15,935	| IOT222 |	Who's responsible
+EDL	00:10:15,935	00:10:18,495	| IOT222 |	Do you want to talk about that yeah so
+EDL	00:10:18,495	00:10:21,567	| IOT222 |	This is kind of like my nightmare this is like a teenage prank
+EDL	00:10:21,567	00:10:25,151	| IOT222 |	Real they tried to hack her back and it's a 14 year old boy
+EDL	00:10:25,151	00:10:28,735	| IOT222 |	We basically we're creating a world where 14 year old boys kid
+EDL	00:10:28,735	00:10:30,015	| IOT222 |	Wreak havoc in
+EDL	00:10:30,015	00:10:31,807	| IOT222 |	We all know 14 year old boys in
+EDL	00:10:32,319	00:10:34,623	| IOT222 |	You're going to grow into lovely people most of them but
+EDL	00:10:35,135	00:10:35,903	| IOT222 |	14
+EDL	00:10:35,903	00:10:37,695	| IOT222 |	Very few people are
+EDL	00:10:37,695	00:10:42,047	| IOT222 |	Discerning members of society I don't know how else to put that
+EDL	00:10:43,839	00:10:45,375	| IOT222 |	He built this and he's like
+EDL	00:10:45,375	00:10:45,887	| IOT222 |	Hey
+EDL	00:10:46,399	00:10:48,191	| IOT222 |	I think I'm going to add more features and in
+EDL	00:10:48,703	00:10:51,775	| IOT222 |	I don't know if he's going to turn into a business you think that's going to happen
+EDL	00:10:52,287	00:10:54,079	| IOT222 |	I would hope not I would hope nobody would
+EDL	00:10:54,079	00:10:56,895	| IOT222 |	Son that business he said
+EDL	00:10:56,895	00:10:57,663	| IOT222 |	Project
+EDL	00:10:57,663	00:10:59,711	| IOT222 |	Kind of a joke but now it's a full-time project
+EDL	00:11:00,479	00:11:01,247	| IOT222 |	That's scary
+EDL	00:11:01,759	00:11:02,271	| IOT222 |	Yeah
+EDL	00:11:02,783	00:11:04,063	| IOT222 |	So guys
+EDL	00:11:04,063	00:11:05,599	| IOT222 |	We're building a world where
+EDL	00:11:05,599	00:11:08,671	| IOT222 |	We're getting the tools of Destruction to 1400 Boyson
+EDL	00:11:09,183	00:11:11,231	| IOT222 |	14 year olds are going to take it
+EDL	00:11:11,231	00:11:11,999	| IOT222 |	Boys
+EDL	00:11:11,999	00:11:12,511	| IOT222 |	Some girls
+EDL	00:11:13,023	00:11:13,791	| IOT222 |	You know
+EDL	00:11:13,791	00:11:14,559	| IOT222 |	That's what teenagers do
+EDL	00:11:16,607	00:11:18,399	| IOT222 |	They make poor decisions
+EDL	00:11:18,399	00:11:23,007	| IOT222 |	It's not what I did I did some packing when I was that age but it was mostly
+EDL	00:11:23,519	00:11:27,871	| IOT222 |	Changing the names of characters video games to me and my friends like
+EDL	00:11:28,383	00:11:34,271	| IOT222 |	Good night so we would play a video game instead of dr. J and Larry Bird play basketball that would be me and my next door neighbor
+EDL	00:11:34,271	00:11:36,575	| IOT222 |	Would be showing on the screen with our names do you know
+EDL	00:11:37,343	00:11:38,879	| IOT222 |	I know I mean it
+EDL	00:11:40,159	00:11:41,183	| IOT222 |	It's not so much
+EDL	00:11:44,255	00:11:46,303	| IOT222 |	Alright well maybe one day we'll get
+EDL	00:11:46,303	00:11:48,351	| IOT222 |	Microphones throughout her house that will detect
+EDL	00:11:48,351	00:11:49,375	| IOT222 |	Teenage boy hacking
+EDL	00:11:49,887	00:11:50,399	| IOT222 |	But until then
+EDL	00:11:51,167	00:11:52,191	| IOT222 |	Schools and hospitals are
+EDL	00:11:52,959	00:11:53,471	| IOT222 |	M4
+EDL	00:11:54,239	00:11:55,263	| IOT222 |	Weird
+EDL	00:11:55,263	00:11:56,287	| IOT222 |	Weird stuff
+EDL	00:11:56,799	00:11:58,591	| IOT222 |	So they're using them to detect
+EDL	00:11:59,103	00:11:59,871	| IOT222 |	Kodak code
+EDL	00:11:59,871	00:12:00,383	| IOT222 |	Aggression
+EDL	00:12:00,895	00:12:03,455	| IOT222 |	Which I understand because of all of the
+EDL	00:12:03,455	00:12:08,063	| IOT222 |	Terrible tragedies we've had it in public places where somebody just goes off in people
+EDL	00:12:08,575	00:12:10,111	| IOT222 |	Loser lives needlessly
+EDL	00:12:10,623	00:12:12,927	| IOT222 |	But it gets back to that
+EDL	00:12:12,927	00:12:18,047	| IOT222 |	Cost of privacy and then do you want to be walking through Hospital knowing that you're being listened to the whole time
+EDL	00:12:18,047	00:12:20,863	| IOT222 |	Maybe you won't even know to be honest it off if you disclose to you
+EDL	00:12:21,375	00:12:23,935	| IOT222 |	I think disclosure and something like this is important
+EDL	00:12:23,935	00:12:24,447	| IOT222 |	And
+EDL	00:12:24,959	00:12:27,007	| IOT222 |	I promise to delete that
+EDL	00:12:27,007	00:12:27,775	| IOT222 |	Recordings
+EDL	00:12:28,287	00:12:32,127	| IOT222 |	And some sort of independent audit to make sure that that's actually have
+EDL	00:12:32,895	00:12:36,991	| IOT222 |	Go to think about things again we're dealing in schools not necessarily hospitals
+EDL	00:12:36,991	00:12:39,551	| IOT222 |	Teenagers and teenagers say a lot of stupid stuff
+EDL	00:12:39,551	00:12:42,367	| IOT222 |	And they should have the ability to say that stupid stuff and not
+EDL	00:12:44,671	00:12:45,439	| IOT222 |	I agree
+EDL	00:12:45,439	00:12:47,743	| IOT222 |	So this is on the scary side
+EDL	00:12:47,743	00:12:48,255	| IOT222 |	Hydrate and
+EDL	00:12:48,767	00:12:49,535	| IOT222 |	Here is
+EDL	00:12:50,047	00:12:52,351	| IOT222 |	The algorithm they are using to detect aggression
+EDL	00:12:53,119	00:12:56,447	| IOT222 |	Isn't peer-reviewed it's not it's not really proven so
+EDL	00:12:56,447	00:12:58,239	| IOT222 |	Now you can set it off by
+EDL	00:12:58,751	00:13:01,567	| IOT222 |	Again doing all kinds of things that teenagers actually off
+EDL	00:13:01,567	00:13:02,079	| IOT222 |	Often do like
+EDL	00:13:02,591	00:13:03,103	| IOT222 |	Scream
+EDL	00:13:04,639	00:13:05,407	| IOT222 |	Or
+EDL	00:13:05,407	00:13:07,711	| IOT222 |	And clearly this isn't 100%
+EDL	00:13:07,711	00:13:12,319	| IOT222 |	Foolproof either that's the other thing that I noticed I think there's a three-year trial
+EDL	00:13:12,831	00:13:15,135	| IOT222 |	Happy Valley Hospital in Ridgewood New Jersey
+EDL	00:13:15,647	00:13:17,183	| IOT222 |	After
+EDL	00:13:17,183	00:13:18,719	| IOT222 |	For years they were facing out
+EDL	00:13:19,231	00:13:19,999	| IOT222 |	Because
+EDL	00:13:19,999	00:13:23,071	| IOT222 |	You're a lot of things like somebody speaking loud with set it off work
+EDL	00:13:23,071	00:13:25,887	| IOT222 |	Or somebody slamming a cash register in the cafeteria with Set It Off
+EDL	00:13:26,399	00:13:31,775	| IOT222 |	So they tweaked it to make it less sensitive and then they missed a very agitated person screaming and pounding on the desk so
+EDL	00:13:32,543	00:13:34,079	| IOT222 |	It's clearly not foolproof
+EDL	00:13:34,591	00:13:37,407	| IOT222 |	People are weird they can go from 0 to 60 in like no time
+EDL	00:13:41,503	00:13:43,039	| IOT222 |	On the flip side
+EDL	00:13:43,039	00:13:44,063	| IOT222 |	Seriously
+EDL	00:13:44,063	00:13:44,831	| IOT222 |	Microphone
+EDL	00:13:44,831	00:13:48,927	| IOT222 |	Always on microphones being used possibly not transparently
+EDL	00:13:48,927	00:13:49,695	| IOT222 |	End
+EDL	00:13:49,695	00:13:50,975	| IOT222 |	Or something that may not even be
+EDL	00:13:51,743	00:13:53,535	| IOT222 |	Researchers at the University of
+EDL	00:13:54,047	00:13:54,559	| IOT222 |	Washington
+EDL	00:13:55,071	00:13:57,375	| IOT222 |	Announced last week that they detect
+EDL	00:13:57,887	00:13:59,935	| IOT222 |	Heart attacks of the breathing associated
+EDL	00:13:59,935	00:14:00,703	| IOT222 |	With heart attacks
+EDL	00:14:01,983	00:14:02,495	| IOT222 |	Figure it out
+EDL	00:14:03,007	00:14:04,543	| IOT222 |	When I tried it on and
+EDL	00:14:05,055	00:14:05,567	| IOT222 |	Amazon Echo
+EDL	00:14:06,335	00:14:08,895	| IOT222 |	So the idea is they envision
+EDL	00:14:08,895	00:14:13,759	| IOT222 |	Some sort of acolyte device or microphone base device that could listen for this in people's homes and then
+EDL	00:14:14,271	00:14:15,807	| IOT222 |	Quickly send help
+EDL	00:14:15,807	00:14:16,575	| IOT222 |	There's a heart attack
+EDL	00:14:17,599	00:14:18,111	| IOT222 |	Now
+EDL	00:14:18,879	00:14:20,671	| IOT222 |	That's in my opinion
+EDL	00:14:20,671	00:14:22,975	| IOT222 |	82 invasive and B
+EDL	00:14:22,975	00:14:23,743	| IOT222 |	That's
+EDL	00:14:23,743	00:14:24,767	| IOT222 |	Problem is
+EDL	00:14:24,767	00:14:26,047	| IOT222 |	I think already solved with wearable
+EDL	00:14:27,071	00:14:29,887	| IOT222 |	I would agree with you on that
+EDL	00:14:29,887	00:14:36,287	| IOT222 |	I would say though that having a $40 device like an echo. In someone's nursing home
+EDL	00:14:36,287	00:14:37,055	| IOT222 |	For example
+EDL	00:14:37,055	00:14:38,591	| IOT222 |	Detecting that sort of thing
+EDL	00:14:38,591	00:14:39,871	| IOT222 |	To be more cost
+EDL	00:14:39,871	00:14:40,895	| IOT222 |	Effective
+EDL	00:14:40,895	00:14:45,247	| IOT222 |	Sure sure you move to Washington State and I are defending University of Washington
+EDL	00:14:46,015	00:14:52,415	| IOT222 |	That's exactly what's happening I would not want this and I would be curious though if I
+EDL	00:14:52,415	00:14:54,207	| IOT222 |	I were someone who has had a history of heart attack
+EDL	00:14:55,231	00:14:56,767	| IOT222 |	Would that change my
+EDL	00:14:57,279	00:14:58,047	| IOT222 |	Acceptance of some
+EDL	00:14:59,583	00:15:01,631	| IOT222 |	And would a robust
+EDL	00:15:01,631	00:15:02,143	| IOT222 |	Data
+EDL	00:15:02,655	00:15:03,423	| IOT222 |	Privacy
+EDL	00:15:03,423	00:15:04,703	| IOT222 |	Policy I really don't know
+EDL	00:15:05,727	00:15:08,287	| IOT222 |	And I don't know either but I think about it
+EDL	00:15:08,287	00:15:11,615	| IOT222 |	People who have no history of heart disease or they
+EDL	00:15:11,615	00:15:13,151	| IOT222 |	Suffered a heart attack already
+EDL	00:15:13,663	00:15:15,199	| IOT222 |	They probably don't mind
+EDL	00:15:15,199	00:15:19,295	| IOT222 |	Shelling out money from Modern devices that probably do a better job
+EDL	00:15:19,807	00:15:23,647	| IOT222 |	Well but what about insurance so Insurance could look this and I could be like
+EDL	00:15:24,415	00:15:27,999	| IOT222 |	The nice thing about insurance
+EDL	00:15:27,999	00:15:28,767	| IOT222 |	Tactics online
+EDL	00:15:29,279	00:15:29,791	| IOT222 |	Aggression
+EDL	00:15:30,303	00:15:31,327	| IOT222 |	Detection
+EDL	00:15:31,327	00:15:32,351	| IOT222 |	But if you could prove that
+EDL	00:15:32,863	00:15:38,239	| IOT222 |	And then only the inside so not the metadata itself but just the inside of this person is having
+EDL	00:15:38,239	00:15:38,751	| IOT222 |	Heart attack
+EDL	00:15:39,263	00:15:41,311	| IOT222 |	If there were enough Protections in place I would
+EDL	00:15:41,823	00:15:42,847	| IOT222 |	But there would have to be in
+EDL	00:15:43,871	00:15:45,407	| IOT222 |	The places we are not there yet is a pipa
+EDL	00:15:45,919	00:15:46,687	| IOT222 |	Stefano
+EDL	00:15:46,687	00:15:48,735	| IOT222 |	So did you see what you can do with sound
+EDL	00:15:49,247	00:15:50,271	| IOT222 |	And
+EDL	00:15:50,271	00:15:50,783	| IOT222 |	Also chair
+EDL	00:15:51,551	00:15:52,063	| IOT222 |	Okay
+EDL	00:15:52,575	00:15:55,647	| IOT222 |	What's the best smart batteries the u.s. is home to two
+EDL	00:15:56,159	00:15:56,927	| IOT222 |	You smart
+EDL	00:15:56,927	00:15:58,975	| IOT222 |	Schneider Electric last week
+EDL	00:15:59,487	00:16:01,279	| IOT222 |	They have a factory in Lexington
+EDL	00:16:01,791	00:16:05,631	| IOT222 |	Chucky that builds load centers and safety switch
+EDL	00:16:05,631	00:16:07,423	| IOT222 |	Things that are outside your house
+EDL	00:16:07,423	00:16:09,727	| IOT222 |	Well in an industrial settings there outside
+EDL	00:16:11,519	00:16:13,567	| IOT222 |	But they control the electricity going in in
+EDL	00:16:13,567	00:16:14,847	| IOT222 |	Out to various
+EDL	00:16:15,359	00:16:16,127	| IOT222 |	Places
+EDL	00:16:16,127	00:16:16,895	| IOT222 |	In Philly
+EDL	00:16:17,407	00:16:18,175	| IOT222 |	That was a terrible
+EDL	00:16:18,943	00:16:20,223	| IOT222 |	But that's what they do
+EDL	00:16:20,223	00:16:22,271	| IOT222 |	And last week we had the CIA
+EDL	00:16:23,039	00:16:23,551	| IOT222 |	On the show
+EDL	00:16:24,063	00:16:25,855	| IOT222 |	Hey if you miss that
+EDL	00:16:26,623	00:16:31,231	| IOT222 |	But what they're doing with their smart Factory is there turning into a showcase for their
+EDL	00:16:31,231	00:16:31,999	| IOT222 |	Ecostruxure
+EDL	00:16:32,767	00:16:35,327	| IOT222 |	Products which is building management software
+EDL	00:16:35,839	00:16:36,863	| IOT222 |	It ties into
+EDL	00:16:38,399	00:16:40,191	| IOT222 |	Factory automation software in all of this other stuff
+EDL	00:16:41,727	00:16:43,519	| IOT222 |	Cohere sustainability
+EDL	00:16:43,519	00:16:44,543	| IOT222 |	I think it's interesting
+EDL	00:16:44,543	00:16:45,567	| IOT222 |	They've got
+EDL	00:16:45,567	00:16:47,871	| IOT222 |	Couple other smart factories when in France
+EDL	00:16:48,639	00:16:49,151	| IOT222 |	Mexico
+EDL	00:16:49,663	00:16:52,991	| IOT222 |	And they seen actually things like a 20% reduction in meat
+EDL	00:16:53,503	00:16:55,295	| IOT222 |	Repair on their critical equipment
+EDL	00:16:56,063	00:16:57,599	| IOT222 |	They've eliminated 90%
+EDL	00:16:58,111	00:17:00,671	| IOT222 |	Their paperwork or limited paperwork by 90%
+EDL	00:17:01,183	00:17:01,695	| IOT222 |	So
+EDL	00:17:02,207	00:17:03,231	| IOT222 |	Some of those things are
+EDL	00:17:04,767	00:17:10,143	| IOT222 |	The investment to actually implement this may seem like a lot but when you start looking at the ROI
+EDL	00:17:10,143	00:17:11,167	| IOT222 |	I think the payback is free
+EDL	00:17:11,679	00:17:13,983	| IOT222 |	I think it's this is the investment it takes to Lake
+EDL	00:17:14,495	00:17:15,775	| IOT222 |	Quit prepping
+EDL	00:17:15,775	00:17:16,799	| IOT222 |	That's a cost but
+EDL	00:17:17,311	00:17:19,871	| IOT222 |	If the value that sits on top of that is amazing
+EDL	00:17:22,687	00:17:25,759	| IOT222 |	Alright the other smart Factory was announced this week
+EDL	00:17:25,759	00:17:28,063	| IOT222 |	It is Erikson they are going to
+EDL	00:17:28,063	00:17:33,951	| IOT222 |	Builder first fully automated smart Factory in the US unlike the Schneider Electric Factory this is going to be built
+EDL	00:17:34,463	00:17:34,975	| IOT222 |	That one
+EDL	00:17:36,255	00:17:41,631	| IOT222 |	And it is going to build Advanced antenna system radios so this is like
+EDL	00:17:42,911	00:17:43,423	| IOT222 |	Those are fun
+EDL	00:17:44,191	00:17:50,335	| IOT222 |	So Erickson doesn't have a location I guess they're still negotiating with various Economic Development groups my guess is
+EDL	00:17:52,895	00:17:53,407	| IOT222 |	Cool your place
+EDL	00:17:54,175	00:17:58,527	| IOT222 |	They also did announce the new R&D site which just happens to be where you used to live
+EDL	00:17:58,527	00:17:59,295	| IOT222 |	Austin
+EDL	00:18:00,575	00:18:04,927	| IOT222 |	Austin actually has a lot of 5G research AT&T and Intel have a research center there
+EDL	00:18:05,439	00:18:08,511	| IOT222 |	About lots of Wireless Engineers they're so this makes sense
+EDL	00:18:09,023	00:18:09,791	| IOT222 |	The point here
+EDL	00:18:10,303	00:18:11,583	| IOT222 |	Smart factories
+EDL	00:18:11,583	00:18:12,351	| IOT222 |	They're all the rage this week
+EDL	00:18:12,863	00:18:14,399	| IOT222 |	Or maybe Tunis smart Factory
+EDL	00:18:14,399	00:18:15,679	| IOT222 |	Tune-ups
+EDL	00:18:19,007	00:18:20,799	| IOT222 |	Raspberry Pi that is
+EDL	00:18:20,799	00:18:22,335	| IOT222 |	Powerful
+EDL	00:18:22,335	00:18:23,615	| IOT222 |	This is the
+EDL	00:18:23,615	00:18:25,407	| IOT222 |	Raspberry Pi
+EDL	00:18:25,407	00:18:25,919	| IOT222 |	4
+EDL	00:18:26,687	00:18:29,759	| IOT222 |	They're saying it's designed for industrial iot
+EDL	00:18:30,271	00:18:30,783	| IOT222 |	Locations
+EDL	00:18:31,295	00:18:37,695	| IOT222 |	It probably can be used for that but of course I was on campus with my comp sci class and
+EDL	00:18:37,695	00:18:38,463	| IOT222 |	I saw this news
+EDL	00:18:39,743	00:18:40,511	| IOT222 |	And we're not
+EDL	00:18:41,023	00:18:42,303	| IOT222 |	Where does Prius
+EDL	00:18:42,303	00:18:44,095	| IOT222 |	But we want to buy one of these
+EDL	00:18:44,607	00:18:45,119	| IOT222 |	Just for
+EDL	00:18:45,887	00:18:47,423	| IOT222 |	Code projects another little
+EDL	00:18:47,423	00:18:48,447	| IOT222 |	Efforts
+EDL	00:18:48,447	00:18:52,031	| IOT222 |	It's got a quad-core arm cortex a72 process
+EDL	00:18:52,031	00:18:55,359	| IOT222 |	Running at 1.5 gigahertz that's crazy I think
+EDL	00:18:55,871	00:18:59,455	| IOT222 |	Well my last MacBook Reddit that
+EDL	00:19:00,223	00:19:06,623	| IOT222 |	Right right I took a look to see cuz of course everybody ask me when I told him about the snuza what's different from the Raspberry Pi already have
+EDL	00:19:06,623	00:19:08,415	| IOT222 |	Eeyore
+EDL	00:19:08,927	00:19:09,951	| IOT222 |	Are all the runs
+EDL	00:19:09,951	00:19:13,279	| IOT222 |	The price starts at $35 get you a gig of RAM
+EDL	00:19:13,279	00:19:18,399	| IOT222 |	You also have options 45 and $55 to get 2 or 4 gig of RAM which
+EDL	00:19:18,399	00:19:21,727	| IOT222 |	That's great for like for the type of things we would use it for
+EDL	00:19:21,727	00:19:25,823	| IOT222 |	Also it's USBC for the power which is awesome
+EDL	00:19:25,823	00:19:26,847	| IOT222 |	Mitsubishi
+EDL	00:19:27,615	00:19:28,895	| IOT222 |	Give me speed Mini
+EDL	00:19:31,711	00:19:33,247	| IOT222 |	And they have
+EDL	00:19:33,247	00:19:34,015	| IOT222 |	Added
+EDL	00:19:34,015	00:19:34,783	| IOT222 |	2
+EDL	00:19:34,783	00:19:37,599	| IOT222 |	Added one but now has two HDMI
+EDL	00:19:38,623	00:19:41,183	| IOT222 |	Put all of the mini HDMI port
+EDL	00:19:41,695	00:19:43,999	| IOT222 |	So you can run up to 4k on
+EDL	00:19:44,511	00:19:47,071	| IOT222 |	Two simultaneous HDMI displays
+EDL	00:19:47,839	00:19:50,399	| IOT222 |	Yeah and that's really interesting for the industrial iot
+EDL	00:19:51,167	00:19:51,679	| IOT222 |	Cuz you could start
+EDL	00:19:52,447	00:19:54,751	| IOT222 |	Play Machines to set up sensors
+EDL	00:19:55,263	00:19:59,103	| IOT222 |	You could actually put this in and monitor that information from the sensors
+EDL	00:19:59,615	00:20:01,407	| IOT222 |	You can run applications on this that are
+EDL	00:20:02,175	00:20:02,943	| IOT222 |	Fairly sizable
+EDL	00:20:04,735	00:20:05,759	| IOT222 |	Hey 35 bucks
+EDL	00:20:06,271	00:20:07,295	| IOT222 |	Or maybe 50
+EDL	00:20:08,063	00:20:10,623	| IOT222 |	The other thing is from an industrial standpoint of me
+EDL	00:20:10,623	00:20:16,511	| IOT222 |	Like most consumers, just buy the pie and use it to make it like a desktop computer or Linux Boxes Etc
+EDL	00:20:17,791	00:20:18,815	| IOT222 |	Having the
+EDL	00:20:19,583	00:20:20,863	| IOT222 |	IO pins
+EDL	00:20:20,863	00:20:24,191	| IOT222 |	And the ability to add okash several dozen
+EDL	00:20:24,191	00:20:27,007	| IOT222 |	Options of other radios other sensors
+EDL	00:20:27,007	00:20:27,519	| IOT222 |	So on
+EDL	00:20:28,031	00:20:28,799	| IOT222 |	Really
+EDL	00:20:28,799	00:20:32,895	| IOT222 |	I think it speaks to the industrial Market meet this that's exactly what we used for
+EDL	00:20:32,895	00:20:36,479	| IOT222 |	Increase in the clouder are hacking diabetes project we had it up
+EDL	00:20:36,479	00:20:38,015	| IOT222 |	NRF radio hat
+EDL	00:20:38,015	00:20:40,831	| IOT222 |	That's it on to our pie so you can so many choices
+EDL	00:20:41,343	00:20:42,879	| IOT222 |	Yeah and
+EDL	00:20:42,879	00:20:45,439	| IOT222 |	I'm assuming that there will be ruggedized cases for
+EDL	00:20:45,439	00:20:46,719	| IOT222 |	That is the other thing
+EDL	00:20:46,719	00:20:47,231	| IOT222 |	Papaya system
+EDL	00:20:47,999	00:20:49,023	| IOT222 |	You can't just leave that in it
+EDL	00:20:49,023	00:20:51,071	| IOT222 |	Industrial eyeglass
+EDL	00:20:51,839	00:20:56,959	| IOT222 |	Yeah I thought cases I didn't buy rugged I so I'm supposed to know for 5 or 10 bucks out he's in case my in
+EDL	00:20:57,727	00:21:00,543	| IOT222 |	Arbonne rep near my hand this act as a clear case so I can see
+EDL	00:21:00,543	00:21:01,823	| IOT222 |	The parts a new Land Rover
+EDL	00:21:10,783	00:21:11,551	| IOT222 |	It would
+EDL	00:21:11,551	00:21:14,111	| IOT222 |	And then I saw this device and I got super excited
+EDL	00:21:14,623	00:21:15,135	| IOT222 |	This is
+EDL	00:21:15,647	00:21:16,672	| IOT222 |	The Parlor
+EDL	00:21:17,184	00:21:18,208	| IOT222 |	Smartwatch
+EDL	00:21:18,208	00:21:18,976	| IOT222 |	What day does
+EDL	00:21:18,976	00:21:20,512	| IOT222 |	This is
+EDL	00:21:21,024	00:21:23,072	| IOT222 |	It basically tells you
+EDL	00:21:23,584	00:21:24,864	| IOT222 |	Where you are at
+EDL	00:21:24,864	00:21:28,448	| IOT222 |	In your day or if you should exercise or maybe not train a little
+EDL	00:21:28,448	00:21:29,216	| IOT222 |	Train too hard
+EDL	00:21:30,240	00:21:32,032	| IOT222 |	It combines like your sleep
+EDL	00:21:32,544	00:21:33,824	| IOT222 |	Your workout
+EDL	00:21:33,824	00:21:35,616	| IOT222 |	All of this to help you optimize your
+EDL	00:21:35,616	00:21:37,408	| IOT222 |	Workouts and I like this because
+EDL	00:21:37,408	00:21:38,944	| IOT222 |	I left my Fitbit charge 3
+EDL	00:21:38,944	00:21:39,456	| IOT222 |	Which is what I'm current
+EDL	00:21:40,480	00:21:42,272	| IOT222 |	You know I love counting steps I love all that but
+EDL	00:21:42,784	00:21:44,576	| IOT222 |	It doesn't actually tell me
+EDL	00:21:45,856	00:21:46,880	| IOT222 |	How to change to
+EDL	00:21:47,648	00:21:48,672	| IOT222 |	It does actually
+EDL	00:21:49,440	00:21:50,976	| IOT222 |	Every few hours to get up
+EDL	00:21:52,256	00:21:55,072	| IOT222 |	For the most part it doesn't feel super smart it just feels like a
+EDL	00:21:55,840	00:21:56,608	| IOT222 |	A data logging
+EDL	00:21:56,608	00:21:57,632	| IOT222 |	Device
+EDL	00:21:58,144	00:21:59,168	| IOT222 |	This will smart
+EDL	00:21:59,936	00:22:01,728	| IOT222 |	So I thought this was cool
+EDL	00:22:02,240	00:22:06,080	| IOT222 |	Yeah it's not terribly expensive either it's $230
+EDL	00:22:06,592	00:22:08,128	| IOT222 |	Pair device play ignite
+EDL	00:22:08,128	00:22:10,944	| IOT222 |	GPS that has GPS perfectly Runner
+EDL	00:22:10,944	00:22:11,968	| IOT222 |	Spike etcetera and so on
+EDL	00:22:12,480	00:22:17,344	| IOT222 |	Your point about the actual smartness of using the data analyzing and giving you
+EDL	00:22:17,856	00:22:20,160	| IOT222 |	Actionable information is is key
+EDL	00:22:20,160	00:22:22,976	| IOT222 |	It's not the first watch to do that
+EDL	00:22:22,976	00:22:25,280	| IOT222 |	And I say that because I have a Garmin
+EDL	00:22:25,280	00:22:28,864	| IOT222 |	Forerunner 245 on my wrist right now that I've had for about six weeks
+EDL	00:22:29,376	00:22:33,728	| IOT222 |	Pretty much does the same thing I might become more value from that then
+EDL	00:22:33,728	00:22:37,056	| IOT222 |	I would have expected instead of just telling you for example
+EDL	00:22:37,056	00:22:39,360	| IOT222 |	How many hours of sleep you got an
+EDL	00:22:39,360	00:22:41,664	| IOT222 |	What the different stages were in the time in those stages
+EDL	00:22:42,176	00:22:44,480	| IOT222 |	It actually has a feature called body battery in
+EDL	00:22:44,992	00:22:49,600	| IOT222 |	Basically if your body battery is 100 you're fully charged and you want to go train hard
+EDL	00:22:49,600	00:22:51,648	| IOT222 |	The run marathon today is the day to do Etc
+EDL	00:22:52,160	00:22:56,000	| IOT222 |	It does that and also reduces the body battery based on how many steps you taken and
+EDL	00:22:56,000	00:22:58,816	| IOT222 |	Your heart rates at the day and your email your workouts and so on
+EDL	00:22:59,328	00:23:01,376	| IOT222 |	I'm so it's actually
+EDL	00:23:01,376	00:23:03,424	| IOT222 |	Is useful Durbin days are like
+EDL	00:23:03,424	00:23:05,472	| IOT222 |	I think I'm okay to go do a long run
+EDL	00:23:05,472	00:23:10,592	| IOT222 |	I left the wash my car so so I think I will rest up today
+EDL	00:23:11,104	00:23:12,640	| IOT222 |	This is highly informal
+EDL	00:23:12,640	00:23:13,920	| IOT222 |	But I think it'd be interesting
+EDL	00:23:14,432	00:23:15,456	| IOT222 |	Is 2
+EDL	00:23:15,456	00:23:16,736	| IOT222 |	Having now
+EDL	00:23:16,736	00:23:18,016	| IOT222 |	Experiment with the body battery
+EDL	00:23:18,016	00:23:18,528	| IOT222 |	A few weeks
+EDL	00:23:19,040	00:23:20,064	| IOT222 |	I would like without you
+EDL	00:23:20,064	00:23:21,344	| IOT222 |	Looking at your body battery
+EDL	00:23:21,344	00:23:23,136	| IOT222 |	To guesstimate where it's
+EDL	00:23:23,136	00:23:26,208	| IOT222 |	At the same point in time each day right guesstimate where it's at
+EDL	00:23:26,720	00:23:27,744	| IOT222 |	And write that down and
+EDL	00:23:27,744	00:23:28,256	| IOT222 |	Then check it
+EDL	00:23:29,024	00:23:29,792	| IOT222 |	See how
+EDL	00:23:30,560	00:23:32,352	| IOT222 |	On point because I'm curious like
+EDL	00:23:32,352	00:23:33,888	| IOT222 |	You may feel awesome and it's like
+EDL	00:23:35,936	00:23:36,960	| IOT222 |	So do you want to do that
+EDL	00:23:37,728	00:23:39,520	| IOT222 |	I can do that and in fact
+EDL	00:23:39,520	00:23:42,592	| IOT222 |	Before I had this feature I would just go off of my
+EDL	00:23:42,592	00:23:43,360	| IOT222 |	Feel-Rite
+EDL	00:23:43,872	00:23:47,968	| IOT222 |	And they were times when I felt great and I go say I'm going to go do an 8 Mile
+EDL	00:23:48,480	00:23:50,016	| IOT222 |	Loop over around the
+EDL	00:23:50,016	00:23:51,040	| IOT222 |	On the trail near my house
+EDL	00:23:51,552	00:23:52,320	| IOT222 |	And yet
+EDL	00:23:52,320	00:23:56,416	| IOT222 |	I get two or three into it and like what was I thinking today my body is not responding well
+EDL	00:23:56,928	00:23:57,696	| IOT222 |	Right so it's
+EDL	00:23:57,696	00:23:59,488	| IOT222 |	Butts
+EDL	00:23:59,488	00:24:00,768	| IOT222 |	Experiment of one
+EDL	00:24:01,280	00:24:02,560	| IOT222 |	And if anyone else has anything like
+EDL	00:24:05,632	00:24:06,912	| IOT222 |	Just because
+EDL	00:24:06,912	00:24:08,192	| IOT222 |	Sometimes I worry that
+EDL	00:24:08,960	00:24:10,496	| IOT222 |	Their influence
+EDL	00:24:10,496	00:24:11,264	| IOT222 |	Computers
+EDL	00:24:11,264	00:24:13,312	| IOT222 |	You're trusting the algorithm for sure
+EDL	00:24:14,080	00:24:18,944	| IOT222 |	Yeah without a doubt put Garmin and polar I've used both their devices before I still have
+EDL	00:24:18,944	00:24:19,712	| IOT222 |	Stop order
+EDL	00:24:19,712	00:24:20,224	| IOT222 |	Smartwatch
+EDL	00:24:20,736	00:24:23,040	| IOT222 |	They've been working towards this with different
+EDL	00:24:23,552	00:24:24,832	| IOT222 |	Indices in
+EDL	00:24:24,832	00:24:26,624	| IOT222 |	And such a to be honest
+EDL	00:24:27,136	00:24:28,160	| IOT222 |	I
+EDL	00:24:28,160	00:24:28,672	| IOT222 |	Fuel
+EDL	00:24:29,184	00:24:30,720	| IOT222 |	Just for my experience that there
+EDL	00:24:31,232	00:24:32,000	| IOT222 |	Worth trusting
+EDL	00:24:32,768	00:24:33,792	| IOT222 |	Interesting algorithms
+EDL	00:24:37,120	00:24:38,400	| IOT222 |	For those of us with a
+EDL	00:24:38,400	00:24:41,472	| IOT222 |	How to say who are too lazy to clean their house but really this is for anyone
+EDL	00:24:41,984	00:24:43,776	| IOT222 |	Google Assistant Canal support
+EDL	00:24:43,776	00:24:44,800	| IOT222 |	Control robot mop
+EDL	00:24:45,312	00:24:47,616	| IOT222 |	They could control Roomba vacuums for
+EDL	00:24:47,616	00:24:48,128	| IOT222 |	A while
+EDL	00:24:48,640	00:24:49,664	| IOT222 |	Yeah but
+EDL	00:24:49,664	00:24:53,504	| IOT222 |	Is a way for developers to add support to the smart mop that are out there
+EDL	00:24:53,504	00:24:57,344	| IOT222 |	Aaron boster iRobot makes some of those and others do as well
+EDL	00:24:57,344	00:24:59,904	| IOT222 |	So what Google has done is basically
+EDL	00:24:59,904	00:25:05,024	| IOT222 |	Extended what the vacuum class was for for developers to make skills and such
+EDL	00:25:05,024	00:25:07,840	| IOT222 |	Tamara has a mop device type so
+EDL	00:25:10,144	00:25:12,960	| IOT222 |	I don't have one of these I was kind of wish I did but
+EDL	00:25:12,960	00:25:14,240	| IOT222 |	Stop tickling very well
+EDL	00:25:14,240	00:25:16,800	| IOT222 |	I'm sure they're better now but the last one I tested it
+EDL	00:25:16,800	00:25:17,312	| IOT222 |	It's not on
+EDL	00:25:18,080	00:25:19,872	| IOT222 |	But that was like the first generation brother
+EDL	00:25:22,432	00:25:25,248	| IOT222 |	You could have come a long way by now
+EDL	00:25:25,248	00:25:25,760	| IOT222 |	All right
+EDL	00:25:26,272	00:25:27,040	| IOT222 |	So
+EDL	00:25:27,040	00:25:29,344	| IOT222 |	It feels like we're at that moment in our show
+EDL	00:25:29,344	00:25:30,112	| IOT222 |	When it is time
+EDL	00:25:33,440	00:25:37,536	| IOT222 |	It is time for the iot podcast hotline
+EDL	00:25:37,536	00:25:43,424	| IOT222 |	What's the fifth largest coyote pad portfolio with a world of pharaoh provides a proven iot platform that doesn't risk
+EDL	00:25:43,424	00:25:43,936	| IOT222 |	Your brand
+EDL	00:25:44,448	00:25:50,336	| IOT222 |	A pharaoh customers have experienced as much as an 80% reduction in time-to-market and tenex higher activation
+EDL	00:25:51,360	00:25:53,152	| IOT222 |	Should learn more at a pharaoh
+EDL	00:25:53,152	00:25:54,176	| IOT222 |	Dot IO
+EDL	00:25:55,200	00:25:55,712	| IOT222 |	All right
+EDL	00:25:56,224	00:25:58,528	| IOT222 |	This month on the iot pipe
+EDL	00:25:59,040	00:25:59,808	| IOT222 |	Hotline
+EDL	00:25:59,808	00:26:02,624	| IOT222 |	If you call us at 512-2623
+EDL	00:26:02,624	00:26:03,648	| IOT222 |	744
+EDL	00:26:04,160	00:26:06,976	| IOT222 |	We are giving away a wise sensor pack
+EDL	00:26:06,976	00:26:07,488	| IOT222 |	In camera
+EDL	00:26:08,000	00:26:11,072	| IOT222 |	So yes you could buy this for 40 bucks but
+EDL	00:26:11,072	00:26:12,352	| IOT222 |	You can also maybe when it
+EDL	00:26:12,352	00:26:14,400	| IOT222 |	So I say give us a call and
+EDL	00:26:14,400	00:26:15,424	| IOT222 |	Maybe we'll also answer your
+EDL	00:26:15,936	00:26:16,448	| IOT222 |	I have a question
+EDL	00:26:17,216	00:26:19,008	| IOT222 |	This week's question comes from
+EDL	00:26:19,520	00:26:20,032	| IOT222 |	Bobby
+EDL	00:26:21,312	00:26:21,824	| IOT222 |	Let's hear it
+EDL	00:26:22,592	00:26:25,920	| IOT222 |	Hi my name is Bobby and my wife I just bought a house
+EDL	00:26:25,920	00:26:26,688	| IOT222 |	And
+EDL	00:26:26,688	00:26:29,248	| IOT222 |	I have many other questions to the other recommendations
+EDL	00:26:29,248	00:26:31,040	| IOT222 |	Now is
+EDL	00:26:31,040	00:26:32,320	| IOT222 |	Leak detector sensors
+EDL	00:26:32,832	00:26:34,624	| IOT222 |	I was given a Honeywell lyric
+EDL	00:26:35,136	00:26:35,904	| IOT222 |	I want
+EDL	00:26:35,904	00:26:37,184	| IOT222 |	Free and like it that
+EDL	00:26:37,952	00:26:39,488	| IOT222 |	Was looking at buying more
+EDL	00:26:39,488	00:26:41,536	| IOT222 |	I was just
+EDL	00:26:41,536	00:26:42,816	| IOT222 |	Turn signal recommendations
+EDL	00:26:42,816	00:26:43,840	| IOT222 |	For other ones
+EDL	00:26:43,840	00:26:45,120	| IOT222 |	Thoughts where the
+EDL	00:26:45,632	00:26:46,912	| IOT222 |	Samsung SmartThings
+EDL	00:26:47,424	00:26:51,520	| IOT222 |	But I didn't know if there was any other Leak Detectors that you guys recommended
+EDL	00:26:53,056	00:26:54,080	| IOT222 |	Thank you very much
+EDL	00:26:56,128	00:26:59,968	| IOT222 |	I was so excited because you have already in your hot little hands
+EDL	00:27:00,480	00:27:01,504	| IOT222 |	My favorite lie detector
+EDL	00:27:02,016	00:27:03,040	| IOT222 |	Which is kind of expensive
+EDL	00:27:03,552	00:27:04,576	| IOT222 |	But the Honeywell
+EDL	00:27:04,576	00:27:07,648	| IOT222 |	Lyric Wi-Fi water leak and freeze detector is
+EDL	00:27:08,160	00:27:13,024	| IOT222 |	Power device and I liked it so much because it's accurate but it's also got this long
+EDL	00:27:13,024	00:27:13,536	| IOT222 |	Entail
+EDL	00:27:14,048	00:27:15,584	| IOT222 |	The wraps around pipes
+EDL	00:27:15,584	00:27:16,352	| IOT222 |	It detects
+EDL	00:27:16,864	00:27:18,144	| IOT222 |	They said leaks and fries
+EDL	00:27:19,168	00:27:21,728	| IOT222 |	And I think it's just so much more effective than waiting for like a
+EDL	00:27:21,728	00:27:22,496	| IOT222 |	Puddles
+EDL	00:27:22,496	00:27:23,008	| IOT222 |	Reach ascensor
+EDL	00:27:25,056	00:27:26,848	| IOT222 |	So it feels like you get more coverage
+EDL	00:27:27,360	00:27:30,432	| IOT222 |	But it does come at a price and that price is 80 bucks for that
+EDL	00:27:31,456	00:27:31,968	| IOT222 |	Which is
+EDL	00:27:32,480	00:27:33,248	| IOT222 |	A lot
+EDL	00:27:33,248	00:27:34,528	| IOT222 |	And it only works with the
+EDL	00:27:35,296	00:27:37,088	| IOT222 |	Echo ecosystem it does not work
+EDL	00:27:37,856	00:27:38,368	| IOT222 |	Assistant
+EDL	00:27:39,392	00:27:41,696	| IOT222 |	So that is the one you already have
+EDL	00:27:42,720	00:27:47,328	| IOT222 |	I'm going to recommend if you are hardcore interested in leak detection
+EDL	00:27:47,328	00:27:49,888	| IOT222 |	To go with one of the smart
+EDL	00:27:49,888	00:27:50,656	| IOT222 |	Home
+EDL	00:27:50,656	00:27:51,680	| IOT222 |	Whole-home leak
+EDL	00:27:51,680	00:27:52,192	| IOT222 |	Detection model
+EDL	00:27:53,216	00:27:53,728	| IOT222 |	They are
+EDL	00:27:54,240	00:27:54,752	| IOT222 |	Receita
+EDL	00:27:55,520	00:27:57,824	| IOT222 |	The cheaper one is the flow
+EDL	00:27:57,824	00:28:00,384	| IOT222 |	Buy Moen that is a $500 device
+EDL	00:28:00,384	00:28:01,664	| IOT222 |	What you do
+EDL	00:28:01,664	00:28:02,688	| IOT222 |	Yeah but
+EDL	00:28:03,456	00:28:04,992	| IOT222 |	What it does is
+EDL	00:28:04,992	00:28:08,320	| IOT222 |	It measures the water flowing through your pipes and uses an algorithm
+EDL	00:28:09,856	00:28:10,880	| IOT222 |	To detect
+EDL	00:28:10,880	00:28:14,976	| IOT222 |	Changes in water pressure it will detect not just like catastrophic
+EDL	00:28:14,976	00:28:18,560	| IOT222 |	At least it'll also detect slow leaks or things like a toilet
+EDL	00:28:18,560	00:28:19,840	| IOT222 |	Flapper the
+EDL	00:28:19,840	00:28:21,120	| IOT222 |	Not secure not
+EDL	00:28:21,632	00:28:22,912	| IOT222 |	Not slapping
+EDL	00:28:22,912	00:28:25,472	| IOT222 |	I don't know how to describe it
+EDL	00:28:25,984	00:28:26,752	| IOT222 |	You got to replace
+EDL	00:28:26,752	00:28:28,800	| IOT222 |	The flapper if you hear the water running all the time and actually
+EDL	00:28:29,568	00:28:30,336	| IOT222 |	Uses a lot of water
+EDL	00:28:30,848	00:28:31,616	| IOT222 |	Who knew
+EDL	00:28:31,616	00:28:34,432	| IOT222 |	And this is awesome because it automatically turns off
+EDL	00:28:35,456	00:28:35,968	| IOT222 |	So
+EDL	00:28:36,480	00:28:36,992	| IOT222 |	Is it expensive
+EDL	00:28:37,504	00:28:38,272	| IOT222 |	Yes
+EDL	00:28:38,272	00:28:40,320	| IOT222 |	Is it possible you might get a discount from your insurance
+EDL	00:28:40,832	00:28:41,344	| IOT222 |	Baby
+EDL	00:28:41,856	00:28:42,880	| IOT222 |	But it's like
+EDL	00:28:43,904	00:28:49,792	| IOT222 |	No but the key differences is not just a detector it can actually shut the water off and you're not going to find
+EDL	00:28:50,304	00:28:53,376	| IOT222 |	That was just a sensor let me know lots of sensors that will
+EDL	00:28:53,376	00:28:54,144	| IOT222 |	To detection
+EDL	00:28:55,680	00:28:57,216	| IOT222 |	If you're not home and a detective
+EDL	00:28:57,728	00:28:59,008	| IOT222 |	Bass Pro
+EDL	00:28:59,520	00:29:03,104	| IOT222 |	So the other option in this category is
+EDL	00:29:03,104	00:29:07,200	| IOT222 |	It's the same thing this actually needs a plumber to install it the other one does too
+EDL	00:29:07,200	00:29:08,992	| IOT222 |	When you're messing with your water main you should
+EDL	00:29:10,784	00:29:11,552	| IOT222 |	Recommendation
+EDL	00:29:11,552	00:29:13,856	| IOT222 |	The thing is $700
+EDL	00:29:14,368	00:29:18,464	| IOT222 |	It is a company that was spun out of Belkin it also was created in partnership with
+EDL	00:29:18,976	00:29:20,256	| IOT222 |	Plumbing company called uponor
+EDL	00:29:20,768	00:29:21,536	| IOT222 |	So
+EDL	00:29:21,536	00:29:22,304	| IOT222 |	It's
+EDL	00:29:22,304	00:29:23,072	| IOT222 |	Pricier
+EDL	00:29:24,608	00:29:25,376	| IOT222 |	It has
+EDL	00:29:25,376	00:29:27,680	| IOT222 |	Quality Brands behind it I've never tested
+EDL	00:29:27,680	00:29:29,472	| IOT222 |	Any of these devices because
+EDL	00:29:30,240	00:29:33,056	| IOT222 |	Well because now I've moved into a rental house and beforehand
+EDL	00:29:33,824	00:29:37,152	| IOT222 |	They weren't actually ready for testing so these are relatively new
+EDL	00:29:38,176	00:29:38,688	| IOT222 |	But
+EDL	00:29:39,456	00:29:40,224	| IOT222 |	Don't know how you feel.
+EDL	00:29:40,224	00:29:42,528	| IOT222 |	What about the buoy folks
+EDL	00:29:42,528	00:29:47,904	| IOT222 |	Oh yes because you're already the Honeywell ecosystem earlier this year because March
+EDL	00:29:47,904	00:29:49,440	| IOT222 |	How do you spell actually
+EDL	00:29:49,440	00:29:52,000	| IOT222 |	It's no longer honey that's resideo is be smart home
+EDL	00:29:52,512	00:29:53,024	| IOT222 |	Company
+EDL	00:29:54,048	00:29:55,584	| IOT222 |	It's behind the Smart Home
+EDL	00:29:55,584	00:29:56,352	| IOT222 |	Honeywell gear
+EDL	00:29:56,864	00:30:00,192	| IOT222 |	Securus still Honeywell the company making it now is called resideo
+EDL	00:30:01,472	00:30:03,520	| IOT222 |	So resideo bought Bowie
+EDL	00:30:03,520	00:30:06,336	| IOT222 |	Which was an MIT lab space company that also made
+EDL	00:30:06,336	00:30:07,104	| IOT222 |	A whole home.
+EDL	00:30:07,104	00:30:07,872	| IOT222 |	Vice
+EDL	00:30:07,872	00:30:08,384	| IOT222 |	Now
+EDL	00:30:08,896	00:30:11,200	| IOT222 |	It is unclear exactly what huh
+EDL	00:30:12,480	00:30:15,552	| IOT222 |	That they talked about making their sensor leak detection system smarter
+EDL	00:30:16,064	00:30:16,576	| IOT222 |	But
+EDL	00:30:17,088	00:30:18,624	| IOT222 |	You cannot buy the buoy system
+EDL	00:30:19,904	00:30:20,416	| IOT222 |	So
+EDL	00:30:21,184	00:30:22,208	| IOT222 |	I don't know what to tell you
+EDL	00:30:24,000	00:30:24,768	| IOT222 |	Right
+EDL	00:30:24,768	00:30:30,144	| IOT222 |	Venusaur is other non whole-home options I mean there's there's a number on the market that are probably less
+EDL	00:30:30,144	00:30:31,424	| IOT222 |	Expensive in the lyric
+EDL	00:30:31,424	00:30:33,472	| IOT222 |	Yes but we're really flogging a whole-home real
+EDL	00:30:33,984	00:30:39,616	| IOT222 |	So if you want to do it right and have a budget for it I think that's the way to go
+EDL	00:30:39,616	00:30:41,920	| IOT222 |	But if not I know you can do it for a lot less
+EDL	00:30:42,432	00:30:45,504	| IOT222 |	You just want to look for ones like the lyric that have
+EDL	00:30:45,504	00:30:48,064	| IOT222 |	Extendable cable to
+EDL	00:30:48,064	00:30:50,368	| IOT222 |	Improve your coverage of leak detection
+EDL	00:30:50,880	00:30:51,392	| IOT222 |	So
+EDL	00:30:52,160	00:30:54,976	| IOT222 |	One option that also has an extendable sensor cable
+EDL	00:30:56,256	00:30:57,792	| IOT222 |	A freezing Rod what
+EDL	00:30:58,304	00:30:59,584	| IOT222 |	Accenture coverage
+EDL	00:30:59,584	00:31:00,608	| IOT222 |	Is the D-Link
+EDL	00:31:00,608	00:31:01,632	| IOT222 |	WiFi water
+EDL	00:31:02,656	00:31:05,728	| IOT222 |	It's a little cheaper it's 60 bucks from D-Link as a
+EDL	00:31:05,728	00:31:06,752	| IOT222 |	Close to the 80 bucks for
+EDL	00:31:07,264	00:31:08,288	| IOT222 |	Honeywell version
+EDL	00:31:08,288	00:31:09,312	| IOT222 |	It's also Wi-Fi
+EDL	00:31:09,824	00:31:10,592	| IOT222 |	And
+EDL	00:31:11,104	00:31:12,384	| IOT222 |	Performs the same function
+EDL	00:31:13,152	00:31:14,432	| IOT222 |	I can't remember if I've tried this or no
+EDL	00:31:14,944	00:31:17,760	| IOT222 |	But with this one it doesn't have an integrated siren
+EDL	00:31:18,272	00:31:19,552	| IOT222 |	In the Honeywell
+EDL	00:31:19,552	00:31:20,320	| IOT222 |	Definitely
+EDL	00:31:20,320	00:31:21,600	| IOT222 |	That is because you have to like
+EDL	00:31:22,624	00:31:24,672	| IOT222 |	Disconnected taxes stop the siren
+EDL	00:31:24,672	00:31:25,696	| IOT222 |	Listen to my problems
+EDL	00:31:27,488	00:31:28,000	| IOT222 |	This is kind of
+EDL	00:31:28,768	00:31:29,536	| IOT222 |	But
+EDL	00:31:29,536	00:31:30,304	| IOT222 |	Really useful
+EDL	00:31:30,304	00:31:31,328	| IOT222 |	When there's actually
+EDL	00:31:31,840	00:31:32,352	| IOT222 |	Your house
+EDL	00:31:32,864	00:31:37,216	| IOT222 |	Let's find when you're testing and leaking things left and right but really good when
+EDL	00:31:37,216	00:31:37,728	| IOT222 |	There's actually
+EDL	00:31:38,496	00:31:40,032	| IOT222 |	Those are options there's also
+EDL	00:31:40,544	00:31:44,640	| IOT222 |	Without the cable unit for 20 bucks you can get a Samsung SmartThings water leak
+EDL	00:31:44,640	00:31:46,176	| IOT222 |	Detection sensor that you just Stickney
+EDL	00:31:46,944	00:31:47,712	| IOT222 |	Troublesome spot
+EDL	00:31:48,736	00:31:51,040	| IOT222 |	Grandma just has contacts on the bottom of it
+EDL	00:31:51,040	00:31:52,832	| IOT222 |	Not any cable dirty like that
+EDL	00:31:52,832	00:31:54,624	| IOT222 |	So in there in there several of those
+EDL	00:31:54,624	00:31:56,160	| IOT222 |	I mean tons of companies make out
+EDL	00:31:56,672	00:32:02,304	| IOT222 |	If you buy one of those a lot of them are cheaper because they use as a BRZ Wave radio
+EDL	00:32:02,816	00:32:03,584	| IOT222 |	And you're going to need a hug
+EDL	00:32:04,352	00:32:05,632	| IOT222 |	So just bear that in mind if
+EDL	00:32:06,144	00:32:07,936	| IOT222 |	But their battery life will be amazing
+EDL	00:32:08,448	00:32:10,496	| IOT222 |	Has to actually be
+EDL	00:32:11,776	00:32:12,288	| IOT222 |	So
+EDL	00:32:12,800	00:32:13,312	| IOT222 |	Keypad
+EDL	00:32:14,080	00:32:14,848	| IOT222 |	Lots of options
+EDL	00:32:15,360	00:32:16,896	| IOT222 |	Many options
+EDL	00:32:16,896	00:32:19,456	| IOT222 |	For my money if I were doing it all over again
+EDL	00:32:20,224	00:32:22,272	| IOT222 |	I would probably do the Smart Home
+EDL	00:32:22,784	00:32:27,392	| IOT222 |	Whole home detection but I would also before I buy it call my insurance company and be like
+EDL	00:32:27,904	00:32:28,416	| IOT222 |	Hi
+EDL	00:32:28,928	00:32:30,720	| IOT222 |	Is there a way to get a discount if I do this
+EDL	00:32:32,512	00:32:33,024	| IOT222 |	All right
+EDL	00:32:34,304	00:32:37,376	| IOT222 |	That hopefully answers your question Bobby or gives you
+EDL	00:32:37,376	00:32:38,400	| IOT222 |	A lot of options in
+EDL	00:32:38,400	00:32:39,680	| IOT222 |	You might be overwhelmed by them that we're sorry
+EDL	00:32:40,448	00:32:45,312	| IOT222 |	Kiefer hauling and everyone else please give us a call five one two
+EDL	00:32:45,312	00:32:49,408	| IOT222 |	623-7424 and you will be entered to win
+EDL	00:32:49,408	00:32:51,712	| IOT222 |	DIYs sensor pack
+EDL	00:32:51,712	00:32:52,224	| IOT222 |	Camera
+EDL	00:32:52,736	00:32:53,248	| IOT222 |	All right
+EDL	00:32:54,016	00:32:56,320	| IOT222 |	Now I would love for everyone to stay tuned
+EDL	00:32:56,832	00:32:58,112	| IOT222 |	For our guest
+EDL	00:32:58,112	00:32:59,392	| IOT222 |	Who is, destem
+EDL	00:32:59,392	00:33:00,928	| IOT222 |	The CEO of Monarch bio
+EDL	00:33:01,696	00:33:04,256	| IOT222 |	She is going to be talking about how we can
+EDL	00:33:04,256	00:33:08,352	| IOT222 |	It's actually relevant to what we talked about earlier because she's talking about how we can certify
+EDL	00:33:08,864	00:33:10,656	| IOT222 |	Wellness and medical devices
+EDL	00:33:10,656	00:33:11,168	| IOT222 |	Is accurate
+EDL	00:33:11,680	00:33:13,984	| IOT222 |	So these algorithms that were relying on like
+EDL	00:33:14,752	00:33:15,776	| IOT222 |	Body battery
+EDL	00:33:15,776	00:33:17,568	| IOT222 |	They would actually look at that and see
+EDL	00:33:17,568	00:33:19,616	| IOT222 |	How accurate is Porsche in a peer-reviewed
+EDL	00:33:20,640	00:33:22,944	| IOT222 |	So she's going to talk about why we need that
+EDL	00:33:22,944	00:33:24,736	| IOT222 |	The future of medicine and a lot more
+EDL	00:33:25,248	00:33:26,272	| IOT222 |	Stay tuned for her
+EDL	00:33:26,272	00:33:26,784	| IOT222 |	The first
+EDL	00:33:27,296	00:33:29,344	| IOT222 |	IMessage from this we sponsor
+EDL	00:33:29,344	00:33:31,904	| IOT222 |	Dell Technologies
+EDL	00:33:31,904	00:33:38,304	| IOT222 |	Hey everyone we are taking a quick break from The Internet of Things podcast for a message from our sponsor this we sponsor
+EDL	00:33:38,304	00:33:44,704	| IOT222 |	Is Dell Technologies and I have Jason Sheppard who is CTO of iot and Edge adult
+EDL	00:33:44,704	00:33:45,216	| IOT222 |	Technology
+EDL	00:33:45,728	00:33:46,496	| IOT222 |	So json
+EDL	00:33:46,496	00:33:50,592	| IOT222 |	Must we talk about Dell Technologies efforts it was around Edge X Foundry
+EDL	00:33:50,592	00:33:54,688	| IOT222 |	So let's start off with an update about where that is and why it's so important
+EDL	00:33:55,456	00:33:59,296	| IOT222 |	And we took a look at the market actually back in 2015 and
+EDL	00:33:59,296	00:34:01,856	| IOT222 |	We're looking at all the platforms that were proliferating
+EDL	00:34:01,856	00:34:02,880	| IOT222 |	And saw this problem
+EDL	00:34:03,392	00:34:08,768	| IOT222 |	You're shaping where there was this need to have more flexibility and how Solutions were deployed taking the
+EDL	00:34:08,768	00:34:11,072	| IOT222 |	Cloud native principles at UC
+EDL	00:34:12,608	00:34:18,752	| IOT222 |	Cloud architectures in extending them to the edge where you have the ability to kind of rapidly deploy different functions around
+EDL	00:34:19,264	00:34:20,288	| IOT222 |	You're going to common element
+EDL	00:34:20,288	00:34:24,128	| IOT222 |	Ajax for iot as what what Android did for mobile
+EDL	00:34:24,128	00:34:25,664	| IOT222 |	Anybody to create a Marketplace
+EDL	00:34:25,664	00:34:26,944	| IOT222 |	Commercial value add
+EDL	00:34:26,944	00:34:31,552	| IOT222 |	Around just enough in terms of open apis to bind together all the inherently
+EDL	00:34:31,552	00:34:32,320	| IOT222 |	Heterogeneous
+EDL	00:34:32,320	00:34:38,720	| IOT222 |	Components within iot we architect that it based on feedback from a bunch of Partners and customers then put it into the underneath
+EDL	00:34:38,720	00:34:41,792	| IOT222 |	Open source as a project
+EDL	00:34:41,792	00:34:43,840	| IOT222 |	That was the initial goal
+EDL	00:34:43,840	00:34:45,376	| IOT222 |	Come up with the right architecture
+EDL	00:34:45,376	00:34:46,144	| IOT222 |	Collaborate
+EDL	00:34:46,144	00:34:49,472	| IOT222 |	Neutral open sores and then once it gets going
+EDL	00:34:49,472	00:34:50,752	| IOT222 |	Then you use that
+EDL	00:34:50,752	00:34:51,776	| IOT222 |	As a vehicle to create
+EDL	00:34:52,288	00:34:54,080	| IOT222 |	Commercial value-add on top of it
+EDL	00:34:54,080	00:34:58,432	| IOT222 |	Can you imagine the internet without opening our ability to Ajax is really about creating that open
+EDL	00:34:58,432	00:34:59,968	| IOT222 |	Baseline that then you can
+EDL	00:34:59,968	00:35:01,504	| IOT222 |	Start building value
+EDL	00:35:01,504	00:35:02,528	| IOT222 |	Without Reinventing the wheel
+EDL	00:35:03,040	00:35:03,808	| IOT222 |	Excellent
+EDL	00:35:03,808	00:35:06,880	| IOT222 |	All right so what is Dell strategy with Ajax
+EDL	00:35:06,880	00:35:09,952	| IOT222 |	And how does that relate to your openedge stack
+EDL	00:35:10,720	00:35:12,256	| IOT222 |	Yes our strategy is
+EDL	00:35:12,256	00:35:13,792	| IOT222 |	Get that going but no
+EDL	00:35:13,792	00:35:15,584	| IOT222 |	Foundationally we're about
+EDL	00:35:15,584	00:35:21,728	| IOT222 |	Creating consistent infrastructure I always say we build the guts or Partners can bring the glory we want that's open ecosystem
+EDL	00:35:21,728	00:35:23,776	| IOT222 |	Attached to that so that you can bend
+EDL	00:35:23,776	00:35:24,544	| IOT222 |	Scale-out
+EDL	00:35:24,544	00:35:25,568	| IOT222 |	Relationships
+EDL	00:35:25,568	00:35:27,104	| IOT222 |	You can have special breed solution
+EDL	00:35:27,104	00:35:31,456	| IOT222 |	Come together around a common core you will attach our Security Management tools
+EDL	00:35:31,456	00:35:37,856	| IOT222 |	You can use them stand alone but menus with Ajax and them safe ati's you get the benefit
+EDL	00:35:37,856	00:35:42,208	| IOT222 |	Defender neutral ecosystem
+EDL	00:35:42,208	00:35:43,488	| IOT222 |	So what is the status
+EDL	00:35:43,488	00:35:44,000	| IOT222 |	Imagix
+EDL	00:35:45,280	00:35:47,584	| IOT222 |	We're going one now though it's going commercial
+EDL	00:35:47,584	00:35:50,912	| IOT222 |	Yeah there's actually companies that are basing business models around
+EDL	00:35:50,912	00:35:57,312	| IOT222 |	You a jacksepticeye attack as an example is a company that's creating a redbad model around offering commercially supported
+EDL	00:35:57,312	00:36:03,456	| IOT222 |	Versions of it then you have companies like redis redis Edge is a database optimized for time series data but then they saw
+EDL	00:36:03,968	00:36:05,760	| IOT222 |	That's also got support for tensorflow
+EDL	00:36:05,760	00:36:07,808	| IOT222 |	Analytics Dave made a decision token
+EDL	00:36:07,808	00:36:08,576	| IOT222 |	How to plug into a TV
+EDL	00:36:09,088	00:36:15,488	| IOT222 |	Replace the existing database in there what's credits if you'd like what Pros out there publicly talking about using Ajax there's a
+EDL	00:36:15,488	00:36:20,608	| IOT222 |	Initiative sponsored by Intel
+EDL	00:36:20,608	00:36:21,632	| IOT222 |	Downloader
+EDL	00:36:21,632	00:36:25,216	| IOT222 |	Going up very quickly of April it was 2500 downloads
+EDL	00:36:25,216	00:36:30,336	| IOT222 |	You're made 4500 a miniature starting a ramp so we're definitely seeing that ramp it out in the market
+EDL	00:36:30,848	00:36:34,944	| IOT222 |	Excellent and where can we go to find out more about Dell Technologies
+EDL	00:36:34,944	00:36:35,968	| IOT222 |	And the open Edge
+EDL	00:36:36,992	00:36:39,808	| IOT222 |	Dell Technologies. Com coyote
+EDL	00:36:39,808	00:36:42,880	| IOT222 |	A good starting point and then there's been some links off of there to go learn more
+EDL	00:36:49,536	00:36:55,168	| IOT222 |	Hey everyone welcome back to the Internet of Things podcast this is your host Stacey Higginbotham
+EDL	00:36:55,168	00:36:56,448	| IOT222 |	And today's guest is
+EDL	00:36:56,960	00:37:00,544	| IOT222 |	Comedy stem who is CEO and founder at
+EDL	00:37:00,544	00:37:01,824	| IOT222 |	Monarc bionetworks
+EDL	00:37:02,336	00:37:04,384	| IOT222 |	Hi, how are you doing
+EDL	00:37:04,384	00:37:06,432	| IOT222 |	Great thanks for having me sleepy
+EDL	00:37:06,432	00:37:09,760	| IOT222 |	Oh I'm really excited because we're going to talk about one of my favorite
+EDL	00:37:10,272	00:37:13,600	| IOT222 |	Topics which is this concept of digital snake oil
+EDL	00:37:13,600	00:37:15,136	| IOT222 |	And the idea that we have
+EDL	00:37:15,136	00:37:19,488	| IOT222 |	All of these companies and devices that are coming onto the market that
+EDL	00:37:19,488	00:37:20,256	| IOT222 |	Say
+EDL	00:37:20,256	00:37:23,072	| IOT222 |	Hey I'm going to make your life better make you healthier
+EDL	00:37:23,072	00:37:27,424	| IOT222 |	As consumers we really don't have a sense of how accurate any of these are and
+EDL	00:37:27,424	00:37:30,496	| IOT222 |	We don't understand what your doctor may not want her Fitbit
+EDL	00:37:31,008	00:37:31,776	| IOT222 |	Random
+EDL	00:37:31,776	00:37:33,056	| IOT222 |	Other data from
+EDL	00:37:33,056	00:37:34,848	| IOT222 |	Connected mattress or something
+EDL	00:37:34,848	00:37:37,408	| IOT222 |	So you're going to tell us a little bit about
+EDL	00:37:37,408	00:37:38,688	| IOT222 |	Why things are the way they are
+EDL	00:37:39,200	00:37:41,504	| IOT222 |	So let's first get started with
+EDL	00:37:41,504	00:37:43,040	| IOT222 |	Your background because
+EDL	00:37:43,040	00:37:45,088	| IOT222 |	It ties directly into why you founded
+EDL	00:37:46,880	00:37:49,440	| IOT222 |	I think they see what I actually am
+EDL	00:37:49,440	00:37:53,536	| IOT222 |	I'm from the pharmaceutical backgrounds I have been a clinical researcher
+EDL	00:37:53,536	00:37:58,400	| IOT222 |	Story about 20-plus years across multiple pharmaceutical companies and Ivory
+EDL	00:37:59,424	00:38:02,752	| IOT222 |	Actually execute clinical trials for the development of new treatments
+EDL	00:38:05,056	00:38:06,592	| IOT222 |	And about
+EDL	00:38:07,104	00:38:11,200	| IOT222 |	6 years ago I started heading up an Innovations need to figure out how could we actually
+EDL	00:38:13,760	00:38:15,552	| IOT222 |	They make up a good 70
+EDL	00:38:19,136	00:38:20,160	| IOT222 |	Billion dollars
+EDL	00:38:20,160	00:38:25,024	| IOT222 |	And as I was doing this I realize that you know what
+EDL	00:38:25,536	00:38:27,840	| IOT222 |	We do in clinical trials as we generate
+EDL	00:38:27,840	00:38:34,240	| IOT222 |	And to ensure the safety and efficacy of a drug that goes out on the market
+EDL	00:38:34,240	00:38:35,008	| IOT222 |	Realizes that we
+EDL	00:38:35,008	00:38:37,312	| IOT222 |	Haley
+EDL	00:38:37,312	00:38:38,080	| IOT222 |	Generated
+EDL	00:38:38,080	00:38:38,592	| IOT222 |	In the clinic
+EDL	00:38:39,104	00:38:41,408	| IOT222 |	And all of these new wearable
+EDL	00:38:41,408	00:38:47,296	| IOT222 |	Sensors that are coming out the possibility of collecting data in between the clinic
+EDL	00:38:47,296	00:38:53,696	| IOT222 |	Which is completely new set of data that we've never had before that could really help us understand how
+EDL	00:38:53,696	00:38:54,464	| IOT222 |	Outpatient
+EDL	00:38:54,464	00:38:55,488	| IOT222 |	Arguing
+EDL	00:38:55,488	00:38:58,560	| IOT222 |	In between clinic visits in the context of Their Own
+EDL	00:38:59,584	00:39:00,352	| IOT222 |	Look at me really
+EDL	00:39:00,352	00:39:01,376	| IOT222 |	Excited about
+EDL	00:39:01,376	00:39:04,960	| IOT222 |	The internet of things and all the devices but I also think
+EDL	00:39:04,960	00:39:05,984	| IOT222 |	It's really important
+EDL	00:39:05,984	00:39:07,776	| IOT222 |	Just having a lot of data
+EDL	00:39:07,776	00:39:09,568	| IOT222 |	You actually have to
+EDL	00:39:09,568	00:39:11,872	| IOT222 |	Transform it into evidence
+EDL	00:39:11,872	00:39:13,920	| IOT222 |	But you can trust and that can
+EDL	00:39:13,920	00:39:15,968	| IOT222 |	Julian form
+EDL	00:39:16,480	00:39:18,272	| IOT222 |	Research and treatment of new drug
+EDL	00:39:18,272	00:39:19,552	| IOT222 |	But also how it can
+EDL	00:39:20,064	00:39:21,856	| IOT222 |	Influence
+EDL	00:39:21,856	00:39:23,648	| IOT222 |	Do you use your health care is provided
+EDL	00:39:24,672	00:39:28,768	| IOT222 |	So that's a super tall order let's start there cuz that seems like
+EDL	00:39:29,280	00:39:30,304	| IOT222 |	The core of the issue
+EDL	00:39:30,816	00:39:32,608	| IOT222 |	It sounds like it's a mix of
+EDL	00:39:32,608	00:39:34,400	| IOT222 |	Hey is this device
+EDL	00:39:34,400	00:39:36,192	| IOT222 |	Reliable and accurate
+EDL	00:39:36,192	00:39:36,960	| IOT222 |	Consistent
+EDL	00:39:36,960	00:39:39,008	| IOT222 |	Play probably across a bunch of populations
+EDL	00:39:39,520	00:39:41,056	| IOT222 |	And then the other is
+EDL	00:39:41,056	00:39:43,360	| IOT222 |	Is this device actually useful it
+EDL	00:39:43,360	00:39:45,664	| IOT222 |	Detecting or monitoring a specific
+EDL	00:39:45,664	00:39:46,176	| IOT222 |	Disease
+EDL	00:39:46,944	00:39:48,480	| IOT222 |	That I don't know if there's another site
+EDL	00:39:48,480	00:39:48,992	| IOT222 |	This is there
+EDL	00:39:50,272	00:39:52,320	| IOT222 |	What what starts with devices
+EDL	00:39:52,320	00:39:56,928	| IOT222 |	Cuz I think that's a good way to start and maybe we can use
+EDL	00:39:58,720	00:40:00,768	| IOT222 |	Is we create t-shirt
+EDL	00:40:00,768	00:40:05,120	| IOT222 |	Communities of people that have a condition and
+EDL	00:40:05,120	00:40:06,400	| IOT222 |	Interested in
+EDL	00:40:06,400	00:40:07,936	| IOT222 |	Contributing their data
+EDL	00:40:07,936	00:40:10,752	| IOT222 |	And pulling it together to give better
+EDL	00:40:10,752	00:40:11,264	| IOT222 |	Insight for me
+EDL	00:40:11,776	00:40:15,616	| IOT222 |	So we started a network in idiopathic pulmonary fibrosis
+EDL	00:40:15,616	00:40:17,152	| IOT222 |	And in ITF
+EDL	00:40:17,152	00:40:20,224	| IOT222 |	The way they measure progression
+EDL	00:40:21,760	00:40:22,784	| IOT222 |	A pulmonary function
+EDL	00:40:25,600	00:40:27,648	| IOT222 |	Anthem company is that is divided
+EDL	00:40:27,648	00:40:30,208	| IOT222 |	A parameter which is what measure is your
+EDL	00:40:30,208	00:40:33,792	| IOT222 |	Pasadena
+EDL	00:40:34,816	00:40:35,840	| IOT222 |	Bear
+EDL	00:40:35,840	00:40:38,144	| IOT222 |	Manufacturers that develop devices that could
+EDL	00:40:38,144	00:40:39,424	| IOT222 |	Actually measure that in the
+EDL	00:40:41,984	00:40:42,752	| IOT222 |	Howdy
+EDL	00:40:42,752	00:40:48,384	| IOT222 |	What does FDA cleared 510 K clearance they call it and basically
+EDL	00:40:48,384	00:40:49,920	| IOT222 |	How do you put that
+EDL	00:40:50,432	00:40:51,200	| IOT222 |	Device
+EDL	00:40:51,712	00:40:55,552	| IOT222 |	Consistently measure a person's lung function in the home
+EDL	00:40:55,552	00:40:57,600	| IOT222 |	That's all it tells you how do you use
+EDL	00:40:57,600	00:40:58,624	| IOT222 |	How do you
+EDL	00:40:58,624	00:40:59,648	| IOT222 |	How do you know that
+EDL	00:41:01,440	00:41:02,464	| IOT222 |	Really important
+EDL	00:41:02,464	00:41:03,744	| IOT222 |	We integrate
+EDL	00:41:03,744	00:41:04,256	| IOT222 |	That is
+EDL	00:41:05,024	00:41:05,792	| IOT222 |	Trial
+EDL	00:41:05,792	00:41:08,352	| IOT222 |	And we said we want to know
+EDL	00:41:08,352	00:41:09,120	| IOT222 |	Who is
+EDL	00:41:09,120	00:41:10,656	| IOT222 |	Patience can actually
+EDL	00:41:10,656	00:41:12,448	| IOT222 |	Recently uses device
+EDL	00:41:12,448	00:41:13,728	| IOT222 |	Accurately
+EDL	00:41:14,752	00:41:17,056	| IOT222 |	A measurement that they take from the device
+EDL	00:41:17,056	00:41:18,592	| IOT222 |	And the measurement of
+EDL	00:41:18,592	00:41:20,896	| IOT222 |	Using an in-clinic
+EDL	00:41:20,896	00:41:23,200	| IOT222 |	So I think that's really important
+EDL	00:41:23,200	00:41:27,040	| IOT222 |	To make sure that we're doing trials and research to validate
+EDL	00:41:27,040	00:41:29,088	| IOT222 |	Not that the device work for that it
+EDL	00:41:29,088	00:41:31,136	| IOT222 |	Actually works in the context in which it
+EDL	00:41:31,136	00:41:31,904	| IOT222 |	Going to be
+EDL	00:41:31,904	00:41:35,488	| IOT222 |	Because these things will be used to inform decisions
+EDL	00:41:35,488	00:41:36,512	| IOT222 |	And it's not
+EDL	00:41:36,512	00:41:37,280	| IOT222 |	The same as he
+EDL	00:41:38,304	00:41:39,328	| IOT222 |	Directions
+EDL	00:41:39,840	00:41:42,144	| IOT222 |	Didn't quite work
+EDL	00:41:42,656	00:41:43,936	| IOT222 |	Clinical decision on
+EDL	00:41:43,936	00:41:45,216	| IOT222 |	Treatment
+EDL	00:41:45,216	00:41:45,728	| IOT222 |	It really hurts
+EDL	00:41:46,240	00:41:47,008	| IOT222 |	What's really important
+EDL	00:41:47,520	00:41:48,288	| IOT222 |	That we validate
+EDL	00:41:50,080	00:41:51,872	| IOT222 |	We integrated that device
+EDL	00:41:52,384	00:41:56,735	| IOT222 |	To the trial and we measure the patient using the spirometer from the home
+EDL	00:41:56,735	00:41:59,295	| IOT222 |	As well as he measured that data or week
+EDL	00:41:59,295	00:42:00,319	| IOT222 |	Compared that data
+EDL	00:42:00,319	00:42:02,111	| IOT222 |	The data that we generated in
+EDL	00:42:02,623	00:42:04,159	| IOT222 |	And look for a strong correlation
+EDL	00:42:04,927	00:42:05,951	| IOT222 |	Okay this is interesting
+EDL	00:42:06,463	00:42:06,975	| IOT222 |	Because
+EDL	00:42:07,487	00:42:10,047	| IOT222 |	A spirometer is actually a tool that has been
+EDL	00:42:10,047	00:42:10,559	| IOT222 |	Used for
+EDL	00:42:11,071	00:42:12,095	| IOT222 |	Forever
+EDL	00:42:12,095	00:42:17,983	| IOT222 |	But this is an established medical device so the only new thing here was connecting it and I'm making sure that
+EDL	00:42:17,983	00:42:20,287	| IOT222 |	Patients could use it accurately
+EDL	00:42:20,287	00:42:21,055	| IOT222 |	In the home
+EDL	00:42:21,055	00:42:21,823	| IOT222 |	Correct
+EDL	00:42:21,823	00:42:24,639	| IOT222 |	Another aspect of it
+EDL	00:42:24,639	00:42:25,407	| IOT222 |	Infinite
+EDL	00:42:25,407	00:42:27,967	| IOT222 |	Spirometers I'm you have to do a lot of calibration
+EDL	00:42:27,967	00:42:31,807	| IOT222 |	So even in clinical trials when I've used in clinics
+EDL	00:42:36,415	00:42:37,951	| IOT222 |	Providence actually calibrate
+EDL	00:42:37,951	00:42:43,071	| IOT222 |	And then the patient immediately
+EDL	00:42:43,071	00:42:44,351	| IOT222 |	Don't give them Direct
+EDL	00:42:44,351	00:42:47,167	| IOT222 |	Feedback whether they use the device right and then the data gets
+EDL	00:42:50,495	00:42:51,263	| IOT222 |	Awesome
+EDL	00:42:51,263	00:42:54,335	| IOT222 |	Savannah is very different than me sayings
+EDL	00:42:54,335	00:42:58,943	| IOT222 |	One of my products that I really think it would be perfect for iot in the home in for medicine
+EDL	00:42:59,455	00:43:01,247	| IOT222 |	Would be like a device were
+EDL	00:43:01,247	00:43:03,039	| IOT222 |	When my child has
+EDL	00:43:03,039	00:43:03,807	| IOT222 |	Cost
+EDL	00:43:03,807	00:43:05,855	| IOT222 |	I could have her coffin to my
+EDL	00:43:05,855	00:43:08,415	| IOT222 |	Amazon Echo for example and have
+EDL	00:43:08,415	00:43:10,207	| IOT222 |	The AI on the device say
+EDL	00:43:10,207	00:43:10,975	| IOT222 |	Oh
+EDL	00:43:10,975	00:43:14,303	| IOT222 |	Is totally something you should go to the doctor right away or that sounds like
+EDL	00:43:14,303	00:43:15,327	| IOT222 |	The common cold
+EDL	00:43:15,327	00:43:16,095	| IOT222 |	Don't stress Jesse
+EDL	00:43:16,607	00:43:18,143	| IOT222 |	I lived in fear of my daughter getting
+EDL	00:43:19,935	00:43:20,447	| IOT222 |	Terrifying
+EDL	00:43:22,239	00:43:23,007	| IOT222 |	But I'm a little weird
+EDL	00:43:24,031	00:43:30,431	| IOT222 |	So what happens if you have an entirely new device that maybe isn't a medical device or if you want to bring some
+EDL	00:43:30,431	00:43:34,527	| IOT222 |	Something like a common wearable or an Amazon Echo or something else
+EDL	00:43:34,527	00:43:35,551	| IOT222 |	Into
+EDL	00:43:35,551	00:43:36,831	| IOT222 |	Netty clinical testing
+EDL	00:43:36,831	00:43:39,135	| IOT222 |	What my thought process look like or what needs to have
+EDL	00:43:40,159	00:43:41,951	| IOT222 |	Or maybe it won't happen at all cuz that's crazy
+EDL	00:43:42,719	00:43:49,119	| IOT222 |	No no no it's really important actually we're starting to introduce more of these devices into clinical trial
+EDL	00:43:49,119	00:43:52,703	| IOT222 |	Because the reality is more more
+EDL	00:43:52,703	00:43:54,751	| IOT222 |	Then bringing it into the doctor and saying
+EDL	00:43:55,263	00:43:56,543	| IOT222 |	So what do you think of this data
+EDL	00:44:02,431	00:44:03,455	| IOT222 |	Clinical trials
+EDL	00:44:03,455	00:44:05,759	| IOT222 |	My experience has been right
+EDL	00:44:06,527	00:44:08,063	| IOT222 |	Future right now
+EDL	00:44:08,063	00:44:12,159	| IOT222 |	We need to start introducing devices and doing research
+EDL	00:44:12,671	00:44:14,207	| IOT222 |	In the same way that Keras
+EDL	00:44:14,719	00:44:18,303	| IOT222 |	An example of how we what I've previously done in
+EDL	00:44:18,303	00:44:21,631	| IOT222 |	Introducing somebody's wearable so for example we had to study
+EDL	00:44:21,631	00:44:22,399	| IOT222 |	For hemophilia
+EDL	00:44:22,399	00:44:27,775	| IOT222 |	But one of the challenges with haemophilia is people accommodate to their disease
+EDL	00:44:27,775	00:44:29,311	| IOT222 |	Afraid they're going to get
+EDL	00:44:29,311	00:44:30,847	| IOT222 |	Bleed for this
+EDL	00:44:30,847	00:44:31,615	| IOT222 |	Moving around alot
+EDL	00:44:32,895	00:44:36,223	| IOT222 |	Activities and so forth and so way to measure the
+EDL	00:44:36,223	00:44:41,087	| IOT222 |	The impact on the quality of life typically what we've done is me to ask questions
+EDL	00:44:42,879	00:44:45,951	| IOT222 |	These are very no they're not very objective
+EDL	00:44:46,463	00:44:47,999	| IOT222 |	Subjective what the patient might be
+EDL	00:44:52,863	00:44:54,911	| IOT222 |	Their activity very possibly
+EDL	00:44:54,911	00:44:55,423	| IOT222 |	Remind
+EDL	00:44:55,935	00:44:57,983	| IOT222 |	Tasty and we actually did see a difference
+EDL	00:44:57,983	00:44:59,263	| IOT222 |	Impatient
+EDL	00:44:59,263	00:45:01,055	| IOT222 |	They took the treatment and they had left
+EDL	00:45:01,567	00:45:02,335	| IOT222 |	Bleed
+EDL	00:45:02,335	00:45:04,127	| IOT222 |	They became more confident
+EDL	00:45:04,127	00:45:05,407	| IOT222 |	Actually became more active
+EDL	00:45:05,919	00:45:06,943	| IOT222 |	The Weeknd
+EDL	00:45:06,943	00:45:08,991	| IOT222 |	Actively measure now
+EDL	00:45:08,991	00:45:10,783	| IOT222 |	That impact outside of the
+EDL	00:45:11,295	00:45:12,575	| IOT222 |	In their daily life
+EDL	00:45:12,575	00:45:14,111	| IOT222 |	That's a powerful way to
+EDL	00:45:14,111	00:45:14,623	| IOT222 |	Did you
+EDL	00:45:15,391	00:45:19,999	| IOT222 |	That is awesome and so when you were doing that how did you have to
+EDL	00:45:19,999	00:45:21,791	| IOT222 |	I guess evaluate the Fitbit
+EDL	00:45:21,791	00:45:22,559	| IOT222 |	4
+EDL	00:45:22,559	00:45:24,095	| IOT222 |	Was it an actual Fitbit or what
+EDL	00:45:24,095	00:45:25,631	| IOT222 |	Was it something else
+EDL	00:45:26,399	00:45:27,167	| IOT222 |	When did the variety
+EDL	00:45:29,983	00:45:31,263	| IOT222 |	I think it's a matter of
+EDL	00:45:32,031	00:45:33,823	| IOT222 |	Visioning what you want
+EDL	00:45:34,335	00:45:35,359	| IOT222 |	If you need
+EDL	00:45:35,871	00:45:37,663	| IOT222 |	Really precise measurement
+EDL	00:45:38,687	00:45:41,247	| IOT222 |	Often times what you'll do with your pride of validate
+EDL	00:45:41,759	00:45:44,319	| IOT222 |	The measurement in an earlier trial for that
+EDL	00:45:44,319	00:45:45,599	| IOT222 |	You can use it in a
+EDL	00:45:45,599	00:45:50,975	| IOT222 |	Registration trial for example
+EDL	00:45:52,511	00:45:53,791	| IOT222 |	But if you wanted to
+EDL	00:45:53,791	00:45:57,631	| IOT222 |	So just depends on what the is it a primary endpoint of the secondary
+EDL	00:45:58,911	00:46:00,447	| IOT222 |	War of the
+EDL	00:46:00,447	00:46:01,983	| IOT222 |	Impact and quality of life
+EDL	00:46:01,983	00:46:03,519	| IOT222 |	Singer going to use that data to
+EDL	00:46:04,031	00:46:05,055	| IOT222 |	Discussion
+EDL	00:46:05,055	00:46:07,615	| IOT222 |	Around getting reimbursed for that drug
+EDL	00:46:07,615	00:46:08,895	| IOT222 |	Because it has a Major Impact
+EDL	00:46:09,407	00:46:14,015	| IOT222 |	On the quality of life of a patient and their productivity depends on how you're going to use it
+EDL	00:46:14,527	00:46:15,551	| IOT222 |	As to what grade
+EDL	00:46:17,087	00:46:18,367	| IOT222 |	When you go to different devices
+EDL	00:46:19,903	00:46:20,927	| IOT222 |	Tuesday
+EDL	00:46:20,927	00:46:24,511	| IOT222 |	Babe I'm developing something where I'm going to encourage my
+EDL	00:46:24,511	00:46:25,279	| IOT222 |	Inition
+EDL	00:46:25,279	00:46:26,047	| IOT222 |	2
+EDL	00:46:26,047	00:46:27,071	| IOT222 |	Monitor Act
+EDL	00:46:27,071	00:46:30,911	| IOT222 |	Cavity in the patient and you want them to not have to go by
+EDL	00:46:30,911	00:46:31,679	| IOT222 |	Xiaomi devices
+EDL	00:46:31,679	00:46:34,239	| IOT222 |	You want to use something as commercially available
+EDL	00:46:34,239	00:46:35,519	| IOT222 |	A commonly used
+EDL	00:46:35,519	00:46:36,799	| IOT222 |	Kind of depends
+EDL	00:46:36,799	00:46:38,591	| IOT222 |	That makes a lot of sense
+EDL	00:46:38,591	00:46:42,687	| IOT222 |	Imagine you could cut costs and boost participation if you had something like
+EDL	00:46:42,687	00:46:43,455	| IOT222 |	Hey
+EDL	00:46:43,455	00:46:45,247	| IOT222 |	If you have an Apple Watch or Fitbit
+EDL	00:46:45,247	00:46:46,271	| IOT222 |	You're wearing what I need
+EDL	00:46:48,063	00:46:48,831	| IOT222 |	So
+EDL	00:46:48,831	00:46:49,855	| IOT222 |	Exactly
+EDL	00:46:49,855	00:46:50,879	| IOT222 |	And that broadens act
+EDL	00:46:52,415	00:46:53,695	| IOT222 |	Participate in the trial
+EDL	00:46:53,695	00:46:58,815	| IOT222 |	Which gives more diversity of patients which that makes the data more generalized
+EDL	00:46:58,815	00:46:59,327	| IOT222 |	Market
+EDL	00:47:00,095	00:47:02,143	| IOT222 |	Although then we have to deal with like complying
+EDL	00:47:02,143	00:47:06,239	| IOT222 |	Tissues cuz I can't be the only person who's been dissatisfied with their step count
+EDL	00:47:06,239	00:47:08,031	| IOT222 |	10 digit off to their kid to be like
+EDL	00:47:08,543	00:47:09,311	| IOT222 |	Hey
+EDL	00:47:09,311	00:47:10,079	| IOT222 |	Take this for a while
+EDL	00:47:10,591	00:47:11,615	| IOT222 |	I know I'm only lying to me
+EDL	00:47:12,383	00:47:14,431	| IOT222 |	But is that something people
+EDL	00:47:14,431	00:47:17,247	| IOT222 |	About when they're thinking about
+EDL	00:47:17,247	00:47:18,527	| IOT222 |	Medical testing
+EDL	00:47:20,319	00:47:23,391	| IOT222 |	Absolutely looking at compliance and adherence
+EDL	00:47:23,391	00:47:24,927	| IOT222 |	Remembering
+EDL	00:47:24,927	00:47:27,231	| IOT222 |	Clinical research and clinical trials
+EDL	00:47:27,231	00:47:30,815	| IOT222 |	More compliance in that than they are in the real world
+EDL	00:47:30,815	00:47:33,119	| IOT222 |	Staying face to figure out okay
+EDL	00:47:33,119	00:47:34,399	| IOT222 |	This is the level of
+EDL	00:47:34,399	00:47:35,167	| IOT222 |	Science Theater
+EDL	00:47:35,167	00:47:37,471	| IOT222 |	In the trial will be achieved
+EDL	00:47:37,471	00:47:38,495	| IOT222 |	Same level
+EDL	00:47:38,495	00:47:40,799	| IOT222 |	In the real world and that's why it's really important
+EDL	00:47:41,311	00:47:43,359	| IOT222 |	Even after we do these trials
+EDL	00:47:43,359	00:47:44,895	| IOT222 |	But we continue trial
+EDL	00:47:46,175	00:47:47,199	| IOT222 |	Do things
+EDL	00:47:47,199	00:47:49,503	| IOT222 |	I need a bring your own device
+EDL	00:47:49,503	00:47:50,783	| IOT222 |	Wearable
+EDL	00:47:51,295	00:47:54,879	| IOT222 |	Because then we really understand what happens in the context
+EDL	00:47:56,159	00:47:58,207	| IOT222 |	All right so you had mentioned earlier
+EDL	00:47:58,719	00:48:01,023	| IOT222 |	That clinical trials are kind of
+EDL	00:48:01,023	00:48:02,047	| IOT222 |	The future of Medicine
+EDL	00:48:02,815	00:48:08,959	| IOT222 |	Where were heading so I am curious with what you're doing today
+EDL	00:48:08,959	00:48:12,287	| IOT222 |	Clinical trials where do you think the future of medicine is heading
+EDL	00:48:12,799	00:48:16,383	| IOT222 |	At Monarch her vision is that research is integrated into
+EDL	00:48:16,383	00:48:16,895	| IOT222 |	I could care
+EDL	00:48:17,407	00:48:18,431	| IOT222 |	And that we have a
+EDL	00:48:18,431	00:48:22,527	| IOT222 |	Early Learning health systems Dynamic and adopt
+EDL	00:48:22,527	00:48:23,807	| IOT222 |	So you're not we
+EDL	00:48:24,575	00:48:27,903	| IOT222 |	Have a visit with your doctor you're generating data and
+EDL	00:48:28,927	00:48:29,951	| IOT222 |	Informing you
+EDL	00:48:29,951	00:48:33,535	| IOT222 |	In that same way but constantly integrating Research into care
+EDL	00:48:34,047	00:48:38,399	| IOT222 |	Then when learning very quickly and you Solutions are being adopted very quickly
+EDL	00:48:38,911	00:48:41,215	| IOT222 |	So to give you an example
+EDL	00:48:41,215	00:48:42,495	| IOT222 |	When you
+EDL	00:48:42,495	00:48:43,775	| IOT222 |	Medical
+EDL	00:48:43,775	00:48:44,543	| IOT222 |	Device
+EDL	00:48:46,079	00:48:47,359	| IOT222 |	Is approved
+EDL	00:48:47,359	00:48:48,639	| IOT222 |	It's hate another
+EDL	00:48:49,151	00:48:52,479	| IOT222 |	7 years or to actually be adopted in integrated
+EDL	00:48:53,759	00:48:55,807	| IOT222 |	Unbelievable right
+EDL	00:48:56,831	00:48:58,111	| IOT222 |	There is a huge guy
+EDL	00:48:58,623	00:49:00,927	| IOT222 |	Between when something isn't approved
+EDL	00:49:01,439	00:49:02,463	| IOT222 |	An integrated is
+EDL	00:49:02,463	00:49:04,511	| IOT222 |	Hair We imagine a world
+EDL	00:49:04,511	00:49:06,047	| IOT222 |	Where is your console
+EDL	00:49:06,047	00:49:08,607	| IOT222 |	Silly integrating Research into care
+EDL	00:49:08,607	00:49:11,935	| IOT222 |	Then you're going to be able to accelerate that adoption
+EDL	00:49:12,703	00:49:13,983	| IOT222 |	Inhibition
+EDL	00:49:13,983	00:49:18,335	| IOT222 |	More and more clinical decisions will be very data-driven
+EDL	00:49:18,847	00:49:19,871	| IOT222 |	Because
+EDL	00:49:19,871	00:49:23,455	| IOT222 |	It's almost like every decision you're making as a trial of Anna
+EDL	00:49:24,223	00:49:26,271	| IOT222 |	Because you've got so much data and your
+EDL	00:49:26,271	00:49:27,807	| IOT222 |	And as we get two more
+EDL	00:49:27,807	00:49:29,087	| IOT222 |	Personalized
+EDL	00:49:29,087	00:49:30,367	| IOT222 |	And customized
+EDL	00:49:30,367	00:49:31,135	| IOT222 |	Madison
+EDL	00:49:31,647	00:49:33,183	| IOT222 |	That's the way we need to operate
+EDL	00:49:33,695	00:49:35,487	| IOT222 |	I like it alright so
+EDL	00:49:35,487	00:49:37,279	| IOT222 |	If we're moving towards this world
+EDL	00:49:37,791	00:49:41,887	| IOT222 |	I know that we've been talking about what you call is regulatory grade evidence
+EDL	00:49:42,399	00:49:44,191	| IOT222 |	But what else do we need it feels like
+EDL	00:49:44,703	00:49:47,263	| IOT222 |	We might need our physicians to
+EDL	00:49:47,263	00:49:48,799	| IOT222 |	To change a little bit
+EDL	00:49:48,799	00:49:51,359	| IOT222 |	I don't know if there's much we can do his patients but
+EDL	00:49:51,871	00:49:52,639	| IOT222 |	Tell me
+EDL	00:49:52,639	00:49:53,151	| IOT222 |	Where the hoes
+EDL	00:49:54,431	00:49:58,527	| IOT222 |	Well I think it's huge huge hole that we have right now is
+EDL	00:49:58,527	00:50:00,575	| IOT222 |	With what major in
+EDL	00:50:00,575	00:50:01,855	| IOT222 |	Across the US
+EDL	00:50:01,855	00:50:05,695	| IOT222 |	Is digitizing all of our health records and there's been a lot of work
+EDL	00:50:06,207	00:50:08,767	| IOT222 |	All of that Digital Data is
+EDL	00:50:08,767	00:50:09,791	| IOT222 |	Sitting in silos
+EDL	00:50:10,815	00:50:11,839	| IOT222 |	It's really important
+EDL	00:50:11,839	00:50:13,375	| IOT222 |	In order for
+EDL	00:50:13,375	00:50:15,423	| IOT222 |	Really GATRA bus evidence
+EDL	00:50:15,423	00:50:19,775	| IOT222 |	We need to get larger pool the data and people need to share their
+EDL	00:50:19,775	00:50:20,799	| IOT222 |	In a way that
+EDL	00:50:20,799	00:50:24,127	| IOT222 |	For the greater good and we have to figure out how do we do that
+EDL	00:50:25,151	00:50:27,967	| IOT222 |	Client way so that side to see isn't walk
+EDL	00:50:27,967	00:50:29,247	| IOT222 |	As well as
+EDL	00:50:29,247	00:50:32,575	| IOT222 |	That we we can have Innovations on top of that the
+EDL	00:50:33,599	00:50:39,999	| IOT222 |	Spell is not the it I think we have to get over the river hold the date
+EDL	00:50:39,999	00:50:42,559	| IOT222 |	Do with that data that makes the difference
+EDL	00:50:42,559	00:50:43,583	| IOT222 |	We need to
+EDL	00:50:43,583	00:50:46,399	| IOT222 |	Owning data to accessing data
+EDL	00:50:46,399	00:50:47,423	| IOT222 |	And sharing data
+EDL	00:50:48,447	00:50:49,471	| IOT222 |	So I think this is
+EDL	00:50:49,471	00:50:49,983	| IOT222 |	Awesome
+EDL	00:50:50,751	00:50:53,055	| IOT222 |	Except I read a story probably
+EDL	00:50:53,567	00:50:58,175	| IOT222 |	Probably a couple months back about it was a CPAP machine that ensures or paying for
+EDL	00:50:58,175	00:50:58,943	| IOT222 |	And
+EDL	00:50:58,943	00:51:02,527	| IOT222 |	Ensures were gathering data for these connectors at machines
+EDL	00:51:02,527	00:51:06,111	| IOT222 |	And they were looking to see if the patients were actually using it
+EDL	00:51:06,111	00:51:07,391	| IOT222 |	And if they weren't
+EDL	00:51:07,391	00:51:08,159	| IOT222 |	They work
+EDL	00:51:08,159	00:51:11,231	| IOT222 |	Cutting off insurance payments for the CPAP machine rental
+EDL	00:51:11,231	00:51:13,023	| IOT222 |	In one hand I get it
+EDL	00:51:13,023	00:51:15,327	| IOT222 |	You don't want to pay for something that someone's night
+EDL	00:51:15,327	00:51:16,095	| IOT222 |	Using
+EDL	00:51:16,095	00:51:20,959	| IOT222 |	But on the other hand the patients didn't actually realize this was happening nor did their doctors
+EDL	00:51:21,727	00:51:23,007	| IOT222 |	And so I think
+EDL	00:51:23,007	00:51:24,799	| IOT222 |	It's good to talk about privacy
+EDL	00:51:25,311	00:51:27,871	| IOT222 |	It's even better to talk about in the context of
+EDL	00:51:28,383	00:51:33,503	| IOT222 |	How we're going to pay for things and how who's going to have access to data
+EDL	00:51:33,503	00:51:34,271	| IOT222 |	Not just
+EDL	00:51:34,271	00:51:36,575	| IOT222 |	To build a business but even to make kind of
+EDL	00:51:36,575	00:51:37,855	| IOT222 |	Care decisions
+EDL	00:51:37,855	00:51:38,623	| IOT222 |	I don't know if
+EDL	00:51:39,135	00:51:40,927	| IOT222 |	Got any ideas around this but
+EDL	00:51:40,927	00:51:41,695	| IOT222 |	Feel like
+EDL	00:51:41,695	00:51:44,511	| IOT222 |	Feel like we've got to do something before we start implementing
+EDL	00:51:44,511	00:51:45,535	| IOT222 |	Too much data
+EDL	00:51:45,535	00:51:46,303	| IOT222 |	Into the medical Realm
+EDL	00:51:48,607	00:51:50,399	| IOT222 |	I see it's really important
+EDL	00:51:50,399	00:51:55,519	| IOT222 |	Uber transparent on who has access to the data
+EDL	00:52:00,383	00:52:04,991	| IOT222 |	Can you use an interesting example cuz my mother actually using the CPAP machine
+EDL	00:52:04,991	00:52:06,527	| IOT222 |	And she's well aware
+EDL	00:52:06,527	00:52:07,295	| IOT222 |	That
+EDL	00:52:07,295	00:52:07,807	| IOT222 |	She doesn't
+EDL	00:52:09,087	00:52:14,719	| IOT222 |	Benefits get removed or reduced or whatever
+EDL	00:52:14,719	00:52:18,559	| IOT222 |	I put it on for a minimum of 5 hours and then I take it off
+EDL	00:52:19,071	00:52:25,471	| IOT222 |	I like my teacher that is so that you know you don't you don't get hurt
+EDL	00:52:25,471	00:52:26,751	| IOT222 |	But anyway
+EDL	00:52:26,751	00:52:28,799	| IOT222 |	Commission using it for those for 5 hours
+EDL	00:52:31,359	00:52:32,127	| IOT222 |	Got their measure
+EDL	00:52:35,967	00:52:38,015	| IOT222 |	Be more accurate than I think she would have
+EDL	00:52:39,039	00:52:40,831	| IOT222 |	I don't disagree with you that you have
+EDL	00:52:40,831	00:52:46,975	| IOT222 |	There needs to be transparency there needs to be understanding
+EDL	00:52:47,487	00:52:49,279	| IOT222 |	That's happening as a result of
+EDL	00:52:50,559	00:52:54,399	| IOT222 |	That's fair cuz in some cases like I might have no problem
+EDL	00:52:54,399	00:52:57,471	| IOT222 |	Donating my blood testator
+EDL	00:52:57,471	00:52:59,775	| IOT222 |	Echocardiograms or whatever data that might be interesting
+EDL	00:53:00,287	00:53:01,055	| IOT222 |	Josiah
+EDL	00:53:01,055	00:53:04,383	| IOT222 |	I might say yeah I totally want you to have this data for research
+EDL	00:53:04,383	00:53:05,663	| IOT222 |	But I would be
+EDL	00:53:05,663	00:53:12,063	| IOT222 |	Considerably at giving that data to an insurance firm or navy to my Corporation
+EDL	00:53:12,063	00:53:13,599	| IOT222 |	As part of a Wellness Plan
+EDL	00:53:13,599	00:53:15,391	| IOT222 |	I think the raw data
+EDL	00:53:15,391	00:53:17,183	| IOT222 |	Is something that it's not
+EDL	00:53:17,183	00:53:18,975	| IOT222 |	It should be protected because
+EDL	00:53:18,975	00:53:21,023	| IOT222 |	This kind of data can be used to infer some
+EDL	00:53:22,047	00:53:28,191	| IOT222 |	Crazy things in overtime will make more correlations and we will be able to infer a lot more from that day.
+EDL	00:53:28,191	00:53:28,959	| IOT222 |	End
+EDL	00:53:28,959	00:53:32,031	| IOT222 |	I don't think there's a way to put that Genie back in the bottle once it's out
+EDL	00:53:33,311	00:53:37,919	| IOT222 |	Yeah I would agree with you and I think you know if we just be really careful
+EDL	00:53:37,919	00:53:39,455	| IOT222 |	When did Jada goes in 18
+EDL	00:53:42,271	00:53:45,343	| IOT222 |	Verde.
+EDL	00:53:45,343	00:53:47,135	| IOT222 |	Should have the right to deter
+EDL	00:53:47,135	00:53:53,535	| IOT222 |	Hammond where it goes what's interesting is when you're really sick with a life-threatening or chronic debilitating
+EDL	00:53:53,535	00:53:55,071	| IOT222 |	You're more than willing
+EDL	00:53:55,583	00:53:57,119	| IOT222 |	Archer view that data
+EDL	00:53:57,119	00:53:59,167	| IOT222 |	1G distillate in Hope
+EDL	00:53:59,167	00:54:03,775	| IOT222 |	Start a treatment will be developed for yourself or for your your children
+EDL	00:54:03,775	00:54:06,847	| IOT222 |	You just that you had really great care
+EDL	00:54:06,847	00:54:07,871	| IOT222 |	A lot of people would say
+EDL	00:54:07,871	00:54:08,895	| IOT222 |	I had really great
+EDL	00:54:09,407	00:54:11,711	| IOT222 |	I'm going to donate a bunch of money
+EDL	00:54:22,975	00:54:29,375	| IOT222 |	And what about doctors and medical professionals because I know that I come to my daughter and I'll be like here's my
+EDL	00:54:29,375	00:54:30,655	| IOT222 |	My data is there like
+EDL	00:54:30,655	00:54:31,935	| IOT222 |	Please take it out of my
+EDL	00:54:31,935	00:54:32,959	| IOT222 |	My face I don't want it
+EDL	00:54:32,959	00:54:35,007	| IOT222 |	How do we get there
+EDL	00:54:37,055	00:54:39,615	| IOT222 |	Clinically validated but how do we get there
+EDL	00:54:39,615	00:54:43,967	| IOT222 |	And give them the tools to actually be able to use this information in providing care
+EDL	00:54:44,991	00:54:46,015	| IOT222 |	Yeah
+EDL	00:54:46,015	00:54:51,391	| IOT222 |	Synthesizing for research is really important because peer-reviewed validated
+EDL	00:54:51,391	00:54:54,719	| IOT222 |	Sources of information right now or peer review.
+EDL	00:54:59,839	00:55:01,375	| IOT222 |	That the way to
+EDL	00:55:01,375	00:55:02,911	| IOT222 |	Delivered the information
+EDL	00:55:02,911	00:55:06,495	| IOT222 |	Time in a way that there YouTube
+EDL	00:55:06,495	00:55:09,823	| IOT222 |	They're super busy overworked and when
+EDL	00:55:09,823	00:55:11,871	| IOT222 |	Come in with a dataset they're not
+EDL	00:55:13,663	00:55:14,943	| IOT222 |	Many of them want to
+EDL	00:55:16,223	00:55:16,991	| IOT222 |	But
+EDL	00:55:16,991	00:55:17,759	| IOT222 |	They don't have
+EDL	00:55:18,783	00:55:21,087	| IOT222 |	What time is the currency that we have to figure out
+EDL	00:55:22,367	00:55:24,159	| IOT222 |	Is an increased by the
+EDL	00:55:24,159	00:55:25,439	| IOT222 |	Introduction
+EDL	00:55:25,439	00:55:28,255	| IOT222 |	Starting those are two important things to think about is
+EDL	00:55:28,255	00:55:32,351	| IOT222 |	Looking forward delivery evidence through publication vincere review
+EDL	00:55:32,863	00:55:35,679	| IOT222 |	Into that it's integrated into workflow
+EDL	00:55:36,191	00:55:36,703	| IOT222 |	Awesome
+EDL	00:55:37,215	00:55:37,983	| IOT222 |	All right
+EDL	00:55:37,983	00:55:41,823	| IOT222 |	Thank you so much for coming on the show today I feel like
+EDL	00:55:41,823	00:55:43,615	| IOT222 |	I've learned a lot and I'm actually
+EDL	00:55:43,615	00:55:45,407	| IOT222 |	Cautiously optimistic about
+EDL	00:55:45,407	00:55:46,687	| IOT222 |	Advancing Medical Care
+EDL	00:55:47,967	00:55:50,271	| IOT222 |	Incredible
+EDL	00:55:51,551	00:55:57,951	| IOT222 |	With both technology and medicine and patients themselves being more empowered to be part of the
+EDL	00:55:57,951	00:56:00,255	| IOT222 |	Definition
+EDL	00:56:00,255	00:56:06,655	| IOT222 |	That's it for this week thanks so much for listening and remember if you'd like more iot
+EDL	00:56:06,655	00:56:12,799	| IOT222 |	Sign up for my newsletter at Stacey on iot. Cam will see you next week 

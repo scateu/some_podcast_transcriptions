@@ -1,0 +1,1218 @@
+EDL	Record In	Record Out	Clipname	Subtitle
+EDL	00:00:06,656	00:00:12,544	| IOT095 |	Hey everyone welcome to the Internet of Things podcast this is your host
+EDL	00:00:12,544	00:00:14,848	| IOT095 |	Stacey Higginbotham
+EDL	00:00:15,360	00:00:16,384	| IOT095 |	Kevin tofel
+EDL	00:00:16,384	00:00:18,432	| IOT095 |	And we have got an amazing show for
+EDL	00:00:18,432	00:00:18,944	| IOT095 |	Are you today
+EDL	00:00:19,456	00:00:20,480	| IOT095 |	We have
+EDL	00:00:20,480	00:00:21,760	| IOT095 |	New Raspberry Pi
+EDL	00:00:21,760	00:00:24,832	| IOT095 |	We got a new smart home plan from Telstra Australia
+EDL	00:00:25,344	00:00:26,880	| IOT095 |	We've got home for Sonos
+EDL	00:00:27,392	00:00:28,160	| IOT095 |	We've got
+EDL	00:00:28,160	00:00:29,952	| IOT095 |	The future of retail
+EDL	00:00:30,464	00:00:31,744	| IOT095 |	We're going to save some right
+EDL	00:00:33,536	00:00:38,400	| IOT095 |	And if we get to it we will talk about my experience with stringify
+EDL	00:00:38,400	00:00:39,424	| IOT095 |	Which is a
+EDL	00:00:39,424	00:00:39,936	| IOT095 |	Really
+EDL	00:00:40,448	00:00:42,240	| IOT095 |	How cool it's like it if this then that
+EDL	00:00:42,240	00:00:44,800	| IOT095 |	They're going to hate me for saying it but that's what it does
+EDL	00:00:45,568	00:00:49,152	| IOT095 |	We also have a sponsored message from
+EDL	00:00:49,152	00:00:50,432	| IOT095 |	Cast an amazing guest
+EDL	00:00:50,944	00:00:52,480	| IOT095 |	We have three amazing guess
+EDL	00:00:52,480	00:00:53,504	| IOT095 |	I went to an event
+EDL	00:00:53,504	00:00:57,856	| IOT095 |	National instruments and I managed to run into the CEO of PTC
+EDL	00:00:58,880	00:01:00,416	| IOT095 |	The CEO of NRA
+EDL	00:01:00,416	00:01:01,696	| IOT095 |	Alex Devereux
+EDL	00:01:01,696	00:01:02,464	| IOT095 |	And
+EDL	00:01:02,464	00:01:08,352	| IOT095 |	Their head of embedded systems Jamie Smith all of them are coming on the show this week to talk about
+EDL	00:01:08,352	00:01:10,656	| IOT095 |	What is going on in the industrial
+EDL	00:01:10,656	00:01:11,424	| IOT095 |	Internet of Things
+EDL	00:01:12,192	00:01:12,960	| IOT095 |	No
+EDL	00:01:12,960	00:01:14,240	| IOT095 |	Let's go to a quick sponsor message
+EDL	00:01:15,520	00:01:16,544	| IOT095 |	This week sponsor
+EDL	00:01:18,336	00:01:20,640	| IOT095 |	That's right you guys I don't have a sponsor this week
+EDL	00:01:20,640	00:01:27,040	| IOT095 |	But I decided to use the spot to tell you about two things one if you would like to be a sponsor the space
+EDL	00:01:27,040	00:01:33,440	| IOT095 |	You should email Andrew at Coyote podcast.com into if you can't get a
+EDL	00:01:33,440	00:01:39,840	| IOT095 |	Enough internet of things news for me here you should sign up for my newsletter Stacey on iot.
+EDL	00:01:39,840	00:01:42,656	| IOT095 |	It's also my brand new website
+EDL	00:01:42,656	00:01:47,264	| IOT095 |	And sometimes I might surprise you by putting up new content there.
+EDL	00:01:48,288	00:01:53,664	| IOT095 |	If you want more go there go to Stacey on iot, and if you want to advertise
+EDL	00:01:53,664	00:01:54,688	| IOT095 |	Email Andrew
+EDL	00:01:54,688	00:01:56,224	| IOT095 |	Iot podcast
+EDL	00:01:58,784	00:02:00,064	| IOT095 |	All right I think that's it
+EDL	00:02:00,064	00:02:00,832	| IOT095 |	How is my 32nd
+EDL	00:02:01,344	00:02:03,136	| IOT095 |	Back to the show
+EDL	00:02:04,416	00:02:04,928	| IOT095 |	Kevin
+EDL	00:02:05,696	00:02:06,720	| IOT095 |	Weather
+EDL	00:02:06,720	00:02:08,000	| IOT095 |	Let's kick it off with
+EDL	00:02:08,512	00:02:09,280	| IOT095 |	Hi
+EDL	00:02:09,792	00:02:12,608	| IOT095 |	I love pies restaurants Raspberry Pi
+EDL	00:02:13,120	00:02:13,888	| IOT095 |	Yeah
+EDL	00:02:14,400	00:02:18,496	| IOT095 |	So they got a new compute module is this is the
+EDL	00:02:18,496	00:02:20,032	| IOT095 |	Third instance of it I believe
+EDL	00:02:20,800	00:02:21,824	| IOT095 |	I almost feel like it's
+EDL	00:02:21,824	00:02:24,640	| IOT095 |	No cuz they have raspberry they have the original
+EDL	00:02:24,640	00:02:26,176	| IOT095 |	They have one that's better
+EDL	00:02:26,176	00:02:27,456	| IOT095 |	And then they have the zero
+EDL	00:02:27,456	00:02:28,480	| IOT095 |	It's like
+EDL	00:02:28,480	00:02:29,248	| IOT095 |	V bucks
+EDL	00:02:30,016	00:02:30,784	| IOT095 |	And now they have
+EDL	00:02:31,296	00:02:31,808	| IOT095 |	The superpower
+EDL	00:02:32,320	00:02:35,136	| IOT095 |	Right okay so this is that they're calling the compute module
+EDL	00:02:35,136	00:02:37,952	| IOT095 |	3 which is based on the the latest
+EDL	00:02:37,952	00:02:40,000	| IOT095 |	Raspberry Pi the pi 3
+EDL	00:02:40,000	00:02:43,584	| IOT095 |	And what the promising is even though it's all the same
+EDL	00:02:43,584	00:02:48,704	| IOT095 |	Broadcom 2837 processor
+EDL	00:02:48,704	00:02:54,592	| IOT095 |	It is double the RAM and about 10 times CP performance of the original computer module which was
+EDL	00:02:55,104	00:02:57,408	| IOT095 |	2014, three years ago
+EDL	00:02:57,920	00:03:00,480	| IOT095 |	And before the show States I eat you and I were talking like
+EDL	00:03:00,992	00:03:05,088	| IOT095 |	Does a Raspberry Pi as in a compute module does it need more
+EDL	00:03:05,088	00:03:08,672	| IOT095 |	Power if it's going to be safer IRT maybe a person like that
+EDL	00:03:10,208	00:03:12,000	| IOT095 |	Right now maybe not
+EDL	00:03:12,000	00:03:14,560	| IOT095 |	But you raised a good point they're trying to stay
+EDL	00:03:14,560	00:03:16,096	| IOT095 |	I think because
+EDL	00:03:16,608	00:03:17,632	| IOT095 |	As
+EDL	00:03:17,632	00:03:19,936	| IOT095 |	We add more devices to our homes
+EDL	00:03:19,936	00:03:26,336	| IOT095 |	It takes more time to compute what needs to happen all the little steps to turn things on turn things off or adjust based on
+EDL	00:03:26,336	00:03:27,104	| IOT095 |	Uncensored
+EDL	00:03:27,104	00:03:27,872	| IOT095 |	So
+EDL	00:03:27,872	00:03:31,968	| IOT095 |	You know at first I was like I don't really see the point is but based on your thought
+EDL	00:03:31,968	00:03:33,760	| IOT095 |	Makes sense it makes sense to stay ahead of the Curve
+EDL	00:03:34,272	00:03:35,296	| IOT095 |	Yeah I think
+EDL	00:03:35,296	00:03:36,320	| IOT095 |	You're going to buy a hub
+EDL	00:03:36,320	00:03:36,832	| IOT095 |	Probably
+EDL	00:03:37,344	00:03:41,952	| IOT095 |	Every two to three years and for those of us who are shocked you like
+EDL	00:03:42,464	00:03:46,048	| IOT095 |	I don't know you're not no it's it's a computer
+EDL	00:03:46,048	00:03:47,072	| IOT095 |	You wouldn't die if you see
+EDL	00:03:47,584	00:03:48,352	| IOT095 |	Expected to last
+EDL	00:03:49,376	00:03:51,680	| IOT095 |	I think this makes sense
+EDL	00:03:51,680	00:03:54,496	| IOT095 |	I also think if we're going to do more local compute
+EDL	00:03:54,496	00:03:57,312	| IOT095 |	For your house it also makes sense for that
+EDL	00:03:57,312	00:03:58,848	| IOT095 |	In this is actually really
+EDL	00:03:58,848	00:04:01,920	| IOT095 |	Good use case for like the type of arm
+EDL	00:04:02,432	00:04:07,296	| IOT095 |	Chips that are out there cuz these are very small workloads that are going to come in kind of all at once
+EDL	00:04:07,296	00:04:09,344	| IOT095 |	And you're going to want to parse them up if you can
+EDL	00:04:09,344	00:04:10,112	| IOT095 |	I'm not saying
+EDL	00:04:10,880	00:04:11,648	| IOT095 |	Maybe we should have a
+EDL	00:04:12,416	00:04:13,184	| IOT095 |	I don't know
+EDL	00:04:13,184	00:04:14,464	| IOT095 |	Or multi-core
+EDL	00:04:14,976	00:04:16,512	| IOT095 |	That's kind of my thinking he
+EDL	00:04:17,024	00:04:19,327	| IOT095 |	So yeah I'm excited about this Plus
+EDL	00:04:19,839	00:04:20,607	| IOT095 |	There's such a
+EDL	00:04:20,607	00:04:23,935	| IOT095 |	Huge number of people out there building crazy stuff with pies
+EDL	00:04:24,447	00:04:28,543	| IOT095 |	And no one no one in the history of the world has ever said I need less
+EDL	00:04:29,567	00:04:32,639	| IOT095 |	Right right pricing is not bad at all
+EDL	00:04:32,639	00:04:36,223	| IOT095 |	$20 for the compute module 3 they have
+EDL	00:04:36,223	00:04:39,039	| IOT095 |	A lighter version for $25 so
+EDL	00:04:39,039	00:04:41,599	| IOT095 |	You know if you just want to Tinker around
+EDL	00:04:42,111	00:04:43,903	| IOT095 |	How to build your own Hub you some
+EDL	00:04:43,903	00:04:50,303	| IOT095 |	Michelle software open source software
+EDL	00:04:50,303	00:04:53,375	| IOT095 |	And that's that's a beauty the Raspberry Pi always has been and I hope they stick
+EDL	00:04:53,375	00:04:54,143	| IOT095 |	And
+EDL	00:04:54,655	00:04:55,679	| IOT095 |	Just so you know
+EDL	00:04:55,679	00:04:57,471	| IOT095 |	The compute module is
+EDL	00:04:57,471	00:05:01,055	| IOT095 |	Drop-in replacement for the first
+EDL	00:05:02,079	00:05:04,895	| IOT095 |	Incompatible
+EDL	00:05:04,895	00:05:05,919	| IOT095 |	Gosh this
+EDL	00:05:05,919	00:05:07,711	| IOT095 |	Raspberry Pi print server
+EDL	00:05:07,711	00:05:09,503	| IOT095 |	Can you make a pie Sprint soccer actually
+EDL	00:05:09,503	00:05:11,807	| IOT095 |	I did
+EDL	00:05:14,879	00:05:16,671	| IOT095 |	It doesn't make sounds
+EDL	00:05:17,183	00:05:18,975	| IOT095 |	Alright so
+EDL	00:05:19,487	00:05:20,767	| IOT095 |	Yay pie
+EDL	00:05:20,767	00:05:22,047	| IOT095 |	Moving right along
+EDL	00:05:22,047	00:05:22,815	| IOT095 |	2
+EDL	00:05:22,815	00:05:24,351	| IOT095 |	This is some fun
+EDL	00:05:24,351	00:05:26,911	| IOT095 |	News for me because I own six of these
+EDL	00:05:27,423	00:05:29,471	| IOT095 |	And I have been very frustrated
+EDL	00:05:30,239	00:05:35,871	| IOT095 |	But Sonos actually last week and we didn't address it on the show John McFarlane the CEO of Sonos
+EDL	00:05:35,871	00:05:36,639	| IOT095 |	Step down
+EDL	00:05:37,151	00:05:39,711	| IOT095 |	Replace with Patrick spens
+EDL	00:05:39,711	00:05:41,247	| IOT095 |	Has been working at Sonos for a while
+EDL	00:05:41,247	00:05:42,015	| IOT095 |	Is
+EDL	00:05:42,015	00:05:43,807	| IOT095 |	This felt very much like
+EDL	00:05:45,599	00:05:49,695	| IOT095 |	Great move for Sonos I mean
+EDL	00:05:49,695	00:05:52,511	| IOT095 |	He basically he kind of missed the boat on
+EDL	00:05:52,511	00:05:54,303	| IOT095 |	Voice and soda
+EDL	00:05:54,303	00:05:56,607	| IOT095 |	Putting Sonos in the position of being not just the
+EDL	00:05:57,631	00:05:59,679	| IOT095 |	Speakers for the entire car
+EDL	00:05:59,679	00:06:00,447	| IOT095 |	Make it home
+EDL	00:06:00,447	00:06:01,471	| IOT095 |	But also
+EDL	00:06:01,471	00:06:02,239	| IOT095 |	The ears
+EDL	00:06:02,751	00:06:04,287	| IOT095 |	Instead
+EDL	00:06:04,287	00:06:08,127	| IOT095 |	Amazon created the Amazon Echo and boom they took that
+EDL	00:06:08,127	00:06:08,895	| IOT095 |	In
+EDL	00:06:08,895	00:06:09,919	| IOT095 |	For what it's worth
+EDL	00:06:09,919	00:06:10,943	| IOT095 |	Sonos is still a great
+EDL	00:06:11,455	00:06:14,015	| IOT095 |	I'm actually holding onto my Sonos is
+EDL	00:06:14,015	00:06:16,319	| IOT095 |	Cousin sometime this year they're supposed to start work
+EDL	00:06:18,111	00:06:18,879	| IOT095 |	Fingers crossed
+EDL	00:06:19,647	00:06:20,927	| IOT095 |	But Patrick spens
+EDL	00:06:21,695	00:06:22,719	| IOT095 |	Is really up
+EDL	00:06:23,743	00:06:24,767	| IOT095 |	The Voice
+EDL	00:06:24,767	00:06:25,279	| IOT095 |	He is like
+EDL	00:06:25,791	00:06:31,167	| IOT095 |	We are doing it we are not going to do it ourselves we are going to work with others Sonos has always been really good at playing it
+EDL	00:06:31,167	00:06:31,935	| IOT095 |	Ecosystem
+EDL	00:06:32,447	00:06:35,519	| IOT095 |	It originally came out with like this vision of being like
+EDL	00:06:36,287	00:06:42,687	| IOT095 |	We want to be the best darn internet-connected speaker ever so they never tried to launch their own music service to compete with other
+EDL	00:06:42,687	00:06:45,503	| IOT095 |	Mother's Day just wanted to make all of your existing Music Services
+EDL	00:06:47,039	00:06:47,807	| IOT095 |	So
+EDL	00:06:47,807	00:06:49,343	| IOT095 |	Hopefully that's the tact
+EDL	00:06:49,343	00:06:52,415	| IOT095 |	They take invoice I think they actually could have done their own
+EDL	00:06:52,415	00:06:53,439	| IOT095 |	Voice thing but now it's
+EDL	00:06:53,951	00:06:54,719	| IOT095 |	Too late
+EDL	00:06:54,719	00:06:55,231	| IOT095 |	So
+EDL	00:06:55,999	00:06:57,535	| IOT095 |	You know we'll see if it's
+EDL	00:06:57,535	00:06:59,071	| IOT095 |	The way forward for them I guess
+EDL	00:06:59,839	00:07:06,239	| IOT095 |	Yeah I wonder I mean it doesn't make sense for them to kind of create their own voice interface when there are options out there
+EDL	00:07:06,239	00:07:10,335	| IOT095 |	And my daughter have been talking to Amazon and payment amounts anything
+EDL	00:07:10,847	00:07:13,663	| IOT095 |	That may be the way to go to use the
+EDL	00:07:14,175	00:07:16,223	| IOT095 |	Voice services from from Amazon
+EDL	00:07:16,223	00:07:22,623	| IOT095 |	And it's kind of interesting yet I don't know if you caught this news or do we talked about it last week that Huawei actually has a phone with
+EDL	00:07:22,623	00:07:25,695	| IOT095 |	Amazon voice services in it Prince all is well
+EDL	00:07:25,695	00:07:29,791	| IOT095 |	That's why people are starting to do now just climb onto what's already available in working well
+EDL	00:07:30,559	00:07:31,327	| IOT095 |	That's true in
+EDL	00:07:31,839	00:07:34,911	| IOT095 |	Way back in the day cuz Sonos launch super early
+EDL	00:07:35,423	00:07:38,495	| IOT095 |	They actually had like a $300 controller
+EDL	00:07:38,495	00:07:39,775	| IOT095 |	You bought two controllers
+EDL	00:07:40,543	00:07:42,335	| IOT095 |	Smartphones
+EDL	00:07:42,847	00:07:43,615	| IOT095 |	Wait a second
+EDL	00:07:44,127	00:07:49,759	| IOT095 |	People in app because that $300 controller while revenue for us is also a huge barrier to entry
+EDL	00:07:50,271	00:07:52,319	| IOT095 |	In Dallas
+EDL	00:07:52,319	00:07:56,927	| IOT095 |	Patrick Spence actually said that Sonos were in 20% of American households which
+EDL	00:07:57,439	00:07:57,951	| IOT095 |	It's a lot
+EDL	00:08:01,279	00:08:02,047	| IOT095 |	So
+EDL	00:08:02,047	00:08:03,839	| IOT095 |	I think we can expect good things here
+EDL	00:08:04,351	00:08:07,423	| IOT095 |	I am ultimately a little sad that they missed the boat
+EDL	00:08:07,423	00:08:08,959	| IOT095 |	Last year on this but you know
+EDL	00:08:09,471	00:08:15,615	| IOT095 |	There's still time in the got such a broad user base it's so you know I'm not saying it's easy but essentially integrates Employee Services
+EDL	00:08:17,151	00:08:17,919	| IOT095 |	You've got a
+EDL	00:08:17,919	00:08:20,991	| IOT095 |	Hannah people you know that I'm much happier now and then
+EDL	00:08:20,991	00:08:23,807	| IOT095 |	Less likely to leave for different connected speakers
+EDL	00:08:25,343	00:08:28,671	| IOT095 |	Cuz like actually ditch
+EDL	00:08:28,671	00:08:29,183	| IOT095 |	Best Bluetooth speaker
+EDL	00:08:30,975	00:08:35,071	| IOT095 |	High quality Marshall
+EDL	00:08:35,071	00:08:37,887	| IOT095 |	Stanmore Bluetooth speaker we talkin about
+EDL	00:08:38,399	00:08:38,911	| IOT095 |	I just
+EDL	00:08:39,423	00:08:39,935	| IOT095 |	Bluetooth speakers
+EDL	00:08:41,215	00:08:42,751	| IOT095 |	This is one of our
+EDL	00:08:45,055	00:08:46,591	| IOT095 |	The Fight Continues
+EDL	00:08:49,151	00:08:51,199	| IOT095 |	This is a quick bit too quick fix for you
+EDL	00:08:51,711	00:08:53,247	| IOT095 |	One is Telstra
+EDL	00:08:53,247	00:08:54,527	| IOT095 |	We're going to go International for a moment
+EDL	00:08:55,039	00:08:57,087	| IOT095 |	HealthStream which is an Australian carrier
+EDL	00:08:57,087	00:09:00,927	| IOT095 |	Is getting into the smartphone business much like Comcast or AT&T is done
+EDL	00:09:00,927	00:09:04,511	| IOT095 |	They've created a service that's going to cost $25
+EDL	00:09:04,511	00:09:05,535	| IOT095 |	25 Australian dollars
+EDL	00:09:06,047	00:09:08,607	| IOT095 |	And you basically will get a starter kit
+EDL	00:09:09,119	00:09:12,191	| IOT095 |	One for either security or one for automation energy
+EDL	00:09:12,703	00:09:14,239	| IOT095 |	Take out their own hub
+EDL	00:09:14,239	00:09:17,567	| IOT095 |	It's pretty much like what you would expect from other people
+EDL	00:09:17,567	00:09:19,103	| IOT095 |	Like other carriers
+EDL	00:09:19,103	00:09:21,663	| IOT095 |	I mention this mostly because
+EDL	00:09:21,663	00:09:22,687	| IOT095 |	I do think
+EDL	00:09:22,687	00:09:25,759	| IOT095 |	This year we're going to see a lot more carriers come out
+EDL	00:09:26,271	00:09:27,551	| IOT095 |	With the sort of offering
+EDL	00:09:28,063	00:09:29,087	| IOT095 |	And I think it's
+EDL	00:09:29,855	00:09:31,391	| IOT095 |	A probable way
+EDL	00:09:31,903	00:09:33,951	| IOT095 |	For smart home devices to get mainstream
+EDL	00:09:35,743	00:09:37,279	| IOT095 |	One because it's easier
+EDL	00:09:37,279	00:09:38,559	| IOT095 |	And people love easy
+EDL	00:09:40,095	00:09:44,191	| IOT095 |	You're going to feel more secure with it and you're going to feel like most of your devices are going to be free
+EDL	00:09:46,495	00:09:48,031	| IOT095 |	Those are some of the worries that
+EDL	00:09:48,543	00:09:49,311	| IOT095 |	Customers have
+EDL	00:09:50,335	00:09:52,639	| IOT095 |	Those are valid concerns
+EDL	00:09:52,639	00:09:55,455	| IOT095 |	It's interesting you mention security and I know that
+EDL	00:09:56,223	00:09:57,247	| IOT095 |	Last year
+EDL	00:09:57,247	00:10:02,623	| IOT095 |	Telstra talking about using blockchain and biometric security for their iot stuff so
+EDL	00:10:03,135	00:10:04,159	| IOT095 |	You know they're not
+EDL	00:10:04,159	00:10:10,303	| IOT095 |	Fiddling around here in just putting products out there not thinking about the one of the most important aspects that we talked about all the time or just security so
+EDL	00:10:10,815	00:10:12,607	| IOT095 |	At least they're they're thinking forward in that respect
+EDL	00:10:13,375	00:10:15,935	| IOT095 |	They are and they're one of the companies that it CES
+EDL	00:10:16,447	00:10:18,751	| IOT095 |	Add a smart home suite of products out on display
+EDL	00:10:20,799	00:10:22,079	| IOT095 |	This is probably
+EDL	00:10:22,079	00:10:24,639	| IOT095 |	Good I don't know who makes telstra's gear
+EDL	00:10:24,639	00:10:30,271	| IOT095 |	These are the kind of things that I'm going to be looking for is to or the providers to the
+EDL	00:10:30,271	00:10:32,319	| IOT095 |	Terriers and security firms
+EDL	00:10:32,831	00:10:33,599	| IOT095 |	Chinese
+EDL	00:10:33,599	00:10:35,135	| IOT095 |	Are they startups
+EDL	00:10:35,135	00:10:41,535	| IOT095 |	Which startups are actually good enough to make it into these systems or being good enough
+EDL	00:10:41,535	00:10:45,119	| IOT095 |	Question of some control
+EDL	00:10:46,911	00:10:48,191	| IOT095 |	These are things that are
+EDL	00:10:48,191	00:10:49,727	| IOT095 |	This this year is going to be a big
+EDL	00:10:50,239	00:10:51,007	| IOT095 |	For iot
+EDL	00:10:51,007	00:10:51,519	| IOT095 |	In this function
+EDL	00:10:52,543	00:10:53,055	| IOT095 |	Keep an eye on it
+EDL	00:10:53,567	00:10:54,591	| IOT095 |	Ok
+EDL	00:10:55,871	00:10:57,663	| IOT095 |	Also international news
+EDL	00:10:57,663	00:10:58,175	| IOT095 |	Nest
+EDL	00:10:58,687	00:11:00,223	| IOT095 |	Has God for more European
+EDL	00:11:00,223	00:11:00,735	| IOT095 |	Countries
+EDL	00:11:01,247	00:11:02,527	| IOT095 |	They are now in
+EDL	00:11:03,039	00:11:03,807	| IOT095 |	Germany
+EDL	00:11:03,807	00:11:05,343	| IOT095 |	Austria Italy
+EDL	00:11:05,343	00:11:06,111	| IOT095 |	In spades
+EDL	00:11:06,623	00:11:07,903	| IOT095 |	They're already in the UK
+EDL	00:11:08,415	00:11:09,951	| IOT095 |	And basically this just
+EDL	00:11:10,463	00:11:11,231	| IOT095 |	Pushes them out
+EDL	00:11:11,743	00:11:12,767	| IOT095 |	Further into
+EDL	00:11:15,071	00:11:20,447	| IOT095 |	I wonder that end I'll just say yes this is part of alphabet which one's Google and I
+EDL	00:11:20,447	00:11:21,471	| IOT095 |	Nashville time
+EDL	00:11:21,471	00:11:23,519	| IOT095 |	Consult for Google so I can get that out of the way
+EDL	00:11:24,031	00:11:24,799	| IOT095 |	I wonder what
+EDL	00:11:25,311	00:11:30,943	| IOT095 |	Has taken so long as you think it's privacy laws in those countries that need to be mitigated or
+EDL	00:11:31,455	00:11:32,479	| IOT095 |	I'm so glad you are
+EDL	00:11:32,991	00:11:35,807	| IOT095 |	Fat look at that it's not even on the show
+EDL	00:11:35,807	00:11:37,343	| IOT095 |	And I just asked the right question
+EDL	00:11:37,343	00:11:37,855	| IOT095 |	Yuan
+EDL	00:11:38,367	00:11:39,903	| IOT095 |	That's why you're the host
+EDL	00:11:39,903	00:11:40,415	| IOT095 |	Arco home
+EDL	00:11:40,927	00:11:41,695	| IOT095 |	All right
+EDL	00:11:42,207	00:11:44,767	| IOT095 |	So I think one of the issues here
+EDL	00:11:44,767	00:11:45,279	| IOT095 |	Where is
+EDL	00:11:45,791	00:11:46,815	| IOT095 |	Regulatory
+EDL	00:11:47,327	00:11:50,399	| IOT095 |	Not just privacy but also
+EDL	00:11:50,399	00:11:52,191	| IOT095 |	Getting things through the
+EDL	00:11:52,191	00:11:53,983	| IOT095 |	Different countries versions of the FCC
+EDL	00:11:54,495	00:11:59,615	| IOT095 |	And the reason this is kind of interesting to me is because when I was at CES I spoke
+EDL	00:11:59,615	00:12:01,407	| IOT095 |	With a bunch of
+EDL	00:12:01,407	00:12:03,455	| IOT095 |	Companies from like the France Tech Pavilion
+EDL	00:12:04,223	00:12:05,503	| IOT095 |	And all that
+EDL	00:12:06,271	00:12:12,671	| IOT095 |	And they were talking about they're not available here in the US the products aren't available in the US but they're working their way through the app
+EDL	00:12:12,671	00:12:14,207	| IOT095 |	CC's process
+EDL	00:12:15,231	00:12:16,511	| IOT095 |	That provides a lot of stumbling
+EDL	00:12:17,279	00:12:18,303	| IOT095 |	Gymnastics
+EDL	00:12:18,303	00:12:19,327	| IOT095 |	Is pretty professional
+EDL	00:12:19,327	00:12:20,095	| IOT095 |	They're not like a starter
+EDL	00:12:20,607	00:12:22,399	| IOT095 |	They probably can get through but
+EDL	00:12:22,911	00:12:24,191	| IOT095 |	These things take time
+EDL	00:12:24,191	00:12:24,959	| IOT095 |	And so
+EDL	00:12:24,959	00:12:25,727	| IOT095 |	I don't know what this is
+EDL	00:12:26,239	00:12:32,127	| IOT095 |	Good bad buddy wants a lot of interference jacking up their existing system so I tend to agree that it's good
+EDL	00:12:32,639	00:12:33,151	| IOT095 |	But
+EDL	00:12:33,663	00:12:35,199	| IOT095 |	That regulatory hurdle can take
+EDL	00:12:36,223	00:12:41,855	| IOT095 |	Obviously not like Hardware Supply there's plenty of those products being billed as just getting through to like you
+EDL	00:12:41,855	00:12:46,463	| IOT095 |	Correct spelling of the regulatory agencies that are specific to each country
+EDL	00:12:46,975	00:12:50,815	| IOT095 |	And I can't say I'm up on the latest frequencies The Clash over
+EDL	00:12:50,815	00:12:52,863	| IOT095 |	Yogurt making me use I don't know
+EDL	00:12:53,375	00:12:54,143	| IOT095 |	If there's something that
+EDL	00:12:54,655	00:12:58,751	| IOT095 |	A typical Nest product uses that interferes with an everyday thing over there but
+EDL	00:12:58,751	00:13:00,287	| IOT095 |	Still seems like a long time
+EDL	00:13:01,823	00:13:04,383	| IOT095 |	Does an end you know they also have to hire
+EDL	00:13:04,895	00:13:06,175	| IOT095 |	Company-specific support
+EDL	00:13:06,687	00:13:10,015	| IOT095 |	If you're in Italy you probably don't do your customer support
+EDL	00:13:11,551	00:13:13,599	| IOT095 |	PriceRite localization care
+EDL	00:13:13,599	00:13:14,367	| IOT095 |	So
+EDL	00:13:14,367	00:13:15,391	| IOT095 |	Challenges
+EDL	00:13:18,975	00:13:20,511	| IOT095 |	This is a market
+EDL	00:13:20,511	00:13:26,143	| IOT095 |	Where you're going to have to have a fairly large Footprints so you're probably going to want to go to places
+EDL	00:13:26,143	00:13:27,167	| IOT095 |	Where you can
+EDL	00:13:27,167	00:13:28,959	| IOT095 |	Build up your bar kit
+EDL	00:13:28,959	00:13:31,775	| IOT095 |	Easily and quickly so that means smaller countries
+EDL	00:13:32,287	00:13:34,591	| IOT095 |	May miss out on some products from startups
+EDL	00:13:35,359	00:13:36,127	| IOT095 |	Eddie House
+EDL	00:13:36,895	00:13:38,431	| IOT095 |	Moving right along
+EDL	00:13:38,431	00:13:39,711	| IOT095 |	Let's move from International
+EDL	00:13:40,223	00:13:41,247	| IOT095 |	2
+EDL	00:13:41,247	00:13:42,271	| IOT095 |	Enterprise iot
+EDL	00:13:42,783	00:13:46,623	| IOT095 |	What we have here is this week is NRF National Retail Federation
+EDL	00:13:47,391	00:13:49,183	| IOT095 |	Conference event
+EDL	00:13:49,695	00:13:53,023	| IOT095 |	They called The Big Show the NRF Big Show cuz I was there yesterday at it
+EDL	00:13:53,791	00:13:54,559	| IOT095 |	Did you see anything
+EDL	00:13:56,351	00:14:02,495	| IOT095 |	I didn't have a lot of time I did see a lot of I did see a lot of exciting things interesting no retailers
+EDL	00:14:03,007	00:14:05,311	| IOT095 |	They're looking for ways to be in a booster
+EDL	00:14:05,311	00:14:08,127	| IOT095 |	Foot traffic in stores looking for ways to
+EDL	00:14:08,127	00:14:09,919	| IOT095 |	What do we attract customers
+EDL	00:14:09,919	00:14:11,199	| IOT095 |	Where they are in the store
+EDL	00:14:11,711	00:14:15,039	| IOT095 |	How much engagement they have with a particular product or aisle
+EDL	00:14:15,039	00:14:17,087	| IOT095 |	Even emotions
+EDL	00:14:17,087	00:14:18,367	| IOT095 |	Cameras that will
+EDL	00:14:18,367	00:14:20,671	| IOT095 |	Take a look at customer spaces and try and
+EDL	00:14:20,671	00:14:21,439	| IOT095 |	Determine
+EDL	00:14:21,951	00:14:26,559	| IOT095 |	How happy were disappointing people are in products or displays it
+EDL	00:14:26,559	00:14:29,119	| IOT095 |	There's a lot of stuff going on there you wouldn't sink
+EDL	00:14:29,119	00:14:32,959	| IOT095 |	Retail is glitzy in that respect but there's a lot going on Beyond the Sea
+EDL	00:14:34,239	00:14:35,263	| IOT095 |	Use the word glitzy there
+EDL	00:14:38,079	00:14:39,615	| IOT095 |	Retail is glitzy
+EDL	00:14:41,919	00:14:47,807	| IOT095 |	What we actually what was interesting here is the keynote for the NRF
+EDL	00:14:47,807	00:14:51,647	| IOT095 |	Event was Brian krzanich the CEO of Intel
+EDL	00:14:53,439	00:14:56,255	| IOT095 |	A hundred million dollars
+EDL	00:14:56,255	00:14:57,279	| IOT095 |	Investing in retail
+EDL	00:14:58,047	00:14:59,839	| IOT095 |	They also announced basically
+EDL	00:15:00,351	00:15:01,119	| IOT095 |	It's a gateway
+EDL	00:15:01,119	00:15:07,519	| IOT095 |	It's a Gateway lots of words but they all come down to this it's a Gateway it's a gateway
+EDL	00:15:07,519	00:15:13,663	| IOT095 |	But the Gateway run software and idea of the software is Intel's trying to link these
+EDL	00:15:13,663	00:15:18,015	| IOT095 |	Just for it retail systems into one intel-powered
+EDL	00:15:18,015	00:15:18,783	| IOT095 |	Platform
+EDL	00:15:18,783	00:15:19,295	| IOT095 |	Compute inform
+EDL	00:15:20,831	00:15:22,111	| IOT095 |	Right now you might have
+EDL	00:15:23,135	00:15:26,207	| IOT095 |	You know what Appliance or device that measures emotion
+EDL	00:15:26,719	00:15:28,511	| IOT095 |	And you
+EDL	00:15:28,511	00:15:29,535	| IOT095 |	That goes into 1
+EDL	00:15:29,535	00:15:32,607	| IOT095 |	Place and then if you want that you got to go to that one
+EDL	00:15:32,607	00:15:35,167	| IOT095 |	One place until trying to do is bring
+EDL	00:15:35,167	00:15:36,191	| IOT095 |	The emotion track
+EDL	00:15:36,703	00:15:39,775	| IOT095 |	The inventory tracking all of this into one platform
+EDL	00:15:40,799	00:15:42,079	| IOT095 |	Support fraud
+EDL	00:15:42,079	00:15:42,591	| IOT095 |	DIY spaces
+EDL	00:15:43,359	00:15:44,895	| IOT095 |	I saw a lot of
+EDL	00:15:45,407	00:15:46,943	| IOT095 |	Plays at that a lot of
+EDL	00:15:47,455	00:15:48,735	| IOT095 |	Black puppies trying to
+EDL	00:15:48,735	00:15:51,039	| IOT095 |	Bring cohesive solutions to
+EDL	00:15:51,039	00:15:54,879	| IOT095 |	Manage and analyze all the data that these disparate systems
+EDL	00:15:54,879	00:15:55,647	| IOT095 |	Capture
+EDL	00:15:55,647	00:15:57,695	| IOT095 |	So that was a big theme I thought at the show
+EDL	00:15:58,207	00:15:59,743	| IOT095 |	And that'll be a big scene
+EDL	00:15:59,743	00:16:00,767	| IOT095 |	For everyone
+EDL	00:16:00,767	00:16:02,047	| IOT095 |	Probably till the end of time
+EDL	00:16:02,559	00:16:03,583	| IOT095 |	Cuz
+EDL	00:16:03,583	00:16:04,351	| IOT095 |	A lot of
+EDL	00:16:04,351	00:16:05,631	| IOT095 |	These systems right now
+EDL	00:16:06,399	00:16:07,167	| IOT095 |	Are silos
+EDL	00:16:07,167	00:16:09,215	| IOT095 |	Solutions
+EDL	00:16:12,031	00:16:16,383	| IOT095 |	If I appoint device and then you're like oh no I want to get together with these guys have been
+EDL	00:16:17,407	00:16:18,175	| IOT095 |	So
+EDL	00:16:18,175	00:16:19,199	| IOT095 |	This is going to be
+EDL	00:16:19,199	00:16:20,991	| IOT095 |	Increasingly important as
+EDL	00:16:21,503	00:16:22,783	| IOT095 |	Retailers are
+EDL	00:16:23,295	00:16:25,343	| IOT095 |	They're shutting down locations there
+EDL	00:16:26,111	00:16:28,159	| IOT095 |	Having to really boost
+EDL	00:16:28,159	00:16:30,207	| IOT095 |	The amount of money they make
+EDL	00:16:30,207	00:16:31,231	| IOT095 |	Per square foot
+EDL	00:16:31,231	00:16:33,023	| IOT095 |	They also are dealing with
+EDL	00:16:33,023	00:16:34,559	| IOT095 |	You know hired labor cost
+EDL	00:16:34,559	00:16:36,607	| IOT095 |	I said I really want to reduce
+EDL	00:16:36,607	00:16:37,631	| IOT095 |	I'm guessing
+EDL	00:16:38,143	00:16:41,215	| IOT095 |	But they will say they want to make each employee
+EDL	00:16:41,215	00:16:43,519	| IOT095 |	Efficient and they can do that
+EDL	00:16:43,519	00:16:46,847	| IOT095 |	Giving equipping them with more data and insights about the customer
+EDL	00:16:47,359	00:16:49,663	| IOT095 |	So basically the goal is to make
+EDL	00:16:49,663	00:16:52,223	| IOT095 |	The retail experience in-store alot
+EDL	00:16:52,223	00:16:52,735	| IOT095 |	Higher ed
+EDL	00:16:54,015	00:16:54,527	| IOT095 |	Mixer
+EDL	00:16:58,367	00:16:59,135	| IOT095 |	80%
+EDL	00:16:59,903	00:17:00,415	| IOT095 |	House off of Anna
+EDL	00:17:01,183	00:17:02,719	| IOT095 |	And it's not because I haven't
+EDL	00:17:03,487	00:17:04,255	| IOT095 |	But
+EDL	00:17:04,255	00:17:06,303	| IOT095 |	It's just easy and I hate to shop
+EDL	00:17:06,815	00:17:07,327	| IOT095 |	So
+EDL	00:17:08,607	00:17:09,119	| IOT095 |	So
+EDL	00:17:09,631	00:17:13,215	| IOT095 |	We saw Intel making this announcement I actually talked to zebra
+EDL	00:17:13,215	00:17:16,031	| IOT095 |	Which is a zebra Technologies it's a
+EDL	00:17:16,031	00:17:19,871	| IOT095 |	It's well-known for RFID
+EDL	00:17:20,383	00:17:24,735	| IOT095 |	And this one is kind of tied into tracking inventory and tracking
+EDL	00:17:24,735	00:17:25,503	| IOT095 |	Can customers
+EDL	00:17:26,015	00:17:28,575	| IOT095 |	So actually they could end up possibly
+EDL	00:17:28,575	00:17:29,599	| IOT095 |	Sending data to
+EDL	00:17:30,879	00:17:31,647	| IOT095 |	System
+EDL	00:17:31,647	00:17:33,439	| IOT095 |	This actually has some cool stuff
+EDL	00:17:33,439	00:17:35,231	| IOT095 |	Because it's RFID tags
+EDL	00:17:35,743	00:17:38,303	| IOT095 |	In the clothing or in the inventory
+EDL	00:17:38,303	00:17:39,327	| IOT095 |	But it's also got these
+EDL	00:17:39,839	00:17:40,607	| IOT095 |	Overhead
+EDL	00:17:43,423	00:17:44,191	| IOT095 |	So
+EDL	00:17:44,191	00:17:45,215	| IOT095 |	Right now
+EDL	00:17:45,215	00:17:48,543	| IOT095 |	A lot of people think of iot in retail and they think of
+EDL	00:17:49,055	00:17:51,103	| IOT095 |	Beacons Bluetooth based beacons
+EDL	00:17:51,615	00:17:54,943	| IOT095 |	But basically in even talking to Intel RFID is still King
+EDL	00:17:56,223	00:18:00,831	| IOT095 |	Because it doesn't need power for one thing it's small can be
+EDL	00:18:01,343	00:18:05,183	| IOT095 |	Attached to practically anything you know all of your inventory so
+EDL	00:18:05,183	00:18:10,047	| IOT095 |	It just economically make sense I'm not saying it's the best solution but it's one that still work
+EDL	00:18:12,095	00:18:13,631	| IOT095 |	Intel also showed off something
+EDL	00:18:13,631	00:18:16,959	| IOT095 |	Really cool which is a 3D printer for
+EDL	00:18:17,471	00:18:18,751	| IOT095 |	That was kind of annoying.
+EDL	00:18:19,263	00:18:23,103	| IOT095 |	My voice but I was really excited it prints
+EDL	00:18:24,383	00:18:24,895	| IOT095 |	Prince clothing
+EDL	00:18:25,663	00:18:26,943	| IOT095 |	This is business futuristic
+EDL	00:18:27,455	00:18:28,735	| IOT095 |	And I'm really
+EDL	00:18:30,527	00:18:31,295	| IOT095 |	Once
+EDL	00:18:31,295	00:18:37,183	| IOT095 |	Retailers have this data am I going to get something crazy like smart mirrors that I look
+EDL	00:18:37,183	00:18:38,207	| IOT095 |	I can see my clothes and
+EDL	00:18:38,207	00:18:39,487	| IOT095 |	Suggestible things
+EDL	00:18:39,487	00:18:41,791	| IOT095 |	Or is it going to be a little bit lower key
+EDL	00:18:42,559	00:18:43,583	| IOT095 |	Would like the Apple Store
+EDL	00:18:44,095	00:18:49,215	| IOT095 |	Play has like a tablet and they just come through and they're like oh I see you're doing this you know
+EDL	00:18:49,215	00:18:51,263	| IOT095 |	This might also look good on you basically
+EDL	00:18:55,359	00:19:01,503	| IOT095 |	Football scenarios because some customers want that handheld experience not handheld device
+EDL	00:19:03,039	00:19:04,063	| IOT095 |	Not literally but
+EDL	00:19:04,063	00:19:07,647	| IOT095 |	Store associate to walk them through and have personalized shopping
+EDL	00:19:07,647	00:19:10,975	| IOT095 |	With assistance and some people just want to
+EDL	00:19:10,975	00:19:15,071	| IOT095 |	Engage in the product themselves and figure out what's best for them and
+EDL	00:19:15,071	00:19:18,399	| IOT095 |	And we saw that the smart mirror I think three years ago at CVS where
+EDL	00:19:18,399	00:19:23,519	| IOT095 |	Literally stand in front of it and it would show you wearing different clothes of your choice based on your hitting a button
+EDL	00:19:23,519	00:19:27,359	| IOT095 |	Superimposing the clothes to see what you look like in some people want that so I think
+EDL	00:19:28,127	00:19:29,663	| IOT095 |	Retailers will Embrace both
+EDL	00:19:29,663	00:19:30,687	| IOT095 |	I would like that in my home
+EDL	00:19:32,479	00:19:33,503	| IOT095 |	Yeah
+EDL	00:19:34,015	00:19:35,807	| IOT095 |	Amazon show me what this looks like
+EDL	00:19:36,831	00:19:38,623	| IOT095 |	Sunday Sunday
+EDL	00:19:39,647	00:19:40,415	| IOT095 |	Pictures are
+EDL	00:19:40,415	00:19:40,927	| IOT095 |	All right
+EDL	00:19:41,439	00:19:44,511	| IOT095 |	Hey you guys asked for us to talk about the Nvidia Shield
+EDL	00:19:44,511	00:19:46,047	| IOT095 |	And I was kind of like
+EDL	00:19:46,047	00:19:46,815	| IOT095 |	What
+EDL	00:19:46,815	00:19:47,839	| IOT095 |	We can do that
+EDL	00:19:47,839	00:19:49,631	| IOT095 |	But we can cuz Kevin went out and bought one
+EDL	00:19:50,399	00:19:51,167	| IOT095 |	Incentive
+EDL	00:19:51,167	00:19:52,447	| IOT095 |	Kevin such a sucker
+EDL	00:19:52,447	00:19:53,727	| IOT095 |	I forgot it
+EDL	00:19:54,495	00:20:00,127	| IOT095 |	That was the subjects I was going to say that out loud I think we all know
+EDL	00:20:00,127	00:20:01,151	| IOT095 |	So tell us about the shield
+EDL	00:20:01,663	00:20:08,063	| IOT095 |	I'm going to start off with something not negative but if I'm going to come out and say if you already have an Nvidia Shield
+EDL	00:20:08,063	00:20:10,367	| IOT095 |	Shield because this came out 2 years ago originally
+EDL	00:20:10,367	00:20:12,415	| IOT095 |	You don't need to buy a new Nvidia Shield
+EDL	00:20:12,927	00:20:13,951	| IOT095 |	And I say that beat
+EDL	00:20:13,951	00:20:14,719	| IOT095 |	Cause
+EDL	00:20:14,719	00:20:18,047	| IOT095 |	Even though Nvidia at CES unveiled a new Shield
+EDL	00:20:18,559	00:20:21,631	| IOT095 |	It's actually the same internals the new one in the in the old one
+EDL	00:20:21,631	00:20:23,167	| IOT095 |	So if you have one
+EDL	00:20:23,167	00:20:23,935	| IOT095 |	Don't
+EDL	00:20:23,935	00:20:27,007	| IOT095 |	By 1 about a car to buy a new one because
+EDL	00:20:27,007	00:20:30,335	| IOT095 |	With a software upgrade you going to get all the features that the new one has
+EDL	00:20:30,847	00:20:35,199	| IOT095 |	And the reason it didn't really smarter than today I thought the reason didn't upgrade
+EDL	00:20:35,199	00:20:35,967	| IOT095 |	They don't need to
+EDL	00:20:36,479	00:20:39,551	| IOT095 |	The Tegra chip that they have in the original and now the new one again
+EDL	00:20:40,063	00:20:42,879	| IOT095 |	Has plenty of horsepower to actually
+EDL	00:20:42,879	00:20:46,719	| IOT095 |	Stream and show 1080p video no problem
+EDL	00:20:46,719	00:20:50,815	| IOT095 |	4K video no problem 4K HDR video no problem
+EDL	00:20:50,815	00:20:54,399	| IOT095 |	I don't have any crtv I do have a 4K TV antenna hooked up the shield
+EDL	00:20:54,911	00:20:56,447	| IOT095 |	And the TV playback.
+EDL	00:20:56,447	00:20:56,959	| IOT095 |	Fantastic
+EDL	00:20:58,495	00:21:02,847	| IOT095 |	Television streaming in the house is done
+EDL	00:21:02,847	00:21:04,639	| IOT095 |	I use PlayStation Vue for my
+EDL	00:21:04,639	00:21:07,711	| IOT095 |	Typical channels in an Amazon Netflix and so on
+EDL	00:21:07,711	00:21:12,319	| IOT095 |	There was coming in 4k in 4k HDR now for Amazon so on so forth so
+EDL	00:21:12,319	00:21:14,111	| IOT095 |	So from that perspective it's good
+EDL	00:21:14,111	00:21:14,879	| IOT095 |	It's
+EDL	00:21:14,879	00:21:17,440	| IOT095 |	Interesting also because
+EDL	00:21:17,440	00:21:18,720	| IOT095 |	A it runs
+EDL	00:21:18,720	00:21:21,280	| IOT095 |	Android TV the latest version of Android TV
+EDL	00:21:21,792	00:21:26,144	| IOT095 |	And so it's got built-in voice recognition we talked about that earlier with Sonos
+EDL	00:21:26,144	00:21:28,192	| IOT095 |	So you can use the remote
+EDL	00:21:28,192	00:21:32,288	| IOT095 |	Corby game controller and searches by voice
+EDL	00:21:32,288	00:21:34,080	| IOT095 |	OK Google Now type information
+EDL	00:21:34,080	00:21:36,640	| IOT095 |	But the interesting thing from an outie perspective I think
+EDL	00:21:37,408	00:21:41,248	| IOT095 |	Is that a video said we're going to bring Google Assistant to this
+EDL	00:21:41,248	00:21:42,272	| IOT095 |	And
+EDL	00:21:42,784	00:21:45,856	| IOT095 |	Because you're not always in the same room as your Shield
+EDL	00:21:45,856	00:21:51,744	| IOT095 |	We're going to sell these little $50 plug-in modules that basically are microphones that you put throughout your house
+EDL	00:21:51,744	00:21:53,280	| IOT095 |	And some people say why
+EDL	00:21:53,280	00:21:54,816	| IOT095 |	Always listening
+EDL	00:21:54,816	00:21:58,912	| IOT095 |	Some people do want that those that do will have access to Google Assistant
+EDL	00:21:58,912	00:22:00,960	| IOT095 |	3DS little plug-in module
+EDL	00:22:01,472	00:22:02,496	| IOT095 |	Really really intelligent
+EDL	00:22:03,008	00:22:04,544	| IOT095 |	Real intelligent so
+EDL	00:22:04,544	00:22:06,848	| IOT095 |	Trent Lott
+EDL	00:22:06,848	00:22:08,896	| IOT095 |	Eventually if I have
+EDL	00:22:08,896	00:22:10,688	| IOT095 |	Is more things get connected to
+EDL	00:22:10,688	00:22:11,200	| IOT095 |	Google home
+EDL	00:22:11,712	00:22:12,992	| IOT095 |	I could be able to
+EDL	00:22:12,992	00:22:13,504	| IOT095 |	How to control it
+EDL	00:22:14,016	00:22:14,784	| IOT095 |	The Shield
+EDL	00:22:16,064	00:22:17,344	| IOT095 |	That is the idea
+EDL	00:22:17,344	00:22:18,368	| IOT095 |	Absolutely
+EDL	00:22:18,368	00:22:21,184	| IOT095 |	Would be no different than having an actual Google home
+EDL	00:22:21,184	00:22:23,488	| IOT095 |	Hardware device were using your
+EDL	00:22:23,488	00:22:28,864	| IOT095 |	Phone is Google assistant is supported which strain has the pixel and the pixel XL so
+EDL	00:22:29,376	00:22:33,984	| IOT095 |	Yasso
+EDL	00:22:33,984	00:22:36,544	| IOT095 |	But do the phone version the home version or the
+EDL	00:22:37,056	00:22:37,824	| IOT095 |	Aloe version
+EDL	00:22:38,336	00:22:42,176	| IOT095 |	Well the phone version is the same as the home version by and large
+EDL	00:22:43,456	00:22:49,600	| IOT095 |	I know there's a there's a couple little things that are different
+EDL	00:22:49,600	00:22:51,648	| IOT095 |	And then a low as you mentioned
+EDL	00:22:51,648	00:22:56,768	| IOT095 |	Cuz people don't know you can tag Google I can say at Google and any
+EDL	00:22:56,768	00:22:57,536	| IOT095 |	Chat with you
+EDL	00:22:57,536	00:22:58,560	| IOT095 |	Your friends on Allo
+EDL	00:22:58,560	00:23:04,448	| IOT095 |	And you get the Google Assistant Smart in the conversation so like Stacy if you and I are chatting
+EDL	00:23:04,448	00:23:07,264	| IOT095 |	And we happen to be in the same city and say it was get some
+EDL	00:23:07,264	00:23:08,800	| IOT095 |	Dinner somewhere we can add
+EDL	00:23:09,312	00:23:11,872	| IOT095 |	At Google not chat say at Google
+EDL	00:23:11,872	00:23:15,712	| IOT095 |	Find me the closest barbecue restaurant that has 4 stars or better
+EDL	00:23:15,712	00:23:20,576	| IOT095 |	And boom it'll just give us both that information that we have maps and reviews and thoughts
+EDL	00:23:22,368	00:23:24,672	| IOT095 |	Real quick just in case there's a game around
+EDL	00:23:24,672	00:23:25,440	| IOT095 |	They're just in case
+EDL	00:23:25,952	00:23:28,768	| IOT095 |	The other reason I got I bought the shield is because
+EDL	00:23:29,280	00:23:30,560	| IOT095 |	It offers
+EDL	00:23:30,560	00:23:33,120	| IOT095 |	The Nvidia GeForce now
+EDL	00:23:33,120	00:23:35,936	| IOT095 |	Subscription for $8 a month first month is free
+EDL	00:23:35,936	00:23:38,240	| IOT095 |	Where they actually run
+EDL	00:23:38,240	00:23:41,824	| IOT095 |	Console games on PCS or servers in the cloud and
+EDL	00:23:41,824	00:23:43,872	| IOT095 |	Stream them to you in real time
+EDL	00:23:43,872	00:23:45,920	| IOT095 |	No download
+EDL	00:23:46,432	00:23:49,760	| IOT095 |	So I was playing at 1080p 60 frames per second
+EDL	00:23:49,760	00:23:53,600	| IOT095 |	Version of Tomb Raider on the shield from Xbox
+EDL	00:23:54,112	00:23:57,696	| IOT095 |	Indistinguishable between the shield and the Xbox all the difference is
+EDL	00:23:58,208	00:24:00,256	| IOT095 |	On the shield it's all running in the cloud
+EDL	00:24:00,768	00:24:01,536	| IOT095 |	It's neat
+EDL	00:24:01,536	00:24:03,584	| IOT095 |	The thing is you got up
+EDL	00:24:04,096	00:24:05,632	| IOT095 |	Here the caveat is
+EDL	00:24:05,632	00:24:11,008	| IOT095 |	That if you're going to stream games from GeForce now at 1080p 60 frames a second
+EDL	00:24:11,008	00:24:17,408	| IOT095 |	They look incredible would you also need an incredible connection for that base a 50 megabits per se
+EDL	00:24:17,408	00:24:18,944	| IOT095 |	Second is what they recommend
+EDL	00:24:19,456	00:24:20,224	| IOT095 |	And that's like
+EDL	00:24:20,992	00:24:23,808	| IOT095 |	Even even with my 150 Meg service here
+EDL	00:24:24,576	00:24:26,880	| IOT095 |	I occasionally see some
+EDL	00:24:27,392	00:24:31,488	| IOT095 |	Some jagjit and stuff like that going on occasionally
+EDL	00:24:32,000	00:24:32,512	| IOT095 |	So
+EDL	00:24:33,536	00:24:34,816	| IOT095 |	Your mileage may vary
+EDL	00:24:34,816	00:24:39,680	| IOT095 |	Your mileage may vary if it mean if your on something some slow internet don't even think about it
+EDL	00:24:40,192	00:24:41,728	| IOT095 |	So how much is The Shield
+EDL	00:24:42,240	00:24:45,568	| IOT095 |	The Shield is 199 which is the same as it was
+EDL	00:24:45,568	00:24:46,848	| IOT095 |	A year or two ago
+EDL	00:24:46,848	00:24:47,872	| IOT095 |	Debuted
+EDL	00:24:47,872	00:24:50,176	| IOT095 |	The difference is another smart move
+EDL	00:24:50,176	00:24:52,224	| IOT095 |	There including the remote and there are
+EDL	00:24:52,224	00:24:54,784	| IOT095 |	Including the game controller both of which have a microphone
+EDL	00:24:55,296	00:24:59,648	| IOT095 |	Before you had to buy at least one if not both of those separately for like
+EDL	00:25:00,160	00:25:01,440	| IOT095 |	40 bucks a pop
+EDL	00:25:01,440	00:25:02,720	| IOT095 |	50 bucks a Pop Evil
+EDL	00:25:02,720	00:25:03,488	| IOT095 |	So
+EDL	00:25:03,488	00:25:05,024	| IOT095 |	You're getting that now
+EDL	00:25:05,024	00:25:05,536	| IOT095 |	Included
+EDL	00:25:06,048	00:25:07,584	| IOT095 |	I'm glad you mentioned this though
+EDL	00:25:07,584	00:25:13,728	| IOT095 |	Remember how I started by saying you have an old Nvidia Shield don't upgrade cuz you don't need it cuz you're going to get all the same software the
+EDL	00:25:13,728	00:25:15,008	| IOT095 |	Voice remote start
+EDL	00:25:16,032	00:25:19,360	| IOT095 |	Built into the game controllers you may want to get a new
+EDL	00:25:19,360	00:25:20,384	| IOT095 |	Controller
+EDL	00:25:20,384	00:25:22,176	| IOT095 |	For your old Shields I'm going to give him mine
+EDL	00:25:22,688	00:25:23,200	| IOT095 |	Got it
+EDL	00:25:23,712	00:25:24,480	| IOT095 |	All right
+EDL	00:25:24,480	00:25:26,016	| IOT095 |	Feel like we're out of time
+EDL	00:25:26,784	00:25:31,392	| IOT095 |	So I'm going to do a pretty quick review of stringify to tell you about it
+EDL	00:25:31,392	00:25:33,952	| IOT095 |	And then we'll spend some more time another show
+EDL	00:25:34,464	00:25:36,000	| IOT095 |	So stringify
+EDL	00:25:36,000	00:25:36,768	| IOT095 |	Is
+EDL	00:25:36,768	00:25:43,168	| IOT095 |	Kind of like it's a way for you to connect lots of devices together and create what they call flows which are
+EDL	00:25:43,168	00:25:43,936	| IOT095 |	Basically recipe
+EDL	00:25:43,936	00:25:44,448	| IOT095 |	Puppies for
+EDL	00:25:44,960	00:25:45,472	| IOT095 |	Making something
+EDL	00:25:46,496	00:25:48,288	| IOT095 |	So the reason this is
+EDL	00:25:48,288	00:25:52,384	| IOT095 |	Cool are useful as they finally released an Android version
+EDL	00:25:52,384	00:25:54,432	| IOT095 |	Now the Android version is still in beta
+EDL	00:25:54,944	00:25:58,016	| IOT095 |	And so it's not as full functioning at the iOS version
+EDL	00:25:58,016	00:26:03,136	| IOT095 |	If you're really into the smart home and you have a bunch of devices it supports a lot of devices like
+EDL	00:26:03,136	00:26:04,672	| IOT095 |	30 or 40 that I have
+EDL	00:26:05,184	00:26:10,816	| IOT095 |	And then it also supports more than one conditional statement so you know where if this and that you have to do
+EDL	00:26:10,816	00:26:11,584	| IOT095 |	There's no limit
+EDL	00:26:11,584	00:26:12,864	| IOT095 |	What you do is you
+EDL	00:26:12,864	00:26:15,424	| IOT095 |	Bring all of the devices in onto what they call it
+EDL	00:26:16,448	00:26:20,032	| IOT095 |	And if you do download this I really recommend you watch the video on
+EDL	00:26:20,032	00:26:21,312	| IOT095 |	On how to do this because it is
+EDL	00:26:21,824	00:26:22,848	| IOT095 |	It's not super into
+EDL	00:26:23,616	00:26:25,664	| IOT095 |	So the video on how to make flows is
+EDL	00:26:27,712	00:26:30,272	| IOT095 |	So you pick all of your devices and let's say
+EDL	00:26:30,272	00:26:31,296	| IOT095 |	I want to do
+EDL	00:26:32,576	00:26:33,088	| IOT095 |	Think of something to do
+EDL	00:26:34,112	00:26:34,624	| IOT095 |	Okay
+EDL	00:26:35,136	00:26:36,672	| IOT095 |	When my Nest cam
+EDL	00:26:36,672	00:26:37,696	| IOT095 |	She's a person
+EDL	00:26:37,696	00:26:38,976	| IOT095 |	And I'm not at home
+EDL	00:26:39,744	00:26:41,024	| IOT095 |	Send me an email
+EDL	00:26:41,024	00:26:42,048	| IOT095 |	And also turn on the light
+EDL	00:26:42,816	00:26:45,120	| IOT095 |	So that doing that and if this
+EDL	00:26:45,120	00:26:45,888	| IOT095 |	Would take
+EDL	00:26:45,888	00:26:46,400	| IOT095 |	Multiple redis
+EDL	00:26:47,936	00:26:50,752	| IOT095 |	So here what I would do as I pull in my Nest cam
+EDL	00:26:51,520	00:26:53,056	| IOT095 |	I told him my location
+EDL	00:26:53,056	00:26:56,384	| IOT095 |	Little icons for each device
+EDL	00:26:57,152	00:26:58,688	| IOT095 |	Accolade my location icon
+EDL	00:26:59,456	00:27:00,992	| IOT095 |	And I'm going to put those on
+EDL	00:27:01,504	00:27:03,040	| IOT095 |	The left side everything
+EDL	00:27:03,040	00:27:04,320	| IOT095 |	Goes from left to right here
+EDL	00:27:04,832	00:27:07,648	| IOT095 |	And then I'm going to also the things I want to have happen
+EDL	00:27:07,648	00:27:09,696	| IOT095 |	Email icon and then
+EDL	00:27:11,232	00:27:15,328	| IOT095 |	What am I doing I'm going to pull in the light
+EDL	00:27:16,352	00:27:21,728	| IOT095 |	So then basically set a trigger for each of those so location is when I'm away
+EDL	00:27:21,728	00:27:23,776	| IOT095 |	When I see a person
+EDL	00:27:25,056	00:27:26,336	| IOT095 |	On the other side
+EDL	00:27:26,336	00:27:28,128	| IOT095 |	I'm going to set triggers for each of those
+EDL	00:27:28,128	00:27:31,200	| IOT095 |	And then I basically link them I just remove
+EDL	00:27:31,200	00:27:34,272	| IOT095 |	Click on that icon and then I move it over to each of the
+EDL	00:27:34,784	00:27:36,320	| IOT095 |	Things that I want to have happen
+EDL	00:27:36,320	00:27:36,832	| IOT095 |	When something happen
+EDL	00:27:37,600	00:27:39,904	| IOT095 |	Decrease bass strings between them in
+EDL	00:27:40,416	00:27:42,720	| IOT095 |	I created a fairly complex
+EDL	00:27:43,488	00:27:44,512	| IOT095 |	End
+EDL	00:27:45,024	00:27:46,048	| IOT095 |	This again
+EDL	00:27:46,560	00:27:49,888	| IOT095 |	You're going to have to play with this I'm going to do a review eventually they will have
+EDL	00:27:50,400	00:27:50,912	| IOT095 |	Screenshot
+EDL	00:27:51,424	00:27:52,448	| IOT095 |	Really helpful
+EDL	00:27:54,240	00:27:55,264	| IOT095 |	This is free
+EDL	00:27:55,776	00:27:58,592	| IOT095 |	They support you know things like the echo the Aesop
+EDL	00:27:59,872	00:28:01,408	| IOT095 |	Arlo netatmo
+EDL	00:28:01,920	00:28:02,944	| IOT095 |	Nest
+EDL	00:28:02,944	00:28:05,760	| IOT095 |	Like an amazing array of services I think ecobee
+EDL	00:28:06,272	00:28:07,808	| IOT095 |	They don't do Sonos
+EDL	00:28:07,808	00:28:08,576	| IOT095 |	So just
+EDL	00:28:09,088	00:28:09,856	| IOT095 |	Telling you there
+EDL	00:28:09,856	00:28:11,392	| IOT095 |	Skybell
+EDL	00:28:11,904	00:28:13,440	| IOT095 |	Don't know if they do August
+EDL	00:28:13,440	00:28:15,488	| IOT095 |	It's a pretty comprehensive system
+EDL	00:28:16,000	00:28:21,632	| IOT095 |	It's free the way they pay for it is they actually do the same sort of thing for Enterprise customers and
+EDL	00:28:21,632	00:28:24,192	| IOT095 |	Those guys actually
+EDL	00:28:24,192	00:28:27,008	| IOT095 |	So yeah so instead of the Enterprise have to
+EDL	00:28:27,008	00:28:29,568	| IOT095 |	Figure out all the apis for all these devices and
+EDL	00:28:29,568	00:28:34,176	| IOT095 |	Sing themselves they actually do this for Enterprise customers they give
+EDL	00:28:34,176	00:28:35,712	| IOT095 |	Like corporate it Department
+EDL	00:28:35,712	00:28:38,016	| IOT095 |	These flows and support devices
+EDL	00:28:38,528	00:28:39,552	| IOT095 |	Antos
+EDL	00:28:39,552	00:28:40,064	| IOT095 |	Systems
+EDL	00:28:40,576	00:28:44,672	| IOT095 |	So that they don't actually charge they just pull a PS4
+EDL	00:28:45,184	00:28:48,512	| IOT095 |	Like for the Facebook and web-based ones they usually just pulled like the
+EDL	00:28:48,512	00:28:50,048	| IOT095 |	Publicly available apis
+EDL	00:28:50,048	00:28:51,328	| IOT095 |	10 + 4
+EDL	00:28:51,328	00:28:52,352	| IOT095 |	The device
+EDL	00:28:52,352	00:28:53,120	| IOT095 |	They actually usually
+EDL	00:28:53,632	00:28:54,144	| IOT095 |	Conversation with
+EDL	00:28:54,912	00:28:56,192	| IOT095 |	That makes it okay
+EDL	00:28:56,192	00:28:58,752	| IOT095 |	Interesting model business model
+EDL	00:28:58,752	00:29:00,800	| IOT095 |	It is like
+EDL	00:29:01,312	00:29:05,408	| IOT095 |	I encourage anyone who's got multiple devices who's interested in
+EDL	00:29:05,408	00:29:06,944	| IOT095 |	More complicated
+EDL	00:29:06,944	00:29:08,992	| IOT095 |	Smart home programming to check this out
+EDL	00:29:09,504	00:29:11,808	| IOT095 |	And it still bare bones
+EDL	00:29:11,808	00:29:12,832	| IOT095 |	On the Android side
+EDL	00:29:13,344	00:29:16,160	| IOT095 |	IOS is better and they're still features that they need to add
+EDL	00:29:17,696	00:29:18,208	| IOT095 |	That'll come
+EDL	00:29:18,720	00:29:20,000	| IOT095 |	Cool
+EDL	00:29:20,000	00:29:21,280	| IOT095 |	Stringify
+EDL	00:29:21,792	00:29:22,560	| IOT095 |	Now
+EDL	00:29:22,560	00:29:23,328	| IOT095 |	Jose
+EDL	00:29:23,328	00:29:24,352	| IOT095 |	Toodaloo
+EDL	00:29:24,864	00:29:27,168	| IOT095 |	From our sponsor
+EDL	00:29:28,704	00:29:29,472	| IOT095 |	But
+EDL	00:29:29,472	00:29:32,800	| IOT095 |	Don't go anywhere because several guests
+EDL	00:29:32,800	00:29:34,336	| IOT095 |	We're going to talk about the industrial internet
+EDL	00:29:34,848	00:29:36,384	| IOT095 |	Where it's at today
+EDL	00:29:36,384	00:29:38,688	| IOT095 |	How companies can bring in several vendors
+EDL	00:29:39,200	00:29:41,760	| IOT095 |	And even advice for companies who are
+EDL	00:29:42,272	00:29:44,576	| IOT095 |	Just starting to work with some of these big
+EDL	00:29:44,576	00:29:47,136	| IOT095 |	Providers and how they can keep their pricing at margin
+EDL	00:29:47,136	00:29:51,232	| IOT095 |	Staple it's going to be good
+EDL	00:29:51,232	00:29:57,632	| IOT095 |	Everyone we are breaking into the Internet of Things podcast with a message from our sponsor this way sponsor is dead
+EDL	00:29:57,632	00:30:01,472	| IOT095 |	And I have Ivan O'Connor who is head of iot
+EDL	00:30:01,472	00:30:02,496	| IOT095 |	Action point
+EDL	00:30:02,496	00:30:03,008	| IOT095 |	Technology
+EDL	00:30:03,520	00:30:04,288	| IOT095 |	To talk about
+EDL	00:30:04,288	00:30:05,824	| IOT095 |	Action point and their partnership
+EDL	00:30:06,848	00:30:10,176	| IOT095 |	Custom software developer
+EDL	00:30:15,552	00:30:18,368	| IOT095 |	We also write all the software
+EDL	00:30:32,960	00:30:36,032	| IOT095 |	So what are your tips for a successful iot partnership
+EDL	00:30:36,544	00:30:38,080	| IOT095 |	What are the same size
+EDL	00:30:39,104	00:30:41,408	| IOT095 |	Facebook
+EDL	00:30:58,048	00:30:59,328	| IOT095 |	I would always trying that
+EDL	00:31:05,216	00:31:07,264	| IOT095 |	Activity
+EDL	00:31:11,616	00:31:14,432	| IOT095 |	Awesome what are some iot use cases that you're sick
+EDL	00:31:15,456	00:31:18,016	| IOT095 |	Text
+EDL	00:31:20,064	00:31:22,112	| IOT095 |	In the broad area of water
+EDL	00:31:22,112	00:31:22,880	| IOT095 |	We have
+EDL	00:31:22,880	00:31:23,392	| IOT095 |	Use cases
+EDL	00:31:25,184	00:31:26,464	| IOT095 |	We have use cases
+EDL	00:31:26,464	00:31:28,512	| IOT095 |	Waterfalls
+EDL	00:31:29,792	00:31:31,328	| IOT095 |	Italian Festival
+EDL	00:31:34,144	00:31:37,216	| IOT095 |	They're sending their Engineers into
+EDL	00:31:41,312	00:31:43,104	| IOT095 |	Stop
+EDL	00:31:43,104	00:31:45,664	| IOT095 |	What's the temperature
+EDL	00:31:54,880	00:31:56,672	| IOT095 |	You are as well
+EDL	00:31:57,696	00:31:59,744	| IOT095 |	Find example
+EDL	00:31:59,744	00:32:01,024	| IOT095 |	Call me
+EDL	00:32:04,096	00:32:05,888	| IOT095 |	Toledo Costco Palm City
+EDL	00:32:05,888	00:32:06,400	| IOT095 |	Sausage
+EDL	00:32:06,912	00:32:11,520	| IOT095 |	We also installed a Dell Edge Gateway so that will be connected to the cold
+EDL	00:32:15,616	00:32:17,664	| IOT095 |	What we're doing is saying
+EDL	00:32:17,664	00:32:19,200	| IOT095 |	Temperature
+EDL	00:32:19,200	00:32:22,272	| IOT095 |	Ilocos Arenal alarm condition
+EDL	00:32:24,576	00:32:27,392	| IOT095 |	Detailed reports can be Santa
+EDL	00:32:27,904	00:32:30,720	| IOT095 |	To the line managers SMS alerts can be sent
+EDL	00:32:31,232	00:32:33,280	| IOT095 |	Boston SMP Centex septic
+EDL	00:32:33,280	00:32:34,816	| IOT095 |	Ivan it sounds great
+EDL	00:32:34,816	00:32:35,584	| IOT095 |	So where can I find
+EDL	00:32:36,608	00:32:39,680	| IOT095 |	You can put on information you need from
+EDL	00:32:40,960	00:32:41,728	| IOT095 |	Dot-com
+EDL	00:32:42,496	00:32:43,776	| IOT095 |	Which is our URL
+EDL	00:32:43,776	00:32:50,176	| IOT095 |	We have a lot of interesting iot case studies from there too
+EDL	00:32:50,176	00:32:56,576	| IOT095 |	Hey everyone welcome back to the Internet of Things
+EDL	00:32:56,576	00:32:59,648	| IOT095 |	Things podcast this week in a little bit different for you
+EDL	00:33:00,160	00:33:01,184	| IOT095 |	I've got three guess
+EDL	00:33:01,696	00:33:04,768	| IOT095 |	From a visit I took to the National instruments
+EDL	00:33:04,768	00:33:05,280	| IOT095 |	Lab
+EDL	00:33:06,048	00:33:08,096	| IOT095 |	So this is an industrial iot lab
+EDL	00:33:08,608	00:33:15,008	| IOT095 |	Where I learned about a lot of crazy cool things and I talked to Jamie Smith the director
+EDL	00:33:15,008	00:33:15,776	| IOT095 |	Instruments
+EDL	00:33:15,776	00:33:18,592	| IOT095 |	An Alex devron CEO
+EDL	00:33:20,384	00:33:22,688	| IOT095 |	Alex had the lovely Irish lilt
+EDL	00:33:23,200	00:33:23,712	| IOT095 |	Voice
+EDL	00:33:24,224	00:33:27,296	| IOT095 |	So I'm Jamie Smith on the director of embedded systems here in Nashua
+EDL	00:33:28,320	00:33:31,136	| IOT095 |	Aaron the Chief Executive Officer of
+EDL	00:33:32,416	00:33:33,952	| IOT095 |	All right today we're here
+EDL	00:33:35,488	00:33:38,304	| IOT095 |	Launching their industrial internet-of-things lab
+EDL	00:33:38,304	00:33:40,096	| IOT095 |	Which you guys maybe like
+EDL	00:33:41,376	00:33:44,704	| IOT095 |	There's actually so many people playing Industrial internet-of-things
+EDL	00:33:44,704	00:33:47,008	| IOT095 |	Figuring out how to get everything to work together
+EDL	00:33:47,008	00:33:47,776	| IOT095 |	Is
+EDL	00:33:48,288	00:33:50,080	| IOT095 |	So let's kick this off with
+EDL	00:33:50,080	00:33:51,360	| IOT095 |	Question about Partnerships
+EDL	00:33:52,128	00:33:53,920	| IOT095 |	IC HP
+EDL	00:33:54,432	00:33:57,760	| IOT095 |	So I thought until disco there's a lot of people here
+EDL	00:33:58,528	00:33:59,808	| IOT095 |	How to companies
+EDL	00:34:00,576	00:34:01,600	| IOT095 |	Bring you in
+EDL	00:34:01,600	00:34:05,440	| IOT095 |	Are they bringing you in a massive conglomeration
+EDL	00:34:05,440	00:34:06,208	| IOT095 |	Or
+EDL	00:34:06,208	00:34:07,232	| IOT095 |	Are they bringing you in
+EDL	00:34:08,512	00:34:10,304	| IOT095 |	That's a really good question
+EDL	00:34:10,304	00:34:13,888	| IOT095 |	Because it is a large number of collaborators
+EDL	00:34:13,888	00:34:15,168	| IOT095 |	These complex systems
+EDL	00:34:15,936	00:34:19,008	| IOT095 |	And the customer engagements happen in a wide range
+EDL	00:34:21,056	00:34:24,384	| IOT095 |	So what natural is expert in measure
+EDL	00:34:24,384	00:34:25,664	| IOT095 |	Technology
+EDL	00:34:25,664	00:34:27,968	| IOT095 |	Processing right there at the edge
+EDL	00:34:27,968	00:34:30,528	| IOT095 |	Where sensors are coming into the
+EDL	00:34:30,528	00:34:31,040	| IOT095 |	The industrial
+EDL	00:34:31,552	00:34:32,320	| IOT095 |	Thanks
+EDL	00:34:32,320	00:34:34,624	| IOT095 |	And all the collaborators we work with are aware of
+EDL	00:34:35,392	00:34:38,464	| IOT095 |	So when their customers and their engagement
+EDL	00:34:38,464	00:34:42,816	| IOT095 |	Additional sensing capability additional measurements or some form of advance
+EDL	00:34:42,816	00:34:45,888	| IOT095 |	Troll right there at the edge still bring us in
+EDL	00:34:47,168	00:34:47,936	| IOT095 |	Location
+EDL	00:34:47,936	00:34:48,960	| IOT095 |	So where is
+EDL	00:34:49,728	00:34:50,496	| IOT095 |	Your Edge
+EDL	00:34:50,496	00:34:53,312	| IOT095 |	Because he could be a Gateway or it could be like that
+EDL	00:34:54,848	00:35:00,224	| IOT095 |	Really good question as well that will redefine The Edge know if we think about or a traditional definition
+EDL	00:35:00,224	00:35:00,992	| IOT095 |	And it's where the
+EDL	00:35:01,504	00:35:06,112	| IOT095 |	Enterprise Network begins and is the barrier to the office Network
+EDL	00:35:06,624	00:35:08,160	| IOT095 |	Home network begins or is it
+EDL	00:35:08,160	00:35:10,464	| IOT095 |	Valerie to the internet service provider
+EDL	00:35:10,464	00:35:12,000	| IOT095 |	That's the typical Edge boundary
+EDL	00:35:12,512	00:35:13,792	| IOT095 |	I just got back from CVS
+EDL	00:35:14,816	00:35:16,096	| IOT095 |	MSc industrial internet
+EDL	00:35:17,632	00:35:18,144	| IOT095 |	Consumerism
+EDL	00:35:19,168	00:35:20,448	| IOT095 |	Low margin
+EDL	00:35:20,448	00:35:20,960	| IOT095 |	Blah blah blah
+EDL	00:35:21,472	00:35:23,008	| IOT095 |	Where is the industrial internet
+EDL	00:35:24,544	00:35:25,312	| IOT095 |	Where is it going
+EDL	00:35:25,824	00:35:28,384	| IOT095 |	So the industrial internet today it's happening
+EDL	00:35:29,920	00:35:34,016	| IOT095 |	Distributed systems in becoming more open
+EDL	00:35:34,528	00:35:36,064	| IOT095 |	More complex
+EDL	00:35:36,064	00:35:38,880	| IOT095 |	And collaboration of or vendors drysol
+EDL	00:35:38,880	00:35:40,160	| IOT095 |	Inside
+EDL	00:35:40,160	00:35:43,488	| IOT095 |	But the majority of Industries and companies
+EDL	00:35:44,768	00:35:45,792	| IOT095 |	Have not adopted
+EDL	00:35:47,328	00:35:49,120	| IOT095 |	So we're just getting started
+EDL	00:35:49,888	00:35:51,168	| IOT095 |	Scratching the surface
+EDL	00:35:53,216	00:35:55,008	| IOT095 |	But we're seeing a lot of interest
+EDL	00:35:55,008	00:35:55,520	| IOT095 |	And
+EDL	00:35:56,544	00:35:57,568	| IOT095 |	Indiana
+EDL	00:35:58,080	00:35:59,616	| IOT095 |	Technology stocks
+EDL	00:35:59,616	00:36:00,640	| IOT095 |	Becoming validated
+EDL	00:36:02,688	00:36:04,224	| IOT095 |	Chest pains like we have in the lab
+EDL	00:36:06,016	00:36:10,368	| IOT095 |	And if we can educate more of these and customers about
+EDL	00:36:10,368	00:36:13,184	| IOT095 |	Then they can start doing a pilot
+EDL	00:36:13,184	00:36:13,696	| IOT095 |	Program
+EDL	00:36:14,208	00:36:15,232	| IOT095 |	And they move on
+EDL	00:36:15,232	00:36:16,256	| IOT095 |	Broader adoption
+EDL	00:36:16,768	00:36:17,792	| IOT095 |	Spaghetti.
+EDL	00:36:17,792	00:36:18,816	| IOT095 |	Insights
+EDL	00:36:18,816	00:36:19,328	| IOT095 |	Required
+EDL	00:36:20,096	00:36:22,400	| IOT095 |	When you guys actually like to talk about your
+EDL	00:36:23,424	00:36:27,264	| IOT095 |	Because that ties to a couple things he's mentioned already one is it
+EDL	00:36:27,264	00:36:28,800	| IOT095 |	They didn't have anything
+EDL	00:36:29,312	00:36:31,616	| IOT095 |	And now they have with a 30000 sensors
+EDL	00:36:32,128	00:36:34,432	| IOT095 |	How did that come about
+EDL	00:36:34,432	00:36:34,944	| IOT095 |	End
+EDL	00:36:36,224	00:36:37,248	| IOT095 |	Is there a typical
+EDL	00:36:37,760	00:36:40,064	| IOT095 |	I would say there is no typical yet
+EDL	00:36:40,064	00:36:40,576	| IOT095 |	Industrial air
+EDL	00:36:41,344	00:36:44,416	| IOT095 |	Duke Energy is the largest
+EDL	00:36:44,416	00:36:45,440	| IOT095 |	Power provider
+EDL	00:36:45,440	00:36:46,976	| IOT095 |	United States and
+EDL	00:36:47,488	00:36:48,256	| IOT095 |	They
+EDL	00:36:48,256	00:36:50,560	| IOT095 |	Realize that they can improve
+EDL	00:36:50,560	00:36:52,352	| IOT095 |	Overall up time
+EDL	00:36:52,352	00:36:53,888	| IOT095 |	All of their facilities they have more
+EDL	00:36:54,912	00:36:55,680	| IOT095 |	They had
+EDL	00:36:55,680	00:36:57,216	| IOT095 |	Experts in
+EDL	00:36:57,216	00:37:00,800	| IOT095 |	Analysis of this vibration database rotini
+EDL	00:37:00,800	00:37:01,568	| IOT095 |	Equipment
+EDL	00:37:01,568	00:37:03,872	| IOT095 |	But they spent 80% of their time
+EDL	00:37:03,872	00:37:04,896	| IOT095 |	Data collection
+EDL	00:37:05,408	00:37:07,712	| IOT095 |	20% of their time analyzing
+EDL	00:37:07,712	00:37:08,480	| IOT095 |	The database
+EDL	00:37:08,992	00:37:10,016	| IOT095 |	They want to flip that
+EDL	00:37:10,528	00:37:12,576	| IOT095 |	So they put an effort out to
+EDL	00:37:14,112	00:37:14,880	| IOT095 |	Measurement taking
+EDL	00:37:16,160	00:37:20,000	| IOT095 |	It's been 80%
+EDL	00:37:20,000	00:37:20,768	| IOT095 |	Their data
+EDL	00:37:20,768	00:37:22,304	| IOT095 |	Ensuring uptime
+EDL	00:37:22,304	00:37:23,840	| IOT095 |	LS timing chain
+EDL	00:37:25,376	00:37:26,400	| IOT095 |	How is the data collected
+EDL	00:37:27,424	00:37:30,496	| IOT095 |	So the data was collected originally by walking around
+EDL	00:37:30,496	00:37:32,032	| IOT095 |	Portable measurement equipment
+EDL	00:37:32,544	00:37:38,176	| IOT095 |	Add capturing information that they needed to be transferred into a spreadsheet or another application
+EDL	00:37:38,688	00:37:39,968	| IOT095 |	Now these systems
+EDL	00:37:39,968	00:37:42,016	| IOT095 |	Online always acquiring
+EDL	00:37:42,016	00:37:43,552	| IOT095 |	Connecting to the network
+EDL	00:37:43,552	00:37:44,832	| IOT095 |	Defeat
+EDL	00:37:44,832	00:37:46,112	| IOT095 |	Air plant Astoria
+EDL	00:37:47,648	00:37:48,928	| IOT095 |	So there
+EDL	00:37:49,440	00:37:50,208	| IOT095 |	Look at that data
+EDL	00:37:54,560	00:37:59,424	| IOT095 |	Crafts to build on that to you know when we look at some of this aging infrastructure that's probably not on
+EDL	00:38:00,448	00:38:01,216	| IOT095 |	The world
+EDL	00:38:01,216	00:38:04,800	| IOT095 |	Part of the data collection process use that many of these large power plants
+EDL	00:38:04,800	00:38:05,568	| IOT095 |	Is the human
+EDL	00:38:06,080	00:38:09,664	| IOT095 |	And it can literally get a simple or a sophisticated
+EDL	00:38:11,200	00:38:11,968	| IOT095 |	I'm going to touch
+EDL	00:38:12,480	00:38:14,016	| IOT095 |	Machine to feel the vibration
+EDL	00:38:15,808	00:38:16,832	| IOT095 |	And I'm going to listen to it
+EDL	00:38:17,344	00:38:18,624	| IOT095 |	As a data collection and
+EDL	00:38:20,416	00:38:26,560	| IOT095 |	Any customers in the similar situations are experts at doing this also
+EDL	00:38:26,560	00:38:28,352	| IOT095 |	Tend to be getting a little older
+EDL	00:38:28,352	00:38:29,376	| IOT095 |	And headed towards retirement
+EDL	00:38:30,144	00:38:32,448	| IOT095 |	And they're worried about the ability to be able to replicate.
+EDL	00:38:33,216	00:38:34,240	| IOT095 |	So as we
+EDL	00:38:34,240	00:38:37,056	| IOT095 |	Deliver technologies that make it practical to
+EDL	00:38:37,056	00:38:38,336	| IOT095 |	To be able to collect that data
+EDL	00:38:38,848	00:38:40,384	| IOT095 |	In a synchronized fashion
+EDL	00:38:40,384	00:38:41,920	| IOT095 |	Securely ideally
+EDL	00:38:41,920	00:38:43,456	| IOT095 |	Future over wireless network
+EDL	00:38:43,456	00:38:46,016	| IOT095 |	And then we developed story
+EDL	00:38:47,040	00:38:49,088	| IOT095 |	Ability from a prognostic view
+EDL	00:38:49,600	00:38:52,672	| IOT095 |	To record the symptoms of an impending
+EDL	00:38:52,672	00:38:54,208	| IOT095 |	Future failure downtime
+EDL	00:38:54,976	00:38:58,048	| IOT095 |	And that learning can be learned once and applied many times
+EDL	00:38:58,560	00:39:00,608	| IOT095 |	In an automated fashion to dramatically
+EDL	00:39:00,608	00:39:02,144	| IOT095 |	Iraq time zone
+EDL	00:39:03,168	00:39:06,240	| IOT095 |	Answer the customer that also dramatically improve their use of energy
+EDL	00:39:06,752	00:39:08,288	| IOT095 |	Which is an interest
+EDL	00:39:11,360	00:39:12,384	| IOT095 |	All of these partners
+EDL	00:39:13,920	00:39:14,944	| IOT095 |	How do you guys
+EDL	00:39:15,456	00:39:16,736	| IOT095 |	Wright contract
+EDL	00:39:16,736	00:39:18,784	| IOT095 |	Sell the product in a way
+EDL	00:39:19,296	00:39:20,576	| IOT095 |	Ensures you guys
+EDL	00:39:21,344	00:39:22,624	| IOT095 |	Get the value for what your
+EDL	00:39:23,648	00:39:25,696	| IOT095 |	Massive numbers of companies
+EDL	00:39:26,720	00:39:27,744	| IOT095 |	It just feels very.
+EDL	00:39:28,256	00:39:31,584	| IOT095 |	We as a company Nestle
+EDL	00:39:31,584	00:39:32,864	| IOT095 |	I've always
+EDL	00:39:32,864	00:39:34,144	| IOT095 |	Operated as part of an ecosystem
+EDL	00:39:35,168	00:39:37,216	| IOT095 |	Where are the ultimate end solution
+EDL	00:39:37,216	00:39:37,984	| IOT095 |	Involved
+EDL	00:39:37,984	00:39:40,544	| IOT095 |	Strom multiple suppliers
+EDL	00:39:40,544	00:39:41,824	| IOT095 |	To be delivered
+EDL	00:39:41,824	00:39:44,128	| IOT095 |	Tool supplier in the system supplier to scientist
+EDL	00:39:45,408	00:39:48,224	| IOT095 |	So this has been our standard business model in r
+EDL	00:39:48,224	00:39:52,576	| IOT095 |	Testing measurement market and we've applied this to as we've expanded our capability outings
+EDL	00:39:53,856	00:39:56,416	| IOT095 |	That's a first of the business model is really clear
+EDL	00:39:56,416	00:39:58,464	| IOT095 |	Hermosa apartments that we're engaging with
+EDL	00:39:58,976	00:40:02,304	| IOT095 |	It's relatively well understood their portion in value chain
+EDL	00:40:02,816	00:40:04,608	| IOT095 |	And ultimately the customer will decide
+EDL	00:40:05,120	00:40:08,192	| IOT095 |	Some situations like Duke Energy the customer will choose
+EDL	00:40:08,704	00:40:11,264	| IOT095 |	To purchase components from different
+EDL	00:40:11,264	00:40:12,544	| IOT095 |	Kalamazoo Valley training
+EDL	00:40:14,336	00:40:15,872	| IOT095 |	And that's a valuable use case
+EDL	00:40:16,640	00:40:18,944	| IOT095 |	In other cases the customer want to
+EDL	00:40:19,456	00:40:21,248	| IOT095 |	Just have one in Topeka
+EDL	00:40:21,760	00:40:23,296	| IOT095 |	To deliver that complete value chain
+EDL	00:40:24,064	00:40:27,392	| IOT095 |	And in that situation in a We have dealt with that is a business for many years and have a
+EDL	00:40:27,904	00:40:30,208	| IOT095 |	I really clear way to to Castro Valley
+EDL	00:40:30,720	00:40:32,768	| IOT095 |	City of tips for companies who are kind of it
+EDL	00:40:33,280	00:40:35,328	| IOT095 |	There's a coming out this for maybe the first time
+EDL	00:40:35,840	00:40:39,680	| IOT095 |	Well it certainly understanding your value and the solution is the single most
+EDL	00:40:40,960	00:40:46,592	| IOT095 |	Understanding have differentiated your value is not have differentiated you'd like it to be or you might want it to be but a different you
+EDL	00:40:47,360	00:40:48,128	| IOT095 |	It actually is
+EDL	00:40:48,896	00:40:51,200	| IOT095 |	Can you get that from the customer to get that work
+EDL	00:40:51,200	00:40:53,504	| IOT095 |	I think you get that from the customer absolutely
+EDL	00:40:53,504	00:40:55,552	| IOT095 |	You know some cases it can get clouded
+EDL	00:40:56,064	00:40:59,392	| IOT095 |	We have a great benefit because we also have a direct field Salesforce
+EDL	00:41:00,160	00:41:01,952	| IOT095 |	So we have direct access to the customer
+EDL	00:41:02,464	00:41:06,048	| IOT095 |	We sell to over 35000 different companies
+EDL	00:41:06,048	00:41:07,584	| IOT095 |	Around the world every year
+EDL	00:41:08,096	00:41:10,912	| IOT095 |	And we have deep relationships that the engineer to end
+EDL	00:41:10,912	00:41:11,424	| IOT095 |	Engineer
+EDL	00:41:12,704	00:41:14,240	| IOT095 |	And so our value
+EDL	00:41:14,240	00:41:17,312	| IOT095 |	Is generally relatively well understood already
+EDL	00:41:17,824	00:41:20,128	| IOT095 |	Two core constituencies within that customer
+EDL	00:41:20,896	00:41:22,944	| IOT095 |	And that helps provide the frame of reference
+EDL	00:41:22,944	00:41:23,968	| IOT095 |	House divided
+EDL	00:41:23,968	00:41:25,504	| IOT095 |	A benchmark for us
+EDL	00:41:25,504	00:41:26,528	| IOT095 |	To be able to
+EDL	00:41:26,528	00:41:27,552	| IOT095 |	Engage with
+EDL	00:41:27,552	00:41:30,624	| IOT095 |	A complete system level provider so my advice and Ensure
+EDL	00:41:31,136	00:41:34,720	| IOT095 |	Would be understand your value understand how differentiated it is
+EDL	00:41:34,720	00:41:35,232	| IOT095 |	Truly
+EDL	00:41:35,744	00:41:38,304	| IOT095 |	And I would try to establish a price position
+EDL	00:41:39,072	00:41:40,096	| IOT095 |	Independent
+EDL	00:41:42,144	00:41:43,936	| IOT095 |	Selling direct to individual customers
+EDL	00:41:44,448	00:41:46,240	| IOT095 |	To be able to validate my first two assumption
+EDL	00:41:47,008	00:41:49,824	| IOT095 |	And be able to prove both to the End customer and my
+EDL	00:41:49,824	00:41:50,592	| IOT095 |	Immigration partners
+EDL	00:41:51,104	00:41:52,640	| IOT095 |	The value that I bring
+EDL	00:41:52,640	00:41:53,151	| IOT095 |	Tomorrow
+EDL	00:41:53,663	00:41:56,223	| IOT095 |	I would think also your relationship with engineers
+EDL	00:41:56,735	00:41:57,247	| IOT095 |	Is important
+EDL	00:41:58,271	00:41:59,551	| IOT095 |	As we seen in clouds
+EDL	00:41:59,551	00:42:01,087	| IOT095 |	Developers are awesome
+EDL	00:42:03,647	00:42:04,415	| IOT095 |	End
+EDL	00:42:04,415	00:42:05,951	| IOT095 |	There's a lot more respect now for
+EDL	00:42:07,743	00:42:10,559	| IOT095 |	On the industrial side is that same sort of
+EDL	00:42:11,839	00:42:15,423	| IOT095 |	It may not be Grassroots but it might be respect for the technical
+EDL	00:42:15,935	00:42:17,215	| IOT095 |	Absolutely
+EDL	00:42:17,215	00:42:19,263	| IOT095 |	Ways we look at I-10.
+EDL	00:42:19,263	00:42:20,031	| IOT095 |	Converging
+EDL	00:42:20,031	00:42:22,079	| IOT095 |	The people will understand the problems and needs
+EDL	00:42:22,591	00:42:23,615	| IOT095 |	Address of those on the fact
+EDL	00:42:24,383	00:42:25,151	| IOT095 |	Where are the plants
+EDL	00:42:25,919	00:42:27,967	| IOT095 |	In the field with the customer
+EDL	00:42:31,039	00:42:33,087	| IOT095 |	So they understand
+EDL	00:42:33,087	00:42:34,367	| IOT095 |	Needs what
+EDL	00:42:34,367	00:42:35,135	| IOT095 |	Chang
+EDL	00:42:35,135	00:42:37,951	| IOT095 |	But they may not have the insights in Denver
+EDL	00:42:37,951	00:42:38,975	| IOT095 |	Information technology
+EDL	00:42:38,975	00:42:42,815	| IOT095 |	Analytics Cloud technical respect
+EDL	00:42:42,815	00:42:43,583	| IOT095 |	Pyside
+EDL	00:42:44,095	00:42:44,863	| IOT095 |	Novation
+EDL	00:42:44,863	00:42:46,143	| IOT095 |	Bad it's becoming
+EDL	00:42:46,655	00:42:47,935	| IOT095 |	Clear that these groups
+EDL	00:42:48,703	00:42:49,471	| IOT095 |	Together
+EDL	00:42:49,471	00:42:52,287	| IOT095 |	And I would say that's the biggest shift I've seen
+EDL	00:42:52,287	00:42:54,847	| IOT095 |	Look at the first part of my career
+EDL	00:42:54,847	00:42:55,871	| IOT095 |	National instruments
+EDL	00:42:56,383	00:42:57,663	| IOT095 |	There was
+EDL	00:42:57,663	00:42:59,455	| IOT095 |	A desire for
+EDL	00:42:59,455	00:43:01,759	| IOT095 |	Companies to provide freestyle over
+EDL	00:43:01,759	00:43:04,831	| IOT095 |	Close systems to own the entire solution
+EDL	00:43:04,831	00:43:06,623	| IOT095 |	And in some cases even hold a customer
+EDL	00:43:08,671	00:43:09,695	| IOT095 |	Today those
+EDL	00:43:09,695	00:43:13,279	| IOT095 |	Barriers are being broken down and companies are supplying to
+EDL	00:43:13,279	00:43:14,047	| IOT095 |	Customers
+EDL	00:43:14,047	00:43:16,863	| IOT095 |	Have a willingness in a desire to collaborate
+EDL	00:43:16,863	00:43:18,399	| IOT095 |	And the customers are demanding
+EDL	00:43:20,447	00:43:25,055	| IOT095 |	And so as companies are evaluating what move to make for the industrial internet-of-things
+EDL	00:43:25,567	00:43:26,847	| IOT095 |	End customers
+EDL	00:43:26,847	00:43:28,639	| IOT095 |	The one piece of advice I would give to down
+EDL	00:43:29,151	00:43:29,919	| IOT095 |	Is 2 don't wait
+EDL	00:43:30,687	00:43:34,527	| IOT095 |	Put down your biggest challenge your biggest headache your biggest
+EDL	00:43:34,527	00:43:35,807	| IOT095 |	Opportunities for improvement
+EDL	00:43:36,319	00:43:39,135	| IOT095 |	Start working to see how you can address that issue
+EDL	00:43:39,647	00:43:42,719	| IOT095 |	That starting point can blossom real impact
+EDL	00:43:43,999	00:43:45,535	| IOT095 |	And then to the next project
+EDL	00:43:46,815	00:43:48,863	| IOT095 |	Izzy's Transformations are not going to be
+EDL	00:43:48,863	00:43:50,655	| IOT095 |	Enterprise why all of
+EDL	00:43:50,655	00:43:52,959	| IOT095 |	And some people have that view and
+EDL	00:43:56,543	00:43:59,103	| IOT095 |	You guys are the people who are going to make a difference
+EDL	00:43:59,103	00:44:00,383	| IOT095 |	And you should totally be
+EDL	00:44:00,895	00:44:01,663	| IOT095 |	So sad
+EDL	00:44:02,943	00:44:06,015	| IOT095 |	And now go to Jim heppelmann the CEO of
+EDL	00:44:06,015	00:44:07,039	| IOT095 |	GTC
+EDL	00:44:07,039	00:44:11,647	| IOT095 |	We talked about how PTC is acquired several companies such as
+EDL	00:44:11,647	00:44:12,159	| IOT095 |	Xidan
+EDL	00:44:13,695	00:44:15,487	| IOT095 |	Vuforia from Qualcomm
+EDL	00:44:15,487	00:44:17,023	| IOT095 |	And kept where
+EDL	00:44:17,023	00:44:18,047	| IOT095 |	Alta build
+EDL	00:44:18,047	00:44:21,887	| IOT095 |	A platform for the internet of things called thingworx
+EDL	00:44:21,887	00:44:22,655	| IOT095 |	Oh yeah
+EDL	00:44:22,655	00:44:23,679	| IOT095 |	And it also
+EDL	00:44:23,679	00:44:24,703	| IOT095 |	Acquired thingworx
+EDL	00:44:25,215	00:44:27,519	| IOT095 |	So I checked in with Jim to find out
+EDL	00:44:27,519	00:44:28,799	| IOT095 |	How a year later
+EDL	00:44:29,311	00:44:30,847	| IOT095 |	Those Acquisitions were performed
+EDL	00:44:31,871	00:44:33,407	| IOT095 |	Division is alive and well
+EDL	00:44:33,407	00:44:35,199	| IOT095 |	Business is doing exceptionally well
+EDL	00:44:39,295	00:44:41,855	| IOT095 |	Machine learning and Predictive Analytics
+EDL	00:44:42,623	00:44:46,719	| IOT095 |	Find out what we need to know and then to be able to turn around using augmented reality
+EDL	00:44:46,719	00:44:49,279	| IOT095 |	And kind of decorate your view of that will physical world
+EDL	00:44:49,791	00:44:51,327	| IOT095 |	Important digital information
+EDL	00:44:51,839	00:44:52,863	| IOT095 |	AR is less
+EDL	00:44:57,471	00:45:03,359	| IOT095 |	Service technician
+EDL	00:45:03,871	00:45:06,175	| IOT095 |	I think we're where the early days of AR
+EDL	00:45:06,687	00:45:07,455	| IOT095 |	Screwing
+EDL	00:45:11,039	00:45:11,807	| IOT095 |	Do this a scam
+EDL	00:45:12,319	00:45:14,623	| IOT095 |	The big thing now is the digital eyewear
+EDL	00:45:14,623	00:45:17,183	| IOT095 |	As the July where becomes better
+EDL	00:45:17,183	00:45:19,231	| IOT095 |	And a little more ubiquitous
+EDL	00:45:19,231	00:45:24,095	| IOT095 |	That will unleash a wave they are
+EDL	00:45:24,095	00:45:25,119	| IOT095 |	And we need to explain it
+EDL	00:45:25,887	00:45:28,191	| IOT095 |	And there's no better way than to make it visual
+EDL	00:45:28,703	00:45:31,263	| IOT095 |	Linda put it in context of the physical world
+EDL	00:45:32,799	00:45:35,103	| IOT095 |	So I think we're we're at the edge of the big toe
+EDL	00:45:35,871	00:45:40,223	| IOT095 |	There is substantial breakthroughs happening with digital eyewear I mean the Microsoft hololens
+EDL	00:45:40,223	00:45:42,271	| IOT095 |	Unbelievable
+EDL	00:45:42,783	00:45:46,111	| IOT095 |	Snapchat spectacles
+EDL	00:45:46,623	00:45:50,719	| IOT095 |	What we need is this going to be something like this smartphone which
+EDL	00:45:50,719	00:45:51,999	| IOT095 |	Super spring in
+EDL	00:45:51,999	00:45:54,815	| IOT095 |	Technology
+EDL	00:45:55,327	00:45:56,863	| IOT095 |	Industrial-grade
+EDL	00:45:58,655	00:46:03,263	| IOT095 |	She just heading to consumer-grade pretty quickly I think Microsoft is targeting
+EDL	00:46:08,639	00:46:10,687	| IOT095 |	What's happening right now as consumers are using
+EDL	00:46:11,199	00:46:12,223	| IOT095 |	Phones and tablets
+EDL	00:46:12,735	00:46:14,015	| IOT095 |	As a proxy
+EDL	00:46:14,015	00:46:14,783	| IOT095 |	4 spyglass
+EDL	00:46:15,807	00:46:18,879	| IOT095 |	Do you actually get the same experience the downfall is it ties up your hands
+EDL	00:46:19,903	00:46:21,183	| IOT095 |	Social service technician
+EDL	00:46:21,183	00:46:24,255	| IOT095 |	Can I use a tablet or a phone to see what they need to see
+EDL	00:46:31,423	00:46:32,191	| IOT095 |	They were just work
+EDL	00:46:32,703	00:46:33,471	| IOT095 |	Fluidly
+EDL	00:46:33,471	00:46:35,007	| IOT095 |	Without interruption because their hands
+EDL	00:46:36,031	00:46:38,079	| IOT095 |	So in a sense I'm going to go crazy
+EDL	00:46:39,103	00:46:40,127	| IOT095 |	Voice for the iot
+EDL	00:46:42,943	00:46:43,967	| IOT095 |	Is Kai.
+EDL	00:46:45,503	00:46:48,575	| IOT095 |	Telling you information for the Internet of Things
+EDL	00:46:49,343	00:46:50,367	| IOT095 |	You're saying vision
+EDL	00:46:50,879	00:46:53,183	| IOT095 |	Computer generated AR is going to
+EDL	00:47:00,095	00:47:00,863	| IOT095 |	I like it
+EDL	00:47:00,863	00:47:04,447	| IOT095 |	That brings up another point which is if the pictures on in contacts
+EDL	00:47:05,215	00:47:07,007	| IOT095 |	Can you have to do a mental mapping
+EDL	00:47:07,007	00:47:13,407	| IOT095 |	Is what happens to you in the car all the time when your navigation system in your dashboard says turn left on this street
+EDL	00:47:13,407	00:47:14,175	| IOT095 |	Play was it
+EDL	00:47:14,175	00:47:18,271	| IOT095 |	You look down to the windshield
+EDL	00:47:20,319	00:47:21,087	| IOT095 |	And it's a
+EDL	00:47:21,087	00:47:22,623	| IOT095 |	Process requires a fair amount of
+EDL	00:47:22,623	00:47:25,183	| IOT095 |	And then if I could
+EDL	00:47:26,975	00:47:30,559	| IOT095 |	You know hemispherical view of the world where I can look up down left right
+EDL	00:47:31,071	00:47:34,399	| IOT095 |	So basically I'm saying is if we can figure out with smart glasses
+EDL	00:47:34,399	00:47:36,191	| IOT095 |	How to decorate the world
+EDL	00:47:36,191	00:47:37,727	| IOT095 |	Your aunt's room you're in
+EDL	00:47:37,727	00:47:39,519	| IOT095 |	What information do you need to know about the
+EDL	00:47:42,335	00:47:44,639	| IOT095 |	Your ability to ingest that information
+EDL	00:47:44,639	00:47:45,407	| IOT095 |	Literally
+EDL	00:47:46,943	00:47:48,991	| IOT095 |	It would be to read it off
+EDL	00:47:48,991	00:47:50,271	| IOT095 |	Screen of your phone
+EDL	00:47:51,807	00:47:54,111	| IOT095 |	It's a big idea of iot
+EDL	00:47:54,111	00:47:56,671	| IOT095 |	Chris so much data so much knowledge
+EDL	00:47:56,671	00:47:58,463	| IOT095 |	Physical world that you can't see
+EDL	00:47:59,231	00:48:02,559	| IOT095 |	You look at it in the computer and then mentally map it
+EDL	00:48:03,071	00:48:05,119	| IOT095 |	We just want to decorate what you see
+EDL	00:48:05,119	00:48:05,887	| IOT095 |	What you need to know
+EDL	00:48:06,655	00:48:08,959	| IOT095 |	So that feels like we need some sort of standard
+EDL	00:48:12,031	00:48:13,311	| IOT095 |	14 Mattapan
+EDL	00:48:20,223	00:48:24,575	| IOT095 |	I'm not a hundred percent sure if it needs to be a standard but I think we definitely need techniques
+EDL	00:48:25,343	00:48:26,879	| IOT095 |	What did you think about
+EDL	00:48:28,415	00:48:30,463	| IOT095 |	User interface development on computers
+EDL	00:48:30,975	00:48:36,095	| IOT095 |	Microsoft has a set of techniques apple has a slightly different set of techniques and other vendor might be slightly different
+EDL	00:48:36,607	00:48:41,215	| IOT095 |	There are good practices for developing grassley's Renovators in bed rack
+EDL	00:48:41,983	00:48:44,543	| IOT095 |	If we move down with the AR prices
+EDL	00:48:44,543	00:48:46,847	| IOT095 |	It's just the wild west end
+EDL	00:48:46,847	00:48:47,871	| IOT095 |	Definitely
+EDL	00:48:47,871	00:48:51,199	| IOT095 |	State-of-the-art
+EDL	00:48:52,223	00:48:52,991	| IOT095 |	This well
+EDL	00:48:53,503	00:48:55,551	| IOT095 |	And hopefully using familiar paradigms
+EDL	00:48:56,063	00:48:58,111	| IOT095 |	From one device to another
+EDL	00:48:58,111	00:48:59,135	| IOT095 |	Like I can move from us
+EDL	00:48:59,903	00:49:02,975	| IOT095 |	You don't Android phone to an Apple phone and they're not really that different
+EDL	00:49:05,023	00:49:06,303	| IOT095 |	I can figure it out
+EDL	00:49:06,303	00:49:06,815	| IOT095 |	Pretty quickly
+EDL	00:49:11,935	00:49:12,703	| IOT095 |	Problems
+EDL	00:49:15,519	00:49:16,543	| IOT095 |	Is the Amazon Echo
+EDL	00:49:19,103	00:49:19,615	| IOT095 |	I like
+EDL	00:49:25,503	00:49:28,319	| IOT095 |	I can only imagine that if I switch from
+EDL	00:49:28,319	00:49:30,367	| IOT095 |	Is it is not as big a deal in industrial
+EDL	00:49:35,743	00:49:40,351	| IOT095 |	I think the whole idea they are is to make information Visual and a coil
+EDL	00:49:40,351	00:49:41,375	| IOT095 |	What to put in contacts
+EDL	00:49:41,887	00:49:44,447	| IOT095 |	So that you can actually process it without thinking
+EDL	00:49:45,215	00:49:50,335	| IOT095 |	Driving your car you pull up to a stop light
+EDL	00:49:50,335	00:49:52,895	| IOT095 |	Stop look and say oh
+EDL	00:49:52,895	00:49:54,431	| IOT095 |	That looks like a stoplight
+EDL	00:49:54,431	00:49:55,711	| IOT095 |	Shred
+EDL	00:49:55,711	00:49:57,247	| IOT095 |	Red means stop
+EDL	00:49:57,247	00:50:00,319	| IOT095 |	Okay there for me to stop you just do it what are some
+EDL	00:50:00,319	00:50:01,343	| IOT095 |	Mercy
+EDL	00:50:05,183	00:50:06,975	| IOT095 |	Directions
+EDL	00:50:06,975	00:50:10,047	| IOT095 |	I didn't receive last thing first of all it's a powerful idea
+EDL	00:50:10,559	00:50:14,143	| IOT095 |	Many many demonstrations approve that
+EDL	00:50:14,655	00:50:16,447	| IOT095 |	People are far more productive
+EDL	00:50:16,447	00:50:17,983	| IOT095 |	And make mistakes
+EDL	00:50:17,983	00:50:19,263	| IOT095 |	So I think there are
+EDL	00:50:19,263	00:50:20,799	| IOT095 |	Mini case studies now
+EDL	00:50:20,799	00:50:23,359	| IOT095 |	From PC and from various others the show
+EDL	00:50:23,359	00:50:24,127	| IOT095 |	Norma
+EDL	00:50:24,895	00:50:26,687	| IOT095 |	Reason I don't see they are Belong Together.
+EDL	00:50:27,455	00:50:28,991	| IOT095 |	Because they are Death Race
+EDL	00:50:28,991	00:50:30,015	| IOT095 |	Physical world
+EDL	00:50:30,015	00:50:31,039	| IOT095 |	Decorated with what
+EDL	00:50:32,319	00:50:34,623	| IOT095 |	We need information from the physical world
+EDL	00:50:35,135	00:50:39,487	| IOT095 |	An understanding
+EDL	00:50:41,023	00:50:41,791	| IOT095 |	What is the
+EDL	00:50:41,791	00:50:42,559	| IOT095 |	Addition
+EDL	00:50:42,559	00:50:44,863	| IOT095 |	What is the status what is the action you should take
+EDL	00:50:45,375	00:50:47,423	| IOT095 |	How do I convey that status in
+EDL	00:50:47,423	00:50:51,263	| IOT095 |	Addition to you and then how do I convey to you
+EDL	00:50:51,775	00:50:53,311	| IOT095 |	Right because right now
+EDL	00:50:55,871	00:50:56,639	| IOT095 |	Information
+EDL	00:50:56,639	00:50:59,455	| IOT095 |	I can tell you how many steps I've taken I can tell you
+EDL	00:50:59,455	00:51:02,783	| IOT095 |	The temperature
+EDL	00:51:03,295	00:51:06,367	| IOT095 |	That does me no good without being a
+EDL	00:51:06,367	00:51:07,391	| IOT095 |	I'll take any sort of
+EDL	00:51:08,159	00:51:08,927	| IOT095 |	So
+EDL	00:51:09,439	00:51:11,231	| IOT095 |	If you think back to driving a car
+EDL	00:51:11,743	00:51:13,023	| IOT095 |	You have a navigation system
+EDL	00:51:13,535	00:51:14,559	| IOT095 |	Can you have the music
+EDL	00:51:15,327	00:51:20,191	| IOT095 |	And if I could cherry-pick the information for the navigation screen and give you a heads up display
+EDL	00:51:20,191	00:51:20,959	| IOT095 |	On the windscreen
+EDL	00:51:21,471	00:51:22,751	| IOT095 |	Not to say
+EDL	00:51:22,751	00:51:25,055	| IOT095 |	There are three roads coming up and you should take the
+EDL	00:51:25,055	00:51:25,823	| IOT095 |	The second one
+EDL	00:51:26,335	00:51:29,151	| IOT095 |	What to actually say see this road right here
+EDL	00:51:32,223	00:51:33,503	| IOT095 |	Of course if you think now
+EDL	00:51:33,503	00:51:35,039	| IOT095 |	Fighter pilots have had
+EDL	00:51:35,039	00:51:36,319	| IOT095 |	Heads up displays for a long time
+EDL	00:51:41,695	00:51:42,975	| IOT095 |	So if we could
+EDL	00:51:42,975	00:51:44,767	| IOT095 |	Ocean of the
+EDL	00:51:44,767	00:51:45,791	| IOT095 |	Heads up display
+EDL	00:51:46,303	00:51:47,583	| IOT095 |	Put it on everything
+EDL	00:51:48,607	00:51:49,119	| IOT095 |	People
+EDL	00:51:49,631	00:51:50,655	| IOT095 |	Furniture
+EDL	00:51:50,655	00:51:52,191	| IOT095 |	Industrial objects Farm
+EDL	00:51:52,703	00:51:58,591	| IOT095 |	Give you a heads-up display on everything simply by putting on her glasses and everything you interact with
+EDL	00:51:59,103	00:52:02,431	| IOT095 |	Has a heads-up display optimized for interacting with that thing
+EDL	00:52:02,943	00:52:04,223	| IOT095 |	I think it's a big part 1
+EDL	00:52:04,735	00:52:06,527	| IOT095 |	Savannah would be like this is a person
+EDL	00:52:11,135	00:52:11,647	| IOT095 |	Business
+EDL	00:52:13,439	00:52:15,487	| IOT095 |	Oh we don't have enough standards we don't have it
+EDL	00:52:15,487	00:52:16,255	| IOT095 |	Anythink
+EDL	00:52:17,535	00:52:23,167	| IOT095 |	Okay if I engage you in a social context
+EDL	00:52:24,191	00:52:28,287	| IOT095 |	If I'm your doctor I want to have a completely different perspective of Stacy
+EDL	00:52:28,287	00:52:30,079	| IOT095 |	Even though I might
+EDL	00:52:33,151	00:52:34,175	| IOT095 |	Let's talk about
+EDL	00:52:34,175	00:52:35,455	| IOT095 |	Security because
+EDL	00:52:35,455	00:52:36,991	| IOT095 |	What we're talking about here
+EDL	00:52:37,503	00:52:38,783	| IOT095 |	The number one reason
+EDL	00:52:38,783	00:52:40,319	| IOT095 |	Companies say that they're not
+EDL	00:52:46,975	00:52:47,743	| IOT095 |	What should baby
+EDL	00:52:50,303	00:52:56,447	| IOT095 |	I think this notion of iot being a new set of security problem is wrong
+EDL	00:52:57,215	00:52:59,263	| IOT095 |	It's the same security problems we have
+EDL	00:53:00,543	00:53:02,079	| IOT095 |	It's just more things are computers
+EDL	00:53:02,591	00:53:07,199	| IOT095 |	Right now and we're extending them to things that you didn't think of it
+EDL	00:53:09,503	00:53:11,039	| IOT095 |	More and more
+EDL	00:53:11,551	00:53:12,831	| IOT095 |	These things in our computers week
+EDL	00:53:23,327	00:53:25,119	| IOT095 |	Play did you think of a power plant you know
+EDL	00:53:25,631	00:53:27,423	| IOT095 |	Computer control
+EDL	00:53:27,935	00:53:29,471	| IOT095 |	I think the security
+EDL	00:53:31,007	00:53:35,103	| IOT095 |	There's no CIO that can save my data center is safer than it was 10 years ago
+EDL	00:53:36,127	00:53:37,663	| IOT095 |	They just can't really say that
+EDL	00:53:37,663	00:53:44,063	| IOT095 |	They might have invested a tremendous amount in technology and techniques and practices.
+EDL	00:53:44,063	00:53:44,831	| IOT095 |	More secure
+EDL	00:53:44,831	00:53:46,879	| IOT095 |	We just in an open-ended battle
+EDL	00:53:46,879	00:53:48,415	| IOT095 |	What is going to be the big things
+EDL	00:53:48,415	00:53:48,927	| IOT095 |	This year in a day
+EDL	00:53:49,695	00:53:51,487	| IOT095 |	But I'm saying in our business is back
+EDL	00:53:53,023	00:53:56,095	| IOT095 |	Has always been automated dirt or have been
+EDL	00:53:56,607	00:53:58,655	| IOT095 |	What's happening now if people are saying
+EDL	00:53:58,655	00:54:00,703	| IOT095 |	So much more
+EDL	00:54:01,471	00:54:03,007	| IOT095 |	And get it so much more data
+EDL	00:54:03,519	00:54:05,311	| IOT095 |	That would be useful in automation
+EDL	00:54:05,311	00:54:06,335	| IOT095 |	And I could
+EDL	00:54:08,895	00:54:11,711	| IOT095 |	Around what is this
+EDL	00:54:11,711	00:54:12,223	| IOT095 |	Telling me
+EDL	00:54:14,783	00:54:17,343	| IOT095 |	But I think I think what's happening is people are
+EDL	00:54:18,623	00:54:22,207	| IOT095 |	Our business is going very well
+EDL	00:54:24,511	00:54:27,071	| IOT095 |	And you ask what's driving most of that growth
+EDL	00:54:28,095	00:54:29,375	| IOT095 |	Laser Pilots
+EDL	00:54:29,375	00:54:34,495	| IOT095 |	Because people are just getting started a lot of the pilots are graduating
+EDL	00:54:35,007	00:54:35,775	| IOT095 |	Into
+EDL	00:54:35,775	00:54:40,127	| IOT095 |	Modified business you know real orders from real customers right now
+EDL	00:54:40,127	00:54:43,967	| IOT095 |	I think I said that our last earnings call that last year half of our Revenue
+EDL	00:54:48,063	00:54:50,111	| IOT095 |	Customers who were coming back for more
+EDL	00:54:53,695	00:55:00,095	| IOT095 |	That's it for this week's show but please remember to join us next week on the Internet of Things podcast
+EDL	00:55:00,095	00:55:06,495	| IOT095 |	And thank you for listening also if you do what more information don't forget to go to Stacey on iot
+EDL	00:55:06,495	00:55:09,055	| IOT095 |	T.com and sign up for the Weekly News
+EDL	00:55:09,055	00:55:09,823	| IOT095 |	Is letter
+EDL	00:55:09,823	00:55:11,103	| IOT095 |	See you next week 

@@ -1,0 +1,1096 @@
+EDL	Record In	Record Out	Clipname	Subtitle
+EDL	00:00:06,656	00:00:12,800	| IOT112 |	Hey everyone welcome to the Internet of Things podcast this is your host
+EDL	00:00:13,312	00:00:14,848	| IOT112 |	Higginbotham abbesses
+EDL	00:00:14,848	00:00:15,360	| IOT112 |	Co-host
+EDL	00:00:15,872	00:00:16,384	| IOT112 |	Kevin tofel
+EDL	00:00:16,896	00:00:19,456	| IOT112 |	And we have an amazing show for you today we're going to talk about
+EDL	00:00:19,968	00:00:22,784	| IOT112 |	Google's iot Cloud Samsung artik
+EDL	00:00:22,784	00:00:23,808	| IOT112 |	And some new stuff there
+EDL	00:00:24,320	00:00:28,160	| IOT112 |	We've got a lot of news about Amazon Echo and
+EDL	00:00:28,672	00:00:30,208	| IOT112 |	Developer services
+EDL	00:00:30,720	00:00:34,816	| IOT112 |	Plus we're going to talk about Honeywell starting a new 100 million dollar Venture fund
+EDL	00:00:35,328	00:00:39,424	| IOT112 |	There's also a new place to shop that I'm super excited about here in Austin Texas
+EDL	00:00:41,472	00:00:41,984	| IOT112 |	Where to make some
+EDL	00:00:42,496	00:00:43,776	| IOT112 |	Some speculation about Spotify
+EDL	00:00:44,800	00:00:45,568	| IOT112 |	And this week
+EDL	00:00:45,568	00:00:47,360	| IOT112 |	Sponsor is Arris
+EDL	00:00:47,872	00:00:53,760	| IOT112 |	And after hearing from them we are going to hear from our guest Bill Gardner from GE Appliances
+EDL	00:00:54,272	00:00:56,320	| IOT112 |	Smart kitchens and
+EDL	00:00:56,832	00:00:59,136	| IOT112 |	When you will be able to buy one
+EDL	00:00:59,136	00:00:59,904	| IOT112 |	Some of y'all
+EDL	00:00:59,904	00:01:00,416	| IOT112 |	Hard Luck
+EDL	00:01:01,184	00:01:01,952	| IOT112 |	First
+EDL	00:01:01,952	00:01:03,744	| IOT112 |	Speaking of smart kitchens
+EDL	00:01:03,744	00:01:10,144	| IOT112 |	The smart Kitchen Summit is the only event of its kind to tackle the future of food cooking and the kitchen
+EDL	00:01:10,144	00:01:16,544	| IOT112 |	Decision-makers and disruptors across food cooking appliances retail and Technology with two
+EDL	00:01:16,544	00:01:22,944	| IOT112 |	Couple days of content discussions networking and product showcases p2017 smart kitchen
+EDL	00:01:22,944	00:01:29,344	| IOT112 |	It will be held at the Benaroya Hall in Seattle on October 10th through 11th listeners can use the code
+EDL	00:01:29,344	00:01:30,624	| IOT112 |	Food
+EDL	00:01:30,624	00:01:37,024	| IOT112 |	You got to spell it right guys Stacey for a 25% discount on tickets at WWE
+EDL	00:01:37,024	00:01:40,096	| IOT112 |	W. Smart Kitchen Summit. Com
+EDL	00:01:40,608	00:01:41,376	| IOT112 |	All right
+EDL	00:01:44,192	00:01:47,520	| IOT112 |	The timing of today's podcast is interesting
+EDL	00:01:47,520	00:01:49,568	| IOT112 |	Because in about
+EDL	00:01:49,568	00:01:54,176	| IOT112 |	4 hours after we recorded this Google IO kicks off with a keynote witch
+EDL	00:01:54,176	00:01:58,272	| IOT112 |	Kind of leads me to my typical disclosure that I do work for Google as a consultant
+EDL	00:01:58,784	00:02:04,416	| IOT112 |	In their Enterprise area for devices not coyote or anything like that so all opinions are my own
+EDL	00:02:05,184	00:02:11,328	| IOT112 |	So we know something because Google just announced some things but we know Google's kind of probably enough some more things
+EDL	00:02:11,328	00:02:12,864	| IOT112 |	And Kevin doesn't actually know those
+EDL	00:02:13,376	00:02:16,192	| IOT112 |	So he can't give us a sneak peek knowing that tomorrow this would
+EDL	00:02:17,984	00:02:20,288	| IOT112 |	You guys are just going to have to get a slightly
+EDL	00:02:20,288	00:02:20,800	| IOT112 |	Steel pot
+EDL	00:02:25,152	00:02:28,736	| IOT112 |	We ask Google to push everything up a day but they didn't listen
+EDL	00:02:28,736	00:02:30,784	| IOT112 |	I don't I don't have any pull there
+EDL	00:02:30,784	00:02:31,552	| IOT112 |	You know
+EDL	00:02:31,552	00:02:32,320	| IOT112 |	Kevin
+EDL	00:02:33,600	00:02:34,368	| IOT112 |	Slacker
+EDL	00:02:35,648	00:02:36,160	| IOT112 |	Call Cinderella
+EDL	00:02:37,696	00:02:38,208	| IOT112 |	Make it so
+EDL	00:02:38,720	00:02:43,840	| IOT112 |	Let's get started with Google launching a beta version of
+EDL	00:02:43,840	00:02:49,216	| IOT112 |	An iot Cloud platform is part of its cloud computing efforts a private beta
+EDL	00:02:50,240	00:02:50,752	| IOT112 |	Private beta
+EDL	00:02:51,264	00:02:52,544	| IOT112 |	Which is like extra beta
+EDL	00:02:54,080	00:02:55,360	| IOT112 |	Not quite Alpha but it's almost
+EDL	00:02:55,872	00:02:57,664	| IOT112 |	So this is Google Cloud iot
+EDL	00:02:58,432	00:03:02,016	| IOT112 |	So when I'm looking at a new iot Cloud platform I look for
+EDL	00:03:02,784	00:03:04,320	| IOT112 |	I look for the ability to
+EDL	00:03:04,320	00:03:04,832	| IOT112 |	Vision
+EDL	00:03:05,344	00:03:07,136	| IOT112 |	Ingest data
+EDL	00:03:07,136	00:03:08,672	| IOT112 |	Device management
+EDL	00:03:08,672	00:03:09,184	| IOT112 |	And
+EDL	00:03:10,208	00:03:12,256	| IOT112 |	Probably some other things that I'm not thinking about
+EDL	00:03:12,256	00:03:13,792	| IOT112 |	Like I said Daddy Analytics
+EDL	00:03:13,792	00:03:15,072	| IOT112 |	Open firmware
+EDL	00:03:15,072	00:03:15,584	| IOT112 |	Thank you
+EDL	00:03:16,096	00:03:18,656	| IOT112 |	Yeah which this has some of those
+EDL	00:03:18,656	00:03:20,704	| IOT112 |	It definitely has firmware updates
+EDL	00:03:20,704	00:03:25,824	| IOT112 |	At least for Android things devices Google says the firmware updates can be automatic
+EDL	00:03:25,824	00:03:29,152	| IOT112 |	I don't know much about the provisioning side for four other
+EDL	00:03:29,152	00:03:29,920	| IOT112 |	Devices
+EDL	00:03:30,432	00:03:34,016	| IOT112 |	But certainly the analytics are there I mean this ties into
+EDL	00:03:34,016	00:03:38,880	| IOT112 |	Google Cloud platform bigtable bigquery even their Cloud machine learning aspects
+EDL	00:03:39,648	00:03:41,184	| IOT112 |	So there's there's some
+EDL	00:03:41,184	00:03:46,816	| IOT112 |	I think that would explain why it's still in private beta and they've also got a lot of device partners
+EDL	00:03:46,816	00:03:48,096	| IOT112 |	So it's impossible
+EDL	00:03:48,096	00:03:50,656	| IOT112 |	Certain modules you buy from this device partners
+EDL	00:03:50,656	00:03:52,704	| IOT112 |	Are going to be able to be managed in
+EDL	00:03:53,728	00:03:58,592	| IOT112 |	That's very similar AWS has something like that and they work with lots of other
+EDL	00:03:59,104	00:04:03,456	| IOT112 |	Nxp arm until other companies to pull device in producer
+EDL	00:04:04,480	00:04:08,832	| IOT112 |	And it's mostly the same players hear minutes is clearly an attempt to
+EDL	00:04:08,832	00:04:14,976	| IOT112 |	Show developers hey you know you don't have to go AWS if you don't want to you if you want to take advantage of Google Cloud platform in
+EDL	00:04:15,488	00:04:16,768	| IOT112 |	All the service is there
+EDL	00:04:16,768	00:04:18,047	| IOT112 |	Come on over here
+EDL	00:04:18,047	00:04:20,095	| IOT112 |	Yeah and honestly
+EDL	00:04:20,095	00:04:22,911	| IOT112 |	Google it's not a huge player in the
+EDL	00:04:22,911	00:04:24,191	| IOT112 |	Industrial or the
+EDL	00:04:24,959	00:04:26,495	| IOT112 |	Even manufacturers
+EDL	00:04:26,495	00:04:27,263	| IOT112 |	Consumer devices
+EDL	00:04:28,031	00:04:31,359	| IOT112 |	And this actually doesn't change anything because this is such a limit
+EDL	00:04:31,359	00:04:32,127	| IOT112 |	Beta
+EDL	00:04:32,127	00:04:32,639	| IOT112 |	Right now
+EDL	00:04:33,919	00:04:35,967	| IOT112 |	AWS is by far and away
+EDL	00:04:35,967	00:04:36,735	| IOT112 |	According to Lexi
+EDL	00:04:36,735	00:04:37,503	| IOT112 |	Eclipse developer survey
+EDL	00:04:39,295	00:04:40,319	| IOT112 |	I think it's 40 something
+EDL	00:04:40,319	00:04:40,831	| IOT112 |	10% of 12
+EDL	00:04:41,343	00:04:43,135	| IOT112 |	Followed by Azure which is got
+EDL	00:04:43,135	00:04:43,647	| IOT112 |	26
+EDL	00:04:44,159	00:04:49,023	| IOT112 |	Yeah I was just I was just going to say Microsoft has a strong number two there and and Google's trying to catch up
+EDL	00:04:49,791	00:04:51,327	| IOT112 |	So this makes sense
+EDL	00:04:52,351	00:04:53,119	| IOT112 |	But
+EDL	00:04:53,119	00:04:54,911	| IOT112 |	It is good that Google's doing
+EDL	00:04:54,911	00:04:55,679	| IOT112 |	She needs to do
+EDL	00:04:55,679	00:05:02,079	| IOT112 |	Looks like they have support for mqtt I'm not seeing support for like a MP
+EDL	00:05:02,079	00:05:02,847	| IOT112 |	Did you or AMT
+EDL	00:05:03,615	00:05:06,943	| IOT112 |	Can never remember
+EDL	00:05:06,943	00:05:09,503	| IOT112 |	But mqtt is a Communications protocol data
+EDL	00:05:10,783	00:05:11,551	| IOT112 |	So
+EDL	00:05:11,551	00:05:15,135	| IOT112 |	This is good it needs to happen so that's all I can say about it right now
+EDL	00:05:15,135	00:05:16,159	| IOT112 |	My Hope
+EDL	00:05:16,159	00:05:17,183	| IOT112 |	And I don't know
+EDL	00:05:17,183	00:05:21,023	| IOT112 |	But my hope is that at I owe more information comes out or even some
+EDL	00:05:21,791	00:05:25,631	| IOT112 |	Additional features support Etc because
+EDL	00:05:25,631	00:05:29,215	| IOT112 |	It was interesting to me that this blog post on Google Cloud blog
+EDL	00:05:29,727	00:05:32,031	| IOT112 |	Will publish the day before I outright
+EDL	00:05:32,543	00:05:33,567	| IOT112 |	It's not like this is
+EDL	00:05:33,567	00:05:34,335	| IOT112 |	Ayo news
+EDL	00:05:34,847	00:05:37,663	| IOT112 |	If it was when I hold the fry alright semana
+EDL	00:05:37,663	00:05:39,199	| IOT112 |	Kind of hoping there's some follow-up
+EDL	00:05:39,199	00:05:39,711	| IOT112 |	Information
+EDL	00:05:40,735	00:05:41,503	| IOT112 |	Me too
+EDL	00:05:42,015	00:05:43,807	| IOT112 |	Also in the Google Sphere
+EDL	00:05:43,807	00:05:45,599	| IOT112 |	The Google verse I don't know what to call it
+EDL	00:05:46,111	00:05:52,255	| IOT112 |	Google sings we're in there going to talk about this because there's a developer session but they did the Android things
+EDL	00:05:52,255	00:05:53,535	| IOT112 |	Preview for
+EDL	00:05:53,535	00:05:54,559	| IOT112 |	And basically
+EDL	00:05:55,327	00:05:56,607	| IOT112 |	We see it works with iot
+EDL	00:05:57,119	00:05:59,935	| IOT112 |	Cloud we also know that there is newborn support
+EDL	00:05:59,935	00:06:01,471	| IOT112 |	For some new stuff from NXT
+EDL	00:06:02,239	00:06:03,775	| IOT112 |	They got a lot of voice
+EDL	00:06:07,103	00:06:09,663	| IOT112 |	Which is a good follow-up from earlier this month
+EDL	00:06:09,663	00:06:14,015	| IOT112 |	Magpi magazine folks like to use raspberry pies that community
+EDL	00:06:14,527	00:06:16,063	| IOT112 |	There was a do-it-yourself
+EDL	00:06:16,575	00:06:18,367	| IOT112 |	Google Assistant kit
+EDL	00:06:18,879	00:06:22,207	| IOT112 |	In there you had to add your own pie to it but there's a cardboard kitten
+EDL	00:06:22,719	00:06:28,095	| IOT112 |	And add on boards and so on and you can download software and basic build your own little
+EDL	00:06:28,095	00:06:29,631	| IOT112 |	Google assistant device through it
+EDL	00:06:30,143	00:06:31,167	| IOT112 |	So that's where I
+EDL	00:06:31,935	00:06:33,983	| IOT112 |	I think the first real voice kit
+EDL	00:06:33,983	00:06:36,287	| IOT112 |	Aspect came into play so it's a follow-up to that
+EDL	00:06:36,799	00:06:38,591	| IOT112 |	Yes with dp4
+EDL	00:06:38,591	00:06:44,991	| IOT112 |	The necessary drivers are provided to support the Google Assistant SDK on all Android things certified development
+EDL	00:06:44,991	00:06:45,759	| IOT112 |	Right
+EDL	00:06:45,759	00:06:46,527	| IOT112 |	So now we can
+EDL	00:06:46,527	00:06:47,039	| IOT112 |	Oh
+EDL	00:06:47,551	00:06:51,903	| IOT112 |	So this is really good because it's saying that Google's like hey you know what we're going to talk to her thanks
+EDL	00:06:52,927	00:06:54,975	| IOT112 |	Which we kind of knew
+EDL	00:06:54,975	00:06:57,023	| IOT112 |	We've been saying that for years
+EDL	00:07:00,351	00:07:02,655	| IOT112 |	I wish we would hear a little bit more about
+EDL	00:07:02,655	00:07:03,423	| IOT112 |	Weave
+EDL	00:07:03,423	00:07:03,935	| IOT112 |	At
+EDL	00:07:05,215	00:07:08,543	| IOT112 |	Epi staying at Google IO
+EDL	00:07:08,543	00:07:11,615	| IOT112 |	Weed is their Communications device Discovery protocol
+EDL	00:07:12,127	00:07:13,407	| IOT112 |	You know they talk to sup
+EDL	00:07:13,919	00:07:15,455	| IOT112 |	It competes with the
+EDL	00:07:15,967	00:07:20,831	| IOT112 |	Iotivity standard that isn't really designed actually for small things yet
+EDL	00:07:21,343	00:07:22,623	| IOT112 |	And there's a lot of
+EDL	00:07:22,623	00:07:23,903	| IOT112 |	Play happening here but maybe
+EDL	00:07:24,415	00:07:25,695	| IOT112 |	Google's like you know what
+EDL	00:07:25,695	00:07:27,999	| IOT112 |	The standard thing is not work it out let's just forget about it
+EDL	00:07:28,767	00:07:29,791	| IOT112 |	I don't I don't know
+EDL	00:07:29,791	00:07:30,559	| IOT112 |	So
+EDL	00:07:30,559	00:07:33,375	| IOT112 |	I don't know I mean that home messaging has been kind of
+EDL	00:07:33,375	00:07:39,775	| IOT112 |	Murky for the better part of at least two years I did see in the developer preview news of a side in a will
+EDL	00:07:39,775	00:07:41,311	| IOT112 |	We talk more about this
+EDL	00:07:41,311	00:07:44,639	| IOT112 |	And they pay the live stream link so anybody can TuneIn
+EDL	00:07:44,639	00:07:46,175	| IOT112 |	My Hope Is that we do hear more
+EDL	00:07:46,943	00:07:51,807	| IOT112 |	Is it the last couple years maybe we just been throwing we even berlo and Android things around
+EDL	00:07:52,319	00:07:53,343	| IOT112 |	And now Brillo is
+EDL	00:07:54,111	00:07:54,879	| IOT112 |	Right
+EDL	00:07:54,879	00:07:55,647	| IOT112 |	Right
+EDL	00:07:55,647	00:07:56,159	| IOT112 |	So
+EDL	00:07:56,671	00:07:57,695	| IOT112 |	We need some clarity
+EDL	00:07:58,207	00:07:58,719	| IOT112 |	We would love some
+EDL	00:07:59,487	00:08:01,791	| IOT112 |	I bet I bet inside sometimes I feel like the
+EDL	00:08:07,167	00:08:08,447	| IOT112 |	No comment
+EDL	00:08:08,447	00:08:13,823	| IOT112 |	It's all good it's all good
+EDL	00:08:14,335	00:08:15,871	| IOT112 |	Okay speaking of clouds
+EDL	00:08:15,871	00:08:17,407	| IOT112 |	A lot of clouds in this week's podcast
+EDL	00:08:17,919	00:08:24,319	| IOT112 |	Ultiworld is happening in California as well this week and Samsung did some Jews related to its
+EDL	00:08:24,319	00:08:24,831	| IOT112 |	Arctic
+EDL	00:08:25,599	00:08:26,879	| IOT112 |	Iot platform
+EDL	00:08:26,879	00:08:29,695	| IOT112 |	An artic is both a cloud platform
+EDL	00:08:29,695	00:08:33,279	| IOT112 |	But it's also a series of modules that Samsung has built
+EDL	00:08:33,791	00:08:36,095	| IOT112 |	It is
+EDL	00:08:36,095	00:08:39,935	| IOT112 |	Super Chinese super Harden's relatively cheap and it's designed for
+EDL	00:08:40,447	00:08:44,287	| IOT112 |	Medical devices connected home appliances Building Products
+EDL	00:08:44,799	00:08:45,567	| IOT112 |	So
+EDL	00:08:45,567	00:08:50,687	| IOT112 |	This has a bunch of videos that has chips it has pretty much everything you need to just pop it in and
+EDL	00:08:51,711	00:08:52,223	| IOT112 |	Build something
+EDL	00:08:52,991	00:08:56,319	| IOT112 |	And then Samsung artik is also in there clouds outside
+EDL	00:08:56,831	00:08:57,599	| IOT112 |	Which
+EDL	00:08:57,599	00:09:00,159	| IOT112 |	Arctic is famous for having all these clouds
+EDL	00:09:00,159	00:09:00,927	| IOT112 |	Connectors where you
+EDL	00:09:00,927	00:09:01,951	| IOT112 |	You can
+EDL	00:09:01,951	00:09:03,487	| IOT112 |	Print services like I could blink my
+EDL	00:09:04,255	00:09:05,791	| IOT112 |	Washing machine to my
+EDL	00:09:06,303	00:09:08,095	| IOT112 |	Google home for example
+EDL	00:09:08,095	00:09:08,863	| IOT112 |	Through
+EDL	00:09:08,863	00:09:12,447	| IOT112 |	He hasn't link to Google Assistant basically I think you're foreshadowing there
+EDL	00:09:12,447	00:09:13,471	| IOT112 |	I might be
+EDL	00:09:14,751	00:09:15,519	| IOT112 |	Anyway so
+EDL	00:09:16,799	00:09:18,079	| IOT112 |	Oh that's why
+EDL	00:09:18,847	00:09:22,687	| IOT112 |	I know I know I read the notes I saw the guest
+EDL	00:09:22,687	00:09:24,735	| IOT112 |	Podcast
+EDL	00:09:24,735	00:09:25,503	| IOT112 |	You guys this
+EDL	00:09:25,503	00:09:26,527	| IOT112 |	Just all over
+EDL	00:09:26,527	00:09:28,319	| IOT112 |	So big before we leave this
+EDL	00:09:28,319	00:09:28,831	| IOT112 |	Arctic dead
+EDL	00:09:29,343	00:09:32,415	| IOT112 |	I also saw that Samsung's work with VMware
+EDL	00:09:32,415	00:09:34,463	| IOT112 |	On their partner program with our take
+EDL	00:09:34,975	00:09:38,303	| IOT112 |	Add VMware has VMware pulse iot Center
+EDL	00:09:38,303	00:09:42,911	| IOT112 |	Which is basically a control panel to get information and visibility to the health of
+EDL	00:09:42,911	00:09:44,959	| IOT112 |	You are iot devices so
+EDL	00:09:44,959	00:09:47,519	| IOT112 |	Rather smart of them to two
+EDL	00:09:47,519	00:09:50,335	| IOT112 |	If I can't deal with themselves rather smart of Samsung
+EDL	00:09:50,335	00:09:51,615	| IOT112 |	Apartment with somebody who can
+EDL	00:09:51,615	00:09:52,895	| IOT112 |	Help manage
+EDL	00:09:52,895	00:09:54,943	| IOT112 |	These devices and make sure they're all on the up-and-up
+EDL	00:09:55,455	00:09:56,479	| IOT112 |	Right so you can
+EDL	00:09:56,479	00:09:58,271	| IOT112 |	Connect all kinds of things to that
+EDL	00:09:58,271	00:09:59,039	| IOT112 |	Iot
+EDL	00:09:59,551	00:10:00,575	| IOT112 |	Stop pulse iot Center
+EDL	00:10:01,855	00:10:02,367	| IOT112 |	All right
+EDL	00:10:02,879	00:10:07,743	| IOT112 |	You know we should have made today a drinking game so every time we said iot cloud or iot we should
+EDL	00:10:09,279	00:10:12,095	| IOT112 |	I would have swapped my coffee out LOL
+EDL	00:10:14,143	00:10:14,655	| IOT112 |	Arctic
+EDL	00:10:15,167	00:10:17,983	| IOT112 |	Right in two
+EDL	00:10:17,983	00:10:19,263	| IOT112 |	The Amazon
+EDL	00:10:19,775	00:10:20,543	| IOT112 |	Echo
+EDL	00:10:20,543	00:10:21,311	| IOT112 |	So much stuff
+EDL	00:10:23,359	00:10:24,127	| IOT112 |	All right
+EDL	00:10:24,127	00:10:27,455	| IOT112 |	Let's just get the first big news exciting thing out of the way
+EDL	00:10:27,455	00:10:28,223	| IOT112 |	Money
+EDL	00:10:28,223	00:10:28,735	| IOT112 |	Amazon
+EDL	00:10:31,807	00:10:32,319	| IOT112 |	Developers
+EDL	00:10:32,831	00:10:34,367	| IOT112 |	The skill developer Sia
+EDL	00:10:34,367	00:10:35,135	| IOT112 |	Guess
+EDL	00:10:35,135	00:10:37,695	| IOT112 |	And this is something I actually thought about I wrote about it when I
+EDL	00:10:38,207	00:10:38,719	| IOT112 |	Fortune
+EDL	00:10:39,231	00:10:40,511	| IOT112 |	Over a year ago saying
+EDL	00:10:41,023	00:10:43,327	| IOT112 |	Hey is this going to really be an App Store Willow
+EDL	00:10:43,839	00:10:46,143	| IOT112 |	Amazon let it let developers monetize
+EDL	00:10:46,655	00:10:47,935	| IOT112 |	Madam a
+EDL	00:10:52,031	00:10:54,591	| IOT112 |	It's kind of just getting started though I don't
+EDL	00:10:55,103	00:10:59,455	| IOT112 |	People get all excited their penis is kind of limited it's only game skills at first
+EDL	00:10:59,967	00:11:00,479	| IOT112 |	So
+EDL	00:11:01,247	00:11:02,271	| IOT112 |	Yes cuz Amazon
+EDL	00:11:02,271	00:11:02,783	| IOT112 |	Has actually
+EDL	00:11:03,807	00:11:10,207	| IOT112 |	I remember where I saw this if it was in the letter to shareholders or it was in a conference somewhere but Amazon said it was really beef
+EDL	00:11:10,207	00:11:11,487	| IOT112 |	Picking up its game
+EDL	00:11:11,487	00:11:15,327	| IOT112 |	Efforts so smart home Focus was last year and now it really wants to have
+EDL	00:11:17,375	00:11:17,887	| IOT112 |	So
+EDL	00:11:18,911	00:11:19,679	| IOT112 |	That makes sense
+EDL	00:11:20,191	00:11:21,215	| IOT112 |	Pay game makers to build
+EDL	00:11:22,239	00:11:28,639	| IOT112 |	It's kind of an interesting place to start they must be because those are very popular but has been scratching my head like I never
+EDL	00:11:28,639	00:11:29,407	| IOT112 |	Never once
+EDL	00:11:29,919	00:11:32,735	| IOT112 |	Play keno play like a quiz game or any other
+EDL	00:11:32,735	00:11:34,271	| IOT112 |	Game return Echo
+EDL	00:11:35,039	00:11:39,647	| IOT112 |	Barbie no no I mean I totally get it I'm not going to try to disable I get it but
+EDL	00:11:40,159	00:11:40,927	| IOT112 |	I can't
+EDL	00:11:40,927	00:11:45,023	| IOT112 |	Imagine it's that popular it must be you know I'm an outlier I don't have to say
+EDL	00:11:45,023	00:11:47,839	| IOT112 |	Well I don't think on the echo that you are an outlier
+EDL	00:11:47,839	00:11:48,607	| IOT112 |	That's what I say
+EDL	00:11:48,607	00:11:49,887	| IOT112 |	Amazon's really hoping
+EDL	00:11:50,399	00:11:51,679	| IOT112 |	We find the next big
+EDL	00:11:53,215	00:11:54,751	| IOT112 |	The next style of Gaming
+EDL	00:11:56,031	00:11:58,335	| IOT112 |	That's like me sitting around playing
+EDL	00:11:58,847	00:12:02,687	| IOT112 |	Chess with my kids but only I voice control the board by telling my kids what move to me
+EDL	00:12:02,687	00:12:03,967	| IOT112 |	I just don't get it
+EDL	00:12:06,527	00:12:08,063	| IOT112 |	Maybe we're not the right I mean
+EDL	00:12:08,575	00:12:09,087	| IOT112 |	Play song
+EDL	00:12:09,599	00:12:10,879	| IOT112 |	Yeah it me up
+EDL	00:12:10,879	00:12:11,391	| IOT112 |	Someone who's older
+EDL	00:12:12,671	00:12:13,439	| IOT112 |	Cher
+EDL	00:12:13,439	00:12:15,487	| IOT112 |	Airport that that's me pretty soon.
+EDL	00:12:18,303	00:12:19,071	| IOT112 |	All right
+EDL	00:12:19,071	00:12:21,375	| IOT112 |	Apparently
+EDL	00:12:23,935	00:12:24,703	| IOT112 |	With Madeline
+EDL	00:12:24,703	00:12:28,031	| IOT112 |	Alright other exciting news especially for us
+EDL	00:12:28,031	00:12:28,799	| IOT112 |	Consumerism
+EDL	00:12:28,799	00:12:29,567	| IOT112 |	People who have
+EDL	00:12:30,079	00:12:30,591	| IOT112 |	Echoes every
+EDL	00:12:31,871	00:12:32,639	| IOT112 |	There
+EDL	00:12:32,639	00:12:34,175	| IOT112 |	Doing a program
+EDL	00:12:34,175	00:12:35,455	| IOT112 |	For allowing notify
+EDL	00:12:35,455	00:12:35,967	| IOT112 |	Vacations
+EDL	00:12:36,479	00:12:40,831	| IOT112 |	Amazon is announcing notifications for Madame a coming soon
+EDL	00:12:41,599	00:12:43,391	| IOT112 |	Right now you just sign up
+EDL	00:12:43,391	00:12:45,183	| IOT112 |	Basically this is going to
+EDL	00:12:45,183	00:12:47,999	| IOT112 |	Not just in this is something I saw that the Google home and I was like
+EDL	00:12:49,791	00:12:52,351	| IOT112 |	So basically you're going around your day
+EDL	00:12:52,351	00:12:53,887	| IOT112 |	I think about all the times that like
+EDL	00:12:54,655	00:12:56,447	| IOT112 |	Google Now or something pings you in his life
+EDL	00:12:56,959	00:12:59,519	| IOT112 |	China leave
+EDL	00:13:00,287	00:13:01,567	| IOT112 |	So those are the things so
+EDL	00:13:02,079	00:13:04,383	| IOT112 |	It's going to enable notifications for
+EDL	00:13:04,383	00:13:06,943	| IOT112 |	Select skills and shopping updates
+EDL	00:13:06,943	00:13:07,711	| IOT112 |	On most devices with
+EDL	00:13:08,735	00:13:10,271	| IOT112 |	Seoul AccuWeather
+EDL	00:13:10,271	00:13:12,831	| IOT112 |	Life360 which is a really great
+EDL	00:13:12,831	00:13:14,623	| IOT112 |	Program for tracking your family members
+EDL	00:13:15,135	00:13:17,439	| IOT112 |	Those are going to be the first update their skills with
+EDL	00:13:17,951	00:13:18,719	| IOT112 |	Vacation
+EDL	00:13:18,719	00:13:20,255	| IOT112 |	The Washington Post
+EDL	00:13:20,767	00:13:21,279	| IOT112 |	Just eat
+EDL	00:13:22,815	00:13:26,655	| IOT112 |	Yeah it's interesting cuz the Echoes have pretty much been very passive devices
+EDL	00:13:26,655	00:13:30,239	| IOT112 |	Up until now although just last week we saw the first
+EDL	00:13:30,239	00:13:31,519	| IOT112 |	Alipay active
+EDL	00:13:31,519	00:13:33,055	| IOT112 |	Data where the echo actually
+EDL	00:13:33,567	00:13:36,383	| IOT112 |	Tells you something without your asking it
+EDL	00:13:36,383	00:13:37,151	| IOT112 |	And that was
+EDL	00:13:37,151	00:13:37,919	| IOT112 |	The calling
+EDL	00:13:38,431	00:13:39,199	| IOT112 |	Yes
+EDL	00:13:39,199	00:13:43,295	| IOT112 |	Right and I wouldn't call that notification but you could see where they're going with it's now it's going to
+EDL	00:13:43,295	00:13:43,807	| IOT112 |	Tempstar
+EDL	00:13:44,319	00:13:47,391	| IOT112 |	You're reaching out to you when something happens and that's definitely needed
+EDL	00:13:48,159	00:13:50,463	| IOT112 |	Yes and all the skills will require users to opt-in
+EDL	00:13:51,231	00:13:53,279	| IOT112 |	And you can
+EDL	00:13:53,279	00:13:56,095	| IOT112 |	You can disable notifications for skills
+EDL	00:13:56,095	00:14:00,703	| IOT112 |	Or suppress notifications temporarily by putting devices in Do Not Disturb mode
+EDL	00:14:00,703	00:14:01,727	| IOT112 |	By voice
+EDL	00:14:01,727	00:14:04,031	| IOT112 |	Or through the Echo app which is good
+EDL	00:14:04,031	00:14:07,359	| IOT112 |	Good good good yes last week
+EDL	00:14:08,127	00:14:08,639	| IOT112 |	Echo Show
+EDL	00:14:09,151	00:14:09,919	| IOT112 |	And
+EDL	00:14:10,431	00:14:12,223	| IOT112 |	A little bit later that afternoon after work
+EDL	00:14:12,735	00:14:13,503	| IOT112 |	For the show
+EDL	00:14:13,503	00:14:14,527	| IOT112 |	Kevin says I spam
+EDL	00:14:20,159	00:14:21,439	| IOT112 |	The feature and I was on this week
+EDL	00:14:21,439	00:14:22,719	| IOT112 |	Google so
+EDL	00:14:23,743	00:14:24,511	| IOT112 |	Call
+EDL	00:14:24,511	00:14:26,559	| IOT112 |	Live on the air she called me
+EDL	00:14:29,119	00:14:33,215	| IOT112 |	Oh yeah I was sitting here at my home office instead of a sudden
+EDL	00:14:33,215	00:14:35,519	| IOT112 |	Little. That I have in here lights up green and says
+EDL	00:14:36,031	00:14:37,567	| IOT112 |	Collarspace
+EDL	00:14:38,079	00:14:41,407	| IOT112 |	And I tried to answer it and fortunately didn't work I don't know why
+EDL	00:14:41,407	00:14:44,991	| IOT112 |	I think I was just taken aback and I didn't say the right to man so I called you back on the air
+EDL	00:14:46,783	00:14:48,319	| IOT112 |	But the point here is
+EDL	00:14:48,319	00:14:50,879	| IOT112 |	It's just like having a landline phone again
+EDL	00:14:50,879	00:14:51,647	| IOT112 |	Yeah
+EDL	00:14:51,647	00:14:54,463	| IOT112 |	And I actually I was really in trouble
+EDL	00:14:54,463	00:14:57,023	| IOT112 |	Kevin you don't know that the angst inside of me
+EDL	00:15:00,607	00:15:02,911	| IOT112 |	Yeah I tweeted that they see to spam called me
+EDL	00:15:02,911	00:15:05,215	| IOT112 |	On the Amazon Echo and iPad
+EDL	00:15:05,215	00:15:06,495	| IOT112 |	Night and day I didn't mind at all
+EDL	00:15:07,007	00:15:08,543	| IOT112 |	I'm sorry
+EDL	00:15:10,591	00:15:11,359	| IOT112 |	I thought it was funny
+EDL	00:15:11,871	00:15:12,383	| IOT112 |	I did too
+EDL	00:15:13,663	00:15:15,967	| IOT112 |	Everybody who liked my tweet where I said I was a jerk
+EDL	00:15:16,479	00:15:17,503	| IOT112 |	Impressed with you
+EDL	00:15:18,015	00:15:19,551	| IOT112 |	My response was
+EDL	00:15:20,319	00:15:21,343	| IOT112 |	Well I am a jerk
+EDL	00:15:23,647	00:15:24,927	| IOT112 |	I got so many likes
+EDL	00:15:26,719	00:15:27,231	| IOT112 |	So all of you
+EDL	00:15:28,255	00:15:29,023	| IOT112 |	Now I'm shaking my head at you
+EDL	00:15:29,791	00:15:30,815	| IOT112 |	Brady
+EDL	00:15:30,815	00:15:36,447	| IOT112 |	This notification but actually plays into another one of our topics and that is Amazon has a new
+EDL	00:15:36,447	00:15:36,959	| IOT112 |	TV out
+EDL	00:15:37,471	00:15:38,495	| IOT112 |	Amazon TV
+EDL	00:15:40,287	00:15:43,615	| IOT112 |	4K are they safe 4K and it's low price
+EDL	00:15:43,615	00:15:45,919	| IOT112 |	I mean I'm an HD guy from
+EDL	00:15:45,919	00:15:49,759	| IOT112 |	Back before we had HD it does have 4K UHD but no HDR
+EDL	00:15:49,759	00:15:51,807	| IOT112 |	High dynamic range says whatever
+EDL	00:15:51,807	00:15:53,599	| IOT112 |	But more importantly
+EDL	00:15:53,599	00:15:56,671	| IOT112 |	It has basically has the Amazon Fire
+EDL	00:15:57,183	00:16:01,535	| IOT112 |	Interface just built in the software feels right and so you don't need a Fire TV stick or a box
+EDL	00:16:02,047	00:16:03,071	| IOT112 |	And of course with that
+EDL	00:16:03,071	00:16:03,839	| IOT112 |	Comes
+EDL	00:16:03,839	00:16:05,119	| IOT112 |	Your assistant
+EDL	00:16:05,119	00:16:07,679	| IOT112 |	And I was just thinking about this like if I'm watching TV
+EDL	00:16:08,191	00:16:12,799	| IOT112 |	I don't want an echo notification on my TV you know popping up
+EDL	00:16:13,567	00:16:14,079	| IOT112 |	Oh really
+EDL	00:16:14,847	00:16:17,407	| IOT112 |	Cuz that's one of the things is like somewhere in the corner
+EDL	00:16:17,407	00:16:19,967	| IOT112 |	People's homes like
+EDL	00:16:19,967	00:16:24,319	| IOT112 |	AT&T used to have it I'm sure Comcast had it where you could get caller ID on your television
+EDL	00:16:25,855	00:16:27,135	| IOT112 |	And I shut it off
+EDL	00:16:27,903	00:16:31,999	| IOT112 |	I went on Netflix and don't mess with me okay that's me time
+EDL	00:16:31,999	00:16:32,767	| IOT112 |	You like what I maven
+EDL	00:16:35,071	00:16:35,839	| IOT112 |	Yeah
+EDL	00:16:35,839	00:16:38,655	| IOT112 |	No no I'm watching Bosch back off caller
+EDL	00:16:39,935	00:16:40,703	| IOT112 |	Well that's what you're not
+EDL	00:16:42,239	00:16:48,639	| IOT112 |	True true for folks who don't have an echo again this is another way for Amazon the propagate this whole service into
+EDL	00:16:48,639	00:16:49,407	| IOT112 |	Smart Home
+EDL	00:16:49,407	00:16:51,455	| IOT112 |	Atticus's TV start for 99
+EDL	00:16:52,479	00:16:52,991	| IOT112 |	That's for the
+EDL	00:16:58,879	00:16:59,391	| IOT112 |	Damn
+EDL	00:16:59,903	00:17:00,415	| IOT112 |	Not
+EDL	00:17:02,463	00:17:05,023	| IOT112 |	The only downside to me I pray
+EDL	00:17:05,023	00:17:06,815	| IOT112 |	After plugging a box
+EDL	00:17:06,815	00:17:07,839	| IOT112 |	Into
+EDL	00:17:07,839	00:17:12,191	| IOT112 |	TV because I'd rather buy a TV with the highest picture quality and so on so forth
+EDL	00:17:12,191	00:17:14,495	| IOT112 |	And I don't want to be locked into the
+EDL	00:17:14,495	00:17:15,007	| IOT112 |	Smart
+EDL	00:17:15,519	00:17:19,359	| IOT112 |	Hardware that's built-in for Reno that put chip processor and so on
+EDL	00:17:19,359	00:17:21,407	| IOT112 |	Building for the interface in the software
+EDL	00:17:22,431	00:17:22,943	| IOT112 |	You want to dump
+EDL	00:17:23,967	00:17:24,735	| IOT112 |	Yeah
+EDL	00:17:24,735	00:17:29,343	| IOT112 |	Yeah so that's what I bought I have a dumb awesome 4K screen and I plug in
+EDL	00:17:29,855	00:17:33,183	| IOT112 |	Well either an Amazon Fire TV or Nvidia Shield TV so yeah
+EDL	00:17:35,487	00:17:37,023	| IOT112 |	Okay so there is an
+EDL	00:17:37,791	00:17:41,375	| IOT112 |	I don't want I mean what happens when Amazon gets real pistol
+EDL	00:17:41,375	00:17:42,911	| IOT112 |	Google and they stop
+EDL	00:17:42,911	00:17:43,423	| IOT112 |	YouTube and
+EDL	00:17:45,215	00:17:47,775	| IOT112 |	I would hope that doesn't happen for any of the
+EDL	00:17:47,775	00:17:50,335	| IOT112 |	People who are content providers and such yeah
+EDL	00:17:51,615	00:17:52,383	| IOT112 |	Let's see
+EDL	00:17:52,383	00:17:53,407	| IOT112 |	Other
+EDL	00:17:53,407	00:17:56,479	| IOT112 |	Other news bets
+EDL	00:17:56,991	00:17:57,759	| IOT112 |	Which
+EDL	00:17:57,759	00:18:00,575	| IOT112 |	I know we've had them on the show as a guest but Honeywell his
+EDL	00:18:00,575	00:18:03,135	| IOT112 |	Created a hundred million dollar Venture Capital firm
+EDL	00:18:04,927	00:18:09,535	| IOT112 |	The focus here is on anything that will help it scale its businesses
+EDL	00:18:09,535	00:18:13,887	| IOT112 |	The reason we mention it here is because they are really big in the industrial internet-of-things
+EDL	00:18:14,655	00:18:15,935	| IOT112 |	Already offering
+EDL	00:18:16,703	00:18:19,519	| IOT112 |	Things as a service to customers and they
+EDL	00:18:20,799	00:18:22,591	| IOT112 |	They also make consumer devices but
+EDL	00:18:22,591	00:18:25,151	| IOT112 |	I don't know if this Venture fund really focuses on the
+EDL	00:18:25,151	00:18:25,663	| IOT112 |	Consumer side
+EDL	00:18:26,175	00:18:27,455	| IOT112 |	It looks more Industrial
+EDL	00:18:30,271	00:18:30,783	| IOT112 |	The point here
+EDL	00:18:31,551	00:18:35,391	| IOT112 |	New Venture Capital arm so if you are trying to sell people on
+EDL	00:18:36,927	00:18:38,975	| IOT112 |	HVAC stuff building management
+EDL	00:18:39,743	00:18:41,023	| IOT112 |	Industrial processes
+EDL	00:18:41,791	00:18:43,583	| IOT112 |	Iggy Pop on over to Honeywell
+EDL	00:18:43,583	00:18:44,095	| IOT112 |	And see what they got
+EDL	00:18:45,887	00:18:46,655	| IOT112 |	Okay
+EDL	00:18:46,655	00:18:47,423	| IOT112 |	Other news
+EDL	00:18:47,935	00:18:49,215	| IOT112 |	We talked about this in the past
+EDL	00:18:49,727	00:18:51,007	| IOT112 |	Spotify
+EDL	00:18:51,007	00:18:53,567	| IOT112 |	There were Rumours a while back but it might build his own
+EDL	00:18:53,567	00:18:54,847	| IOT112 |	Hardware device
+EDL	00:18:54,847	00:18:56,127	| IOT112 |	And Kevin was like
+EDL	00:18:58,175	00:18:59,455	| IOT112 |	Rewind a minute
+EDL	00:18:59,455	00:19:00,735	| IOT112 |	I
+EDL	00:19:00,735	00:19:02,527	| IOT112 |	Spotify customer just got a survey
+EDL	00:19:03,039	00:19:04,831	| IOT112 |	And they ask me all these questions about me
+EDL	00:19:04,831	00:19:05,343	| IOT112 |	My physical fitness
+EDL	00:19:06,367	00:19:08,927	| IOT112 |	Am I crazy about my physical fitness or not
+EDL	00:19:09,695	00:19:12,767	| IOT112 |	And what I like to listen to music and all this other great stuff
+EDL	00:19:12,767	00:19:18,399	| IOT112 |	So my fingers are crossed that maybe they're going to make a wearable that's truly wearable and not just a controller
+EDL	00:19:18,399	00:19:20,191	| IOT112 |	We're not just attached to my smartphone
+EDL	00:19:20,703	00:19:22,239	| IOT112 |	Where will I'm exercising
+EDL	00:19:23,775	00:19:25,055	| IOT112 |	So I was
+EDL	00:19:25,055	00:19:25,823	| IOT112 |	Kind of
+EDL	00:19:25,823	00:19:30,431	| IOT112 |	Down on this idea when it was first announced they were thinking about entering the wearable Market
+EDL	00:19:30,943	00:19:33,247	| IOT112 |	I'm even more so now and I'll tell you why
+EDL	00:19:33,247	00:19:36,319	| IOT112 |	I actually just bought a new wearable although it's
+EDL	00:19:36,319	00:19:39,135	| IOT112 |	Technically an old one if it came out last year almost a year ago
+EDL	00:19:39,647	00:19:40,415	| IOT112 |	Ibotta
+EDL	00:19:40,415	00:19:42,975	| IOT112 |	Yeah I bought and I bought this a year ago in fact
+EDL	00:19:43,743	00:19:46,815	| IOT112 |	Last year I bought a Samsung Gear Fit
+EDL	00:19:46,815	00:19:51,167	| IOT112 |	2 and one of the big things that had just how does having is it's got Spotify
+EDL	00:19:52,959	00:19:53,983	| IOT112 |	When I bought it
+EDL	00:19:53,983	00:19:55,519	| IOT112 |	Only to find out it's Justice
+EDL	00:19:55,519	00:19:56,543	| IOT112 |	Spotify
+EDL	00:19:56,543	00:20:01,407	| IOT112 |	The app that control Spotify on your phone so you still need to carry your phone when you work out
+EDL	00:20:01,407	00:20:04,223	| IOT112 |	Which is kind of silly cuz this thing can store music
+EDL	00:20:04,223	00:20:05,247	| IOT112 |	There are still
+EDL	00:20:05,247	00:20:07,295	| IOT112 |	Tons and tons of foreign post
+EDL	00:20:07,295	00:20:08,319	| IOT112 |	People complaining about this thing
+EDL	00:20:09,599	00:20:12,671	| IOT112 |	So I ended up returning it the year ago
+EDL	00:20:13,183	00:20:17,535	| IOT112 |	Technically because it didn't integrate with RunKeeper which is what I use for my book of record for exercising
+EDL	00:20:17,535	00:20:19,583	| IOT112 |	It now does and I found a refurbished
+EDL	00:20:19,583	00:20:20,351	| IOT112 |	Unit
+EDL	00:20:20,351	00:20:23,167	| IOT112 |	Probably the same one that returned a year ago for $85 so I bought it
+EDL	00:20:23,679	00:20:24,447	| IOT112 |	It's working great
+EDL	00:20:24,447	00:20:26,751	| IOT112 |	Spotify still is the same as just a controller
+EDL	00:20:27,263	00:20:29,055	| IOT112 |	Here's my point long story short
+EDL	00:20:29,567	00:20:35,711	| IOT112 |	Play Spotify comes out with its own Hardware wearable device that allows offline music player
+EDL	00:20:36,479	00:20:42,111	| IOT112 |	What happens to all these other wearables that either work with Spotify in a limited fashion or what
+EDL	00:20:42,111	00:20:47,231	| IOT112 |	They're probably never going to have offline playback capability and I just think that's terrible
+EDL	00:20:47,231	00:20:49,535	| IOT112 |	Oh-so Spotify with key
+EDL	00:20:49,535	00:20:50,047	| IOT112 |	Keep offline play
+EDL	00:20:51,071	00:20:51,839	| IOT112 |	Prince self
+EDL	00:20:51,839	00:20:52,607	| IOT112 |	Bada Bing
+EDL	00:20:53,119	00:20:53,631	| IOT112 |	Mancan
+EDL	00:20:54,143	00:20:57,471	| IOT112 |	So that was that was why I was so interested in the
+EDL	00:20:57,471	00:20:57,983	| IOT112 |	Pebble
+EDL	00:20:58,751	00:21:01,311	| IOT112 |	Or I think it's what it was called
+EDL	00:21:04,127	00:21:04,639	| IOT112 |	Cancel that
+EDL	00:21:05,151	00:21:05,919	| IOT112 |	Right right
+EDL	00:21:06,687	00:21:07,455	| IOT112 |	I'm sitting here a lot of
+EDL	00:21:07,967	00:21:10,271	| IOT112 |	There a lot of Spotify smartwatch
+EDL	00:21:10,783	00:21:17,184	| IOT112 |	Apps that you can put Spotify on your watch or whatever and these watches cab storage can store
+EDL	00:21:17,184	00:21:22,048	| IOT112 |	Play music so you can go exercising listen which is what I always do when I go out and run I always listen to music
+EDL	00:21:22,560	00:21:24,864	| IOT112 |	But I think Spotify with the hold that back
+EDL	00:21:24,864	00:21:27,168	| IOT112 |	If I were them
+EDL	00:21:27,680	00:21:29,728	| IOT112 |	What is a consumer on like
+EDL	00:21:29,728	00:21:30,240	| IOT112 |	I'm at
+EDL	00:21:33,824	00:21:34,336	| IOT112 |	But you'll be happy
+EDL	00:21:38,688	00:21:39,200	| IOT112 |	Alrighty
+EDL	00:21:39,712	00:21:41,248	| IOT112 |	And final bit of news
+EDL	00:21:41,248	00:21:43,296	| IOT112 |	This is for people who live in Austin
+EDL	00:21:45,344	00:21:45,856	| IOT112 |	This is me
+EDL	00:21:47,904	00:21:48,672	| IOT112 |	I'll just be honest
+EDL	00:21:49,184	00:21:52,768	| IOT112 |	Bata store so we've talked about them before this is a
+EDL	00:21:52,768	00:21:57,888	| IOT112 |	Can super store where you can try all kinds of connected devices not just connected home stuff but
+EDL	00:21:58,400	00:22:04,800	| IOT112 |	Actually you can try Innovative products cuz I actually saw pillow in the Austin store that had no connectivity whatsoever it was just a cool fact
+EDL	00:22:04,800	00:22:05,568	| IOT112 |	That stay cool
+EDL	00:22:06,848	00:22:09,152	| IOT112 |	But you can try out virtual reality headsets
+EDL	00:22:09,664	00:22:10,944	| IOT112 |	Ride on bikes UK
+EDL	00:22:10,944	00:22:11,712	| IOT112 |	Listen to speakers
+EDL	00:22:12,224	00:22:12,992	| IOT112 |	So
+EDL	00:22:12,992	00:22:17,344	| IOT112 |	They're opening a store in Austin if you're in Austin it's in the domain
+EDL	00:22:17,344	00:22:18,112	| IOT112 |	Area
+EDL	00:22:18,112	00:22:21,440	| IOT112 |	If you're not in Austin they also stores in Seattle Santa Monica
+EDL	00:22:21,440	00:22:23,744	| IOT112 |	And Palo Alto Alto
+EDL	00:22:23,744	00:22:26,816	| IOT112 |	Going to have one in San Francisco but that is tdd
+EDL	00:22:26,816	00:22:27,840	| IOT112 |	When that happen
+EDL	00:22:29,376	00:22:32,704	| IOT112 |	Yeah I went in I got to see lots of devices
+EDL	00:22:32,704	00:22:34,496	| IOT112 |	Quite frankly I'm very worried that I
+EDL	00:22:35,264	00:22:36,032	| IOT112 |	Near me
+EDL	00:22:36,032	00:22:42,176	| IOT112 |	When I go out to Google and I just haven't had the time but I plan on going out there
+EDL	00:22:48,064	00:22:51,392	| IOT112 |	I know there's some really great stuff
+EDL	00:22:52,672	00:22:53,440	| IOT112 |	That's kind of the fun part
+EDL	00:22:54,976	00:22:55,744	| IOT112 |	Yay
+EDL	00:22:55,744	00:22:58,816	| IOT112 |	And know I feel like we talked about a lot really quickly
+EDL	00:22:59,328	00:23:00,096	| IOT112 |	But
+EDL	00:23:00,096	00:23:01,376	| IOT112 |	We got our guest still to come
+EDL	00:23:01,888	00:23:05,216	| IOT112 |	And we're going to have a word from our sponsor Arris
+EDL	00:23:05,728	00:23:08,032	| IOT112 |	This week's guest is actually Bill Gardner
+EDL	00:23:08,032	00:23:09,312	| IOT112 |	From GE Appliances
+EDL	00:23:10,080	00:23:11,104	| IOT112 |	And this week
+EDL	00:23:11,104	00:23:13,920	| IOT112 |	Geappliances said all of its
+EDL	00:23:13,920	00:23:16,736	| IOT112 |	Connected appliances will now work with the Google
+EDL	00:23:16,736	00:23:17,504	| IOT112 |	Home
+EDL	00:23:17,504	00:23:19,552	| IOT112 |	And that closes the foreshadowing live for today
+EDL	00:23:21,600	00:23:22,880	| IOT112 |	I was so I had no idea
+EDL	00:23:24,416	00:23:25,184	| IOT112 |	So
+EDL	00:23:25,696	00:23:32,096	| IOT112 |	Bill is not going to talk about that but he is going to talk about the future of smart kitchens what people do with their appliances
+EDL	00:23:32,096	00:23:33,376	| IOT112 |	Has an echo
+EDL	00:23:33,376	00:23:35,424	| IOT112 |	And he will introduce you to Geneva
+EDL	00:23:36,192	00:23:38,752	| IOT112 |	Who is the smartest assistant that works with both
+EDL	00:23:39,264	00:23:41,312	| IOT112 |	The Google home now and the Amazon Echo
+EDL	00:23:42,080	00:23:43,104	| IOT112 |	Stay tuned for that
+EDL	00:23:43,104	00:23:46,944	| IOT112 |	Message from Eros
+EDL	00:23:46,944	00:23:53,088	| IOT112 |	Hey everyone this is Stacy and I'm breaking into the Internet of Things podcast with a quick message from our sponsor
+EDL	00:23:53,088	00:23:54,624	| IOT112 |	This week sponsor is
+EDL	00:23:54,624	00:23:56,416	| IOT112 |	And I have
+EDL	00:23:56,416	00:23:59,488	| IOT112 |	Z Hussain who is the CTO and co-founder of
+EDL	00:23:59,488	00:24:00,256	| IOT112 |	Eros
+EDL	00:24:00,256	00:24:02,816	| IOT112 |	So last week we talked about what Heroes does
+EDL	00:24:03,328	00:24:05,120	| IOT112 |	But can you give us a quick Refresher
+EDL	00:24:05,120	00:24:06,912	| IOT112 |	It was the company that provides
+EDL	00:24:07,424	00:24:09,216	| IOT112 |	B data services
+EDL	00:24:09,216	00:24:12,800	| IOT112 |	For iot applications all the way from the remote
+EDL	00:24:12,800	00:24:13,568	| IOT112 |	Device
+EDL	00:24:13,568	00:24:15,616	| IOT112 |	Tell me what device that gathers information
+EDL	00:24:16,128	00:24:17,408	| IOT112 |	Back to the networks
+EDL	00:24:17,408	00:24:19,712	| IOT112 |	Both within the US and internationally
+EDL	00:24:20,224	00:24:23,040	| IOT112 |	Data centers and storage and analytics systems that
+EDL	00:24:23,040	00:24:27,648	| IOT112 |	Take appropriate action on the data that is being gathered and then I can also provide the most
+EDL	00:24:27,648	00:24:29,440	| IOT112 |	All the devices that are out now
+EDL	00:24:30,464	00:24:34,048	| IOT112 |	That's a big job one of the biggest aspects of that has connectivity
+EDL	00:24:34,048	00:24:36,352	| IOT112 |	What are the options out there for the internet
+EDL	00:24:37,632	00:24:43,520	| IOT112 |	That's a very good question Stacey I think it depends very strongly on the requirements of the application
+EDL	00:24:43,520	00:24:49,920	| IOT112 |	In truly mobile or physically mobile application cellular is a natural choice because it provides
+EDL	00:24:49,920	00:24:56,320	| IOT112 |	The capability of using a network transport that's available everywhere that people are or that people will send their iot device
+EDL	00:24:56,320	00:24:57,088	| IOT112 |	Asus2
+EDL	00:24:57,088	00:25:01,440	| IOT112 |	If the device is located within a residence or a business there other options
+EDL	00:25:01,440	00:25:02,208	| IOT112 |	Clearly
+EDL	00:25:02,208	00:25:04,512	| IOT112 |	You can have wifi-connected devices
+EDL	00:25:04,512	00:25:07,840	| IOT112 |	It's a short-range device that communicates with a cell phone
+EDL	00:25:07,840	00:25:09,888	| IOT112 |	Bratz use Bluetooth or zigbee
+EDL	00:25:09,888	00:25:12,704	| IOT112 |	Options exist and of course there are some Next Generation
+EDL	00:25:13,216	00:25:18,848	| IOT112 |	Low-power wide area networks that are being deployed within the United States and overseas that can provide
+EDL	00:25:18,848	00:25:19,872	| IOT112 |	Lower cost
+EDL	00:25:19,872	00:25:23,712	| IOT112 |	Short-range and long-range and medium to long-range connectivity
+EDL	00:25:23,712	00:25:25,504	| IOT112 |	For these kinds of application
+EDL	00:25:25,504	00:25:31,904	| IOT112 |	The choices depend very heavily on what the applications requirement for what they cost model for
+EDL	00:25:31,904	00:25:35,744	| IOT112 |	The services that they're providing can be etc etc
+EDL	00:25:35,744	00:25:41,888	| IOT112 |	Every one of these connectivity options has pros and cons and the decision for which one could use is something that we can help guide
+EDL	00:25:41,888	00:25:44,448	| IOT112 |	There's an estimate that about 30%
+EDL	00:25:44,448	00:25:48,800	| IOT112 |	29 to 30% of the devices being deployed for M2M iot applications
+EDL	00:25:49,568	00:25:54,176	| IOT112 |	By 2025 will be the cellular or some form of low-power wide area network
+EDL	00:25:54,688	00:25:55,968	| IOT112 |	What are my options
+EDL	00:25:55,968	00:25:57,504	| IOT112 |	For us or global
+EDL	00:25:58,528	00:26:02,112	| IOT112 |	Are you deployed it application within the us or internationally
+EDL	00:26:02,112	00:26:06,208	| IOT112 |	It was generally deployed I cellular application of course radio modules
+EDL	00:26:06,208	00:26:08,000	| IOT112 |	Cellular Arabic more expensive
+EDL	00:26:08,000	00:26:10,304	| IOT112 |	Then other Technologies on the other hand
+EDL	00:26:10,816	00:26:17,216	| IOT112 |	Cellular is available pretty much anywhere around the world you may have to compensate for the frequency difference isn't technology differences that may
+EDL	00:26:17,216	00:26:18,752	| IOT112 |	Craigslist in other parts of the world
+EDL	00:26:18,752	00:26:22,336	| IOT112 |	That's relatively easy to do we have that information and depending on the
+EDL	00:26:22,336	00:26:26,944	| IOT112 |	The requirements for the iot application has or do the transport you will make choices
+EDL	00:26:27,456	00:26:28,992	| IOT112 |	I make decisions about betrayal
+EDL	00:26:29,760	00:26:32,064	| IOT112 |	NZ where can I go to find out more
+EDL	00:26:32,576	00:26:38,720	| IOT112 |	Let's refer people to the e-book that I have publishes available freely on our website www.arris.com
+EDL	00:26:39,232	00:26:45,632	| IOT112 |	And the our podcast is also available at the same site www.eros.com podcast
+EDL	00:26:45,632	00:26:52,032	| IOT112 |	Hey everyone welcome back to the intern
+EDL	00:26:52,032	00:26:57,152	| IOT112 |	Turn out of things podcast this is your host Stacey Higginbotham and today's guest is Bill Gardner
+EDL	00:26:57,152	00:26:59,200	| IOT112 |	Who is manager of connected
+EDL	00:26:59,200	00:26:59,968	| IOT112 |	Partnerships
+EDL	00:26:59,968	00:27:01,504	| IOT112 |	A GE Appliances
+EDL	00:27:04,064	00:27:04,832	| IOT112 |	I didn't great steaks
+EDL	00:27:04,832	00:27:05,856	| IOT112 |	Neon
+EDL	00:27:05,856	00:27:07,904	| IOT112 |	Man I'm super excited about this
+EDL	00:27:07,904	00:27:11,232	| IOT112 |	Because because I have many appliances
+EDL	00:27:11,232	00:27:15,584	| IOT112 |	But this is a place where I'm like connectivity could make my life really awesome
+EDL	00:27:16,096	00:27:17,376	| IOT112 |	But it's also a place where am I
+EDL	00:27:18,400	00:27:19,936	| IOT112 |	Are we even going to get to this point
+EDL	00:27:20,448	00:27:24,544	| IOT112 |	Hopefully this conversation you're going to buy all new
+EDL	00:27:24,544	00:27:26,336	| IOT112 |	Muji appliances here to be so excited
+EDL	00:27:26,336	00:27:31,200	| IOT112 |	Oh that's a tall order my friend I just bought a house built in 2012
+EDL	00:27:32,480	00:27:33,504	| IOT112 |	I have Wi-Fi
+EDL	00:27:33,504	00:27:34,784	| IOT112 |	They're still really good
+EDL	00:27:34,784	00:27:35,552	| IOT112 |	CC
+EDL	00:27:36,064	00:27:37,088	| IOT112 |	You can do this by faith
+EDL	00:27:39,136	00:27:41,696	| IOT112 |	So let's get started with what is GE Appliances
+EDL	00:27:42,208	00:27:42,976	| IOT112 |	Doing here
+EDL	00:27:42,976	00:27:43,488	| IOT112 |	Cuz I
+EDL	00:27:44,000	00:27:45,024	| IOT112 |	I've written about like
+EDL	00:27:45,536	00:27:47,328	| IOT112 |	Some effort you guys had way back with
+EDL	00:27:47,328	00:27:53,728	| IOT112 |	Wink 2 characters retrofit
+EDL	00:27:53,728	00:27:55,008	| IOT112 |	You guys so
+EDL	00:27:55,008	00:27:56,032	| IOT112 |	What is the overall strategy
+EDL	00:27:56,544	00:27:59,360	| IOT112 |	Connect to this really important Uchi appliances
+EDL	00:27:59,360	00:28:01,664	| IOT112 |	The ability to deliver firmware updates
+EDL	00:28:02,176	00:28:03,712	| IOT112 |	Appliance connected
+EDL	00:28:09,088	00:28:10,880	| IOT112 |	A really exciting thing to sell people
+EDL	00:28:11,392	00:28:13,184	| IOT112 |	I do not buy the appliance
+EDL	00:28:13,184	00:28:16,256	| IOT112 |	Day one thinking
+EDL	00:28:16,256	00:28:17,280	| IOT112 |	Pine-Sol
+EDL	00:28:17,280	00:28:19,328	| IOT112 |	Some years down the road I can get a service update
+EDL	00:28:19,840	00:28:20,864	| IOT112 |	How to say you better
+EDL	00:28:21,376	00:28:22,656	| IOT112 |	A trip to my house
+EDL	00:28:22,656	00:28:26,752	| IOT112 |	Partnerships with value-added
+EDL	00:28:26,752	00:28:28,544	| IOT112 |	Tires in in the smart home field
+EDL	00:28:29,056	00:28:29,824	| IOT112 |	And
+EDL	00:28:29,824	00:28:33,408	| IOT112 |	Creno's use cases are making people want to connect
+EDL	00:28:33,920	00:28:35,712	| IOT112 |	I will talk about several of them today but
+EDL	00:28:36,224	00:28:37,504	| IOT112 |	Did you give the person
+EDL	00:28:37,504	00:28:39,552	| IOT112 |	The real value their
+EDL	00:28:39,552	00:28:41,856	| IOT112 |	And make that extra step to get that plants connected
+EDL	00:28:41,856	00:28:46,720	| IOT112 |	Which is really good for them the long-term and short-term as well cuz it may get there really nice shoes case
+EDL	00:28:46,720	00:28:48,256	| IOT112 |	The how to solve their everyday
+EDL	00:28:49,792	00:28:52,352	| IOT112 |	And it's really good for you guys because there's a
+EDL	00:28:52,352	00:28:53,376	| IOT112 |	There's a huge benefit
+EDL	00:28:53,376	00:28:54,656	| IOT112 |	Set for y'all to see how the
+EDL	00:28:54,656	00:28:55,424	| IOT112 |	The appliances
+EDL	00:28:55,424	00:28:55,936	| IOT112 |	Performing in the feet
+EDL	00:28:56,704	00:28:57,472	| IOT112 |	Oso
+EDL	00:28:57,472	00:28:58,496	| IOT112 |	We have tons
+EDL	00:29:00,032	00:29:01,568	| IOT112 |	Identify a problem
+EDL	00:29:01,568	00:29:04,384	| IOT112 |	An appliance and maybe even a person doesn't need to know about
+EDL	00:29:04,384	00:29:05,664	| IOT112 |	Contact a consumer
+EDL	00:29:07,712	00:29:08,736	| IOT112 |	Consumer
+EDL	00:29:08,736	00:29:11,296	| IOT112 |	I left another appliances in performing optimally
+EDL	00:29:11,296	00:29:15,904	| IOT112 |	Talk to them send a service tech or pushing update to really build a relationship with consumer
+EDL	00:29:16,928	00:29:19,232	| IOT112 |	Inn of the appliances that
+EDL	00:29:19,232	00:29:22,048	| IOT112 |	You guys have out there is your whole line connected now
+EDL	00:29:23,840	00:29:25,632	| IOT112 |	Disconnected you have the refrigerator
+EDL	00:29:26,400	00:29:27,680	| IOT112 |	Dishwasher
+EDL	00:29:27,680	00:29:29,216	| IOT112 |	The wall of in the rain
+EDL	00:29:29,728	00:29:31,264	| IOT112 |	The washer the dryer
+EDL	00:29:31,264	00:29:32,544	| IOT112 |	Window air conditioner
+EDL	00:29:32,544	00:29:33,824	| IOT112 |	You don't have microwave yet
+EDL	00:29:34,336	00:29:35,360	| IOT112 |	You don't have art
+EDL	00:29:35,360	00:29:36,128	| IOT112 |	Handsome yet
+EDL	00:29:36,128	00:29:38,944	| IOT112 |	The full product line for the most part is connected
+EDL	00:29:39,712	00:29:42,272	| IOT112 |	So how long ago did you guys start at 8
+EDL	00:29:43,296	00:29:46,624	| IOT112 |	Really in mass that starting around 2014
+EDL	00:29:46,624	00:29:49,184	| IOT112 |	Where you started to see appliances Roloff in
+EDL	00:29:49,184	00:29:51,232	| IOT112 |	Significant numbers off the production line
+EDL	00:29:51,232	00:29:54,816	| IOT112 |	Jaguar Wi-Fi capable last year we had 70s
+EDL	00:29:54,816	00:29:56,864	| IOT112 |	Use connected this year they'll be
+EDL	00:29:56,864	00:29:59,168	| IOT112 |	Over a hundred when it's all said and done this year
+EDL	00:29:59,168	00:30:01,216	| IOT112 |	Alright so since you guys have been doing this for
+EDL	00:30:03,264	00:30:06,336	| IOT112 |	Do consumers care about Wi-Fi
+EDL	00:30:06,336	00:30:07,616	| IOT112 |	Is an appliance
+EDL	00:30:07,616	00:30:08,384	| IOT112 |	And
+EDL	00:30:08,384	00:30:11,712	| IOT112 |	Once they bought it an appliance with Wi-Fi do they bother to
+EDL	00:30:12,736	00:30:14,016	| IOT112 |	That's a great question
+EDL	00:30:14,016	00:30:15,296	| IOT112 |	Unless you can imagine
+EDL	00:30:15,296	00:30:17,600	| IOT112 |	It's not if they're not strongly connected
+EDL	00:30:17,600	00:30:18,880	| IOT112 |	You'll find a lot of iot
+EDL	00:30:18,880	00:30:19,648	| IOT112 |	Devices in the home
+EDL	00:30:20,160	00:30:22,720	| IOT112 |	Light switches garage door opener
+EDL	00:30:22,720	00:30:25,792	| IOT112 |	Because those have that everyday up and down on off
+EDL	00:30:26,304	00:30:29,888	| IOT112 |	These cases for appliances the home a little more complicated so people don't
+EDL	00:30:29,888	00:30:31,936	| IOT112 |	Intuitively always see
+EDL	00:30:31,936	00:30:32,960	| IOT112 |	The reason to connect.
+EDL	00:30:33,472	00:30:36,544	| IOT112 |	But you're starting to see more and more of these Partnerships which is
+EDL	00:30:36,544	00:30:37,312	| IOT112 |	Really driving
+EDL	00:30:37,824	00:30:38,848	| IOT112 |	Does integration to have
+EDL	00:30:39,360	00:30:44,992	| IOT112 |	We can specifically talk about one that's really been an explosion in the spaces when the echo came online
+EDL	00:30:44,992	00:30:46,784	| IOT112 |	What's that keeps building you don't have to
+EDL	00:30:46,784	00:30:47,808	| IOT112 |	People hands
+EDL	00:30:47,808	00:30:48,576	| IOT112 |	Free in the kitchen
+EDL	00:30:49,600	00:30:51,136	| IOT112 |	There's always a Time
+EDL	00:30:51,136	00:30:52,160	| IOT112 |	In the kitchen
+EDL	00:30:52,160	00:30:56,256	| IOT112 |	When you could use one or two or three more hands to complete your action right
+EDL	00:30:56,256	00:30:59,840	| IOT112 |	They're full of bacteria from your chicken that you're preparing their dirty
+EDL	00:30:59,840	00:31:01,632	| IOT112 |	Cookie dough you may have a child
+EDL	00:31:02,144	00:31:02,656	| IOT112 |	At your leg like
+EDL	00:31:03,168	00:31:03,936	| IOT112 |	Find a cook
+EDL	00:31:03,936	00:31:04,960	| IOT112 |	All those things
+EDL	00:31:05,472	00:31:10,336	| IOT112 |	Right really restrict what you can do you have to use your that old elbow trick where you kind of
+EDL	00:31:10,336	00:31:11,104	| IOT112 |	Kiddo
+EDL	00:31:11,104	00:31:14,176	| IOT112 |	At the water faucet to turn it on to wash your hands to go
+EDL	00:31:14,176	00:31:14,944	| IOT112 |	Touch your oven
+EDL	00:31:15,456	00:31:16,992	| IOT112 |	Now that that boys experience
+EDL	00:31:17,504	00:31:19,040	| IOT112 |	Annex connected Wi-Fi Appliance
+EDL	00:31:19,552	00:31:20,064	| IOT112 |	Now
+EDL	00:31:20,576	00:31:23,392	| IOT112 |	I'm really starting to see the value in the home is how do I fi
+EDL	00:31:24,160	00:31:25,952	| IOT112 |	Capabilities really tries diet
+EDL	00:31:25,952	00:31:26,464	| IOT112 |	My everyday life
+EDL	00:31:26,976	00:31:27,488	| IOT112 |	Munchkin
+EDL	00:31:29,280	00:31:30,560	| IOT112 |	By far our most
+EDL	00:31:30,560	00:31:34,912	| IOT112 |	Common function through voice control is preheating out that people come down
+EDL	00:31:34,912	00:31:39,520	| IOT112 |	They get ready to get into the refrigerator to get out their meat or the protein rather going to fix
+EDL	00:31:40,032	00:31:41,312	| IOT112 |	Nhsa
+EDL	00:31:41,312	00:31:43,104	| IOT112 |	Geneva preheat the oven to 350
+EDL	00:31:43,616	00:31:44,896	| IOT112 |	Uso Geneva is your
+EDL	00:31:45,408	00:31:47,968	| IOT112 |	Assistant coach Geneva is actually Amazon
+EDL	00:31:47,968	00:31:52,064	| IOT112 |	Skilled so you can activate that skill connect your TV connect Appliance to that skill
+EDL	00:31:52,576	00:31:56,160	| IOT112 |	And then you can talk to Geneva and she can control all of our connected points
+EDL	00:31:56,672	00:32:01,280	| IOT112 |	Got it okay I was like who is this Geneva woman and where is she what is she doing in my kitchen
+EDL	00:32:01,792	00:32:05,120	| IOT112 |	Designs by as originally had
+EDL	00:32:05,632	00:32:10,496	| IOT112 |	Gel for the oven the skill for the refrigerator
+EDL	00:32:10,496	00:32:13,312	| IOT112 |	Appliances would want to talk to each other
+EDL	00:32:13,312	00:32:16,128	| IOT112 |	And have you remember which one to talk to
+EDL	00:32:16,128	00:32:20,224	| IOT112 |	Would be a pain point for the consumer so we just a always talk to Geneva
+EDL	00:32:20,224	00:32:23,808	| IOT112 |	She is the broker of all that information and she'll get the information to the right of plane
+EDL	00:32:24,576	00:32:27,136	| IOT112 |	I like that yeah that's definitely an issue that
+EDL	00:32:27,136	00:32:29,696	| IOT112 |	I think we're going to see a lot more of his voice control mousse places
+EDL	00:32:30,208	00:32:31,744	| IOT112 |	Cuz I do not want to think
+EDL	00:32:32,256	00:32:37,376	| IOT112 |	Oh I'm trying to text my ex Geneva
+EDL	00:32:37,888	00:32:39,424	| IOT112 |	And I want to know
+EDL	00:32:39,424	00:32:41,728	| IOT112 |	Text someone so now I'm going to ask Google
+EDL	00:32:41,728	00:32:43,776	| IOT112 |	And it's okay
+EDL	00:32:43,776	00:32:47,616	| IOT112 |	So you guys are working with Partners to give people a reason to connect
+EDL	00:32:48,128	00:32:49,152	| IOT112 |	Beyond just the
+EDL	00:32:49,152	00:32:49,920	| IOT112 |	Cool stuff that can do for
+EDL	00:32:50,688	00:32:51,712	| IOT112 |	And I will say every
+EDL	00:32:52,224	00:32:53,760	| IOT112 |	I don't have a GE fridge
+EDL	00:32:53,760	00:32:55,040	| IOT112 |	Have a Samsung fridge
+EDL	00:32:55,040	00:32:55,808	| IOT112 |	But
+EDL	00:32:55,808	00:32:57,088	| IOT112 |	Couple weeks ago
+EDL	00:32:57,088	00:32:59,392	| IOT112 |	It started making this weird funky noise
+EDL	00:32:59,392	00:33:04,000	| IOT112 |	And we were like what is happening and I wanted a connected fridge more than anything in the
+EDL	00:33:04,000	00:33:06,304	| IOT112 |	The world at that moment so I could just be like
+EDL	00:33:06,304	00:33:07,072	| IOT112 |	Hey
+EDL	00:33:07,072	00:33:08,864	| IOT112 |	Samsung take a virtual look at my fridge
+EDL	00:33:09,632	00:33:10,912	| IOT112 |	Tell me what's wrong so we can just fix
+EDL	00:33:11,936	00:33:14,752	| IOT112 |	And it said I had to call a little refrigerator app
+EDL	00:33:16,032	00:33:16,544	| IOT112 |	Do something
+EDL	00:33:17,056	00:33:18,592	| IOT112 |	Antipsychotics exactly
+EDL	00:33:18,592	00:33:20,384	| IOT112 |	That's what you were trying to
+EDL	00:33:20,384	00:33:23,968	| IOT112 |	Kataka right there if we give you a recent connect that refrigerator
+EDL	00:33:23,968	00:33:25,248	| IOT112 |	At the time of purchase
+EDL	00:33:25,248	00:33:26,784	| IOT112 |	When a problem occurs
+EDL	00:33:26,784	00:33:27,808	| IOT112 |	There's a good chance at night
+EDL	00:33:27,808	00:33:33,184	| IOT112 |	Are you identified or when that check comes to your house we can guarantee in the first time they come there
+EDL	00:33:33,184	00:33:34,720	| IOT112 |	It doesn't have the right parts on there
+EDL	00:33:35,232	00:33:36,768	| IOT112 |	Trusted to deliver you
+EDL	00:33:36,768	00:33:38,816	| IOT112 |	I fixed Appliance
+EDL	00:33:40,096	00:33:40,864	| IOT112 |	I know
+EDL	00:33:41,376	00:33:43,680	| IOT112 |	So you guys do want connected Appliance
+EDL	00:33:44,192	00:33:46,752	| IOT112 |	For the one possibly two or never X
+EDL	00:33:46,752	00:33:47,520	| IOT112 |	Set this thing might break
+EDL	00:33:48,288	00:33:52,128	| IOT112 |	So that's the reason I connect the second reason to connect is probably cool things like voice control
+EDL	00:33:52,128	00:33:54,944	| IOT112 |	Let's talk about intelligence so when you connect
+EDL	00:33:55,456	00:33:59,040	| IOT112 |	Do this for awhile so a while back
+EDL	00:33:59,040	00:34:00,320	| IOT112 |	1224
+EDL	00:34:00,320	00:34:01,344	| IOT112 |	Are 2013
+EDL	00:34:01,856	00:34:07,232	| IOT112 |	People were like so we can remotely control it
+EDL	00:34:07,744	00:34:09,024	| IOT112 |	For example for my smartphone
+EDL	00:34:09,024	00:34:13,120	| IOT112 |	For most people it didn't feel like a good enough reason to spend the extra dollars for
+EDL	00:34:14,400	00:34:16,704	| IOT112 |	But now what I'm seeing is things like
+EDL	00:34:17,984	00:34:19,520	| IOT112 |	My favorite device the June oven
+EDL	00:34:20,032	00:34:21,056	| IOT112 |	Which is a
+EDL	00:34:21,824	00:34:25,152	| IOT112 |	Oven is connected but the connectivity is sideline for the fact that it's
+EDL	00:34:25,664	00:34:26,944	| IOT112 |	Smart it has
+EDL	00:34:27,456	00:34:30,272	| IOT112 |	Your sensors in the feet that way the food it's got
+EDL	00:34:30,784	00:34:32,832	| IOT112 |	Preprogrammed recipes in it
+EDL	00:34:32,832	00:34:33,856	| IOT112 |	Just
+EDL	00:34:33,856	00:34:38,208	| IOT112 |	You know I istick basically a piece of fish in there and it's like hey is the same and I'm like yes
+EDL	00:34:38,208	00:34:38,720	| IOT112 |	It's like you want it
+EDL	00:34:39,488	00:34:40,000	| IOT112 |	Well done
+EDL	00:34:40,512	00:34:41,280	| IOT112 |	And I'm like
+EDL	00:34:41,280	00:34:41,792	| IOT112 |	Yes
+EDL	00:34:42,304	00:34:43,072	| IOT112 |	Isn't it just
+EDL	00:34:43,072	00:34:43,840	| IOT112 |	Does it
+EDL	00:34:43,840	00:34:45,888	| IOT112 |	And that to me is like where we should be heading
+EDL	00:34:46,400	00:34:47,424	| IOT112 |	Supposed to like
+EDL	00:34:47,424	00:34:47,936	| IOT112 |	Can control it for me
+EDL	00:34:49,216	00:34:51,008	| IOT112 |	So what are your thoughts where are you guys
+EDL	00:34:52,032	00:34:54,592	| IOT112 |	I couldn't agree with you more so I think that is
+EDL	00:34:54,592	00:34:56,640	| IOT112 |	Exactly where you want to go
+EDL	00:34:56,640	00:34:59,456	| IOT112 |	Caribou some of that difficulty of controlling
+EDL	00:34:59,456	00:35:03,296	| IOT112 |	The appliance since we make appliances we also know how to control it
+EDL	00:35:03,296	00:35:05,088	| IOT112 |	Better than a lot of consumers do
+EDL	00:35:05,088	00:35:08,416	| IOT112 |	But to get used to using a certain example so
+EDL	00:35:08,416	00:35:13,280	| IOT112 |	Your oven has a lot of modes a lot of people don't know when to use convection when to not use convection
+EDL	00:35:13,280	00:35:14,304	| IOT112 |	If you tell us
+EDL	00:35:14,304	00:35:15,840	| IOT112 |	You're making food X
+EDL	00:35:16,352	00:35:22,752	| IOT112 |	Rights that we can intelligently go through in and recommend emotes you can always override it maybe you're a better Chef than we are Maybe
+EDL	00:35:22,752	00:35:24,288	| IOT112 |	You got a specialty technique you want to use
+EDL	00:35:26,592	00:35:27,616	| IOT112 |	Of what the best notes
+EDL	00:35:28,384	00:35:31,200	| IOT112 |	And that teacher you saw actually going back to boys
+EDL	00:35:31,968	00:35:32,992	| IOT112 |	Came into this
+EDL	00:35:32,992	00:35:37,600	| IOT112 |	What is the most popular thing people are doing
+EDL	00:35:37,600	00:35:40,160	| IOT112 |	So what did you see us do be rolled in a lot of precepts
+EDL	00:35:40,160	00:35:41,184	| IOT112 |	So now you can say
+EDL	00:35:41,184	00:35:42,208	| IOT112 |	I want cookies
+EDL	00:35:42,208	00:35:44,768	| IOT112 |	I want pizza I want chicken nuggets I want lasagna
+EDL	00:35:45,536	00:35:47,328	| IOT112 |	All those things come through now we say
+EDL	00:35:47,840	00:35:48,608	| IOT112 |	Hey
+EDL	00:35:48,608	00:35:52,960	| IOT112 |	This is Geneva we would we recommend putting your husband with convection baked at 350
+EDL	00:35:53,472	00:35:57,568	| IOT112 |	At sets at there so the user doesn't have necessary notes this is great
+EDL	00:35:57,568	00:35:58,336	| IOT112 |	Teenagers
+EDL	00:35:58,848	00:36:03,200	| IOT112 |	Aspiring cook stats that don't quite know all the fancy features maybe they're having to do
+EDL	00:36:03,712	00:36:06,016	| IOT112 |	Tell us the food that you want to cook and we're going to recommend emotes
+EDL	00:36:06,528	00:36:11,392	| IOT112 |	And that's great because the control panel can't have a mode on it for every possible food combination
+EDL	00:36:11,904	00:36:17,536	| IOT112 |	But he can't let that boy is not connected experience has no inattentive what you're trying to do which is cook that food
+EDL	00:36:17,536	00:36:21,120	| IOT112 |	Now we can deliver specialty mode to you so you'll see overtime
+EDL	00:36:21,120	00:36:24,448	| IOT112 |	Athletic tons of new specialty modes to the users to that interface
+EDL	00:36:24,960	00:36:28,032	| IOT112 |	That's great so do I end up saying something Lake Geneva
+EDL	00:36:28,032	00:36:30,848	| IOT112 |	Preheat the oven for cookies or is it more like
+EDL	00:36:30,848	00:36:32,384	| IOT112 |	Initiate a conversation
+EDL	00:36:32,384	00:36:33,152	| IOT112 |	And Geneva's like
+EDL	00:36:33,664	00:36:34,432	| IOT112 |	You want to cook
+EDL	00:36:34,432	00:36:35,456	| IOT112 |	So right now it's
+EDL	00:36:35,456	00:36:37,760	| IOT112 |	You're giving her that preset please say Geneva
+EDL	00:36:38,272	00:36:39,808	| IOT112 |	I'll be able to preheat for cookies
+EDL	00:36:39,808	00:36:46,208	| IOT112 |	That's where we are right now but as we go you're going to find these conversational systems to be more open-ended to really kind of
+EDL	00:36:46,208	00:36:46,720	| IOT112 |	Get it what you want
+EDL	00:36:47,488	00:36:49,280	| IOT112 |	I love it okay this is very smart
+EDL	00:36:50,048	00:36:51,584	| IOT112 |	So let's think about
+EDL	00:36:51,584	00:36:53,888	| IOT112 |	Since we're in the kitchen let's stay in the kitchen we won't
+EDL	00:36:53,888	00:36:59,008	| IOT112 |	We will head to the laundry room just yet what do you think of when we talk about a smart
+EDL	00:36:59,008	00:36:59,776	| IOT112 |	Kitchen
+EDL	00:36:59,776	00:37:00,800	| IOT112 |	I'm curious like
+EDL	00:37:01,312	00:37:03,104	| IOT112 |	In 3 to 5 years
+EDL	00:37:03,104	00:37:07,968	| IOT112 |	What is my cooking or my kitchen experience going to be like in the GE appliance world
+EDL	00:37:08,480	00:37:10,528	| IOT112 |	I really think it's the assisted cooking
+EDL	00:37:11,040	00:37:13,856	| IOT112 |	It's going to really I revolutionized the kitchen
+EDL	00:37:14,368	00:37:16,160	| IOT112 |	Is it's going to be the recipe app
+EDL	00:37:16,928	00:37:17,440	| IOT112 |	Interacting
+EDL	00:37:17,952	00:37:18,464	| IOT112 |	The appliance
+EDL	00:37:19,232	00:37:20,000	| IOT112 |	2
+EDL	00:37:20,000	00:37:22,048	| IOT112 |	Take over once you've done the basic
+EDL	00:37:22,048	00:37:22,816	| IOT112 |	Brace
+EDL	00:37:22,816	00:37:26,144	| IOT112 |	It's going to know that you need to set temperature eggs for 30 minutes
+EDL	00:37:26,912	00:37:28,704	| IOT112 |	And then boil for the last minute
+EDL	00:37:29,216	00:37:30,752	| IOT112 |	Or you going to see exciting things on it
+EDL	00:37:32,288	00:37:36,128	| IOT112 |	Going to hold 375 for 5 minutes and then automatically turn it down
+EDL	00:37:36,128	00:37:37,152	| IOT112 |	The recipe for
+EDL	00:37:37,152	00:37:38,944	| IOT112 |	2:30 explicit directions
+EDL	00:37:38,944	00:37:40,736	| IOT112 |	To the Appliance
+EDL	00:37:40,736	00:37:42,016	| IOT112 |	I think that's really big
+EDL	00:37:42,016	00:37:43,040	| IOT112 |	Siding parts
+EDL	00:37:43,040	00:37:45,088	| IOT112 |	It's going up a lot of people's cookie
+EDL	00:37:45,088	00:37:45,856	| IOT112 |	Kitchen
+EDL	00:37:46,368	00:37:47,392	| IOT112 |	That is exciting in
+EDL	00:37:47,904	00:37:49,696	| IOT112 |	I've been excited about this for a long time
+EDL	00:37:50,208	00:37:53,280	| IOT112 |	And I think one of the key elements that we don't talk about
+EDL	00:37:53,280	00:37:55,840	| IOT112 |	What is the concept of how do we digitize
+EDL	00:37:55,840	00:37:59,680	| IOT112 |	Recipes in have computers understand what food is being cooked
+EDL	00:38:00,448	00:38:01,728	| IOT112 |	And you guys
+EDL	00:38:02,240	00:38:05,056	| IOT112 |	So it's one thing for me to tell the oven hey I'm making
+EDL	00:38:05,056	00:38:06,080	| IOT112 |	Cookies
+EDL	00:38:06,080	00:38:08,128	| IOT112 |	Four examples and it to figure
+EDL	00:38:08,640	00:38:11,712	| IOT112 |	Out what I need to do from there in the case of that unit uses
+EDL	00:38:11,712	00:38:12,480	| IOT112 |	Pictures
+EDL	00:38:12,992	00:38:14,016	| IOT112 |	Video image
+EDL	00:38:15,040	00:38:15,808	| IOT112 |	You have a relationship
+EDL	00:38:16,320	00:38:18,112	| IOT112 |	Trap is really fundamentally
+EDL	00:38:18,112	00:38:18,880	| IOT112 |	Remaking dresses
+EDL	00:38:19,392	00:38:20,928	| IOT112 |	So I'm curious like
+EDL	00:38:20,928	00:38:22,208	| IOT112 |	How you guys see
+EDL	00:38:22,208	00:38:24,768	| IOT112 |	Digital recipezaar instructions
+EDL	00:38:24,768	00:38:26,304	| IOT112 |	How that's going to cut of my grade
+EDL	00:38:26,304	00:38:26,816	| IOT112 |	Into the kitchen
+EDL	00:38:29,120	00:38:30,656	| IOT112 |	Partner
+EDL	00:38:30,656	00:38:32,704	| IOT112 |	Stop static create user experience
+EDL	00:38:33,216	00:38:39,616	| IOT112 |	And they're really taking that recipe to the next level by minimizing the number of bowls that a person needs to use for
+EDL	00:38:39,616	00:38:40,384	| IOT112 |	Pear recipe
+EDL	00:38:40,896	00:38:42,944	| IOT112 |	By making sure their step by step by doing
+EDL	00:38:43,456	00:38:47,808	| IOT112 |	Unit conversions if you don't have enough milk or you don't have enough of the greedy day
+EDL	00:38:47,808	00:38:49,344	| IOT112 |	Sizing recipe so you can
+EDL	00:38:49,344	00:38:50,624	| IOT112 |	Make it perfectly
+EDL	00:38:50,624	00:38:51,904	| IOT112 |	What's what you do have
+EDL	00:38:51,904	00:38:54,464	| IOT112 |	That's really great siding and then you tie that into the oven
+EDL	00:38:54,976	00:39:00,096	| IOT112 |	So it knows exactly when the preheat and knows exactly the temperature in set the timers and everything comes out
+EDL	00:39:00,096	00:39:01,376	| IOT112 |	Coordinate at the end
+EDL	00:39:01,376	00:39:03,680	| IOT112 |	It was really a very exciting partnership
+EDL	00:39:03,680	00:39:05,216	| IOT112 |	I think you're going to see
+EDL	00:39:05,216	00:39:07,520	| IOT112 |	Many more of those types of Partnerships
+EDL	00:39:08,032	00:39:10,336	| IOT112 |	With our connect appliances over the next coming years
+EDL	00:39:10,848	00:39:12,896	| IOT112 |	So we got this vision is like assisted cook
+EDL	00:39:13,408	00:39:16,224	| IOT112 |	What else needs to come together to make that a reality
+EDL	00:39:16,224	00:39:16,736	| IOT112 |	We have
+EDL	00:39:17,248	00:39:18,016	| IOT112 |	The connected Appliance
+EDL	00:39:18,528	00:39:19,808	| IOT112 |	Switch digital recipes
+EDL	00:39:20,576	00:39:21,856	| IOT112 |	What else might we need
+EDL	00:39:23,136	00:39:23,904	| IOT112 |	So that's a great question
+EDL	00:39:24,416	00:39:26,208	| IOT112 |	So one thing that I think is
+EDL	00:39:26,976	00:39:29,024	| IOT112 |	Overlook sometimes is knowing what's in the pants
+EDL	00:39:29,536	00:39:30,048	| IOT112 |	So you have that
+EDL	00:39:30,560	00:39:35,424	| IOT112 |	Really have that Inventory management kind of Concepts a really connect everything so that the recipe
+EDL	00:39:35,936	00:39:37,728	| IOT112 |	Is recommending recipes
+EDL	00:39:37,728	00:39:39,008	| IOT112 |	The Grinch you have on him
+EDL	00:39:39,520	00:39:41,824	| IOT112 |	No use giving you recipes that you
+EDL	00:39:41,824	00:39:45,664	| IOT112 |	Have to go to specialty store to get ingredient for you don't have on hand
+EDL	00:39:45,664	00:39:49,248	| IOT112 |	I think another important thing is people are very health conscious
+EDL	00:39:49,760	00:39:51,296	| IOT112 |	So being able to
+EDL	00:39:51,296	00:39:56,928	| IOT112 |	Know that I have stole some lose weight or lower my cholesterol or have better heart health
+EDL	00:39:56,928	00:39:58,720	| IOT112 |	Constraint that is part of
+EDL	00:39:58,720	00:39:59,232	| IOT112 |	My recipes
+EDL	00:39:59,744	00:40:01,792	| IOT112 |	And then I think you're going to continue C
+EDL	00:40:01,792	00:40:03,072	| IOT112 |	The appliances
+EDL	00:40:03,072	00:40:04,352	| IOT112 |	The Livermore
+EDL	00:40:04,352	00:40:05,376	| IOT112 |	Sensors
+EDL	00:40:05,376	00:40:06,400	| IOT112 |	Four different types
+EDL	00:40:06,400	00:40:09,216	| IOT112 |	The things since the food is done this sir
+EDL	00:40:09,728	00:40:12,032	| IOT112 |	Content level different types of elements
+EDL	00:40:12,544	00:40:13,824	| IOT112 |	Did occur during cooking
+EDL	00:40:14,336	00:40:16,128	| IOT112 |	Sensors you going to have
+EDL	00:40:16,128	00:40:17,664	| IOT112 |	Inventory management
+EDL	00:40:17,664	00:40:21,248	| IOT112 |	You're going to have this health-conscious kind of gold silver all working
+EDL	00:40:21,248	00:40:22,016	| IOT112 |	Together
+EDL	00:40:22,016	00:40:23,296	| IOT112 |	Deliver a good experience
+EDL	00:40:24,576	00:40:25,856	| IOT112 |	This sounds magical
+EDL	00:40:27,904	00:40:28,416	| IOT112 |	But
+EDL	00:40:28,928	00:40:30,464	| IOT112 |	I'm not excited enough yet
+EDL	00:40:30,464	00:40:30,976	| IOT112 |	Yet
+EDL	00:40:31,488	00:40:32,768	| IOT112 |	To go out and buy all new appliances
+EDL	00:40:33,280	00:40:35,584	| IOT112 |	So how do we I guess there's two questions
+EDL	00:40:35,584	00:40:38,656	| IOT112 |	What is how long till we get to something like this but to
+EDL	00:40:38,656	00:40:42,496	| IOT112 |	Is there a way to retrofit are you guys thinking about that or is it just
+EDL	00:40:43,008	00:40:44,032	| IOT112 |	New staff
+EDL	00:40:44,032	00:40:45,312	| IOT112 |	Get me to the mall
+EDL	00:40:46,336	00:40:49,408	| IOT112 |	Are plants is the way we architect our cloud
+EDL	00:40:49,408	00:40:51,968	| IOT112 |	We always are looking to be backwards
+EDL	00:40:51,968	00:40:53,248	| IOT112 |	Apple so we don't
+EDL	00:40:53,248	00:40:56,320	| IOT112 |	Deliver capability and it's only available on
+EDL	00:40:56,320	00:40:58,112	| IOT112 |	Appliances in Newark
+EDL	00:40:58,112	00:41:00,928	| IOT112 |	We want to make sure they're always carrying our existing
+EDL	00:41:00,928	00:41:02,208	| IOT112 |	A customer base
+EDL	00:41:02,208	00:41:04,512	| IOT112 |	In line so that when it comes out
+EDL	00:41:05,024	00:41:06,048	| IOT112 |	Wait we don't leave you.
+EDL	00:41:06,048	00:41:08,352	| IOT112 |	So do those from where updates into that connected
+EDL	00:41:08,864	00:41:10,144	| IOT112 |	Experienced then we can
+EDL	00:41:10,144	00:41:10,912	| IOT112 |	Make that Appliance
+EDL	00:41:11,424	00:41:12,960	| IOT112 |	If it supports the mode
+EDL	00:41:13,472	00:41:15,264	| IOT112 |	Capable for that new capabilities
+EDL	00:41:15,264	00:41:19,360	| IOT112 |	That is definitely in the Forefront of these new content part
+EDL	00:41:20,128	00:41:21,920	| IOT112 |	I love this anymore here listening
+EDL	00:41:21,920	00:41:23,456	| IOT112 |	You got exciting new integration
+EDL	00:41:23,968	00:41:26,528	| IOT112 |	There give me a call would love to talk to you about
+EDL	00:41:26,528	00:41:27,296	| IOT112 |	How we bring next
+EDL	00:41:27,808	00:41:30,112	| IOT112 |	Because it's agnostic
+EDL	00:41:30,624	00:41:32,416	| IOT112 |	Some people are want to cook on drop
+EDL	00:41:32,928	00:41:33,952	| IOT112 |	And that's how they want to use
+EDL	00:41:37,536	00:41:40,608	| IOT112 |	MSP
+EDL	00:41:41,120	00:41:41,888	| IOT112 |	Platform
+EDL	00:41:41,888	00:41:46,240	| IOT112 |	We want to be that connecting piece in middle cuz that's why they always have to put it in the oven to bake it
+EDL	00:41:47,520	00:41:53,151	| IOT112 |	So we want to be open to all these Integrations as they come cuz we know it's a very exciting space a lot of
+EDL	00:41:53,151	00:41:57,247	| IOT112 |	Startups are out there every day with new and innovative ideas and we're open to
+EDL	00:41:58,527	00:42:00,319	| IOT112 |	I'm sad about my lack of retrofit
+EDL	00:42:00,319	00:42:01,855	| IOT112 |	Pets but I am excited
+EDL	00:42:01,855	00:42:03,903	| IOT112 |	About your kind of forward-thinking
+EDL	00:42:03,903	00:42:04,415	| IOT112 |	Hiiraan
+EDL	00:42:04,927	00:42:05,951	| IOT112 |	Teacher availability
+EDL	00:42:06,463	00:42:07,231	| IOT112 |	So
+EDL	00:42:07,231	00:42:09,023	| IOT112 |	One of the things I've been thinking about
+EDL	00:42:09,535	00:42:13,375	| IOT112 |	With connected appliances especially things like ovens which should last for
+EDL	00:42:13,887	00:42:15,423	| IOT112 |	I don't know 10 to 15 years
+EDL	00:42:16,191	00:42:18,495	| IOT112 |	How do you kind of building
+EDL	00:42:19,263	00:42:25,663	| IOT112 |	I guess is it margin or build a way to knowing that you're going to have to support this thing for you know the next decade
+EDL	00:42:25,663	00:42:26,431	| IOT112 |	Decade and a half
+EDL	00:42:26,943	00:42:28,735	| IOT112 |	Budgeting for that
+EDL	00:42:28,735	00:42:30,271	| IOT112 |	How do you communicate that to
+EDL	00:42:30,271	00:42:31,039	| IOT112 |	Customer
+EDL	00:42:31,039	00:42:32,831	| IOT112 |	AC I'd love to answer that question
+EDL	00:42:33,343	00:42:37,951	| IOT112 |	That's not really in my ballpark being a large company we have a lots of teams with
+EDL	00:42:37,951	00:42:42,815	| IOT112 |	Distinct responsibilities and there are people looking at that but as you mentioned that's new
+EDL	00:42:43,327	00:42:46,911	| IOT112 |	Adventure that we're getting into as how to manage the software that Appliance
+EDL	00:42:47,679	00:42:48,959	| IOT112 |	Much much longer than we used to
+EDL	00:42:49,727	00:42:51,007	| IOT112 |	So I would have to defer to
+EDL	00:42:52,031	00:42:52,799	| IOT112 |	All nests
+EDL	00:42:52,799	00:42:53,311	| IOT112 |	Question
+EDL	00:42:53,823	00:42:54,591	| IOT112 |	Sounds good
+EDL	00:42:55,103	00:42:55,615	| IOT112 |	Yes
+EDL	00:42:56,383	00:42:57,919	| IOT112 |	There's probably nothing worse than in the oven
+EDL	00:42:58,431	00:43:00,735	| IOT112 |	Actually probably a refrigerator that bricks itself
+EDL	00:43:00,735	00:43:01,503	| IOT112 |	Toby turtle
+EDL	00:43:02,015	00:43:03,295	| IOT112 |	Let's move into the laundry
+EDL	00:43:04,063	00:43:05,087	| IOT112 |	Mostly because
+EDL	00:43:05,599	00:43:10,207	| IOT112 |	I can't think of what I'd want in a connected washer and dryer other than like energy management features
+EDL	00:43:10,719	00:43:12,511	| IOT112 |	Assured by people in the industry
+EDL	00:43:13,023	00:43:14,303	| IOT112 |	That there are features that I
+EDL	00:43:14,815	00:43:15,839	| IOT112 |	So I would love to hear you
+EDL	00:43:17,119	00:43:19,167	| IOT112 |	The teacher that makes the most sense
+EDL	00:43:19,167	00:43:21,215	| IOT112 |	In this laundry space is that
+EDL	00:43:21,215	00:43:27,615	| IOT112 |	Often times people have that Bond repair on a different floor than they're spending the majority of their time you'll see it often
+EDL	00:43:27,615	00:43:28,383	| IOT112 |	Basement
+EDL	00:43:28,383	00:43:29,151	| IOT112 |	You'll see it
+EDL	00:43:29,151	00:43:31,199	| IOT112 |	Oftentimes upstairs in a bedroom
+EDL	00:43:31,199	00:43:31,967	| IOT112 |	We're on that
+EDL	00:43:32,479	00:43:37,343	| IOT112 |	Saturday maybe where you're doing your chores you're going around the house when you're cleaning and you have to do laundry
+EDL	00:43:37,855	00:43:39,903	| IOT112 |	You have to walk up and down those stairs
+EDL	00:43:40,415	00:43:42,719	| IOT112 |	The laundry is done how many times have you walked
+EDL	00:43:42,719	00:43:43,231	| IOT112 |	Upstairs
+EDL	00:43:43,743	00:43:44,255	| IOT112 |	Got to the
+EDL	00:43:44,767	00:43:48,607	| IOT112 |	To the unit and then realize it has 5 minutes left
+EDL	00:43:49,119	00:43:50,655	| IOT112 |	Are you go back downstairs
+EDL	00:43:50,655	00:43:51,423	| IOT112 |	Can you come back up
+EDL	00:43:51,423	00:43:53,983	| IOT112 |	Being able to know the status of that unit
+EDL	00:43:53,983	00:43:55,775	| IOT112 |	In itself is a very valuable thing
+EDL	00:43:56,287	00:43:57,567	| IOT112 |	Manage your time
+EDL	00:43:57,567	00:44:00,127	| IOT112 |	Because often times people don't love to do laundry
+EDL	00:44:00,127	00:44:01,663	| IOT112 |	It's kind of a task that has to be
+EDL	00:44:02,943	00:44:03,711	| IOT112 |	Did you have to do
+EDL	00:44:03,711	00:44:06,783	| IOT112 |	Every weekend and you want to do it in a short a time as you can
+EDL	00:44:07,295	00:44:08,575	| IOT112 |	Are we have Partnerships with
+EDL	00:44:09,087	00:44:10,623	| IOT112 |	Amazon TRS
+EDL	00:44:10,623	00:44:13,183	| IOT112 |	So that you can automatically reorder dryer sheets
+EDL	00:44:13,183	00:44:14,719	| IOT112 |	So now you don't have to worry
+EDL	00:44:14,719	00:44:18,815	| IOT112 |	About how many times have you reached over to put a load in there
+EDL	00:44:18,815	00:44:21,631	| IOT112 |	And realized that was the last dryer sheet or maybe you were out
+EDL	00:44:22,143	00:44:24,191	| IOT112 |	Right so having that automatically
+EDL	00:44:24,191	00:44:24,959	| IOT112 |	Replenishment
+EDL	00:44:24,959	00:44:25,471	| IOT112 |	Come along
+EDL	00:44:25,983	00:44:27,007	| IOT112 |	Connect appliances
+EDL	00:44:27,519	00:44:30,079	| IOT112 |	Another exciting example is been fixed and the tumble
+EDL	00:44:30,847	00:44:34,687	| IOT112 |	You're busy doing something you can't quite get there you don't want your clothes wrinkle
+EDL	00:44:34,687	00:44:38,015	| IOT112 |	If you found out that the timeout expired just extended tumble
+EDL	00:44:38,015	00:44:39,551	| IOT112 |	Turn off the heat and let the clothes
+EDL	00:44:39,551	00:44:41,855	| IOT112 |	Continue the temple so they don't wrinkle soap
+EDL	00:44:41,855	00:44:42,879	| IOT112 |	There's three or four
+EDL	00:44:42,879	00:44:44,671	| IOT112 |	Use cases fat laundry care
+EDL	00:44:44,671	00:44:45,695	| IOT112 |	Terilli's Breakside
+EDL	00:44:46,463	00:44:47,231	| IOT112 |	Okay
+EDL	00:44:47,231	00:44:51,583	| IOT112 |	I always feel like my washer and dryer to high-tech features on there
+EDL	00:44:52,351	00:44:53,375	| IOT112 |	I don't even know what the
+EDL	00:44:53,887	00:44:56,447	| IOT112 |	This particular laundry cycle.
+EDL	00:44:57,471	00:44:59,263	| IOT112 |	How do I make this easier
+EDL	00:44:59,775	00:45:00,543	| IOT112 |	Or maybe I don't
+EDL	00:45:01,055	00:45:02,591	| IOT112 |	That's an exciting question
+EDL	00:45:03,871	00:45:07,199	| IOT112 |	Think about your laundry and all those Cycles you don't know what they mean
+EDL	00:45:07,199	00:45:08,479	| IOT112 |	Let's take it back
+EDL	00:45:08,479	00:45:09,247	| IOT112 |	To where we mention
+EDL	00:45:09,247	00:45:10,271	| IOT112 |	Presets for foods
+EDL	00:45:11,039	00:45:12,831	| IOT112 |	Let's say you know you have grass stains
+EDL	00:45:13,855	00:45:14,623	| IOT112 |	On Cotton
+EDL	00:45:15,135	00:45:15,647	| IOT112 |	Are bougie
+EDL	00:45:16,415	00:45:17,695	| IOT112 |	Why don't you just tell the unit
+EDL	00:45:19,743	00:45:20,767	| IOT112 |	So something in the future
+EDL	00:45:21,279	00:45:22,815	| IOT112 |	You should be smart enough to
+EDL	00:45:22,815	00:45:23,583	| IOT112 |	Understand
+EDL	00:45:24,095	00:45:25,631	| IOT112 |	I have Scott Fabrics
+EDL	00:45:26,143	00:45:29,215	| IOT112 |	Grass stains or wine or ketchup or whatever this thing that beats
+EDL	00:45:29,215	00:45:30,495	| IOT112 |	I figure out the best cycle for
+EDL	00:45:31,519	00:45:32,031	| IOT112 |	I like it
+EDL	00:45:32,543	00:45:33,311	| IOT112 |	Okay
+EDL	00:45:33,311	00:45:36,127	| IOT112 |	So here's the biggest most difficult question I have
+EDL	00:45:36,639	00:45:38,175	| IOT112 |	When it comes to appliances
+EDL	00:45:38,943	00:45:39,455	| IOT112 |	Which is
+EDL	00:45:39,967	00:45:41,503	| IOT112 |	Right now I have
+EDL	00:45:42,015	00:45:45,087	| IOT112 |	Appliances I I do have GE Appliances but I also have
+EDL	00:45:45,599	00:45:47,135	| IOT112 |	The Samsung refrigerator I have
+EDL	00:45:47,903	00:45:48,671	| IOT112 |	Bosch
+EDL	00:45:48,671	00:45:49,439	| IOT112 |	Stuff
+EDL	00:45:49,439	00:45:50,207	| IOT112 |	So I have
+EDL	00:45:50,207	00:45:51,743	| IOT112 |	Different stuff in my house
+EDL	00:45:51,743	00:45:56,351	| IOT112 |	And I bump I actually built my house and bought all my appliances at the same time but I chose different
+EDL	00:45:57,119	00:45:57,887	| IOT112 |	Appliances for that reason
+EDL	00:45:58,399	00:46:00,703	| IOT112 |	Are you guys ever going to work with you know
+EDL	00:46:01,215	00:46:01,727	| IOT112 |	Bosch
+EDL	00:46:02,239	00:46:04,287	| IOT112 |	Or is there going to be another middle person
+EDL	00:46:04,287	00:46:05,567	| IOT112 |	To handle all that for me
+EDL	00:46:06,847	00:46:11,711	| IOT112 |	But you do see us as you see is working with home hub so you see is working
+EDL	00:46:12,223	00:46:12,991	| IOT112 |	With
+EDL	00:46:12,991	00:46:14,015	| IOT112 |	Echo
+EDL	00:46:14,527	00:46:15,551	| IOT112 |	Don't be out there home hub
+EDL	00:46:16,063	00:46:17,343	| IOT112 |	That we will work with
+EDL	00:46:17,343	00:46:21,439	| IOT112 |	As people adopt the home hub and they so excited there's passionate
+EDL	00:46:21,439	00:46:23,487	| IOT112 |	Energy around the whole pup you'll see us
+EDL	00:46:23,487	00:46:25,023	| IOT112 |	Develop for that as well
+EDL	00:46:25,023	00:46:26,815	| IOT112 |	It is possible that that becomes
+EDL	00:46:26,815	00:46:28,351	| IOT112 |	Who's the broker for the appliances
+EDL	00:46:28,863	00:46:30,143	| IOT112 |	To work together
+EDL	00:46:30,143	00:46:30,655	| IOT112 |	Well
+EDL	00:46:31,167	00:46:37,311	| IOT112 |	Don't thank you so much for coming on the show today I am sad that I will not be able to try Geneva but at some point in time maybe I'll
+EDL	00:46:37,823	00:46:41,151	| IOT112 |	I'll pop into a store and see if I can check this out because
+EDL	00:46:41,663	00:46:42,943	| IOT112 |	It kind of sounds awesome
+EDL	00:46:44,223	00:46:45,247	| IOT112 |	Definitely
+EDL	00:46:45,247	00:46:46,783	| IOT112 |	Next time I'm in the market for appliances
+EDL	00:46:48,063	00:46:49,343	| IOT112 |	Why don't you check them out
+EDL	00:46:49,855	00:46:56,255	| IOT112 |	And you see them in the stores and you interact with them you're going to love them and you're going to be a customer for life
+EDL	00:46:56,255	00:47:02,655	| IOT112 |	That's it for this week's show thank you so much for listening and if you want more iot news you can sign up
+EDL	00:47:02,655	00:47:09,055	| IOT112 |	For my newsletter Stacy knows things at Stacey on iot. Cam will see you now
+EDL	00:47:09,055	00:47:15,199	| IOT112 |	Next week 

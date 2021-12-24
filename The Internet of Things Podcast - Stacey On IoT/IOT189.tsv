@@ -1,0 +1,1397 @@
+EDL	Record In	Record Out	Clipname	Subtitle
+EDL	00:00:06,400	00:00:12,544	| IOT189 |	Hey everyone welcome to the Internet of Things podcast this is your host
+EDL	00:00:12,544	00:00:15,616	| IOT189 |	Stacey Higginbotham and your co-host Kevin tofel
+EDL	00:00:15,616	00:00:18,176	| IOT189 |	We have an awesome show for you today
+EDL	00:00:18,176	00:00:19,712	| IOT189 |	We're going to be talking about a step back
+EDL	00:00:20,224	00:00:20,992	| IOT189 |	For privacy
+EDL	00:00:20,992	00:00:23,296	| IOT189 |	Big funding for a smart window maker
+EDL	00:00:23,808	00:00:28,416	| IOT189 |	Couple new iot related modules from gemalto and Sierra
+EDL	00:00:28,416	00:00:29,184	| IOT189 |	And
+EDL	00:00:29,184	00:00:30,720	| IOT189 |	Bad security news
+EDL	00:00:30,720	00:00:31,744	| IOT189 |	Dealing with
+EDL	00:00:31,744	00:00:32,768	| IOT189 |	Madam
+EDL	00:00:32,768	00:00:35,584	| IOT189 |	The Amazon Echo and e911
+EDL	00:00:35,584	00:00:37,632	| IOT189 |	Shecup / Cortana
+EDL	00:00:37,632	00:00:39,680	| IOT189 |	And some bad news for everybody hoping
+EDL	00:00:39,680	00:00:41,728	| IOT189 |	Google assistant on Sonos
+EDL	00:00:42,240	00:00:44,800	| IOT189 |	Plus we've got Andy wilson-thompson
+EDL	00:00:44,800	00:00:46,848	| IOT189 |	Talking about the digital standard
+EDL	00:00:46,848	00:00:51,968	| IOT189 |	Which is a new privacy security and device safety standard that
+EDL	00:00:51,968	00:00:53,504	| IOT189 |	You're really going to want to hear about
+EDL	00:00:53,504	00:00:54,272	| IOT189 |	And
+EDL	00:00:54,272	00:00:57,088	| IOT189 |	We have figured out something pretty cool you can do
+EDL	00:00:57,088	00:00:59,136	| IOT189 |	With your Amazon Echo
+EDL	00:00:59,136	00:01:00,160	| IOT189 |	And notify
+EDL	00:01:00,160	00:01:00,928	| IOT189 |	Applications
+EDL	00:01:00,928	00:01:01,696	| IOT189 |	All of this
+EDL	00:01:01,696	00:01:05,024	| IOT189 |	Plus we'll hear from bitdefender who is our sponsor for this week show
+EDL	00:01:05,024	00:01:05,792	| IOT189 |	And
+EDL	00:01:05,792	00:01:07,584	| IOT189 |	Will discuss the digital standard
+EDL	00:01:07,584	00:01:08,608	| IOT189 |	So let's
+EDL	00:01:08,608	00:01:09,632	| IOT189 |	Kick It Off
+EDL	00:01:09,632	00:01:10,400	| IOT189 |	With
+EDL	00:01:10,400	00:01:11,680	| IOT189 |	A message from our sponsor
+EDL	00:01:12,192	00:01:13,728	| IOT189 |	This week sponsor is
+EDL	00:01:13,728	00:01:14,752	| IOT189 |	Cognizant
+EDL	00:01:14,752	00:01:21,152	| IOT189 |	With demanding customers at the center of today's value chain delivering engaging products and experiences
+EDL	00:01:21,152	00:01:22,176	| IOT189 |	Is even more important
+EDL	00:01:22,688	00:01:29,088	| IOT189 |	Cognizant a global leader in business and IT services helps companies engage customers by envisioning Innovative products
+EDL	00:01:29,088	00:01:30,112	| IOT189 |	Experiences
+EDL	00:01:30,112	00:01:32,672	| IOT189 |	Or inventing disruptive new business models
+EDL	00:01:32,672	00:01:33,696	| IOT189 |	With these insights
+EDL	00:01:33,696	00:01:40,096	| IOT189 |	Cognizant collaborates with clients to build smart products and disruptive strategies and new ways of engaging customers across
+EDL	00:01:40,096	00:01:42,912	| IOT189 |	Every channel that uses the power of iot
+EDL	00:01:42,912	00:01:49,312	| IOT189 |	Learn more about cognizant iot services and solutions at cognizant.com
+EDL	00:01:49,312	00:01:50,080	| IOT189 |	Iot
+EDL	00:01:51,616	00:01:52,384	| IOT189 |	Kevin
+EDL	00:01:52,384	00:01:53,152	| IOT189 |	All right
+EDL	00:01:53,152	00:01:55,968	| IOT189 |	I feel like this week was late on certain types of
+EDL	00:01:55,968	00:01:58,272	| IOT189 |	Snooze like cool connected products news
+EDL	00:01:58,272	00:02:01,344	| IOT189 |	But we got a lot of big news relating to how
+EDL	00:02:01,344	00:02:02,112	| IOT189 |	The internet
+EDL	00:02:02,112	00:02:02,624	| IOT189 |	Things is
+EDL	00:02:03,648	00:02:04,416	| IOT189 |	First step
+EDL	00:02:04,416	00:02:05,184	| IOT189 |	Is
+EDL	00:02:05,184	00:02:06,720	| IOT189 |	Maybe a blow for privacy
+EDL	00:02:07,744	00:02:10,304	| IOT189 |	Last year the FTC came after dealing
+EDL	00:02:11,840	00:02:12,608	| IOT189 |	You
+EDL	00:02:12,608	00:02:14,400	| IOT189 |	Are building products that are not
+EDL	00:02:14,400	00:02:15,424	| IOT189 |	Actually secure
+EDL	00:02:15,424	00:02:17,216	| IOT189 |	And I was like what
+EDL	00:02:17,216	00:02:23,104	| IOT189 |	We have to see this like I'm going to still find you because you're talking about your device is being secure but they have these hard-coded passwords
+EDL	00:02:23,872	00:02:25,152	| IOT189 |	This is all in the Waco
+EDL	00:02:25,152	00:02:26,944	| IOT189 |	DeVry botnet and things getting a
+EDL	00:02:26,944	00:02:27,712	| IOT189 |	Infected
+EDL	00:02:27,712	00:02:28,480	| IOT189 |	And
+EDL	00:02:28,480	00:02:31,552	| IOT189 |	People realizing that a lot of their routers at other products
+EDL	00:02:31,552	00:02:33,344	| IOT189 |	They weren't really well-designed very well
+EDL	00:02:33,856	00:02:34,624	| IOT189 |	So
+EDL	00:02:34,624	00:02:35,392	| IOT189 |	D-Link
+EDL	00:02:35,392	00:02:36,160	| IOT189 |	Dislike
+EDL	00:02:36,160	00:02:39,488	| IOT189 |	I'm not going to be made up an example here and they fought back
+EDL	00:02:39,488	00:02:40,256	| IOT189 |	And
+EDL	00:02:40,256	00:02:43,584	| IOT189 |	The district judge in this case basically said
+EDL	00:02:43,584	00:02:45,120	| IOT189 |	I am sending this
+EDL	00:02:45,120	00:02:45,888	| IOT189 |	2 quart
+EDL	00:02:45,888	00:02:48,960	| IOT189 |	Neither of you are going to get summary judgment summary judgment
+EDL	00:02:48,960	00:02:51,520	| IOT189 |	On a case is when the courts basically say
+EDL	00:02:51,520	00:02:53,568	| IOT189 |	Yeah okay this isn't even a case
+EDL	00:02:54,080	00:02:54,592	| IOT189 |	You're in the wrong
+EDL	00:02:55,104	00:02:55,872	| IOT189 |	Or you're in the right
+EDL	00:02:55,872	00:02:56,640	| IOT189 |	Whichever
+EDL	00:02:56,640	00:02:59,968	| IOT189 |	And this is kind of interesting that is happening in California
+EDL	00:02:59,968	00:03:03,296	| IOT189 |	I know this is a federal thing in California has a state law
+EDL	00:03:03,296	00:03:07,904	| IOT189 |	That was recently password talk about on a number of shows it's as we said night time
+EDL	00:03:07,904	00:03:09,440	| IOT189 |	Does a lot of keys it doesn't have
+EDL	00:03:09,952	00:03:10,976	| IOT189 |	Honda of different
+EDL	00:03:10,976	00:03:17,376	| IOT189 |	IRT security aspects that we'd like to see or the kinds that are in place recommended in the UK
+EDL	00:03:17,376	00:03:23,776	| IOT189 |	As well these are all the things that we say
+EDL	00:03:23,776	00:03:25,056	| IOT189 |	Where did ice makers that is
+EDL	00:03:25,056	00:03:31,456	| IOT189 |	So we have to cease problem is Haven aside from the hard-coded passwords you had command injection vulnerability
+EDL	00:03:31,456	00:03:32,992	| IOT189 |	Steve got misplaced security keys
+EDL	00:03:32,992	00:03:35,808	| IOT189 |	And even worse plaintext password storage
+EDL	00:03:35,808	00:03:39,136	| IOT189 |	You know basically available to access
+EDL	00:03:39,136	00:03:39,904	| IOT189 |	I said so
+EDL	00:03:39,904	00:03:42,720	| IOT189 |	I like to see all that go away I think you would too and
+EDL	00:03:42,720	00:03:44,000	| IOT189 |	I hope it's where we are heading
+EDL	00:03:44,512	00:03:47,584	| IOT189 |	I'm kind of disappointed it was a summary judgment because to me it's like
+EDL	00:03:47,584	00:03:48,864	| IOT189 |	Yeah these are all
+EDL	00:03:48,864	00:03:55,264	| IOT189 |	Bad security practices that you should be held accountable for especially if you're selling these products to Consumers number one and number two
+EDL	00:03:55,264	00:03:56,544	| IOT189 |	If you're telling consumers yep
+EDL	00:03:56,544	00:03:57,824	| IOT189 |	Secure with us
+EDL	00:03:58,336	00:04:00,640	| IOT189 |	Yeah in this case this is a little weird
+EDL	00:04:00,640	00:04:02,944	| IOT189 |	Because both parties actually asked for summer
+EDL	00:04:02,944	00:04:07,808	| IOT189 |	Judgement it seems like the FTC was kind of trying to walk back his arguments in a way here
+EDL	00:04:07,808	00:04:08,576	| IOT189 |	Usually
+EDL	00:04:08,576	00:04:09,344	| IOT189 |	1 party
+EDL	00:04:09,344	00:04:10,880	| IOT189 |	Chelsea Kasper summary
+EDL	00:04:10,880	00:04:12,672	| IOT189 |	In that case it would be logical for
+EDL	00:04:12,672	00:04:14,976	| IOT189 |	There is no case here
+EDL	00:04:14,976	00:04:19,583	| IOT189 |	You are so it's a little weird that the FTC which one after dealing was like yeah
+EDL	00:04:20,351	00:04:21,375	| IOT189 |	Let's do a summary
+EDL	00:04:22,143	00:04:23,167	| IOT189 |	And the judge was like
+EDL	00:04:23,167	00:04:25,727	| IOT189 |	Yeah. There's a lot of information that we need to go through a tree
+EDL	00:04:25,727	00:04:26,751	| IOT189 |	Dial soap
+EDL	00:04:26,751	00:04:27,775	| IOT189 |	I suspect D-Link
+EDL	00:04:28,287	00:04:33,151	| IOT189 |	Wanted to summary judgment because they are surely not the only manufacturer in the space that has
+EDL	00:04:33,151	00:04:35,455	| IOT189 |	Similar issues and they didn't want to be the first
+EDL	00:04:36,223	00:04:40,063	| IOT189 |	D-Link actually recently just got called out by Consumer Reports
+EDL	00:04:40,063	00:04:41,087	| IOT189 |	For not having
+EDL	00:04:41,087	00:04:42,111	| IOT189 |	Great security associate
+EDL	00:04:42,623	00:04:45,183	| IOT189 |	It's products as well so you know maybe it's just feeling like
+EDL	00:04:45,951	00:04:46,463	| IOT189 |	Punching bag
+EDL	00:04:46,975	00:04:48,255	| IOT189 |	If you're a D-Link
+EDL	00:04:48,255	00:04:54,655	| IOT189 |	Device owner just so you're aware of the scope of what is in bounds here for this it's the security response
+EDL	00:04:54,655	00:05:01,055	| IOT189 |	How to see which is obviously not your voice but that's just d-link's practices but also their router security and their IP camera user
+EDL	00:05:01,055	00:05:04,127	| IOT189 |	Interface security cameras
+EDL	00:05:04,127	00:05:05,663	| IOT189 |	You know this is kind of an play for you
+EDL	00:05:08,223	00:05:11,039	| IOT189 |	Oh know that some of them are hard coded nevermind
+EDL	00:05:12,575	00:05:13,343	| IOT189 |	Do you think
+EDL	00:05:13,343	00:05:19,231	| IOT189 |	Depending on the case and I think I'm sure that we're going to watch this one because it's kind of the first-of-its-kind that I can think of
+EDL	00:05:19,231	00:05:22,047	| IOT189 |	It is do you think this will push us forward
+EDL	00:05:23,071	00:05:24,607	| IOT189 |	National
+EDL	00:05:24,607	00:05:26,911	| IOT189 |	Type of legislation with
+EDL	00:05:26,911	00:05:31,263	| IOT189 |	Again maurkice and say what California has include Jose California at least they have something
+EDL	00:05:31,263	00:05:33,311	| IOT189 |	Nationwide we don't have anything
+EDL	00:05:33,823	00:05:35,871	| IOT189 |	Well this was brought under
+EDL	00:05:35,871	00:05:37,407	| IOT189 |	The FTC deceptive trade
+EDL	00:05:38,175	00:05:40,223	| IOT189 |	So the FTC has the ability to
+EDL	00:05:40,223	00:05:42,271	| IOT189 |	Call companies out for being
+EDL	00:05:42,271	00:05:47,391	| IOT189 |	Basically saying something that isn't true so that's actually the authority under which the FTC brought it
+EDL	00:05:47,903	00:05:48,671	| IOT189 |	And because
+EDL	00:05:48,671	00:05:50,463	| IOT189 |	Steelix in California that's why it
+EDL	00:05:50,463	00:05:52,767	| IOT189 |	It's there this isn't under the brand new
+EDL	00:05:52,767	00:05:53,791	| IOT189 |	New California law
+EDL	00:05:53,791	00:05:55,839	| IOT189 |	Although cuz that doesn't actually been going to a
+EDL	00:05:58,143	00:06:00,703	| IOT189 |	There's a lot here that is literally the only
+EDL	00:06:01,215	00:06:04,799	| IOT189 |	Hammer that the FCC has to go after this right now
+EDL	00:06:04,799	00:06:05,823	| IOT189 |	Maybe not the only
+EDL	00:06:06,335	00:06:07,359	| IOT189 |	I'm sure there are lawyers who
+EDL	00:06:11,455	00:06:12,223	| IOT189 |	In general
+EDL	00:06:12,223	00:06:14,527	| IOT189 |	That's the hammer the FCC has so they're trying to
+EDL	00:06:15,039	00:06:21,439	| IOT189 |	Yeah I don't see the FTC moving forward in terms of trying to push a legislation as you said that's not their role or anything like that but I could see
+EDL	00:06:21,439	00:06:22,719	| IOT189 |	See some lawyers
+EDL	00:06:22,719	00:06:25,023	| IOT189 |	Start pushing for the sun maybe even some legislators
+EDL	00:06:25,535	00:06:29,119	| IOT189 |	Probably in California that try and bring the snow to the
+EDL	00:06:29,119	00:06:30,655	| IOT189 |	Rule of law in US
+EDL	00:06:31,935	00:06:35,007	| IOT189 |	I mean California did just pass that law that would affect
+EDL	00:06:35,007	00:06:36,031	| IOT189 |	This case
+EDL	00:06:36,031	00:06:37,311	| IOT189 |	Isn't that right
+EDL	00:06:37,311	00:06:37,823	| IOT189 |	Right
+EDL	00:06:38,335	00:06:40,383	| IOT189 |	Yeah so it's past it just isn't going to work
+EDL	00:06:40,895	00:06:42,687	| IOT189 |	So I think we'll see more here
+EDL	00:06:42,687	00:06:44,223	| IOT189 |	This is again
+EDL	00:06:44,223	00:06:49,343	| IOT189 |	Maybe we'll see more of the current FTC is a little different than the FTC the brought this so
+EDL	00:06:49,343	00:06:51,903	| IOT189 |	I don't know that's the danger of having your
+EDL	00:06:51,903	00:06:55,487	| IOT189 |	Pause kind of having agencies do all of the enforcement
+EDL	00:06:55,487	00:06:56,511	| IOT189 |	But you don't
+EDL	00:06:56,511	00:06:57,023	| IOT189 |	That's
+EDL	00:06:58,559	00:06:59,327	| IOT189 |	Moving right along
+EDL	00:07:00,095	00:07:03,935	| IOT189 |	Artesia scope we'll talk a little bit about Good device security and privacy with
+EDL	00:07:03,935	00:07:04,959	| IOT189 |	I guess so stay tuned
+EDL	00:07:05,727	00:07:07,007	| IOT189 |	Cuz that's basically what
+EDL	00:07:08,031	00:07:09,311	| IOT189 |	Does the voluntary
+EDL	00:07:09,311	00:07:10,847	| IOT189 |	Goals not
+EDL	00:07:10,847	00:07:11,615	| IOT189 |	Federal so
+EDL	00:07:13,407	00:07:16,479	| IOT189 |	We're getting there we got big big money happening
+EDL	00:07:16,479	00:07:17,247	| IOT189 |	4
+EDL	00:07:17,247	00:07:18,527	| IOT189 |	Hey smart window
+EDL	00:07:18,527	00:07:20,319	| IOT189 |	Glass manufacturer
+EDL	00:07:20,319	00:07:20,831	| IOT189 |	Actually
+EDL	00:07:21,343	00:07:22,623	| IOT189 |	It's over a decade old
+EDL	00:07:22,623	00:07:23,647	| IOT189 |	It's called View
+EDL	00:07:23,647	00:07:25,695	| IOT189 |	They just got 1.1 billion
+EDL	00:07:25,695	00:07:26,463	| IOT189 |	Friendly Saudi back
+EDL	00:07:27,231	00:07:27,999	| IOT189 |	SoftBank
+EDL	00:07:27,999	00:07:28,767	| IOT189 |	Vision fund
+EDL	00:07:28,767	00:07:31,071	| IOT189 |	Which in its own way has some controversy
+EDL	00:07:31,071	00:07:31,583	| IOT189 |	Associated
+EDL	00:07:32,607	00:07:35,423	| IOT189 |	Let's just go with the big side there and let's talk about the smart windows
+EDL	00:07:35,935	00:07:37,215	| IOT189 |	Because these are
+EDL	00:07:37,215	00:07:39,775	| IOT189 |	Pretty cool they've actually been used in
+EDL	00:07:39,775	00:07:41,055	| IOT189 |	DFW Dallas
+EDL	00:07:41,055	00:07:42,079	| IOT189 |	Fort Worth International
+EDL	00:07:42,079	00:07:43,359	| IOT189 |	Birthday pin used in
+EDL	00:07:43,359	00:07:46,175	| IOT189 |	Overstock's headquarters I remember when I was at Fortune
+EDL	00:07:46,687	00:07:48,479	| IOT189 |	A colleague of mine wrote about them teaser
+EDL	00:07:48,479	00:07:49,759	| IOT189 |	Basically two cool things
+EDL	00:07:50,271	00:07:50,783	| IOT189 |	Apus One
+EDL	00:07:51,295	00:07:52,831	| IOT189 |	When the sunlight hits it
+EDL	00:07:52,831	00:07:55,391	| IOT189 |	It can turn opaque with the push of a button
+EDL	00:07:55,391	00:07:55,903	| IOT189 |	So you can
+EDL	00:07:56,671	00:07:57,695	| IOT189 |	Duke radiations in
+EDL	00:07:58,207	00:07:59,743	| IOT189 |	Capacity on the window which is me
+EDL	00:07:59,743	00:08:02,815	| IOT189 |	Into they're using software associated with it
+EDL	00:08:02,815	00:08:08,447	| IOT189 |	To detect how people move around in the office and make the windows more
+EDL	00:08:08,447	00:08:09,215	| IOT189 |	Restaurants
+EDL	00:08:09,215	00:08:09,983	| IOT189 |	Parent based on
+EDL	00:08:09,983	00:08:11,263	| IOT189 |	Temperature
+EDL	00:08:11,263	00:08:13,055	| IOT189 |	But also the needs of the
+EDL	00:08:13,055	00:08:13,567	| IOT189 |	People trying to
+EDL	00:08:15,103	00:08:21,503	| IOT189 |	Yeah and this 1.1 billion and Sunday actually follows 800 million that view it already raised from folks
+EDL	00:08:21,503	00:08:27,903	| IOT189 |	Corning which makes sense Corning Glass madrone Capital Partners TIAA Investments and the New Zealand
+EDL	00:08:27,903	00:08:29,695	| IOT189 |	Sovereign wealth fund so
+EDL	00:08:29,695	00:08:31,999	| IOT189 |	I got nearly 2 billion raised here
+EDL	00:08:31,999	00:08:34,559	| IOT189 |	It is technology that's been around for awhile
+EDL	00:08:34,559	00:08:39,935	| IOT189 |	It's kind of cool because that's there's like metal oxide films in between the panes of glass and you said you would
+EDL	00:08:39,935	00:08:42,495	| IOT189 |	The Press of a button and technically you're right
+EDL	00:08:42,495	00:08:46,079	| IOT189 |	If you remember at CES last year we saw a very similar product
+EDL	00:08:46,079	00:08:47,359	| IOT189 |	From halio
+EDL	00:08:47,359	00:08:49,919	| IOT189 |	Which is smart tinting glass and it took about
+EDL	00:08:49,919	00:08:52,223	| IOT189 |	Channel 3 minutes for to go from
+EDL	00:08:52,223	00:08:56,575	| IOT189 |	Fully transparent to fully dark so it's not like an instant thing I don't want you to get the wrong idea
+EDL	00:08:57,599	00:09:00,415	| IOT189 |	It is very cool and aside from the fact that
+EDL	00:09:00,415	00:09:06,815	| IOT189 |	Do you have this in your business your employees might be happier than an athlete blind as much getting less UV light Etc you can save
+EDL	00:09:06,815	00:09:07,583	| IOT189 |	20%
+EDL	00:09:07,583	00:09:08,607	| IOT189 |	On your
+EDL	00:09:08,607	00:09:12,703	| IOT189 |	HVAC bills which is huge when you outfit entire massive building with them
+EDL	00:09:12,703	00:09:15,519	| IOT189 |	But they also cost four times as much as regular glass
+EDL	00:09:16,031	00:09:17,055	| IOT189 |	Yes I've seen
+EDL	00:09:17,055	00:09:20,895	| IOT189 |	Twice as much to four times as much so I think it probably depends maybe
+EDL	00:09:20,895	00:09:21,407	| IOT189 |	Volume
+EDL	00:09:22,687	00:09:26,783	| IOT189 |	I don't know but I would love this I actually have these massive Westward
+EDL	00:09:26,783	00:09:27,551	| IOT189 |	Windows
+EDL	00:09:27,551	00:09:30,367	| IOT189 |	Had this been an option for me in the residential space
+EDL	00:09:30,367	00:09:31,391	| IOT189 |	Totally down for it
+EDL	00:09:31,391	00:09:32,415	| IOT189 |	But this is for now
+EDL	00:09:33,951	00:09:36,511	| IOT189 |	So yeah if you and they're going to use the money to
+EDL	00:09:40,607	00:09:41,119	| IOT189 |	Selma
+EDL	00:09:41,887	00:09:43,167	| IOT189 |	Let's talk about
+EDL	00:09:43,167	00:09:44,703	| IOT189 |	Modules
+EDL	00:09:44,703	00:09:47,263	| IOT189 |	Oh my gosh so we got two little bits of
+EDL	00:09:47,263	00:09:50,079	| IOT189 |	Module news for y'all out there in the world
+EDL	00:09:50,079	00:09:52,383	| IOT189 |	Connected iot devices
+EDL	00:09:52,383	00:09:53,919	| IOT189 |	Gemalto has built
+EDL	00:09:53,919	00:09:55,199	| IOT189 |	Highly efficient
+EDL	00:09:55,711	00:09:58,271	| IOT189 |	Secure NB iot platform
+EDL	00:09:58,271	00:10:01,087	| IOT189 |	Gemalto is one of the companies that makes
+EDL	00:10:01,087	00:10:02,111	| IOT189 |	Someecards
+EDL	00:10:02,111	00:10:03,391	| IOT189 |	And does all kinds of
+EDL	00:10:03,391	00:10:04,671	| IOT189 |	Crazy Security in your credit card
+EDL	00:10:05,183	00:10:07,743	| IOT189 |	And their new NBA OT simplex
+EDL	00:10:09,279	00:10:10,047	| IOT189 |	Is
+EDL	00:10:10,047	00:10:11,071	| IOT189 |	Basically the
+EDL	00:10:11,071	00:10:11,839	| IOT189 |	Super low power
+EDL	00:10:11,839	00:10:12,863	| IOT189 |	Howard butt
+EDL	00:10:12,863	00:10:13,631	| IOT189 |	Has
+EDL	00:10:13,631	00:10:14,399	| IOT189 |	Is it December 7th
+EDL	00:10:14,911	00:10:19,519	| IOT189 |	Yeah it's easier so there's no physical Sim in these gemalto disease and Technology
+EDL	00:10:20,287	00:10:23,359	| IOT189 |	And it makes sense because you don't want to actually he want to have
+EDL	00:10:23,359	00:10:24,127	| IOT189 |	The flexibility to
+EDL	00:10:24,895	00:10:25,919	| IOT189 |	Transfer these around
+EDL	00:10:25,919	00:10:32,319	| IOT189 |	And the security didn't want to swapping SIM card like putting my phone SIM card and some Wireless module Taking Over Control
+EDL	00:10:32,319	00:10:37,695	| IOT189 |	Call the device you're right but it's okay and I may not at 5 never done that I'm just getting
+EDL	00:10:37,695	00:10:39,999	| IOT189 |	I said that very quickly I don't want people thinking I did it before
+EDL	00:10:42,047	00:10:43,839	| IOT189 |	Theoretically I could have done that
+EDL	00:10:43,839	00:10:44,863	| IOT189 |	That's what I'm saying
+EDL	00:10:44,863	00:10:45,887	| IOT189 |	When to do that
+EDL	00:10:45,887	00:10:48,703	| IOT189 |	So in this case we're looking at this in again
+EDL	00:10:48,703	00:10:53,823	| IOT189 |	These are going to be for low-powered sensors that don't need to send a lot of data nb-iot
+EDL	00:10:55,871	00:10:56,895	| IOT189 |	It's not even a megabyte
+EDL	00:10:58,687	00:11:01,503	| IOT189 |	Couches to put in perspective the downlink
+EDL	00:11:01,503	00:11:07,903	| IOT189 |	Is 27 kilobits per second and the Uplink is 63 kilobits per second so
+EDL	00:11:07,903	00:11:08,415	| IOT189 |	It's a baby
+EDL	00:11:08,927	00:11:11,743	| IOT189 |	So yes this is designed for temperature may be sending a
+EDL	00:11:11,743	00:11:13,535	| IOT189 |	Location every now and again
+EDL	00:11:13,535	00:11:17,375	| IOT189 |	But we don't know how much this costs and that's a big
+EDL	00:11:17,375	00:11:18,143	| IOT189 |	Issue here
+EDL	00:11:18,143	00:11:23,519	| IOT189 |	Again this is going to be 30 modules are usually more expensive because they're cellular
+EDL	00:11:23,519	00:11:25,567	| IOT189 |	If we don't know what the cellular plan affiliated with this one
+EDL	00:11:26,079	00:11:28,895	| IOT189 |	But the emphasis on security makes sense because this would be
+EDL	00:11:28,895	00:11:29,407	| IOT189 |	Good for
+EDL	00:11:29,919	00:11:31,967	| IOT189 |	Tracking some high-value device
+EDL	00:11:32,479	00:11:33,247	| IOT189 |	Our product
+EDL	00:11:33,247	00:11:34,015	| IOT189 |	Or
+EDL	00:11:34,015	00:11:34,783	| IOT189 |	Temperature
+EDL	00:11:34,783	00:11:35,807	| IOT189 |	Or anything associated with
+EDL	00:11:36,319	00:11:38,623	| IOT189 |	That and you would want that to be secure so
+EDL	00:11:39,647	00:11:41,439	| IOT189 |	These are small to women
+EDL	00:11:41,439	00:11:47,839	| IOT189 |	Musical artists models might think it's a large bit of silicon but it's not it's 27 by 18 mm
+EDL	00:11:47,839	00:11:49,375	| IOT189 |	3 mm thin
+EDL	00:11:49,375	00:11:51,679	| IOT189 |	So it is really inside some type of device
+EDL	00:11:52,959	00:11:54,495	| IOT189 |	All right and Sierra
+EDL	00:11:55,519	00:11:59,103	| IOT189 |	They also
+EDL	00:11:59,103	00:12:02,431	| IOT189 |	Now they're announcing the first lte-advanced module
+EDL	00:12:03,199	00:12:03,967	| IOT189 |	Poor
+EDL	00:12:03,967	00:12:06,271	| IOT189 |	The seedrs space
+EDL	00:12:06,783	00:12:13,183	| IOT189 |	If you guys are like what this is a Citizens broadband
+EDL	00:12:13,183	00:12:15,231	| IOT189 |	We haven't talked a lot about this because it's not
+EDL	00:12:15,743	00:12:17,535	| IOT189 |	Yes it will be in Connected device
+EDL	00:12:17,535	00:12:23,679	| IOT189 |	This is what this is is this is for the 3.5 gigahertz
+EDL	00:12:25,471	00:12:26,495	| IOT189 |	LTE network
+EDL	00:12:26,495	00:12:30,591	| IOT189 |	Worx what's interesting is these networks don't actually have to be operated by a
+EDL	00:12:30,591	00:12:32,639	| IOT189 |	Exterior they could be operated by
+EDL	00:12:32,639	00:12:33,663	| IOT189 |	A private company
+EDL	00:12:33,663	00:12:34,687	| IOT189 |	So what
+EDL	00:12:34,687	00:12:37,503	| IOT189 |	We're seeing one of the use cases that we seen
+EDL	00:12:37,503	00:12:40,063	| IOT189 |	We seem like the NFL came out and support
+EDL	00:12:40,063	00:12:45,183	| IOT189 |	If this is the idea that a stadium like set up their own private LTE network
+EDL	00:12:45,183	00:12:45,951	| IOT189 |	What to do
+EDL	00:12:45,951	00:12:46,975	| IOT189 |	Any sort of
+EDL	00:12:46,975	00:12:47,743	| IOT189 |	Data
+EDL	00:12:47,743	00:12:48,767	| IOT189 |	Inside the stadium so
+EDL	00:12:50,303	00:12:51,327	| IOT189 |	Concessions
+EDL	00:12:56,447	00:12:59,007	| IOT189 |	Yeah all kinds that there's some creative stuff have
+EDL	00:12:59,519	00:13:04,895	| IOT189 |	They're so this is the first module for this it was FCC approved so
+EDL	00:13:04,895	00:13:06,943	| IOT189 |	Yeah this is a big deal
+EDL	00:13:06,943	00:13:09,759	| IOT189 |	In the sense that this is going to needle
+EDL	00:13:09,759	00:13:12,063	| IOT189 |	This it's the underpinnings of this new
+EDL	00:13:12,063	00:13:13,087	| IOT189 |	New type of Technology
+EDL	00:13:14,111	00:13:20,511	| IOT189 |	So these modules have to accept two of them I say are available now for commercial deployments I don't see a price but if they're
+EDL	00:13:20,511	00:13:21,535	| IOT189 |	Available now.
+EDL	00:13:22,047	00:13:23,327	| IOT189 |	Find a price set curious
+EDL	00:13:24,607	00:13:26,143	| IOT189 |	I'm not buying any but
+EDL	00:13:32,799	00:13:35,103	| IOT189 |	Okay so that's our module news
+EDL	00:13:35,103	00:13:37,407	| IOT189 |	Now let's go to Crazy security news
+EDL	00:13:37,407	00:13:37,919	| IOT189 |	Because
+EDL	00:13:38,687	00:13:41,503	| IOT189 |	Freaky Deaky this is so not good
+EDL	00:13:41,503	00:13:42,271	| IOT189 |	Alright Kevin
+EDL	00:13:42,783	00:13:43,551	| IOT189 |	Scare everybody
+EDL	00:13:43,551	00:13:49,183	| IOT189 |	Go okay you've already probably been scared by the fact that there are basically databases out there
+EDL	00:13:50,207	00:13:51,743	| IOT189 |	With IP addresses of
+EDL	00:13:52,255	00:13:53,279	| IOT189 |	Wireless
+EDL	00:13:53,279	00:13:54,047	| IOT189 |	Webcams
+EDL	00:13:54,047	00:13:55,839	| IOT189 |	Oh yeah
+EDL	00:13:55,839	00:13:56,863	| IOT189 |	Exactly
+EDL	00:13:57,375	00:13:58,655	| IOT189 |	So of course
+EDL	00:13:58,655	00:14:04,287	| IOT189 |	Let's make it easier to find those wireless devices those webcams with this little scrap that was written
+EDL	00:14:04,287	00:14:08,639	| IOT189 |	Uses data from show Dan and you can actually I looked at the code it's
+EDL	00:14:08,639	00:14:12,223	| IOT189 |	Pretty simple to use I have not used it cuz I don't want to see people's webcams
+EDL	00:14:12,223	00:14:13,503	| IOT189 |	You could search by
+EDL	00:14:13,503	00:14:14,271	| IOT189 |	Address
+EDL	00:14:14,783	00:14:21,183	| IOT189 |	In this database now and find webcams in a particular radius of an address a home business Etc
+EDL	00:14:21,183	00:14:24,767	| IOT189 |	They just making it easier and easier to be bad and I all
+EDL	00:14:24,767	00:14:25,279	| IOT189 |	I'm scared
+EDL	00:14:26,303	00:14:27,327	| IOT189 |	Creepy
+EDL	00:14:28,095	00:14:30,143	| IOT189 |	Yes so did you put in your address
+EDL	00:14:30,143	00:14:33,983	| IOT189 |	I don't know I don't want anything associated with this tracking to me no no
+EDL	00:14:34,495	00:14:36,287	| IOT189 |	Got it yeah it feels kind of
+EDL	00:14:36,287	00:14:37,055	| IOT189 |	Natchez crape
+EDL	00:14:37,055	00:14:37,823	| IOT189 |	Paralegal
+EDL	00:14:37,823	00:14:38,847	| IOT189 |	Okay so
+EDL	00:14:41,151	00:14:44,991	| IOT189 |	Come and you could install it the code is available on GitHub you can install it
+EDL	00:14:44,991	00:14:50,623	| IOT189 |	Query show dancer with an address if you'd like but I just looked at the coat just another curious but I'm not using it
+EDL	00:14:51,647	00:14:52,159	| IOT189 |	All right
+EDL	00:14:52,671	00:14:53,695	| IOT189 |	But in positive
+EDL	00:14:53,695	00:14:59,839	| IOT189 |	News let's talk about Battlement so bad today is what we call the Amazon echos digital assistant so is not
+EDL	00:15:00,351	00:15:01,887	| IOT189 |	Turn off for you guys
+EDL	00:15:01,887	00:15:02,399	| IOT189 |	AR
+EDL	00:15:03,167	00:15:04,447	| IOT189 |	To become a friend I feel like
+EDL	00:15:04,447	00:15:07,519	| IOT189 |	Absolutely he's been to my house I've had for dinner
+EDL	00:15:07,519	00:15:08,543	| IOT189 |	Patent for dinner
+EDL	00:15:08,543	00:15:09,311	| IOT189 |	It's amazing
+EDL	00:15:09,311	00:15:11,615	| IOT189 |	Andy Abramson
+EDL	00:15:11,615	00:15:13,407	| IOT189 |	And who we've known forever
+EDL	00:15:13,407	00:15:14,943	| IOT189 |	Because he was good friends with
+EDL	00:15:15,967	00:15:16,991	| IOT189 |	Are former boss at kygo
+EDL	00:15:17,503	00:15:19,295	| IOT189 |	And he's a smart dude
+EDL	00:15:19,295	00:15:19,807	| IOT189 |	You know
+EDL	00:15:20,319	00:15:21,599	| IOT189 |	His expertise is voice
+EDL	00:15:21,599	00:15:23,647	| IOT189 |	Which used to be a big thing back in
+EDL	00:15:23,647	00:15:24,927	| IOT189 |	Get out 2010
+EDL	00:15:24,927	00:15:25,439	| IOT189 |	5
+EDL	00:15:26,207	00:15:28,511	| IOT189 |	And now it might be coming back around
+EDL	00:15:28,511	00:15:31,839	| IOT189 |	Innocence innocence I mean Andy
+EDL	00:15:31,839	00:15:36,191	| IOT189 |	Read a blog post that will share in the show notes and it's kind of a response to
+EDL	00:15:36,191	00:15:38,239	| IOT189 |	A news article in the Wall Street Journal
+EDL	00:15:38,239	00:15:42,847	| IOT189 |	And the German was talking about Madame a and emergency 911 calling how
+EDL	00:15:42,847	00:15:46,687	| IOT189 |	Amazon's Echo can do all these great things but you can't call 911 for you
+EDL	00:15:47,199	00:15:50,015	| IOT189 |	And he's like no no no hold on a second
+EDL	00:15:50,015	00:15:53,343	| IOT189 |	He said I think they can solve this pretty quickly and I like where he's going with us
+EDL	00:15:53,343	00:15:57,951	| IOT189 |	What you could do he says his Amazon knows your address cuz that's usually issue
+EDL	00:15:57,951	00:16:01,791	| IOT189 |	When you call me on a mobile phone or something tonight with one where are you right
+EDL	00:16:01,791	00:16:06,143	| IOT189 |	Amazon has your address for deliveries and they know which is your home address perhaps
+EDL	00:16:06,143	00:16:07,935	| IOT189 |	Snake versus a business address Etc
+EDL	00:16:07,935	00:16:09,215	| IOT189 |	So we can link that up
+EDL	00:16:09,215	00:16:10,495	| IOT189 |	Right away so that
+EDL	00:16:10,495	00:16:14,591	| IOT189 |	Stable Amazon devices meeting Amazon
+EDL	00:16:15,103	00:16:20,223	| IOT189 |	And then he said you know and for people who move those Echoes or whatever maybe you have a
+EDL	00:16:20,223	00:16:24,575	| IOT189 |	Amazon top like I do when you take it to the beach it's on obviously you're not at home anymore
+EDL	00:16:24,575	00:16:25,599	| IOT189 |	He said hey
+EDL	00:16:25,599	00:16:31,999	| IOT189 |	People done this before with mobile devices and basically you need to re-authenticate your home address after
+EDL	00:16:31,999	00:16:35,071	| IOT189 |	You know 4 hours of online or a change in
+EDL	00:16:35,071	00:16:36,607	| IOT189 |	GPS or whatever might be
+EDL	00:16:36,607	00:16:43,007	| IOT189 |	So I think he's right I don't know that many people would call 911 using Amazon cuz we all have mobile phones but
+EDL	00:16:43,007	00:16:49,407	| IOT189 |	Tell you if your phone is upstairs you downstairs you falling down to call 911
+EDL	00:16:49,407	00:16:52,735	| IOT189 |	It speaker to do that yes as someone who again
+EDL	00:16:52,735	00:16:54,271	| IOT189 |	I know you always carry your phone
+EDL	00:16:54,271	00:16:56,063	| IOT189 |	I do not and I called
+EDL	00:16:56,063	00:16:59,391	| IOT189 |	Guess I was referencing you because I know you don't carry your phone not about the falls
+EDL	00:17:02,207	00:17:04,255	| IOT189 |	Yeah
+EDL	00:17:04,767	00:17:05,279	| IOT189 |	Exactly
+EDL	00:17:06,047	00:17:07,071	| IOT189 |	That would be
+EDL	00:17:07,071	00:17:07,583	| IOT189 |	Nice
+EDL	00:17:08,095	00:17:08,607	| IOT189 |	Let's see if it
+EDL	00:17:09,119	00:17:09,887	| IOT189 |	Amazon Prime
+EDL	00:17:10,399	00:17:10,911	| IOT189 |	Responsibility
+EDL	00:17:11,423	00:17:17,823	| IOT189 |	I don't know though because it means they are all about providing service through the Echo and it is a true digital
+EDL	00:17:17,823	00:17:19,615	| IOT189 |	Assistant so why not I mean
+EDL	00:17:19,615	00:17:21,663	| IOT189 |	As long as the customer has
+EDL	00:17:21,663	00:17:26,015	| IOT189 |	Previously set up an address or Lincoln address they could allow the call and if
+EDL	00:17:26,527	00:17:29,343	| IOT189 |	You haven't then they just don't allow it to call on
+EDL	00:17:29,343	00:17:30,111	| IOT189 |	DACA
+EDL	00:17:30,111	00:17:31,135	| IOT189 |	That way they're in the clear
+EDL	00:17:33,183	00:17:35,487	| IOT189 |	Assistant
+EDL	00:17:35,487	00:17:37,279	| IOT189 |	News Microsoft Cortana
+EDL	00:17:37,279	00:17:39,071	| IOT189 |	Boss Javier soltero
+EDL	00:17:39,071	00:17:43,423	| IOT189 |	Is leaving in this is really unfortunate because after seeing Xavier
+EDL	00:17:43,423	00:17:47,007	| IOT189 |	Speak about Cortana integration with the Amazon Echo
+EDL	00:17:47,007	00:17:49,055	| IOT189 |	How to work in with smart offices
+EDL	00:17:49,567	00:17:51,359	| IOT189 |	I wanted to have him come on the show and
+EDL	00:17:51,359	00:17:51,871	| IOT189 |	Talk to us about this
+EDL	00:17:52,383	00:17:53,919	| IOT189 |	But that's what happened
+EDL	00:17:53,919	00:17:54,943	| IOT189 |	That's not going to happen
+EDL	00:17:54,943	00:17:57,247	| IOT189 |	And the reason is Microsoft is bringing
+EDL	00:17:57,247	00:17:58,015	| IOT189 |	It's
+EDL	00:17:58,015	00:18:00,319	| IOT189 |	Cortana research project into its
+EDL	00:18:00,319	00:18:01,855	| IOT189 |	Coming out of the aif
+EDL	00:18:01,855	00:18:03,135	| IOT189 |	Basically
+EDL	00:18:03,135	00:18:04,671	| IOT189 |	It's experiences and devices
+EDL	00:18:05,439	00:18:05,951	| IOT189 |	You know
+EDL	00:18:06,975	00:18:11,583	| IOT189 |	I don't know either I mean Microsoft as well as many other similar companies Shuffle everyday
+EDL	00:18:11,583	00:18:13,631	| IOT189 |	So often the Chevalier organization
+EDL	00:18:13,631	00:18:20,031	| IOT189 |	I would have been curious to hear his experience at the shame and he's not coming on the show only because and nothing again so I never met her
+EDL	00:18:20,031	00:18:22,335	| IOT189 |	I'm not sure how we got to be in charge of Cortana
+EDL	00:18:22,847	00:18:24,127	| IOT189 |	Microsoft buys startup
+EDL	00:18:25,407	00:18:28,479	| IOT189 |	It's a mobile mail startup in 2014 was a complete
+EDL	00:18:28,479	00:18:32,319	| IOT189 |	And then he was part of Outlook mobile and then all of Outlook and then head of office
+EDL	00:18:34,111	00:18:35,135	| IOT189 |	Hop2
+EDL	00:18:35,135	00:18:37,695	| IOT189 |	He's a very like we actually
+EDL	00:18:37,695	00:18:40,255	| IOT189 |	Talk to him a bunch of gigaohm and he's a very smart
+EDL	00:18:40,255	00:18:40,767	| IOT189 |	Forward-looking
+EDL	00:18:41,279	00:18:43,071	| IOT189 |	So I can see
+EDL	00:18:43,071	00:18:44,351	| IOT189 |	And he's very good
+EDL	00:18:44,863	00:18:45,631	| IOT189 |	Thinking about
+EDL	00:18:45,631	00:18:46,399	| IOT189 |	Business sauce
+EDL	00:18:47,167	00:18:49,215	| IOT189 |	And how to make that more user-friendly
+EDL	00:18:49,727	00:18:52,543	| IOT189 |	So if you think about Cortana as being
+EDL	00:18:52,543	00:18:54,079	| IOT189 |	Business digital assistant
+EDL	00:18:54,591	00:18:55,359	| IOT189 |	Then
+EDL	00:18:55,359	00:18:58,687	| IOT189 |	It makes a lot of sense and I wasn't saying
+EDL	00:18:58,687	00:19:01,759	| IOT189 |	You know he shouldn't have been injured I was trying to understand the path
+EDL	00:19:02,271	00:19:08,671	| IOT189 |	But you just make sense right so instead of office as the business application
+EDL	00:19:08,671	00:19:09,951	| IOT189 |	Service he took that
+EDL	00:19:09,951	00:19:11,999	| IOT189 |	Mindset to Cortana and
+EDL	00:19:11,999	00:19:13,535	| IOT189 |	Use the Cortana service in that regard
+EDL	00:19:14,047	00:19:16,863	| IOT189 |	So that is the Cortana shake-up
+EDL	00:19:16,863	00:19:17,631	| IOT189 |	As it were
+EDL	00:19:18,143	00:19:24,543	| IOT189 |	I still am a little weirded out by the idea of going into an office and switching my digital assistant but
+EDL	00:19:24,543	00:19:25,567	| IOT189 |	We'll see how this works
+EDL	00:19:26,079	00:19:26,847	| IOT189 |	We're not there yet
+EDL	00:19:27,615	00:19:32,479	| IOT189 |	We're probably four or five years away from some sort of seamless strategy on
+EDL	00:19:32,479	00:19:34,783	| IOT189 |	Who we talk to and who helps us in different
+EDL	00:19:34,783	00:19:36,063	| IOT189 |	Aspects of Our Lives
+EDL	00:19:36,063	00:19:37,855	| IOT189 |	And where we even go to do that
+EDL	00:19:37,855	00:19:39,903	| IOT189 |	So we might instead of having
+EDL	00:19:39,903	00:19:42,719	| IOT189 |	Cortana in the office we might have like a bring your own assistant
+EDL	00:19:42,719	00:19:45,535	| IOT189 |	Kind of like we had your bring-your-own-device policy and that would be
+EDL	00:19:46,047	00:19:46,815	| IOT189 |	Wacky kind of crazy
+EDL	00:19:47,583	00:19:52,959	| IOT189 |	It would I don't think we'll go that route at systems and networks are getting locked down for good reason
+EDL	00:19:52,959	00:19:54,239	| IOT189 |	Personal devices
+EDL	00:19:54,239	00:19:57,567	| IOT189 |	Are typically allowed in if you let the organization manage them
+EDL	00:19:58,079	00:20:02,943	| IOT189 |	Yes that's true I did hate that I had a separate Fortune phone that I literally never used my birthday
+EDL	00:20:03,967	00:20:09,599	| IOT189 |	It was and there's also another aspect and not full of just six of how an office is set up today and in the future
+EDL	00:20:09,599	00:20:11,391	| IOT189 |	If you got an open Office
+EDL	00:20:11,391	00:20:17,791	| IOT189 |	Area where no cubes and whatnot do you want to hear people talking to you know when thin air all the time I'm not sure how that's going
+EDL	00:20:17,791	00:20:20,607	| IOT189 |	Don't you work in an open Office environment or even you know just
+EDL	00:20:20,607	00:20:22,143	| IOT189 |	Any office because
+EDL	00:20:22,143	00:20:23,423	| IOT189 |	I'm itching to be more like
+EDL	00:20:23,423	00:20:24,703	| IOT189 |	A headphone situation
+EDL	00:20:24,703	00:20:28,031	| IOT189 |	Which having been an open newsrooms all my life
+EDL	00:20:28,031	00:20:32,127	| IOT189 |	You know you very quickly get used to people talking on the phone and you just ignore them
+EDL	00:20:32,127	00:20:33,663	| IOT189 |	While you're talking to other people on the phone
+EDL	00:20:33,663	00:20:34,687	| IOT189 |	Persistent
+EDL	00:20:35,199	00:20:39,039	| IOT189 |	We've talked about this before but we're seeing a lot of Madam a power
+EDL	00:20:39,551	00:20:40,831	| IOT189 |	Earbuds for example
+EDL	00:20:41,343	00:20:41,855	| IOT189 |	So
+EDL	00:20:42,367	00:20:45,439	| IOT189 |	Maybe it's all going to be like her it's all going to be in her ear
+EDL	00:20:46,207	00:20:46,719	| IOT189 |	Yeah
+EDL	00:20:47,231	00:20:48,255	| IOT189 |	All right
+EDL	00:20:48,255	00:20:49,791	| IOT189 |	Let's talk about Google Assistant
+EDL	00:20:49,791	00:20:51,327	| IOT189 |	Since we're on the assistant topic
+EDL	00:20:51,839	00:20:53,631	| IOT189 |	Bad news
+EDL	00:20:53,631	00:20:54,399	| IOT189 |	Bad news for you
+EDL	00:20:54,911	00:20:56,191	| IOT189 |	I know
+EDL	00:20:56,191	00:20:59,519	| IOT189 |	No Google assistant on Sonos this year they said it's going to be next year
+EDL	00:21:00,799	00:21:07,199	| IOT189 |	Well we were getting close to the end of the year said it would happen and I don't know if they run into technical issues or what
+EDL	00:21:07,199	00:21:10,527	| IOT189 |	You're right they've announced this the good news is
+EDL	00:21:10,527	00:21:13,087	| IOT189 |	And it's just 2019 we don't know when it's coming
+EDL	00:21:13,087	00:21:16,928	| IOT189 |	The good news is if you're interested and I am so I'll probably click this link
+EDL	00:21:16,928	00:21:19,232	| IOT189 |	You can sign up to be considered
+EDL	00:21:19,232	00:21:22,560	| IOT189 |	For a private beta of Google assistant on Sonos
+EDL	00:21:22,560	00:21:26,144	| IOT189 |	However it's pretty tough commitment they want you to
+EDL	00:21:26,144	00:21:30,240	| IOT189 |	Commit to at least 14 hours of listening a week which is fine I'm listening
+EDL	00:21:30,240	00:21:31,264	| IOT189 |	Music all the time
+EDL	00:21:31,264	00:21:35,360	| IOT189 |	Use 10 voice commands daily and respond to surveys yes you get homework
+EDL	00:21:35,360	00:21:40,480	| IOT189 |	Within 72 hours so if you're willing to do that and you get through the screening process
+EDL	00:21:40,480	00:21:42,784	| IOT189 |	They will let you in the private beta to test this
+EDL	00:21:43,296	00:21:48,928	| IOT189 |	Holy cow I use digital assistants all the time but I don't know if I use 10 times a day
+EDL	00:21:48,928	00:21:55,328	| IOT189 |	I do for a lot of music playback and pausing and volume and whatnot and occasionally weather and things like that so
+EDL	00:21:55,328	00:21:58,400	| IOT189 |	I use Vector to check weather like five times a day so the robot
+EDL	00:21:58,912	00:21:59,680	| IOT189 |	Picture
+EDL	00:21:59,680	00:22:06,080	| IOT189 |	What is the weather to be slower but yes he tells me he puts the temperature on a screen and then if they're
+EDL	00:22:06,080	00:22:08,128	| IOT189 |	Are clouds are rain they show up over his eyes
+EDL	00:22:08,128	00:22:11,200	| IOT189 |	And it rains in his eyes get sad and it shakes at all off and the clouds go away
+EDL	00:22:12,224	00:22:13,760	| IOT189 |	That's why I do it because it's
+EDL	00:22:13,760	00:22:14,528	| IOT189 |	Yeah cuz that's why
+EDL	00:22:15,296	00:22:17,600	| IOT189 |	This is not on her show notes but I just remembered
+EDL	00:22:18,112	00:22:20,672	| IOT189 |	Because it's very related Google Assistant
+EDL	00:22:20,672	00:22:22,976	| IOT189 |	Is available on
+EDL	00:22:22,976	00:22:23,744	| IOT189 |	Chromebook devices
+EDL	00:22:25,024	00:22:26,304	| IOT189 |	Yes but it uses
+EDL	00:22:26,816	00:22:32,960	| IOT189 |	Basically you have been able to Google Play Store so Android apps in a little people don't want to do that they just want their Chromebook to be a Chromebook
+EDL	00:22:34,496	00:22:37,568	| IOT189 |	So what Google is doing its now available in a day
+EDL	00:22:37,568	00:22:40,384	| IOT189 |	Version of Chrome OS they have a native
+EDL	00:22:40,384	00:22:41,664	| IOT189 |	Google Assistant
+EDL	00:22:41,664	00:22:43,712	| IOT189 |	Coming to all Chromebooks
+EDL	00:22:43,712	00:22:44,736	| IOT189 |	Don't require
+EDL	00:22:44,736	00:22:51,136	| IOT189 |	The Play Store in the Google app and all that so that's coming for people who want the Google Assistant but don't want to have to
+EDL	00:22:51,136	00:22:51,904	| IOT189 |	Use
+EDL	00:22:51,904	00:22:53,440	| IOT189 |	Like Android apps on their Chromebook
+EDL	00:22:53,440	00:22:54,464	| IOT189 |	It was that is super cool
+EDL	00:22:54,976	00:22:55,744	| IOT189 |	It is it is
+EDL	00:22:56,256	00:22:59,584	| IOT189 |	Dedicated Google Assistant button on the keyboard
+EDL	00:23:01,632	00:23:02,144	| IOT189 |	I never use it
+EDL	00:23:03,168	00:23:04,192	| IOT189 |	Talk to vector
+EDL	00:23:04,192	00:23:04,704	| IOT189 |	Oh that's right
+EDL	00:23:05,984	00:23:08,800	| IOT189 |	I'm going to throw out a random device just because
+EDL	00:23:08,800	00:23:10,848	| IOT189 |	Why not this is what we do on the show throughout
+EDL	00:23:10,848	00:23:11,360	| IOT189 |	Random devices
+EDL	00:23:11,872	00:23:13,664	| IOT189 |	This is a new smart plug
+EDL	00:23:13,664	00:23:14,688	| IOT189 |	From a company called
+EDL	00:23:14,688	00:23:16,480	| IOT189 |	Current currant
+EDL	00:23:16,992	00:23:17,760	| IOT189 |	If you were trying to
+EDL	00:23:17,760	00:23:21,856	| IOT189 |	Bluetooth smart outlet and a Wi-Fi smart outlet
+EDL	00:23:21,856	00:23:23,392	| IOT189 |	Bluetooth Outlet is 50
+EDL	00:23:23,392	00:23:27,488	| IOT189 |	The Wi-Fi is 60 what does this measures your energy consumption at that
+EDL	00:23:27,488	00:23:31,840	| IOT189 |	Outlet and tries to use AI to optimize Energy savings
+EDL	00:23:33,632	00:23:34,400	| IOT189 |	Interesting
+EDL	00:23:34,400	00:23:40,288	| IOT189 |	So it sounds like a more modern version of the WeMo Insight switch that I've been using for probably three or four years
+EDL	00:23:40,800	00:23:42,080	| IOT189 |	The funny thing is
+EDL	00:23:42,080	00:23:44,384	| IOT189 |	I never look at the energy
+EDL	00:23:44,384	00:23:45,152	| IOT189 |	Output
+EDL	00:23:45,152	00:23:45,920	| IOT189 |	On that
+EDL	00:23:45,920	00:23:47,456	| IOT189 |	You know why know why
+EDL	00:23:47,456	00:23:50,272	| IOT189 |	Because I usually use these with lamps
+EDL	00:23:50,272	00:23:53,344	| IOT189 |	Anna's lamps have very low power LED bulbs
+EDL	00:23:53,344	00:23:55,904	| IOT189 |	And it may calculate the cost everything it's like
+EDL	00:23:55,904	00:23:57,952	| IOT189 |	You spent $0.14 this month
+EDL	00:23:57,952	00:24:01,536	| IOT189 |	I don't use enough energy to make it worth my while to look at the data
+EDL	00:24:01,536	00:24:06,144	| IOT189 |	I use it to test different things so I used it to test like power consumption
+EDL	00:24:06,144	00:24:06,656	| IOT189 |	The June oven
+EDL	00:24:08,704	00:24:15,104	| IOT189 |	Which is a like compared to like a crock pot cuz the June did their Crock-Pot setting guys the Crock-Pot is way more energy efficient
+EDL	00:24:15,104	00:24:15,872	| IOT189 |	Lejeune
+EDL	00:24:15,872	00:24:16,640	| IOT189 |	Based on
+EDL	00:24:16,640	00:24:17,664	| IOT189 |	The energy consumption
+EDL	00:24:18,432	00:24:19,712	| IOT189 |	If you feel like your food taste better maybe it's
+EDL	00:24:20,224	00:24:21,504	| IOT189 |	But yeah in general
+EDL	00:24:21,504	00:24:25,088	| IOT189 |	This might be and it has one cool design
+EDL	00:24:25,088	00:24:26,368	| IOT189 |	You can actually flip up
+EDL	00:24:27,136	00:24:28,416	| IOT189 |	Prongs so you can
+EDL	00:24:28,416	00:24:29,952	| IOT189 |	Slip the outlet
+EDL	00:24:29,952	00:24:31,488	| IOT189 |	There's two outlets on each
+EDL	00:24:32,000	00:24:32,768	| IOT189 |	Switch
+EDL	00:24:32,768	00:24:33,536	| IOT189 |	What do we call those out
+EDL	00:24:34,560	00:24:35,328	| IOT189 |	2
+EDL	00:24:35,328	00:24:39,680	| IOT189 |	But you can flip it
+EDL	00:24:39,680	00:24:40,704	| IOT189 |	So you can flip
+EDL	00:24:40,704	00:24:42,240	| IOT189 |	The outlet to fit more
+EDL	00:24:42,240	00:24:43,520	| IOT189 |	Are plugs if that makes sense
+EDL	00:24:43,520	00:24:45,056	| IOT189 |	Yes that makes sense
+EDL	00:24:45,056	00:24:46,336	| IOT189 |	You should probably just go look at it
+EDL	00:24:46,336	00:24:46,848	| IOT189 |	Cuz I was a terrible
+EDL	00:24:47,360	00:24:53,760	| IOT189 |	But you could see it being used for something like you know the set-top boxes if you didn't want it to always be on
+EDL	00:24:53,760	00:24:55,808	| IOT189 |	Prioritize Energy savings
+EDL	00:24:55,808	00:24:56,832	| IOT189 |	It could be like oh
+EDL	00:24:57,344	00:25:02,208	| IOT189 |	At 5 she usually turns on the television so maybe at 4:50 it starts
+EDL	00:25:02,208	00:25:03,232	| IOT189 |	Turning back set
+EDL	00:25:03,232	00:25:04,512	| IOT189 |	Topics on ghost
+EDL	00:25:04,512	00:25:05,792	| IOT189 |	Boot up process so it's ready for
+EDL	00:25:06,304	00:25:09,632	| IOT189 |	Or maybe after three hours of TV I shut it off on the kids
+EDL	00:25:09,632	00:25:11,424	| IOT189 |	Yeah I used to have
+EDL	00:25:11,424	00:25:14,240	| IOT189 |	Smart outlet that turned off if I didn't make my Fitbit steps
+EDL	00:25:14,240	00:25:16,288	| IOT189 |	And that was the TV was plugged into that but my
+EDL	00:25:19,104	00:25:21,152	| IOT189 |	Walk more I want to watch the football game
+EDL	00:25:21,664	00:25:22,432	| IOT189 |	Get out
+EDL	00:25:22,944	00:25:23,968	| IOT189 |	Okay
+EDL	00:25:23,968	00:25:24,736	| IOT189 |	So
+EDL	00:25:24,736	00:25:26,784	| IOT189 |	Let's move now to our voicemail
+EDL	00:25:27,296	00:25:29,856	| IOT189 |	We have an awesome voice mail for you today
+EDL	00:25:30,368	00:25:34,464	| IOT189 |	This is from the iot podcast listener hotline which is brought to you by Schlage
+EDL	00:25:34,464	00:25:37,792	| IOT189 |	They have a variety of stylish and secure electronic locks
+EDL	00:25:37,792	00:25:38,560	| IOT189 |	Statues from
+EDL	00:25:38,560	00:25:41,120	| IOT189 |	So you can have smarter homes that start with SLI
+EDL	00:25:41,632	00:25:43,680	| IOT189 |	Learn more at schlage.com
+EDL	00:25:43,680	00:25:45,216	| IOT189 |	Iot
+EDL	00:25:45,216	00:25:48,032	| IOT189 |	And enter to win a new Schlage
+EDL	00:25:48,032	00:25:48,800	| IOT189 |	Sense
+EDL	00:25:48,800	00:25:49,568	| IOT189 |	Smart
+EDL	00:25:49,568	00:25:53,152	| IOT189 |	Block you get an option you have a homekit one you could have your
+EDL	00:25:53,152	00:25:54,432	| IOT189 |	Other options out there
+EDL	00:25:54,432	00:25:55,968	| IOT189 |	There's also a Wi-Fi smart Bridge
+EDL	00:25:55,968	00:25:59,808	| IOT189 |	And to do that you just need to call us and leave your own voicemail
+EDL	00:25:59,808	00:26:05,696	| IOT189 |	Question 512-623-7424 is the number to call to ask us a question
+EDL	00:26:05,696	00:26:07,232	| IOT189 |	This week's voicemail is
+EDL	00:26:07,232	00:26:08,000	| IOT189 |	From
+EDL	00:26:08,000	00:26:08,512	| IOT189 |	Cheese
+EDL	00:26:09,280	00:26:10,816	| IOT189 |	Kevin and Stacy this is
+EDL	00:26:10,816	00:26:12,096	| IOT189 |	Teas from Lewisville
+EDL	00:26:12,608	00:26:14,912	| IOT189 |	I am wondering if there's a way for
+EDL	00:26:15,680	00:26:16,448	| IOT189 |	The
+EDL	00:26:16,448	00:26:18,496	| IOT189 |	Madam a to tell me
+EDL	00:26:19,008	00:26:21,056	| IOT189 |	That something is going on from an ex
+EDL	00:26:21,056	00:26:22,592	| IOT189 |	External source for infants
+EDL	00:26:22,592	00:26:24,384	| IOT189 |	If the cameras pick up
+EDL	00:26:24,384	00:26:26,432	| IOT189 |	A person in the backyard
+EDL	00:26:26,432	00:26:27,456	| IOT189 |	Could she
+EDL	00:26:27,456	00:26:29,504	| IOT189 |	Alert me inside the house
+EDL	00:26:29,504	00:26:32,064	| IOT189 |	By saying someone's in the backyard or
+EDL	00:26:32,576	00:26:33,856	| IOT189 |	Who sings Something
+EDL	00:26:34,368	00:26:34,880	| IOT189 |	Suppose
+EDL	00:26:35,904	00:26:37,440	| IOT189 |	Be having to have the phone in my
+EDL	00:26:39,488	00:26:41,024	| IOT189 |	Thank you so much enjoy your show
+EDL	00:26:44,608	00:26:48,448	| IOT189 |	Okay chief Kevin and I spent an hour trying to figure this out and it was a
+EDL	00:26:48,448	00:26:49,984	| IOT189 |	Our well-spent I think
+EDL	00:26:49,984	00:26:53,824	| IOT189 |	Kevin rizer I'm so glad we do because our initial
+EDL	00:26:53,824	00:26:56,896	| IOT189 |	This was like nope can't be done can't be done
+EDL	00:26:56,896	00:26:57,920	| IOT189 |	And then
+EDL	00:26:57,920	00:27:02,016	| IOT189 |	We stumble onto a skill called notify me
+EDL	00:27:02,016	00:27:03,040	| IOT189 |	An Amazon
+EDL	00:27:03,040	00:27:03,808	| IOT189 |	Madame a skill
+EDL	00:27:04,320	00:27:08,416	| IOT189 |	It does require some configuration on your part
+EDL	00:27:08,416	00:27:09,184	| IOT189 |	You don't
+EDL	00:27:09,184	00:27:12,256	| IOT189 |	Need to be a programmer but it would certainly help if you were
+EDL	00:27:12,256	00:27:14,048	| IOT189 |	However if you can get through it
+EDL	00:27:14,048	00:27:16,352	| IOT189 |	And Stacy I would say you're not a programmer
+EDL	00:27:16,864	00:27:18,400	| IOT189 |	You're smart and you got through it right
+EDL	00:27:18,400	00:27:21,472	| IOT189 |	And I feel so excited that I did
+EDL	00:27:21,472	00:27:22,240	| IOT189 |	So
+EDL	00:27:22,240	00:27:24,032	| IOT189 |	To enable this you're going to go
+EDL	00:27:24,544	00:27:27,616	| IOT189 |	To the skills in your Madame and you do have to have a matinee
+EDL	00:27:27,616	00:27:29,664	| IOT189 |	We'll see if we can find something for Google on this site
+EDL	00:27:30,432	00:27:32,224	| IOT189 |	Notify me
+EDL	00:27:32,224	00:27:33,248	| IOT189 |	It'll send you an email with
+EDL	00:27:33,760	00:27:34,784	| IOT189 |	Very long
+EDL	00:27:34,784	00:27:35,296	| IOT189 |	Cerakote
+EDL	00:27:35,808	00:27:41,440	| IOT189 |	So once you enable notify me and get your access code which is something that allows the skill to
+EDL	00:27:41,440	00:27:42,464	| IOT189 |	Tire
+EDL	00:27:42,464	00:27:44,512	| IOT189 |	Amazon email to your
+EDL	00:27:44,512	00:27:45,792	| IOT189 |	Echo devices
+EDL	00:27:45,792	00:27:47,072	| IOT189 |	You will then
+EDL	00:27:47,072	00:27:49,120	| IOT189 |	Go to if this then that
+EDL	00:27:49,632	00:27:55,776	| IOT189 |	You can actually use this with a couple other services such as is why Indigo homeseer and Tasker but we got to working with
+EDL	00:27:55,776	00:27:57,568	| IOT189 |	If this and that so that's kind of all we're going to
+EDL	00:27:58,080	00:28:00,384	| IOT189 |	Talk about here you can try it on your own with the other services
+EDL	00:28:00,896	00:28:01,920	| IOT189 |	Basically though
+EDL	00:28:01,920	00:28:02,944	| IOT189 |	If you
+EDL	00:28:02,944	00:28:03,456	| IOT189 |	Want to
+EDL	00:28:03,968	00:28:06,016	| IOT189 |	Have any type of trigger event
+EDL	00:28:06,016	00:28:07,552	| IOT189 |	From a device that you have
+EDL	00:28:07,552	00:28:08,320	| IOT189 |	And that
+EDL	00:28:08,320	00:28:14,720	| IOT189 |	Devices supported through if this then that and we tested this with just added an email as a test also with a y
+EDL	00:28:14,720	00:28:17,536	| IOT189 |	Wyzecam also with a smart light switch
+EDL	00:28:17,536	00:28:18,048	| IOT189 |	When
+EDL	00:28:18,560	00:28:20,864	| IOT189 |	Something happens to that trigger device
+EDL	00:28:20,864	00:28:22,144	| IOT189 |	If this then that
+EDL	00:28:22,144	00:28:25,728	| IOT189 |	Well then send a notification to your Amazon Echo
+EDL	00:28:25,728	00:28:31,616	| IOT189 |	It doesn't just speak it aloud like any other notifications you may get a notification light on your Echo
+EDL	00:28:31,616	00:28:34,432	| IOT189 |	One sanitation comes in and you have to say hey
+EDL	00:28:34,432	00:28:36,224	| IOT189 |	Read my notifications
+EDL	00:28:36,224	00:28:40,064	| IOT189 |	We did this and you can customize the notification message rather
+EDL	00:28:40,064	00:28:40,832	| IOT189 |	And
+EDL	00:28:40,832	00:28:44,160	| IOT189 |	Stacy you got the wise kind of say hey I saw something on the
+EDL	00:28:44,672	00:28:45,696	| IOT189 |	Outdoor wyze cam or whatever
+EDL	00:28:46,464	00:28:48,000	| IOT189 |	And I had to say I saw something
+EDL	00:28:48,000	00:28:51,072	| IOT189 |	And then I realized that I should totally if I was going to do this on a bunch of
+EDL	00:28:51,072	00:28:51,840	| IOT189 |	Things I should have
+EDL	00:28:51,840	00:28:53,120	| IOT189 |	Let's label I saw some
+EDL	00:28:53,120	00:28:53,888	| IOT189 |	Something on downstairs
+EDL	00:28:54,400	00:28:59,008	| IOT189 |	DC that you can customize the notification text yourself very easily
+EDL	00:28:59,008	00:29:01,568	| IOT189 |	The basic notification is just a hello world
+EDL	00:29:01,568	00:29:04,640	| IOT189 |	It's kind of like pre-filled which is a programmer thing to say hey this works
+EDL	00:29:04,640	00:29:08,224	| IOT189 |	Just change hello world to whatever it is you want to hear from your Echo
+EDL	00:29:08,736	00:29:13,344	| IOT189 |	And once we went through the discovery process it actually work really well and is awesome
+EDL	00:29:13,344	00:29:18,464	| IOT189 |	So I'm going to go play some more with that just for fun the latency on this was really quick
+EDL	00:29:18,976	00:29:19,744	| IOT189 |	It took like
+EDL	00:29:19,744	00:29:22,304	| IOT189 |	Two or three seconds before I sent the notification
+EDL	00:29:23,328	00:29:24,096	| IOT189 |	It was kind of fun
+EDL	00:29:24,096	00:29:25,376	| IOT189 |	Keep in mind
+EDL	00:29:25,376	00:29:25,888	| IOT189 |	That
+EDL	00:29:26,400	00:29:31,776	| IOT189 |	There is a restriction and it's an API restriction on Amazon's part you cannot
+EDL	00:29:31,776	00:29:33,312	| IOT189 |	Get or send
+EDL	00:29:33,312	00:29:34,336	| IOT189 |	5
+EDL	00:29:34,336	00:29:40,736	| IOT189 |	More than five notifications within a five minute. If you don't want to use that safe for like a door that's People concert going in and
+EDL	00:29:40,736	00:29:47,136	| IOT189 |	Cease to work until the next five
+EDL	00:29:47,136	00:29:47,904	| IOT189 |	5 minute increments
+EDL	00:29:47,904	00:29:52,768	| IOT189 |	And it is proactive it is you have to be proactive about getting your notice
+EDL	00:29:52,768	00:29:55,328	| IOT189 |	Applications this isn't just going to shout this happened
+EDL	00:29:55,328	00:29:56,352	| IOT189 |	Over here echoes
+EDL	00:29:56,352	00:29:57,120	| IOT189 |	So
+EDL	00:29:57,120	00:30:00,704	| IOT189 |	I'm not a true fan of the way that Amazon does notifications because
+EDL	00:30:00,704	00:30:05,824	| IOT189 |	First of all my Amazon tap and my Sonos devices with men aren't
+EDL	00:30:05,824	00:30:10,176	| IOT189 |	Beeping or lighting up to show me or tell me about notification my
+EDL	00:30:10,176	00:30:12,480	| IOT189 |	Regular original Amazon Echo does
+EDL	00:30:12,480	00:30:17,344	| IOT189 |	And at that time I say I have a notification so I'll say Madam a read my notification that getting that
+EDL	00:30:17,344	00:30:19,136	| IOT189 |	Bit here on these devices
+EDL	00:30:19,648	00:30:20,416	| IOT189 |	Summer
+EDL	00:30:20,416	00:30:21,952	| IOT189 |	It's okay
+EDL	00:30:21,952	00:30:23,232	| IOT189 |	Alright so
+EDL	00:30:23,232	00:30:25,280	| IOT189 |	Have fun with that you guys and
+EDL	00:30:25,792	00:30:26,560	| IOT189 |	Stay tuned
+EDL	00:30:26,560	00:30:32,192	| IOT189 |	For a message from our sponsor and for any wilson-thompson who is from the open technology Institute
+EDL	00:30:32,192	00:30:35,008	| IOT189 |	Who is going to be talking about the digital standard
+EDL	00:30:35,008	00:30:36,800	| IOT189 |	Which is a Bren
+EDL	00:30:36,800	00:30:37,568	| IOT189 |	To think about
+EDL	00:30:37,568	00:30:43,968	| IOT189 |	Privacy security data transparency and even talk about things as crazy as business bottles
+EDL	00:30:43,968	00:30:44,736	| IOT189 |	4 connected devices
+EDL	00:30:45,248	00:30:46,784	| IOT189 |	Conversation
+EDL	00:30:47,552	00:30:51,392	| IOT189 |	If your user a manufacturer or just somebody interested in
+EDL	00:30:51,392	00:30:57,792	| IOT189 |	Security and iot stay tuned hey everyone we are taking a break from the internet
+EDL	00:30:57,792	00:31:02,656	| IOT189 |	Set of things podcast for a message from our sponsor
+EDL	00:31:02,656	00:31:04,960	| IOT189 |	And I have Alex belong here
+EDL	00:31:04,960	00:31:07,008	| IOT189 |	Who is a chief security researcher
+EDL	00:31:07,520	00:31:08,544	| IOT189 |	Bitdefender
+EDL	00:31:08,544	00:31:10,592	| IOT189 |	So last week we talked about
+EDL	00:31:10,592	00:31:11,616	| IOT189 |	Stopping bullying
+EDL	00:31:11,616	00:31:12,128	| IOT189 |	With the bitdefender
+EDL	00:31:12,896	00:31:14,176	| IOT189 |	This week we're going to talk about
+EDL	00:31:14,688	00:31:15,456	| IOT189 |	Curing your
+EDL	00:31:15,456	00:31:16,224	| IOT189 |	Router
+EDL	00:31:16,736	00:31:18,528	| IOT189 |	How would I know if my router
+EDL	00:31:18,528	00:31:19,296	| IOT189 |	Where is safe
+EDL	00:31:19,296	00:31:21,600	| IOT189 |	Easiest way to know if
+EDL	00:31:22,880	00:31:23,648	| IOT189 |	Was
+EDL	00:31:26,208	00:31:28,000	| IOT189 |	Most people that I know
+EDL	00:31:28,000	00:31:30,048	| IOT189 |	Don't really have any clue
+EDL	00:31:30,048	00:31:31,328	| IOT189 |	Old how to update
+EDL	00:31:33,888	00:31:36,448	| IOT189 |	Everything
+EDL	00:31:42,080	00:31:44,128	| IOT189 |	How's that for a deal identified
+EDL	00:31:48,480	00:31:50,016	| IOT189 |	The people using the device
+EDL	00:31:50,016	00:31:51,296	| IOT189 |	There's nothing
+EDL	00:31:51,296	00:31:52,832	| IOT189 |	There's Note 2
+EDL	00:31:58,720	00:31:59,232	| IOT189 |	Is processed
+EDL	00:31:59,744	00:32:00,768	| IOT189 |	Some point
+EDL	00:32:02,048	00:32:03,840	| IOT189 |	A lot of us have antivirus apps
+EDL	00:32:03,840	00:32:04,608	| IOT189 |	Protecting our
+EDL	00:32:04,608	00:32:06,144	| IOT189 |	Computer
+EDL	00:32:06,656	00:32:09,216	| IOT189 |	How do we protect against the
+EDL	00:32:09,216	00:32:10,240	| IOT189 |	Threats that my router made
+EDL	00:32:11,264	00:32:13,824	| IOT189 |	Unfortunately you cannot be stolen
+EDL	00:32:16,896	00:32:18,944	| IOT189 |	Solutions like
+EDL	00:32:19,456	00:32:20,224	| IOT189 |	Can you play
+EDL	00:32:23,040	00:32:25,856	| IOT189 |	Is it like
+EDL	00:32:26,368	00:32:28,928	| IOT189 |	May be used as an adult
+EDL	00:32:29,696	00:32:30,464	| IOT189 |	We knew that
+EDL	00:32:32,256	00:32:32,768	| IOT189 |	A solution
+EDL	00:32:35,840	00:32:36,608	| IOT189 |	Maybe
+EDL	00:32:36,608	00:32:38,400	| IOT189 |	Hours for somebody else
+EDL	00:32:38,400	00:32:40,960	| IOT189 |	Will be present in each process home
+EDL	00:32:40,960	00:32:42,496	| IOT189 |	Example
+EDL	00:32:43,008	00:32:44,544	| IOT189 |	So do all routers
+EDL	00:32:44,544	00:32:45,056	| IOT189 |	Manufacturers
+EDL	00:32:49,664	00:32:52,992	| IOT189 |	Summer
+EDL	00:32:52,992	00:32:55,296	| IOT189 |	Each night for example
+EDL	00:33:04,768	00:33:06,048	| IOT189 |	Piper's Auto successful
+EDL	00:33:07,584	00:33:09,376	| IOT189 |	We can prevent the attacks
+EDL	00:33:09,376	00:33:10,400	| IOT189 |	Even being
+EDL	00:33:12,704	00:33:14,240	| IOT189 |	Home Depot
+EDL	00:33:14,240	00:33:16,544	| IOT189 |	I don't have the password
+EDL	00:33:16,544	00:33:18,336	| IOT189 |	Oversee something
+EDL	00:33:18,336	00:33:19,360	| IOT189 |	Being outdated
+EDL	00:33:25,504	00:33:26,528	| IOT189 |	I do not want my router
+EDL	00:33:27,552	00:33:28,832	| IOT189 |	Can I do something to
+EDL	00:33:31,904	00:33:34,464	| IOT189 |	Fully updated
+EDL	00:33:34,464	00:33:39,328	| IOT189 |	You can get
+EDL	00:33:39,328	00:33:40,352	| IOT189 |	What are the front of your house
+EDL	00:33:42,144	00:33:43,680	| IOT189 |	And then Fox would they care
+EDL	00:33:47,776	00:33:50,848	| IOT189 |	Excellent so where can I buy listeners go to
+EDL	00:34:03,136	00:34:05,184	| IOT189 |	Hey everyone welcome back to the Internet of Things
+EDL	00:34:05,184	00:34:07,744	| IOT189 |	Things podcast this is your host Stacey Higginbotham
+EDL	00:34:07,744	00:34:08,512	| IOT189 |	And today's guest
+EDL	00:34:09,536	00:34:10,560	| IOT189 |	Andy Wilson
+EDL	00:34:10,560	00:34:11,840	| IOT189 |	Thompson who is a policy
+EDL	00:34:12,864	00:34:13,888	| IOT189 |	The open technology
+EDL	00:34:14,912	00:34:15,936	| IOT189 |	ICC
+EDL	00:34:15,936	00:34:20,288	| IOT189 |	You guys are working with a couple different groups to create something called the digital
+EDL	00:34:21,056	00:34:22,080	| IOT189 |	And I
+EDL	00:34:22,592	00:34:24,640	| IOT189 |	I'm so pumped about this because
+EDL	00:34:24,640	00:34:26,176	| IOT189 |	We got to start somewhere
+EDL	00:34:26,176	00:34:26,944	| IOT189 |	And
+EDL	00:34:26,944	00:34:27,712	| IOT189 |	I really like
+EDL	00:34:28,224	00:34:28,992	| IOT189 |	Consensus-building and
+EDL	00:34:30,528	00:34:31,296	| IOT189 |	What does Sol
+EDL	00:34:31,296	00:34:33,856	| IOT189 |	Let's talk about who you're working with and why you guys cry
+EDL	00:34:35,648	00:34:36,672	| IOT189 |	So I'm actually going to roll back
+EDL	00:34:37,184	00:34:37,696	| IOT189 |	10-second
+EDL	00:34:38,208	00:34:38,976	| IOT189 |	They're six organized
+EDL	00:34:39,744	00:34:40,768	| IOT189 |	I felt the standard
+EDL	00:34:40,768	00:34:42,816	| IOT189 |	That did the initial development
+EDL	00:34:42,816	00:34:44,352	| IOT189 |	I got the test in the content
+EDL	00:34:44,352	00:34:44,864	| IOT189 |	We did not
+EDL	00:34:45,376	00:34:46,656	| IOT189 |	We came in
+EDL	00:34:46,656	00:34:47,680	| IOT189 |	When it launched
+EDL	00:34:47,680	00:34:48,704	| IOT189 |	To do a sword
+EDL	00:34:48,704	00:34:49,472	| IOT189 |	Kiara
+EDL	00:34:50,240	00:34:52,544	| IOT189 |	Convening campaign over the past
+EDL	00:34:52,544	00:34:53,824	| IOT189 |	You're so
+EDL	00:34:53,824	00:34:54,592	| IOT189 |	It's great
+EDL	00:34:54,592	00:34:56,896	| IOT189 |	But this thing was built for us to work with
+EDL	00:34:56,896	00:34:58,176	| IOT189 |	It's also great that we have sir
+EDL	00:34:58,176	00:34:59,456	| IOT189 |	Serva third-party Rowland
+EDL	00:34:59,456	00:35:05,088	| IOT189 |	Companies can say you know I really hate this I really love this and we're a safe space to have those conversations
+EDL	00:35:05,088	00:35:06,624	| IOT189 |	But the digital standard
+EDL	00:35:06,624	00:35:08,160	| IOT189 |	Is open-source
+EDL	00:35:08,160	00:35:08,928	| IOT189 |	Collaborative
+EDL	00:35:09,440	00:35:10,464	| IOT189 |	Set of tests
+EDL	00:35:10,464	00:35:12,512	| IOT189 |	An evaluation methodology
+EDL	00:35:12,512	00:35:15,072	| IOT189 |	Used to test the security and privacy app
+EDL	00:35:15,072	00:35:15,584	| IOT189 |	Consumer product
+EDL	00:35:16,096	00:35:16,864	| IOT189 |	Detest
+EDL	00:35:16,864	00:35:20,192	| IOT189 |	Cigarettes everything from encryption to the hard security we can really talk about
+EDL	00:35:20,192	00:35:23,008	| IOT189 |	Two things like transparency reporting and privacy policies
+EDL	00:35:23,008	00:35:24,032	| IOT189 |	And so far they've
+EDL	00:35:24,544	00:35:26,336	| IOT189 |	By Consumer Reports one of the
+EDL	00:35:26,336	00:35:28,384	| IOT189 |	The six organizations that helped build
+EDL	00:35:28,384	00:35:29,152	| IOT189 |	Standard
+EDL	00:35:29,152	00:35:29,920	| IOT189 |	To evaluate
+EDL	00:35:29,920	00:35:32,480	| IOT189 |	Smart TVs and payment apps like venmo and
+EDL	00:35:33,248	00:35:35,552	| IOT189 |	The standard is open-source however switch
+EDL	00:35:35,552	00:35:37,344	| IOT189 |	The be used by anyone who wants to look
+EDL	00:35:39,904	00:35:41,440	| IOT189 |	Yes okay and
+EDL	00:35:41,952	00:35:43,232	| IOT189 |	You kind of Duty this up into a
+EDL	00:35:43,232	00:35:45,536	| IOT189 |	A couple different areas so under security
+EDL	00:35:45,536	00:35:49,888	| IOT189 |	You guys have things like those quality of data security app user safety
+EDL	00:35:49,888	00:35:53,728	| IOT189 |	Which almost feels kind of like u l territory in some ways
+EDL	00:35:54,240	00:35:55,264	| IOT189 |	And then you have
+EDL	00:35:55,264	00:35:55,776	| IOT189 |	Privacy
+EDL	00:35:56,544	00:35:57,312	| IOT189 |	You focus on
+EDL	00:35:57,312	00:35:58,080	| IOT189 |	Accessing
+EDL	00:35:58,080	00:35:58,848	| IOT189 |	Troll
+EDL	00:35:58,848	00:36:00,640	| IOT189 |	Data retention policies
+EDL	00:36:00,640	00:36:01,408	| IOT189 |	Collecting
+EDL	00:36:01,408	00:36:02,176	| IOT189 |	Too much
+EDL	00:36:02,176	00:36:03,712	| IOT189 |	Third-party tracking
+EDL	00:36:03,712	00:36:04,480	| IOT189 |	And then
+EDL	00:36:04,480	00:36:07,040	| IOT189 |	There's also the question of what happens after you purchase this
+EDL	00:36:07,552	00:36:08,576	| IOT189 |	Idea of ownership
+EDL	00:36:09,600	00:36:10,368	| IOT189 |	Governance model
+EDL	00:36:10,880	00:36:12,416	| IOT189 |	So there's a lot of
+EDL	00:36:12,416	00:36:13,184	| IOT189 |	Unpack here
+EDL	00:36:13,184	00:36:17,280	| IOT189 |	The most complete looking part seemed to be tied to security
+EDL	00:36:17,280	00:36:17,792	| IOT189 |	And privacy
+EDL	00:36:18,304	00:36:19,072	| IOT189 |	Correct
+EDL	00:36:19,072	00:36:20,608	| IOT189 |	Yes I think there's the most
+EDL	00:36:20,608	00:36:24,704	| IOT189 |	Consensus among you know organizations that you just kind of stuff
+EDL	00:36:24,704	00:36:25,472	| IOT189 |	That those two
+EDL	00:36:25,984	00:36:27,264	| IOT189 |	Privacy features are kind of
+EDL	00:36:27,264	00:36:28,288	| IOT189 |	That you wanted
+EDL	00:36:28,288	00:36:34,432	| IOT189 |	Have you want to have a mechanism for reporting vulnerabilities those types of things are more
+EDL	00:36:34,432	00:36:35,712	| IOT189 |	Agreed upon
+EDL	00:36:35,712	00:36:36,736	| IOT189 |	Three categories
+EDL	00:36:36,736	00:36:39,040	| IOT189 |	Standard because it's open source so it's a lot of
+EDL	00:36:39,040	00:36:40,832	| IOT189 |	Collaborative creation
+EDL	00:36:40,832	00:36:41,600	| IOT189 |	First set is
+EDL	00:36:42,624	00:36:43,392	| IOT189 |	Done
+EDL	00:36:43,392	00:36:44,160	| IOT189 |	That is
+EDL	00:36:44,160	00:36:44,672	| IOT189 |	I seen
+EDL	00:36:45,184	00:36:46,464	| IOT189 |	Well understood with
+EDL	00:36:46,464	00:36:47,488	| IOT189 |	Developed testing approach
+EDL	00:36:48,000	00:36:48,768	| IOT189 |	The nursing staff
+EDL	00:36:49,792	00:36:53,120	| IOT189 |	You know colors like a stop light yellow things which are under development
+EDL	00:36:53,120	00:36:54,144	| IOT189 |	But still have some else
+EDL	00:36:54,144	00:36:55,168	| IOT189 |	Standing questions
+EDL	00:36:55,168	00:36:56,448	| IOT189 |	And then ride is a TARDIS
+EDL	00:36:56,960	00:36:59,264	| IOT189 |	So nobody's using those under discussion wenzhou
+EDL	00:36:59,264	00:37:00,032	| IOT189 |	The test yet
+EDL	00:37:00,032	00:37:03,872	| IOT189 |	They are really complex issues that still need to have
+EDL	00:37:03,872	00:37:05,920	| IOT189 |	Debate between the people developing the standard
+EDL	00:37:05,920	00:37:07,968	| IOT189 |	I said they're sort of in their infancy but
+EDL	00:37:09,504	00:37:10,528	| IOT189 |	You know I know you want to get in
+EDL	00:37:10,528	00:37:13,088	| IOT189 |	And two things that are not
+EDL	00:37:13,088	00:37:14,880	| IOT189 |	Quite ready for lunch yet
+EDL	00:37:14,880	00:37:15,392	| IOT189 |	Antarctica
+EDL	00:37:16,160	00:37:17,184	| IOT189 |	Yes but
+EDL	00:37:17,184	00:37:18,976	| IOT189 |	We'll talk about what we know
+EDL	00:37:18,976	00:37:20,256	| IOT189 |	Because I think it's really
+EDL	00:37:20,256	00:37:25,120	| IOT189 |	I feel like a lot of people when we start talking about security and privacy of these devices
+EDL	00:37:25,120	00:37:26,656	| IOT189 |	People just kind of throw up their hands
+EDL	00:37:26,656	00:37:29,472	| IOT189 |	That's too much information is too hard I can't convey that I can't build it
+EDL	00:37:29,472	00:37:31,520	| IOT189 |	I can't do anything with it
+EDL	00:37:31,520	00:37:32,800	| IOT189 |	Let's hope those people relax
+EDL	00:37:33,312	00:37:34,848	| IOT189 |	You got a section on the best build
+EDL	00:37:35,616	00:37:37,408	| IOT189 |	And what is some of the things that that in
+EDL	00:37:38,944	00:37:39,968	| IOT189 |	Best build prop
+EDL	00:37:40,736	00:37:41,504	| IOT189 |	The standard
+EDL	00:37:41,504	00:37:43,808	| IOT189 |	Sort of talk about industry best practices
+EDL	00:37:44,576	00:37:46,112	| IOT189 |	Paradiso when the software
+EDL	00:37:46,880	00:37:48,928	| IOT189 |	Product development
+EDL	00:37:48,928	00:37:49,952	| IOT189 |	Industry best practice
+EDL	00:37:50,720	00:37:54,304	| IOT189 |	Things like safety features not using unsafe
+EDL	00:37:54,304	00:37:54,816	| IOT189 |	Function
+EDL	00:37:55,328	00:37:56,864	| IOT189 |	Orcutt Library
+EDL	00:37:56,864	00:37:57,632	| IOT189 |	It's not to come
+EDL	00:37:57,632	00:37:58,400	| IOT189 |	Complex
+EDL	00:37:58,400	00:37:58,912	| IOT189 |	That one is
+EDL	00:38:01,728	00:38:04,288	| IOT189 |	When you create this product did you do the best
+EDL	00:38:05,568	00:38:06,848	| IOT189 |	Did you consider privacy
+EDL	00:38:06,848	00:38:08,640	| IOT189 |	Insecurities as a build in or is
+EDL	00:38:09,920	00:38:13,248	| IOT189 |	Rental companies that's where to stay when they're creating their product you know
+EDL	00:38:13,248	00:38:15,808	| IOT189 |	This is something really important to us and we wanted here.
+EDL	00:38:15,808	00:38:16,832	| IOT189 |	Best practices
+EDL	00:38:16,832	00:38:18,368	| IOT189 |	That's sort of an A+ from us
+EDL	00:38:18,880	00:38:22,464	| IOT189 |	Broadly so when we start moving to data security in your authentication that used to be
+EDL	00:38:23,232	00:38:26,560	| IOT189 |	A lot of these are really like we talked about these on the show all the time
+EDL	00:38:26,560	00:38:29,376	| IOT189 |	Changing default passwords making sure people have really
+EDL	00:38:29,376	00:38:31,680	| IOT189 |	Good passwords and encouraging them to make them
+EDL	00:38:31,680	00:38:32,704	| IOT189 |	I like
+EDL	00:38:32,704	00:38:35,776	| IOT189 |	The idea of multi-factor authentication is another big
+EDL	00:38:35,776	00:38:37,568	| IOT189 |	ATL I wish I could see that and actually more
+EDL	00:38:38,592	00:38:39,104	| IOT189 |	Home device
+EDL	00:38:39,872	00:38:42,176	| IOT189 |	Are there other things you want to call out in the security section that are
+EDL	00:38:42,944	00:38:43,712	| IOT189 |	Relevant or
+EDL	00:38:43,712	00:38:44,480	| IOT189 |	Probably
+EDL	00:38:44,480	00:38:45,248	| IOT189 |	Worth mentioning or new
+EDL	00:38:45,760	00:38:46,528	| IOT189 |	So
+EDL	00:38:46,528	00:38:47,296	| IOT189 |	Just for passwords
+EDL	00:38:47,296	00:38:48,320	| IOT189 |	Interesting because
+EDL	00:38:48,320	00:38:48,832	| IOT189 |	Companies actually
+EDL	00:38:49,856	00:38:51,904	| IOT189 |	That one of those things my colleagues and I have been doing it
+EDL	00:38:52,416	00:38:54,208	| IOT189 |	Cashier speaking to stakeholders like
+EDL	00:38:54,208	00:38:55,232	| IOT189 |	Companies in non-profit
+EDL	00:38:55,232	00:38:58,560	| IOT189 |	Privacy and security are really important and we think you should
+EDL	00:38:58,560	00:39:00,608	| IOT189 |	Do them better but also here
+EDL	00:39:00,608	00:39:04,960	| IOT189 |	Discerning tool for you that you can look at you know here sort of a hit list of stuff that
+EDL	00:39:04,960	00:39:05,984	| IOT189 |	You could
+EDL	00:39:05,984	00:39:07,520	| IOT189 |	Next product
+EDL	00:39:07,520	00:39:08,800	| IOT189 |	Supervisor current products
+EDL	00:39:08,800	00:39:09,568	| IOT189 |	Include
+EDL	00:39:09,568	00:39:10,848	| IOT189 |	To get certified you know checklist
+EDL	00:39:11,360	00:39:12,896	| IOT189 |	Privacy and security community
+EDL	00:39:12,896	00:39:15,456	| IOT189 |	Companies that are doing a great job come to us
+EDL	00:39:15,456	00:39:16,480	| IOT189 |	You say.
+EDL	00:39:16,480	00:39:17,760	| IOT189 |	Authentication test
+EDL	00:39:17,760	00:39:19,552	| IOT189 |	Is actually cheap simple it's not cooling
+EDL	00:39:20,064	00:39:21,088	| IOT189 |	Consider things like
+EDL	00:39:21,088	00:39:21,856	| IOT189 |	Fingerprints
+EDL	00:39:21,856	00:39:22,368	| IOT189 |	Or other
+EDL	00:39:22,880	00:39:24,416	| IOT189 |	More complex indication
+EDL	00:39:24,416	00:39:25,952	| IOT189 |	And it just sort of
+EDL	00:39:25,952	00:39:30,048	| IOT189 |	Originally said be able to change the password require a long password
+EDL	00:39:30,560	00:39:32,096	| IOT189 |	And I think it was require a password
+EDL	00:39:37,472	00:39:39,008	| IOT189 |	Because companies that are really good at this
+EDL	00:39:39,520	00:39:41,056	| IOT189 |	Actually this is too easy like
+EDL	00:39:41,056	00:39:43,360	| IOT189 |	There should be an expectation that people do something
+EDL	00:39:43,360	00:39:45,152	| IOT189 |	Better is to
+EDL	00:39:45,152	00:39:46,432	| IOT189 |	Kind of a big issue here
+EDL	00:39:46,432	00:39:48,480	| IOT189 |	You guys do a really good job like
+EDL	00:39:48,480	00:39:50,016	| IOT189 |	You kind of talk about the test you talk about
+EDL	00:39:50,016	00:39:50,784	| IOT189 |	Criteria
+EDL	00:39:50,784	00:39:53,344	| IOT189 |	And you talk about the procedures you can use to test
+EDL	00:39:53,344	00:39:56,672	| IOT189 |	For this which I think is really helpful for companies that are looking to implement
+EDL	00:39:57,696	00:40:01,024	| IOT189 |	I was just speaking to a group about iot devices
+EDL	00:40:01,024	00:40:06,144	| IOT189 |	Security and I was talking about you
+EDL	00:40:06,656	00:40:10,240	| IOT189 |	Of course this is a normal human being
+EDL	00:40:10,240	00:40:11,520	| IOT189 |	They don't know what encryption
+EDL	00:40:12,032	00:40:14,592	| IOT189 |	So you can do all of this on the back end
+EDL	00:40:14,592	00:40:16,128	| IOT189 |	But to communicate with
+EDL	00:40:16,128	00:40:16,896	| IOT189 |	The buyers of
+EDL	00:40:16,896	00:40:20,224	| IOT189 |	How do we bridge that Gap because I don't think it's fair.
+EDL	00:40:20,224	00:40:20,992	| IOT189 |	Require people
+EDL	00:40:20,992	00:40:21,760	| IOT189 |	Understand
+EDL	00:40:21,760	00:40:22,272	| IOT189 |	Encryption
+EDL	00:40:22,784	00:40:24,832	| IOT189 |	I told her she was willing to understand it
+EDL	00:40:24,832	00:40:26,112	| IOT189 |	It does feel like
+EDL	00:40:26,112	00:40:26,624	| IOT189 |	Pretty big lies
+EDL	00:40:28,160	00:40:28,672	| IOT189 |	Shopping app
+EDL	00:40:32,256	00:40:34,304	| IOT189 |	So I mean everyone who works on this
+EDL	00:40:34,304	00:40:39,424	| IOT189 |	I spent a long time trying to draw cool diagrams of what encryption means or coming up
+EDL	00:40:39,424	00:40:41,216	| IOT189 |	Analogies for the public
+EDL	00:40:41,216	00:40:44,032	| IOT189 |	To say this is what encryption
+EDL	00:40:44,032	00:40:46,080	| IOT189 |	Especially in the Google Apple
+EDL	00:40:46,592	00:40:47,360	| IOT189 |	Conflict with
+EDL	00:40:47,360	00:40:48,128	| IOT189 |	Congress
+EDL	00:40:48,128	00:40:48,896	| IOT189 |	About
+EDL	00:40:48,896	00:40:49,920	| IOT189 |	Encryption default
+EDL	00:40:49,920	00:40:51,200	| IOT189 |	But I think 103
+EDL	00:40:51,200	00:40:52,224	| IOT189 |	That we are
+EDL	00:40:52,224	00:40:54,016	| IOT189 |	You know my call again I came in through the window
+EDL	00:40:54,016	00:40:55,040	| IOT189 |	The standard was developed
+EDL	00:40:55,040	00:40:56,832	| IOT189 |	So we're giving a thing into
+EDL	00:40:56,832	00:40:57,856	| IOT189 |	Could you work with us
+EDL	00:40:57,856	00:40:59,904	| IOT189 |	And one of the reasons we really like it is
+EDL	00:40:59,904	00:41:02,208	| IOT189 |	Because Consumer Reports is used it twice
+EDL	00:41:02,208	00:41:03,488	| IOT189 |	And Nicole is not really
+EDL	00:41:04,000	00:41:04,768	| IOT189 |	Provide
+EDL	00:41:04,768	00:41:05,536	| IOT189 |	Consumer web
+EDL	00:41:05,536	00:41:06,816	| IOT189 |	Here are the results
+EDL	00:41:06,816	00:41:07,584	| IOT189 |	F-35 test
+EDL	00:41:08,352	00:41:09,376	| IOT189 |	It's sort of
+EDL	00:41:09,888	00:41:12,960	| IOT189 |	Mortal list of judgment of like is this Securus
+EDL	00:41:12,960	00:41:14,752	| IOT189 |	If it's not secure
+EDL	00:41:15,520	00:41:18,080	| IOT189 |	As poorly but this is never meant for
+EDL	00:41:18,592	00:41:21,152	| IOT189 |	Consumption this entire consumption cool like
+EDL	00:41:21,152	00:41:23,200	| IOT189 |	If you really want to read what happened
+EDL	00:41:23,200	00:41:26,272	| IOT189 |	When needed an identification test on the newest light bulb
+EDL	00:41:26,784	00:41:27,552	| IOT189 |	But we're not
+EDL	00:41:28,576	00:41:29,856	| IOT189 |	Consumers understand that when
+EDL	00:41:29,856	00:41:30,368	| IOT189 |	Purchase something
+EDL	00:41:31,136	00:41:33,440	| IOT189 |	All right and now we're going to get into some of that
+EDL	00:41:33,952	00:41:34,464	| IOT189 |	Ohio
+EDL	00:41:34,976	00:41:36,256	| IOT189 |	I'm going to call them
+EDL	00:41:36,256	00:41:37,280	| IOT189 |	Hotspot issues
+EDL	00:41:37,280	00:41:41,632	| IOT189 |	Is because we talked about them I think they're really important I also think they're really hard to solve
+EDL	00:41:42,144	00:41:44,448	| IOT189 |	So thank you talk about things with no necks
+EDL	00:41:44,448	00:41:46,496	| IOT189 |	Play resistance which people are very similar
+EDL	00:41:46,496	00:41:48,032	| IOT189 |	Potato put a product on the market
+EDL	00:41:48,032	00:41:48,800	| IOT189 |	Get that you know is going to
+EDL	00:41:49,824	00:41:51,104	| IOT189 |	But then
+EDL	00:41:51,104	00:41:53,919	| IOT189 |	We move into this concept of security over time
+EDL	00:41:54,431	00:41:55,199	| IOT189 |	And you know
+EDL	00:41:55,711	00:41:57,759	| IOT189 |	The Kevin and I my colleague on the show talk about
+EDL	00:41:58,527	00:42:00,575	| IOT189 |	I would love to see an expiration date
+EDL	00:42:00,575	00:42:02,367	| IOT189 |	Providing security is not
+EDL	00:42:02,879	00:42:04,159	| IOT189 |	It's not an expensive
+EDL	00:42:04,159	00:42:05,439	| IOT189 |	Freight updating your software.
+EDL	00:42:05,951	00:42:06,975	| IOT189 |	Things up to date
+EDL	00:42:06,975	00:42:09,279	| IOT189 |	Is available resources Q
+EDL	00:42:09,279	00:42:11,071	| IOT189 |	UA testing all of this so
+EDL	00:42:11,071	00:42:12,607	| IOT189 |	How are you guys approaching that
+EDL	00:42:13,119	00:42:13,887	| IOT189 |	Ocular issue
+EDL	00:42:13,887	00:42:19,007	| IOT189 |	I think for iot that's it in some ways unique challenge because when people go by really X
+EDL	00:42:19,519	00:42:22,335	| IOT189 |	Home devices Like Home Appliances which
+EDL	00:42:22,847	00:42:24,383	| IOT189 |	You know all of the companies want to build
+EDL	00:42:25,407	00:42:30,015	| IOT189 |	Fun things into them you expect to have this for 15 years
+EDL	00:42:30,015	00:42:31,551	| IOT189 |	Be 2 years you want to have your
+EDL	00:42:32,319	00:42:33,599	| IOT189 |	You're not going to throw away
+EDL	00:42:34,367	00:42:34,879	| IOT189 |	Refrigerator
+EDL	00:42:35,903	00:42:36,927	| IOT189 |	Quickly because
+EDL	00:42:38,207	00:42:38,719	| IOT189 |	See that you want to have
+EDL	00:42:39,487	00:42:42,047	| IOT189 |	I like the idea of
+EDL	00:42:42,047	00:42:44,607	| IOT189 |	Both have an expiration date
+EDL	00:42:44,607	00:42:47,423	| IOT189 |	I will not support after whatever
+EDL	00:42:47,423	00:42:51,007	| IOT189 |	I think that could be available for consumers
+EDL	00:42:51,007	00:42:51,775	| IOT189 |	It's not something
+EDL	00:42:51,775	00:42:52,543	| IOT189 |	What is Belton
+EDL	00:42:52,543	00:42:54,079	| IOT189 |	This is a requirement
+EDL	00:42:54,079	00:42:55,103	| IOT189 |	But I do that
+EDL	00:42:55,103	00:42:56,127	| IOT189 |	Think that I could be released
+EDL	00:42:56,127	00:42:58,175	| IOT189 |	Effective way of communicating.
+EDL	00:42:58,175	00:43:00,479	| IOT189 |	To Consumers when they spend a lot of money on
+EDL	00:43:00,479	00:43:04,319	| IOT189 |	Something what are device makers telling you about this concert
+EDL	00:43:04,319	00:43:05,087	| IOT189 |	SEPTA security
+EDL	00:43:05,087	00:43:06,367	| IOT189 |	What time like maybe they have some gradle
+EDL	00:43:08,159	00:43:09,439	| IOT189 |	I think a security overtime
+EDL	00:43:10,207	00:43:11,999	| IOT189 |	Casino Consumer Reports
+EDL	00:43:14,559	00:43:17,119	| IOT189 |	Companies in the same way that you know they don't have a
+EDL	00:43:17,119	00:43:18,143	| IOT189 |	Here's how the srk
+EDL	00:43:18,655	00:43:20,447	| IOT189 |	Conversation with vendors
+EDL	00:43:20,447	00:43:21,983	| IOT189 |	Or manufacturers
+EDL	00:43:21,983	00:43:24,543	| IOT189 |	Not the way they're all he's worked a chilly day for us
+EDL	00:43:25,823	00:43:26,591	| IOT189 |	And say
+EDL	00:43:26,591	00:43:28,127	| IOT189 |	I think you should do this better
+EDL	00:43:28,127	00:43:28,895	| IOT189 |	Share the way
+EDL	00:43:28,895	00:43:30,687	| IOT189 |	Testify
+EDL	00:43:30,687	00:43:31,967	| IOT189 |	Security overtime is one
+EDL	00:43:31,967	00:43:35,551	| IOT189 |	That's what if we thought like assertive hand wave on a bye yeah yeah like that's
+EDL	00:43:36,575	00:43:38,111	| IOT189 |	You know we're going to keep it updated
+EDL	00:43:38,111	00:43:38,879	| IOT189 |	Rather than
+EDL	00:43:38,879	00:43:40,159	| IOT189 |	IClear Wrecking
+EDL	00:43:40,159	00:43:42,975	| IOT189 |	That's not something we can do forever and we're going to
+EDL	00:43:42,975	00:43:44,255	| IOT189 |	Explicit
+EDL	00:43:45,279	00:43:46,815	| IOT189 |	I think that's a real challenge
+EDL	00:43:46,815	00:43:47,839	| IOT189 |	Just because the
+EDL	00:43:47,839	00:43:49,887	| IOT189 |	You know specifically smart home industry
+EDL	00:43:49,887	00:43:50,655	| IOT189 |	Is
+EDL	00:43:50,655	00:43:51,679	| IOT189 |	Built on
+EDL	00:43:51,679	00:43:52,191	| IOT189 |	She was very
+EDL	00:43:52,703	00:43:53,471	| IOT189 |	What type of seals model
+EDL	00:43:53,983	00:43:55,519	| IOT189 |	Redis built on to
+EDL	00:43:55,519	00:43:56,543	| IOT189 |	You by Selena cost
+EDL	00:43:56,543	00:43:57,055	| IOT189 |	$2,000
+EDL	00:43:57,567	00:43:59,615	| IOT189 |	And keep it forever rather than
+EDL	00:43:59,615	00:44:00,639	| IOT189 |	You know I'm more
+EDL	00:44:00,639	00:44:01,663	| IOT189 |	Cool Tech toys
+EDL	00:44:01,663	00:44:02,687	| IOT189 |	Sales model
+EDL	00:44:02,687	00:44:03,455	| IOT189 |	Brakes
+EDL	00:44:03,455	00:44:04,223	| IOT189 |	Network
+EDL	00:44:04,223	00:44:04,735	| IOT189 |	Pretty soon
+EDL	00:44:05,247	00:44:06,527	| IOT189 |	So the ability for company
+EDL	00:44:09,599	00:44:10,879	| IOT189 |	Today and we're going to
+EDL	00:44:10,879	00:44:11,903	| IOT189 |	Stop servicing it after
+EDL	00:44:12,671	00:44:13,951	| IOT189 |	Time one of the discussion
+EDL	00:44:14,463	00:44:15,743	| IOT189 |	We've had.
+EDL	00:44:16,767	00:44:17,535	| IOT189 |	Scariest Birds
+EDL	00:44:17,535	00:44:19,071	| IOT189 |	Was what about it
+EDL	00:44:19,071	00:44:20,351	| IOT189 |	There are third-party
+EDL	00:44:20,351	00:44:20,863	| IOT189 |	Repair people who
+EDL	00:44:22,143	00:44:23,935	| IOT189 |	So. Gets into
+EDL	00:44:23,935	00:44:25,727	| IOT189 |	At the start of ownership and right to repair
+EDL	00:44:26,495	00:44:27,263	| IOT189 |	Is good
+EDL	00:44:27,263	00:44:28,543	| IOT189 |	Cuz that's where we're going next
+EDL	00:44:28,543	00:44:30,335	| IOT189 |	Soufeel
+EDL	00:44:31,103	00:44:32,383	| IOT189 |	Yeah let's move into that
+EDL	00:44:32,895	00:44:33,663	| IOT189 |	Maybe if
+EDL	00:44:33,663	00:44:36,223	| IOT189 |	Company why who makes her expensive
+EDL	00:44:36,223	00:44:37,503	| IOT189 |	Refrigerator says they can
+EDL	00:44:37,503	00:44:38,527	| IOT189 |	Can service it after 5 years
+EDL	00:44:39,295	00:44:40,319	| IOT189 |	Smart person
+EDL	00:44:40,319	00:44:41,599	| IOT189 |	Men with their own Scrappy
+EDL	00:44:41,599	00:44:42,367	| IOT189 |	VTech company
+EDL	00:44:42,367	00:44:43,135	| IOT189 |	I could come fix it for you
+EDL	00:44:44,159	00:44:46,207	| IOT189 |	Solution maybe not a popular one for companies
+EDL	00:44:46,719	00:44:49,535	| IOT189 |	Yeah so you actually have a whole section on ownership
+EDL	00:44:50,047	00:44:51,839	| IOT189 |	Digital standard in that whole section is
+EDL	00:44:52,351	00:44:53,119	| IOT189 |	I know people can see
+EDL	00:44:53,119	00:44:54,655	| IOT189 |	I see colors but it's basically
+EDL	00:44:54,655	00:44:55,935	| IOT189 |	Red which means like
+EDL	00:44:55,935	00:44:56,703	| IOT189 |	Nobody else
+EDL	00:44:57,215	00:44:58,495	| IOT189 |	We're just throwing this out the hip feels like
+EDL	00:45:01,567	00:45:03,871	| IOT189 |	And in that you guys have things like hay
+EDL	00:45:03,871	00:45:04,639	| IOT189 |	Interoperability
+EDL	00:45:05,151	00:45:05,663	| IOT189 |	Ownership
+EDL	00:45:06,943	00:45:07,711	| IOT189 |	End
+EDL	00:45:07,711	00:45:08,479	| IOT189 |	Resale
+EDL	00:45:08,479	00:45:09,247	| IOT189 |	And this actually gets
+EDL	00:45:10,015	00:45:10,783	| IOT189 |	Something I would
+EDL	00:45:10,783	00:45:11,807	| IOT189 |	I'm thinking about cuz I'm
+EDL	00:45:11,807	00:45:13,343	| IOT189 |	Going to put my house on the market eventually
+EDL	00:45:13,343	00:45:15,391	| IOT189 |	How do I
+EDL	00:45:15,391	00:45:15,903	| IOT189 |	Freecell Vista
+EDL	00:45:18,463	00:45:22,047	| IOT189 |	So what are you guys pushing for what are you guys talking about
+EDL	00:45:22,047	00:45:22,559	| IOT189 |	What people would have
+EDL	00:45:24,095	00:45:24,863	| IOT189 |	So
+EDL	00:45:24,863	00:45:26,143	| IOT189 |	When it comes to having conversations
+EDL	00:45:27,167	00:45:28,447	| IOT189 |	Resort at the very
+EDL	00:45:28,447	00:45:29,471	| IOT189 |	High level of a lot of people
+EDL	00:45:30,239	00:45:31,519	| IOT189 |	Start a startup
+EDL	00:45:32,543	00:45:33,055	| IOT189 |	Easy lift
+EDL	00:45:33,567	00:45:35,103	| IOT189 |	Generally agreed upon
+EDL	00:45:35,103	00:45:35,871	| IOT189 |	Security Experts
+EDL	00:45:36,383	00:45:37,407	| IOT189 |	Elementary
+EDL	00:45:37,407	00:45:39,711	| IOT189 |	Preschool level security everyone will tell you
+EDL	00:45:40,223	00:45:41,247	| IOT189 |	And it's not
+EDL	00:45:42,527	00:45:44,575	| IOT189 |	You might not want to do the work or spend the money
+EDL	00:45:44,575	00:45:45,087	| IOT189 |	But you know
+EDL	00:45:46,623	00:45:48,415	| IOT189 |	Hair products
+EDL	00:45:48,927	00:45:49,695	| IOT189 |	But
+EDL	00:45:49,695	00:45:50,463	| IOT189 |	Stuff like
+EDL	00:45:50,463	00:45:51,231	| IOT189 |	Interoperability
+EDL	00:45:53,791	00:45:54,559	| IOT189 |	Companies that day
+EDL	00:45:54,559	00:45:55,327	| IOT189 |	Really
+EDL	00:45:55,327	00:45:58,911	| IOT189 |	Don't like things like resale or right to repair ideas
+EDL	00:45:58,911	00:45:59,935	| IOT189 |	But when we
+EDL	00:45:59,935	00:46:01,983	| IOT189 |	Working
+EDL	00:46:01,983	00:46:02,751	| IOT189 |	Besides
+EDL	00:46:02,751	00:46:04,799	| IOT189 |	Agree to disagree on this right now
+EDL	00:46:04,799	00:46:05,823	| IOT189 |	Please don't
+EDL	00:46:05,823	00:46:06,847	| IOT189 |	Not have
+EDL	00:46:06,847	00:46:07,359	| IOT189 |	Good passwords
+EDL	00:46:07,871	00:46:08,639	| IOT189 |	Because
+EDL	00:46:08,639	00:46:09,663	| IOT189 |	You disagree with us
+EDL	00:46:10,431	00:46:12,479	| IOT189 |	Okay so bigger fish to fry now
+EDL	00:46:12,479	00:46:16,063	| IOT189 |	At the end of October the US copyright office actually said
+EDL	00:46:16,063	00:46:18,623	| IOT189 |	That certain set of products we do now have a
+EDL	00:46:19,647	00:46:23,743	| IOT189 |	Which felt like a step forward and maybe maybe this is something that gets determined in the courts
+EDL	00:46:24,767	00:46:26,303	| IOT189 |	It's a design process
+EDL	00:46:26,303	00:46:27,583	| IOT189 |	That's part of
+EDL	00:46:27,583	00:46:29,631	| IOT189 |	Cuz of the ITC based in so
+EDL	00:46:29,631	00:46:31,679	| IOT189 |	We do work a lot with Congress
+EDL	00:46:31,679	00:46:32,191	| IOT189 |	And
+EDL	00:46:32,703	00:46:35,519	| IOT189 |	Regulators and things that Seto on all of our policies
+EDL	00:46:35,519	00:46:36,543	| IOT189 |	And so
+EDL	00:46:36,543	00:46:37,311	| IOT189 |	Places
+EDL	00:46:37,311	00:46:38,335	| IOT189 |	Slice copyright office
+EDL	00:46:39,359	00:46:40,383	| IOT189 |	TC
+EDL	00:46:40,383	00:46:41,151	| IOT189 |	Are interesting
+EDL	00:46:41,151	00:46:41,919	| IOT189 |	Touchpoints
+EDL	00:46:41,919	00:46:43,455	| IOT189 |	Or you know how what role did they play in
+EDL	00:46:46,527	00:46:49,599	| IOT189 |	Maybe it is the Court's maybe his Regulators that are going to
+EDL	00:46:49,599	00:46:50,623	| IOT189 |	Be that big finger on the button
+EDL	00:46:51,391	00:46:52,415	| IOT189 |	Like you're not allowed to do
+EDL	00:46:52,415	00:46:53,439	| IOT189 |	PewDiePie
+EDL	00:46:53,951	00:46:55,487	| IOT189 |	Anymore you need to
+EDL	00:46:56,767	00:46:57,791	| IOT189 |	Steamers better way
+EDL	00:46:58,815	00:47:00,095	| IOT189 |	Take ownership and I'm not
+EDL	00:47:00,607	00:47:01,375	| IOT189 |	Obviously
+EDL	00:47:01,375	00:47:03,167	| IOT189 |	People who advocate
+EDL	00:47:03,167	00:47:04,703	| IOT189 |	Security advocacy community
+EDL	00:47:04,703	00:47:05,471	| IOT189 |	Can say this
+EDL	00:47:07,775	00:47:09,823	| IOT189 |	FTC penalties or
+EDL	00:47:09,823	00:47:10,591	| IOT189 |	No legal challenge
+EDL	00:47:11,871	00:47:14,431	| IOT189 |	Well that gets into
+EDL	00:47:14,431	00:47:15,199	| IOT189 |	Red
+EDL	00:47:15,199	00:47:16,479	| IOT189 |	We don't know what we're doing
+EDL	00:47:16,991	00:47:19,039	| IOT189 |	This point on this whole thing which was
+EDL	00:47:19,039	00:47:19,551	| IOT189 |	Business model
+EDL	00:47:20,063	00:47:21,343	| IOT189 |	So what are your thoughts
+EDL	00:47:21,343	00:47:22,879	| IOT189 |	It's about where you'd like
+EDL	00:47:22,879	00:47:23,391	| IOT189 |	To see that go
+EDL	00:47:23,903	00:47:28,255	| IOT189 |	So when it comes to digital standard you know when you start to talk about the things about governance
+EDL	00:47:28,767	00:47:29,535	| IOT189 |	Privacy
+EDL	00:47:29,535	00:47:31,583	| IOT189 |	Supposed to use a lot of it is
+EDL	00:47:31,583	00:47:33,631	| IOT189 |	Not so much about the
+EDL	00:47:33,631	00:47:36,447	| IOT189 |	The policy it's about making that really clear defense
+EDL	00:47:36,447	00:47:37,727	| IOT189 |	Consumers what the policy
+EDL	00:47:38,751	00:47:39,263	| IOT189 |	So
+EDL	00:47:39,775	00:47:41,567	| IOT189 |	You're so far the business model
+EDL	00:47:41,567	00:47:42,591	| IOT189 |	Pasties
+EDL	00:47:42,591	00:47:46,431	| IOT189 |	Nowhere it's it's listed as a placeholder in there saying there's going to be something about it
+EDL	00:47:46,431	00:47:50,015	| IOT189 |	But it's really important that they make clear
+EDL	00:47:50,015	00:47:51,295	| IOT189 |	Two customers
+EDL	00:47:51,295	00:47:53,343	| IOT189 |	Whether they make their money through advertising
+EDL	00:47:53,343	00:47:55,135	| IOT189 |	Subscriptions
+EDL	00:47:55,135	00:47:56,415	| IOT189 |	Basically when you buy some
+EDL	00:47:56,927	00:47:59,999	| IOT189 |	Something should be transparent about are they making money through
+EDL	00:48:00,511	00:48:02,047	| IOT189 |	3 selling your data
+EDL	00:48:02,047	00:48:05,375	| IOT189 |	And that ties into something that we constantly
+EDL	00:48:05,375	00:48:06,143	| IOT189 |	Crocodile
+EDL	00:48:06,143	00:48:09,471	| IOT189 |	And I hate because I actually read all the TOs has and privacy terms but
+EDL	00:48:09,471	00:48:10,751	| IOT189 |	Do you really
+EDL	00:48:10,751	00:48:12,543	| IOT189 |	Yes yes it's really a lot
+EDL	00:48:13,055	00:48:14,591	| IOT189 |	But is there anything in here
+EDL	00:48:15,359	00:48:16,639	| IOT189 |	Don't want to say I didn't see it
+EDL	00:48:17,151	00:48:17,919	| IOT189 |	But maybe I missed
+EDL	00:48:17,919	00:48:19,199	| IOT189 |	Because there is a lot here
+EDL	00:48:19,199	00:48:21,247	| IOT189 |	About how we should present
+EDL	00:48:21,247	00:48:22,527	| IOT189 |	These kind of terms and
+EDL	00:48:23,039	00:48:24,575	| IOT189 |	Cuz there's a lot about terms of service
+EDL	00:48:25,087	00:48:26,111	| IOT189 |	Enforcement of them
+EDL	00:48:26,111	00:48:27,391	| IOT189 |	Is there anything about like
+EDL	00:48:27,391	00:48:29,951	| IOT189 |	How to make that intelligible without forcing people
+EDL	00:48:29,951	00:48:31,487	| IOT189 |	David disagreements which are
+EDL	00:48:31,487	00:48:32,767	| IOT189 |	Oh my gosh you guys
+EDL	00:48:32,767	00:48:33,535	| IOT189 |	Really
+EDL	00:48:33,535	00:48:34,303	| IOT189 |	Really ice cream
+EDL	00:48:35,071	00:48:36,351	| IOT189 |	Looking at this
+EDL	00:48:36,351	00:48:37,119	| IOT189 |	I really am
+EDL	00:48:37,119	00:48:38,143	| IOT189 |	Appreciate the focus in terms of
+EDL	00:48:38,655	00:48:40,959	| IOT189 |	Privacy policy the things that digital standard
+EDL	00:48:41,727	00:48:42,751	| IOT189 |	Asked you for
+EDL	00:48:42,751	00:48:48,895	| IOT189 |	Are that they are presented in an understandable manner which isn't super clear that's pretty
+EDL	00:48:50,943	00:48:53,247	| IOT189 |	They should be in language is most commonly spoken by the
+EDL	00:48:54,015	00:48:56,831	| IOT189 |	And the company clearly discloses
+EDL	00:48:56,831	00:48:58,367	| IOT189 |	Which policy is applied
+EDL	00:48:58,367	00:49:00,159	| IOT189 |	The thing you just bought and that
+EDL	00:49:02,207	00:49:03,231	| IOT189 |	So they're in
+EDL	00:49:03,231	00:49:04,767	| IOT189 |	Huge focus on
+EDL	00:49:04,767	00:49:06,303	| IOT189 |	What the terms of service should
+EDL	00:49:06,303	00:49:08,351	| IOT189 |	Look like but that it should be clear
+EDL	00:49:08,351	00:49:09,119	| IOT189 |	And a field goal
+EDL	00:49:09,631	00:49:11,423	| IOT189 |	If someone wants to read them
+EDL	00:49:11,423	00:49:12,447	| IOT189 |	It's not
+EDL	00:49:12,447	00:49:15,519	| IOT189 |	16 tabs in legalese in
+EDL	00:49:15,519	00:49:17,055	| IOT189 |	Cheney is in a place where people are
+EDL	00:49:17,055	00:49:18,335	| IOT189 |	Scrolling through on my other
+EDL	00:49:19,615	00:49:22,943	| IOT189 |	When your oven oh
+EDL	00:49:24,479	00:49:25,759	| IOT189 |	Okay and so
+EDL	00:49:25,759	00:49:27,551	| IOT189 |	Along these lines I'm just going to
+EDL	00:49:27,551	00:49:30,111	| IOT189 |	Throw out some wishlist I have four connected to
+EDL	00:49:30,111	00:49:32,415	| IOT189 |	Devices and see how plausible are where youth
+EDL	00:49:32,927	00:49:34,207	| IOT189 |	We might get on some of these
+EDL	00:49:34,207	00:49:35,743	| IOT189 |	1 is
+EDL	00:49:35,743	00:49:37,023	| IOT189 |	A lot of these
+EDL	00:49:37,023	00:49:38,303	| IOT189 |	The terms of service and privacy
+EDL	00:49:38,815	00:49:41,375	| IOT189 |	Cease we actually see when we download the app is
+EDL	00:49:41,375	00:49:41,887	| IOT189 |	For installing
+EDL	00:49:42,399	00:49:43,935	| IOT189 |	Vice which feels like
+EDL	00:49:43,935	00:49:45,727	| IOT189 |	A really big missed opportunity be
+EDL	00:49:45,727	00:49:47,007	| IOT189 |	Because then I'm like
+EDL	00:49:47,007	00:49:49,055	| IOT189 |	Crap this device is not secure enough
+EDL	00:49:49,055	00:49:50,335	| IOT189 |	It doesn't follow all my
+EDL	00:49:50,847	00:49:51,359	| IOT189 |	You know I don't want to get them
+EDL	00:49:51,871	00:49:54,431	| IOT189 |	Can a permission then I have to take it back I might be subbed
+EDL	00:49:54,431	00:49:55,711	| IOT189 |	Restocking fee
+EDL	00:49:55,711	00:49:56,735	| IOT189 |	Are there
+EDL	00:49:56,735	00:49:59,039	| IOT189 |	Protections in place or things that we should be advocate
+EDL	00:50:00,063	00:50:02,367	| IOT189 |	On my separate personal opinion
+EDL	00:50:02,367	00:50:02,879	| IOT189 |	One of the greats
+EDL	00:50:03,903	00:50:04,671	| IOT189 |	If you have cancer
+EDL	00:50:04,671	00:50:06,207	| IOT189 |	Ideas
+EDL	00:50:06,207	00:50:08,255	| IOT189 |	It's still under development open source
+EDL	00:50:08,255	00:50:10,303	| IOT189 |	Regular people
+EDL	00:50:10,303	00:50:11,071	| IOT189 |	Actually makes it
+EDL	00:50:11,839	00:50:13,631	| IOT189 |	Birds and components of it but
+EDL	00:50:13,631	00:50:14,399	| IOT189 |	Personally
+EDL	00:50:14,399	00:50:15,167	| IOT189 |	Yes I do
+EDL	00:50:15,167	00:50:15,935	| IOT189 |	Beverly gradle
+EDL	00:50:15,935	00:50:17,215	| IOT189 |	People could read the terms
+EDL	00:50:17,215	00:50:18,495	| IOT189 |	Service earlier
+EDL	00:50:18,495	00:50:19,519	| IOT189 |	Encouraged
+EDL	00:50:19,519	00:50:20,799	| IOT189 |	To I don't know
+EDL	00:50:20,799	00:50:23,615	| IOT189 |	Accept terms of service maybe once they put something in their cart
+EDL	00:50:23,615	00:50:24,639	| IOT189 |	Online
+EDL	00:50:24,639	00:50:25,663	| IOT189 |	But I think
+EDL	00:50:25,663	00:50:27,711	| IOT189 |	You know we still face the problem of someone buying something
+EDL	00:50:28,223	00:50:29,247	| IOT189 |	Wanting to
+EDL	00:50:29,247	00:50:32,319	| IOT189 |	Use the fun new feature isn't going click click click through
+EDL	00:50:32,319	00:50:33,855	| IOT189 |	Whatever is between them in the funnies
+EDL	00:50:36,159	00:50:36,927	| IOT189 |	Social adjustment
+EDL	00:50:37,439	00:50:40,255	| IOT189 |	Every in terms of service as much as I did sign
+EDL	00:50:40,255	00:50:42,303	| IOT189 |	Yes but I was thinking about you know
+EDL	00:50:42,303	00:50:43,583	| IOT189 |	With the GM story
+EDL	00:50:44,351	00:50:47,679	| IOT189 |	Text back I was looking at that in like hey you know what if I got my
+EDL	00:50:47,679	00:50:48,703	| IOT189 |	My boss my car
+EDL	00:50:48,703	00:50:49,983	| IOT189 |	I wanted to turn on Wi-Fi
+EDL	00:50:50,751	00:50:51,519	| IOT189 |	Pretty useful
+EDL	00:50:51,519	00:50:52,543	| IOT189 |	Features to have in a car
+EDL	00:50:52,543	00:50:53,823	| IOT189 |	And then I'm like oh
+EDL	00:50:53,823	00:50:57,919	| IOT189 |	Wait I'm giving them access to all this crazy data and maybe they did say that they were going to sell
+EDL	00:50:59,455	00:51:00,991	| IOT189 |	That's awful
+EDL	00:51:03,295	00:51:03,807	| IOT189 |	At the same
+EDL	00:51:04,319	00:51:04,831	| IOT189 |	Sports
+EDL	00:51:06,111	00:51:06,879	| IOT189 |	Definitely not
+EDL	00:51:07,391	00:51:09,183	| IOT189 |	So those are the kind of things are in like
+EDL	00:51:09,951	00:51:10,463	| IOT189 |	But I swear that
+EDL	00:51:13,023	00:51:14,559	| IOT189 |	I mean one of the
+EDL	00:51:14,559	00:51:15,583	| IOT189 |	Reason set
+EDL	00:51:15,583	00:51:18,911	| IOT189 |	I think I consumer-facing standard is really important
+EDL	00:51:18,911	00:51:20,703	| IOT189 |	People already read things like
+EDL	00:51:20,703	00:51:21,471	| IOT189 |	Consumer Reports
+EDL	00:51:21,471	00:51:22,495	| IOT189 |	When they want
+EDL	00:51:22,495	00:51:23,775	| IOT189 |	To buy a car
+EDL	00:51:23,775	00:51:25,055	| IOT189 |	And if
+EDL	00:51:25,055	00:51:26,079	| IOT189 |	Expectation.
+EDL	00:51:26,079	00:51:27,103	| IOT189 |	Terms of service
+EDL	00:51:27,103	00:51:28,383	| IOT189 |	Included in the
+EDL	00:51:28,383	00:51:32,735	| IOT189 |	Consumer Reports
+EDL	00:51:32,735	00:51:33,759	| IOT189 |	If you buy this
+EDL	00:51:33,759	00:51:35,039	| IOT189 |	Scar it could
+EDL	00:51:35,039	00:51:38,879	| IOT189 |	Require you to give over this information it could require you to sign up
+EDL	00:51:39,391	00:51:41,183	| IOT189 |	Terms of service questionable
+EDL	00:51:41,183	00:51:43,487	| IOT189 |	And so you know what third parties evaluating that
+EDL	00:51:43,487	00:51:47,327	| IOT189 |	And informing customers about it at the same time as informing them about
+EDL	00:51:47,327	00:51:49,375	| IOT189 |	The annoying turn signal flippy thing
+EDL	00:51:49,887	00:51:51,423	| IOT189 |	Part of the overall package
+EDL	00:51:52,447	00:51:52,959	| IOT189 |	Medication
+EDL	00:51:53,727	00:51:54,751	| IOT189 |	Great maybe
+EDL	00:51:54,751	00:51:57,823	| IOT189 |	Yeah I know I actually thought I'll tell you guys as my audience
+EDL	00:51:57,823	00:52:00,639	| IOT189 |	I am looking at this and I'm thinking hey as a reporter
+EDL	00:52:00,639	00:52:01,663	| IOT189 |	A lot of these things I do
+EDL	00:52:02,175	00:52:03,455	| IOT189 |	Or at least ask about
+EDL	00:52:03,455	00:52:03,967	| IOT189 |	Sometimes
+EDL	00:52:05,247	00:52:06,783	| IOT189 |	And that's kind of where we are
+EDL	00:52:08,319	00:52:10,879	| IOT189 |	But I would love to see more reporters
+EDL	00:52:10,879	00:52:11,391	| IOT189 |	Asking
+EDL	00:52:12,159	00:52:13,183	| IOT189 |	About that sewing
+EDL	00:52:13,183	00:52:13,695	| IOT189 |	Candy
+EDL	00:52:15,743	00:52:16,767	| IOT189 |	Reporters are great
+EDL	00:52:17,279	00:52:18,559	| IOT189 |	Distorted by carrot and
+EDL	00:52:18,559	00:52:19,839	| IOT189 |	Stack and bonus
+EDL	00:52:19,839	00:52:22,399	| IOT189 |	But I think the goal is you know anyone who wants to
+EDL	00:52:22,399	00:52:25,215	| IOT189 |	I think we're deeply about this any company can do it and he asked
+EDL	00:52:25,215	00:52:25,983	| IOT189 |	The organization
+EDL	00:52:25,983	00:52:28,543	| IOT189 |	You can do it and I mean it be great if
+EDL	00:52:28,543	00:52:31,359	| IOT189 |	On a major data breach of some
+EDL	00:52:31,359	00:52:32,895	| IOT189 |	I Was Here by someone says
+EDL	00:52:34,687	00:52:35,967	| IOT189 |	Hey you know
+EDL	00:52:35,967	00:52:38,783	| IOT189 |	Maybe if they'd adhered to something like the digital standard this wouldn't happen
+EDL	00:52:39,295	00:52:41,087	| IOT189 |	Right and so normalizing
+EDL	00:52:41,087	00:52:42,111	| IOT189 |	Best practices
+EDL	00:52:42,111	00:52:45,183	| IOT189 |	Could be a useful tool in moving the industry as a whole
+EDL	00:52:45,183	00:52:46,463	| IOT189 |	Will get there I mean
+EDL	00:52:46,463	00:52:48,511	| IOT189 |	So if you guys want to find this it's at
+EDL	00:52:48,511	00:52:50,047	| IOT189 |	Www.
+EDL	00:52:50,047	00:52:51,327	| IOT189 |	The digital standard
+EDL	00:52:51,327	00:52:51,839	| IOT189 |	. org
+EDL	00:52:52,351	00:52:53,119	| IOT189 |	And it's
+EDL	00:52:53,119	00:52:54,655	| IOT189 |	I encourage you to look at it
+EDL	00:52:54,655	00:52:55,679	| IOT189 |	You can download
+EDL	00:52:55,679	00:52:57,471	| IOT189 |	I don't get help so yay
+EDL	00:52:57,471	00:52:59,263	| IOT189 |	And apparently make suggestions there
+EDL	00:52:59,263	00:53:00,799	| IOT189 |	Andy do you want to tell us anything else
+EDL	00:53:01,311	00:53:04,127	| IOT189 |	I think that you know I want to make sure that I give
+EDL	00:53:04,127	00:53:05,151	| IOT189 |	Credit to the
+EDL	00:53:05,663	00:53:08,735	| IOT189 |	Help build the standard led by Consumer Reports disconnect
+EDL	00:53:08,735	00:53:12,063	| IOT189 |	Etre conditionnel right by the Cyber independent testing lab and with us
+EDL	00:53:12,575	00:53:13,599	| IOT189 |	Aspiration
+EDL	00:53:13,599	00:53:15,903	| IOT189 |	My colleagues and I don't see I came in at a later date
+EDL	00:53:16,671	00:53:19,743	| IOT189 |	Spread this information around the country and collect feedback
+EDL	00:53:19,743	00:53:21,535	| IOT189 |	But we were so happy to
+EDL	00:53:21,535	00:53:23,071	| IOT189 |	Have you no really
+EDL	00:53:23,071	00:53:24,095	| IOT189 |	Kristen wonderful
+EDL	00:53:24,095	00:53:25,631	| IOT189 |	Set of test to work with
+EDL	00:53:25,631	00:53:26,655	| IOT189 |	Thank you Stacey
+EDL	00:53:26,655	00:53:28,447	| IOT189 |	I really appreciate this conversation
+EDL	00:53:28,447	00:53:34,847	| IOT189 |	Yeah thanks so much for coming on the show this weekend e that's it for this week thanks so much for listening
+EDL	00:53:34,847	00:53:41,247	| IOT189 |	And remember if you'd like more iot news sign up for my newsletter at Stacey on iot
+EDL	00:53:41,247	00:53:43,551	| IOT189 |	Will be next week 

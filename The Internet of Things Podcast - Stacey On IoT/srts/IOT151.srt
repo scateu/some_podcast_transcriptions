@@ -1,0 +1,5075 @@
+1
+00:00:09,472 --> 00:00:12,544
+Hey everyone welcome to the Internet of Things podcast this is your house
+
+2
+00:00:12,800 --> 00:00:14,848
+Stacey Higginbotham and your co-host
+
+3
+00:00:15,104 --> 00:00:15,872
+Kevin tofel
+
+4
+00:00:16,128 --> 00:00:17,920
+We have a lot of news for you
+
+5
+00:00:18,176 --> 00:00:19,200
+Arms new architecture
+
+6
+00:00:19,456 --> 00:00:20,224
+Machine learning at the edge
+
+7
+00:00:20,480 --> 00:00:22,528
+Amazon making its own chips
+
+8
+00:00:23,040 --> 00:00:24,832
+Google hiring a Samsung exec
+
+9
+00:00:25,088 --> 00:00:25,600
+Plus
+
+10
+00:00:25,856 --> 00:00:27,392
+Wechat new wearable news
+
+11
+00:00:27,904 --> 00:00:28,672
+Smart glasses
+
+12
+00:00:28,928 --> 00:00:30,464
+And a homepod review
+
+13
+00:00:31,488 --> 00:00:32,000
+Kevin
+
+14
+00:00:32,256 --> 00:00:33,280
+All this Plus
+
+15
+00:00:33,792 --> 00:00:36,864
+We have our guest alexandros Marino's
+
+16
+00:00:37,120 --> 00:00:38,400
+Who is going to be talking about the
+
+17
+00:00:38,656 --> 00:00:39,168
+Best
+
+18
+00:00:39,424 --> 00:00:43,264
+And fastest growing iot Hardware platforms for both
+
+19
+00:00:43,520 --> 00:00:44,800
+Consumer prototyping
+
+20
+00:00:45,312 --> 00:00:47,104
+Consumer products at scale
+
+21
+00:00:47,360 --> 00:00:48,128
+The industrial internet
+
+22
+00:00:48,384 --> 00:00:48,896
+But first
+
+23
+00:00:49,152 --> 00:00:52,224
+Let's hear a message from our sponsor this week sponsor is
+
+24
+00:00:52,736 --> 00:00:54,016
+Ring
+
+25
+00:00:54,272 --> 00:01:00,416
+Ring the connected doorbell and security camera maker Rings mission is to make neighborhood safer today
+
+26
+00:01:00,672 --> 00:01:06,816
+They over a million people use the ring video doorbell to help protect their hopes ring nose at home security
+
+27
+00:01:07,072 --> 00:01:13,216
+Who's at the front door but it doesn't end there so now they're extending the same level of security to the rest of your home with the ring floodlight cam
+
+28
+00:01:13,472 --> 00:01:19,616
+The floodlight cam is a motion-activated camera and floodlight that connects right to your phone
+
+29
+00:01:19,872 --> 00:01:26,016
+With HD video 2-way audio and more so you can see and speak to visitors and even set off an alarm
+
+30
+00:01:26,272 --> 00:01:32,416
+Rate from here I have tried the ring doorbell but I have not tried the ring floodlight cam
+
+31
+00:01:32,672 --> 00:01:38,816
+And I will say that I really enjoyed my ring doorbell it did its job super well with ring
+
+32
+00:01:39,072 --> 00:01:45,216
+You're always home so for listeners of our show save up to $150 on a ring
+
+33
+00:01:45,472 --> 00:01:51,616
+Ring security kit when you go to ring.com Stacey Stacey
+
+34
+00:01:51,872 --> 00:01:54,432
+So go to ring.com / Stacy
+
+35
+00:01:54,688 --> 00:01:59,040
+As you can get $150 off your ring security
+
+36
+00:01:59,808 --> 00:02:01,088
+Okay Kevin
+
+37
+00:02:01,600 --> 00:02:02,368
+We are back
+
+38
+00:02:03,136 --> 00:02:04,160
+With what are we going to
+
+39
+00:02:04,672 --> 00:02:09,024
+Machine learning at the edge we have to start with chips cuz that's your thing
+
+40
+00:02:10,048 --> 00:02:10,560
+I love that
+
+41
+00:02:11,328 --> 00:02:11,840
+Meet you
+
+42
+00:02:12,096 --> 00:02:13,120
+Potato chips
+
+43
+00:02:13,376 --> 00:02:14,144
+Keauhou
+
+44
+00:02:14,400 --> 00:02:15,424
+Yeah
+
+45
+00:02:16,448 --> 00:02:17,216
+Corn chips
+
+46
+00:02:17,728 --> 00:02:18,752
+Okay I'm sorry
+
+47
+00:02:19,008 --> 00:02:19,520
+I'm sorry
+
+48
+00:02:19,776 --> 00:02:21,824
+I am a little hungry but we're actually talk
+
+49
+00:02:22,080 --> 00:02:22,848
+Talking about
+
+50
+00:02:23,104 --> 00:02:23,872
+Doctors because
+
+51
+00:02:24,128 --> 00:02:25,920
+Who doesn't love a good semiconductor story
+
+52
+00:02:26,176 --> 00:02:32,064
+Basically what's happening is this week arm said that it is going to build a new architecture
+
+53
+00:02:32,320 --> 00:02:34,368
+For machine learning at the
+
+54
+00:02:34,624 --> 00:02:35,136
+The edge
+
+55
+00:02:35,648 --> 00:02:36,160
+In
+
+56
+00:02:36,416 --> 00:02:37,184
+This is
+
+57
+00:02:37,696 --> 00:02:39,744
+You don't just like mess up your architecture
+
+58
+00:02:40,256 --> 00:02:41,024
+For no apparent
+
+59
+00:02:41,792 --> 00:02:45,632
+But what they've decided is they need massive parallel processing
+
+60
+00:02:45,888 --> 00:02:46,656
+At the edge
+
+61
+00:02:46,912 --> 00:02:47,680
+At a very low power
+
+62
+00:02:48,448 --> 00:02:50,496
+They're doing this in a couple different ways
+
+63
+00:02:50,752 --> 00:02:52,032
+They're going to launch two different
+
+64
+00:02:52,288 --> 00:02:55,616
+Flavors of this when is an object detection flavor which is
+
+65
+00:02:55,872 --> 00:02:57,664
+For computer vision specifically
+
+66
+00:02:58,176 --> 00:02:59,968
+And then the other is just generic machine
+
+67
+00:03:00,736 --> 00:03:01,504
+The Edge and
+
+68
+00:03:01,760 --> 00:03:02,784
+Ho Kevin
+
+69
+00:03:03,040 --> 00:03:05,088
+Let's talk about why machine learning at the edge isn't
+
+70
+00:03:07,648 --> 00:03:10,208
+Well let me kick that all sin with a question to you
+
+71
+00:03:10,720 --> 00:03:11,488
+In terms of
+
+72
+00:03:11,744 --> 00:03:13,024
+Edge devices
+
+73
+00:03:13,280 --> 00:03:18,400
+What do you think these will find their way into
+
+74
+00:03:18,656 --> 00:03:19,168
+Cameras
+
+75
+00:03:19,680 --> 00:03:21,984
+I think also maybe some smart speakers
+
+76
+00:03:22,496 --> 00:03:24,032
+You probably will also see them
+
+77
+00:03:24,288 --> 00:03:27,616
+What cameras and smart speakers for the first initial
+
+78
+00:03:27,872 --> 00:03:28,384
+Wave of them
+
+79
+00:03:28,896 --> 00:03:31,712
+And I'll say that because cameras need to
+
+80
+00:03:32,224 --> 00:03:34,528
+If you can do object detection at the edge
+
+81
+00:03:34,784 --> 00:03:37,088
+And the other thing is we should say
+
+82
+00:03:37,600 --> 00:03:38,880
+There's two flavors of machinery
+
+83
+00:03:39,392 --> 00:03:41,184
+There's the training portion where you
+
+84
+00:03:41,440 --> 00:03:42,976
+Train the computer how to
+
+85
+00:03:43,232 --> 00:03:44,000
+Nice something in that takes
+
+86
+00:03:44,256 --> 00:03:45,792
+Typically is dead in the car
+
+87
+00:03:46,304 --> 00:03:47,840
+Because it takes massive computing
+
+88
+00:03:48,096 --> 00:03:49,888
+King Power massive parallel processing you should
+
+89
+00:03:50,144 --> 00:03:50,656
+Peter thousand
+
+90
+00:03:50,912 --> 00:03:52,192
+Thousands of images in there like
+
+91
+00:03:52,704 --> 00:03:54,240
+Learn how to recognize a dog versus a
+
+92
+00:03:55,008 --> 00:03:57,312
+And then there's the execution the inference
+
+93
+00:03:58,592 --> 00:04:00,128
+And that basically
+
+94
+00:04:00,640 --> 00:04:05,248
+Once you've trained a computer you've built a model and then that model gets executed at the end
+
+95
+00:04:06,272 --> 00:04:12,160
+So it's important to know that what are missing is they will actually be able to do both execution and some info
+
+96
+00:04:12,416 --> 00:04:13,952
+Prince at the edge
+
+97
+00:04:15,744 --> 00:04:18,303
+It is because you mentioned that you know the cloud
+
+98
+00:04:18,559 --> 00:04:21,119
+Approached I noticed in arms documentation
+
+99
+00:04:21,375 --> 00:04:24,703
+They have discussed neural network Frameworks and they
+
+100
+00:04:25,215 --> 00:04:28,031
+They say there no network software Translate
+
+101
+00:04:28,543 --> 00:04:30,079
+Google tensorflow for example
+
+102
+00:04:30,591 --> 00:04:31,103
+Which is
+
+103
+00:04:31,359 --> 00:04:32,639
+The big machine learning
+
+104
+00:04:32,895 --> 00:04:37,503
+Backbone of Google nearest tensorflow everywhere you wouldn't see it or hear call tensorflow
+
+105
+00:04:38,015 --> 00:04:44,159
+But a product delivers is coming to a lot of devices so I'm wondering and I know we don't discuss these on on the show
+
+106
+00:04:44,415 --> 00:04:48,767
+Show that much I'm wondering how many phone makers will integrate this and we see it first there
+
+107
+00:04:49,279 --> 00:04:49,791
+As it
+
+108
+00:04:50,047 --> 00:04:51,071
+Comes out to Iowa
+
+109
+00:04:51,327 --> 00:04:54,399
+T-Type devices the only reason I say that is because I know that
+
+110
+00:04:54,655 --> 00:04:57,471
+I said Huawei with their Kirin processors have
+
+111
+00:04:57,727 --> 00:04:58,239
+Some
+
+112
+00:04:58,751 --> 00:04:59,775
+Aai chip
+
+113
+00:05:00,287 --> 00:05:02,335
+In the now as well as
+
+114
+00:05:02,591 --> 00:05:04,127
+Who else is working on that
+
+115
+00:05:04,639 --> 00:05:07,199
+I want to say Samsung but not have any products right now
+
+116
+00:05:07,455 --> 00:05:08,479
+So I'm just wondering if
+
+117
+00:05:09,247 --> 00:05:12,575
+Bissell filter out through phones first and then float further to the edge
+
+118
+00:05:12,831 --> 00:05:17,183
+I imagine they will I also would say that we will see these for sure in 6
+
+119
+00:05:18,207 --> 00:05:21,791
+And possibly drones actually drones has a really interesting use
+
+120
+00:05:22,047 --> 00:05:22,559
+Case for something like
+
+121
+00:05:23,071 --> 00:05:26,143
+So I should correct something though because they have the two
+
+122
+00:05:26,399 --> 00:05:29,471
+Machine learning and then they have the object detection processors
+
+123
+00:05:29,727 --> 00:05:32,799
+The object detection processor will only do
+
+124
+00:05:33,055 --> 00:05:35,871
+Inference so basically that's not going to be training
+
+125
+00:05:36,383 --> 00:05:37,407
+You can't train enough
+
+126
+00:05:37,919 --> 00:05:38,431
+Section at the
+
+127
+00:05:39,199 --> 00:05:42,527
+Right so that's going to be providing the information
+
+128
+00:05:43,039 --> 00:05:43,551
+Royal
+
+129
+00:05:44,831 --> 00:05:45,343
+Rap
+
+130
+00:05:45,599 --> 00:05:46,367
+That's okay though
+
+131
+00:05:46,623 --> 00:05:49,183
+Weather saying this can do is they're going to have
+
+132
+00:05:49,439 --> 00:05:49,951
+You can show
+
+133
+00:05:50,207 --> 00:05:51,743
+People the direction they're facing
+
+134
+00:05:52,255 --> 00:05:54,303
+Hindu gesture and pose
+
+135
+00:05:54,559 --> 00:05:58,655
+And this is all based the object detection is based on their acquisition of apical
+
+136
+00:05:58,911 --> 00:05:59,423
+Colwich
+
+137
+00:05:59,679 --> 00:06:00,191
+I had
+
+138
+00:06:00,447 --> 00:06:03,775
+Talk 2 years ago was like super excited about him so pumped when are
+
+139
+00:06:05,311 --> 00:06:07,103
+I'm glad to see that acquisition finally met
+
+140
+00:06:09,663 --> 00:06:12,735
+And I don't know what else to tell you guys about this other than
+
+141
+00:06:16,575 --> 00:06:18,111
+They're not alone there's a lot of
+
+142
+00:06:21,695 --> 00:06:24,767
+In a moment this is called project Trillium so if you see
+
+143
+00:06:25,023 --> 00:06:25,791
+References to that
+
+144
+00:06:26,047 --> 00:06:29,375
+You guys we should see the object detection processor
+
+145
+00:06:29,887 --> 00:06:31,935
+We're not going to expect any silicon-based on this
+
+146
+00:06:32,191 --> 00:06:33,983
+Until mid-to-late 2019
+
+147
+00:06:34,495 --> 00:06:35,263
+At the earliest
+
+148
+00:06:35,775 --> 00:06:36,799
+So that means it's not actually good
+
+149
+00:06:37,055 --> 00:06:38,591
+B&N products
+
+150
+00:06:38,847 --> 00:06:39,359
+Until like
+
+151
+00:06:40,639 --> 00:06:41,919
+So this is far-reaching
+
+152
+00:06:42,175 --> 00:06:44,735
+Right because arm doesn't make chips they just create the
+
+153
+00:06:44,991 --> 00:06:46,015
+The architecture of that
+
+154
+00:06:46,271 --> 00:06:47,039
+Jamaica reviews
+
+155
+00:06:50,623 --> 00:06:51,135
+Call Apple
+
+156
+00:06:51,391 --> 00:06:53,951
+Immediate acne
+
+157
+00:06:54,207 --> 00:06:56,511
+Aura Plano license and they will
+
+158
+00:06:58,047 --> 00:07:01,887
+This might not sound like it's related but I'm going to it is something to mention it
+
+159
+00:07:02,143 --> 00:07:03,423
+Apparently the hive
+
+160
+00:07:03,679 --> 00:07:05,727
+Camera uses a first generation
+
+161
+00:07:05,983 --> 00:07:08,031
+OD chip from based on arm
+
+162
+00:07:08,287 --> 00:07:10,079
+This is the second OD
+
+163
+00:07:10,335 --> 00:07:12,383
+Generation chip from arm or architecture
+
+164
+00:07:12,639 --> 00:07:13,407
+From our mission say
+
+165
+00:07:13,919 --> 00:07:15,967
+Alan just wondering I'm not familiar with the hive
+
+166
+00:07:16,223 --> 00:07:16,735
+Camera
+
+167
+00:07:16,991 --> 00:07:22,111
+Send wondering what kind of object detection that has Hive is from British gas it's there
+
+168
+00:07:22,367 --> 00:07:26,463
+It's sold in the UK and that's because this isn't actually from our mats from Apple
+
+169
+00:07:26,719 --> 00:07:27,743
+Which is the company that
+
+170
+00:07:28,255 --> 00:07:29,279
+Icing
+
+171
+00:07:29,791 --> 00:07:31,839
+Yes it does have object detection
+
+172
+00:07:32,095 --> 00:07:32,607
+It is
+
+173
+00:07:32,863 --> 00:07:33,631
+I think it's
+
+174
+00:07:33,887 --> 00:07:34,399
+Facial
+
+175
+00:07:34,655 --> 00:07:35,423
+I think it's facial
+
+176
+00:07:35,935 --> 00:07:36,959
+Ignition
+
+177
+00:07:37,215 --> 00:07:40,031
+But I don't know beyond much beyond that
+
+178
+00:07:40,287 --> 00:07:42,591
+Curious hi-vis actual
+
+179
+00:07:42,847 --> 00:07:43,359
+Planning
+
+180
+00:07:45,663 --> 00:07:46,943
+They're trying to build their US
+
+181
+00:07:47,967 --> 00:07:50,527
+It's a subscription-based service.
+
+182
+00:07:50,783 --> 00:07:52,319
+That was so it's you get the hardware and you
+
+183
+00:07:52,575 --> 00:07:53,087
+Pay the money
+
+184
+00:07:53,599 --> 00:07:54,367
+It's lovely
+
+185
+00:07:55,647 --> 00:07:56,927
+Little bit about that okay
+
+186
+00:07:57,439 --> 00:07:58,975
+Let's move on to
+
+187
+00:08:00,767 --> 00:08:01,535
+Amazon
+
+188
+00:08:02,815 --> 00:08:03,327
+So
+
+189
+00:08:04,351 --> 00:08:07,679
+But Amazon is actually so the big news this week was
+
+190
+00:08:07,935 --> 00:08:10,239
+Last December when Amazon acquired
+
+191
+00:08:10,495 --> 00:08:13,055
+Blink which was the wireless the battery
+
+192
+00:08:13,311 --> 00:08:13,823
+Empowered
+
+193
+00:08:14,079 --> 00:08:14,591
+Camera
+
+194
+00:08:14,847 --> 00:08:16,127
+And they also make a doorbell
+
+195
+00:08:16,383 --> 00:08:20,991
+So when Amazon acquired blank it was a deal valued at about 90 million dollars which
+
+196
+00:08:21,247 --> 00:08:21,759
+Pets
+
+197
+00:08:22,015 --> 00:08:27,391
+The interesting thing is and I said this last December is that blink is not just a camera maker
+
+198
+00:08:27,647 --> 00:08:28,927
+It actually made a
+
+199
+00:08:29,439 --> 00:08:29,951
+Add imagery
+
+200
+00:08:30,207 --> 00:08:30,975
+Ignition chip
+
+201
+00:08:31,743 --> 00:08:33,535
+Ecology a video it's actually a video processing
+
+202
+00:08:34,303 --> 00:08:35,327
+Chip and
+
+203
+00:08:35,583 --> 00:08:37,119
+It did it at super low power
+
+204
+00:08:37,375 --> 00:08:38,143
+Empathize
+
+205
+00:08:38,655 --> 00:08:39,935
+Buy the chip company
+
+206
+00:08:40,191 --> 00:08:43,263
+Me and we're selling these chips for like five bucks to like DVD Maker
+
+207
+00:08:43,519 --> 00:08:44,287
+And this is
+
+208
+00:08:44,799 --> 00:08:45,311
+No prop
+
+209
+00:08:45,567 --> 00:08:46,591
+Just terrible business for
+
+210
+00:08:46,847 --> 00:08:50,431
+So they were like what else could we use this more and they decided to build a video game
+
+211
+00:08:50,943 --> 00:08:52,735
+I want to make use of their technology
+
+212
+00:08:53,247 --> 00:08:54,271
+And that's how blank was for
+
+213
+00:08:54,527 --> 00:08:57,855
+So Amazon when they bought link they got that shipped
+
+214
+00:08:58,623 --> 00:09:00,415
+In addition to that
+
+215
+00:09:00,671 --> 00:09:06,303
+The information is reporting that Amazon is developing a chip design for artificial intelligence
+
+216
+00:09:06,559 --> 00:09:07,583
+Twerk on the echo
+
+217
+00:09:07,839 --> 00:09:08,607
+Other Hardware
+
+218
+00:09:09,119 --> 00:09:10,655
+Powered by Madame
+
+219
+00:09:10,911 --> 00:09:15,007
+So is story if any information is talking about Amazon's acquisition of a
+
+220
+00:09:15,263 --> 00:09:17,311
+Company a couple years ago called Annapurna
+
+221
+00:09:17,567 --> 00:09:22,943
+Annapurna was doing networking chips and they were dealing primarily with a software layer of
+
+222
+00:09:23,455 --> 00:09:23,967
+Networking
+
+223
+00:09:24,223 --> 00:09:26,271
+So creating basically they call it a fabric
+
+224
+00:09:27,551 --> 00:09:29,855
+Fabrics are used to manage
+
+225
+00:09:30,367 --> 00:09:32,415
+Moving information around the chip is probably the
+
+226
+00:09:32,927 --> 00:09:33,439
+Best way to describe it
+
+227
+00:09:34,207 --> 00:09:34,719
+You think that's fair
+
+228
+00:09:35,231 --> 00:09:35,999
+Lancaster
+
+229
+00:09:36,255 --> 00:09:38,303
+Okay so Annapurna is a fabric
+
+230
+00:09:39,071 --> 00:09:41,119
+And when you're talk about machine learning
+
+231
+00:09:41,631 --> 00:09:43,423
+This is super important because
+
+232
+00:09:43,935 --> 00:09:48,031
+When I talk about machine learning it keeps saying the word massively parallel processes
+
+233
+00:09:48,287 --> 00:09:51,103
+And that's exactly how these jobs are divided up so you
+
+234
+00:09:51,359 --> 00:09:52,127
+You send
+
+235
+00:09:52,639 --> 00:09:55,199
+One job to One Core another job to another core in
+
+236
+00:09:55,455 --> 00:09:58,015
+So on and so on but you need a fabric to manage all
+
+237
+00:09:58,783 --> 00:10:00,319
+Until annapurna's good at that
+
+238
+00:10:00,575 --> 00:10:01,343
+And then we got it
+
+239
+00:10:01,599 --> 00:10:02,111
+The blink
+
+240
+00:10:02,367 --> 00:10:04,415
+Video processing so that makes sense
+
+241
+00:10:04,671 --> 00:10:06,463
+And then Amazon has its own chip design
+
+242
+00:10:06,719 --> 00:10:07,231
+Singer sew
+
+243
+00:10:08,255 --> 00:10:09,791
+I think we're going to see is some
+
+244
+00:10:10,303 --> 00:10:11,839
+Intelligence at the edge
+
+245
+00:10:12,095 --> 00:10:12,607
+Happening
+
+246
+00:10:12,863 --> 00:10:15,679
+And it sounds like it's going to happen both from
+
+247
+00:10:16,191 --> 00:10:21,311
+Companies that are traditional ship providers but also if you're going to be building consumer Hardware you're going to need to do it yourself
+
+248
+00:10:22,079 --> 00:10:24,895
+And I'm wondering a couple things about this
+
+249
+00:10:25,151 --> 00:10:27,967
+Totally see where this is going on agree with you
+
+250
+00:10:28,479 --> 00:10:31,039
+The first thing I thought I could ever was talking about Otis
+
+251
+00:10:31,295 --> 00:10:34,623
+Speed this is going to bring to Matt amazed responses is going to be amazing
+
+252
+00:10:34,879 --> 00:10:36,415
+Everybody kept focusing on that and like
+
+253
+00:10:36,927 --> 00:10:43,071
+Oh yeah but also I think there may be something here when you push a lot of that intelligence away from the cloud down
+
+254
+00:10:43,327 --> 00:10:43,839
+The edge
+
+255
+00:10:44,351 --> 00:10:45,887
+You improved
+
+256
+00:10:46,143 --> 00:10:47,167
+Perception of privacy
+
+257
+00:10:48,703 --> 00:10:52,287
+And that's something that right now all of these smart speakers
+
+258
+00:10:52,543 --> 00:10:53,311
+SAR fighting
+
+259
+00:10:53,567 --> 00:10:56,895
+You know nobody wants these always on microphone send me all the information on the cloud
+
+260
+00:10:57,151 --> 00:11:00,223
+If you can do all of it with ML at the edge
+
+261
+00:11:00,479 --> 00:11:01,759
+And not rely on the cloud
+
+262
+00:11:02,271 --> 00:11:04,063
+That really helps with that area I think
+
+263
+00:11:04,319 --> 00:11:06,879
+It does the question then becomes what data does get
+
+264
+00:11:07,135 --> 00:11:07,647
+Pushed off bridge
+
+265
+00:11:07,903 --> 00:11:08,415
+Cuz you do need
+
+266
+00:11:08,671 --> 00:11:10,719
+And eventually when you can actually do
+
+267
+00:11:11,231 --> 00:11:13,535
+Training at the edge then you actually
+
+268
+00:11:13,791 --> 00:11:14,559
+Get the opportunity
+
+269
+00:11:15,071 --> 00:11:17,375
+Personalized Services until then
+
+270
+00:11:17,631 --> 00:11:18,399
+Depersonalization.
+
+271
+00:11:19,935 --> 00:11:20,959
+Right right
+
+272
+00:11:21,215 --> 00:11:27,103
+And the other thing that jumped out at me on this is a definite Trend you're obviously I didn't know about the on Trillium when this
+
+273
+00:11:27,359 --> 00:11:28,383
+Amazon news came out
+
+274
+00:11:28,895 --> 00:11:32,479
+But it relates back to that everybody seems to be making
+
+275
+00:11:32,735 --> 00:11:35,039
+Chips for the edge for their own products
+
+276
+00:11:35,295 --> 00:11:41,439
+Such as apple is using its A8 processor from the iPhone 6 or 7 I forget which
+
+277
+00:11:41,695 --> 00:11:42,975
+In the homepod freezing
+
+278
+00:11:43,743 --> 00:11:46,815
+Now you'll see Amazon devices eventually have this
+
+279
+00:11:47,327 --> 00:11:48,351
+Google has been
+
+280
+00:11:48,607 --> 00:11:49,375
+Talk about with
+
+281
+00:11:49,631 --> 00:11:50,399
+Creating their own
+
+282
+00:11:50,655 --> 00:11:51,679
+Soces and such
+
+283
+00:11:52,191 --> 00:11:52,959
+Need the visual
+
+284
+00:11:53,983 --> 00:11:56,031
+That's right they did they did which is
+
+285
+00:11:57,311 --> 00:11:58,847
+At the TV is exact
+
+286
+00:11:59,359 --> 00:12:03,199
+Exactly so it's definitely a trend and I'm wondering in Amazon
+
+287
+00:12:03,455 --> 00:12:04,479
+Case particular
+
+288
+00:12:04,991 --> 00:12:08,575
+Will this be limited to Amazon Hardware only and I'm going to guess
+
+289
+00:12:08,831 --> 00:12:09,343
+Yes
+
+290
+00:12:09,599 --> 00:12:10,879
+And the reason I'm saying yes
+
+291
+00:12:11,135 --> 00:12:14,463
+As a guess is because they let you freely use
+
+292
+00:12:14,719 --> 00:12:20,095
+Maddie Mae's voice services but there are very specific features and functions that are not on
+
+293
+00:12:20,351 --> 00:12:23,423
+Non Amazon devices with matinees voice services
+
+294
+00:12:23,679 --> 00:12:26,495
+I'm just under the wondering if Amazon keeps that chip
+
+295
+00:12:27,263 --> 00:12:28,287
+Feature set
+
+296
+00:12:28,543 --> 00:12:29,311
+In the house
+
+297
+00:12:31,871 --> 00:12:38,015
+Well it but then again they also cut off potential Hardware partner such as you know the Sonos example has Madame a in it
+
+298
+00:12:38,271 --> 00:12:40,063
+I can't do everything that an echo can do but I do
+
+299
+00:12:40,319 --> 00:12:41,343
+90% of it
+
+300
+00:12:41,855 --> 00:12:42,367
+What date
+
+301
+00:12:42,879 --> 00:12:43,647
+Want to
+
+302
+00:12:43,903 --> 00:12:45,695
+Check all these Hardware manufacturers off
+
+303
+00:12:48,511 --> 00:12:49,535
+So
+
+304
+00:12:49,791 --> 00:12:51,583
+That's a good thing to think about Kevin
+
+305
+00:12:52,095 --> 00:12:54,143
+All right I will I will think about it
+
+306
+00:12:54,911 --> 00:12:55,679
+Meanwhile
+
+307
+00:12:55,935 --> 00:12:57,215
+We will move on to Google
+
+308
+00:12:57,471 --> 00:12:59,775
+Hiring a Samsung executive
+
+309
+00:13:00,031 --> 00:13:02,079
+To focus on iot
+
+310
+00:13:02,335 --> 00:13:03,103
+Specifically
+
+311
+00:13:03,359 --> 00:13:04,127
+In the cloud
+
+312
+00:13:04,895 --> 00:13:10,015
+And not just any executive either this is the guy his name is in John R E
+
+313
+00:13:10,271 --> 00:13:13,343
+He used to be the EVP and head of Samsung pay
+
+314
+00:13:13,855 --> 00:13:19,743
+This goes back about two-and-a-half years ago and he was instrumental with Bixby
+
+315
+00:13:19,999 --> 00:13:21,023
+So
+
+316
+00:13:21,279 --> 00:13:22,815
+And it's interesting because I
+
+317
+00:13:23,071 --> 00:13:25,631
+What did I read I read something this week oh I don't know it was
+
+318
+00:13:25,887 --> 00:13:28,191
+There's an interview with Google Rick osterloh
+
+319
+00:13:28,447 --> 00:13:33,055
+There's a really good interview about getting Google AI into all of Google's product
+
+320
+00:13:33,311 --> 00:13:36,639
+The one question I didn't see asked or maybe was asking was an answer his
+
+321
+00:13:36,895 --> 00:13:39,967
+What is a think of Madame a in Bixby and other
+
+322
+00:13:40,223 --> 00:13:44,063
+Named you no assistance I want to name them all because I don't set a resources up
+
+323
+00:13:44,319 --> 00:13:49,183
+I'd be very curious to see what Google thinks but now that got somebody who's coming from the Bixby fold
+
+324
+00:13:49,695 --> 00:13:50,207
+Indeed
+
+325
+00:13:50,719 --> 00:13:51,231
+So
+
+326
+00:13:51,487 --> 00:13:52,511
+I think this is a good
+
+327
+00:13:52,767 --> 00:13:54,559
+Story Samsung actually has built
+
+328
+00:13:54,815 --> 00:13:55,839
+A really good
+
+329
+00:13:56,351 --> 00:13:57,887
+Cloud business believe it or not
+
+330
+00:13:58,143 --> 00:14:01,471
+There used to be Arctic now it's SmartThings cloud
+
+331
+00:14:01,983 --> 00:14:04,287
+Their focus on connecting everything
+
+332
+00:14:04,543 --> 00:14:06,079
+Is a neutral third party
+
+333
+00:14:06,335 --> 00:14:09,407
+It is really easy to use even I have actually use
+
+334
+00:14:10,175 --> 00:14:15,295
+I'm kind of stunned by that but it's a good implementation and I know I talk to people who are
+
+335
+00:14:15,551 --> 00:14:16,063
+Using them
+
+336
+00:14:16,319 --> 00:14:16,831
+So
+
+337
+00:14:17,343 --> 00:14:19,135
+To the extent of this guy worked on
+
+338
+00:14:19,391 --> 00:14:20,671
+The Knox security system
+
+339
+00:14:21,183 --> 00:14:21,695
+Spigen Samsung
+
+340
+00:14:22,463 --> 00:14:25,791
+How much time he spent on their Cloud stuff
+
+341
+00:14:26,047 --> 00:14:26,559
+But
+
+342
+00:14:26,815 --> 00:14:30,143
+If you can bring that Samsung really is trying to be this neutral
+
+343
+00:14:30,655 --> 00:14:36,799
+Play right so if you can bring some of that okay coming from inside
+
+344
+00:14:37,055 --> 00:14:39,615
+Google and I know I can talk about this plus my own just
+
+345
+00:14:40,127 --> 00:14:41,151
+Research into this
+
+346
+00:14:41,663 --> 00:14:44,479
+Samsung is very very good at
+
+347
+00:14:44,735 --> 00:14:45,759
+Acting neutral
+
+348
+00:14:46,271 --> 00:14:46,783
+But
+
+349
+00:14:47,551 --> 00:14:52,415
+In the real world at the end of the day same songs in it for Samsung and I say that because
+
+350
+00:14:52,671 --> 00:14:54,975
+They often recreate things that
+
+351
+00:14:55,231 --> 00:14:56,767
+Android already has
+
+352
+00:14:57,023 --> 00:14:58,047
+Maybe doesn't do well
+
+353
+00:14:58,559 --> 00:15:00,351
+A lot of what's in Android actually did
+
+354
+00:15:00,607 --> 00:15:03,935
+Come from Samsung split screen multitasking on a phone
+
+355
+00:15:04,191 --> 00:15:06,495
+Samsung did it first with their Galaxy Note 2
+
+356
+00:15:07,007 --> 00:15:07,519
+Eventually
+
+357
+00:15:07,775 --> 00:15:09,055
+Android just accepted it
+
+358
+00:15:09,567 --> 00:15:13,151
+Samsung's Knox which is there security system for Android devices
+
+359
+00:15:13,407 --> 00:15:14,175
+In the Enterprise
+
+360
+00:15:14,943 --> 00:15:16,479
+That was competing head-to-head with
+
+361
+00:15:16,735 --> 00:15:17,247
+Google
+
+362
+00:15:17,503 --> 00:15:18,783
+Android Enterprise stop
+
+363
+00:15:19,039 --> 00:15:21,343
+Sure enough after about 2 or 3 years of competing
+
+364
+00:15:21,599 --> 00:15:23,903
+Google said you know we're going to be working agreement out
+
+365
+00:15:24,159 --> 00:15:25,695
+An integrated Knox
+
+366
+00:15:25,951 --> 00:15:26,975
+Features into
+
+367
+00:15:27,231 --> 00:15:29,023
+Android not to still separate but
+
+368
+00:15:29,279 --> 00:15:29,791
+Google
+
+369
+00:15:30,047 --> 00:15:33,375
+Subsumes a lot of what Samsung does and obviously Samsung
+
+370
+00:15:33,631 --> 00:15:34,655
+Compensated for that
+
+371
+00:15:34,911 --> 00:15:36,703
+And I'm wondering in this case
+
+372
+00:15:36,959 --> 00:15:41,567
+I'm wondering if either part of their Cloud business if they got some expertise that Google doesn't have
+
+373
+00:15:41,823 --> 00:15:43,359
+Or with their digital assistant
+
+374
+00:15:43,871 --> 00:15:48,735
+If there are some things Bixby does more efficiently or or does that Google Assistant doesn't do
+
+375
+00:15:49,247 --> 00:15:53,087
+You watch give it a year or so and it'll get subsumed into Google
+
+376
+00:15:53,343 --> 00:15:54,111
+Okay well that's
+
+377
+00:15:54,367 --> 00:15:54,879
+That doesn't
+
+378
+00:15:55,135 --> 00:15:55,903
+Sound terrible
+
+379
+00:15:57,439 --> 00:15:58,975
+Oh no not at all not at all
+
+380
+00:15:59,231 --> 00:16:04,095
+No knocks when I say this I don't mean don't expect Bixby replace Google Assistant
+
+381
+00:16:04,607 --> 00:16:08,703
+Probably still live on its own on Samsung devices
+
+382
+00:16:09,215 --> 00:16:09,983
+Or unless
+
+383
+00:16:10,239 --> 00:16:11,519
+And best case I think for users
+
+384
+00:16:12,031 --> 00:16:14,591
+Bixby and Google Assistant just become the best
+
+385
+00:16:14,847 --> 00:16:16,127
+Read in one product
+
+386
+00:16:16,639 --> 00:16:21,503
+And that product would be Google Assistant course and it would go on all Samsung phones and
+
+387
+00:16:21,759 --> 00:16:25,343
+Bixby would essentially disappear inside of Google Assistant
+
+388
+00:16:26,111 --> 00:16:26,879
+I need weather
+
+389
+00:16:28,927 --> 00:16:31,231
+I have three in my room right now so yes I agree
+
+390
+00:16:31,743 --> 00:16:34,303
+Netflix PS3 controller systems
+
+391
+00:16:35,071 --> 00:16:36,095
+You could have four
+
+392
+00:16:37,119 --> 00:16:40,191
+Galaxy S8 yes but I'm not going to do that right now
+
+393
+00:16:40,703 --> 00:16:41,215
+Okay
+
+394
+00:16:41,471 --> 00:16:42,495
+Moving on from
+
+395
+00:16:42,751 --> 00:16:45,311
+Google Samsung the Mysteries they weave
+
+396
+00:16:45,567 --> 00:16:48,127
+Let's talk about a new radio in Wareham
+
+397
+00:16:49,151 --> 00:16:55,295
+Yeah this surprise me I don't really know too much I just got a press release before the show from Altair semiconductor
+
+398
+00:16:56,063 --> 00:16:59,135
+And they announced their collaboration with Ericsson and Sony mobile
+
+399
+00:16:59,391 --> 00:17:00,159
+What they're going to do it
+
+400
+00:17:00,415 --> 00:17:02,975
+Mobile World Congress is demonstrate
+
+401
+00:17:03,231 --> 00:17:04,255
+A new wearable device
+
+402
+00:17:04,511 --> 00:17:09,119
+Well it's a wristband for diabetic patients that connects to a continuous glucose monitoring device
+
+403
+00:17:09,887 --> 00:17:16,031
+The interesting part is we seen these kinds of things before they're using Altair's lte-m chips
+
+404
+00:17:16,287 --> 00:17:17,823
+Set for cellular connectivity
+
+405
+00:17:18,079 --> 00:17:19,103
+Without so you can
+
+406
+00:17:19,359 --> 00:17:20,127
+Center data back
+
+407
+00:17:20,383 --> 00:17:21,407
+Cheetah monitoring system
+
+408
+00:17:21,663 --> 00:17:22,687
+Without having your phone
+
+409
+00:17:22,943 --> 00:17:24,991
+It's always interesting because when we talk about
+
+410
+00:17:25,247 --> 00:17:27,295
+You know Cat 1 ml tem Etc
+
+411
+00:17:28,063 --> 00:17:30,623
+We talked about a lot of devices at the edge that
+
+412
+00:17:31,135 --> 00:17:33,695
+Run for long time on a battery so that's why
+
+413
+00:17:33,951 --> 00:17:35,743
+You know they use low-power radios and so on
+
+414
+00:17:36,255 --> 00:17:39,071
+Not wearable devices so this is kind of interesting to me
+
+415
+00:17:39,583 --> 00:17:40,863
+I agree and you fight
+
+416
+00:17:41,119 --> 00:17:43,679
+I mean you got your Apple watch with its own
+
+417
+00:17:43,935 --> 00:17:44,959
+Sim and
+
+418
+00:17:45,471 --> 00:17:45,983
+Is 4 G
+
+419
+00:17:46,751 --> 00:17:52,127
+It's not yet said at least 10 with an LTE connection
+
+420
+00:17:52,383 --> 00:17:55,455
+It makes sense to have this direct line out
+
+421
+00:17:55,711 --> 00:17:56,223
+4
+
+422
+00:17:56,479 --> 00:17:58,271
+You got to send that data
+
+423
+00:17:58,527 --> 00:17:59,551
+To the cloud to be monitored
+
+424
+00:18:00,319 --> 00:18:01,343
+And I assume
+
+425
+00:18:01,599 --> 00:18:02,367
+Especially for like
+
+426
+00:18:02,623 --> 00:18:03,903
+Elderly or children
+
+427
+00:18:04,415 --> 00:18:08,767
+You actually don't want to just collect in store for a while cuz if something's wrong you need to be able to
+
+428
+00:18:10,815 --> 00:18:13,887
+Writes the funny thing is he just only cuz you brought the Apple watch
+
+429
+00:18:14,399 --> 00:18:20,543
+Apps and really not been built to take advantage of the LTE Connection by that I mean I leave my phone at home and I'll go
+
+430
+00:18:20,799 --> 00:18:22,079
+Go out for a few hours at a time
+
+431
+00:18:22,335 --> 00:18:25,663
+Sure I get messages I get phone calls I can chat with you Stacy him
+
+432
+00:18:25,919 --> 00:18:26,687
+Cetera
+
+433
+00:18:26,943 --> 00:18:31,551
+When I go run for example all that data is captured with GPS heart rate and so on
+
+434
+00:18:32,063 --> 00:18:34,367
+I have to actually go back home and
+
+435
+00:18:34,879 --> 00:18:36,927
+Think it over through to my phone
+
+436
+00:18:37,439 --> 00:18:38,975
+I can't do that remotely
+
+437
+00:18:39,231 --> 00:18:42,559
+You can't go to it may make sense for now from ABBA
+
+438
+00:18:43,071 --> 00:18:43,583
+Perspective
+
+439
+00:18:44,095 --> 00:18:45,887
+Not a lot of data
+
+440
+00:18:47,167 --> 00:18:50,495
+People use anything set for phone calls use it for a phone call I can tell you
+
+441
+00:18:50,751 --> 00:18:53,567
+You lose 1% per minute on a phone call that's why
+
+442
+00:18:53,823 --> 00:18:57,407
+If you are not spending our on the phone you're going to lose 60% of your
+
+443
+00:18:57,663 --> 00:18:58,687
+Apple watch battery life
+
+444
+00:18:59,199 --> 00:19:02,783
+And I mean that is another example though
+
+445
+00:19:03,551 --> 00:19:07,391
+You're still get it's not much data but every little bit counts I mean if I start thinking
+
+446
+00:19:07,647 --> 00:19:08,671
+At the data that just goes back
+
+447
+00:19:09,695 --> 00:19:10,207
+IPhone to the cloud
+
+448
+00:19:10,719 --> 00:19:12,255
+Right as rain
+
+449
+00:19:13,279 --> 00:19:18,143
+True beauty but even so you could optimize like in a health situation cuz it's modern my my heart rate
+
+450
+00:19:18,399 --> 00:19:22,751
+It doesn't need to send all that heart rate data back to the cloud or anywhere until I get home anyway
+
+451
+00:19:23,007 --> 00:19:26,591
+Unless maybe there's a some smarts in there says hey
+
+452
+00:19:26,847 --> 00:19:28,895
+This guy might be having a heart attack or something right now
+
+453
+00:19:29,151 --> 00:19:31,711
+That day and you ain't get sent on the always-on connection
+
+454
+00:19:31,967 --> 00:19:33,247
+You don't have to send all the day
+
+455
+00:19:33,759 --> 00:19:35,039
+That's true and that's where we're
+
+456
+00:19:35,551 --> 00:19:36,063
+See some really cool stuff
+
+457
+00:19:37,343 --> 00:19:37,855
+The hierarchy
+
+458
+00:19:38,367 --> 00:19:39,135
+Activation
+
+459
+00:19:39,391 --> 00:19:41,695
+Is what they call it and it's basically you have a chip
+
+460
+00:19:41,951 --> 00:19:42,975
+It senses something
+
+461
+00:19:43,231 --> 00:19:45,279
+And that it's it takes the next action so
+
+462
+00:19:45,535 --> 00:19:49,631
+You have something that says oh this is a trigger I recognize that that is a trigger
+
+463
+00:19:49,887 --> 00:19:53,215
+And it's important and I'm going to wake up something else so I can wake up the
+
+464
+00:19:53,983 --> 00:19:54,751
+Modem and say
+
+465
+00:19:55,263 --> 00:19:56,287
+Home
+
+466
+00:19:56,799 --> 00:19:59,615
+I got to bring back the machine learning in the chips back into this
+
+467
+00:20:00,639 --> 00:20:01,151
+Okay
+
+468
+00:20:01,407 --> 00:20:02,431
+I know you're disappointed with
+
+469
+00:20:02,687 --> 00:20:03,199
+Apps
+
+470
+00:20:04,991 --> 00:20:06,527
+Let's talk about
+
+471
+00:20:07,551 --> 00:20:09,343
+Something fun that we missed last week
+
+472
+00:20:09,855 --> 00:20:10,623
+List two things last
+
+473
+00:20:11,391 --> 00:20:11,903
+1
+
+474
+00:20:12,159 --> 00:20:14,207
+We missed Intel smart glasses which were about to talk about
+
+475
+00:20:14,463 --> 00:20:14,975
+Into
+
+476
+00:20:15,487 --> 00:20:16,767
+We miss celebrating our hundred
+
+477
+00:20:17,023 --> 00:20:17,535
+50th Park
+
+478
+00:20:18,047 --> 00:20:19,327
+That's right we did
+
+479
+00:20:21,887 --> 00:20:23,167
+So let's talk about those glasses
+
+480
+00:20:23,679 --> 00:20:26,495
+Yeah and I was very interested in this only because I
+
+481
+00:20:26,751 --> 00:20:29,055
+Purchase. I was reimbursed for it through work
+
+482
+00:20:29,311 --> 00:20:31,359
+Google Glass back in 2014
+
+483
+00:20:31,871 --> 00:20:36,223
+Still have them don't use them obviously not a successful product at least in the way that
+
+484
+00:20:36,479 --> 00:20:37,247
+Google might have holes
+
+485
+00:20:37,503 --> 00:20:38,527
+It has been used in
+
+486
+00:20:38,783 --> 00:20:40,831
+Certain verticals in Enterprise right now but
+
+487
+00:20:41,087 --> 00:20:41,599
+Other than that
+
+488
+00:20:41,855 --> 00:20:43,135
+Nope can't buy everything
+
+489
+00:20:43,391 --> 00:20:46,975
+Intel smart glasses are similar but different and are different enough
+
+490
+00:20:47,231 --> 00:20:49,279
+To have a lot more potential in my opinion
+
+491
+00:20:49,535 --> 00:20:50,559
+Because they do less
+
+492
+00:20:50,815 --> 00:20:51,839
+What I mean by that is
+
+493
+00:20:52,095 --> 00:20:52,607
+They
+
+494
+00:20:52,863 --> 00:20:53,631
+Willie r a
+
+495
+00:20:53,887 --> 00:20:54,399
+A notification
+
+496
+00:20:54,655 --> 00:20:55,679
+Open system for the most part
+
+497
+00:20:55,935 --> 00:20:57,471
+They're also don't look like
+
+498
+00:20:57,727 --> 00:21:01,055
+Anything from futuristic they look like regular glasses frames
+
+499
+00:21:01,311 --> 00:21:06,687
+Are all of the chips and battery and connectivity inside the side of the frames
+
+500
+00:21:06,943 --> 00:21:13,087
+You can't even see them there's no prism display actually sticking out from these things like Google Glass head instead there's a prism
+
+501
+00:21:13,343 --> 00:21:14,367
+Built into the glass
+
+502
+00:21:14,623 --> 00:21:15,391
+And IT projects
+
+503
+00:21:15,647 --> 00:21:18,464
+Using a low-power laser right on your retina
+
+504
+00:21:19,232 --> 00:21:20,768
+From the prism notifications
+
+505
+00:21:21,280 --> 00:21:22,560
+It does one thing and one thing
+
+506
+00:21:22,816 --> 00:21:24,608
+Very well and it doesn't look
+
+507
+00:21:24,864 --> 00:21:25,376
+Outrageous
+
+508
+00:21:25,888 --> 00:21:27,936
+So I'm looking forward to seeing what
+
+509
+00:21:28,448 --> 00:21:33,312
+Might be done with them this isn't something until it's going to sell that you're going to have a developer
+
+510
+00:21:33,568 --> 00:21:36,384
+Preview where people can try and write apps for it later this year
+
+511
+00:21:37,152 --> 00:21:37,920
+And
+
+512
+00:21:38,432 --> 00:21:42,784
+I'm countries have even come to Market because there was talk about until selling off its AR
+
+513
+00:21:43,296 --> 00:21:45,600
+Group elements I guess I will have to say
+
+514
+00:21:45,856 --> 00:21:49,440
+Do you know to me this I know people could be like Oar but I'm just like
+
+515
+00:21:49,696 --> 00:21:50,976
+Let's just talk about the
+
+516
+00:21:51,232 --> 00:21:53,280
+Power of a heads-up display for
+
+517
+00:21:53,536 --> 00:21:55,328
+Ito think about turn-by-turn directions
+
+518
+00:21:55,584 --> 00:21:57,376
+You know when you're walking around the city
+
+519
+00:21:57,632 --> 00:22:00,704
+Right now my phone will vibrate but I still don't know if I'm supposed to turn right or low
+
+520
+00:22:02,496 --> 00:22:04,288
+I just look at the Sun
+
+521
+00:22:04,544 --> 00:22:06,848
+How awesome would it be to be talking to someone in
+
+522
+00:22:07,104 --> 00:22:08,384
+Have some sort of indication of
+
+523
+00:22:08,640 --> 00:22:09,152
+Who this is
+
+524
+00:22:09,664 --> 00:22:10,432
+That's just me cuz I
+
+525
+00:22:10,688 --> 00:22:11,968
+Faces really well
+
+526
+00:22:12,224 --> 00:22:15,552
+Well you even also need a camera for that nice have no camera
+
+527
+00:22:15,808 --> 00:22:17,088
+Okay that is true
+
+528
+00:22:17,344 --> 00:22:18,880
+You know who people are based on their
+
+529
+00:22:19,136 --> 00:22:20,160
+Pair Bluetooth or Wi-Fi
+
+530
+00:22:20,928 --> 00:22:21,696
+We're not supposed to
+
+531
+00:22:23,744 --> 00:22:25,024
+Best part of that privacy of
+
+532
+00:22:25,792 --> 00:22:27,072
+Okay so no camera
+
+533
+00:22:27,328 --> 00:22:28,608
+I will be sad I will be sad
+
+534
+00:22:28,864 --> 00:22:30,912
+A little while ago speakers no mic
+
+535
+00:22:31,168 --> 00:22:31,936
+Oh so I can talk to
+
+536
+00:22:32,448 --> 00:22:33,216
+I don't believe so
+
+537
+00:22:33,472 --> 00:22:39,616
+This reminds me of the Amazon Echo cuz when it came out very early all it did was you
+
+538
+00:22:42,176 --> 00:22:42,944
+Yeah
+
+539
+00:22:43,200 --> 00:22:49,344
+I remember the search engine so it couldn't answer that many questions I couldn't control Smart
+
+540
+00:22:49,600 --> 00:22:51,648
+I'm devices it just basically played music and
+
+541
+00:22:51,904 --> 00:22:54,464
+Set timers for lights why I didn't buy one man
+
+542
+00:22:54,720 --> 00:22:59,840
+You didn't buy one but enough people did in the use case became gradually soap
+
+543
+00:23:00,096 --> 00:23:00,608
+Compelling
+
+544
+00:23:01,376 --> 00:23:02,400
+Look at us now
+
+545
+00:23:02,912 --> 00:23:08,032
+Oh yeah once once they made it smarter you know switch on the troll that's when I go bowling absolutely
+
+546
+00:23:08,288 --> 00:23:09,568
+And so I I like
+
+547
+00:23:09,824 --> 00:23:12,640
+Having some of my favorite devices just do something really well
+
+548
+00:23:13,408 --> 00:23:15,200
+I think there's a lot of power
+
+549
+00:23:15,968 --> 00:23:16,992
+So I'm Nina on
+
+550
+00:23:17,248 --> 00:23:17,760
+This
+
+551
+00:23:18,272 --> 00:23:19,296
+Especially someone who wears glass
+
+552
+00:23:21,856 --> 00:23:22,624
+All right
+
+553
+00:23:22,880 --> 00:23:25,696
+Let us move on to Z home pod
+
+554
+00:23:26,720 --> 00:23:27,232
+Because
+
+555
+00:23:27,744 --> 00:23:28,512
+Kevin
+
+556
+00:23:29,792 --> 00:23:31,328
+Neither of us really wanted to order it
+
+557
+00:23:31,584 --> 00:23:32,864
+But we decided we had to
+
+558
+00:23:33,120 --> 00:23:33,888
+Because you guys
+
+559
+00:23:34,144 --> 00:23:35,168
+Really have a lot of questions
+
+560
+00:23:38,752 --> 00:23:42,080
+Either it's funny and it just goes back to what I just said I didn't
+
+561
+00:23:42,336 --> 00:23:44,384
+Want to buy the Echo and first came out
+
+562
+00:23:44,640 --> 00:23:46,688
+For the same reason or reasons that I
+
+563
+00:23:46,944 --> 00:23:49,760
+Don't want it by VIN by the homepod when it came out
+
+564
+00:23:50,528 --> 00:23:53,600
+There's two things to talk about with alpine obviously there's the sound
+
+565
+00:23:53,856 --> 00:23:54,880
+And then there's the smarts
+
+566
+00:23:55,136 --> 00:23:59,488
+Unfortunately in my opinion the smarts actually went into the sound meaning
+
+567
+00:23:59,744 --> 00:24:01,024
+Sonically engineered
+
+568
+00:24:01,280 --> 00:24:02,560
+Apple did an excellent
+
+569
+00:24:02,816 --> 00:24:03,584
+Excellent job
+
+570
+00:24:03,840 --> 00:24:04,864
+It doesn't
+
+571
+00:24:05,120 --> 00:24:09,984
+Doesn't blow me away like it did the early reviewers and a lot of early reviewers
+
+572
+00:24:10,496 --> 00:24:13,568
+Got a I'm just going to say they got a dog and pony show from Apple
+
+573
+00:24:14,080 --> 00:24:20,224
+An apple showed off the speaker and compare it to certain other speakers but I have since found out the set up on those was not the same
+
+574
+00:24:20,480 --> 00:24:22,272
+I'm like one of those speakers with setup for Bluetooth
+
+575
+00:24:22,528 --> 00:24:24,064
+Instead of Wi-Fi I mean so
+
+576
+00:24:24,320 --> 00:24:27,392
+I get why Apple does that and appreciate that but
+
+577
+00:24:28,928 --> 00:24:33,024
+It just doesn't blow me away it is really really good for a single unit device
+
+578
+00:24:33,280 --> 00:24:38,400
+I don't want a single speaker because it has multiple speakers at 7 tweeters and and 1 woofer
+
+579
+00:24:38,656 --> 00:24:40,192
+And it does sound good
+
+580
+00:24:40,448 --> 00:24:43,264
+It's got the smarts the intelligence to auto-tune itself
+
+581
+00:24:43,776 --> 00:24:47,616
+When you first put it down it will sample sound in the room you don't even hear it
+
+582
+00:24:48,128 --> 00:24:50,944
+And it will consider yourself for the room that you're in which is great
+
+583
+00:24:51,200 --> 00:24:53,248
+It'll do that again every time you move it
+
+584
+00:24:53,504 --> 00:24:54,016
+Unfortunately
+
+585
+00:24:54,528 --> 00:24:58,368
+I don't see the benefit of that because you plug this thing and you're not going to move it that much so
+
+586
+00:24:59,392 --> 00:25:00,416
+That's neither here nor there
+
+587
+00:25:03,232 --> 00:25:03,744
+Okay
+
+588
+00:25:04,000 --> 00:25:05,280
+My daughter
+
+589
+00:25:05,536 --> 00:25:08,096
+Takes her Amazon Echo it's in her room
+
+590
+00:25:09,120 --> 00:25:11,680
+And she brings it into the bathroom for getting ready
+
+591
+00:25:11,936 --> 00:25:12,704
+And bats
+
+592
+00:25:12,960 --> 00:25:13,472
+So
+
+593
+00:25:13,728 --> 00:25:15,008
+She actually moves her Echo back
+
+594
+00:25:16,544 --> 00:25:17,568
+Because she doesn't have a tap
+
+595
+00:25:21,152 --> 00:25:23,968
+That's what I do I use the tap the tap I move around all the time
+
+596
+00:25:24,480 --> 00:25:27,296
+The point there is it psychic
+
+597
+00:25:28,320 --> 00:25:29,344
+Case where someone
+
+598
+00:25:30,624 --> 00:25:33,440
+No doubt no doubt I don't think the majority of
+
+599
+00:25:33,696 --> 00:25:34,976
+Imposter going to be moving
+
+600
+00:25:35,488 --> 00:25:36,000
+Is my point
+
+601
+00:25:37,024 --> 00:25:38,560
+But anyway
+
+602
+00:25:38,816 --> 00:25:39,328
+So
+
+603
+00:25:39,840 --> 00:25:42,400
+Just one more point about the sound before I talk about the smarts
+
+604
+00:25:43,168 --> 00:25:45,728
+I did a blind listening test with
+
+605
+00:25:45,984 --> 00:25:47,520
+Different music genres
+
+606
+00:25:47,776 --> 00:25:50,336
+I did the best I could to make it as equal as possible
+
+607
+00:25:50,592 --> 00:25:56,480
+Setting the sound levels to be the same now I did it with the homepod and I did it with a pair of Sonos ones
+
+608
+00:25:56,992 --> 00:25:57,760
+And one of my
+
+609
+00:25:58,016 --> 00:26:00,320
+Tech savvy friends came over listen and he's like
+
+610
+00:26:00,576 --> 00:26:01,344
+Using two speakers
+
+611
+00:26:01,600 --> 00:26:02,880
+I am
+
+612
+00:26:03,136 --> 00:26:04,416
+Musical ly
+
+613
+00:26:04,672 --> 00:26:07,232
+Because they're the same price and he's like when you can
+
+614
+00:26:07,488 --> 00:26:09,280
+Put that into the equation instead of course you can
+
+615
+00:26:09,792 --> 00:26:12,352
+I said you have $349 to buy a
+
+616
+00:26:12,864 --> 00:26:13,376
+Homepod
+
+617
+00:26:13,632 --> 00:26:15,680
+Then you need to compare to what else do you get free money
+
+618
+00:26:15,936 --> 00:26:17,728
+Temperature in $49 you can get to sauna
+
+619
+00:26:18,496 --> 00:26:23,104
+He couldn't really tell much of a difference nobody really could affect people who had a preference
+
+620
+00:26:23,616 --> 00:26:24,640
+Amazon
+
+621
+00:26:24,896 --> 00:26:26,432
+It was the best speaker but it was
+
+622
+00:26:26,688 --> 00:26:28,224
+The preferred sound for them
+
+623
+00:26:28,480 --> 00:26:30,784
+Was actually the pair of Sonos once more often than not
+
+624
+00:26:31,296 --> 00:26:33,344
+So I don't know that surprises people or
+
+625
+00:26:33,856 --> 00:26:36,928
+Whatever but Sonos is the pioneers of smart speak
+
+626
+00:26:38,208 --> 00:26:39,232
+They've been doing
+
+627
+00:26:39,744 --> 00:26:41,280
+Similar things to this for
+
+628
+00:26:41,792 --> 00:26:42,304
+4 years
+
+629
+00:26:42,816 --> 00:26:45,888
+Yeah they have and I'll say I'll give Apple Credit here
+
+630
+00:26:46,144 --> 00:26:49,728
+Insulate improve the experience in terms of setup it's very simple
+
+631
+00:26:50,240 --> 00:26:50,752
+In terms of
+
+632
+00:26:51,008 --> 00:26:54,080
+Using integration with apple music obviously it
+
+633
+00:26:54,336 --> 00:26:55,616
+That's all integrates with right now
+
+634
+00:26:56,128 --> 00:26:59,456
+That just works with Sonos it does that but it kind of
+
+635
+00:26:59,712 --> 00:27:01,760
+There's like Steps wooden steps to do that right
+
+636
+00:27:02,016 --> 00:27:08,160
+So they offer more but still more complicated if you just want to drop dead simple plug it in and start playing Apple music
+
+637
+00:27:08,928 --> 00:27:11,232
+From a smart standpoint I am shocked
+
+638
+00:27:11,744 --> 00:27:14,048
+And I said this in my written review
+
+639
+00:27:14,560 --> 00:27:16,096
+Siri is fragmented now
+
+640
+00:27:16,352 --> 00:27:19,168
+Siri does not work the same or does it have the same features
+
+641
+00:27:19,424 --> 00:27:21,216
+From an iOS device to the homepod
+
+642
+00:27:21,728 --> 00:27:25,824
+And that just boggles my mind there are things you can't do you can't set two timers you can't
+
+643
+00:27:26,080 --> 00:27:28,128
+Access your calendar create an event
+
+644
+00:27:28,384 --> 00:27:29,920
+It's just really strange
+
+645
+00:27:30,432 --> 00:27:36,064
+It just seems like it's Half Baked and the kind of goes along with some of the other features that aren't there that are coming in that is
+
+646
+00:27:36,320 --> 00:27:37,600
+Multi-room audio and
+
+647
+00:27:38,112 --> 00:27:39,648
+Blinking Twitty's for stereo
+
+648
+00:27:39,904 --> 00:27:40,672
+That's coming but
+
+649
+00:27:41,184 --> 00:27:42,464
+It's just odd to me but
+
+650
+00:27:42,976 --> 00:27:45,280
+Siri is very responsive as you'd expect
+
+651
+00:27:45,536 --> 00:27:46,304
+Besame
+
+652
+00:27:46,560 --> 00:27:47,840
+A trip inside
+
+653
+00:27:48,096 --> 00:27:48,864
+The
+
+654
+00:27:49,376 --> 00:27:50,656
+Microphones for listening
+
+655
+00:27:50,912 --> 00:27:52,448
+Apple Mail. You can
+
+656
+00:27:52,704 --> 00:27:54,240
+You don't have to yell even if the music is
+
+657
+00:27:54,496 --> 00:27:55,008
+Is crank way up
+
+658
+00:27:55,264 --> 00:27:55,776
+It's really good
+
+659
+00:27:56,032 --> 00:27:57,056
+But again
+
+660
+00:27:57,312 --> 00:27:59,360
+If you aren't in apple music if you're not
+
+661
+00:27:59,616 --> 00:28:01,408
+On iOS if you're not using homekit
+
+662
+00:28:02,176 --> 00:28:04,224
+This just isn't going to be able to buy the father
+
+663
+00:28:05,248 --> 00:28:06,016
+It does not appeal to me
+
+664
+00:28:07,040 --> 00:28:13,184
+What the funny thing is I actually do use iOS and I am an apple music subscriber family is
+
+665
+00:28:14,208 --> 00:28:16,512
+But I still wouldn't buy this right now
+
+666
+00:28:17,024 --> 00:28:20,352
+At this is again it's just like the Amazon Echo I wouldn't buy when it first came out
+
+667
+00:28:20,864 --> 00:28:22,144
+It wasn't compelling enough for the time
+
+668
+00:28:22,912 --> 00:28:25,728
+Alright well if you have homekit questions for Kevin
+
+669
+00:28:26,240 --> 00:28:27,776
+And gosh I bet you do
+
+670
+00:28:28,288 --> 00:28:29,312
+Call us at
+
+671
+00:28:29,824 --> 00:28:32,384
+Are iot podcast listener hotline at 5 1/2
+
+672
+00:28:32,640 --> 00:28:33,664
+6 to 3
+
+673
+00:28:34,176 --> 00:28:34,944
+7424
+
+674
+00:28:35,712 --> 00:28:36,224
+And
+
+675
+00:28:36,736 --> 00:28:37,504
+Let us move
+
+676
+00:28:37,760 --> 00:28:39,552
+To answer a question from
+
+677
+00:28:41,088 --> 00:28:41,600
+Sinners
+
+678
+00:28:42,112 --> 00:28:46,976
+The iot podcast listener hotline is brought to you by Schlage electronic locks
+
+679
+00:28:47,232 --> 00:28:48,768
+Schlage electronic locks off
+
+680
+00:28:49,024 --> 00:28:51,072
+Unparalleled convenience and simplicity
+
+681
+00:28:51,328 --> 00:28:52,352
+All on their own
+
+682
+00:28:52,608 --> 00:28:53,376
+Right out of the box
+
+683
+00:28:53,888 --> 00:28:55,680
+So you don't have to have a smart home
+
+684
+00:28:55,936 --> 00:28:56,448
+Benefit
+
+685
+00:28:56,960 --> 00:28:59,264
+To see what's possible visit schlage.com
+
+686
+00:28:59,520 --> 00:29:00,032
+To learn more
+
+687
+00:29:00,288 --> 00:29:00,800
+All right
+
+688
+00:29:01,312 --> 00:29:01,824
+This week
+
+689
+00:29:02,336 --> 00:29:03,616
+We have a question
+
+690
+00:29:03,872 --> 00:29:04,384
+From
+
+691
+00:29:05,664 --> 00:29:07,200
+Intellicast
+
+692
+00:29:07,456 --> 00:29:08,224
+Some sexy hair
+
+693
+00:29:08,480 --> 00:29:09,504
+Selena Quintanilla
+
+694
+00:29:09,760 --> 00:29:10,272
+What question
+
+695
+00:29:13,856 --> 00:29:15,648
+Teenage suicide walk to the younger one
+
+696
+00:29:15,904 --> 00:29:18,208
+When I went to go and set up the calendar
+
+697
+00:29:18,464 --> 00:29:19,744
+Spotify music
+
+698
+00:29:20,256 --> 00:29:22,048
+Unlimited
+
+699
+00:29:22,816 --> 00:29:24,864
+Change it
+
+700
+00:29:25,376 --> 00:29:25,888
+And then music
+
+701
+00:29:26,144 --> 00:29:27,936
+At the moment I'm stuck with
+
+702
+00:29:33,056 --> 00:29:34,336
+Oh my God
+
+703
+00:29:34,592 --> 00:29:36,640
+Is there a way that I can change.
+
+704
+00:29:37,152 --> 00:29:39,200
+Music
+
+705
+00:29:39,456 --> 00:29:39,968
+Sitel
+
+706
+00:29:40,224 --> 00:29:43,040
+I'm playlist to calendars on Outlook
+
+707
+00:29:46,624 --> 00:29:47,648
+Okay Sam
+
+708
+00:29:47,904 --> 00:29:48,928
+This is a
+
+709
+00:29:49,184 --> 00:29:51,232
+Pain point near and dear to my heart
+
+710
+00:29:51,488 --> 00:29:52,000
+Heart
+
+711
+00:29:52,256 --> 00:29:56,352
+Because I have been trying to use my Spotify account on Amazon Echo
+
+712
+00:29:56,608 --> 00:29:58,144
+Without using only mine
+
+713
+00:29:58,400 --> 00:29:59,424
+I've been trying to let my daughter
+
+714
+00:29:59,936 --> 00:30:01,216
+Use hers cuz we have the
+
+715
+00:30:01,472 --> 00:30:02,496
+Premium Spotify
+
+716
+00:30:03,008 --> 00:30:04,032
+Has multiple accounts
+
+717
+00:30:04,288 --> 00:30:05,312
+By golly it doesn't work
+
+718
+00:30:05,824 --> 00:30:08,640
+So I hate to tell you this you're going to have to either lie
+
+719
+00:30:08,896 --> 00:30:09,408
+Or
+
+720
+00:30:09,664 --> 00:30:10,176
+Supper
+
+721
+00:30:13,760 --> 00:30:15,296
+Depending on their ages
+
+722
+00:30:15,808 --> 00:30:16,576
+Depending on their ages
+
+723
+00:30:17,088 --> 00:30:20,928
+So my daughter is under the age of 13 so the only thing she can be
+
+724
+00:30:21,184 --> 00:30:22,720
+In the Amazon Echo universe
+
+725
+00:30:23,232 --> 00:30:23,744
+Is
+
+726
+00:30:24,000 --> 00:30:24,768
+Part of my household
+
+727
+00:30:25,024 --> 00:30:26,304
+But she can't actually
+
+728
+00:30:26,560 --> 00:30:29,888
+Have her email affiliated with anything except for allowances
+
+729
+00:30:30,144 --> 00:30:31,936
+And her Kindle like
+
+730
+00:30:32,192 --> 00:30:33,984
+The free time Kindle Freetime stuff
+
+731
+00:30:34,240 --> 00:30:34,752
+So
+
+732
+00:30:35,008 --> 00:30:35,520
+I can't
+
+733
+00:30:35,776 --> 00:30:37,568
+Associate her email address with
+
+734
+00:30:37,824 --> 00:30:39,104
+The calendar or with
+
+735
+00:30:39,360 --> 00:30:40,128
+R Spotify
+
+736
+00:30:40,896 --> 00:30:42,176
+Because she's underage
+
+737
+00:30:42,432 --> 00:30:43,968
+After she's 13
+
+738
+00:30:44,736 --> 00:30:46,784
+Cuz of the Copa act the
+
+739
+00:30:47,040 --> 00:30:48,064
+Children's online
+
+740
+00:30:48,320 --> 00:30:49,856
+Protection privacy protection
+
+741
+00:30:50,880 --> 00:30:52,416
+Danny Amazon can take her email
+
+742
+00:30:52,928 --> 00:30:53,440
+I guess start
+
+743
+00:30:54,464 --> 00:30:55,232
+Mission Mater
+
+744
+00:30:55,744 --> 00:30:56,768
+Then she can use it
+
+745
+00:30:57,280 --> 00:31:03,168
+So in that case all you have to do is register those devices for each of your daughters
+
+746
+00:31:03,424 --> 00:31:04,704
+To their account
+
+747
+00:31:05,472 --> 00:31:07,520
+So you would have to have an Amazon account
+
+748
+00:31:08,288 --> 00:31:10,848
+You would register those devices and then you would link
+
+749
+00:31:11,104 --> 00:31:12,384
+All of your accounts is a
+
+750
+00:31:12,640 --> 00:31:13,152
+Family
+
+751
+00:31:13,920 --> 00:31:17,504
+Kind of complicated but to register the device you go into the
+
+752
+00:31:17,760 --> 00:31:18,528
+Anime app
+
+753
+00:31:19,040 --> 00:31:20,320
+You going to settings
+
+754
+00:31:20,576 --> 00:31:23,904
+And you're going to see all of the different Amazon Echo devices in your
+
+755
+00:31:24,160 --> 00:31:24,672
+Household
+
+756
+00:31:25,440 --> 00:31:25,952
+There
+
+757
+00:31:26,464 --> 00:31:29,024
+It's Going Down Under about it'll say the device is registered
+
+758
+00:31:29,280 --> 00:31:29,792
+Burgess Owens
+
+759
+00:31:30,560 --> 00:31:31,584
+If it's registered to you
+
+760
+00:31:32,096 --> 00:31:34,912
+Because which it probably is if you bought it just deregister it
+
+761
+00:31:35,936 --> 00:31:36,704
+When you do that
+
+762
+00:31:36,960 --> 00:31:37,984
+You're going to
+
+763
+00:31:38,240 --> 00:31:38,752
+Connected to
+
+764
+00:31:39,008 --> 00:31:39,520
+Your daughters are
+
+765
+00:31:40,288 --> 00:31:42,592
+And I did actually brings up a point that I
+
+766
+00:31:42,848 --> 00:31:44,384
+Probably should have mentioned in the homepod
+
+767
+00:31:44,640 --> 00:31:45,664
+That because
+
+768
+00:31:45,920 --> 00:31:52,064
+This is a lot like iCloud in Family Sharing iOS I wanted to mention that the homepod only supports one
+
+769
+00:31:52,320 --> 00:31:56,160
+User One Voice one iCloud account right now so multiple people in the home
+
+770
+00:31:56,416 --> 00:31:57,952
+Will not be recognized
+
+771
+00:31:58,464 --> 00:31:59,488
+Everybody's one user
+
+772
+00:31:59,744 --> 00:32:01,792
+And that's a problem for your personal information
+
+773
+00:32:02,304 --> 00:32:02,816
+Oh that is a problem
+
+774
+00:32:03,328 --> 00:32:04,608
+And you find the
+
+775
+00:32:04,864 --> 00:32:07,936
+Household like you find the area about who you're at a household with
+
+776
+00:32:08,192 --> 00:32:09,984
+Under the same settings menu
+
+777
+00:32:10,240 --> 00:32:11,776
+But instead of going to each and
+
+778
+00:32:12,032 --> 00:32:15,104
+Official twice she keep scrolling and scrolling until you get to
+
+779
+00:32:15,616 --> 00:32:17,152
+There's a section that says in a household
+
+780
+00:32:17,664 --> 00:32:18,432
+With these people
+
+781
+00:32:18,944 --> 00:32:21,504
+I believe you have to set up your household
+
+782
+00:32:22,016 --> 00:32:25,088
+From the Amazon account itself on the web
+
+783
+00:32:25,600 --> 00:32:26,368
+You can't do it for
+
+784
+00:32:26,624 --> 00:32:27,136
+Fitness app
+
+785
+00:32:28,416 --> 00:32:28,928
+So that is
+
+786
+00:32:29,184 --> 00:32:32,256
+That is how I've done it I don't see a way to do it otherwise
+
+787
+00:32:32,768 --> 00:32:35,328
+I may be wrong but it makes sense actually the
+
+788
+00:32:36,352 --> 00:32:36,864
+Tear
+
+789
+00:32:37,376 --> 00:32:39,680
+And I believe it has to be mutual
+
+790
+00:32:40,704 --> 00:32:41,728
+Excommunication but
+
+791
+00:32:42,496 --> 00:32:43,008
+About setting up
+
+792
+00:32:44,288 --> 00:32:46,080
+The benefit is you can share your Kindle books
+
+793
+00:32:48,384 --> 00:32:49,152
+Guess that's
+
+794
+00:32:51,200 --> 00:32:52,992
+That is our answer for you
+
+795
+00:32:53,248 --> 00:32:55,040
+If any of you have questions
+
+796
+00:32:55,296 --> 00:32:57,088
+Give us a call at 5 1/2
+
+797
+00:32:57,344 --> 00:32:58,112
+6 to 3
+
+798
+00:32:58,368 --> 00:32:59,648
+742 4
+
+799
+00:33:00,416 --> 00:33:00,928
+And now
+
+800
+00:33:01,184 --> 00:33:02,976
+I believe it is time for us to
+
+801
+00:33:03,488 --> 00:33:07,328
+Say goodbye to each other Kevin and move along to our guests this week
+
+802
+00:33:07,584 --> 00:33:11,168
+Who is Alexandra spiritos the CEO of resin IO
+
+803
+00:33:11,424 --> 00:33:12,448
+It sounds esoteric
+
+804
+00:33:12,704 --> 00:33:15,008
+It's he doesn't his company does containers at the edge
+
+805
+00:33:15,264 --> 00:33:16,032
+Basically
+
+806
+00:33:16,288 --> 00:33:19,104
+The whole conversation is about what people are using
+
+807
+00:33:19,616 --> 00:33:21,920
+To build their iot devices on
+
+808
+00:33:22,176 --> 00:33:24,480
+And what it takes to actually create
+
+809
+00:33:24,736 --> 00:33:27,040
+Something that's resilient enough for the Internet of Things
+
+810
+00:33:27,296 --> 00:33:29,344
+Musical guest so stay tuned
+
+811
+00:33:36,256 --> 00:33:39,072
+Hey everyone welcome back to the Internet of Things podcast
+
+812
+00:33:39,328 --> 00:33:41,888
+This is your house Stacey Higginbotham
+
+813
+00:33:42,144 --> 00:33:45,472
+Is Alex burritos who is the CEO of
+
+814
+00:33:45,728 --> 00:33:46,752
+Resin IO
+
+815
+00:33:51,616 --> 00:33:56,224
+I am super excited because
+
+816
+00:33:57,760 --> 00:34:00,832
+Is super pumped because we're going to be talking about development platforms
+
+817
+00:34:01,344 --> 00:34:03,648
+Industrial Enterprise
+
+818
+00:34:04,160 --> 00:34:05,952
+And there's a whole lot of stuff change
+
+819
+00:34:06,208 --> 00:34:07,488
+Like a whole lot of stuff on the market now
+
+820
+00:34:09,536 --> 00:34:10,560
+Before we get into that
+
+821
+00:34:10,816 --> 00:34:15,680
+We want to let people know who you are so why don't you tell us a little bit about resume
+
+822
+00:34:16,192 --> 00:34:16,704
+And
+
+823
+00:34:17,216 --> 00:34:17,728
+What you're doing there
+
+824
+00:34:17,984 --> 00:34:20,544
+Tono Rosario is a
+
+825
+00:34:21,056 --> 00:34:22,592
+Containerized payloads
+
+826
+00:34:22,848 --> 00:34:24,640
+Two embedded devices attached devices
+
+827
+00:34:26,176 --> 00:34:27,712
+So we built all of it to again
+
+828
+00:34:28,736 --> 00:34:29,760
+You need to really get
+
+829
+00:34:30,016 --> 00:34:31,296
+Golang for structure of the way
+
+830
+00:34:31,552 --> 00:34:34,112
+And just deploy code to your devices wherever they aren't
+
+831
+00:34:35,136 --> 00:34:37,696
+The big idea here is containers at the edge
+
+832
+00:34:38,208 --> 00:34:40,512
+And we should probably explain a little bit about
+
+833
+00:34:40,768 --> 00:34:42,048
+Why that matters so much
+
+834
+00:34:42,816 --> 00:34:43,328
+Coyote
+
+835
+00:34:43,584 --> 00:34:44,352
+Oh absolutely
+
+836
+00:34:45,376 --> 00:34:45,888
+We were
+
+837
+00:34:46,144 --> 00:34:46,912
+Developers at work
+
+838
+00:34:47,168 --> 00:34:49,216
+Focus on cloud Technologies
+
+839
+00:34:49,472 --> 00:34:51,264
+We kind of had landed on this project
+
+840
+00:34:52,544 --> 00:34:55,616
+What we call today as confused and this was a biggest problem with sound
+
+841
+00:34:55,872 --> 00:34:57,408
+Updating this device is managed
+
+842
+00:34:58,944 --> 00:35:00,480
+Incredibly difficult
+
+843
+00:35:00,992 --> 00:35:02,528
+While in the cloud we had this
+
+844
+00:35:02,784 --> 00:35:03,296
+Credibly
+
+845
+00:35:03,808 --> 00:35:04,576
+Great experience
+
+846
+00:35:04,832 --> 00:35:06,880
+Wish you no single command so if they ever
+
+847
+00:35:07,136 --> 00:35:08,160
+Everything at the same time
+
+848
+00:35:08,672 --> 00:35:09,952
+The devices we actually we're back
+
+849
+00:35:10,208 --> 00:35:12,512
+The eighties we were literally going around
+
+850
+00:35:12,768 --> 00:35:13,536
+USB sticks
+
+851
+00:35:15,840 --> 00:35:16,608
+Egg containers
+
+852
+00:35:16,864 --> 00:35:18,400
+We found essentially the loop
+
+853
+00:35:18,912 --> 00:35:19,680
+Well that allows us to
+
+854
+00:35:20,448 --> 00:35:22,496
+Through that half all of us
+
+855
+00:35:22,752 --> 00:35:24,032
+Toddler clothes that we know and love
+
+856
+00:35:24,544 --> 00:35:25,312
+Tootie's devices
+
+857
+00:35:25,568 --> 00:35:27,360
+So which containers we can update the device
+
+858
+00:35:27,616 --> 00:35:28,896
+Without rebooting them if something goes
+
+859
+00:35:29,152 --> 00:35:29,664
+What's wrong
+
+860
+00:35:29,920 --> 00:35:31,200
+You can put update them again
+
+861
+00:35:31,456 --> 00:35:33,760
+There's a host operating system underneath
+
+862
+00:35:35,296 --> 00:35:36,320
+If anything goes wrong
+
+863
+00:35:36,576 --> 00:35:37,600
+And that level of
+
+864
+00:35:38,112 --> 00:35:39,136
+Virtualization react
+
+865
+00:35:39,392 --> 00:35:40,928
+It's for my personalization that we
+
+866
+00:35:41,184 --> 00:35:42,208
+We're never able to have
+
+867
+00:35:42,720 --> 00:35:43,744
+Previously on his devices
+
+868
+00:35:44,000 --> 00:35:45,280
+It really
+
+869
+00:35:45,536 --> 00:35:46,304
+Changes development
+
+870
+00:35:46,560 --> 00:35:47,584
+Entirely
+
+871
+00:35:47,840 --> 00:35:49,376
+Feel while not identical
+
+872
+00:35:49,632 --> 00:35:51,936
+To Cloud developments that's feel a lot more like it
+
+873
+00:35:52,192 --> 00:35:55,008
+Flexibility a little bit of
+
+874
+00:35:56,032 --> 00:35:56,544
+Comfort
+
+875
+00:35:57,312 --> 00:36:00,384
+I want to say certainty because nothing really
+
+876
+00:36:01,152 --> 00:36:01,920
+Miss World
+
+877
+00:36:05,504 --> 00:36:06,272
+Who are they
+
+878
+00:36:06,784 --> 00:36:08,064
+Who are our customers with
+
+879
+00:36:08,320 --> 00:36:10,368
+Colton Fleet owners they are people
+
+880
+00:36:10,880 --> 00:36:11,392
+We're like
+
+881
+00:36:11,904 --> 00:36:12,928
+Used to be house
+
+882
+00:36:13,184 --> 00:36:14,464
+$100,000
+
+883
+00:36:16,000 --> 00:36:18,048
+They need to manage and they are
+
+884
+00:36:18,560 --> 00:36:19,072
+Geographically
+
+885
+00:36:19,840 --> 00:36:25,472
+So they have this problem on their hands and honestly they don't want to focus on if they have other things they need to
+
+886
+00:36:25,728 --> 00:36:28,800
+Development of the machine learning or the digital signage or
+
+887
+00:36:29,056 --> 00:36:31,616
+Tidal turbines or whatever it is that
+
+888
+00:36:31,872 --> 00:36:32,640
+Pair device
+
+889
+00:36:32,896 --> 00:36:33,664
+To do that software
+
+890
+00:36:33,920 --> 00:36:34,432
+Not
+
+891
+00:36:34,688 --> 00:36:36,224
+Focus on how do I get my
+
+892
+00:36:36,480 --> 00:36:39,040
+Container from A to B how do I make sure I keep running
+
+893
+00:36:39,552 --> 00:36:43,904
+So when you guys started out one of the cool things that you did was reported a doctor
+
+894
+00:36:44,160 --> 00:36:45,440
+Container to arm basilica
+
+895
+00:36:45,696 --> 00:36:46,976
+Talk to me about
+
+896
+00:36:47,232 --> 00:36:48,768
+Is determined
+
+897
+00:36:49,024 --> 00:36:50,560
+What does audience mean
+
+898
+00:36:51,328 --> 00:36:52,608
+We were very privileged
+
+899
+00:36:52,864 --> 00:36:53,376
+Because we
+
+900
+00:36:53,632 --> 00:36:54,656
+Really we're building for RC
+
+901
+00:36:55,424 --> 00:36:58,752
+So our initial Vision was actually we need to build Heroku variety
+
+902
+00:36:59,008 --> 00:37:00,032
+We need this one command
+
+903
+00:37:00,288 --> 00:37:00,800
+That you
+
+904
+00:37:02,592 --> 00:37:03,104
+So baidu
+
+905
+00:37:03,360 --> 00:37:05,664
+Pulling on that thread will realize the Roku was using
+
+906
+00:37:05,920 --> 00:37:07,200
+Innerstand docker
+
+907
+00:37:07,456 --> 00:37:08,992
+Was very early days anyway
+
+908
+00:37:09,248 --> 00:37:10,272
+0.40
+
+909
+00:37:10,528 --> 00:37:11,296
+6 I mean
+
+910
+00:37:11,552 --> 00:37:12,320
+2013
+
+911
+00:37:12,576 --> 00:37:13,600
+So we found that
+
+912
+00:37:14,880 --> 00:37:16,928
+When you that this was going to be big but it wasn't
+
+913
+00:37:17,184 --> 00:37:17,696
+Support arm
+
+914
+00:37:17,952 --> 00:37:18,464
+So
+
+915
+00:37:18,720 --> 00:37:19,488
+We essentially
+
+916
+00:37:19,744 --> 00:37:22,560
+Are we going to do our own thing or are we going to try to make
+
+917
+00:37:23,584 --> 00:37:25,120
+We decided we were a small teams in
+
+918
+00:37:25,376 --> 00:37:26,912
+Want to really reinvent the wheel
+
+919
+00:37:28,448 --> 00:37:28,960
+So
+
+920
+00:37:29,472 --> 00:37:29,984
+We decided to just
+
+921
+00:37:30,240 --> 00:37:31,264
+Primate Docker work
+
+922
+00:37:31,520 --> 00:37:32,544
+That's that's what we do
+
+923
+00:37:36,128 --> 00:37:37,152
+Time again
+
+924
+00:37:37,408 --> 00:37:38,432
+And that's really how I
+
+925
+00:37:38,688 --> 00:37:39,200
+People start noticing
+
+926
+00:37:39,712 --> 00:37:40,224
+Because of her
+
+927
+00:37:40,480 --> 00:37:40,992
+Got sort of
+
+928
+00:37:41,248 --> 00:37:42,784
+The first Sterling better container
+
+929
+00:37:43,040 --> 00:37:44,064
+It's okay if working
+
+930
+00:37:44,320 --> 00:37:45,600
+Of course in the beginning
+
+931
+00:37:45,856 --> 00:37:46,880
+Confused about why would you even
+
+932
+00:37:47,136 --> 00:37:48,672
+I want to do this
+
+933
+00:37:49,696 --> 00:37:50,464
+I like now we know why
+
+934
+00:37:51,232 --> 00:37:51,744
+Cuz now we're all
+
+935
+00:37:52,000 --> 00:37:54,048
+Absolutely
+
+936
+00:37:55,328 --> 00:37:58,144
+So right now you're in a unique position to see
+
+937
+00:37:58,400 --> 00:38:00,448
+What people are put in your platform
+
+938
+00:38:00,704 --> 00:38:03,520
+As they try to start building
+
+939
+00:38:03,776 --> 00:38:06,592
+So what kind of development platforms are
+
+940
+00:38:07,104 --> 00:38:07,616
+Using
+
+941
+00:38:07,872 --> 00:38:13,760
+So we would definitely see something that I think a lot of people are seeing but maybe you're not realizing how intense it is
+
+942
+00:38:14,016 --> 00:38:15,808
+Which is at the Raspberry Pi is just in
+
+943
+00:38:16,064 --> 00:38:16,832
+Incredibly
+
+944
+00:38:18,112 --> 00:38:19,392
+So we will see you at
+
+945
+00:38:19,648 --> 00:38:20,672
+Of course I mean
+
+946
+00:38:20,928 --> 00:38:22,208
+Basic projects
+
+947
+00:38:22,720 --> 00:38:23,232
+Makers
+
+948
+00:38:23,488 --> 00:38:24,256
+Universal students
+
+949
+00:38:24,512 --> 00:38:26,304
+I will also see it in the biggest companies
+
+950
+00:38:26,560 --> 00:38:28,096
+In the world and prototyping
+
+951
+00:38:28,352 --> 00:38:28,864
+We will see you then
+
+952
+00:38:29,120 --> 00:38:29,632
+In startups
+
+953
+00:38:29,888 --> 00:38:31,168
+And then we see it in product
+
+954
+00:38:31,424 --> 00:38:32,192
+Tamuct production
+
+955
+00:38:32,448 --> 00:38:35,520
+Let me see it a lot further along than anybody ever imagine
+
+956
+00:38:35,776 --> 00:38:37,824
+So that's definitely something that if you
+
+957
+00:38:38,336 --> 00:38:40,896
+UCR for athletes that start with B
+
+958
+00:38:41,152 --> 00:38:41,664
+A very visible
+
+959
+00:38:42,432 --> 00:38:42,944
+But stand out
+
+960
+00:38:43,200 --> 00:38:44,480
+There is definitely
+
+961
+00:38:44,736 --> 00:38:47,296
+Another Trend there around the in Tillamook
+
+962
+00:38:47,552 --> 00:38:48,832
+Which is something that Intel did
+
+963
+00:38:50,112 --> 00:38:51,648
+Thinking about it exactly this way but this is
+
+964
+00:38:51,904 --> 00:38:56,768
+To the space if you just things that nobody thought cut that way this is used when you want more power
+
+965
+00:38:57,280 --> 00:38:58,304
+More processing power
+
+966
+00:38:59,328 --> 00:39:01,632
+Look you know what size 5x7
+
+967
+00:39:01,888 --> 00:39:02,656
+Computers
+
+968
+00:39:03,936 --> 00:39:09,056
+Yes in French
+
+969
+00:39:09,568 --> 00:39:10,080
+See
+
+970
+00:39:10,848 --> 00:39:13,152
+Exactly I think it needs a next unit of computing
+
+971
+00:39:13,408 --> 00:39:14,688
+That is exactly what it mean
+
+972
+00:39:18,272 --> 00:39:20,064
+See another very exciting
+
+973
+00:39:21,088 --> 00:39:21,856
+Picking up which is
+
+974
+00:39:22,112 --> 00:39:23,136
+Around the Nvidia RTX
+
+975
+00:39:23,392 --> 00:39:24,416
+Pontiacs to family
+
+976
+00:39:24,928 --> 00:39:25,952
+So you have it
+
+977
+00:39:26,208 --> 00:39:30,048
+Essentially a fairly powerful arm chip but then a very very powerful GPU there
+
+978
+00:39:30,560 --> 00:39:31,328
+Baidu deep learning
+
+979
+00:39:31,584 --> 00:39:33,632
+These ones haven't scheduled yet
+
+980
+00:39:33,888 --> 00:39:35,168
+So we have a lot of people were
+
+981
+00:39:35,424 --> 00:39:35,936
+Working on them
+
+982
+00:39:36,192 --> 00:39:37,472
+First stage of the project but
+
+983
+00:39:37,728 --> 00:39:39,776
+Velocity we see behind that is something
+
+984
+00:39:40,032 --> 00:39:40,800
+That's a mistake
+
+985
+00:39:41,312 --> 00:39:43,616
+We do not see that other device types other than
+
+986
+00:39:43,872 --> 00:39:45,408
+And the on the pie
+
+987
+00:39:45,664 --> 00:39:46,944
+And so if I tried
+
+988
+00:39:47,200 --> 00:39:47,712
+Divide these
+
+989
+00:39:47,968 --> 00:39:48,992
+If I'm doing a
+
+990
+00:39:49,248 --> 00:39:53,600
+Prototyping early stage
+
+991
+00:39:53,856 --> 00:39:56,672
+Device or is this something that's actually being used
+
+992
+00:39:56,928 --> 00:39:57,440
+Real production
+
+993
+00:40:00,256 --> 00:40:01,024
+Me realize is that
+
+994
+00:40:01,280 --> 00:40:03,328
+People will push prototyping
+
+995
+00:40:03,584 --> 00:40:04,352
+Out into
+
+996
+00:40:04,608 --> 00:40:05,376
+Production as far as
+
+997
+00:40:06,656 --> 00:40:11,776
+While yes canonical EBC it in prototyping we actually do cereal product build battle
+
+998
+00:40:12,032 --> 00:40:13,568
+Include a Raspberry Pi inside them
+
+999
+00:40:14,336 --> 00:40:16,384
+Multiple Raspberry Pi's depending on the
+
+1000
+00:40:16,640 --> 00:40:18,944
+But we do we kill the people going out with hundreds
+
+1001
+00:40:19,200 --> 00:40:19,712
+Sometimes.
+
+1002
+00:40:19,968 --> 00:40:21,248
+Raspberry Pi
+
+1003
+00:40:21,504 --> 00:40:22,016
+This is
+
+1004
+00:40:22,784 --> 00:40:24,320
+Surprising but I never left
+
+1005
+00:40:25,088 --> 00:40:28,672
+Are there downsides to that I mean like when I think about Raspberry Pi
+
+1006
+00:40:28,928 --> 00:40:30,976
+It's a basic arm chip I don't think of it as
+
+1007
+00:40:31,232 --> 00:40:32,000
+Particularly Harden
+
+1008
+00:40:32,256 --> 00:40:34,048
+For a security perspective
+
+1009
+00:40:34,560 --> 00:40:37,888
+Right I mean the issues with the Raspberry Pi really are
+
+1010
+00:40:38,144 --> 00:40:39,680
+Three and they're kind of big
+
+1011
+00:40:39,936 --> 00:40:40,704
+There is the
+
+1012
+00:40:40,960 --> 00:40:41,984
+Working aspect
+
+1013
+00:40:42,240 --> 00:40:43,264
+Support 5 gigahertz
+
+1014
+00:40:43,776 --> 00:40:44,544
+He works a lot of busy
+
+1015
+00:40:45,056 --> 00:40:47,104
+Is a power aspect
+
+1016
+00:40:47,360 --> 00:40:48,640
+You know you have a USB
+
+1017
+00:40:49,152 --> 00:40:49,920
+Mini
+
+1018
+00:40:50,176 --> 00:40:52,224
+High voltage
+
+1019
+00:40:52,992 --> 00:40:54,272
+And then of course there's a story.
+
+1020
+00:40:54,528 --> 00:40:56,576
+Take whatever you have an SD card and I might get lost
+
+1021
+00:40:57,088 --> 00:40:58,624
+Corrupted you know all of that stuff
+
+1022
+00:40:58,880 --> 00:40:59,904
+Which all of these
+
+1023
+00:41:00,160 --> 00:41:02,720
+Perfect sense what are Raspberry Pi Foundation
+
+1024
+00:41:03,744 --> 00:41:05,536
+They're trying to make an educational classroom
+
+1025
+00:41:06,304 --> 00:41:07,072
+Spread the love
+
+1026
+00:41:07,328 --> 00:41:08,608
+Computing we should have succeeded
+
+1027
+00:41:11,424 --> 00:41:12,448
+Exactly
+
+1028
+00:41:13,472 --> 00:41:14,752
+On the security front
+
+1029
+00:41:15,008 --> 00:41:17,312
+Yes there are three high does not have you know that
+
+1030
+00:41:17,568 --> 00:41:18,848
+TPM Awards
+
+1031
+00:41:19,360 --> 00:41:19,872
+Computing
+
+1032
+00:41:20,384 --> 00:41:20,896
+Extensions
+
+1033
+00:41:21,152 --> 00:41:23,456
+I mean exposing at least to the users
+
+1034
+00:41:23,712 --> 00:41:24,480
+But then again
+
+1035
+00:41:25,760 --> 00:41:27,040
+It's not like
+
+1036
+00:41:27,296 --> 00:41:29,088
+Most others in the mud are in The Spinners
+
+1037
+00:41:29,344 --> 00:41:30,368
+Play
+
+1038
+00:41:30,624 --> 00:41:33,184
+Appetizers capabilities but there are subtle flaws that make them
+
+1039
+00:41:33,696 --> 00:41:35,744
+Usable I think over the next few years will
+
+1040
+00:41:36,000 --> 00:41:37,280
+Phoebe thinks I'm out I really
+
+1041
+00:41:37,792 --> 00:41:39,072
+We're really excited for them
+
+1042
+00:41:39,328 --> 00:41:41,120
+But I wouldn't say that they're at the Raspberry Pi
+
+1043
+00:41:41,376 --> 00:41:43,424
+Significantly worse State than
+
+1044
+00:41:43,936 --> 00:41:44,960
+Most of the classes
+
+1045
+00:41:47,008 --> 00:41:48,544
+So that's the pie so
+
+1046
+00:41:48,800 --> 00:41:49,568
+People are using it
+
+1047
+00:41:50,848 --> 00:41:51,616
+Little walkie
+
+1048
+00:41:51,872 --> 00:41:53,407
+With the the Intel Nook
+
+1049
+00:41:53,663 --> 00:41:55,199
+Have you seen this
+
+1050
+00:41:56,735 --> 00:41:59,551
+News from the early days
+
+1051
+00:41:59,807 --> 00:42:00,319
+People
+
+1052
+00:42:00,575 --> 00:42:01,087
+Really
+
+1053
+00:42:01,343 --> 00:42:05,439
+Industrial context you know if your in the universe
+
+1054
+00:42:06,463 --> 00:42:09,023
+Press your arm you probably will grab a Raspberry Pi
+
+1055
+00:42:09,535 --> 00:42:12,351
+If you're in an industrial setting in
+
+1056
+00:42:12,863 --> 00:42:15,679
+I literally call it the Raspberry Pi of the Industrial
+
+1057
+00:42:16,191 --> 00:42:19,519
+It's it's very accessible price point which is like
+
+1058
+00:42:20,031 --> 00:42:20,543
+Get it for me
+
+1059
+00:42:20,799 --> 00:42:22,335
+$300 or something like that
+
+1060
+00:42:24,639 --> 00:42:25,663
+What's the basic models are out
+
+1061
+00:42:25,919 --> 00:42:27,711
+Is very accessible for an industrial pump
+
+1062
+00:42:28,223 --> 00:42:29,247
+Set reminder
+
+1063
+00:42:29,503 --> 00:42:32,063
+The number so they make him available to their engineers
+
+1064
+00:42:32,319 --> 00:42:32,831
+Send a lot of
+
+1065
+00:42:33,343 --> 00:42:34,623
+Project.
+
+1066
+00:42:34,879 --> 00:42:36,927
+Also for
+
+1067
+00:42:37,439 --> 00:42:38,207
+Digital signage
+
+1068
+00:42:38,719 --> 00:42:39,487
+Which needs
+
+1069
+00:42:39,999 --> 00:42:42,047
+A lot of GPU power
+
+1070
+00:42:43,583 --> 00:42:48,191
+One screen to screen in a 4K Graphics all that stuff also the Nook is very very popular
+
+1071
+00:42:48,959 --> 00:42:51,263
+Oh that makes sense that they just in January
+
+1072
+00:42:51,519 --> 00:42:54,847
+Said that they were doing a new one with the graphics card
+
+1073
+00:42:55,103 --> 00:42:57,919
+It's pretty impressive that can do 4K and
+
+1074
+00:42:58,431 --> 00:43:00,991
+Some other fun stuff I was wondering why you needed all that
+
+1075
+00:43:03,295 --> 00:43:04,319
+Machine learning but
+
+1076
+00:43:04,575 --> 00:43:05,087
+I didn't think about this
+
+1077
+00:43:06,111 --> 00:43:07,647
+Weather
+
+1078
+00:43:10,207 --> 00:43:14,047
+But a lot of the cases that we see in resin are actually what I kind of
+
+1079
+00:43:14,303 --> 00:43:19,423
+Call
+
+1080
+00:43:19,679 --> 00:43:20,191
+Time it's just
+
+1081
+00:43:20,447 --> 00:43:21,471
+Already there
+
+1082
+00:43:21,727 --> 00:43:23,519
+Digital sign smart meters
+
+1083
+00:43:23,775 --> 00:43:25,567
+Industrial Equipment that's been there for decades
+
+1084
+00:43:25,823 --> 00:43:27,359
+And just bring it to the next level
+
+1085
+00:43:27,615 --> 00:43:28,639
+In the next level in that
+
+1086
+00:43:30,431 --> 00:43:32,735
+Internet-connected having containers
+
+1087
+00:43:32,991 --> 00:43:37,599
+Operating a lot more like a server in a Datacenter than a old-school embedded my
+
+1088
+00:43:38,623 --> 00:43:40,671
+Efficient
+
+1089
+00:43:40,927 --> 00:43:41,695
+I remember
+
+1090
+00:43:41,951 --> 00:43:44,767
+How many people it took to manage
+
+1091
+00:43:46,303 --> 00:43:48,351
+1 to a hundred used to be amazing
+
+1092
+00:43:48,607 --> 00:43:51,167
+Lord only knows what Google
+
+1093
+00:43:52,191 --> 00:43:52,703
+It's probably pretty
+
+1094
+00:43:55,263 --> 00:43:58,591
+Exactly minutes that. Same curve is playing out at
+
+1095
+00:44:02,175 --> 00:44:03,967
+Yes we must come at the edge
+
+1096
+00:44:05,247 --> 00:44:06,015
+DS
+
+1097
+00:44:06,271 --> 00:44:07,807
+Exactly it is either or you to
+
+1098
+00:44:08,063 --> 00:44:09,343
+Guitarist Ora
+
+1099
+00:44:10,623 --> 00:44:12,671
+Let's go to India
+
+1100
+00:44:13,695 --> 00:44:15,743
+And machine learning because this is
+
+1101
+00:44:15,999 --> 00:44:19,327
+This feels very much like the future so I really want to dig into
+
+1102
+00:44:19,839 --> 00:44:22,911
+What types of applications are they doing that with who's doing it
+
+1103
+00:44:23,423 --> 00:44:23,935
+What can you do
+
+1104
+00:44:24,447 --> 00:44:25,727
+Coming back to you.
+
+1105
+00:44:26,239 --> 00:44:27,519
+German what it means
+
+1106
+00:44:27,775 --> 00:44:28,799
+A lot of people
+
+1107
+00:44:29,055 --> 00:44:30,591
+Essentially started
+
+1108
+00:44:30,847 --> 00:44:31,359
+Because they wanted to
+
+1109
+00:44:31,615 --> 00:44:33,919
+To filter data between
+
+1110
+00:44:34,175 --> 00:44:35,455
+Small and cheap devices that work
+
+1111
+00:44:35,967 --> 00:44:36,991
+May be dispersed
+
+1112
+00:44:37,247 --> 00:44:40,319
+Around the factory or something like that and Cloud so they
+
+1113
+00:44:40,575 --> 00:44:41,599
+I couldn't eat it all.
+
+1114
+00:44:42,879 --> 00:44:44,671
+Too much they would put these the gateways in
+
+1115
+00:44:45,183 --> 00:44:47,487
+So where's the Nvidia boards come in and really make
+
+1116
+00:44:47,743 --> 00:44:48,255
+Another
+
+1117
+00:44:48,511 --> 00:44:49,023
+Is
+
+1118
+00:44:49,279 --> 00:44:50,047
+When you can do learning
+
+1119
+00:44:50,303 --> 00:44:53,887
+Or at least deploy machine learning model that you have pretrained somewhere else
+
+1120
+00:44:54,143 --> 00:44:56,959
+Because you can actually intelligently choose what the
+
+1121
+00:44:57,215 --> 00:45:00,031
+The cloud needs to know you know what is interesting out of all of these
+
+1122
+00:45:00,287 --> 00:45:01,567
+Closest Mission I got
+
+1123
+00:45:01,823 --> 00:45:04,127
+You can compress if you can filter it without a technology
+
+1124
+00:45:04,383 --> 00:45:06,175
+But I using Universe kind of
+
+1125
+00:45:06,431 --> 00:45:07,199
+Rotational power
+
+1126
+00:45:07,455 --> 00:45:10,527
+You can actually start doing applying models to it and doing a lot more
+
+1127
+00:45:11,039 --> 00:45:14,111
+Before it ever reaches the cloud and sometimes
+
+1128
+00:45:14,623 --> 00:45:15,647
+You can't even make decisions on
+
+1129
+00:45:15,903 --> 00:45:18,207
+If something is looking really strange
+
+1130
+00:45:18,463 --> 00:45:19,487
+You don't have time
+
+1131
+00:45:22,047 --> 00:45:23,839
+From the clouds you can make a decision yourself
+
+1132
+00:45:24,095 --> 00:45:24,863
+Anzac
+
+1133
+00:45:25,119 --> 00:45:25,631
+Yusuke's
+
+1134
+00:45:25,887 --> 00:45:28,191
+Is actually one where we live the tx2
+
+1135
+00:45:29,215 --> 00:45:30,495
+Tupac running boards really well
+
+1136
+00:45:30,751 --> 00:45:34,335
+Is for driving in a smart cars and all that stuff
+
+1137
+00:45:34,591 --> 00:45:36,127
+You caught really think about it
+
+1138
+00:45:36,383 --> 00:45:37,151
+Very intuitive
+
+1139
+00:45:37,407 --> 00:45:37,919
+Call Kuwait
+
+1140
+00:45:38,431 --> 00:45:39,711
+To decide what you going to do
+
+1141
+00:45:39,967 --> 00:45:42,015
+With your car until there to the cloud
+
+1142
+00:45:42,271 --> 00:45:45,087
+You have to make a decision on the spot with
+
+1143
+00:45:45,343 --> 00:45:47,391
+Serious intelligence if you have was in the car
+
+1144
+00:45:47,903 --> 00:45:48,671
+That is true
+
+1145
+00:45:48,927 --> 00:45:49,439
+And that
+
+1146
+00:45:49,695 --> 00:45:50,463
+Latency
+
+1147
+00:45:50,719 --> 00:45:51,743
+Everything would be terrified
+
+1148
+00:45:51,999 --> 00:45:52,767
+Tariff
+
+1149
+00:45:54,047 --> 00:45:58,143
+Exactly medicine going into tunnel vision connectivity and then
+
+1150
+00:45:58,655 --> 00:46:00,191
+Where is Ski Apache
+
+1151
+00:46:00,447 --> 00:46:01,471
+To travel really slowly.
+
+1152
+00:46:08,639 --> 00:46:12,991
+Like you could only go to take you places
+
+1153
+00:46:13,247 --> 00:46:13,759
+At 20 miles an hour
+
+1154
+00:46:15,039 --> 00:46:18,623
+Exactly once people start deployment
+
+1155
+00:46:18,879 --> 00:46:22,975
+What are some of the pitfalls the things that they're trying to do
+
+1156
+00:46:23,231 --> 00:46:24,255
+Walden University
+
+1157
+00:46:24,511 --> 00:46:25,023
+Sweet sweat
+
+1158
+00:46:25,279 --> 00:46:29,119
+You're going to have her Roku for the edge what are the things you're going to first try to do
+
+1159
+00:46:29,887 --> 00:46:33,215
+The first thing you do no problem you haven't actually won one of the place
+
+1160
+00:46:34,495 --> 00:46:38,335
+I'm so happy I found you guys because I was really not sure how it go
+
+1161
+00:46:38,591 --> 00:46:39,615
+Going to do this is in the fact
+
+1162
+00:46:39,871 --> 00:46:41,663
+Even for you get out there how do I
+
+1163
+00:46:41,919 --> 00:46:42,687
+Classes device
+
+1164
+00:46:42,943 --> 00:46:44,223
+Each one is unique
+
+1165
+00:46:44,479 --> 00:46:44,991
+Which one is
+
+1166
+00:46:45,247 --> 00:46:48,575
+Tagged in a way that when it starts up in my customers
+
+1167
+00:46:48,831 --> 00:46:49,599
+Factory
+
+1168
+00:46:49,855 --> 00:46:53,695
+Or wherever it is intended to go buy it actually checks back in its
+
+1169
+00:46:53,951 --> 00:46:55,231
+Authenticated I don't have to do
+
+1170
+00:46:55,743 --> 00:46:56,767
+Maneuver
+
+1171
+00:46:57,023 --> 00:46:57,535
+What's my customer
+
+1172
+00:46:58,815 --> 00:47:00,351
+Show all of that died of the
+
+1173
+00:47:00,607 --> 00:47:01,119
+Work clothes
+
+1174
+00:47:01,631 --> 00:47:03,935
+Can get really complicated if you haven't really built it.
+
+1175
+00:47:05,471 --> 00:47:06,239
+Timer
+
+1176
+00:47:06,495 --> 00:47:12,639
+And then in production it's really a lot of the same things you kind of want to do with server spread you want to
+
+1177
+00:47:12,895 --> 00:47:14,943
+Unless you want to bring them up in an orderly fashion
+
+1178
+00:47:15,455 --> 00:47:17,503
+You want to make sure that is
+
+1179
+00:47:17,759 --> 00:47:18,527
+Something
+
+1180
+00:47:18,783 --> 00:47:21,087
+Goes wrong either in your code or maybe so
+
+1181
+00:47:21,599 --> 00:47:23,903
+New Linux kernel exploit gets published
+
+1182
+00:47:24,159 --> 00:47:26,207
+You need to update yesterday
+
+1183
+00:47:26,719 --> 00:47:28,767
+Do that really well
+
+1184
+00:47:29,023 --> 00:47:30,303
+Having button down
+
+1185
+00:47:30,559 --> 00:47:31,583
+The next thing you wanted
+
+1186
+00:47:32,095 --> 00:47:33,375
+Application performance
+
+1187
+00:47:33,631 --> 00:47:36,447
+Is anything unexpected happening and that's where you want to see
+
+1188
+00:47:36,703 --> 00:47:38,751
+The logs and as you figure things out
+
+1189
+00:47:39,007 --> 00:47:41,311
+You learn things you don't no plan survives contact
+
+1190
+00:47:41,567 --> 00:47:42,847
+Also
+
+1191
+00:47:44,639 --> 00:47:47,711
+Software and devices to ask you learned you want to keep
+
+1192
+00:47:47,967 --> 00:47:49,503
+Evolving that software
+
+1193
+00:47:49,759 --> 00:47:51,551
+Update my devices
+
+1194
+00:47:51,807 --> 00:47:52,575
+Something that is
+
+1195
+00:47:52,831 --> 00:47:53,855
+Is one of the core
+
+1196
+00:47:55,135 --> 00:47:55,903
+How to use S4
+
+1197
+00:47:56,415 --> 00:47:57,439
+Okay how is it not
+
+1198
+00:47:57,695 --> 00:47:59,999
+Like servers what is unique about industrial Eren
+
+1199
+00:48:00,255 --> 00:48:00,767
+Enterprise on fire
+
+1200
+00:48:01,023 --> 00:48:05,119
+Commence this is actually one of the questions we get a lot and then one of them
+
+1201
+00:48:06,655 --> 00:48:07,423
+Because I really don't
+
+1202
+00:48:07,679 --> 00:48:08,703
+You can't really just
+
+1203
+00:48:08,959 --> 00:48:09,727
+Hate technology
+
+1204
+00:48:09,983 --> 00:48:11,007
+Transplant
+
+1205
+00:48:11,263 --> 00:48:13,567
+Resync it for the edge
+
+1206
+00:48:13,823 --> 00:48:14,335
+Think about it
+
+1207
+00:48:14,591 --> 00:48:15,615
+It's like you're taking
+
+1208
+00:48:15,871 --> 00:48:20,991
+Machines that lets say they would be in a Datacenter but you are standing at the center to call cover the whole globe
+
+1209
+00:48:21,247 --> 00:48:23,039
+Turn Down The Walls in your sort of
+
+1210
+00:48:23,295 --> 00:48:24,319
+Growing at 5000
+
+1211
+00:48:24,575 --> 00:48:26,367
+All the sudden you have
+
+1212
+00:48:26,879 --> 00:48:29,439
+Challenges one is at the machines themselves are not as power
+
+1213
+00:48:29,695 --> 00:48:31,231
+Muffuletta server
+
+1214
+00:48:31,487 --> 00:48:33,535
+Is not as powerful as what runs innovative
+
+1215
+00:48:36,095 --> 00:48:36,863
+It's further away
+
+1216
+00:48:37,887 --> 00:48:41,727
+How much longer can you could also be you know some kind of dodgy Wi-Fi connection
+
+1217
+00:48:41,983 --> 00:48:42,751
+Which Yukon
+
+1218
+00:48:43,007 --> 00:48:44,799
+So you have to start thinking
+
+1219
+00:48:45,055 --> 00:48:46,847
+For yourself
+
+1220
+00:48:47,103 --> 00:48:47,871
+Make sure
+
+1221
+00:48:48,127 --> 00:48:48,639
+It can react
+
+1222
+00:48:49,151 --> 00:48:49,663
+Do opossums
+
+1223
+00:48:49,919 --> 00:48:51,967
+Situation without knowing that I can get back
+
+1224
+00:48:52,223 --> 00:48:54,015
+Then the other thing is
+
+1225
+00:48:54,271 --> 00:48:55,551
+Climate
+
+1226
+00:48:55,807 --> 00:48:57,087
+You don't have guaranteed powers
+
+1227
+00:48:57,855 --> 00:48:59,135
+Pull the plug on me all the time
+
+1228
+00:48:59,647 --> 00:49:00,671
+Which again are sings that are
+
+1229
+00:49:00,927 --> 00:49:02,463
+Unheard of
+
+1230
+00:49:02,719 --> 00:49:05,791
+So there's only sort of environmental situation
+
+1231
+00:49:06,047 --> 00:49:09,631
+You need to think about it differently and then the other part is more so
+
+1232
+00:49:09,887 --> 00:49:10,911
+Philosophical
+
+1233
+00:49:11,167 --> 00:49:12,959
+Heard before of the cattle versus
+
+1234
+00:49:13,215 --> 00:49:15,263
+Analogy where you know
+
+1235
+00:49:15,519 --> 00:49:17,823
+We used to have our servers like they were pets
+
+1236
+00:49:18,079 --> 00:49:20,895
+And then with mutual's now like kubernetes
+
+1237
+00:49:22,943 --> 00:49:23,455
+See the message
+
+1238
+00:49:23,711 --> 00:49:25,247
+Undifferentiated CEO
+
+1239
+00:49:25,503 --> 00:49:26,271
+Purchasing power
+
+1240
+00:49:26,783 --> 00:49:29,343
+And if one goes down it doesn't matter we can bring up another one
+
+1241
+00:49:29,599 --> 00:49:31,391
+Etymology doesn't actually
+
+1242
+00:49:31,647 --> 00:49:33,951
+Work for the edge right when I have a Smart Lock
+
+1243
+00:49:34,207 --> 00:49:34,719
+My house
+
+1244
+00:49:35,231 --> 00:49:35,999
+I don't want
+
+1245
+00:49:36,511 --> 00:49:38,303
+The container that's on it to have less
+
+1246
+00:49:38,815 --> 00:49:40,863
+And it's gone somewhere else because the somewhere else
+
+1247
+00:49:41,119 --> 00:49:42,143
+Free actually want
+
+1248
+00:49:42,399 --> 00:49:43,167
+Zap device
+
+1249
+00:49:43,423 --> 00:49:47,263
+Specifically to keep functioning all the time and if something goes wrong with it
+
+1250
+00:49:47,519 --> 00:49:49,311
+The company that told me that lock
+
+1251
+00:49:49,567 --> 00:49:50,079
+Cannot
+
+1252
+00:49:50,591 --> 00:49:51,103
+Press the button
+
+1253
+00:49:51,359 --> 00:49:52,639
+I make another one up here
+
+1254
+00:49:52,895 --> 00:49:54,943
+They actually have to ensure it's working
+
+1255
+00:49:55,199 --> 00:49:57,503
+All the time NZ small
+
+1256
+00:50:00,575 --> 00:50:02,623
+Perspective that we should have higher regards
+
+1257
+00:50:03,391 --> 00:50:03,903
+I'm not sure
+
+1258
+00:50:06,719 --> 00:50:09,535
+Maybe somebody
+
+1259
+00:50:09,791 --> 00:50:12,095
+And then you're out
+
+1260
+00:50:12,863 --> 00:50:14,399
+It's kind of that
+
+1261
+00:50:16,447 --> 00:50:18,751
+We should also be nice
+
+1262
+00:50:19,263 --> 00:50:20,031
+Nicer to cows
+
+1263
+00:50:21,823 --> 00:50:23,871
+Okay well Alex thank you so much for
+
+1264
+00:50:24,127 --> 00:50:24,895
+For coming on the show this
+
+1265
+00:50:26,943 --> 00:50:27,455
+I really appreciate it
+
+1266
+00:50:27,711 --> 00:50:31,039
+Thanks for having me that's it for this week
+
+1267
+00:50:31,295 --> 00:50:37,439
+Thanks so much for listening and remember if you'd like more iot news sign up for my newsletter at Stacy on
+
+1268
+00:50:37,695 --> 00:50:38,719
+Coyote
+
+1269
+00:50:38,975 --> 00:50:45,119
+Will see you next week

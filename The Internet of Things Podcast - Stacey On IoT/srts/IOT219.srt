@@ -1,0 +1,4391 @@
+1
+00:00:06,656 --> 00:00:12,800
+Hey everyone welcome to the 219 episode of The Internet of Things
+
+2
+00:00:13,056 --> 00:00:13,568
+Podcast
+
+3
+00:00:13,824 --> 00:00:14,592
+This is your house
+
+4
+00:00:14,848 --> 00:00:16,640
+Stacey Higginbotham and Jericho
+
+5
+00:00:17,152 --> 00:00:17,920
+Kevin tofel
+
+6
+00:00:18,176 --> 00:00:19,200
+And we have
+
+7
+00:00:20,224 --> 00:00:22,528
+Show that is all about you guys it is our
+
+8
+00:00:23,040 --> 00:00:24,832
+Biannual and semiannual how many annuals
+
+9
+00:00:25,088 --> 00:00:25,856
+Twice a year
+
+10
+00:00:26,368 --> 00:00:27,392
+Question and answer
+
+11
+00:00:27,904 --> 00:00:28,672
+Where you call us
+
+12
+00:00:29,184 --> 00:00:30,976
+Ask a couple questions or one
+
+13
+00:00:31,232 --> 00:00:33,024
+And we will give you the answer
+
+14
+00:00:33,280 --> 00:00:35,840
+In this week's show we're going to be talking about
+
+15
+00:00:36,608 --> 00:00:37,376
+Smart Stove
+
+16
+00:00:37,632 --> 00:00:38,656
+Monitoring systems
+
+17
+00:00:39,168 --> 00:00:40,960
+Monitoring your washer and dryer
+
+18
+00:00:41,216 --> 00:00:44,032
+Figuring out if someone has left you some mail
+
+19
+00:00:44,544 --> 00:00:45,056
+And
+
+20
+00:00:45,312 --> 00:00:47,360
+A little bit about my switch to Google home
+
+21
+00:00:48,640 --> 00:00:49,408
+So much
+
+22
+00:00:50,432 --> 00:00:51,968
+But first before we kick it off
+
+23
+00:00:52,736 --> 00:00:53,248
+IMessage
+
+24
+00:00:53,504 --> 00:00:54,272
+Our sponsor
+
+25
+00:00:54,784 --> 00:00:56,064
+This week sponsor is
+
+26
+00:00:56,320 --> 00:00:56,832
+Nordic
+
+27
+00:00:57,088 --> 00:00:57,600
+Semiconductor
+
+28
+00:00:58,368 --> 00:01:03,488
+Are you planning a wireless iot project and he's best-in-class performance and great Energy Efficiency
+
+29
+00:01:04,000 --> 00:01:07,328
+Then the nrf52 series Wireless SOC
+
+30
+00:01:07,584 --> 00:01:08,864
+Should be your first stop
+
+31
+00:01:09,376 --> 00:01:15,520
+Nordic semiconductor offers a broad selection of multi-protocol soc's to match your requirements for features
+
+32
+00:01:15,776 --> 00:01:17,056
+Size and cost
+
+33
+00:01:17,568 --> 00:01:23,712
+The NRF series range from Baseline Network processor devices to Advanced concurrent protocol devices with
+
+34
+00:01:23,968 --> 00:01:24,992
+Extensive peripheral
+
+35
+00:01:26,016 --> 00:01:30,368
+All devices are supported with the largest SDK you will find from a low-power wireless stomach
+
+36
+00:01:30,880 --> 00:01:31,392
+Accompanied
+
+37
+00:01:31,904 --> 00:01:34,464
+So if you're planning a project with Bluetooth low energy
+
+38
+00:01:34,976 --> 00:01:36,000
+Zigbee thread
+
+39
+00:01:36,256 --> 00:01:37,024
+Mercante
+
+40
+00:01:37,280 --> 00:01:40,864
+Check out the nrf52 series SOC family
+
+41
+00:01:41,120 --> 00:01:41,632
+Add
+
+42
+00:01:41,888 --> 00:01:42,912
+Nordic semi
+
+43
+00:01:43,168 --> 00:01:43,936
+Dot-com
+
+44
+00:01:45,472 --> 00:01:47,008
+Okay Kevin
+
+45
+00:01:47,520 --> 00:01:48,544
+I love doing the show
+
+46
+00:01:48,800 --> 00:01:50,080
+Except it's kind of hard on it
+
+47
+00:01:51,104 --> 00:01:57,248
+There's a lots of great questions that we get him since we only do one voicemail question.
+
+48
+00:01:57,504 --> 00:01:58,784
+During the regular weekly show
+
+49
+00:01:59,040 --> 00:02:02,368
+This lets us catch up in a sense and get back to everybody else who might have caught
+
+50
+00:02:03,136 --> 00:02:05,696
+I should mention that throughout this year
+
+51
+00:02:05,952 --> 00:02:09,280
+We have to voicemail sponsors but the show one is Schlage
+
+52
+00:02:09,792 --> 00:02:10,304
+Which makes
+
+53
+00:02:10,560 --> 00:02:13,120
+Smart locks a variety of high-quality smart locks fit
+
+54
+00:02:13,376 --> 00:02:14,400
+Everyone knows and loves
+
+55
+00:02:14,912 --> 00:02:17,728
+And a pharaoh which is an iot development platform
+
+56
+00:02:18,496 --> 00:02:22,592
+And you hear about them almost every other episode on the show so
+
+57
+00:02:22,848 --> 00:02:25,152
+You probably know about them but we do want to give a big shout-out
+
+58
+00:02:25,408 --> 00:02:26,176
+Since this is
+
+59
+00:02:26,944 --> 00:02:28,224
+All brought to you
+
+60
+00:02:28,480 --> 00:02:28,992
+Buy them
+
+61
+00:02:29,504 --> 00:02:30,016
+All right
+
+62
+00:02:30,784 --> 00:02:32,064
+Yay slang
+
+63
+00:02:32,320 --> 00:02:33,856
+Yay
+
+64
+00:02:34,368 --> 00:02:36,672
+Alright let's kick it off with a message
+
+65
+00:02:37,952 --> 00:02:38,464
+Jeremy
+
+66
+00:02:39,232 --> 00:02:40,000
+I believe it
+
+67
+00:02:41,024 --> 00:02:41,536
+Let's hear it
+
+68
+00:02:41,792 --> 00:02:43,584
+Hi this is Jerry from Little Rock
+
+69
+00:02:43,840 --> 00:02:46,912
+I'm looking for something for the educational Market
+
+70
+00:02:47,168 --> 00:02:48,448
+That would help induce
+
+71
+00:02:48,704 --> 00:02:49,984
+Students to AI
+
+72
+00:02:50,496 --> 00:02:52,800
+We've tinkered with chatbots and like
+
+73
+00:02:53,056 --> 00:02:53,824
+To incorporate this
+
+74
+00:02:54,336 --> 00:02:54,848
+Into working with
+
+75
+00:02:55,104 --> 00:02:57,408
+Skills from anime or Google home
+
+76
+00:02:57,920 --> 00:02:58,688
+Are you serious
+
+77
+00:02:58,944 --> 00:02:59,968
+These devices have
+
+78
+00:03:02,272 --> 00:03:03,296
+So the question is
+
+79
+00:03:03,808 --> 00:03:05,088
+Is this the best around
+
+80
+00:03:05,344 --> 00:03:07,904
+To go and if so do you have ideas on how to get this
+
+81
+00:03:08,160 --> 00:03:09,952
+Happier in educational Market
+
+82
+00:03:10,464 --> 00:03:11,744
+Perhaps the bigger question
+
+83
+00:03:12,000 --> 00:03:14,560
+Do you have an opinion of a better route to go to inter
+
+84
+00:03:15,328 --> 00:03:15,840
+AI
+
+85
+00:03:16,096 --> 00:03:17,376
+Thanks in advance love you show
+
+86
+00:03:17,632 --> 00:03:18,144
+Oh
+
+87
+00:03:18,400 --> 00:03:20,960
+Jeremy I like you so much for being a caring smart
+
+88
+00:03:21,216 --> 00:03:22,752
+Exciting teacher I wish I were in your class
+
+89
+00:03:23,776 --> 00:03:29,920
+Yes and it's ironic that Jeremy is asking this question because in my comp sci class at my local community
+
+90
+00:03:30,176 --> 00:03:30,688
+College
+
+91
+00:03:31,200 --> 00:03:33,248
+We ran into the same issue
+
+92
+00:03:34,016 --> 00:03:35,552
+Esl older students probably
+
+93
+00:03:38,368 --> 00:03:41,184
+We couldn't get access to the student emails
+
+94
+00:03:41,696 --> 00:03:44,000
+Through the Google cloud and other things we wanted to use
+
+95
+00:03:44,256 --> 00:03:45,792
+So I had to use my own personal
+
+96
+00:03:46,048 --> 00:03:47,840
+Account for all of our API calls in one
+
+97
+00:03:48,096 --> 00:03:49,376
+So I totally get it
+
+98
+00:03:49,632 --> 00:03:50,912
+And even more so because
+
+99
+00:03:51,168 --> 00:03:54,752
+This is really tricky if the students were the kids are under 13
+
+100
+00:03:55,008 --> 00:03:57,824
+Because in most cases then they can't have an account
+
+101
+00:03:58,592 --> 00:03:59,616
+Well they can have one but it
+
+102
+00:04:00,128 --> 00:04:00,640
+Tied to their
+
+103
+00:04:01,408 --> 00:04:07,040
+Yeah it's it's just Anna and I don't even know if that kind of account I am not going to call it a sub account
+
+104
+00:04:07,296 --> 00:04:09,600
+But Google has school-related
+
+105
+00:04:09,856 --> 00:04:10,368
+Accounts
+
+106
+00:04:10,624 --> 00:04:12,416
+I haven't seen
+
+107
+00:04:12,672 --> 00:04:13,440
+Assistant
+
+108
+00:04:13,696 --> 00:04:15,744
+In-home devices attached to
+
+109
+00:04:16,000 --> 00:04:16,512
+Nearby
+
+110
+00:04:16,768 --> 00:04:17,791
+Right and they would need
+
+111
+00:04:18,047 --> 00:04:22,143
+An account that kind of works with assistant if they want to Tinker with the apis that Google provides
+
+112
+00:04:22,399 --> 00:04:24,191
+This kind of stuff on Google not the only one
+
+113
+00:04:24,959 --> 00:04:27,519
+Amazon and Microsoft and many many other
+
+114
+00:04:28,031 --> 00:04:29,311
+Companies have apis Atwood
+
+115
+00:04:29,567 --> 00:04:31,359
+Be useful for what Jeremy's looking for
+
+116
+00:04:32,127 --> 00:04:32,639
+So
+
+117
+00:04:32,895 --> 00:04:34,687
+I hate to say it. I have a couple options
+
+118
+00:04:34,943 --> 00:04:37,247
+This one is to do what I asked you what I just did
+
+119
+00:04:37,503 --> 00:04:40,319
+I register my account for different API services
+
+120
+00:04:40,831 --> 00:04:43,391
+Somewhere for Google summer for lifx
+
+121
+00:04:43,647 --> 00:04:44,159
+Etc
+
+122
+00:04:44,415 --> 00:04:45,439
+To get an API
+
+123
+00:04:45,695 --> 00:04:46,207
+Key
+
+124
+00:04:46,719 --> 00:04:49,791
+And once you have the API key if you can do any kind of like coding
+
+125
+00:04:50,047 --> 00:04:53,887
+You can just let the students and the kids use that API key to
+
+126
+00:04:54,399 --> 00:04:55,167
+Access
+
+127
+00:04:55,423 --> 00:04:55,935
+Any
+
+128
+00:04:56,191 --> 00:04:56,959
+Cloud type
+
+129
+00:04:57,215 --> 00:04:58,751
+Air ml services
+
+130
+00:04:59,007 --> 00:04:59,775
+So that's one option
+
+131
+00:05:00,287 --> 00:05:01,567
+There are a couple of
+
+132
+00:05:02,079 --> 00:05:05,151
+Things out there some products one is relatively new because it
+
+133
+00:05:06,431 --> 00:05:08,991
+Kickstarter right now in fact it's Mike Elgan
+
+134
+00:05:09,247 --> 00:05:09,759
+Sun
+
+135
+00:05:10,527 --> 00:05:14,367
+Mike Elgan we don't know he does the used to do that
+
+136
+00:05:14,623 --> 00:05:17,439
+This week in Google show you talk to me for Stacy right now am I
+
+137
+00:05:18,207 --> 00:05:18,975
+Oh yeah I know
+
+138
+00:05:19,231 --> 00:05:19,999
+Mike is a smart fella
+
+139
+00:05:20,255 --> 00:05:23,839
+And his son is a very smart fellow too because he has a Kickstarter right now
+
+140
+00:05:24,095 --> 00:05:26,143
+That already met its goals already funded
+
+141
+00:05:26,399 --> 00:05:27,679
+It's called The Chatterbox
+
+142
+00:05:28,191 --> 00:05:30,495
+And it's a DIY smart speaker that
+
+143
+00:05:30,751 --> 00:05:32,287
+He says anyone can program
+
+144
+00:05:32,543 --> 00:05:34,079
+And the reason this is really
+
+145
+00:05:34,335 --> 00:05:35,359
+Geared towards kids
+
+146
+00:05:35,615 --> 00:05:36,127
+Is that
+
+147
+00:05:36,383 --> 00:05:37,151
+It all
+
+148
+00:05:37,407 --> 00:05:39,455
+Happens everything happens on the device
+
+149
+00:05:39,711 --> 00:05:41,503
+She don't even need any accounts
+
+150
+00:05:42,015 --> 00:05:46,623
+There might be some parents out there who are like I don't want my kids voice in the cloud I don't know
+
+151
+00:05:47,135 --> 00:05:52,255
+It's a it's a thing but it's a this is a little smart speaker sad Power by Raspberry Pi
+
+152
+00:05:52,767 --> 00:05:53,535
+As I got
+
+153
+00:05:53,791 --> 00:05:55,583
+Cute little cardboard
+
+154
+00:05:55,839 --> 00:05:58,399
+Teasing that the kids create what makes it look like a standing up
+
+155
+00:05:58,911 --> 00:06:00,959
+Robot foxy but still kind of cute
+
+156
+00:06:01,983 --> 00:06:02,751
+Additionally
+
+157
+00:06:03,007 --> 00:06:03,775
+You can
+
+158
+00:06:04,031 --> 00:06:04,543
+Program it
+
+159
+00:06:05,055 --> 00:06:06,591
+It looks like it's blocked lie to me
+
+160
+00:06:06,847 --> 00:06:08,383
+Which is like a dragon drop kind of
+
+161
+00:06:08,639 --> 00:06:09,407
+Programming language
+
+162
+00:06:09,663 --> 00:06:13,247
+So it's not like too complex for the kids to play with the boys services on the
+
+163
+00:06:13,503 --> 00:06:15,039
+So that's an option
+
+164
+00:06:15,551 --> 00:06:16,319
+What age range
+
+165
+00:06:16,575 --> 00:06:17,599
+For those kind of kids for that
+
+166
+00:06:19,135 --> 00:06:20,927
+Honestly I mean you can
+
+167
+00:06:21,183 --> 00:06:21,951
+Probably go
+
+168
+00:06:22,207 --> 00:06:24,255
+Could I would say down to age
+
+169
+00:06:25,535 --> 00:06:29,631
+It's a six or seven with supervision okay and how much is it
+
+170
+00:06:30,143 --> 00:06:33,727
+So this started out at $99 and all the backers
+
+171
+00:06:33,983 --> 00:06:37,311
+Eat that up and then went to 109 and ate that up to
+
+172
+00:06:37,567 --> 00:06:40,895
+So I don't see how you can order it just yet
+
+173
+00:06:41,151 --> 00:06:42,175
+Because
+
+174
+00:06:42,431 --> 00:06:43,711
+The kickstarter is over
+
+175
+00:06:44,479 --> 00:06:46,015
+So what I would say is Go to the
+
+176
+00:06:46,271 --> 00:06:47,039
+Kickstarter website
+
+177
+00:06:47,807 --> 00:06:50,623
+Follow along what's going on because they make us for sale
+
+178
+00:06:51,135 --> 00:06:52,671
+I'm sure they'll tell you where you can get at that point
+
+179
+00:06:54,207 --> 00:06:55,231
+Got it okay
+
+180
+00:06:55,999 --> 00:06:57,279
+And you said you had one other option
+
+181
+00:06:57,535 --> 00:07:01,631
+I do Google actually make something very similar called their Vision kit
+
+182
+00:07:02,399 --> 00:07:03,935
+That's the aiy projects
+
+183
+00:07:04,447 --> 00:07:07,775
+Start with google.com site where you can buy The Voice kid or
+
+184
+00:07:08,031 --> 00:07:09,311
+Nhtp you if you want but
+
+185
+00:07:09,567 --> 00:07:11,103
+Specifically the vision kit
+
+186
+00:07:11,615 --> 00:07:14,175
+I looked through there if you want to get into AI with
+
+187
+00:07:14,687 --> 00:07:15,455
+Computer vision
+
+188
+00:07:15,711 --> 00:07:18,271
+I don't see any requirement on that
+
+189
+00:07:18,783 --> 00:07:20,831
+That says you need a Google account
+
+190
+00:07:21,087 --> 00:07:23,135
+I do see it for The Voice Kids
+
+191
+00:07:23,647 --> 00:07:27,231
+So I believe it's like pre-configured to like use a test
+
+192
+00:07:27,743 --> 00:07:28,255
+Account
+
+193
+00:07:28,511 --> 00:07:30,303
+To access the Vision Services service
+
+194
+00:07:31,327 --> 00:07:32,095
+In which case
+
+195
+00:07:32,351 --> 00:07:32,863
+You don't need
+
+196
+00:07:33,119 --> 00:07:33,631
+To worry about
+
+197
+00:07:34,143 --> 00:07:34,911
+Tranchulas and such
+
+198
+00:07:36,447 --> 00:07:38,495
+Okay so you could just get this and
+
+199
+00:07:38,751 --> 00:07:42,847
+Unauthorised computer vision
+
+200
+00:07:43,359 --> 00:07:44,895
+Not traceable trackable etcetera
+
+201
+00:07:46,687 --> 00:07:47,199
+There we go
+
+202
+00:07:48,223 --> 00:07:51,039
+Okay so Jeremy hopefully some of that helps you
+
+203
+00:07:51,807 --> 00:07:52,319
+Hopefully
+
+204
+00:07:52,575 --> 00:07:55,135
+You have the budget to do some of this with your kids at
+
+205
+00:07:55,647 --> 00:07:56,415
+Sounds like a lot of fun
+
+206
+00:07:56,927 --> 00:07:57,439
+Okay
+
+207
+00:07:57,951 --> 00:08:00,255
+Next up we have a question from Keith
+
+208
+00:08:00,767 --> 00:08:02,303
+Who is just checking up on me
+
+209
+00:08:02,559 --> 00:08:03,327
+Thanks Keith
+
+210
+00:08:03,583 --> 00:08:04,095
+Let's hear it
+
+211
+00:08:04,863 --> 00:08:05,631
+Play Susan Kevin
+
+212
+00:08:06,143 --> 00:08:07,423
+Is Keith from going to Arizona
+
+213
+00:08:07,935 --> 00:08:08,959
+Pico question CCU
+
+214
+00:08:09,215 --> 00:08:12,287
+Let's begin the year you mentioned that you're going to move everything over to Google
+
+215
+00:08:12,543 --> 00:08:13,311
+Home versus
+
+216
+00:08:13,567 --> 00:08:14,847
+Using Alexa products
+
+217
+00:08:15,359 --> 00:08:15,871
+Anime
+
+218
+00:08:16,127 --> 00:08:17,407
+So kind of curious
+
+219
+00:08:17,663 --> 00:08:18,687
+That is going
+
+220
+00:08:19,199 --> 00:08:19,711
+And
+
+221
+00:08:19,967 --> 00:08:20,991
+Do you want to go back
+
+222
+00:08:21,503 --> 00:08:22,015
+And
+
+223
+00:08:22,271 --> 00:08:25,855
+I'd like to get your experience but that what you like and dislike
+
+224
+00:08:26,367 --> 00:08:27,647
+And if you do go back
+
+225
+00:08:27,903 --> 00:08:28,415
+Why you going
+
+226
+00:08:29,439 --> 00:08:30,463
+Keith
+
+227
+00:08:30,719 --> 00:08:31,743
+This is really
+
+228
+00:08:31,999 --> 00:08:32,767
+A sad sad
+
+229
+00:08:33,023 --> 00:08:33,535
+Story
+
+230
+00:08:33,791 --> 00:08:35,327
+I switched everything to Google
+
+231
+00:08:35,583 --> 00:08:36,095
+You're correct
+
+232
+00:08:36,351 --> 00:08:42,495
+I loved it and actually my family loves the Google smart display that we have we have two 10-inch Lenovo smart display
+
+233
+00:08:43,007 --> 00:08:44,287
+And then I threw
+
+234
+00:08:44,543 --> 00:08:46,591
+Add a Google home in a couple minutes running
+
+235
+00:08:47,615 --> 00:08:48,639
+I can tell you that
+
+236
+00:08:49,151 --> 00:08:51,199
+Everything was unplugged Within
+
+237
+00:08:51,711 --> 00:08:52,991
+Probably two weeks
+
+238
+00:08:53,503 --> 00:08:55,551
+And the reason was I had
+
+239
+00:08:55,807 --> 00:08:57,343
+Done the voice match
+
+240
+00:08:57,855 --> 00:08:59,647
+And with voice match
+
+241
+00:09:00,159 --> 00:09:00,927
+Which wasn't
+
+242
+00:09:01,183 --> 00:09:01,695
+2 strong
+
+243
+00:09:06,559 --> 00:09:09,631
+Couldn't recognize my voice probably half of
+
+244
+00:09:10,655 --> 00:09:15,263
+It did great with my husband's voice but at first he was kind of hacked off because he had to go train it
+
+245
+00:09:15,775 --> 00:09:18,335
+And so is this
+
+246
+00:09:19,871 --> 00:09:20,383
+And then
+
+247
+00:09:20,639 --> 00:09:22,687
+It didn't recognize my daughter at all
+
+248
+00:09:23,199 --> 00:09:28,319
+And get her voice match on there because she wasn't using a phone with a Google account on it
+
+249
+00:09:28,831 --> 00:09:31,903
+Because she was under 13 and technically can't have one
+
+250
+00:09:32,671 --> 00:09:33,695
+Was a whole thing
+
+251
+00:09:33,951 --> 00:09:34,975
+That we just did not do
+
+252
+00:09:35,743 --> 00:09:36,255
+So
+
+253
+00:09:37,023 --> 00:09:39,583
+It was awesome in theory that I could be like
+
+254
+00:09:39,839 --> 00:09:44,447
+Hey what's on my calendar my husband gets a call Mom and it would call his mom is opposed to my mom
+
+255
+00:09:44,959 --> 00:09:45,471
+But
+
+256
+00:09:45,727 --> 00:09:46,495
+We had to turn that off
+
+257
+00:09:47,263 --> 00:09:48,287
+But before we turned it off
+
+258
+00:09:48,543 --> 00:09:51,615
+Basically everyone in my house whenever back to madam
+
+259
+00:09:52,127 --> 00:09:53,151
+Because they were kind of trained to use
+
+260
+00:09:53,919 --> 00:09:55,199
+And we kept
+
+261
+00:09:55,711 --> 00:09:57,759
+The main Google home hub plugged in
+
+262
+00:09:58,527 --> 00:10:00,319
+And once we turned off The Voice
+
+263
+00:10:00,575 --> 00:10:01,343
+Recognition
+
+264
+00:10:01,599 --> 00:10:02,111
+Capability
+
+265
+00:10:02,623 --> 00:10:04,159
+People used it sometimes
+
+266
+00:10:04,415 --> 00:10:05,183
+But again
+
+267
+00:10:05,695 --> 00:10:06,719
+4 most basic
+
+268
+00:10:06,975 --> 00:10:07,487
+Commands
+
+269
+00:10:07,743 --> 00:10:08,767
+It didn't work as well
+
+270
+00:10:09,023 --> 00:10:09,535
+Also
+
+271
+00:10:09,791 --> 00:10:10,303
+When we die
+
+272
+00:10:10,559 --> 00:10:12,095
+Sports turn on the television
+
+273
+00:10:12,863 --> 00:10:17,983
+Sometimes it would be able to do it sometimes it wouldn't and then if it didn't we that say okay ask Harmony Wichita
+
+274
+00:10:18,239 --> 00:10:19,519
+Because we're using Logitech Harmony
+
+275
+00:10:19,775 --> 00:10:20,543
+Turn on the television
+
+276
+00:10:21,055 --> 00:10:22,079
+Then it would do it but
+
+277
+00:10:22,335 --> 00:10:23,615
+It was a little hit or miss
+
+278
+00:10:24,127 --> 00:10:25,919
+My daughter didn't like using it
+
+279
+00:10:26,175 --> 00:10:26,687
+Because
+
+280
+00:10:27,199 --> 00:10:31,295
+Google still doesn't play the same thing she wants to play with Spotify
+
+281
+00:10:32,063 --> 00:10:37,695
+Their Spotify integration is still a little wonky so sometimes it still plays the karaoke versions of popular songs
+
+282
+00:10:38,207 --> 00:10:39,999
+Instead of the actual song
+
+283
+00:10:40,255 --> 00:10:40,767
+Where is
+
+284
+00:10:41,023 --> 00:10:42,815
+Madam is like oh
+
+285
+00:10:43,071 --> 00:10:45,119
+You want to hear Blank Space by Taylor Swift
+
+286
+00:10:45,375 --> 00:10:47,167
+I got that she plays that right
+
+287
+00:10:48,191 --> 00:10:51,007
+Google sometimes would play an instrumental version
+
+288
+00:10:51,263 --> 00:10:51,775
+And you be like
+
+289
+00:10:52,287 --> 00:10:52,799
+Why Google
+
+290
+00:10:53,567 --> 00:10:55,103
+Is that really what people want to hear
+
+291
+00:10:55,615 --> 00:10:57,151
+That's kind of held out when
+
+292
+00:10:57,919 --> 00:10:58,943
+We still have
+
+293
+00:10:59,455 --> 00:11:04,319
+The display and we love it because it's showing photos and that's super vine Everyone likes that
+
+294
+00:11:04,831 --> 00:11:06,111
+And we use it to
+
+295
+00:11:06,623 --> 00:11:07,391
+Settled
+
+296
+00:11:07,647 --> 00:11:12,255
+I called my room argument there really is no supper table arguments where we're sitting down at dinner in
+
+297
+00:11:12,767 --> 00:11:14,559
+We're having. Like why is it this way
+
+298
+00:11:15,071 --> 00:11:17,375
+So we do tend to ask Google more questions
+
+299
+00:11:18,399 --> 00:11:22,751
+I mean I had the matinee and plug for maybe a week before my Family Feud need
+
+300
+00:11:23,007 --> 00:11:23,519
+Whatever like
+
+301
+00:11:23,775 --> 00:11:24,287
+No
+
+302
+00:11:25,311 --> 00:11:26,079
+This is terrible
+
+303
+00:11:26,591 --> 00:11:27,615
+So when you end up
+
+304
+00:11:27,871 --> 00:11:29,919
+And your final destination in Seattle
+
+305
+00:11:30,431 --> 00:11:31,711
+I assume you're going to
+
+306
+00:11:32,223 --> 00:11:33,503
+Put madhumeh back in everywhere
+
+307
+00:11:34,271 --> 00:11:36,575
+Yeah it's matinee all the way although
+
+308
+00:11:37,343 --> 00:11:40,159
+This is it now this will be a challenge because of the whole nest
+
+309
+00:11:40,415 --> 00:11:41,695
+Deprecation kind of issue
+
+310
+00:11:41,951 --> 00:11:45,535
+We do like the smart doorbell of choice for me is the nest
+
+311
+00:11:47,327 --> 00:11:47,839
+So
+
+312
+00:11:48,095 --> 00:11:50,655
+Its entirety have the Google display should I
+
+313
+00:11:51,423 --> 00:11:55,007
+You know use that display to show us who's at the door like when we're in the kitchen
+
+314
+00:11:55,519 --> 00:11:56,543
+It already shows us
+
+315
+00:11:57,055 --> 00:11:57,823
+Video from
+
+316
+00:11:58,847 --> 00:12:01,663
+I mean since we have it we're probably going to just use the net
+
+317
+00:12:02,175 --> 00:12:02,943
+Bright that makes sense
+
+318
+00:12:03,455 --> 00:12:04,991
+It's interesting my experience
+
+319
+00:12:05,503 --> 00:12:06,783
+Not that I moved or anything and
+
+320
+00:12:07,039 --> 00:12:10,367
+And not that Keith cares about my house
+
+321
+00:12:10,623 --> 00:12:13,439
+At my experience is very different and we're all Google
+
+322
+00:12:14,207 --> 00:12:14,975
+And
+
+323
+00:12:15,231 --> 00:12:18,815
+The difference by The Voice match
+
+324
+00:12:19,071 --> 00:12:25,215
+We don't use the voice match because if I want personal information I just use my phone for that and everybody else uses their phone for
+
+325
+00:12:25,727 --> 00:12:26,239
+They're not
+
+326
+00:12:26,495 --> 00:12:27,519
+Big into sitting around the
+
+327
+00:12:27,775 --> 00:12:30,591
+Kitchen table and then asking the smartest by what's next on our calendar
+
+328
+00:12:31,103 --> 00:12:31,615
+Cuz
+
+329
+00:12:31,871 --> 00:12:32,895
+They just use their phones
+
+330
+00:12:34,431 --> 00:12:36,223
+Just a difference in how they use it that's fine
+
+331
+00:12:36,479 --> 00:12:37,503
+So no voice match
+
+332
+00:12:37,759 --> 00:12:39,807
+And they don't really use either
+
+333
+00:12:40,063 --> 00:12:41,087
+Of the smart speaker
+
+334
+00:12:41,343 --> 00:12:42,879
+Platforms that much at all by
+
+335
+00:12:43,135 --> 00:12:44,159
+Comparison to me
+
+336
+00:12:44,671 --> 00:12:45,183
+So
+
+337
+00:12:45,439 --> 00:12:46,207
+They Don't Really Care as much
+
+338
+00:12:47,487 --> 00:12:51,327
+This is how much we use it in my house no lyric that's where you're actually
+
+339
+00:12:51,583 --> 00:12:52,351
+Like we're packed
+
+340
+00:12:53,375 --> 00:12:54,143
+By the time you guys
+
+341
+00:12:54,399 --> 00:12:55,679
+Hear this I'll have been in Co
+
+342
+00:12:56,447 --> 00:12:59,775
+But we're like the idea of living for 2 weeks out of a suitcase
+
+343
+00:13:00,287 --> 00:13:02,591
+We still had to keep one Amazon Echo.
+
+344
+00:13:02,847 --> 00:13:03,359
+Device
+
+345
+00:13:03,615 --> 00:13:08,735
+You guys use it for music as this do I nobody else in my house listen to music with me but you guys
+
+346
+00:13:08,991 --> 00:13:12,831
+You used the services that come with these devices far more than my family.
+
+347
+00:13:13,599 --> 00:13:15,391
+Music timers
+
+348
+00:13:15,647 --> 00:13:16,671
+Yeah like my husband
+
+349
+00:13:16,927 --> 00:13:17,439
+It is like
+
+350
+00:13:17,695 --> 00:13:19,487
+We have the echo in my daughter's room
+
+351
+00:13:19,999 --> 00:13:23,583
+So she can you set his alarm clock but every night before he goes to bed my husband's like
+
+352
+00:13:23,839 --> 00:13:24,607
+Anime
+
+353
+00:13:24,863 --> 00:13:26,655
+Set up
+
+354
+00:13:27,167 --> 00:13:27,679
+Yeah
+
+355
+00:13:28,191 --> 00:13:31,775
+I mean I'll use a voice assistant to preheat the June oven for example
+
+356
+00:13:32,287 --> 00:13:34,591
+That's awesome cuz you're like hands are all sticky
+
+357
+00:13:37,663 --> 00:13:38,687
+But my wife will
+
+358
+00:13:38,943 --> 00:13:41,503
+Walk out of the room go across the house
+
+359
+00:13:41,759 --> 00:13:42,271
+Hit the button
+
+360
+00:13:42,527 --> 00:13:43,807
+Walk away back into town
+
+361
+00:13:44,319 --> 00:13:45,087
+I'm like why you doing that
+
+362
+00:13:48,159 --> 00:13:48,927
+She's way healthy
+
+363
+00:13:49,439 --> 00:13:50,975
+I'm actually using it to Adam
+
+364
+00:13:51,231 --> 00:13:53,535
+Data to my Fitbit now I know how much water I drink
+
+365
+00:13:53,791 --> 00:13:55,327
+So I'm like
+
+366
+00:13:55,583 --> 00:13:56,095
+Smart
+
+367
+00:13:56,351 --> 00:13:56,863
+So Keith
+
+368
+00:13:57,375 --> 00:13:58,399
+That is how I'm going
+
+369
+00:13:58,911 --> 00:14:01,983
+It's pretty much variable depends on your situation
+
+370
+00:14:02,751 --> 00:14:04,799
+You know what I'm all in on Google so I really wish it would
+
+371
+00:14:05,055 --> 00:14:06,079
+Work better for us
+
+372
+00:14:07,359 --> 00:14:08,127
+Okay
+
+373
+00:14:09,151 --> 00:14:10,687
+Let's see we have got
+
+374
+00:14:10,943 --> 00:14:12,479
+A question from no-name
+
+375
+00:14:13,503 --> 00:14:15,039
+An unnamed individual coming up
+
+376
+00:14:15,295 --> 00:14:15,807
+But
+
+377
+00:14:16,319 --> 00:14:18,879
+This is a question we've gotten a couple times
+
+378
+00:14:19,391 --> 00:14:20,927
+Kevin's actually tried to do this
+
+379
+00:14:21,183 --> 00:14:21,951
+Couple different ways
+
+380
+00:14:22,463 --> 00:14:22,975
+So
+
+381
+00:14:23,487 --> 00:14:25,791
+This is all about making your washing machine smart
+
+382
+00:14:26,303 --> 00:14:26,815
+Let's listening
+
+383
+00:14:29,887 --> 00:14:31,935
+Quick question is regarding
+
+384
+00:14:32,447 --> 00:14:36,031
+You let my not smart washer and dryer machines
+
+385
+00:14:36,543 --> 00:14:41,407
+Unfortunately have plugs that do not work with normal
+
+386
+00:14:41,663 --> 00:14:43,199
+Outlets monitoring
+
+387
+00:14:43,711 --> 00:14:47,039
+So I haven't been able to just use energy
+
+388
+00:14:47,551 --> 00:14:49,087
+Laundry is finished
+
+389
+00:14:49,343 --> 00:14:51,135
+I was wondering if you guys had any others
+
+390
+00:14:52,671 --> 00:14:53,183
+Thank you
+
+391
+00:14:53,695 --> 00:14:57,535
+Yeah so we're right since we've gotten this we probably get this question like at least
+
+392
+00:14:58,047 --> 00:14:58,815
+Every two months
+
+393
+00:14:59,071 --> 00:15:02,655
+There's a lot of folks that want to know how to do this with the easiest way to do it
+
+394
+00:15:02,911 --> 00:15:07,007
+The thing is there's no truly easy way to do it the way I think
+
+395
+00:15:07,775 --> 00:15:09,823
+People would like it to work we have to kind of
+
+396
+00:15:10,335 --> 00:15:11,615
+There is one easy way
+
+397
+00:15:12,895 --> 00:15:13,919
+Easiest way to do this
+
+398
+00:15:14,431 --> 00:15:15,199
+Is Dubai
+
+399
+00:15:15,711 --> 00:15:16,479
+Connected washer
+
+400
+00:15:17,759 --> 00:15:19,551
+But if you don't want to buy a whole new washer dryer
+
+401
+00:15:19,807 --> 00:15:20,319
+And I don't blame you
+
+402
+00:15:21,087 --> 00:15:21,599
+Now
+
+403
+00:15:22,111 --> 00:15:23,135
+Yeah okay
+
+404
+00:15:23,903 --> 00:15:25,951
+So there's there's your thousand-dollar option
+
+405
+00:15:29,791 --> 00:15:30,559
+Crazy I'll do it
+
+406
+00:15:32,863 --> 00:15:35,423
+I found a bunch of folks that have had success
+
+407
+00:15:35,679 --> 00:15:39,775
+With a SmartThings multi-sensor which measures vibration
+
+408
+00:15:40,031 --> 00:15:41,311
+I think it measures
+
+409
+00:15:41,823 --> 00:15:42,847
+Noise
+
+410
+00:15:43,615 --> 00:15:45,919
+Vibration temperature
+
+411
+00:15:46,175 --> 00:15:47,455
+Open close
+
+412
+00:15:47,711 --> 00:15:48,991
+Humidity
+
+413
+00:15:53,343 --> 00:15:56,159
+Yeah but space in their focus on the vibration
+
+414
+00:15:57,183 --> 00:16:00,511
+Because they attach this to their washer dryer and
+
+415
+00:16:01,023 --> 00:16:03,071
+Paisley set up a rule that says
+
+416
+00:16:03,839 --> 00:16:05,119
+Set an alarm if
+
+417
+00:16:05,631 --> 00:16:08,959
+It's not vibrating for X number of seconds or minutes
+
+418
+00:16:09,215 --> 00:16:12,031
+You need to set that there an actual there's like a skill for that
+
+419
+00:16:12,287 --> 00:16:15,103
+Cassette that you need to make sure because I was listening cycle through
+
+420
+00:16:15,359 --> 00:16:19,455
+The devices may stop vibrating for maybe 30 seconds 45 seconds Munoz
+
+421
+00:16:19,967 --> 00:16:22,015
+Maybe cuz it's refilling water in the washer Etc
+
+422
+00:16:22,271 --> 00:16:26,367
+You need to understand and adjust that for you in particular washer dryer but
+
+423
+00:16:26,623 --> 00:16:28,927
+That's what folks have been very happy with
+
+424
+00:16:29,183 --> 00:16:30,463
+Considering there just isn't
+
+425
+00:16:31,231 --> 00:16:33,023
+A great off-the-shelf option other than
+
+426
+00:16:33,279 --> 00:16:34,559
+As we said buying a home
+
+427
+00:16:34,815 --> 00:16:35,327
+Set of appliances
+
+428
+00:16:35,839 --> 00:16:37,887
+You could also make your own
+
+429
+00:16:38,143 --> 00:16:40,703
+I wouldn't say it's easier but it's an option for people that get tinker
+
+430
+00:16:40,959 --> 00:16:47,103
+We can put a link in the show notes to a Raspberry Pi Appliance Monitor and does the same thing with a vibration sense
+
+431
+00:16:47,871 --> 00:16:48,383
+So
+
+432
+00:16:48,639 --> 00:16:50,943
+If you don't feel like mine when you can make your own
+
+433
+00:16:51,455 --> 00:16:53,759
+In that scenario though I have to buy the pie
+
+434
+00:16:54,271 --> 00:16:57,343
+Play the program it for like do I have to download some sort of
+
+435
+00:16:57,599 --> 00:17:01,951
+Absolutely I recognition Okay and then I need to have a wireless component I need to get a
+
+436
+00:17:02,975 --> 00:17:03,999
+Shield or a hat
+
+437
+00:17:06,815 --> 00:17:09,375
+Whatever Wi-Fi and the pies are almost
+
+438
+00:17:09,631 --> 00:17:15,007
+All them, so you don't have to add any special radio frequencies or anything like that
+
+439
+00:17:15,519 --> 00:17:20,383
+But as far as downloading code know your absolute right and the link we have that car to a GitHub project
+
+440
+00:17:20,639 --> 00:17:22,943
+So the code is already there as well as the instructions so it's not
+
+441
+00:17:23,711 --> 00:17:27,039
+Terribly miss you a first time user could you just download the code
+
+442
+00:17:27,295 --> 00:17:28,319
+That is up on GitHub
+
+443
+00:17:28,575 --> 00:17:30,111
+To the Pines pretty much run at
+
+444
+00:17:30,623 --> 00:17:32,415
+But other options that
+
+445
+00:17:32,927 --> 00:17:34,719
+Some people do and I don't recommend
+
+446
+00:17:34,975 --> 00:17:35,999
+You can actually
+
+447
+00:17:36,767 --> 00:17:39,071
+Make a 220-volt outlet smart
+
+448
+00:17:39,327 --> 00:17:41,375
+But every time I've seen that it's
+
+449
+00:17:41,887 --> 00:17:43,679
+You have to hardwire your
+
+450
+00:17:44,191 --> 00:17:45,215
+Appliance to this
+
+451
+00:17:45,983 --> 00:17:46,495
+Outlet
+
+452
+00:17:46,751 --> 00:17:47,263
+This plug
+
+453
+00:17:47,775 --> 00:17:50,591
+And that's not something I would at that point you might as well just go buy a new washer
+
+454
+00:17:51,103 --> 00:17:52,383
+Yeah you don't want to play with 200
+
+455
+00:17:52,895 --> 00:17:57,247
+Not so much
+
+456
+00:17:57,503 --> 00:17:58,015
+It's not a cool thing
+
+457
+00:17:58,527 --> 00:17:59,039
+Have happened in your
+
+458
+00:18:00,319 --> 00:18:02,111
+Okay so those are really good options
+
+459
+00:18:02,367 --> 00:18:04,415
+Let's pause for a moment and
+
+460
+00:18:04,671 --> 00:18:05,183
+Take a break
+
+461
+00:18:05,439 --> 00:18:06,975
+Wear weave this week sponsor
+
+462
+00:18:07,743 --> 00:18:09,023
+This week sponsor is
+
+463
+00:18:09,279 --> 00:18:10,559
+Dell Technologies
+
+464
+00:18:11,583 --> 00:18:14,399
+We're taking a quick break from The Internet of Things podcast
+
+465
+00:18:14,655 --> 00:18:20,799
+Spur message from our sponsor sponsor is Dell Technologies and I'm here with Chris Lynn
+
+466
+00:18:21,055 --> 00:18:24,127
+Hi Chris thanks for joining our podcast today
+
+467
+00:18:24,383 --> 00:18:26,687
+Can you tell us a little bit about yourself
+
+468
+00:18:27,455 --> 00:18:28,735
+Hi Stacy thanks for having
+
+469
+00:18:35,647 --> 00:18:37,695
+Digital film industry
+
+470
+00:18:38,463 --> 00:18:42,815
+So with your oil and gas background in data architecture and digital oilfield Solutions
+
+471
+00:18:43,071 --> 00:18:44,863
+Weird how have you seen oil and gas
+
+472
+00:18:46,655 --> 00:18:48,447
+Gas is very possible
+
+473
+00:18:48,703 --> 00:18:50,239
+Automation oriented
+
+474
+00:18:50,495 --> 00:18:52,031
+Dismiss
+
+475
+00:18:52,287 --> 00:18:55,615
+Four major areas of growth for it number one
+
+476
+00:18:55,871 --> 00:18:56,383
+Stranded
+
+477
+00:18:56,895 --> 00:18:57,919
+Number two is
+
+478
+00:18:58,175 --> 00:18:58,943
+Capturing
+
+479
+00:18:59,199 --> 00:19:00,991
+Data increase velocity
+
+480
+00:19:01,247 --> 00:19:06,111
+Number three is actually providing more analytics and applications at the edge
+
+481
+00:19:06,367 --> 00:19:08,415
+What area that is really exploding
+
+482
+00:19:08,671 --> 00:19:14,047
+Is using non typical data types like video audio and graphic Imaging to do
+
+483
+00:19:14,303 --> 00:19:16,095
+Real-time operations analyst
+
+484
+00:19:17,119 --> 00:19:23,263
+Excellent so what are some of the key areas for companies to think about if they want to deliver successful iot
+
+485
+00:19:23,519 --> 00:19:24,799
+Project specifically in oil
+
+486
+00:19:26,079 --> 00:19:26,847
+Number one
+
+487
+00:19:27,103 --> 00:19:28,639
+We have to remember its first
+
+488
+00:19:28,895 --> 00:19:29,919
+And foremost about this
+
+489
+00:19:30,431 --> 00:19:31,455
+How do you help the business
+
+490
+00:19:31,967 --> 00:19:36,063
+Be successful to increasing production
+
+491
+00:19:37,855 --> 00:19:40,927
+Specifically willful operation
+
+492
+00:19:41,183 --> 00:19:41,951
+Automation
+
+493
+00:19:45,535 --> 00:19:48,863
+Understand
+
+494
+00:19:49,119 --> 00:19:55,263
+Balsam it devices to make it better
+
+495
+00:19:56,543 --> 00:19:59,615
+Use with it and number three how to make
+
+496
+00:19:59,871 --> 00:20:01,919
+Consumers on that day that day scientist
+
+497
+00:20:02,175 --> 00:20:04,991
+What are you sedated and course-related back to business
+
+498
+00:20:05,247 --> 00:20:06,527
+Howling and users
+
+499
+00:20:07,807 --> 00:20:09,599
+And uses to integration and work less
+
+500
+00:20:12,159 --> 00:20:15,231
+And then we move differently there's three other key components
+
+501
+00:20:15,487 --> 00:20:16,255
+What's my connectivity
+
+502
+00:20:28,543 --> 00:20:30,079
+Put these things all together you
+
+503
+00:20:30,335 --> 00:20:30,847
+Understand how they work
+
+504
+00:20:31,103 --> 00:20:37,247
+Together and you can make a really good business case and you can deliver a really successful project
+
+505
+00:20:38,015 --> 00:20:41,087
+So I understand data-driven production is coming up in
+
+506
+00:20:41,343 --> 00:20:41,855
+Houston
+
+507
+00:20:42,111 --> 00:20:43,647
+June 11th and 12th
+
+508
+00:20:43,903 --> 00:20:46,463
+What can we expect to see from Dell Technologies at the show
+
+509
+00:20:47,231 --> 00:20:48,511
+Dallas proud to be the headline
+
+510
+00:20:49,023 --> 00:20:50,047
+Again for this year's
+
+511
+00:20:50,303 --> 00:20:51,583
+Evangelion production
+
+512
+00:20:51,839 --> 00:20:57,983
+At this event you'll be able to see a completely integrated demonstration showing as the cord cop capabilities
+
+513
+00:20:58,239 --> 00:21:00,287
+Using our technology using data
+
+514
+00:21:02,335 --> 00:21:03,103
+Operating company
+
+515
+00:21:03,615 --> 00:21:07,711
+To get that next level of efficiencies and expose production improvements and next level
+
+516
+00:21:07,967 --> 00:21:08,479
+Crossword
+
+517
+00:21:08,991 --> 00:21:10,015
+Australian basketball
+
+518
+00:21:10,783 --> 00:21:14,367
+Thanks Chris where can people go to learn more about Dell iot
+
+519
+00:21:15,647 --> 00:21:19,232
+Text repository Stacy and people want to learn more about our Solutions
+
+520
+00:21:19,488 --> 00:21:21,792
+They can go to the Dell Technologies. Com
+
+521
+00:21:22,048 --> 00:21:23,328
+Flash IMDb
+
+522
+00:21:29,984 --> 00:21:35,872
+Back with another question about appliances this one is from Kevin but not this Kevin different Kevin
+
+523
+00:21:36,384 --> 00:21:39,712
+Kevin is worried like many of us are about leaving the stove on
+
+524
+00:21:40,480 --> 00:21:41,504
+Let's hear what he wants to do
+
+525
+00:21:41,760 --> 00:21:42,784
+ICC 7
+
+526
+00:21:43,040 --> 00:21:46,368
+I absolutely love you Kevin from Michigan
+
+527
+00:21:46,624 --> 00:21:47,648
+I was wondering
+
+528
+00:21:47,904 --> 00:21:50,464
+You yet answer this question Locker refrigerators
+
+529
+00:21:51,744 --> 00:21:53,280
+Freak out about my stove
+
+530
+00:21:53,536 --> 00:21:56,352
+Right now I have a wyze camera pointed at it
+
+531
+00:21:56,608 --> 00:21:58,400
+So I can just pop up
+
+532
+00:21:58,656 --> 00:22:00,704
+Eric B and see if my light is on
+
+533
+00:22:01,216 --> 00:22:03,008
+Is there a better way that I could
+
+534
+00:22:03,264 --> 00:22:06,080
+Monitor whether or not I leave my stove and oven on
+
+535
+00:22:06,592 --> 00:22:08,384
+Thanks a lot again love the show
+
+536
+00:22:08,640 --> 00:22:09,664
+Alright Kevin
+
+537
+00:22:10,432 --> 00:22:12,992
+I'm glad you're thinking trying to take care of your family
+
+538
+00:22:13,248 --> 00:22:14,784
+I got a couple options for you
+
+539
+00:22:15,296 --> 00:22:18,880
+This is a weird space because people have built stuff for it
+
+540
+00:22:19,392 --> 00:22:19,904
+And
+
+541
+00:22:20,416 --> 00:22:23,232
+Then it didn't sell because a lot of these are very expensive
+
+542
+00:22:23,744 --> 00:22:25,536
+So we discovered one
+
+543
+00:22:26,048 --> 00:22:27,584
+Which is called Wallflower
+
+544
+00:22:28,096 --> 00:22:33,728
+And this is a device that will tell you that you have left your stove on it will not actually
+
+545
+00:22:34,240 --> 00:22:34,752
+Turn it off
+
+546
+00:22:35,520 --> 00:22:37,824
+Correct is just for notifications with food left it on
+
+547
+00:22:38,336 --> 00:22:42,944
+And the reason in this is an outlet so this is an outlet that you plug your stove into
+
+548
+00:22:43,200 --> 00:22:43,712
+It is
+
+549
+00:22:43,968 --> 00:22:45,760
+$150
+
+550
+00:22:46,016 --> 00:22:47,296
+It's called Wallflower Uke
+
+551
+00:22:47,552 --> 00:22:48,576
+You can find it at Wallflower.
+
+552
+00:22:49,856 --> 00:22:50,368
+And
+
+553
+00:22:50,624 --> 00:22:55,232
+If your home is built before 1996 you're going to need one if it's billed after you're going to need it if
+
+554
+00:22:55,488 --> 00:22:56,512
+But
+
+555
+00:22:56,768 --> 00:22:58,048
+The option is
+
+556
+00:22:58,560 --> 00:22:59,072
+Easy
+
+557
+00:22:59,584 --> 00:23:01,888
+The reason why an egg is actually to some of the things
+
+558
+00:23:02,400 --> 00:23:02,912
+Behind
+
+559
+00:23:03,168 --> 00:23:03,936
+Stoves
+
+560
+00:23:04,448 --> 00:23:07,520
+It's actually from a regulatory perspective turning them off
+
+561
+00:23:08,288 --> 00:23:09,824
+Is apparently a big deal
+
+562
+00:23:10,080 --> 00:23:13,152
+So everybody who's like I'm going to do this and I'm going to turn it off
+
+563
+00:23:13,408 --> 00:23:16,736
+They realize when they start getting through certification process that
+
+564
+00:23:17,248 --> 00:23:20,832
+UL process or some sort of like hey is this thing safe to eat
+
+565
+00:23:21,088 --> 00:23:21,600
+Put my house
+
+566
+00:23:21,856 --> 00:23:27,488
+The Regulators don't like them because they they don't know if it's 100% over Wi-Fi that you can like
+
+567
+00:23:27,744 --> 00:23:31,328
+Luther motor and something will definitely be turned off they don't feel comfort
+
+568
+00:23:32,864 --> 00:23:33,376
+But
+
+569
+00:23:33,888 --> 00:23:35,680
+That has not stopped people from trying
+
+570
+00:23:35,936 --> 00:23:36,960
+So
+
+571
+00:23:37,472 --> 00:23:40,288
+The current one and I've seen a lot of these and none of them have
+
+572
+00:23:41,824 --> 00:23:43,872
+But there is currently one called a nerve
+
+573
+00:23:44,128 --> 00:23:45,664
+Ini RV
+
+574
+00:23:46,176 --> 00:23:48,480
+And they are building a connected
+
+575
+00:23:48,736 --> 00:23:49,504
+Knob for your
+
+576
+00:23:50,272 --> 00:23:52,064
+Stove burner knobs
+
+577
+00:23:52,320 --> 00:23:53,600
+Western Gas and Electric
+
+578
+00:23:54,112 --> 00:23:56,416
+And what it does is you
+
+579
+00:23:56,928 --> 00:23:59,744
+Put these on and it has a sensor when your stove is on it will
+
+580
+00:24:00,000 --> 00:24:00,768
+Actually turn the knob
+
+581
+00:24:01,792 --> 00:24:02,304
+But
+
+582
+00:24:02,560 --> 00:24:03,840
+Here is the catch
+
+583
+00:24:04,352 --> 00:24:06,400
+They did a Kickstarter in 2017
+
+584
+00:24:06,656 --> 00:24:08,192
+It does not look like they've delivered on it
+
+585
+00:24:08,704 --> 00:24:09,984
+They were on Shark Tank
+
+586
+00:24:10,240 --> 00:24:11,264
+Can 2018
+
+587
+00:24:11,776 --> 00:24:14,080
+And just this year in February
+
+588
+00:24:14,336 --> 00:24:17,408
+They were part of the bsh techstars
+
+589
+00:24:17,920 --> 00:24:19,456
+Accelerator for the smart
+
+590
+00:24:20,224 --> 00:24:20,992
+What is this mean
+
+591
+00:24:21,248 --> 00:24:24,064
+It means that they've been promising a product for a long time
+
+592
+00:24:24,576 --> 00:24:28,416
+Only now do I feel like they have the backing they would need to actually
+
+593
+00:24:28,672 --> 00:24:29,184
+Get it done
+
+594
+00:24:29,696 --> 00:24:33,024
+The techstars bsh accelerator program makes me feel like
+
+595
+00:24:33,792 --> 00:24:35,328
+A little bit more confidence but
+
+596
+00:24:35,584 --> 00:24:37,376
+It's still not enough confidence that I'm like
+
+597
+00:24:37,888 --> 00:24:38,912
+This is really going to happen
+
+598
+00:24:39,168 --> 00:24:39,680
+But
+
+599
+00:24:40,448 --> 00:24:42,240
+You can go on their website and reserve it
+
+600
+00:24:42,752 --> 00:24:43,520
+And
+
+601
+00:24:44,032 --> 00:24:44,544
+It doesn't cost
+
+602
+00:24:45,568 --> 00:24:48,384
+True it will be nice to see if and when they deliver
+
+603
+00:24:48,640 --> 00:24:51,712
+They actually have a shipping date people know cuz I I love the idea of this
+
+604
+00:24:52,224 --> 00:24:54,016
+We have a gas stove
+
+605
+00:24:54,272 --> 00:24:55,040
+So
+
+606
+00:24:55,296 --> 00:24:57,856
+I'm also really would do SWAT for us
+
+607
+00:24:58,880 --> 00:25:01,696
+Shut off the igniters I guess but really do anything else
+
+608
+00:25:02,208 --> 00:25:04,000
+So this is something I would
+
+609
+00:25:04,256 --> 00:25:06,304
+Consider looking into or trying but
+
+610
+00:25:07,072 --> 00:25:07,840
+It just isn't there yet
+
+611
+00:25:08,352 --> 00:25:10,656
+Yeah in the starter kit for the inner earth
+
+612
+00:25:10,912 --> 00:25:11,424
+Is
+
+613
+00:25:11,680 --> 00:25:17,824
+One sensor plus one knob is a hundred in all the way up to 1 sensor and four knobs which most stoves have four
+
+614
+00:25:18,080 --> 00:25:19,872
+And that's 230.
+
+615
+00:25:20,384 --> 00:25:21,408
+That's a lot of money
+
+616
+00:25:22,176 --> 00:25:23,968
+So it's a lot of money for peace of mind
+
+617
+00:25:24,736 --> 00:25:28,064
+Yeah we are almost in the territory to spend the money on it can I get stove
+
+618
+00:25:28,832 --> 00:25:31,648
+Oh my gosh and now we're back to that Cheeto your old Appliance
+
+619
+00:25:31,904 --> 00:25:33,440
+That's our new motto
+
+620
+00:25:33,696 --> 00:25:35,232
+Kitchen Redo for everyone
+
+621
+00:25:36,256 --> 00:25:39,328
+All right moving along to a question from John
+
+622
+00:25:39,840 --> 00:25:41,888
+I will confess I've never thought of
+
+623
+00:25:42,144 --> 00:25:42,656
+This problem so
+
+624
+00:25:42,912 --> 00:25:43,680
+Kudos to you John
+
+625
+00:25:44,192 --> 00:25:44,704
+Let's hear it
+
+626
+00:25:47,776 --> 00:25:48,800
+Swansea Illinois
+
+627
+00:25:50,336 --> 00:25:52,128
+Little bit concerned about
+
+628
+00:25:52,896 --> 00:25:55,712
+King Auto she devices throughout my home
+
+629
+00:25:57,760 --> 00:25:59,296
+Lightning strikes nearby
+
+630
+00:25:59,552 --> 00:26:00,320
+Power surges
+
+631
+00:26:00,832 --> 00:26:02,368
+Half power strips or
+
+632
+00:26:02,624 --> 00:26:05,184
+Interruptible power supplies for my computer
+
+633
+00:26:06,720 --> 00:26:09,024
+How concerned should I be about my
+
+634
+00:26:12,096 --> 00:26:15,680
+I'll be honest I actually haven't thought of this either
+
+635
+00:26:15,936 --> 00:26:17,216
+And maybe I should have
+
+636
+00:26:17,472 --> 00:26:18,240
+Especially on my
+
+637
+00:26:18,496 --> 00:26:19,520
+Higher price II
+
+638
+00:26:19,776 --> 00:26:20,544
+Tea devices
+
+639
+00:26:21,312 --> 00:26:23,104
+Something like a Google home Mini
+
+640
+00:26:23,872 --> 00:26:26,176
+It's not like throw away money to go buy one
+
+641
+00:26:26,432 --> 00:26:26,944
+You're talking
+
+642
+00:26:27,200 --> 00:26:28,992
+Maybe 30 bucks on sale so
+
+643
+00:26:29,504 --> 00:26:32,576
+I wouldn't be too concerned with things like that but if you have
+
+644
+00:26:32,832 --> 00:26:34,112
+Spend and you have to
+
+645
+00:26:34,368 --> 00:26:35,392
+Pick this number
+
+646
+00:26:35,648 --> 00:26:36,672
+That suits your budget
+
+647
+00:26:37,184 --> 00:26:37,952
+For me anything
+
+648
+00:26:38,208 --> 00:26:40,256
+Cost me more than $50 to replace
+
+649
+00:26:40,512 --> 00:26:41,536
+It might be worth
+
+650
+00:26:41,792 --> 00:26:42,304
+Getting
+
+651
+00:26:42,816 --> 00:26:44,096
+Surge protection for
+
+652
+00:26:44,352 --> 00:26:45,120
+So
+
+653
+00:26:45,376 --> 00:26:49,472
+Yeah baby webcam smart fit smart speakers hubs and so on so forth
+
+654
+00:26:49,728 --> 00:26:51,776
+I'm actually considering this now so I'm glad John
+
+655
+00:26:52,032 --> 00:26:52,544
+Assets
+
+656
+00:26:53,312 --> 00:26:59,200
+What I would say that there's tons if you go to Amazon there are tons of surge protector choices out there
+
+657
+00:26:59,456 --> 00:27:03,808
+I'm going to put one out because it's relatively inexpensive for what you're trying to
+
+658
+00:27:04,064 --> 00:27:04,576
+Protect
+
+659
+00:27:04,832 --> 00:27:07,136
+Basically under 15 bucks gets you
+
+660
+00:27:07,392 --> 00:27:08,416
+Surge protector
+
+661
+00:27:08,672 --> 00:27:11,488
+That you plug in over top of an existing
+
+662
+00:27:11,744 --> 00:27:12,256
+Outlet
+
+663
+00:27:12,512 --> 00:27:15,584
+And it actually adds more Outlets as well as USB ports
+
+664
+00:27:15,840 --> 00:27:17,632
+But you also get surge protection by that
+
+665
+00:27:18,144 --> 00:27:21,728
+So we'll put a link in the shown us this one I think is 13 $14
+
+666
+00:27:22,240 --> 00:27:27,104
+There are Bunches of them out there so maybe look at this one and then see what the other ones the related items are
+
+667
+00:27:27,360 --> 00:27:29,408
+Choose the ones that look the best to you or have the
+
+668
+00:27:29,920 --> 00:27:31,456
+He doesn't number of outlets you want so on
+
+669
+00:27:31,712 --> 00:27:32,736
+But for something
+
+670
+00:27:32,992 --> 00:27:34,016
+Inexpensive
+
+671
+00:27:34,272 --> 00:27:37,344
+Can I make a wyze cam I'm not going to put a surge protector on a wyzecam
+
+672
+00:27:37,600 --> 00:27:40,928
+It's almost as much money to put the surge protector on it cost me for the wyzecam so
+
+673
+00:27:41,440 --> 00:27:44,000
+That's my thought I don't know Stacey you may have a different opinion
+
+674
+00:27:44,768 --> 00:27:46,816
+I was just going to see if you wanted to
+
+675
+00:27:47,072 --> 00:27:47,584
+Brazy
+
+676
+00:27:48,096 --> 00:27:51,680
+This is maybe less for your smart home stuff also there some interesting options here
+
+677
+00:27:52,192 --> 00:27:53,472
+Get a smart surge protector
+
+678
+00:27:53,728 --> 00:27:56,544
+So there are definitely connected surge protectors out there but
+
+679
+00:27:57,056 --> 00:27:59,872
+If your homekit fan Eve has one called the energy strip
+
+680
+00:28:00,128 --> 00:28:00,640
+It is
+
+681
+00:28:01,152 --> 00:28:03,200
+Really pretty it works with Google Assistant
+
+682
+00:28:03,712 --> 00:28:05,504
+The reason you might want to do
+
+683
+00:28:05,760 --> 00:28:06,528
+Connected
+
+684
+00:28:06,784 --> 00:28:07,296
+Surge
+
+685
+00:28:08,576 --> 00:28:10,112
+Is actually two
+
+686
+00:28:10,368 --> 00:28:11,904
+Set rules around like
+
+687
+00:28:12,160 --> 00:28:15,488
+When your smart devices are on like your smart speaker is
+
+688
+00:28:15,744 --> 00:28:16,512
+On or off
+
+689
+00:28:17,024 --> 00:28:18,304
+So you can maybe just
+
+690
+00:28:19,584 --> 00:28:21,120
+Not unplug it but basically
+
+691
+00:28:21,632 --> 00:28:22,144
+Turn it off
+
+692
+00:28:22,656 --> 00:28:23,168
+Completely
+
+693
+00:28:23,936 --> 00:28:26,752
+That might get old for the speaker some things will
+
+694
+00:28:27,008 --> 00:28:30,080
+Need to be reset if you turn them off for too long of a Time
+
+695
+00:28:30,336 --> 00:28:31,872
+But it's an interesting option
+
+696
+00:28:32,640 --> 00:28:34,432
+Or you if you're really worried about life
+
+697
+00:28:34,688 --> 00:28:37,504
+Like privacy or things like that some people are like
+
+698
+00:28:38,016 --> 00:28:40,064
+You can set it up so your smart camera adjust
+
+699
+00:28:40,320 --> 00:28:43,136
+Is totally not even getting power when you come home
+
+700
+00:28:43,648 --> 00:28:44,160
+So
+
+701
+00:28:44,416 --> 00:28:45,184
+Even if Lake
+
+702
+00:28:45,440 --> 00:28:46,976
+The worst case scenario where the
+
+703
+00:28:47,232 --> 00:28:50,560
+The company was like I am really nefarious I'm going to take over your camera and look at you
+
+704
+00:28:52,352 --> 00:28:54,144
+Nautica cologne
+
+705
+00:28:54,656 --> 00:28:56,192
+So that might be a reason to get it
+
+706
+00:28:57,472 --> 00:29:02,080
+Although if they really wanted to see you then they could hack your connected surge protector and then turn the camera back up at 6
+
+707
+00:29:03,616 --> 00:29:05,920
+There's just throwing that out there is another app
+
+708
+00:29:06,944 --> 00:29:11,552
+It would you put surge protectors on any of your things or says not all of your things
+
+709
+00:29:12,320 --> 00:29:17,952
+In some places like my office I have surge protectors already in place and things are plugged into that by default
+
+710
+00:29:18,208 --> 00:29:19,488
+Discussed at the outlets
+
+711
+00:29:20,000 --> 00:29:20,512
+The lake
+
+712
+00:29:20,768 --> 00:29:21,792
+In my kitchen
+
+713
+00:29:22,304 --> 00:29:26,912
+My smart display which is 200 my Echo Show which was another 200 I think
+
+714
+00:29:27,168 --> 00:29:28,960
+Those are plugged into just normal
+
+715
+00:29:29,216 --> 00:29:34,592
+They're GFI outlets but that's about it what about your June cuz that would not be a inexpensive trip
+
+716
+00:29:35,360 --> 00:29:39,200
+You know it is not plugged into surge protector but neither is my $800 coffee May
+
+717
+00:29:39,456 --> 00:29:42,272
+Make her so clearly I'm just not consistent and that's not smart
+
+718
+00:29:44,064 --> 00:29:47,392
+So it looks like John as well as you and I will be spending some money answers for Tech
+
+719
+00:29:48,160 --> 00:29:48,672
+Stacy
+
+720
+00:29:50,464 --> 00:29:53,024
+I'm just like I've got renters insurance or home insurance
+
+721
+00:29:54,048 --> 00:29:56,864
+Next up we've got a question that we also get
+
+722
+00:29:59,680 --> 00:30:00,192
+Aaron
+
+723
+00:30:00,448 --> 00:30:00,960
+So
+
+724
+00:30:01,472 --> 00:30:04,544
+And everybody else
+
+725
+00:30:04,800 --> 00:30:09,408
+Yeah if we were playing if we were playing Q&A Bingo this would be like the Center Square
+
+726
+00:30:10,176 --> 00:30:10,944
+ICC and Kevin
+
+727
+00:30:11,200 --> 00:30:14,528
+My name is Aaron
+
+728
+00:30:14,784 --> 00:30:18,368
+Viability of
+
+729
+00:30:19,136 --> 00:30:21,952
+Crispy Sunday have no current price coming out
+
+730
+00:30:22,208 --> 00:30:23,232
+Distracted
+
+731
+00:30:24,512 --> 00:30:26,048
+Suddenly disconnected doesn't work
+
+732
+00:30:26,560 --> 00:30:28,352
+Crysis 2
+
+733
+00:30:28,608 --> 00:30:32,448
+What you should transition to in the future or west bracket considered
+
+734
+00:30:32,960 --> 00:30:33,728
+Thank you and have a good day
+
+735
+00:30:36,032 --> 00:30:38,080
+I wish I had a better answer for you
+
+736
+00:30:38,848 --> 00:30:40,128
+Confer ferryman show
+
+737
+00:30:40,640 --> 00:30:41,152
+I sent wink
+
+738
+00:30:41,664 --> 00:30:42,688
+PR emails
+
+739
+00:30:43,200 --> 00:30:45,504
+I looked through Linkedin to see who I still do there
+
+740
+00:30:46,528 --> 00:30:48,832
+I sent another email to someone random that I
+
+741
+00:30:49,088 --> 00:30:49,600
+Was like
+
+742
+00:30:49,856 --> 00:30:51,136
+Third-degree connected to
+
+743
+00:30:51,648 --> 00:30:54,720
+I kid you not Stacy reaches out to these folks every couple weeks
+
+744
+00:30:54,976 --> 00:30:57,024
+And it's been going on for months it's not like
+
+745
+00:30:57,280 --> 00:30:58,560
+We have not tried to find out
+
+746
+00:30:59,328 --> 00:31:00,864
+But it's just a black hole
+
+747
+00:31:01,632 --> 00:31:02,144
+It is
+
+748
+00:31:02,656 --> 00:31:03,424
+So officially
+
+749
+00:31:03,936 --> 00:31:04,448
+I've got nothing
+
+750
+00:31:05,216 --> 00:31:07,776
+Unofficially I can tell you that the last update was
+
+751
+00:31:08,288 --> 00:31:08,800
+Sports
+
+752
+00:31:09,312 --> 00:31:13,152
+Feels like a long time ago I also haven't heard from wink yet on the deprecation of
+
+753
+00:31:13,408 --> 00:31:13,920
+Nest
+
+754
+00:31:14,176 --> 00:31:17,504
+Where is all of my other smart home devices have sent me email saying
+
+755
+00:31:18,016 --> 00:31:20,320
+Hey did you hear the Google
+
+756
+00:31:20,576 --> 00:31:21,088
+You know
+
+757
+00:31:21,344 --> 00:31:22,880
+Killing Nest another like
+
+758
+00:31:23,136 --> 00:31:28,256
+Google's not killing us quite the same way but it's still going to happen so here's what you need to do
+
+759
+00:31:28,512 --> 00:31:29,792
+So I feel like
+
+760
+00:31:30,048 --> 00:31:31,584
+I can't recommend wink anymore to pee
+
+761
+00:31:31,840 --> 00:31:32,864
+People if you have wink
+
+762
+00:31:33,120 --> 00:31:33,888
+It still works
+
+763
+00:31:34,912 --> 00:31:35,936
+I'm in the same boat
+
+764
+00:31:36,192 --> 00:31:39,264
+To be honest I kind of feel it was my go-to Hub recommendations
+
+765
+00:31:39,520 --> 00:31:40,032
+So long
+
+766
+00:31:40,288 --> 00:31:42,080
+Overtime as
+
+767
+00:31:42,336 --> 00:31:43,104
+Nothing has
+
+768
+00:31:43,872 --> 00:31:45,664
+Come to light of what's going on
+
+769
+00:31:46,688 --> 00:31:48,992
+I don't feel comfortable recommending it
+
+770
+00:31:49,248 --> 00:31:52,064
+I will save it on the Google Play Store that the
+
+771
+00:31:52,320 --> 00:31:53,344
+Wink folks are
+
+772
+00:31:54,112 --> 00:31:54,880
+Responding
+
+773
+00:31:55,136 --> 00:31:58,720
+2 reviews with questions as early as 3 weeks ago
+
+774
+00:31:58,976 --> 00:31:59,744
+So it's not like
+
+775
+00:32:00,768 --> 00:32:05,120
+The total black hole there are still people there they're still working the wink hubs as you said Stacy still work
+
+776
+00:32:05,888 --> 00:32:09,216
+I think people just like wondering where there be new products what's the lunk
+
+777
+00:32:09,728 --> 00:32:13,056
+Strategy is there a long term for weighing what's going on really
+
+778
+00:32:14,848 --> 00:32:17,152
+Don't buy it for people thinking that
+
+779
+00:32:17,664 --> 00:32:19,456
+It's going to be around forever but for now
+
+780
+00:32:19,712 --> 00:32:20,992
+It does still work if you have it
+
+781
+00:32:22,016 --> 00:32:22,784
+Yay
+
+782
+00:32:23,040 --> 00:32:26,112
+If you want another Hub option I would sell you SmartThings
+
+783
+00:32:26,624 --> 00:32:27,136
+Carter
+
+784
+00:32:27,392 --> 00:32:29,184
+I would also tell you maybe you don't need a
+
+785
+00:32:29,952 --> 00:32:31,488
+I know and I get angry emails.
+
+786
+00:32:34,304 --> 00:32:35,584
+Maybe you don't need a hug
+
+787
+00:32:35,840 --> 00:32:37,120
+If you're not a superpower user
+
+788
+00:32:37,888 --> 00:32:39,680
+Maybe Amazon or Google is
+
+789
+00:32:39,936 --> 00:32:40,960
+Perfectly good help for you
+
+790
+00:32:41,472 --> 00:32:41,984
+Okay
+
+791
+00:32:42,496 --> 00:32:48,640
+Let's move on to another question these are these are questions when you guys are answering them all he
+
+792
+00:32:48,896 --> 00:32:49,408
+Here because
+
+793
+00:32:49,920 --> 00:32:50,944
+We don't want you to think
+
+794
+00:32:51,200 --> 00:32:51,712
+But we don't listen
+
+795
+00:32:52,480 --> 00:32:53,504
+So this one is from Jeff
+
+796
+00:32:54,784 --> 00:32:56,576
+And he has a question about the mail
+
+797
+00:32:57,344 --> 00:32:57,856
+Let's hear it
+
+798
+00:32:58,624 --> 00:33:00,416
+Ice Age and Kevin Love You show
+
+799
+00:33:00,928 --> 00:33:01,696
+A question
+
+800
+00:33:01,952 --> 00:33:02,976
+Battle Wi-Fi
+
+801
+00:33:03,232 --> 00:33:04,256
+Mailbox alert
+
+802
+00:33:04,512 --> 00:33:06,816
+Back in the day
+
+803
+00:33:09,120 --> 00:33:10,656
+I was wondering if
+
+804
+00:33:11,936 --> 00:33:14,240
+Either something I can listen to that song that I have
+
+805
+00:33:14,752 --> 00:33:16,288
+Or something
+
+806
+00:33:18,080 --> 00:33:19,360
+Mailbox door has been open
+
+807
+00:33:19,872 --> 00:33:21,152
+After you could coverage
+
+808
+00:33:21,664 --> 00:33:24,992
+Mailbox WiFi
+
+809
+00:33:26,784 --> 00:33:27,808
+Support your answer
+
+810
+00:33:29,856 --> 00:33:31,904
+As you said we get this question a lot
+
+811
+00:33:32,416 --> 00:33:33,440
+And that's actually a good thing
+
+812
+00:33:33,696 --> 00:33:37,792
+Sometimes get the same question over and over because new products come out new Solutions are available
+
+813
+00:33:38,048 --> 00:33:42,400
+And this is a solution that I don't think we've recommended before because it's relatively new
+
+814
+00:33:42,656 --> 00:33:43,424
+I have to say
+
+815
+00:33:43,680 --> 00:33:48,032
+Jeff is like major old school with that RadioShack Melgar. I mean that is
+
+816
+00:33:48,544 --> 00:33:52,128
+Proprietary it's a light sensor that goes in the mailbox and
+
+817
+00:33:52,640 --> 00:33:56,224
+Send a chime into his house and
+
+818
+00:33:56,736 --> 00:34:02,368
+It is but it's against proprietary and does his question how can I connect this to Wi-Fi
+
+819
+00:34:02,880 --> 00:34:04,160
+The short answer is you can't
+
+820
+00:34:04,416 --> 00:34:05,696
+Unfortunately not easily
+
+821
+00:34:05,952 --> 00:34:09,024
+But we may have an alternative that's not terribly expensive
+
+822
+00:34:09,536 --> 00:34:11,840
+What weight should we explain why WI-Fi is proper
+
+823
+00:34:12,096 --> 00:34:13,376
+Play not everyone's First Choice here
+
+824
+00:34:14,400 --> 00:34:17,472
+Well yes we should because most mailboxes are
+
+825
+00:34:17,728 --> 00:34:21,056
+Probably Faraday cages was really hard to get a signal out
+
+826
+00:34:21,312 --> 00:34:25,408
+But the proprietary frequencies are typically in the 900 megahertz range
+
+827
+00:34:25,664 --> 00:34:27,968
+Which can travel better through
+
+828
+00:34:28,224 --> 00:34:31,296
+The Trap better through metal in walls and they also travel further
+
+829
+00:34:31,808 --> 00:34:37,952
+Yeah Wi-Fi is a shorter wavelength frequency at 2.4 and an even shorter at 5
+
+830
+00:34:38,208 --> 00:34:40,256
+Yes and what's happening is
+
+831
+00:34:40,768 --> 00:34:41,280
+The Spectre
+
+832
+00:34:41,536 --> 00:34:46,400
+Can't make it through or it can't make it as far and then the other eye thing to think about there is
+
+833
+00:34:46,656 --> 00:34:47,936
+A lot of them
+
+834
+00:34:49,216 --> 00:34:50,240
+Wi-Fi sucks a lot of
+
+835
+00:34:50,496 --> 00:34:51,008
+Battery power
+
+836
+00:34:51,264 --> 00:34:51,776
+Exactly
+
+837
+00:34:52,032 --> 00:34:52,800
+However
+
+838
+00:34:53,824 --> 00:34:55,104
+Jeff says he has good
+
+839
+00:34:55,360 --> 00:34:57,920
+Wi-Fi range maybe the signals
+
+840
+00:34:58,176 --> 00:35:00,992
+The Wi-Fi device inside of the mailbox can get through
+
+841
+00:35:01,248 --> 00:35:02,784
+So what we're going to recommend
+
+842
+00:35:03,040 --> 00:35:05,088
+Is he considered one of the new
+
+843
+00:35:05,344 --> 00:35:05,856
+Blink
+
+844
+00:35:06,112 --> 00:35:06,624
+Cameras
+
+845
+00:35:06,880 --> 00:35:10,208
+That runs on the battery for up to two years is still Wi-Fi
+
+846
+00:35:10,720 --> 00:35:13,792
+You get a one camera system and async module
+
+847
+00:35:14,048 --> 00:35:15,328
+Two connected to
+
+848
+00:35:15,584 --> 00:35:16,352
+You are network for
+
+849
+00:35:16,608 --> 00:35:17,376
+$80
+
+850
+00:35:17,632 --> 00:35:19,424
+If you put that in the place of your Milgard
+
+851
+00:35:19,936 --> 00:35:22,752
+And you can get a signal from it through your mailbox
+
+852
+00:35:23,008 --> 00:35:23,776
+You're in good shape
+
+853
+00:35:24,032 --> 00:35:28,640
+There's no way we can guarantee that because we don't know the distance of your mailbox is your mailbox made of
+
+854
+00:35:29,152 --> 00:35:30,176
+Half-inch thick metal
+
+855
+00:35:31,200 --> 00:35:32,992
+Cardboard I have no idea
+
+856
+00:35:33,248 --> 00:35:34,528
+We don't know for sure
+
+857
+00:35:34,784 --> 00:35:35,808
+If it will work
+
+858
+00:35:36,832 --> 00:35:38,624
+This is probably the best option
+
+859
+00:35:38,880 --> 00:35:40,160
+I've seen in awhile for
+
+860
+00:35:40,416 --> 00:35:41,440
+Very specific
+
+861
+00:35:41,952 --> 00:35:44,768
+Circumstances wherever Wi-Fi monitoring system for a mailbox
+
+862
+00:35:45,024 --> 00:35:45,536
+Could work
+
+863
+00:35:46,048 --> 00:35:46,560
+Agreed
+
+864
+00:35:47,328 --> 00:35:53,472
+And we also tried the wise sensors I'll just throw this out here for you because they're cheap and 40 bucks get you
+
+865
+00:35:53,984 --> 00:35:54,752
+What you might need
+
+866
+00:35:55,520 --> 00:35:59,104
+We found that the Hub could not be located more than about
+
+867
+00:35:59,616 --> 00:36:00,896
+3240 ft
+
+868
+00:36:01,152 --> 00:36:02,176
+Through a front door
+
+869
+00:36:02,944 --> 00:36:03,456
+So
+
+870
+00:36:03,968 --> 00:36:04,992
+I don't know if that's going to work
+
+871
+00:36:06,016 --> 00:36:09,600
+But before the show Stacy marked outside of her house with her
+
+872
+00:36:09,856 --> 00:36:10,880
+License and
+
+873
+00:36:11,648 --> 00:36:12,416
+Measure
+
+874
+00:36:12,672 --> 00:36:15,744
+Open and closed it several times to see how far it would go
+
+875
+00:36:16,000 --> 00:36:19,840
+Chick that would be ideal because again that's low power battery and so on
+
+876
+00:36:20,096 --> 00:36:22,656
+It might work in Jeff's case again I don't know where his
+
+877
+00:36:22,912 --> 00:36:24,960
+Mailbox is it might be just outside is
+
+878
+00:36:25,216 --> 00:36:26,496
+Front door I don't know
+
+879
+00:36:26,752 --> 00:36:32,128
+Down if your cameras like right by your front window or something so the wireless is a little better cuz this was
+
+880
+00:36:32,640 --> 00:36:38,528
+Right this is sub gigahertz so somewhere in 900 maybe 4:15 gigahertz is what the why sensors are using
+
+881
+00:36:39,296 --> 00:36:40,064
+So you know
+
+882
+00:36:40,320 --> 00:36:40,832
+Might
+
+883
+00:36:41,088 --> 00:36:41,600
+Work
+
+884
+00:36:42,112 --> 00:36:43,904
+And is cheap if you want to try it so
+
+885
+00:36:44,160 --> 00:36:45,696
+Those are the options I wish I had like a
+
+886
+00:36:45,952 --> 00:36:47,488
+2 Cool Wi-Fi photo sensor that
+
+887
+00:36:47,744 --> 00:36:49,536
+Would be magically able to work but
+
+888
+00:36:50,816 --> 00:36:51,584
+That is not an option
+
+889
+00:36:52,608 --> 00:36:53,120
+All right
+
+890
+00:36:53,632 --> 00:36:56,704
+Moving right along with another question for Wi-Fi
+
+891
+00:36:57,472 --> 00:36:58,240
+Stem cell
+
+892
+00:36:58,496 --> 00:37:00,032
+This is from Daniel let's hear it
+
+893
+00:37:00,288 --> 00:37:04,640
+Hey guys I just want to say I really love the show about Amazon Echo
+
+894
+00:37:05,408 --> 00:37:06,176
+What a year ago
+
+895
+00:37:06,688 --> 00:37:08,736
+Can you guys the show I guess
+
+896
+00:37:09,504 --> 00:37:11,040
+11
+
+897
+00:37:11,296 --> 00:37:12,320
+1011
+
+898
+00:37:13,600 --> 00:37:15,136
+And I listen to every Thursday
+
+899
+00:37:15,392 --> 00:37:16,928
+My question is
+
+900
+00:37:17,184 --> 00:37:18,464
+What the best setup
+
+901
+00:37:18,720 --> 00:37:20,256
+For your Wi-Fi router
+
+902
+00:37:20,512 --> 00:37:21,792
+The safest setup
+
+903
+00:37:22,048 --> 00:37:25,376
+Some people say that of the land
+
+904
+00:37:25,632 --> 00:37:29,216
+Is the best I've heard other people say they like a guest network is the best
+
+905
+00:37:29,728 --> 00:37:31,008
+So I just wanted to ask
+
+906
+00:37:32,032 --> 00:37:32,544
+Canyon Honda
+
+907
+00:37:32,800 --> 00:37:34,336
+I don't have any
+
+908
+00:37:34,592 --> 00:37:35,872
+Zigbee or Z-Wave device
+
+909
+00:37:36,128 --> 00:37:37,408
+This is all my Google assist
+
+910
+00:37:37,920 --> 00:37:38,944
+Alexis
+
+911
+00:37:39,200 --> 00:37:39,712
+Cloudbase
+
+912
+00:37:40,480 --> 00:37:41,760
+We get this question a lot
+
+913
+00:37:42,016 --> 00:37:44,320
+Today's router settings networks aren't meant
+
+914
+00:37:44,576 --> 00:37:45,600
+Really to
+
+915
+00:37:45,856 --> 00:37:49,184
+Protect iot devices specifically at me never meant to protect
+
+916
+00:37:49,952 --> 00:37:50,976
+You from
+
+917
+00:37:51,232 --> 00:37:53,024
+The outside world getting in in general
+
+918
+00:37:53,792 --> 00:37:56,096
+Honestly you could use a guest Network
+
+919
+00:37:56,608 --> 00:37:59,936
+We talked about that before you can use the guest Network for all of your devices
+
+920
+00:38:00,448 --> 00:38:01,728
+That is an option
+
+921
+00:38:02,240 --> 00:38:04,288
+That's kind of locked on little bit more than say your
+
+922
+00:38:04,544 --> 00:38:05,312
+Standard Network
+
+923
+00:38:05,568 --> 00:38:11,200
+That you could look into their there certain products out there we looked into and talked about before the bitdefender Box
+
+924
+00:38:11,456 --> 00:38:14,272
+Is $199 at 6 behind your router
+
+925
+00:38:14,784 --> 00:38:20,928
+I'm supposed to help filter traffic and watch for suspicious network activity so maybe if your attitude devices are going out to someone
+
+926
+00:38:22,464 --> 00:38:23,232
+It might work
+
+927
+00:38:23,488 --> 00:38:25,536
+I guess we're not really big fans of that though because
+
+928
+00:38:26,048 --> 00:38:28,096
+We've never really seen detail testing
+
+929
+00:38:28,608 --> 00:38:29,632
+To show that it better
+
+930
+00:38:30,656 --> 00:38:32,192
+I've tried some of the stuff
+
+931
+00:38:32,448 --> 00:38:32,960
+And
+
+932
+00:38:33,472 --> 00:38:35,008
+It does work I just
+
+933
+00:38:35,264 --> 00:38:36,544
+I don't know if my life is
+
+934
+00:38:37,056 --> 00:38:39,616
+Yeah cuz I feel like right now I'm not
+
+935
+00:38:40,128 --> 00:38:41,664
+I should say that I'm not being attacked
+
+936
+00:38:42,432 --> 00:38:44,736
+So a part of this is you know part of your wrist Pro
+
+937
+00:38:45,248 --> 00:38:47,552
+I will say the nicest feature that I
+
+938
+00:38:47,808 --> 00:38:51,904
+I'd like to have and I think you should have it although I think it should be free personally
+
+939
+00:38:52,160 --> 00:38:53,440
+Is understanding
+
+940
+00:38:53,696 --> 00:38:54,720
+What devices are on your
+
+941
+00:38:55,488 --> 00:38:57,280
+And getting a notification with something
+
+942
+00:38:57,536 --> 00:38:58,048
+Get on your knees
+
+943
+00:38:59,072 --> 00:38:59,584
+So
+
+944
+00:38:59,840 --> 00:39:03,168
+Yeah which do you use I forgot to say gyro I have to Eero
+
+945
+00:39:03,424 --> 00:39:04,192
+Service
+
+946
+00:39:04,448 --> 00:39:05,728
+Soon I will be up in
+
+947
+00:39:05,984 --> 00:39:09,824
+Comcast service area and I'll try there is but like Eero does let me know it's like
+
+948
+00:39:10,336 --> 00:39:11,872
+This weird device has joined your dad
+
+949
+00:39:12,896 --> 00:39:13,408
+Cool thanks
+
+950
+00:39:13,920 --> 00:39:15,200
+Super weird device
+
+951
+00:39:18,016 --> 00:39:19,808
+Can I use Google Wi-Fi
+
+952
+00:39:20,064 --> 00:39:26,208
+You don't have to pay for that type of information but it's it's passive however you actually have to open the app and
+
+953
+00:39:26,464 --> 00:39:28,000
+See what devices are on your network
+
+954
+00:39:28,512 --> 00:39:31,072
+So it's not like it notifies you when something
+
+955
+00:39:31,328 --> 00:39:32,864
+Has joined it doesn't
+
+956
+00:39:33,376 --> 00:39:39,520
+Proactively tell you that there's a new device or any like that so I periodically go through that cuz sometimes I even find
+
+957
+00:39:39,776 --> 00:39:40,544
+Devices that we
+
+958
+00:39:41,056 --> 00:39:42,336
+Sold or recycled
+
+959
+00:39:42,848 --> 00:39:46,176
+Better still cortical attached to that we're going to clean those out
+
+960
+00:39:46,688 --> 00:39:49,504
+But there's nothing automatic about that notifications either
+
+961
+00:39:51,296 --> 00:39:56,416
+That's the one thing the other thing I would say is if I were doing this all again from scratch
+
+962
+00:39:56,672 --> 00:39:57,184
+And I will
+
+963
+00:39:57,440 --> 00:39:59,744
+I would set up
+
+964
+00:40:00,256 --> 00:40:00,768
+My network
+
+965
+00:40:01,536 --> 00:40:06,400
+And I would set up all my iot devices on that and I would also have my guest Network
+
+966
+00:40:07,168 --> 00:40:09,984
+And nobody but me and maybe my husband
+
+967
+00:40:10,240 --> 00:40:11,008
+Because I do travel
+
+968
+00:40:11,776 --> 00:40:13,312
+We'll get the password for the
+
+969
+00:40:13,824 --> 00:40:14,592
+The cornet
+
+970
+00:40:15,104 --> 00:40:17,152
+And everybody else including my child will be on the
+
+971
+00:40:18,688 --> 00:40:22,272
+And the reason I will do that is because my child is going to give out our guest Network
+
+972
+00:40:22,528 --> 00:40:23,040
+Password Oliver
+
+973
+00:40:23,296 --> 00:40:23,808
+Friends
+
+974
+00:40:24,064 --> 00:40:27,136
+Also because children download all kinds of weird stuff
+
+975
+00:40:29,696 --> 00:40:31,744
+I don't know where it's tough to but kids
+
+976
+00:40:32,000 --> 00:40:33,024
+Kids are like oh yeah
+
+977
+00:40:33,280 --> 00:40:34,304
+I totally need this
+
+978
+00:40:34,816 --> 00:40:37,376
+So no friends are coming over to your house when you move I got it
+
+979
+00:40:38,144 --> 00:40:39,936
+No no no they just get the guest Network
+
+980
+00:40:40,704 --> 00:40:46,592
+You know when you're buying a mesh wi-fi system make sure that it has easy Euro basically if I what I can
+
+981
+00:40:47,104 --> 00:40:48,640
+I just go into the app and I'm like
+
+982
+00:40:49,152 --> 00:40:51,456
+I said I can text you I can email you
+
+983
+00:40:51,968 --> 00:40:52,736
+I guess Network
+
+984
+00:40:53,248 --> 00:40:57,344
+Be kind of cool if I could show you a QR code on my phone and you just snap it and get on the Wi-Fi
+
+985
+00:40:58,368 --> 00:40:58,880
+Add that
+
+986
+00:40:59,392 --> 00:41:00,672
+Are you hearing me Eero
+
+987
+00:41:01,440 --> 00:41:04,000
+That's the other network Safeguard I would save
+
+988
+00:41:04,768 --> 00:41:07,584
+It's not necessarily the security products but it's just a nice best
+
+989
+00:41:08,352 --> 00:41:09,632
+And if anybody has
+
+990
+00:41:10,400 --> 00:41:12,704
+Purchased a device or a service
+
+991
+00:41:12,960 --> 00:41:13,728
+2
+
+992
+00:41:13,984 --> 00:41:16,288
+Help with this I would actually like to hear about the
+
+993
+00:41:16,544 --> 00:41:17,056
+The clothes back
+
+994
+00:41:17,568 --> 00:41:19,360
+We've had some people tell us what they do but
+
+995
+00:41:19,616 --> 00:41:20,128
+Again
+
+996
+00:41:20,384 --> 00:41:24,224
+They're always new Services new products coming out and it's been awhile since we've address this question
+
+997
+00:41:24,480 --> 00:41:24,992
+So
+
+998
+00:41:25,248 --> 00:41:28,576
+It could be that I have not been on the up-and-up with what's going on in this in this place
+
+999
+00:41:30,880 --> 00:41:31,904
+Kevin manno
+
+1000
+00:41:32,416 --> 00:41:32,928
+All right
+
+1001
+00:41:33,696 --> 00:41:36,768
+Our next color isn't actually a color it's someone who emails
+
+1002
+00:41:37,024 --> 00:41:37,536
+And
+
+1003
+00:41:38,304 --> 00:41:41,120
+Really felt uncomfortable leaving a voicemail so
+
+1004
+00:41:46,240 --> 00:41:46,752
+Out loud
+
+1005
+00:41:47,008 --> 00:41:49,568
+I wonder if you could help me find a solution to this scenario
+
+1006
+00:41:50,080 --> 00:41:55,711
+I have a tablet that is always on connected to power and is showing a web page with actiontiles control
+
+1007
+00:41:56,479 --> 00:42:01,599
+I want to be able to see the video for my ring Pro doorbell when there is motion or somebody presses the doorbell button
+
+1008
+00:42:01,855 --> 00:42:03,391
+Or when I issue a voice command
+
+1009
+00:42:03,647 --> 00:42:04,159
+Like
+
+1010
+00:42:04,415 --> 00:42:05,183
+Anime
+
+1011
+00:42:05,439 --> 00:42:06,463
+Show me the front door
+
+1012
+00:42:07,231 --> 00:42:12,863
+Currently my tablet is not an Amazon Fire tablet but I would consider replacing it if the Fire tablet can do what I want
+
+1013
+00:42:14,143 --> 00:42:16,703
+I know the Amazon show can display the video from The Ring
+
+1014
+00:42:16,959 --> 00:42:18,495
+But I don't like the price of the show
+
+1015
+00:42:20,287 --> 00:42:22,847
+Totally fair comment about the
+
+1016
+00:42:23,103 --> 00:42:25,663
+Amazon show I'm just not a fan of that device in general
+
+1017
+00:42:25,919 --> 00:42:26,943
+And not just cuz of the price
+
+1018
+00:42:27,455 --> 00:42:29,503
+Baptist don't care for it even though I have some smart displays
+
+1019
+00:42:30,015 --> 00:42:30,783
+Illusion
+
+1020
+00:42:31,039 --> 00:42:32,575
+That's fine if you buy everything that
+
+1021
+00:42:32,831 --> 00:42:34,623
+Amazon shows list you or whatever
+
+1022
+00:42:35,647 --> 00:42:36,415
+That's all you
+
+1023
+00:42:36,927 --> 00:42:41,279
+This was interesting to me because I didn't know about actiontiles which as Kira looks like as a web-based
+
+1024
+00:42:42,047 --> 00:42:43,071
+Customizable
+
+1025
+00:42:43,327 --> 00:42:46,399
+Bunch of tiles that would show a title for each one of your smart home devices
+
+1026
+00:42:46,655 --> 00:42:51,007
+It's really made for SmartThings he didn't mention that I don't think it was anything else
+
+1027
+00:42:51,263 --> 00:42:52,543
+So I'm assuming you a smart thing
+
+1028
+00:42:53,311 --> 00:42:56,895
+Because it's web-based it works with just about any tablet or phone so you can even use an iPad
+
+1029
+00:42:57,919 --> 00:42:59,967
+But that's not going to solve the problem
+
+1030
+00:43:00,223 --> 00:43:01,759
+Backhero has posed to us
+
+1031
+00:43:02,015 --> 00:43:02,527
+So
+
+1032
+00:43:03,039 --> 00:43:05,087
+A Fire tablet I hate to say is
+
+1033
+00:43:05,343 --> 00:43:07,391
+Probably the best at lowest cost
+
+1034
+00:43:08,415 --> 00:43:09,695
+However
+
+1035
+00:43:10,207 --> 00:43:12,255
+Lenovo actually makes a smart
+
+1036
+00:43:12,511 --> 00:43:14,303
+Tab which is also an Android tablet
+
+1037
+00:43:14,559 --> 00:43:16,863
+Comes in two sizes 8 or 10 in
+
+1038
+00:43:17,375 --> 00:43:18,143
+And
+
+1039
+00:43:18,399 --> 00:43:19,935
+Similar lucky Rose doing
+
+1040
+00:43:20,191 --> 00:43:22,751
+Carol has his tablet always plugged in
+
+1041
+00:43:23,007 --> 00:43:25,055
+This includes a speaker dock
+
+1042
+00:43:25,311 --> 00:43:27,871
+And when you put the Smart Tab in the speaker dock
+
+1043
+00:43:28,127 --> 00:43:30,943
+You essentially transform it into an Echo Show
+
+1044
+00:43:31,455 --> 00:43:32,991
+And at that point you can ask
+
+1045
+00:43:33,247 --> 00:43:34,527
+Madame A2
+
+1046
+00:43:34,783 --> 00:43:37,087
+Show your ring or do whatever you need her to do
+
+1047
+00:43:37,599 --> 00:43:41,439
+They start around 199 go up to 350 depending on the specs
+
+1048
+00:43:41,951 --> 00:43:46,815
+So obviously much more expensive than your Fire HD is what you can get sometimes for 50 bucks
+
+1049
+00:43:47,327 --> 00:43:49,375
+But if you want a decent tablet
+
+1050
+00:43:49,887 --> 00:43:54,751
+That you can actually take out of a dog have a charge uses a tablet and then put it back in to use it as an Echo Show
+
+1051
+00:43:55,007 --> 00:43:55,519
+It's a nice
+
+1052
+00:43:55,775 --> 00:43:56,287
+Option
+
+1053
+00:43:56,543 --> 00:43:57,567
+I will say
+
+1054
+00:43:58,079 --> 00:44:00,895
+Because it's an Android tablet the native default
+
+1055
+00:44:01,407 --> 00:44:02,687
+Assistant is Google
+
+1056
+00:44:02,943 --> 00:44:04,479
+So when it is not.
+
+1057
+00:44:04,991 --> 00:44:08,319
+If you ask it a question only Google is going to listen and answer
+
+1058
+00:44:08,831 --> 00:44:09,343
+If you put it
+
+1059
+00:44:09,599 --> 00:44:10,623
+In the dark
+
+1060
+00:44:11,135 --> 00:44:13,439
+Then that of a will be the default so
+
+1061
+00:44:13,695 --> 00:44:18,303
+I like this because it gives you a wider range of options if you just want a tablet that you're
+
+1062
+00:44:18,559 --> 00:44:20,607
+It's going to show your ring doorbell
+
+1063
+00:44:20,863 --> 00:44:22,143
+Go for the Fire HD tablet
+
+1064
+00:44:22,655 --> 00:44:23,935
+If you want something
+
+1065
+00:44:24,447 --> 00:44:25,983
+Is much more flexible
+
+1066
+00:44:26,239 --> 00:44:28,031
+I consider this if your budget allows
+
+1067
+00:44:29,567 --> 00:44:30,079
+All right
+
+1068
+00:44:30,591 --> 00:44:32,127
+Carol hope that answers your
+
+1069
+00:44:33,151 --> 00:44:33,663
+All right
+
+1070
+00:44:34,175 --> 00:44:38,271
+Thank you guys so much for calling in with all of your questions for the
+
+1071
+00:44:38,783 --> 00:44:41,855
+Q&A episode of The Internet of Things podcast
+
+1072
+00:44:42,367 --> 00:44:44,415
+These are brought to you by Schlage
+
+1073
+00:44:44,671 --> 00:44:45,695
+And a pharaoh
+
+1074
+00:44:45,951 --> 00:44:46,463
+So
+
+1075
+00:44:46,719 --> 00:44:48,767
+Big props to our sponsors
+
+1076
+00:44:49,279 --> 00:44:50,303
+That's right I just sang
+
+1077
+00:44:51,071 --> 00:44:52,607
+You can find more about Schlage
+
+1078
+00:44:52,863 --> 00:44:53,631
+@wwe
+
+1079
+00:44:53,887 --> 00:44:55,679
+Schlage.com
+
+1080
+00:44:56,447 --> 00:45:01,567
+And you can find more information about a pharaoh at www. Afero
+
+1081
+00:45:01,823 --> 00:45:02,591
+Dot IO
+
+1082
+00:45:02,847 --> 00:45:03,359
+Slash
+
+1083
+00:45:03,615 --> 00:45:04,383
+Go big
+
+1084
+00:45:05,151 --> 00:45:06,687
+Lots of options for you
+
+1085
+00:45:06,943 --> 00:45:08,479
+Thank you so much for calling in
+
+1086
+00:45:08,735 --> 00:45:12,063
+Kevin thank you for spending time answering these questions with me
+
+1087
+00:45:12,831 --> 00:45:14,879
+My pleasure I agree thank you everybody who calls in
+
+1088
+00:45:15,391 --> 00:45:15,903
+Yes
+
+1089
+00:45:16,159 --> 00:45:17,183
+Cuz we learn a lot
+
+1090
+00:45:17,439 --> 00:45:17,951
+Doing this to
+
+1091
+00:45:18,207 --> 00:45:18,719
+Absolutely
+
+1092
+00:45:19,231 --> 00:45:22,815
+And if you want more iot information feel free to sign up for the
+
+1093
+00:45:23,071 --> 00:45:24,607
+Stacey on iot newsletter
+
+1094
+00:45:25,119 --> 00:45:28,447
+@www Stacey on iot
+
+1095
+00:45:28,703 --> 00:45:29,471
+Dot-com
+
+1096
+00:45:30,239 --> 00:45:36,383
+That's it for this week thanks so much for listening
+
+1097
+00:45:36,639 --> 00:45:42,783
+And remember if you'd like more iot news sign up for my newsletter at Stacey on iot
+
+1098
+00:45:43,039 --> 00:45:49,183
+I will see you next week

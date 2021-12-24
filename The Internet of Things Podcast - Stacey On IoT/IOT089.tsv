@@ -1,0 +1,1061 @@
+EDL	Record In	Record Out	Clipname	Subtitle
+EDL	00:00:06,656	00:00:13,056	| IOT089 |	Hey everyone welcome to the Internet of Things podcast this is your host Stacey
+EDL	00:00:13,056	00:00:14,848	| IOT089 |	And this is your co-host
+EDL	00:00:15,616	00:00:16,128	| IOT089 |	Kevin tofu
+EDL	00:00:16,640	00:00:17,920	| IOT089 |	And today we have
+EDL	00:00:17,920	00:00:18,688	| IOT089 |	So
+EDL	00:00:18,688	00:00:19,200	| IOT089 |	Much
+EDL	00:00:20,736	00:00:23,040	| IOT089 |	This is this going to be the Stacy and Kevin jail
+EDL	00:00:23,040	00:00:24,064	| IOT089 |	I think yes
+EDL	00:00:24,064	00:00:26,880	| IOT089 |	This is the Stacy and Kevin show this week
+EDL	00:00:26,880	00:00:27,904	| IOT089 |	Because otherwise
+EDL	00:00:28,928	00:00:30,976	| IOT089 |	There's just no room we've got so much stuff
+EDL	00:00:31,488	00:00:34,048	| IOT089 |	Our guests sorry I guess you'll be back
+EDL	00:00:34,048	00:00:34,816	| IOT089 |	Don't worry
+EDL	00:00:34,816	00:00:36,352	| IOT089 |	I have wonderful guest for
+EDL	00:00:36,352	00:00:36,864	| IOT089 |	Are you guys coming up
+EDL	00:00:39,168	00:00:40,704	| IOT089 |	We are going to talk about
+EDL	00:00:41,472	00:00:41,984	| IOT089 |	Wow
+EDL	00:00:42,752	00:00:46,848	| IOT089 |	Google did a bunch of news things for the Internet of Things We
+EDL	00:00:47,360	00:00:49,152	| IOT089 |	They got partners for Google home
+EDL	00:00:49,664	00:00:55,040	| IOT089 |	We talked about Cortana getting an SDK because that could be used for iot and we're going to do a little
+EDL	00:00:55,040	00:00:58,624	| IOT089 |	Quick dive into Amazon's AI as a service and how it might
+EDL	00:00:59,136	00:01:00,160	| IOT089 |	Compared to Google Assistant
+EDL	00:01:00,672	00:01:01,440	| IOT089 |	Then
+EDL	00:01:01,440	00:01:02,976	| IOT089 |	Where can I get an ad break from
+EDL	00:01:02,976	00:01:04,512	| IOT089 |	Our sponsor Samsung
+EDL	00:01:05,024	00:01:07,072	| IOT089 |	And we're going to go in the news cuz we got a new
+EDL	00:01:07,072	00:01:12,448	| IOT089 |	Ble Hub that's Bluetooth hub for you guys we've got some homekit sensors which is a pretty new thing
+EDL	00:01:12,960	00:01:14,496	| IOT089 |	We got zigbee over
+EDL	00:01:14,496	00:01:15,264	| IOT089 |	Thread
+EDL	00:01:15,264	00:01:17,568	| IOT089 |	Industrial news from GE
+EDL	00:01:17,568	00:01:19,104	| IOT089 |	Saint Cloud news from Ala
+EDL	00:01:19,616	00:01:22,688	| IOT089 |	Maybe some government news and we've got some self-driving car stuff
+EDL	00:01:24,480	00:01:25,248	| IOT089 |	I'm out of breath already
+EDL	00:01:26,272	00:01:28,320	| IOT089 |	Me too I didn't even say anything
+EDL	00:01:28,320	00:01:29,600	| IOT089 |	I know just listening
+EDL	00:01:29,600	00:01:30,624	| IOT089 |	Nexen tires
+EDL	00:01:30,624	00:01:35,232	| IOT089 |	So before we get into all that let's take a word from our sponsor this week
+EDL	00:01:35,232	00:01:41,632	| IOT089 |	Our sponsor this week is skybell have you ever wondered who's at your front door when you're at work or what
+EDL	00:01:41,632	00:01:48,032	| IOT089 |	What a package arrives or when your kids get home the skybell video doorbell lets you see who's at your door
+EDL	00:01:48,032	00:01:54,432	| IOT089 |	Or from your smartphone replaces your current doorbell and when a visitor presses the button that sends an alert with live
+EDL	00:01:54,432	00:02:00,832	| IOT089 |	Video so you can see hear and speak to the person at your door I love this doorbell I review doorbells for the
+EDL	00:02:00,832	00:02:07,232	| IOT089 |	The Wirecutter and I will say skybell HD was my top pick and because I love
+EDL	00:02:07,232	00:02:13,632	| IOT089 |	Love all of you guys so much and because the CEO skybell loves you we're giving iot podcast blisters
+EDL	00:02:13,632	00:02:18,240	| IOT089 |	Discount you get $50 off using the code Stacy
+EDL	00:02:18,240	00:02:24,640	| IOT089 |	This code is good through Christmas day so by now or don't but I think you should by now if
+EDL	00:02:24,640	00:02:26,944	| IOT089 |	Looking for a video doorbell cuz it is great
+EDL	00:02:26,944	00:02:27,712	| IOT089 |	Now
+EDL	00:02:28,480	00:02:29,248	| IOT089 |	Back
+EDL	00:02:29,248	00:02:30,016	| IOT089 |	2 hour show
+EDL	00:02:30,784	00:02:36,928	| IOT089 |	Where Do We Begin actually we should probably Begin by me saying that I do work for Google as a consultant
+EDL	00:02:37,952	00:02:43,840	| IOT089 |	And I have nothing to do with their IRT efforts and the only mention that because we're going to be talking a lot about the Rio 2 efforts
+EDL	00:02:43,840	00:02:45,888	| IOT089 |	Yes let's just get started with Google
+EDL	00:02:46,656	00:02:47,424	| IOT089 |	Because
+EDL	00:02:47,424	00:02:50,240	| IOT089 |	By golly they did two pieces of news so
+EDL	00:02:50,240	00:02:53,056	| IOT089 |	We talked about it a little bit last week with
+EDL	00:02:53,056	00:02:55,104	| IOT089 |	Google opening up its SDK
+EDL	00:02:55,616	00:02:56,128	| IOT089 |	4
+EDL	00:02:56,896	00:02:57,920	| IOT089 |	Axel home
+EDL	00:02:59,200	00:03:03,552	| IOT089 |	Is what it's called to the program's actions on Google and it allows you to
+EDL	00:03:04,320	00:03:05,600	| IOT089 |	Build stuff for Google home
+EDL	00:03:06,368	00:03:09,440	| IOT089 |	You're kind of like the skills for the echo
+EDL	00:03:10,720	00:03:12,000	| IOT089 |	But a little bit different
+EDL	00:03:12,000	00:03:16,352	| IOT089 |	So in this is worth noting so would you build
+EDL	00:03:16,864	00:03:18,912	| IOT089 |	We're going to have to come up with some terminology
+EDL	00:03:18,912	00:03:21,216	| IOT089 |	Hero it's remember how we had to do scene 2
+EDL	00:03:21,216	00:03:22,240	| IOT089 |	Recipes at bows at all
+EDL	00:03:23,520	00:03:25,568	| IOT089 |	So guys skills are for the Amazon Echo
+EDL	00:03:26,080	00:03:26,848	| IOT089 |	Ecosystem
+EDL	00:03:26,848	00:03:28,896	| IOT089 |	And Google calls them
+EDL	00:03:29,664	00:03:30,944	| IOT089 |	Actions actions
+EDL	00:03:30,944	00:03:33,504	| IOT089 |	It's okay because I think
+EDL	00:03:33,504	00:03:38,880	| IOT089 |	If I read correctly it's actions and conversations are the two things you can do in a conversation somewhere like
+EDL	00:03:38,880	00:03:41,440	| IOT089 |	Informational chatbots that you can add to
+EDL	00:03:41,440	00:03:42,720	| IOT089 |	The Google Assistant
+EDL	00:03:42,720	00:03:45,792	| IOT089 |	But actions are yes very much like skills
+EDL	00:03:45,792	00:03:52,192	| IOT089 |	So when you do the conversations what happens is you enable this conversation and then and entirely
+EDL	00:03:52,192	00:03:54,496	| IOT089 |	Play new entity pops up in your Google home
+EDL	00:03:54,496	00:03:56,032	| IOT089 |	So it no longer sounds like
+EDL	00:03:56,032	00:03:58,080	| IOT089 |	Google home voice it is now
+EDL	00:03:58,080	00:03:59,360	| IOT089 |	Whatever voice
+EDL	00:03:59,360	00:04:01,408	| IOT089 |	Conversation company has chosen
+EDL	00:04:02,176	00:04:03,456	| IOT089 |	Kind of interesting
+EDL	00:04:03,968	00:04:06,016	| IOT089 |	So if you're talking to WebMD you make it
+EDL	00:04:06,016	00:04:07,296	| IOT089 |	Eye Doctor Li voice
+EDL	00:04:07,808	00:04:09,856	| IOT089 |	What a doctor referral
+EDL	00:04:09,856	00:04:11,392	| IOT089 |	I like I bet it'll be male
+EDL	00:04:11,904	00:04:16,000	| IOT089 |	Pyruvates I write prescriptions very sloppily how can I help you today
+EDL	00:04:18,559	00:04:20,351	| IOT089 |	12 what the brand thinks is it
+EDL	00:04:21,375	00:04:23,679	| IOT089 |	So that'll be interesting and then the actions
+EDL	00:04:24,191	00:04:26,751	| IOT089 |	No here's a question and I don't know if
+EDL	00:04:26,751	00:04:29,055	| IOT089 |	I could not parse this together so
+EDL	00:04:29,055	00:04:33,407	| IOT089 |	We're going to link to the other big news which actually happened on Tuesday
+EDL	00:04:33,919	00:04:36,479	| IOT089 |	This week which was Google announced
+EDL	00:04:36,991	00:04:39,295	| IOT089 |	That they changed their Brillo
+EDL	00:04:39,807	00:04:41,599	| IOT089 |	Tiny device OS that is not actually that
+EDL	00:04:42,367	00:04:42,879	| IOT089 |	2
+EDL	00:04:43,391	00:04:46,719	| IOT089 |	Google things is now it's called and it's out of developer preview
+EDL	00:04:47,231	00:04:49,023	| IOT089 |	And they also announced
+EDL	00:04:49,023	00:04:50,047	| IOT089 |	Weave is avail
+EDL	00:04:51,327	00:04:54,399	| IOT089 |	And we've is their kind of operating system
+EDL	00:04:54,399	00:04:55,167	| IOT089 |	I guess it's how we should
+EDL	00:04:55,679	00:04:59,007	| IOT089 |	I would say Android things is the operating system
+EDL	00:04:59,007	00:05:02,591	| IOT089 |	You're right and rude things is the operating system and its 4
+EDL	00:05:03,103	00:05:06,687	| IOT089 |	You know it's actually not for sensors that's for slightly bigger things
+EDL	00:05:06,687	00:05:08,479	| IOT089 |	Communication
+EDL	00:05:09,503	00:05:15,903	| IOT089 |	Right right there that's the one that tells what devices what devices can do what I think my guess it's ask
+EDL	00:05:15,903	00:05:19,743	| IOT089 |	Schema I think Google is technically calling them
+EDL	00:05:19,743	00:05:22,047	| IOT089 |	Oh shoot I forget what it's called now
+EDL	00:05:22,815	00:05:23,583	| IOT089 |	They used to call it a
+EDL	00:05:24,607	00:05:26,143	| IOT089 |	It's yet
+EDL	00:05:26,655	00:05:27,167	| IOT089 |	Traits
+EDL	00:05:27,679	00:05:28,959	| IOT089 |	Traits sound like
+EDL	00:05:28,959	00:05:30,239	| IOT089 |	If you have a lightbulb
+EDL	00:05:30,239	00:05:31,775	| IOT089 |	The trade can be
+EDL	00:05:31,775	00:05:32,543	| IOT089 |	On off
+EDL	00:05:33,055	00:05:34,079	| IOT089 |	Right right song
+EDL	00:05:34,847	00:05:40,479	| IOT089 |	Sprite out of power switch component of a dimmer component the trait for dimmer will be brightness and so on so it's
+EDL	00:05:40,991	00:05:44,831	| IOT089 |	More of explaining what device is telling each other what they can do
+EDL	00:05:44,831	00:05:48,159	| IOT089 |	So this is going to compete directly with iotivity
+EDL	00:05:49,183	00:05:53,279	| IOT089 |	Because that is also device Discovery Communications now they
+EDL	00:05:53,279	00:05:53,791	| IOT089 |	They call it a protocol
+EDL	00:05:54,303	00:05:54,815	| IOT089 |	But
+EDL	00:05:55,583	00:06:00,191	| IOT089 |	Whatever it it also gives the the characteristics are the traits of a device
+EDL	00:06:00,191	00:06:03,007	| IOT089 |	Much like all joined it now alljoy did come in
+EDL	00:06:03,007	00:06:05,567	| IOT089 |	And converge with iotivity
+EDL	00:06:05,567	00:06:06,079	| IOT089 |	So
+EDL	00:06:07,103	00:06:07,871	| IOT089 |	That's
+EDL	00:06:07,871	00:06:08,383	| IOT089 |	That
+EDL	00:06:09,919	00:06:11,967	| IOT089 |	When we talk about weave that's who you should
+EDL	00:06:11,967	00:06:12,479	| IOT089 |	Compare it to
+EDL	00:06:14,015	00:06:16,063	| IOT089 |	And there's also Nest weave
+EDL	00:06:16,063	00:06:17,855	| IOT089 |	So is part of the Google
+EDL	00:06:18,623	00:06:24,767	| IOT089 |	And we talked about that before and we wondered why are there two weaves in in Google and
+EDL	00:06:25,791	00:06:28,607	| IOT089 |	But I'd say that you said
+EDL	00:06:29,887	00:06:31,423	| IOT089 |	What's going to happen is
+EDL	00:06:31,423	00:06:33,215	| IOT089 |	Google's weave and Nest weave
+EDL	00:06:33,215	00:06:37,055	| IOT089 |	Will converge and there will be more information about that
+EDL	00:06:37,055	00:06:40,895	| IOT089 |	Coming out in 2017 according to a Google spokesperson
+EDL	00:06:41,663	00:06:45,503	| IOT089 |	So that's good news that is good news so that means basically
+EDL	00:06:45,503	00:06:46,271	| IOT089 |	With
+EDL	00:06:46,271	00:06:48,319	| IOT089 |	All of this iot news
+EDL	00:06:48,319	00:06:50,111	| IOT089 |	Things that are using weave
+EDL	00:06:50,879	00:06:54,207	| IOT089 |	Will speak to the Google ecosystem including Google
+EDL	00:06:54,207	00:06:54,719	| IOT089 |	Home
+EDL	00:06:55,231	00:06:56,255	| IOT089 |	And they
+EDL	00:06:56,255	00:07:01,119	| IOT089 |	Google assistant on the pixel phones yes so now you can control your nest on the
+EDL	00:07:01,887	00:07:02,399	| IOT089 |	Actually
+EDL	00:07:03,679	00:07:06,751	| IOT089 |	Good but the other implications of this are
+EDL	00:07:07,263	00:07:11,103	| IOT089 |	That there are a couple of devices that Google said already
+EDL	00:07:11,103	00:07:11,871	| IOT089 |	Support
+EDL	00:07:11,871	00:07:15,967	| IOT089 |	We are already using weave and those devices include products from Honeywell
+EDL	00:07:16,479	00:07:17,247	| IOT089 |	Wink
+EDL	00:07:17,247	00:07:18,527	| IOT089 |	Tp-link
+EDL	00:07:18,527	00:07:19,551	| IOT089 |	And falcon
+EDL	00:07:20,319	00:07:21,343	| IOT089 |	Which is why
+EDL	00:07:21,343	00:07:23,903	| IOT089 |	We also heard on Tuesday that WeMo
+EDL	00:07:23,903	00:07:25,183	| IOT089 |	Is going to work with Google home
+EDL	00:07:25,951	00:07:26,975	| IOT089 |	So
+EDL	00:07:26,975	00:07:27,999	| IOT089 |	Your
+EDL	00:07:27,999	00:07:28,767	| IOT089 |	That's
+EDL	00:07:28,767	00:07:30,559	| IOT089 |	Well I'll let you do the butt first
+EDL	00:07:30,559	00:07:32,351	| IOT089 |	But it's not available yet
+EDL	00:07:32,351	00:07:33,631	| IOT089 |	Is coming soon
+EDL	00:07:33,631	00:07:34,655	| IOT089 |	Yeah but that's okay
+EDL	00:07:34,655	00:07:35,679	| IOT089 |	Oh I will
+EDL	00:07:35,679	00:07:38,239	| IOT089 |	Reboot your butt with a that's okay because
+EDL	00:07:39,007	00:07:42,591	| IOT089 |	Again I still have not yet bought a Google home is like I bought a Ford
+EDL	00:07:42,591	00:07:45,151	| IOT089 |	Echo have an another. I got two weeks ago
+EDL	00:07:45,919	00:07:51,807	| IOT089 |	Again it's all. What devices these things work with what Partners they have who's supporting what and
+EDL	00:07:51,807	00:07:55,647	| IOT089 |	It's been a little light on the Google home side until now and still is but
+EDL	00:07:55,647	00:07:57,183	| IOT089 |	At least we got news
+EDL	00:07:57,183	00:07:59,743	| IOT089 |	But here's what's coming and that makes me happy
+EDL	00:07:59,743	00:08:02,303	| IOT089 |	And yes and I got confirmation from wink
+EDL	00:08:02,303	00:08:03,839	| IOT089 |	That a wink version
+EDL	00:08:03,839	00:08:05,119	| IOT089 |	Are weak support
+EDL	00:08:05,119	00:08:05,631	| IOT089 |	Hyundai
+EDL	00:08:06,399	00:08:06,911	| IOT089 |	Google home
+EDL	00:08:07,679	00:08:08,703	| IOT089 |	Is also coming
+EDL	00:08:08,703	00:08:09,727	| IOT089 |	But I don't have any PA
+EDL	00:08:10,495	00:08:14,591	| IOT089 |	So we can probably expect the tp-link outlets those are cute
+EDL	00:08:14,591	00:08:15,103	| IOT089 |	People love them
+EDL	00:08:16,383	00:08:19,967	| IOT089 |	And Honeywell like There lyric their water sensor there
+EDL	00:08:19,967	00:08:20,479	| IOT089 |	TV
+EDL	00:08:21,247	00:08:26,623	| IOT089 |	I don't remember the I think it's the T5 thermostat that's slightly cheaper than the lyrics
+EDL	00:08:27,391	00:08:29,951	| IOT089 |	Lifx bulbs First Alert
+EDL	00:08:29,951	00:08:31,231	| IOT089 |	Smoke detectors as well
+EDL	00:08:31,743	00:08:32,767	| IOT089 |	Yes
+EDL	00:08:32,767	00:08:34,047	| IOT089 |	Should be
+EDL	00:08:34,047	00:08:35,839	| IOT089 |	Coming and I will say
+EDL	00:08:36,351	00:08:38,143	| IOT089 |	Kevin you didn't buy an echo
+EDL	00:08:38,143	00:08:40,447	| IOT089 |	So I bought my echo December 2014
+EDL	00:08:41,471	00:08:43,007	| IOT089 |	$100
+EDL	00:08:43,007	00:08:44,287	| IOT089 |	We just watched something
+EDL	00:08:44,287	00:08:44,799	| IOT089 |	If you want it
+EDL	00:08:46,079	00:08:47,871	| IOT089 |	It just came out in November I remember that
+EDL	00:08:49,919	00:08:51,455	| IOT089 |	USA versus I'm passing on home
+EDL	00:08:51,455	00:08:54,783	| IOT089 |	But they didn't actually announce the Smart Home
+EDL	00:08:54,783	00:08:57,343	| IOT089 |	Features or capabilities until March of 2015
+EDL	00:08:58,111	00:08:59,391	| IOT089 |	That is correct also
+EDL	00:08:59,391	00:09:00,415	| IOT089 |	And that's when I bought my
+EDL	00:09:03,743	00:09:05,023	| IOT089 |	They took a little time
+EDL	00:09:05,023	00:09:07,071	| IOT089 |	We're going to let we're going to give Google home the same time
+EDL	00:09:08,351	00:09:08,863	| IOT089 |	That's fair
+EDL	00:09:09,375	00:09:10,399	| IOT089 |	I give them
+EDL	00:09:10,911	00:09:13,983	| IOT089 |	Them being Amazon more leeway here because they
+EDL	00:09:13,983	00:09:17,567	| IOT089 |	I want to say invented the category but say they brought this
+EDL	00:09:17,567	00:09:20,127	| IOT089 |	Type of product to the mainstream masses
+EDL	00:09:20,127	00:09:23,711	| IOT089 |	Monica said he did it first but they brought to a wide range of people
+EDL	00:09:24,223	00:09:25,759	| IOT089 |	First and therefore
+EDL	00:09:26,271	00:09:30,879	| IOT089 |	I'm okay with them adding Partners overtime and obviously cuz I fought for them
+EDL	00:09:30,879	00:09:36,255	| IOT089 |	I'm disappointed some other following competing products that did not have
+EDL	00:09:36,255	00:09:38,303	| IOT089 |	A wide ecosystem available on day one
+EDL	00:09:39,839	00:09:41,375	| IOT089 |	I agree but
+EDL	00:09:41,887	00:09:43,679	| IOT089 |	Well they have apparently had to get weave all in one
+EDL	00:09:45,471	00:09:46,751	| IOT089 |	That's fine
+EDL	00:09:47,263	00:09:47,775	| IOT089 |	I don't know
+EDL	00:09:48,287	00:09:52,383	| IOT089 |	I will say it's kind of overwhelming like if you imagine these things launching
+EDL	00:09:52,383	00:09:52,895	| IOT089 |	With everything
+EDL	00:09:53,407	00:09:55,455	| IOT089 |	It would be too much like people be like
+EDL	00:09:59,039	00:10:04,671	| IOT089 |	I think it first if you were the first one to do that yes but now that they're
+EDL	00:10:04,671	00:10:07,231	| IOT089 |	You know you can go to Home Depot or Lowe's whatever
+EDL	00:10:07,743	00:10:10,559	| IOT089 |	And by connected light bulbs or a hub or whatever
+EDL	00:10:11,327	00:10:12,095	| IOT089 |	I think it
+EDL	00:10:12,607	00:10:18,495	| IOT089 |	Canopy who's these products work with all of them that are readily available out of the gate at this point in time
+EDL	00:10:18,495	00:10:21,311	| IOT089 |	Not so much in 2014 when vehicle came out I agree with you
+EDL	00:10:21,823	00:10:22,591	| IOT089 |	But
+EDL	00:10:22,591	00:10:25,151	| IOT089 |	Or maybe I'm just being too optimistic on the market and I don't know
+EDL	00:10:26,431	00:10:26,943	| IOT089 |	You know I think
+EDL	00:10:28,479	00:10:29,247	| IOT089 |	So
+EDL	00:10:29,247	00:10:30,271	| IOT089 |	Back to Android.
+EDL	00:10:33,087	00:10:35,391	| IOT089 |	No it's worth delving into a lot because I see
+EDL	00:10:35,903	00:10:39,743	| IOT089 |	Three different hardwood products you can use with it and I have one of them so I can't wait
+EDL	00:10:39,743	00:10:40,511	| IOT089 |	So yes
+EDL	00:10:40,511	00:10:41,535	| IOT089 |	It's going to suck
+EDL	00:10:41,535	00:10:42,303	| IOT089 |	Support
+EDL	00:10:42,303	00:10:43,327	| IOT089 |	You can start building with
+EDL	00:10:43,839	00:10:45,119	| IOT089 |	The Intel Edison
+EDL	00:10:45,119	00:10:46,143	| IOT089 |	Tnxp
+EDL	00:10:46,143	00:10:46,911	| IOT089 |	Tipico
+EDL	00:10:46,911	00:10:48,959	| IOT089 |	Raspberry Pi 3
+EDL	00:10:52,031	00:10:53,311	| IOT089 |	Now there was
+EDL	00:10:53,311	00:10:56,639	| IOT089 |	There was I saw on the Google developer Google Plus page
+EDL	00:10:57,407	00:10:57,919	| IOT089 |	Which
+EDL	00:10:58,687	00:10:59,711	| IOT089 |	Why not go there
+EDL	00:10:59,711	00:11:03,295	| IOT089 |	Someone asking about Arduino and the response was that that just didn't
+EDL	00:11:03,807	00:11:04,831	| IOT089 |	It wasn't a robust and
+EDL	00:11:04,831	00:11:05,343	| IOT089 |	Platform
+EDL	00:11:05,855	00:11:11,487	| IOT089 |	And I know if you guys remember but back when Android things was Brillo it required I think 64
+EDL	00:11:11,487	00:11:12,255	| IOT089 |	64
+EDL	00:11:13,023	00:11:15,583	| IOT089 |	Was it megabytes it was megabytes of memory to run
+EDL	00:11:17,119	00:11:17,631	| IOT089 |	Which is a lie
+EDL	00:11:18,655	00:11:19,423	| IOT089 |	So
+EDL	00:11:19,423	00:11:21,727	| IOT089 |	It's possible that Arduino is just
+EDL	00:11:23,263	00:11:24,031	| IOT089 |	Yeah
+EDL	00:11:24,031	00:11:27,103	| IOT089 |	The other thing to know and this is something that I had heard about
+EDL	00:11:27,615	00:11:28,895	| IOT089 |	Confirmed with Google
+EDL	00:11:28,895	00:11:31,455	| IOT089 |	Is that if you want to use Wii
+EDL	00:11:31,967	00:11:37,343	| IOT089 |	You're going to have to use Google's Cloud which means you're going to need an account and you're going to have to use the weave
+EDL	00:11:39,903	00:11:41,695	| IOT089 |	Can we server components
+EDL	00:11:41,695	00:11:46,815	| IOT089 |	Security saying and a control so like when they roll out
+EDL	00:11:46,815	00:11:47,583	| IOT089 |	New traits
+EDL	00:11:47,583	00:11:48,095	| IOT089 |	Isn't that sort of thing
+EDL	00:11:48,863	00:11:50,911	| IOT089 |	That's also that all goes through one
+EDL	00:11:50,911	00:11:51,423	| IOT089 |	Fun places
+EDL	00:11:52,191	00:11:52,703	| IOT089 |	Taylor & Son
+EDL	00:11:53,215	00:11:53,727	| IOT089 |	Location of Android
+EDL	00:11:54,239	00:11:55,263	| IOT089 |	I see the
+EDL	00:11:55,263	00:11:56,031	| IOT089 |	Wisdom
+EDL	00:11:56,799	00:11:57,823	| IOT089 |	Making that
+EDL	00:11:57,823	00:11:58,847	| IOT089 |	Decision
+EDL	00:11:58,847	00:12:02,687	| IOT089 |	But I can also see people being upset saying what what if I want to use somebody else's cloud
+EDL	00:12:05,247	00:12:06,783	| IOT089 |	I'm sure there will be some grumbles
+EDL	00:12:06,783	00:12:08,063	| IOT089 |	You're going to have to be by 4
+EDL	00:12:08,063	00:12:09,855	| IOT089 |	But later on after
+EDL	00:12:09,855	00:12:11,135	| IOT089 |	Later in the show will talk about
+EDL	00:12:15,743	00:12:17,791	| IOT089 |	Let's see what else do we need to know about the
+EDL	00:12:17,791	00:12:18,815	| IOT089 |	List Aquino
+EDL	00:12:18,815	00:12:19,327	| IOT089 |	So far
+EDL	00:12:20,095	00:12:22,911	| IOT089 |	I don't know that we know much more
+EDL	00:12:24,703	00:12:25,727	| IOT089 |	America's Best
+EDL	00:12:25,727	00:12:26,495	| IOT089 |	From Google that's not Kev
+EDL	00:12:27,263	00:12:30,335	| IOT089 |	Actually, that knows what they're talking about
+EDL	00:12:30,847	00:12:34,687	| IOT089 |	Yeah so we don't I don't mean this was just an end developer announcement
+EDL	00:12:35,199	00:12:40,063	| IOT089 |	Developer should say not any consumer announcement or anything to that
+EDL	00:12:40,063	00:12:41,087	| IOT089 |	Extensive
+EDL	00:12:41,087	00:12:43,391	| IOT089 |	I don't know that there's much more we know yet
+EDL	00:12:44,415	00:12:47,999	| IOT089 |	In addition to this news we should also talk about Microsoft
+EDL	00:12:47,999	00:12:48,511	| IOT089 |	Which
+EDL	00:12:49,023	00:12:52,351	| IOT089 |	What no
+EDL	00:12:53,375	00:12:55,167	| IOT089 |	Got an SDK that
+EDL	00:12:55,167	00:12:56,703	| IOT089 |	Also on Thursday
+EDL	00:12:57,215	00:12:57,983	| IOT089 |	Which
+EDL	00:12:57,983	00:13:00,031	| IOT089 |	I think it's actually worth bringing up
+EDL	00:13:00,031	00:13:00,799	| IOT089 |	Because
+EDL	00:13:01,311	00:13:03,871	| IOT089 |	We're all waiting for like what's going to happen with
+EDL	00:13:03,871	00:13:06,175	| IOT089 |	Microsoft in their iot home play
+EDL	00:13:06,687	00:13:10,015	| IOT089 |	And what it looks like is the Cortana SDK
+EDL	00:13:10,015	00:13:11,039	| IOT089 |	Is going to be
+EDL	00:13:12,063	00:13:12,831	| IOT089 |	That
+EDL	00:13:12,831	00:13:13,343	| IOT089 |	It's answer
+EDL	00:13:14,111	00:13:20,255	| IOT089 |	Which is you can put Cortana on any device much like Amazon let's they have I'm going to say her name every
+EDL	00:13:21,023	00:13:22,559	| IOT089 |	Alexa voice services
+EDL	00:13:23,071	00:13:24,863	| IOT089 |	And you can put that on
+EDL	00:13:24,863	00:13:25,631	| IOT089 |	Any number to buy
+EDL	00:13:27,679	00:13:32,287	| IOT089 |	What is Microsoft's early Cortana s2k Partners is going to be Harman Kardon
+EDL	00:13:32,287	00:13:36,639	| IOT089 |	The premium audio manufacturer which incidentally was bought by Samsung
+EDL	00:13:37,407	00:13:40,223	| IOT089 |	Which is really odd which feels really
+EDL	00:13:40,735	00:13:43,295	| IOT089 |	Yeah not that Samsung. Harmon but that
+EDL	00:13:43,807	00:13:47,391	| IOT089 |	Samsung has their own iot play here and yet there
+EDL	00:13:48,159	00:13:51,743	| IOT089 |	An early device partner with Microsoft to and showing off a
+EDL	00:13:52,255	00:13:54,559	| IOT089 |	Audio speaker that you speak to
+EDL	00:13:55,071	00:13:55,583	| IOT089 |	Cortana
+EDL	00:13:56,607	00:13:58,655	| IOT089 |	Just like you would with an echo it's kind of strange
+EDL	00:13:59,679	00:14:01,727	| IOT089 |	And so I would be curious given
+EDL	00:14:02,239	00:14:04,543	| IOT089 |	Not necessarily.
+EDL	00:14:04,543	00:14:05,311	| IOT089 |	Given
+EDL	00:14:05,823	00:14:08,383	| IOT089 |	The SDK is now that are out
+EDL	00:14:08,383	00:14:09,151	| IOT089 |	And the
+EDL	00:14:09,919	00:14:10,943	| IOT089 |	It supposed to go home
+EDL	00:14:10,943	00:14:11,455	| IOT089 |	So thick
+EDL	00:14:11,967	00:14:12,991	| IOT089 |	No actions
+EDL	00:14:13,503	00:14:14,783	| IOT089 |	We got the echo
+EDL	00:14:15,295	00:14:15,807	| IOT089 |	STK
+EDL	00:14:16,319	00:14:17,343	| IOT089 |	And we got
+EDL	00:14:17,855	00:14:18,879	| IOT089 |	Cortana SDK
+EDL	00:14:20,927	00:14:23,487	| IOT089 |	What is Cortana and Cortana skills kit
+EDL	00:14:23,487	00:14:26,815	| IOT089 |	Cortana skills kit so you can build skills which thank you
+EDL	00:14:26,815	00:14:31,935	| IOT089 |	Cortana for keeping with the skills nomenclature so I don't have to stretch my brain anymore during this show
+EDL	00:14:32,703	00:14:35,519	| IOT089 |	What do we think about all this what are people going to use
+EDL	00:14:35,519	00:14:37,311	| IOT089 |	Who are we going to talk to Kevin
+EDL	00:14:39,615	00:14:40,895	| IOT089 |	Book
+EDL	00:14:40,895	00:14:41,919	| IOT089 |	We're going to talk
+EDL	00:14:41,919	00:14:43,967	| IOT089 |	Hopefully in the future it won't matter
+EDL	00:14:43,967	00:14:44,991	| IOT089 |	Is my hope
+EDL	00:14:45,503	00:14:48,319	| IOT089 |	I remember one of the first articles I wrote about
+EDL	00:14:48,319	00:14:50,623	| IOT089 |	Voice interface is the invisible interface was
+EDL	00:14:50,623	00:14:52,415	| IOT089 |	It will work because it's
+EDL	00:14:53,183	00:14:59,327	| IOT089 |	Simple it's Universal anybody can use it without cortical learning interface if you know how to ask question
+EDL	00:15:00,095	00:15:00,863	| IOT089 |	Speaker command
+EDL	00:15:01,375	00:15:02,911	| IOT089 |	You can use this interface
+EDL	00:15:03,423	00:15:04,703	| IOT089 |	Your question though is
+EDL	00:15:05,471	00:15:06,239	| IOT089 |	What about
+EDL	00:15:06,239	00:15:08,031	| IOT089 |	Multiple interfaces in a sentence
+EDL	00:15:09,311	00:15:10,847	| IOT089 |	How do we manage that
+EDL	00:15:11,615	00:15:14,431	| IOT089 |	This is some strange coming from me but I think
+EDL	00:15:14,431	00:15:16,223	| IOT089 |	Microsoft is actually
+EDL	00:15:16,223	00:15:19,295	| IOT089 |	Best suited for this challenge because
+EDL	00:15:19,295	00:15:20,831	| IOT089 |	Cortana works on
+EDL	00:15:20,831	00:15:21,855	| IOT089 |	Windows
+EDL	00:15:21,855	00:15:25,695	| IOT089 |	On Android on iOS it works on my Xbox
+EDL	00:15:25,695	00:15:28,255	| IOT089 |	And then they're going to have these additional devices
+EDL	00:15:28,255	00:15:30,559	| IOT089 |	Hopefully through partners with their SDK
+EDL	00:15:31,071	00:15:32,607	| IOT089 |	Souffrant terms of
+EDL	00:15:32,607	00:15:34,143	| IOT089 |	Of Brett's of that
+EDL	00:15:34,143	00:15:35,679	| IOT089 |	Invisible interface
+EDL	00:15:36,703	00:15:37,727	| IOT089 |	He might
+EDL	00:15:37,727	00:15:38,751	| IOT089 |	Beheaded the curfew
+EDL	00:15:39,519	00:15:41,311	| IOT089 |	And they also downstairs
+EDL	00:15:41,823	00:15:45,407	| IOT089 |	Microsoft translator using their AI skills cuz
+EDL	00:15:45,407	00:15:46,943	| IOT089 |	Microsoft AI
+EDL	00:15:47,455	00:15:48,479	| IOT089 |	Backend in
+EDL	00:15:48,991	00:15:51,295	| IOT089 |	Speech-to-text in language
+EDL	00:15:52,063	00:15:53,343	| IOT089 |	NLP
+EDL	00:15:53,343	00:15:54,879	| IOT089 |	Language recognition all of that stuff
+EDL	00:15:55,647	00:15:56,415	| IOT089 |	Is
+EDL	00:15:56,927	00:15:57,695	| IOT089 |	Freaking
+EDL	00:15:57,695	00:15:59,999	| IOT089 |	Amazing I mean Google has really good stuff
+EDL	00:16:00,511	00:16:03,583	| IOT089 |	But Microsoft on Tuesday also announced real time
+EDL	00:16:04,351	00:16:05,375	| IOT089 |	Translation
+EDL	00:16:06,143	00:16:09,471	| IOT089 |	Like between groups of people speaking multiple languages
+EDL	00:16:09,471	00:16:10,239	| IOT089 |	Is in person
+EDL	00:16:11,519	00:16:13,311	| IOT089 |	That is insane
+EDL	00:16:13,311	00:16:14,591	| IOT089 |	That's impressive I mean
+EDL	00:16:15,103	00:16:15,871	| IOT089 |	That's really
+EDL	00:16:16,383	00:16:16,895	| IOT089 |	Amazing
+EDL	00:16:17,407	00:16:17,919	| IOT089 |	So
+EDL	00:16:19,199	00:16:20,735	| IOT089 |	You may be right
+EDL	00:16:20,735	00:16:24,063	| IOT089 |	Especially if we think about being able to talk and speak to something
+EDL	00:16:24,575	00:16:25,087	| IOT089 |	Natural
+EDL	00:16:26,111	00:16:26,623	| IOT089 |	Now
+EDL	00:16:27,391	00:16:29,183	| IOT089 |	Let's throw a curveball in here
+EDL	00:16:29,183	00:16:29,951	| IOT089 |	Because
+EDL	00:16:30,463	00:16:31,231	| IOT089 |	Amazon
+EDL	00:16:31,999	00:16:38,143	| IOT089 |	It was actually at reinvent at the end of November and then they also this week had a pulled it all together in this Nifty little
+EDL	00:16:38,655	00:16:39,167	| IOT089 |	Blanco
+EDL	00:16:40,191	00:16:44,287	| IOT089 |	Amazon is actually really trying hard to offer an AI product
+EDL	00:16:45,055	00:16:46,591	| IOT089 |	For Developers
+EDL	00:16:46,591	00:16:47,359	| IOT089 |	That
+EDL	00:16:47,359	00:16:49,151	| IOT089 |	Capri train models basically
+EDL	00:16:50,175	00:16:54,527	| IOT089 |	So you can do both custom algorithms and custom models but they also have
+EDL	00:16:55,039	00:16:57,087	| IOT089 |	Pre tuned stuff for developer
+EDL	00:16:57,087	00:16:58,879	| IOT089 |	And that's all going to be through there
+EDL	00:16:59,391	00:16:59,903	| IOT089 |	Cloud
+EDL	00:17:00,415	00:17:05,535	| IOT089 |	So now they have these Amazon AI models that you can run on top of Amazon's machine learning
+EDL	00:17:06,815	00:17:07,583	| IOT089 |	If you guys are like
+EDL	00:17:07,583	00:17:09,119	| IOT089 |	Head exploded
+EDL	00:17:09,119	00:17:10,655	| IOT089 |	Just be aware that
+EDL	00:17:12,191	00:17:13,215	| IOT089 |	Basically
+EDL	00:17:13,215	00:17:15,775	| IOT089 |	Is giving developers the ability to use the developer state
+EDL	00:17:16,543	00:17:18,079	| IOT089 |	With Amazon's AI
+EDL	00:17:18,847	00:17:19,871	| IOT089 |	Algorithms
+EDL	00:17:19,871	00:17:20,895	| IOT089 |	So you can basically
+EDL	00:17:22,175	00:17:26,271	| IOT089 |	Use your stuff to build new smarter things and you don't have to develop all the AI that like
+EDL	00:17:27,807	00:17:29,855	| IOT089 |	Yeah it seems like the race is on
+EDL	00:17:30,623	00:17:31,135	| IOT089 |	Or maybe
+EDL	00:17:36,511	00:17:37,023	| IOT089 |	Come out everybody
+EDL	00:17:37,791	00:17:42,143	| IOT089 |	Everybody wanted to provide a cloud service okay we do that everybody wants to
+EDL	00:17:42,143	00:17:44,959	| IOT089 |	Provide us the case for that cloud okay we all do that now
+EDL	00:17:44,959	00:17:45,983	| IOT089 |	Now everyone's
+EDL	00:17:45,983	00:17:47,263	| IOT089 |	Provide an AI
+EDL	00:17:47,775	00:17:49,567	| IOT089 |	For people to use so
+EDL	00:17:49,567	00:17:55,967	| IOT089 |	As you were saying Amazon that I see three different things with your kind of interesting just to break it down a little further they got Amazon
+EDL	00:17:55,967	00:17:57,759	| IOT089 |	Text for natural language processing
+EDL	00:17:58,271	00:18:00,319	| IOT089 |	Forgot Amazon poly which is at X
+EDL	00:18:00,319	00:18:02,623	| IOT089 |	Text to speech service and Amazon rekognition which is
+EDL	00:18:02,623	00:18:03,903	| IOT089 |	And image service
+EDL	00:18:03,903	00:18:05,183	| IOT089 |	Open the cloud
+EDL	00:18:05,183	00:18:07,743	| IOT089 |	So they're providing all that to developer switch
+EDL	00:18:07,743	00:18:08,511	| IOT089 |	Again a lot of
+EDL	00:18:09,023	00:18:12,351	| IOT089 |	Others do that Google does that Microsoft does that as well so
+EDL	00:18:12,351	00:18:16,191	| IOT089 |	So maybe the race is on is probably the wrong way to say at the races hopefully
+EDL	00:18:16,703	00:18:17,983	| IOT089 |	Heating up
+EDL	00:18:18,495	00:18:20,799	| IOT089 |	Dot-dot-dot and who is the beneficiary
+EDL	00:18:20,799	00:18:21,823	| IOT089 |	We are
+EDL	00:18:21,823	00:18:25,151	| IOT089 |	I'm going to play this for you I don't see if I don't know if this is going to work
+EDL	00:18:25,663	00:18:26,431	| IOT089 |	Let's see if
+EDL	00:18:26,431	00:18:28,991	| IOT089 |	You can hear it but this is Amazon Polly reading quotes
+EDL	00:18:29,503	00:18:30,271	| IOT089 |	Sufficient
+EDL	00:18:30,783	00:18:32,831	| IOT089 |	Technology is indistinguishable
+EDL	00:18:34,367	00:18:35,647	| IOT089 |	That was Amazon Polly
+EDL	00:18:36,415	00:18:36,927	| IOT089 |	Just reading
+EDL	00:18:38,207	00:18:39,743	| IOT089 |	So
+EDL	00:18:39,743	00:18:41,279	| IOT089 |	And she's really good in British
+EDL	00:18:41,791	00:18:42,815	| IOT089 |	I guess that's piss
+EDL	00:18:43,327	00:18:43,839	| IOT089 |	Right
+EDL	00:18:44,863	00:18:45,375	| IOT089 |	Why not
+EDL	00:18:47,935	00:18:48,959	| IOT089 |	Exit
+EDL	00:18:48,959	00:18:50,239	| IOT089 |	Okay
+EDL	00:18:50,239	00:18:51,007	| IOT089 |	So
+EDL	00:18:51,007	00:18:52,287	| IOT089 |	That's a lot going on
+EDL	00:18:53,311	00:18:55,103	| IOT089 |	Everybody's got their components
+EDL	00:18:55,103	00:18:59,199	| IOT089 |	If I were to judge today I would say Microsoft is probably the most
+EDL	00:18:59,199	00:19:00,991	| IOT089 |	Advanced in terms of
+EDL	00:19:01,759	00:19:05,855	| IOT089 |	Speaking back to people and maybe understanding followed by Google maybe they're neck-and-neck
+EDL	00:19:07,135	00:19:09,695	| IOT089 |	Amazon has the biggest ecosystem right now
+EDL	00:19:09,695	00:19:11,999	| IOT089 |	And with their AI stuff there
+EDL	00:19:11,999	00:19:13,535	| IOT089 |	Place to keep that ecosystem
+EDL	00:19:14,815	00:19:15,327	| IOT089 |	Google
+EDL	00:19:16,607	00:19:17,631	| IOT089 |	Has the best
+EDL	00:19:20,447	00:19:22,495	| IOT089 |	I can't answer that question.
+EDL	00:19:23,007	00:19:26,591	| IOT089 |	I'm like Google who has the best employees
+EDL	00:19:26,591	00:19:29,151	| IOT089 |	Google probably has the best lake
+EDL	00:19:29,151	00:19:30,943	| IOT089 |	Google knows what I'm talking about
+EDL	00:19:30,943	00:19:31,967	| IOT089 |	When I ask it a question
+EDL	00:19:35,039	00:19:35,807	| IOT089 |	So
+EDL	00:19:35,807	00:19:36,575	| IOT089 |	We'll see
+EDL	00:19:36,575	00:19:38,879	| IOT089 |	This is big you guys so
+EDL	00:19:38,879	00:19:42,207	| IOT089 |	I'm really excited 2017 is shaping up to be really cool
+EDL	00:19:42,719	00:19:45,023	| IOT089 |	Alright let's take a quick a break
+EDL	00:19:45,023	00:19:49,887	| IOT089 |	And then we're going to come back with more
+EDL	00:19:49,887	00:19:56,287	| IOT089 |	Hey everyone we are taking a break in The Internet of Things podcast for a message from our sponsor this week sponsor is say
+EDL	00:19:56,287	00:19:59,871	| IOT089 |	Samsung Arctic cloud and we have Janine
+EDL	00:19:59,871	00:20:04,991	| IOT089 |	Who is head of developer evangelism for Samsung Arctic Cloud to tell us
+EDL	00:20:04,991	00:20:07,039	| IOT089 |	Samsung artik what is Janine
+EDL	00:20:07,039	00:20:13,439	| IOT089 |	Simple Arctic cloud is an open data exchange platform for the internet of things that provide easy-to-use opening
+EDL	00:20:13,439	00:20:19,071	| IOT089 |	Tools to collect store and Eric on any data from any connected device your cloud service
+EDL	00:20:19,583	00:20:20,607	| IOT089 |	Transformers
+EDL	00:20:21,119	00:20:23,167	| IOT089 |	To accelerate device interoperability
+EDL	00:20:23,167	00:20:24,703	| IOT089 |	Enable nudata inside
+EDL	00:20:24,703	00:20:26,751	| IOT089 |	And why is interoperability sew in
+EDL	00:20:27,519	00:20:31,359	| IOT089 |	Predicts will be over 20 billion connected devices by 2000
+EDL	00:20:31,359	00:20:33,151	| IOT089 |	All of these things
+EDL	00:20:33,151	00:20:34,175	| IOT089 |	We're not meant to work together
+EDL	00:20:34,687	00:20:38,527	| IOT089 |	You know all in your own to be successful
+EDL	00:20:38,527	00:20:40,063	| IOT089 |	Interoperability is critical
+EDL	00:20:40,063	00:20:44,159	| IOT089 |	There was a study done that is shown that interoperability is required
+EDL	00:20:44,159	00:20:48,255	| IOT089 |	For 40% on average to 60% and some settings
+EDL	00:20:48,255	00:20:54,399	| IOT089 |	Artix headphones the problem of breaking down those silos by allowing for the true interoperability
+EDL	00:20:54,399	00:20:55,679	| IOT089 |	Between devices in service
+EDL	00:21:00,031	00:21:02,591	| IOT089 |	That sounds like a really powerful platform
+EDL	00:21:03,359	00:21:05,151	| IOT089 |	What are developers doing with it
+EDL	00:21:05,151	00:21:08,479	| IOT089 |	Incredible with developers are doing using or
+EDL	00:21:08,479	00:21:10,015	| IOT089 |	Arctic hotspot formed
+EDL	00:21:10,015	00:21:13,855	| IOT089 |	Recently added houses on where they filled out an industrial iot
+EDL	00:21:13,855	00:21:14,623	| IOT089 |	Solutions
+EDL	00:21:14,623	00:21:15,647	| IOT089 |	Service iot
+EDL	00:21:16,159	00:21:17,952	| IOT089 |	So they used to check
+EDL	00:21:17,952	00:21:20,256	| IOT089 |	To Monitor and troubleshoot the machine
+EDL	00:21:20,768	00:21:22,048	| IOT089 |	Enter data Within
+EDL	00:21:22,048	00:21:25,888	| IOT089 |	To Arctic Cloud which stores the data for clearing data from the chatbot
+EDL	00:21:25,888	00:21:29,984	| IOT089 |	Issue with machine such as a high temperature reading
+EDL	00:21:29,984	00:21:33,824	| IOT089 |	An article was created to send a notification
+EDL	00:21:33,824	00:21:35,872	| IOT089 |	To the chat bot to communicate
+EDL	00:21:35,872	00:21:37,920	| IOT089 |	With the operator said something went wrong
+EDL	00:21:37,920	00:21:44,320	| IOT089 |	We also had somebody build a smart City solution which optimizes waste collection and reduces fuel consumption
+EDL	00:21:44,320	00:21:44,832	| IOT089 |	Garbage trucks
+EDL	00:21:45,344	00:21:48,672	| IOT089 |	The sensors are installed in the lead of the garbage container
+EDL	00:21:49,184	00:21:52,768	| IOT089 |	Measure the temperature of the container and the dumpster is full
+EDL	00:21:54,304	00:21:56,352	| IOT089 |	Isn't transmitted article
+EDL	00:21:56,352	00:21:59,168	| IOT089 |	Waste Management Company
+EDL	00:21:59,168	00:22:02,240	| IOT089 |	It's really easy for developers to build an increase in the rate of solution
+EDL	00:22:04,288	00:22:07,104	| IOT089 |	Behind the complexity of iot development
+EDL	00:22:07,104	00:22:08,384	| IOT089 |	And provide simplicity
+EDL	00:22:09,664	00:22:13,504	| IOT089 |	We provide apis for everything in order to simplify that whole process
+EDL	00:22:14,016	00:22:18,624	| IOT089 |	We have 10 ft kzzu schools in great sample code
+EDL	00:22:18,624	00:22:19,904	| IOT089 |	Help you get started
+EDL	00:22:19,904	00:22:21,184	| IOT089 |	And your development efforts
+EDL	00:22:21,184	00:22:23,744	| IOT089 |	Awesome what you need where can I find out more
+EDL	00:22:23,744	00:22:26,048	| IOT089 |	Developers can learn more about artist
+EDL	00:22:26,048	00:22:32,192	| IOT089 |	Start using it for free by visiting
+EDL	00:22:33,216	00:22:35,264	| IOT089 |	Order to build out and
+EDL	00:22:35,264	00:22:40,640	| IOT089 |	Innovative iot solution using artificial intelligence
+EDL	00:22:41,664	00:22:42,432	| IOT089 |	Tik Tok
+EDL	00:22:42,432	00:22:43,968	| IOT089 |	Build wireless network
+EDL	00:22:43,968	00:22:50,368	| IOT089 |	Disconnect low energy object will be doing a demo with crafty I as well as big box
+EDL	00:22:50,368	00:22:56,768	| IOT089 |	Alright we are back and it
+EDL	00:22:56,768	00:23:00,864	| IOT089 |	Instead of a guest we are still here both Stacy and
+EDL	00:23:00,864	00:23:01,632	| IOT089 |	Kevin
+EDL	00:23:01,632	00:23:03,168	| IOT089 |	Talking about
+EDL	00:23:03,168	00:23:05,472	| IOT089 |	News we did a big deep dive on
+EDL	00:23:05,984	00:23:07,776	| IOT089 |	Holy cow all the new
+EDL	00:23:08,288	00:23:10,336	| IOT089 |	A iCloud personal assistant
+EDL	00:23:10,848	00:23:12,128	| IOT089 |	Talkin things
+EDL	00:23:12,896	00:23:15,456	| IOT089 |	We should probably come up with a better name for them
+EDL	00:23:15,968	00:23:20,064	| IOT089 |	And now we're going to get into some of the week's news that that we haven't covered yet
+EDL	00:23:20,064	00:23:23,392	| IOT089 |	Such as well just get started with some new products out there in the market
+EDL	00:23:23,904	00:23:26,464	| IOT089 |	Cassia networks has created a
+EDL	00:23:26,464	00:23:27,744	| IOT089 |	Bluetooth
+EDL	00:23:27,744	00:23:28,512	| IOT089 |	Home
+EDL	00:23:28,512	00:23:29,024	| IOT089 |	Hub
+EDL	00:23:29,792	00:23:31,328	| IOT089 |	And you guys are like
+EDL	00:23:32,096	00:23:32,864	| IOT089 |	Who cares
+EDL	00:23:33,376	00:23:36,704	| IOT089 |	But know this is great because Bluetooth mesh is not great
+EDL	00:23:37,728	00:23:40,288	| IOT089 |	In this Hub actually makes your Bluetooth
+EDL	00:23:40,288	00:23:41,056	| IOT089 |	Go further
+EDL	00:23:41,568	00:23:43,104	| IOT089 |	And supports a lot of
+EDL	00:23:44,384	00:23:46,432	| IOT089 |	So this is good for both home
+EDL	00:23:46,432	00:23:50,784	| IOT089 |	And a lot of people in the industrial world are trying to use Bluetooth to actually because it's already
+EDL	00:23:52,320	00:23:53,856	| IOT089 |	History of Aquarius
+EDL	00:23:53,856	00:23:55,904	| IOT089 |	Yeah and the short actually the short range of Bluetooth
+EDL	00:23:56,672	00:23:59,232	| IOT089 |	Advantage for them because it's a little bit more secure
+EDL	00:23:59,744	00:24:01,792	| IOT089 |	Like within the factory there like
+EDL	00:24:01,792	00:24:03,584	| IOT089 |	What I like about this and not enough
+EDL	00:24:04,096	00:24:04,864	| IOT089 |	Typical it big
+EDL	00:24:04,864	00:24:07,168	| IOT089 |	I don't say Phantom Bluetooth is I love Bluetooth
+EDL	00:24:07,168	00:24:08,704	| IOT089 |	Very specific things
+EDL	00:24:08,704	00:24:11,008	| IOT089 |	I would not think of it any router but
+EDL	00:24:11,520	00:24:14,080	| IOT089 |	What I like about this and even though you can do this on Wi-Fi
+EDL	00:24:14,848	00:24:16,384	| IOT089 |	I like Bluetooth for presents
+EDL	00:24:18,176	00:24:20,992	| IOT089 |	Not not like Christmas presents but where I am present
+EDL	00:24:22,016	00:24:22,528	| IOT089 |	You don't want blue
+EDL	00:24:23,808	00:24:25,856	| IOT089 |	That would be cool to the best of both worlds
+EDL	00:24:26,624	00:24:28,928	| IOT089 |	I also like this because right now
+EDL	00:24:29,440	00:24:30,208	| IOT089 |	Bluetooth
+EDL	00:24:30,208	00:24:35,584	| IOT089 |	Things like light switches are sensors it just doesn't make a lot of sense because it just doesn't have the
+EDL	00:24:35,584	00:24:36,096	| IOT089 |	The range
+EDL	00:24:36,608	00:24:38,400	| IOT089 |	I have in this is going to make this
+EDL	00:24:38,400	00:24:44,544	| IOT089 |	Possible and it should hopefully it will be Bluetooth 5 compatible since they're just lunch again and
+EDL	00:24:45,056	00:24:47,104	| IOT089 |	Bluetooth 5 specs
+EDL	00:24:47,104	00:24:49,664	| IOT089 |	Out so I look forward to seeing this in the real world
+EDL	00:24:50,176	00:24:52,224	| IOT089 |	This is actually an Enterprise version
+EDL	00:24:53,504	00:24:55,296	| IOT089 |	And some of them support power over ethernet
+EDL	00:25:00,160	00:25:01,696	| IOT089 |	Plug it in have connectivity
+EDL	00:25:02,208	00:25:08,608	| IOT089 |	And you don't actually have to have the cloud Kasia SDK is both on the cloud is and on the rug
+EDL	00:25:08,608	00:25:10,656	| IOT089 |	Router so yeah you can keep
+EDL	00:25:11,936	00:25:12,704	| IOT089 |	Local
+EDL	00:25:12,704	00:25:13,216	| IOT089 |	Local
+EDL	00:25:13,728	00:25:14,240	| IOT089 |	Disconnect
+EDL	00:25:15,008	00:25:15,776	| IOT089 |	AKA
+EDL	00:25:15,776	00:25:21,152	| IOT089 |	Look all right so I think this is actually really cool product worthwhile
+EDL	00:25:21,664	00:25:24,992	| IOT089 |	The other news in this is big because we didn't talk about her
+EDL	00:25:26,272	00:25:27,040	| IOT089 |	Siri and app
+EDL	00:25:27,808	00:25:32,928	| IOT089 |	The news here is that fibaro which is a maker of really awesome Z-Wave sensors
+EDL	00:25:32,928	00:25:35,488	| IOT089 |	They're making homekit sensors
+EDL	00:25:35,488	00:25:36,512	| IOT089 |	And
+EDL	00:25:36,512	00:25:40,608	| IOT089 |	This is significant for two reasons one is for borrow is a Z-Wave hub
+EDL	00:25:40,608	00:25:44,192	| IOT089 |	Company so this is the first time they've gone out of Z-Wave
+EDL	00:25:44,192	00:25:44,704	| IOT089 |	What
+EDL	00:25:45,216	00:25:47,008	| IOT089 |	And these are bushes her
+EDL	00:25:47,008	00:25:47,520	| IOT089 |	Yeah
+EDL	00:25:48,032	00:25:48,800	| IOT089 |	Pair Bluetooth
+EDL	00:25:49,824	00:25:53,152	| IOT089 |	The other is that this is going to give some sensors to homekit
+EDL	00:25:53,152	00:25:53,664	| IOT089 |	Which
+EDL	00:25:54,176	00:25:54,944	| IOT089 |	Has been kind of
+EDL	00:25:55,712	00:25:56,736	| IOT089 |	Left sensor
+EDL	00:25:56,736	00:26:00,320	| IOT089 |	Focused I guess
+EDL	00:26:00,832	00:26:04,672	| IOT089 |	So fibaro is going to launch a flood sensor
+EDL	00:26:05,440	00:26:10,304	| IOT089 |	For $70 a motion sensor for $70 and a door window sensor for $60
+EDL	00:26:11,328	00:26:12,352	| IOT089 |	They're going to start selling
+EDL	00:26:13,376	00:26:13,888	| IOT089 |	Natsumi
+EDL	00:26:14,656	00:26:15,680	| IOT089 |	So
+EDL	00:26:16,192	00:26:16,960	| IOT089 |	Yeah
+EDL	00:26:17,984	00:26:18,752	| IOT089 |	Yeah that's good
+EDL	00:26:19,264	00:26:25,664	| IOT089 |	And I'm going to get some you guys cuz I don't know
+EDL	00:26:25,664	00:26:29,248	| IOT089 |	Come in my house I'm building at home kit ecosystem I've got the Elgato sensors
+EDL	00:26:29,760	00:26:31,296	| IOT089 |	Eve sensors in their
+EDL	00:26:31,808	00:26:33,088	| IOT089 |	Which also Bluetooth
+EDL	00:26:34,112	00:26:35,136	| IOT089 |	And some
+EDL	00:26:35,904	00:26:36,416	| IOT089 |	Lights
+EDL	00:26:37,696	00:26:38,976	| IOT089 |	Some homekit lights
+EDL	00:26:38,976	00:26:39,744	| IOT089 |	Philips Hue
+EDL	00:26:40,512	00:26:41,536	| IOT089 |	Device
+EDL	00:26:41,536	00:26:43,328	| IOT089 |	Idevices smart plug
+EDL	00:26:43,840	00:26:44,608	| IOT089 |	And then I have some
+EDL	00:26:45,376	00:26:46,144	| IOT089 |	Lutron
+EDL	00:26:47,424	00:26:48,192	| IOT089 |	Ellucian hub
+EDL	00:26:48,960	00:26:49,472	| IOT089 |	Switch mileage
+EDL	00:26:50,752	00:26:52,544	| IOT089 |	If you guys are thinking of doing this
+EDL	00:26:53,056	00:26:54,080	| IOT089 |	Know this
+EDL	00:26:54,080	00:26:56,384	| IOT089 |	Are your Lutron stuff it only works on
+EDL	00:26:56,896	00:26:57,920	| IOT089 |	One system
+EDL	00:26:57,920	00:26:58,688	| IOT089 |	Or it like
+EDL	00:26:58,688	00:27:01,248	| IOT089 |	One thing or the other so I'm going to break my Lutron lights for
+EDL	00:27:02,016	00:27:03,296	| IOT089 |	In my husband going to
+EDL	00:27:03,808	00:27:05,088	| IOT089 |	See that's gay
+EDL	00:27:05,088	00:27:11,232	| IOT089 |	Shrugging right now
+EDL	00:27:12,512	00:27:16,608	| IOT089 |	Actually yes it be as if it's not over wife over by so if it's a Directv billing
+EDL	00:27:17,120	00:27:18,144	| IOT089 |	Z-Wave
+EDL	00:27:18,144	00:27:20,704	| IOT089 |	Or Lutron those only connect to One Network
+EDL	00:27:20,704	00:27:21,216	| IOT089 |	At a time
+EDL	00:27:21,984	00:27:22,496	| IOT089 |	So
+EDL	00:27:23,264	00:27:26,336	| IOT089 |	For the Lutron what I'm going to do is I'm going to have to run it to the Lutron hub
+EDL	00:27:26,848	00:27:29,664	| IOT089 |	Which then I can use the Lutron app on my
+EDL	00:27:30,176	00:27:31,712	| IOT089 |	Android devices
+EDL	00:27:31,712	00:27:33,504	| IOT089 |	Just still control them
+EDL	00:27:33,504	00:27:34,272	| IOT089 |	But I can't type
+EDL	00:27:37,344	00:27:37,856	| IOT089 |	Since
+EDL	00:27:39,904	00:27:40,416	| IOT089 |	Might my husband
+EDL	00:27:42,720	00:27:43,488	| IOT089 |	You know
+EDL	00:27:43,488	00:27:44,512	| IOT089 |	His life is already missed
+EDL	00:27:45,536	00:27:48,608	| IOT089 |	So okay so that's that we should talk about sleepy
+EDL	00:27:49,120	00:27:51,168	| IOT089 |	You know why cuz we got like two other pieces
+EDL	00:27:51,936	00:27:53,216	| IOT089 |	Yeah Evergreen thread
+EDL	00:27:53,984	00:27:56,544	| IOT089 |	Zigbee running over the thread protocol
+EDL	00:27:56,544	00:27:58,592	| IOT089 |	Holy cow guys
+EDL	00:27:58,592	00:28:00,896	| IOT089 |	ZTE running over the thread protocol is
+EDL	00:28:00,896	00:28:04,992	| IOT089 |	Real so now Icees they're going to show this off that this is work
+EDL	00:28:05,504	00:28:06,784	| IOT089 |	And for you guys for like
+EDL	00:28:06,784	00:28:09,344	| IOT089 |	Oh my God Stacy you're breaking my brain
+EDL	00:28:09,344	00:28:13,952	| IOT089 |	Protocol is a wireless is a mesh Wireless protocol
+EDL	00:28:14,464	00:28:18,048	| IOT089 |	Much like zigbee and Z-Wave are mesh Wireless protocols
+EDL	00:28:18,048	00:28:18,816	| IOT089 |	Like those
+EDL	00:28:19,328	00:28:22,656	| IOT089 |	Thread has low and doesn't use a lot of energy
+EDL	00:28:22,656	00:28:24,448	| IOT089 |	Unlike those
+EDL	00:28:24,448	00:28:27,264	| IOT089 |	It is IPv6 compatible so it
+EDL	00:28:27,264	00:28:28,800	| IOT089 |	Can go directly out to record
+EDL	00:28:29,312	00:28:33,152	| IOT089 |	The differences when you're thinking of thread
+EDL	00:28:33,664	00:28:34,688	| IOT089 |	Throw it down at
+EDL	00:28:34,688	00:28:36,224	| IOT089 |	Zigbee and Z-Wave
+EDL	00:28:36,224	00:28:39,296	| IOT089 |	Once Bluetooth has its mesh network will throw Bluetooth mesh in there just
+EDL	00:28:40,320	00:28:41,088	| IOT089 |	But now
+EDL	00:28:41,088	00:28:42,624	| IOT089 |	With zigbee running over 3
+EDL	00:28:43,392	00:28:45,440	| IOT089 |	That means you get the zigbee
+EDL	00:28:45,440	00:28:46,720	| IOT089 |	Software stack
+EDL	00:28:46,720	00:28:52,608	| IOT089 |	Over the thread protocol in the zigbee software stack has a lot of stuff for lights that's really powerful
+EDL	00:28:53,120	00:28:54,912	| IOT089 |	For managing huge lighting net
+EDL	00:28:54,912	00:28:55,680	| IOT089 |	Works or big lady
+EDL	00:28:56,960	00:28:58,496	| IOT089 |	So that's that's why that
+EDL	00:28:59,008	00:28:59,520	| IOT089 |	Hatteras Sol
+EDL	00:29:00,032	00:29:02,592	| IOT089 |	Probably good for a Industrial
+EDL	00:29:02,592	00:29:08,736	| IOT089 |	An Enterprise has announced that they're going into the Enterprise a couple weeks ago so
+EDL	00:29:10,016	00:29:13,856	| IOT089 |	It also means that anything that supports the red so
+EDL	00:29:13,856	00:29:15,904	| IOT089 |	I kind of think that Google
+EDL	00:29:15,904	00:29:18,464	| IOT089 |	Is going to be a big supporter of thread since it came out of nest
+EDL	00:29:18,976	00:29:19,744	| IOT089 |	And in fact
+EDL	00:29:20,512	00:29:21,280	| IOT089 |	There is a
+EDL	00:29:21,792	00:29:23,072	| IOT089 |	CB radio with a Google WiFi
+EDL	00:29:25,376	00:29:25,888	| IOT089 |	So
+EDL	00:29:26,400	00:29:27,936	| IOT089 |	I imagine we're going to see
+EDL	00:29:28,704	00:29:31,264	| IOT089 |	Zippy ever thread coming from your Google Wi-Fi routers at some point
+EDL	00:29:32,544	00:29:34,336	| IOT089 |	I Can Only Imagine
+EDL	00:29:34,848	00:29:36,640	| IOT089 |	Can I say otherwise cuz I don't know
+EDL	00:29:36,640	00:29:38,688	| IOT089 |	But I did get my Wi-Fi
+EDL	00:29:38,688	00:29:40,736	| IOT089 |	Something I'm actually using right now
+EDL	00:29:40,736	00:29:41,248	| IOT089 |	We're going to talk about
+EDL	00:29:42,528	00:29:43,808	| IOT089 |	Stay tuned
+EDL	00:29:43,808	00:29:44,576	| IOT089 |	You guys
+EDL	00:29:44,576	00:29:45,344	| IOT089 |	Cool
+EDL	00:29:46,368	00:29:48,928	| IOT089 |	What other things do we have
+EDL	00:29:49,696	00:29:52,768	| IOT089 |	There's lots going on all of a sudden so
+EDL	00:29:52,768	00:29:55,840	| IOT089 |	Google self-driving car efforts
+EDL	00:29:56,352	00:30:00,448	| IOT089 |	Which were part of I guess part of the X lab X division
+EDL	00:30:00,960	00:30:05,056	| IOT089 |	Are now a separate company under alphabet called waymo
+EDL	00:30:05,824	00:30:06,336	| IOT089 |	I guess so
+EDL	00:30:06,848	00:30:09,664	| IOT089 |	W what's the next letter to be used in alphabet so
+EDL	00:30:09,664	00:30:11,200	| IOT089 |	Waymo is its own
+EDL	00:30:11,712	00:30:12,992	| IOT089 |	Company under alphabet
+EDL	00:30:13,760	00:30:15,296	| IOT089 |	And
+EDL	00:30:15,296	00:30:17,856	| IOT089 |	Google is partnering with I want to say
+EDL	00:30:17,856	00:30:19,392	| IOT089 |	Chrysler Fiat
+EDL	00:30:20,160	00:30:22,464	| IOT089 |	For yeah yeah so
+EDL	00:30:22,464	00:30:26,560	| IOT089 |	This is probably a CES event I suspect we'll see some
+EDL	00:30:26,560	00:30:28,864	| IOT089 |	Demonstrations of self-driving
+EDL	00:30:28,864	00:30:30,144	| IOT089 |	Minivans
+EDL	00:30:30,144	00:30:31,936	| IOT089 |	Are pacifica's I can't recall which
+EDL	00:30:32,448	00:30:34,752	| IOT089 |	Ephraim Chrysler that will use the Google tech
+EDL	00:30:35,520	00:30:36,544	| IOT089 |	And
+EDL	00:30:37,056	00:30:43,456	| IOT089 |	Yes it's interesting because a lot of people recently were saying Google shutting down and self-driving car business not like really
+EDL	00:30:43,456	00:30:46,016	| IOT089 |	I wouldn't know cuz I don't I got not on that team
+EDL	00:30:46,016	00:30:47,040	| IOT089 |	But then
+EDL	00:30:47,040	00:30:49,856	| IOT089 |	No they're not shut down their spinning off to its own company
+EDL	00:30:51,136	00:30:51,648	| IOT089 |	Yes
+EDL	00:30:52,928	00:30:53,696	| IOT089 |	And then Uber
+EDL	00:30:55,488	00:30:56,256	| IOT089 |	Is like
+EDL	00:30:56,768	00:30:57,536	| IOT089 |	What up
+EDL	00:31:00,352	00:31:01,888	| IOT089 |	Yasso
+EDL	00:31:01,888	00:31:07,520	| IOT089 |	I'm very curious what Uber drivers think of this but I'm sure Uber Riders
+EDL	00:31:07,520	00:31:08,288	| IOT089 |	Will be
+EDL	00:31:08,288	00:31:08,800	| IOT089 |	Intrigued
+EDL	00:31:09,312	00:31:11,872	| IOT089 |	The first self-driving Ubers are
+EDL	00:31:11,872	00:31:13,920	| IOT089 |	Alive and well in San Francisco
+EDL	00:31:14,432	00:31:15,968	| IOT089 |	So this is a very limited
+EDL	00:31:15,968	00:31:18,272	| IOT089 |	Market but yes so it's starting
+EDL	00:31:18,784	00:31:21,856	| IOT089 |	Well today that they were recording a show witches Wednesday
+EDL	00:31:21,856	00:31:25,952	| IOT089 |	You can get a self-driving Uber even matches one if one is available
+EDL	00:31:26,464	00:31:29,024	| IOT089 |	Trying to figure out did they say that it said how many
+EDL	00:31:29,536	00:31:31,840	| IOT089 |	There are how many Ubers but
+EDL	00:31:34,656	00:31:36,704	| IOT089 |	As far as I know
+EDL	00:31:37,216	00:31:38,240	| IOT089 |	I would hope so
+EDL	00:31:40,032	00:31:44,640	| IOT089 |	That would be a problem if something happened you don't say don't say
+EDL	00:31:45,152	00:31:47,712	| IOT089 |	It's a they're spending their self-driving pilot
+EDL	00:31:52,320	00:31:53,344	| IOT089 |	Williston
+EDL	00:31:53,344	00:31:56,160	| IOT089 |	Depend on Santana local
+EDL	00:31:56,672	00:31:58,208	| IOT089 |	Ordinances and such but
+EDL	00:31:58,720	00:32:03,328	| IOT089 |	Yeah they really don't say anything I'm looking at their blog post right now
+EDL	00:32:03,328	00:32:04,352	| IOT089 |	There is
+EDL	00:32:04,352	00:32:04,864	| IOT089 |	There is one
+EDL	00:32:05,888	00:32:07,424	| IOT089 |	So maybe Uber drivers won't care
+EDL	00:32:09,728	00:32:10,752	| IOT089 |	They have less to do
+EDL	00:32:11,264	00:32:11,776	| IOT089 |	Okay
+EDL	00:32:13,568	00:32:15,104	| IOT089 |	There's going to be a driver in
+EDL	00:32:15,104	00:32:15,872	| IOT089 |	In the car
+EDL	00:32:15,872	00:32:17,408	| IOT089 |	Yay
+EDL	00:32:17,408	00:32:18,944	| IOT089 |	Cuz I would be kind of nervous and
+EDL	00:32:19,712	00:32:21,504	| IOT089 |	Now the drivers don't have to drive
+EDL	00:32:21,504	00:32:22,272	| IOT089 |	Also
+EDL	00:32:22,272	00:32:25,856	| IOT089 |	Yay so yeah this is this is actually happening
+EDL	00:32:25,856	00:32:30,464	| IOT089 |	You guys and I would not want to drive any self-driving in San Francisco seems like a freaking nightmare
+EDL	00:32:30,464	00:32:33,792	| IOT089 |	Cuz people are running in and out and there's construction everywhere
+EDL	00:32:35,328	00:32:41,728	| IOT089 |	I highly recommend we should link to this video in our shonos because I highly recommend people watched the demonstration of the Uber cell
+EDL	00:32:41,728	00:32:43,008	| IOT089 |	Self-driving car because
+EDL	00:32:43,008	00:32:44,800	| IOT089 |	The poor driver
+EDL	00:32:44,800	00:32:49,152	| IOT089 |	It's just sitting there bored as all get-out looking around out the window
+EDL	00:32:50,944	00:32:52,480	| IOT089 |	I will link to that machete
+EDL	00:32:55,296	00:33:00,672	| IOT089 |	Yes I'm an Uber car babysitter how can I help you
+EDL	00:33:01,184	00:33:03,488	| IOT089 |	I don't have to keep your eyes on the road
+EDL	00:33:03,488	00:33:04,256	| IOT089 |	I guess I have to be
+EDL	00:33:04,256	00:33:05,024	| IOT089 |	Prepare to take over but
+EDL	00:33:07,328	00:33:08,096	| IOT089 |	That would not be
+EDL	00:33:08,608	00:33:12,192	| IOT089 |	Okay Industrial
+EDL	00:33:12,192	00:33:14,240	| IOT089 |	So we got some clown news here
+EDL	00:33:14,240	00:33:15,776	| IOT089 |	Ala which is
+EDL	00:33:15,776	00:33:18,848	| IOT089 |	A company that provides a cloud service for
+EDL	00:33:19,616	00:33:22,944	| IOT089 |	Any company that wants to build connected devices basically
+EDL	00:33:22,944	00:33:27,296	| IOT089 |	It works with it's a cloud service that's authenticated and lots of chips you put the chip in your product
+EDL	00:33:27,296	00:33:29,856	| IOT089 |	And it said that you have a cloud back in for all of your
+EDL	00:33:29,856	00:33:30,368	| IOT089 |	Needs
+EDL	00:33:31,392	00:33:33,184	| IOT089 |	Have announced it they are doing
+EDL	00:33:33,184	00:33:35,488	| IOT089 |	The echo skills for people
+EDL	00:33:35,488	00:33:37,280	| IOT089 |	So they will support it
+EDL	00:33:37,280	00:33:38,048	| IOT089 |	They will make
+EDL	00:33:38,048	00:33:43,680	| IOT089 |	All of your stuff you can figure your stuff and then they take those configurations and then they tune it to the echo can
+EDL	00:33:43,680	00:33:44,704	| IOT089 |	Integrations
+EDL	00:33:44,704	00:33:45,984	| IOT089 |	Presumably
+EDL	00:33:45,984	00:33:48,544	| IOT089 |	Stay I did talk to them there and talks with
+EDL	00:33:48,544	00:33:54,688	| IOT089 |	You know all the other providers so presumably they will tune your stuff to the other providers that handle the fact that
+EDL	00:33:54,688	00:33:56,224	| IOT089 |	Google requires you to have
+EDL	00:33:56,736	00:33:57,504	| IOT089 |	To separate
+EDL	00:33:58,016	00:34:00,832	| IOT089 |	There is on cloud implementation so
+EDL	00:34:00,832	00:34:02,112	| IOT089 |	This is great news both
+EDL	00:34:03,136	00:34:05,696	| IOT089 |	For companies that are like
+EDL	00:34:05,696	00:34:06,464	| IOT089 |	Complicated
+EDL	00:34:06,976	00:34:09,280	| IOT089 |	It also for the companies that are
+EDL	00:34:09,280	00:34:10,048	| IOT089 |	Like
+EDL	00:34:10,048	00:34:14,144	| IOT089 |	Hey this world is complicated we will do all of the back in nasty stuff for you and
+EDL	00:34:14,656	00:34:15,168	| IOT089 |	YouTube pays money
+EDL	00:34:15,936	00:34:17,216	| IOT089 |	And so this is great
+EDL	00:34:17,216	00:34:17,728	| IOT089 |	Plus
+EDL	00:34:18,240	00:34:24,640	| IOT089 |	I got the ticket from the Ala guys there were like yeah we had to do this because all of our customers were like we don't want an app we need voice
+EDL	00:34:24,640	00:34:25,152	| IOT089 |	Recognition
+EDL	00:34:25,664	00:34:26,176	| IOT089 |	So
+EDL	00:34:26,944	00:34:29,760	| IOT089 |	I feel like that's kind of a no-brainer but there's another
+EDL	00:34:30,272	00:34:31,296	| IOT089 |	Example of
+EDL	00:34:31,808	00:34:33,344	| IOT089 |	Voice really winning
+EDL	00:34:33,344	00:34:36,160	| IOT089 |	When it comes to the interaction for The Internet of Things
+EDL	00:34:36,672	00:34:37,184	| IOT089 |	We will
+EDL	00:34:38,464	00:34:42,816	| IOT089 |	Other cloud news GE is building industrial networking gear for its
+EDL	00:34:42,816	00:34:46,400	| IOT089 |	Iot industrial iot stuff they're using Cisco and HP gear
+EDL	00:34:46,912	00:34:48,448	| IOT089 |	Basically building gateways
+EDL	00:34:48,960	00:34:50,240	| IOT089 |	Randa gateways
+EDL	00:34:50,240	00:34:52,288	| IOT089 |	Sensors that sort of stuff
+EDL	00:34:52,288	00:34:54,080	| IOT089 |	Because you can't
+EDL	00:34:54,080	00:34:57,152	| IOT089 |	You can't get stuff to the predix cloud if you don't give him the hardware
+EDL	00:34:57,664	00:35:02,272	| IOT089 |	Kind of strange because I know that GE already works with like
+EDL	00:35:02,272	00:35:03,552	| IOT089 |	Gateway's and stuff from
+EDL	00:35:03,552	00:35:04,576	| IOT089 |	Like Intel Dell
+EDL	00:35:05,088	00:35:06,368	| IOT089 |	There's a bunch of like
+EDL	00:35:06,368	00:35:06,880	| IOT089 |	Really
+EDL	00:35:07,392	00:35:11,232	| IOT089 |	Archaic non-computer vendor kind of Gateway providers
+EDL	00:35:11,232	00:35:14,048	| IOT089 |	That have been in the industrial space for a while that
+EDL	00:35:14,048	00:35:15,840	| IOT089 |	LG also works with so
+EDL	00:35:15,840	00:35:18,656	| IOT089 |	I agree this was kind of strange when
+EDL	00:35:18,656	00:35:22,496	| IOT089 |	When I saw it on the notes and whatnot but then I'm thinking you had the whole products that is
+EDL	00:35:23,008	00:35:24,032	| IOT089 |	Without data
+EDL	00:35:24,544	00:35:27,360	| IOT089 |	It's kind of useless but it needs data
+EDL	00:35:27,360	00:35:33,760	| IOT089 |	So I think they're just trying to remove obstacles to getting at that dated from industrial machines
+EDL	00:35:33,760	00:35:34,784	| IOT089 |	End-to-end solution that
+EDL	00:35:35,296	00:35:36,320	| IOT089 |	When is right
+EDL	00:35:37,088	00:35:39,904	| IOT089 |	Man you want to talk about Wi-Fi or
+EDL	00:35:39,904	00:35:42,208	| IOT089 |	I feel like we should just skip ahead to Wi-Fi
+EDL	00:35:42,208	00:35:42,976	| IOT089 |	What do you think
+EDL	00:35:42,976	00:35:45,024	| IOT089 |	Yes that's what we talked about
+EDL	00:35:45,024	00:35:47,840	| IOT089 |	MiFi as I said I got my Google Wi-Fi units
+EDL	00:35:48,608	00:35:49,888	| IOT089 |	Which cost me to eat
+EDL	00:35:49,888	00:35:52,704	| IOT089 |	129 I think under $29
+EDL	00:35:53,472	00:35:53,984	| IOT089 |	And you already had that
+EDL	00:35:55,008	00:36:01,408	| IOT089 |	I did I did have the onhub and remember when Google Wi-Fi was announced a lot of people are like my own house
+EDL	00:36:01,408	00:36:03,456	| IOT089 |	Done if you don't know
+EDL	00:36:03,456	00:36:07,296	| IOT089 |	It's actually part of this Google wi-fi system
+EDL	00:36:07,296	00:36:10,368	| IOT089 |	Where can be if you already have an onhub so you can
+EDL	00:36:10,368	00:36:11,392	| IOT089 |	You can actually
+EDL	00:36:11,392	00:36:13,696	| IOT089 |	Create a mesh network with multiple on hubs
+EDL	00:36:13,696	00:36:15,488	| IOT089 |	If you wanted to but that's expensive so
+EDL	00:36:16,000	00:36:19,584	| IOT089 |	I went the cheaper out and added one Google Wi-Fi to my onhub
+EDL	00:36:19,584	00:36:22,400	| IOT089 |	Ramayanam is downstairs on the first floor
+EDL	00:36:22,400	00:36:24,704	| IOT089 |	In a two-story town house about 2000 square feet
+EDL	00:36:25,216	00:36:31,616	| IOT089 |	I had Wi-Fi signal issues and obviously speed therefore issues in the backside of the second floor of the house
+EDL	00:36:31,616	00:36:37,760	| IOT089 |	So am I getting what I want to put a Google Wi-Fi on the second floor and see what that does and oh my goodness
+EDL	00:36:37,760	00:36:38,528	| IOT089 |	Just like
+EDL	00:36:39,040	00:36:42,624	| IOT089 |	You know when hero or Bloomer many other available Solutions
+EDL	00:36:42,624	00:36:43,136	| IOT089 |	It did the trick
+EDL	00:36:43,648	00:36:45,440	| IOT089 |	Time it was very simple to add
+EDL	00:36:45,952	00:36:48,000	| IOT089 |	Alright to the new Google Wi-Fi app
+EDL	00:36:48,000	00:36:50,560	| IOT089 |	The old onhub app is now Wi-Fi
+EDL	00:36:50,560	00:36:52,864	| IOT089 |	Just put branding purposes as I suspect
+EDL	00:36:53,376	00:36:59,008	| IOT089 |	And so I've got this little mesh network of snow 2 nodes and it's working really well
+EDL	00:37:00,288	00:37:01,312	| IOT089 |	Yay
+EDL	00:37:03,360	00:37:04,384	| IOT089 |	So you really notice the
+EDL	00:37:04,896	00:37:05,408	| IOT089 |	And how did that go
+EDL	00:37:09,248	00:37:15,648	| IOT089 |	You know I did try the Eero and when I got the Wi-Fi and tweeted about it people like
+EDL	00:37:15,648	00:37:16,928	| IOT089 |	Compare the Euro that you tried and so on
+EDL	00:37:17,440	00:37:22,816	| IOT089 |	And I'm not going to compare them I said they both do the job and the reason I'm not doing a strict comparison
+EDL	00:37:22,816	00:37:26,656	| IOT089 |	Is because I tested the Eero 3 pack in my old house
+EDL	00:37:26,656	00:37:28,192	| IOT089 |	Prices
+EDL	00:37:28,192	00:37:29,728	| IOT089 |	And therefore
+EDL	00:37:29,728	00:37:32,032	| IOT089 |	It's not a fair comparison I mean Network
+EDL	00:37:32,032	00:37:36,128	| IOT089 |	Testing you can add variables in and expect a good test
+EDL	00:37:36,896	00:37:37,664	| IOT089 |	Well you can't
+EDL	00:37:40,480	00:37:41,504	| IOT089 |	YouTube
+EDL	00:37:41,504	00:37:45,088	| IOT089 |	But but it's a totally different environment so you know it's hard for me to say
+EDL	00:37:45,088	00:37:48,416	| IOT089 |	This is better or worse than any Rover example or some other
+EDL	00:37:48,928	00:37:50,720	| IOT089 |	Whatever you want
+EDL	00:37:50,720	00:37:53,792	| IOT089 |	I don't I can't compare it cuz I've never tested those here in this house
+EDL	00:37:55,840	00:37:56,352	| IOT089 |	Severe is again
+EDL	00:37:56,864	00:38:02,752	| IOT089 |	All right well I also in testing Wi-Fi so I talked about these last week these with a plume pods
+EDL	00:38:03,520	00:38:06,848	| IOT089 |	These are the little WiFi things that there hexagonal
+EDL	00:38:06,848	00:38:10,688	| IOT089 |	Metallic beautiful things that you plug in there's a radio in a network
+EDL	00:38:11,200	00:38:14,272	| IOT089 |	You plug into it electrical outlet
+EDL	00:38:16,832	00:38:17,856	| IOT089 |	What you could do that
+EDL	00:38:19,904	00:38:21,184	| IOT089 |	When you plug into your
+EDL	00:38:22,208	00:38:22,976	| IOT089 |	So
+EDL	00:38:22,976	00:38:23,744	| IOT089 |	I set it up
+EDL	00:38:23,744	00:38:27,328	| IOT089 |	And then I didn't tell you guys about it last week because it's a
+EDL	00:38:27,328	00:38:31,424	| IOT089 |	It's a learning system so I didn't test it until it has been in a week so it would
+EDL	00:38:32,192	00:38:33,216	| IOT089 |	Learn what it needed to know
+EDL	00:38:33,728	00:38:34,496	| IOT089 |	So
+EDL	00:38:34,496	00:38:36,800	| IOT089 |	The key here is it's all connected to the cloud
+EDL	00:38:37,312	00:38:38,336	| IOT089 |	And for me
+EDL	00:38:38,336	00:38:40,640	| IOT089 |	I did notice that my Wi-Fi network
+EDL	00:38:40,640	00:38:41,664	| IOT089 |	Has improved
+EDL	00:38:42,176	00:38:43,968	| IOT089 |	In places that are hard to get to
+EDL	00:38:43,968	00:38:46,528	| IOT089 |	Now the comparison for me is going to be the Eero
+EDL	00:38:47,040	00:38:49,856	| IOT089 |	Because that's what happening in my house
+EDL	00:38:49,856	00:38:53,952	| IOT089 |	I did notice that the plume Wi-Fi made some less
+EDL	00:38:53,952	00:38:56,000	| IOT089 |	So like my doorbell for example
+EDL	00:38:56,000	00:38:57,280	| IOT089 |	I have a doorbell in
+EDL	00:38:57,792	00:38:59,328	| IOT089 |	It had okay cover
+EDL	00:38:59,328	00:39:01,632	| IOT089 |	Rich writes my Wi-Fi powered doorbell headache
+EDL	00:39:01,632	00:39:04,448	| IOT089 |	Okay coverage but it has better coverage under the blue
+EDL	00:39:05,216	00:39:09,568	| IOT089 |	And I'm assuming that's because it is found a node that's a little
+EDL	00:39:09,568	00:39:10,336	| IOT089 |	The closer
+EDL	00:39:10,336	00:39:12,640	| IOT089 |	Imagine it's using the note that
+EDL	00:39:12,640	00:39:14,176	| IOT089 |	It's the same node
+EDL	00:39:14,176	00:39:19,296	| IOT089 |	Is the doorbell the closest spot to my server closet where is which is where I keep my Hubs and such
+EDL	00:39:20,064	00:39:20,832	| IOT089 |	Is right
+EDL	00:39:22,368	00:39:22,880	| IOT089 |	So that's better
+EDL	00:39:23,392	00:39:26,464	| IOT089 |	So that could just be that the self learning and optimization
+EDL	00:39:26,976	00:39:31,328	| IOT089 |	Aspect if the location obviously you're good the location hasn't changed
+EDL	00:39:31,840	00:39:32,352	| IOT089 |	So
+EDL	00:39:32,864	00:39:34,400	| IOT089 |	It's getting more DVDs
+EDL	00:39:34,400	00:39:36,192	| IOT089 |	I also will say though
+EDL	00:39:36,192	00:39:40,032	| IOT089 |	The plume has been an exercise in frustration for me personally
+EDL	00:39:40,800	00:39:41,568	| IOT089 |	Because
+EDL	00:39:42,080	00:39:43,872	| IOT089 |	They're only there's only one
+EDL	00:39:44,384	00:39:45,664	| IOT089 |	Gigabit Ethernet port
+EDL	00:39:45,664	00:39:46,944	| IOT089 |	On each
+EDL	00:39:46,944	00:39:47,456	| IOT089 |	Little pod
+EDL	00:39:49,504	00:39:51,040	| IOT089 |	The challenge for me
+EDL	00:39:51,040	00:39:53,856	| IOT089 |	Because I run so many hubs
+EDL	00:39:53,856	00:39:55,136	| IOT089 |	Plugged into
+EDL	00:39:55,648	00:40:00,512	| IOT089 |	I I run a switch because I have you know my Philips Hue Hub needs access to the internet
+EDL	00:40:00,512	00:40:01,280	| IOT089 |	Right
+EDL	00:40:01,280	00:40:02,560	| IOT089 |	My SmartThings Hub
+EDL	00:40:03,072	00:40:03,840	| IOT089 |	Needs
+EDL	00:40:03,840	00:40:05,120	| IOT089 |	Actually that actually at
+EDL	00:40:05,120	00:40:05,632	| IOT089 |	I think as wife
+EDL	00:40:07,168	00:40:10,496	| IOT089 |	I have my SmartThings Hub which may or may not be his wife I cannot recall
+EDL	00:40:12,544	00:40:13,312	| IOT089 |	My switch is
+EDL	00:40:14,080	00:40:16,128	| IOT089 |	So there are a couple of devices that just
+EDL	00:40:16,896	00:40:17,664	| IOT089 |	Have to be plugged in
+EDL	00:40:17,664	00:40:18,688	| IOT089 |	I also
+EDL	00:40:19,200	00:40:20,992	| IOT089 |	Plugin my TVs
+EDL	00:40:20,992	00:40:22,528	| IOT089 |	I hardwire
+EDL	00:40:22,528	00:40:25,088	| IOT089 |	And this is because my house is new and I have
+EDL	00:40:25,088	00:40:26,112	| IOT089 |	Ethernet
+EDL	00:40:26,112	00:40:26,624	| IOT089 |	In every room
+EDL	00:40:27,136	00:40:29,696	| IOT089 |	So everything is hard everything that can be
+EDL	00:40:29,696	00:40:30,976	| IOT089 |	Hardwired table lamp
+EDL	00:40:30,976	00:40:33,024	| IOT089 |	Is which is great for like
+EDL	00:40:34,304	00:40:34,816	| IOT089 |	My TV
+EDL	00:40:35,584	00:40:37,632	| IOT089 |	It's bad for the plume
+EDL	00:40:37,632	00:40:42,496	| IOT089 |	Because the pluma can't actually plug anything into it so I kind of broke a lot of things in my house
+EDL	00:40:42,496	00:40:43,776	| IOT089 |	What I installed these
+EDL	00:40:43,776	00:40:46,848	| IOT089 |	Now that doesn't mean you will break a lot of things in your house when you install
+EDL	00:40:48,128	00:40:50,176	| IOT089 |	It just means that if you're using a switch
+EDL	00:40:50,176	00:40:51,200	| IOT089 |	This may not be
+EDL	00:40:51,200	00:40:52,480	| IOT089 |	The router its it's
+EDL	00:40:52,480	00:40:53,504	| IOT089 |	You can
+EDL	00:40:53,504	00:40:54,272	| IOT089 |	Set it up
+EDL	00:40:54,272	00:40:56,832	| IOT089 |	There's a way to set it up but it is not the easy
+EDL	00:40:57,344	00:40:58,112	| IOT089 |	Option that
+EDL	00:40:58,112	00:40:59,904	| IOT089 |	Kind of
+EDL	00:41:00,672	00:41:04,256	| IOT089 |	And In fairness to what they are selling what they're selling
+EDL	00:41:04,768	00:41:11,168	| IOT089 |	First and foremost is a simple way to have better wi-fi connectivity throughout your house at
+EDL	00:41:11,168	00:41:12,448	| IOT089 |	Coverage and speed
+EDL	00:41:12,960	00:41:16,288	| IOT089 |	Right that's that's the main thing that they're selling enter that
+EDL	00:41:16,800	00:41:19,616	| IOT089 |	I think the plume works from what you described
+EDL	00:41:19,616	00:41:21,664	| IOT089 |	As well as what other reviews I've read
+EDL	00:41:21,664	00:41:26,272	| IOT089 |	It's when you start getting into lots of IRT levels that
+EDL	00:41:27,296	00:41:31,648	| IOT089 |	Many resources are constrained could a lot of only have a single ethernet Jack on what whatever
+EDL	00:41:32,672	00:41:33,696	| IOT089 |	Hardware they have
+EDL	00:41:33,696	00:41:35,744	| IOT089 |	So this is where Kevin and I
+EDL	00:41:35,744	00:41:36,256	| IOT089 |	Spent
+EDL	00:41:36,768	00:41:39,840	| IOT089 |	Because we are we are Kevin and Stacey it was his what
+EDL	00:41:39,840	00:41:41,632	| IOT089 |	We spent a long time discussing
+EDL	00:41:41,632	00:41:42,400	| IOT089 |	The need for
+EDL	00:41:42,400	00:41:43,680	| IOT089 |	Terse
+EDL	00:41:43,680	00:41:47,264	| IOT089 |	Even if your goal is to be like this mesh Network to have to get EBT
+EDL	00:41:49,056	00:41:50,592	| IOT089 |	At least two
+EDL	00:41:50,592	00:41:51,616	| IOT089 |	At least have that is an option
+EDL	00:41:52,128	00:41:53,919	| IOT089 |	I mean I'm fine by me
+EDL	00:41:54,431	00:41:59,039	| IOT089 |	40 bucks if you want to add more for like the people who have a couple devices
+EDL	00:41:59,039	00:42:00,319	| IOT089 |	Great but I feel like
+EDL	00:42:00,831	00:42:04,671	| IOT089 |	That could be a losing game because like I continually add devices to my switch
+EDL	00:42:06,719	00:42:09,279	| IOT089 |	Which of Billy don't reproduce the number devices we have
+EDL	00:42:09,791	00:42:10,303	| IOT089 |	Exactly
+EDL	00:42:11,583	00:42:12,351	| IOT089 |	2/4
+EDL	00:42:12,863	00:42:13,887	| IOT089 |	Euro has to
+EDL	00:42:15,423	00:42:15,935	| IOT089 |	Aunt
+EDL	00:42:16,447	00:42:17,471	| IOT089 |	Google
+EDL	00:42:17,471	00:42:19,007	| IOT089 |	Yeah I think it wise to
+EDL	00:42:21,311	00:42:24,383	| IOT089 |	What is 4
+EDL	00:42:24,383	00:42:30,015	| IOT089 |	Well I'm using 1/4 backhaul and then there is another one that I used my TV so I can watch work at you
+EDL	00:42:30,015	00:42:34,367	| IOT089 |	But if you wanted you to put that into instead of a TV
+EDL	00:42:34,367	00:42:36,671	| IOT089 |	Plug your TV into the switch if you
+EDL	00:42:36,671	00:42:37,439	| IOT089 |	Chester
+EDL	00:42:37,439	00:42:37,951	| IOT089 |	That's true
+EDL	00:42:39,231	00:42:42,303	| IOT089 |	It all gets very complicated the more devices you add
+EDL	00:42:42,303	00:42:44,095	| IOT089 |	Yes networking is not easy
+EDL	00:42:44,095	00:42:48,191	| IOT089 |	And I will also say a lot in the last couple of months
+EDL	00:42:48,703	00:42:51,263	| IOT089 |	Thor I've been testing this concept of
+EDL	00:42:51,263	00:42:53,311	| IOT089 |	Secure devices on
+EDL	00:42:53,311	00:42:54,335	| IOT089 |	Like how to secure my network
+EDL	00:42:54,847	00:42:57,919	| IOT089 |	So what I did is I actually put a bunch of devices on my guest net
+EDL	00:42:59,455	00:43:01,247	| IOT089 |	And that's actually worked fairly well
+EDL	00:43:01,759	00:43:04,319	| IOT089 |	But I don't feel like it's any more secure
+EDL	00:43:04,319	00:43:10,719	| IOT089 |	Really it's just harder to get to in the first place and once you're there there's no additional security
+EDL	00:43:10,719	00:43:13,791	| IOT089 |	You know I will throw a bunch of devices that I know don't
+EDL	00:43:13,791	00:43:14,303	| IOT089 |	Need to talk to
+EDL	00:43:14,815	00:43:17,887	| IOT089 |	Thanks but the problem is most of my devices still need to talk to my phone
+EDL	00:43:18,399	00:43:20,191	| IOT089 |	Select my doorbell for example has to
+EDL	00:43:20,703	00:43:23,007	| IOT089 |	My phone and say hey
+EDL	00:43:23,007	00:43:24,031	| IOT089 |	So my phone needs to be on
+EDL	00:43:25,055	00:43:27,871	| IOT089 |	That's where it gets tricky you need it when you need to start worrying about what
+EDL	00:43:28,383	00:43:32,735	| IOT089 |	Network Iran to actually use a device that gets back to the hole at the very beginning of this conversation
+EDL	00:43:32,735	00:43:37,599	| IOT089 |	Which interface we talked to you know here it's now it's which interface are we connecting to
+EDL	00:43:37,599	00:43:39,135	| IOT089 |	For networks we can do something at
+EDL	00:43:39,647	00:43:41,695	| IOT089 |	And that's that's just a barrier that we don't need
+EDL	00:43:42,207	00:43:44,767	| IOT089 |	The guest Network solution
+EDL	00:43:45,279	00:43:45,791	| IOT089 |	Is sucky
+EDL	00:43:46,303	00:43:48,351	| IOT089 |	Just going to lay it out there
+EDL	00:43:48,351	00:43:51,423	| IOT089 |	So the other solution is to create
+EDL	00:43:51,423	00:43:54,239	| IOT089 |	A completely separate Network it only do
+EDL	00:43:55,007	00:43:56,543	| IOT089 |	Certain things on it
+EDL	00:43:57,055	00:43:59,871	| IOT089 |	And I did that and that worked well but it was kind of
+EDL	00:43:59,871	00:44:00,383	| IOT089 |	Also
+EDL	00:44:01,151	00:44:01,663	| IOT089 |	Silly
+EDL	00:44:02,175	00:44:03,711	| IOT089 |	So everything else
+EDL	00:44:03,711	00:44:06,527	| IOT089 |	Lives 90% of the time on my main
+EDL	00:44:06,527	00:44:07,039	| IOT089 |	Network
+EDL	00:44:07,551	00:44:12,415	| IOT089 |	If I was doing banking or anything that required extra security light paying for stuff
+EDL	00:44:12,927	00:44:14,719	| IOT089 |	Play with switch over to
+EDL	00:44:15,231	00:44:16,511	| IOT089 |	Decorticate securenet
+EDL	00:44:18,815	00:44:21,119	| IOT089 |	Very little fun
+EDL	00:44:21,119	00:44:21,631	| IOT089 |	In excitement
+EDL	00:44:22,655	00:44:24,447	| IOT089 |	People people are not going to want to do that
+EDL	00:44:24,959	00:44:28,799	| IOT089 |	It makes me wonder is there an opportunity for router makers here to
+EDL	00:44:28,799	00:44:34,943	| IOT089 |	Beef things up and really really start integrating internet of things into their products with a better
+EDL	00:44:35,455	00:44:36,735	| IOT089 |	We should probably think
+EDL	00:44:36,735	00:44:37,759	| IOT089 |	First about
+EDL	00:44:37,759	00:44:38,527	| IOT089 |	Making
+EDL	00:44:38,527	00:44:40,575	| IOT089 |	Batters a little bit more secure in the first place
+EDL	00:44:41,087	00:44:43,135	| IOT089 |	Start adding the security
+EDL	00:44:43,135	00:44:49,535	| IOT089 |	Super example there was just a story in ARS Technica that matters that are blue
+EDL	00:44:49,535	00:44:50,303	| IOT089 |	Turbo to a hack
+EDL	00:44:51,071	00:44:51,583	| IOT089 |	Jealous people take
+EDL	00:44:52,607	00:44:53,375	| IOT089 |	Spices
+EDL	00:44:53,375	00:44:53,887	| IOT089 |	And this is
+EDL	00:44:54,399	00:44:59,263	| IOT089 |	This is older router so the r7000 r6400 r8000
+EDL	00:44:59,775	00:45:01,567	| IOT089 |	And some others
+EDL	00:45:02,079	00:45:06,175	| IOT089 |	Tibetan flute a link to the story so you guys can have it
+EDL	00:45:06,175	00:45:07,199	| IOT089 |	Are also
+EDL	00:45:07,199	00:45:07,711	| IOT089 |	Endanger
+EDL	00:45:08,991	00:45:09,503	| IOT089 |	That's just
+EDL	00:45:10,015	00:45:11,039	| IOT089 |	Sample of right now
+EDL	00:45:11,807	00:45:13,087	| IOT089 |	Actually let's just say it
+EDL	00:45:13,087	00:45:14,367	| IOT089 |	Buy someone you love a router
+EDL	00:45:15,391	00:45:17,439	| IOT089 |	If you have another router in like a year
+EDL	00:45:17,951	00:45:19,487	| IOT089 |	Go buy a router
+EDL	00:45:19,487	00:45:24,095	| IOT089 |	And I would say by one of the more modern routers that allow over-the-air updates
+EDL	00:45:24,095	00:45:27,679	| IOT089 |	That actually means a mesh Network in most times I actually
+EDL	00:45:27,679	00:45:31,007	| IOT089 |	Kind of had a conversation over Twitter with Netgear asking about
+EDL	00:45:31,007	00:45:32,799	| IOT089 |	Is there Nighthawk routers Witcher
+EDL	00:45:32,799	00:45:37,663	| IOT089 |	Freaking awesome were updatable over-the-air and they're like no you got to do it over the land
+EDL	00:45:37,663	00:45:38,431	| IOT089 |	But at least they are up
+EDL	00:45:39,711	00:45:40,479	| IOT089 |	There's a wreck
+EDL	00:45:40,479	00:45:40,991	| IOT089 |	Addiction
+EDL	00:45:42,015	00:45:44,831	| IOT089 |	That's a lot of news so we've got Wi-Fi
+EDL	00:45:44,831	00:45:45,599	| IOT089 |	We've got
+EDL	00:45:45,599	00:45:51,231	| IOT089 |	Many many new products we've got the race heating up between Google and Amazon and Microsoft
+EDL	00:45:51,743	00:45:53,279	| IOT089 |	Wechat protocols
+EDL	00:45:53,279	00:45:55,071	| IOT089 |	We have protocols we got it all this week
+EDL	00:45:55,071	00:45:56,095	| IOT089 |	Test
+EDL	00:45:56,095	00:45:57,631	| IOT089 |	All right we will be back
+EDL	00:45:57,631	00:46:01,727	| IOT089 |	The following week we're going to do our podcast a little bit early because of
+EDL	00:46:01,727	00:46:04,543	| IOT089 |	We didn't want to put it out on the day before Christmas Eve
+EDL	00:46:05,823	00:46:08,639	| IOT089 |	You'll probably see your podcast show up a little extra early but
+EDL	00:46:09,151	00:46:09,919	| IOT089 |	Enjoy it
+EDL	00:46:09,919	00:46:12,223	| IOT089 |	Kevin I will talk about exciting things
+EDL	00:46:12,223	00:46:13,247	| IOT089 |	Do you have a lovely guest for you
+EDL	00:46:13,759	00:46:15,039	| IOT089 |	It will actually be
+EDL	00:46:15,039	00:46:18,623	| IOT089 |	My husband he's going to talk and give a real person's perspective
+EDL	00:46:19,135	00:46:24,255	| IOT089 |	You can play it for your significant other when they open their presents under the Christmas tree and they're like
+EDL	00:46:24,255	00:46:26,047	| IOT089 |	Oh my God why did you give me a connected
+EDL	00:46:26,047	00:46:27,839	| IOT089 |	Garage door repair
+EDL	00:46:29,119	00:46:31,423	| IOT089 |	Thanks you guys for listening and
+EDL	00:46:31,935	00:46:38,335	| IOT089 |	We will see you next week by well that's it for this week's show thank you so much for listening
+EDL	00:46:38,335	00:46:44,735	| IOT089 |	And we'll see you again next week on the Internet of Things podcast and if you don't get enough iot
+EDL	00:46:44,735	00:46:51,135	| IOT089 |	News for this show feel free to sign up for my newsletter Stacey knows things at Stacey on iot
+EDL	00:46:51,135	00:46:57,279	| IOT089 |	Jd.com 

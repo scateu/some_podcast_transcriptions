@@ -1,0 +1,1387 @@
+EDL	Record In	Record Out	Clipname	Subtitle
+EDL	00:00:09,472	00:00:13,312	| IOT150 |	Hey everyone welcome to the Internet of Things podcast this is your host
+EDL	00:00:13,312	00:00:14,336	| IOT150 |	Higginbotham
+EDL	00:00:14,336	00:00:15,104	| IOT150 |	Your co-host
+EDL	00:00:15,104	00:00:16,128	| IOT150 |	Kevin tofel
+EDL	00:00:16,128	00:00:21,248	| IOT150 |	And we have an awesome show for you today Gateway
+EDL	00:00:21,248	00:00:23,040	| IOT150 |	Old homepod review
+EDL	00:00:23,040	00:00:24,064	| IOT150 |	World's going to keep
+EDL	00:00:24,064	00:00:24,832	| IOT150 |	On the Apple topic
+EDL	00:00:25,344	00:00:27,392	| IOT150 |	By discussing their damage in the house
+EDL	00:00:27,392	00:00:27,904	| IOT150 |	Healthcare Market
+EDL	00:00:28,416	00:00:30,208	| IOT150 |	Netgear is taking part of Arlo public
+EDL	00:00:30,720	00:00:37,120	| IOT150 |	We got some news on Canary Amazon Intel and Sonos Kevin's going to tell you
+EDL	00:00:37,120	00:00:37,888	| IOT150 |	A little bit
+EDL	00:00:37,888	00:00:39,168	| IOT150 |	About his WeMo
+EDL	00:00:39,168	00:00:42,240	| IOT150 |	Rich and have a message from our sponsor Point Central
+EDL	00:00:42,240	00:00:45,824	| IOT150 |	And our guest is Bruce Chatterley's CEO of
+EDL	00:00:45,824	00:00:46,592	| IOT150 |	Set it
+EDL	00:00:46,592	00:00:48,128	| IOT150 |	He's going to talk to us about
+EDL	00:00:48,128	00:00:48,640	| IOT150 |	Laura
+EDL	00:00:49,152	00:00:50,688	| IOT150 |	And Laura net worth
+EDL	00:00:50,688	00:00:52,224	| IOT150 |	Lyrics We got some use cases
+EDL	00:00:53,504	00:00:55,552	| IOT150 |	Some crazy functionality that I didn't
+EDL	00:00:55,552	00:00:56,832	| IOT150 |	Actually know Laura had
+EDL	00:00:56,832	00:00:58,624	| IOT150 |	So before we get into all of this
+EDL	00:00:59,136	00:00:59,904	| IOT150 |	Let's get a message
+EDL	00:00:59,904	00:01:00,672	| IOT150 |	Witch from another one
+EDL	00:01:01,952	00:01:07,072	| IOT150 |	Building an iot device or solution start ahead with a Renee sauce energy
+EDL	00:01:07,072	00:01:13,472	| IOT150 |	Begin your iot device designs at the software API later and leave the details to renaisa
+EDL	00:01:13,472	00:01:18,080	| IOT150 |	Cloud-based iot Solutions quickly with the AE Cloud 1 kit
+EDL	00:01:18,080	00:01:24,480	| IOT150 |	Amazon web services Microsoft Azure Google cloud or your choice of cloud within minutes
+EDL	00:01:24,480	00:01:30,880	| IOT150 |	We're loaded time get 50% off the AE Cloud 1 kit look for the Renee sauce iot
+EDL	00:01:30,880	00:01:37,280	| IOT150 |	The sandbox discussion thread on the Renee sauce rules for a go to Stacey on iot. Com
+EDL	00:01:37,280	00:01:43,680	| IOT150 |	Splash cloudkit to be forwarded to the discussion thread and get your coupon that Stacey on iot
+EDL	00:01:43,680	00:01:45,472	| IOT150 |	Jd.com
+EDL	00:01:45,472	00:01:45,984	| IOT150 |	Cloudkit
+EDL	00:01:48,544	00:01:50,336	| IOT150 |	I believe we should start
+EDL	00:01:51,104	00:01:52,128	| IOT150 |	Most exciting
+EDL	00:01:52,128	00:01:53,920	| IOT150 |	For us which is Mozilla
+EDL	00:01:53,920	00:01:54,688	| IOT150 |	Coyote
+EDL	00:01:54,688	00:01:55,200	| IOT150 |	Gateway South
+EDL	00:01:55,712	00:01:56,480	| IOT150 |	This
+EDL	00:01:56,480	00:01:59,808	| IOT150 |	I was excited I know for many of our listeners
+EDL	00:01:59,808	00:02:01,344	| IOT150 |	This is probably right up your alley
+EDL	00:02:01,344	00:02:05,952	| IOT150 |	Because you guys are the ones who tell me about homebridge and openhab and all the stuff in this
+EDL	00:02:05,952	00:02:09,280	| IOT150 |	It's right here within that kind of thing although it looks a little easier
+EDL	00:02:10,304	00:02:14,400	| IOT150 |	Yeah I'm super excited as well this was announced last year this is the project
+EDL	00:02:14,400	00:02:17,472	| IOT150 |	Things effort from Mozilla
+EDL	00:02:17,984	00:02:23,104	| IOT150 |	To allow you to have your own Gateway your own iot device Gateway in your home
+EDL	00:02:23,104	00:02:27,456	| IOT150 |	Using Raspberry Pi with mid they may support other pieces of Hardware in the future
+EDL	00:02:27,456	00:02:31,296	| IOT150 |	And they're giving every device in your home
+EDL	00:02:31,296	00:02:34,368	| IOT150 |	Are URL and you're going to be using a web app
+EDL	00:02:34,368	00:02:39,232	| IOT150 |	To control everything through the Gateway so this is definitely a DIY project and
+EDL	00:02:39,744	00:02:41,280	| IOT150 |	Stacy you and I I know I am
+EDL	00:02:43,840	00:02:44,352	| IOT150 |	Yes
+EDL	00:02:46,144	00:02:46,656	| IOT150 |	He's really experienced
+EDL	00:02:48,704	00:02:49,216	| IOT150 |	I totaled
+EDL	00:02:53,056	00:02:54,592	| IOT150 |	We can't even get started
+EDL	00:02:54,592	00:02:56,896	| IOT150 |	Yet though because what we could but
+EDL	00:02:56,896	00:03:03,040	| IOT150 |	It be limited you can start today with a pie and the download from Mozilla to get your things Gateway go away
+EDL	00:03:04,832	00:03:09,440	| IOT150 |	We are waiting on some Z-Wave dongles USB dongles
+EDL	00:03:09,440	00:03:11,232	| IOT150 |	To control Z-Wave devices
+EDL	00:03:11,744	00:03:17,120	| IOT150 |	So would I not starting until that gets here at all if you're going to jump the gun and try and play with us earlier
+EDL	00:03:17,120	00:03:18,144	| IOT150 |	I didn't have a spare
+EDL	00:03:18,144	00:03:21,216	| IOT150 |	Hi-so actually end
+EDL	00:03:24,032	00:03:25,056	| IOT150 |	Z-Wave
+EDL	00:03:25,056	00:03:25,824	| IOT150 |	Dongle
+EDL	00:03:26,848	00:03:30,432	| IOT150 |	You're doing this it's worth noting that you have to do it for
+EDL	00:03:30,432	00:03:31,200	| IOT150 |	Your country
+EDL	00:03:31,712	00:03:33,248	| IOT150 |	Frequencies for four different around the
+EDL	00:03:34,272	00:03:35,808	| IOT150 |	And you also need to
+EDL	00:03:36,320	00:03:37,600	| IOT150 |	Make sure it has Z-Wave
+EDL	00:03:37,600	00:03:39,392	| IOT150 |	Plus which is the latest iteration
+EDL	00:03:40,416	00:03:43,488	| IOT150 |	It is probably worth mentioning there's a Wiki
+EDL	00:03:43,488	00:03:47,584	| IOT150 |	Of supported Hardware that Mozilla is keeping track of their a couple of Z-Wave dongles
+EDL	00:03:48,096	00:03:50,400	| IOT150 |	And aside from the point that you just made Stacy about
+EDL	00:03:50,400	00:03:52,448	| IOT150 |	What you need to look out for the
+EDL	00:03:52,448	00:03:53,984	| IOT150 |	Aeon Tac is that the right one
+EDL	00:03:55,520	00:03:58,848	| IOT150 |	That's the only got I'm part of the reason that I would have gotten this one anyway
+EDL	00:03:58,848	00:04:05,248	| IOT150 |	One thing I seem to have massive amounts of wireless range and second-rate have a built-in battery
+EDL	00:04:05,248	00:04:11,648	| IOT150 |	So we can run for I think it said forecast 15 days if it needed to if you if you want plugged-in I guess maybe you're running your pie
+EDL	00:04:11,648	00:04:13,184	| IOT150 |	High on the battery I don't know it's
+EDL	00:04:13,184	00:04:17,536	| IOT150 |	Rather interesting how it all works but
+EDL	00:04:17,536	00:04:18,047	| IOT150 |	The pie plugged in
+EDL	00:04:21,375	00:04:23,679	| IOT150 |	That makes sense because
+EDL	00:04:23,679	00:04:26,495	| IOT150 |	Perry on Z-Wave sometimes works really really much
+EDL	00:04:26,495	00:04:28,543	| IOT150 |	Better when you're right next to the device
+EDL	00:04:28,543	00:04:30,079	| IOT150 |	Yes no I'm not sure
+EDL	00:04:31,103	00:04:31,871	| IOT150 |	I guess it's you
+EDL	00:04:31,871	00:04:33,151	| IOT150 |	Is the pairing of the radios
+EDL	00:04:35,711	00:04:36,735	| IOT150 |	Exactly
+EDL	00:04:37,247	00:04:38,271	| IOT150 |	I seem like a cool feature
+EDL	00:04:40,831	00:04:41,599	| IOT150 |	And I have tons
+EDL	00:04:43,647	00:04:45,439	| IOT150 |	A lot of them are
+EDL	00:04:45,439	00:04:47,487	| IOT150 |	Installed so this is actually nice
+EDL	00:04:47,999	00:04:51,327	| IOT150 |	I can't move my door locks I mean I could but that would be
+EDL	00:04:51,327	00:04:52,095	| IOT150 |	Uninstall
+EDL	00:04:53,119	00:04:56,703	| IOT150 |	Actually my Hub to the door lock just temporarily just two
+EDL	00:04:57,727	00:04:58,239	| IOT150 |	Outback
+EDL	00:05:00,543	00:05:01,567	| IOT150 |	Yeah but
+EDL	00:05:01,567	00:05:07,455	| IOT150 |	Anyway so this is all like a small web-based interface
+EDL	00:05:07,455	00:05:08,991	| IOT150 |	Yet I don't know if there will be
+EDL	00:05:09,503	00:05:10,527	| IOT150 |	So like
+EDL	00:05:10,527	00:05:16,927	| IOT150 |	I think my sim is going to go nuts myself using this website which is like a dedicated URL from my Gateway
+EDL	00:05:16,927	00:05:19,743	| IOT150 |	A my house as opposed to say the Wink app
+EDL	00:05:19,743	00:05:22,047	| IOT150 |	Don't tell just have to do with I suppose
+EDL	00:05:22,047	00:05:25,631	| IOT150 |	Dietitian
+EDL	00:05:25,631	00:05:29,983	| IOT150 |	The ideas you program all your automation so the goal is never to touch
+EDL	00:05:30,495	00:05:31,263	| IOT150 |	The app
+EDL	00:05:31,263	00:05:32,799	| IOT150 |	It is truly supposed to be
+EDL	00:05:33,311	00:05:34,079	| IOT150 |	Morada
+EDL	00:05:34,079	00:05:36,127	| IOT150 |	So you set up your rules and such
+EDL	00:05:38,175	00:05:38,943	| IOT150 |	Pull out
+EDL	00:05:38,943	00:05:40,223	| IOT150 |	As many sensors is you
+EDL	00:05:40,223	00:05:41,247	| IOT150 |	Can find because you're going to want
+EDL	00:05:46,623	00:05:47,391	| IOT150 |	Let It Go
+EDL	00:05:47,391	00:05:48,159	| IOT150 |	I also
+EDL	00:05:51,999	00:05:54,815	| IOT150 |	Yeah whatever it's a mish-mosh over here just like
+EDL	00:05:54,815	00:05:59,423	| IOT150 |	Just like you have I'll probably just put a couple devices on this for testing purposes that way
+EDL	00:05:59,423	00:06:01,215	| IOT150 |	I can learn I can explain
+EDL	00:06:01,215	00:06:07,615	| IOT150 |	Here on the show and then my family doesn't go nuts with the devices that use all the time cuz you can go hog-wild with this thing there's even a floor plan
+EDL	00:06:07,615	00:06:14,015	| IOT150 |	10 piece of the app where you can kind of figure out where drag-and-drop where you're going to put things in a rather interesting
+EDL	00:06:14,015	00:06:15,295	| IOT150 |	But again my family does not
+EDL	00:06:15,295	00:06:15,807	| IOT150 |	I care about that stuff
+EDL	00:06:16,319	00:06:18,623	| IOT150 |	And for all of you guys who are excited about
+EDL	00:06:19,135	00:06:20,415	| IOT150 |	Control
+EDL	00:06:21,439	00:06:22,975	| IOT150 |	That's what this offers and that makes sense
+EDL	00:06:25,023	00:06:30,143	| IOT150 |	It's not going to change the fact that your devices are still going
+EDL	00:06:30,655	00:06:31,935	| IOT150 |	You're seawave devices.
+EDL	00:06:31,935	00:06:32,703	| IOT150 |	Don't necessarily
+EDL	00:06:32,703	00:06:36,543	| IOT150 |	But you know this is so
+EDL	00:06:37,567	00:06:39,103	| IOT150 |	What word nut
+EDL	00:06:39,103	00:06:40,895	| IOT150 |	Over here at the iot podcast
+EDL	00:06:40,895	00:06:41,663	| IOT150 |	Is the
+EDL	00:06:41,663	00:06:42,687	| IOT150 |	Homepod
+EDL	00:06:42,687	00:06:43,967	| IOT150 |	So reviews are out
+EDL	00:06:44,479	00:06:45,759	| IOT150 |	We are still getting one
+EDL	00:06:46,271	00:06:48,575	| IOT150 |	Kevin has one on order and it should arrive
+EDL	00:06:48,575	00:06:49,087	| IOT150 |	This Friday
+EDL	00:06:50,111	00:06:50,623	| IOT150 |	That's correct
+EDL	00:06:51,135	00:06:53,439	| IOT150 |	So next week we'll talk about our experience with
+EDL	00:06:53,951	00:06:55,231	| IOT150 |	Hybrid Mean Time
+EDL	00:06:55,231	00:06:56,255	| IOT150 |	Looks like people
+EDL	00:06:56,767	00:06:57,791	| IOT150 |	People thought it sounded great
+EDL	00:06:58,559	00:06:59,327	| IOT150 |	And it wasn't a small
+EDL	00:07:01,375	00:07:02,143	| IOT150 |	What we expected
+EDL	00:07:03,679	00:07:04,191	| IOT150 |	And I said
+EDL	00:07:04,703	00:07:07,519	| IOT150 |	Yeah I mean I was hoping to be wrong
+EDL	00:07:07,519	00:07:10,335	| IOT150 |	But there's still a lot of
+EDL	00:07:10,335	00:07:11,359	| IOT150 |	I don't want to say
+EDL	00:07:11,359	00:07:13,663	| IOT150 |	It seems that the smart part of it
+EDL	00:07:13,663	00:07:19,295	| IOT150 |	Apple really wants to be focused on the speaker side they are smart speakers it's smart
+EDL	00:07:19,295	00:07:21,599	| IOT150 |	Technology they're using for the audio piece
+EDL	00:07:21,599	00:07:22,367	| IOT150 |	Thanks
+EDL	00:07:22,367	00:07:25,183	| IOT150 |	If you think about it with the beamforming and auto-tuning and
+EDL	00:07:25,695	00:07:30,559	| IOT150 |	Constant changing of your listen to the music so that we can adjust on the Fly and smoke
+EDL	00:07:30,559	00:07:31,839	| IOT150 |	I get that that's
+EDL	00:07:31,839	00:07:32,607	| IOT150 |	Rather
+EDL	00:07:32,607	00:07:33,375	| IOT150 |	Smart
+EDL	00:07:33,375	00:07:37,727	| IOT150 |	Services for our listeners the smart as in smart home
+EDL	00:07:37,727	00:07:38,495	| IOT150 |	Smart devices
+EDL	00:07:39,007	00:07:39,775	| IOT150 |	That's
+EDL	00:07:39,775	00:07:42,079	| IOT150 |	Sorely lacking faculty
+EDL	00:07:42,079	00:07:48,479	| IOT150 |	Siri on the phone and tablet is actually smarter than Siri on the home but they're still
+EDL	00:07:48,479	00:07:51,551	| IOT150 |	A lot of limitations there's no voice recognition in terms of
+EDL	00:07:51,551	00:07:52,831	| IOT150 |	Multiple users
+EDL	00:07:53,599	00:07:56,671	| IOT150 |	Couldn't see you calendars I mean
+EDL	00:07:57,183	00:08:01,023	| IOT150 |	Things that just couldn't do sure you can control homekit devices
+EDL	00:08:02,047	00:08:03,839	| IOT150 |	Yeah
+EDL	00:08:03,839	00:08:06,399	| IOT150 |	Shut off your routine
+EDL	00:08:06,911	00:08:07,679	| IOT150 |	Which
+EDL	00:08:07,679	00:08:08,703	| IOT150 |	You know this is
+EDL	00:08:08,703	00:08:10,239	| IOT150 |	Be smart speakers
+EDL	00:08:10,239	00:08:10,751	| IOT150 |	In my life
+EDL	00:08:11,263	00:08:12,543	| IOT150 |	How much more of a digital assistant
+EDL	00:08:13,311	00:08:15,103	| IOT150 |	And it does things
+EDL	00:08:15,615	00:08:16,383	| IOT150 |	Ranging from
+EDL	00:08:16,383	00:08:18,175	| IOT150 |	What's the recipe for this drink
+EDL	00:08:18,175	00:08:18,687	| IOT150 |	2
+EDL	00:08:19,455	00:08:20,735	| IOT150 |	Drop it on my kid
+EDL	00:08:21,247	00:08:21,759	| IOT150 |	2
+EDL	00:08:22,271	00:08:23,039	| IOT150 |	Call me an Uber
+EDL	00:08:25,343	00:08:26,879	| IOT150 |	I really I really value that
+EDL	00:08:28,159	00:08:31,487	| IOT150 |	Do you I know you do rely heavily on the digital assistant with
+EDL	00:08:31,487	00:08:32,511	| IOT150 |	Voice control on such
+EDL	00:08:32,511	00:08:34,303	| IOT150 |	Do you ever set timers
+EDL	00:08:34,303	00:08:35,583	| IOT150 |	I'm sure you do
+EDL	00:08:36,351	00:08:42,751	| IOT150 |	Do you ever sit too at the same time would like when cooking
+EDL	00:08:42,751	00:08:44,543	| IOT150 |	HEI set a rice timer and then I'll set
+EDL	00:08:45,055	00:08:45,823	| IOT150 |	Broccoli timer
+EDL	00:08:45,823	00:08:49,407	| IOT150 |	And that was one of the things that a couple of reviewers
+EDL	00:08:49,919	00:08:53,247	| IOT150 |	She can't Siri can't do two timers on the homepod
+EDL	00:08:55,295	00:08:55,807	| IOT150 |	Oh
+EDL	00:08:58,367	00:08:59,135	| IOT150 |	I mean
+EDL	00:08:59,135	00:09:02,463	| IOT150 |	It's like it's like a toned-down version of Siri which
+EDL	00:09:02,463	00:09:05,023	| IOT150 |	I don't understand why that is there's an A8
+EDL	00:09:05,023	00:09:06,559	| IOT150 |	Chip processor
+EDL	00:09:06,559	00:09:08,351	| IOT150 |	I think that was in the iPhone
+EDL	00:09:09,119	00:09:10,399	| IOT150 |	XR7
+EDL	00:09:10,399	00:09:11,679	| IOT150 |	It's more than capable
+EDL	00:09:12,191	00:09:13,727	| IOT150 |	Doing this type of request
+EDL	00:09:13,727	00:09:15,263	| IOT150 |	And having a smart sand
+EDL	00:09:15,263	00:09:17,311	| IOT150 |	Why is it like I sub Siri
+EDL	00:09:17,311	00:09:19,103	| IOT150 |	In thumb part of my question
+EDL	00:09:19,103	00:09:20,127	| IOT150 |	Maybe it'll get better
+EDL	00:09:26,015	00:09:26,527	| IOT150 |	Country
+EDL	00:09:27,295	00:09:28,831	| IOT150 |	Apple said that they were working on this
+EDL	00:09:28,831	00:09:30,111	| IOT150 |	For 6 years however
+EDL	00:09:30,111	00:09:32,159	| IOT150 |	And I think most of the focus was on the sound
+EDL	00:09:32,671	00:09:35,743	| IOT150 |	That just understand why they couldn't take what they currently have for Siri
+EDL	00:09:36,255	00:09:37,279	| IOT150 |	Sarpullido burlesque
+EDL	00:09:40,607	00:09:41,119	| IOT150 |	Wants to share that with
+EDL	00:09:44,191	00:09:46,239	| IOT150 |	Are confused
+EDL	00:09:46,239	00:09:47,007	| IOT150 |	Of Apple
+EDL	00:09:47,007	00:09:49,567	| IOT150 |	Let's talk about some place they're doing well which is
+EDL	00:09:50,079	00:09:50,591	| IOT150 |	Healthcare
+EDL	00:09:51,359	00:09:54,943	| IOT150 |	I think there's a lot to like here so I just saw story this week
+EDL	00:09:55,455	00:09:56,479	| IOT150 |	About
+EDL	00:09:56,479	00:09:57,503	| IOT150 |	Is 4
+EDL	00:09:57,503	00:10:00,831	| IOT150 |	Group called cardiogram and they did a study called
+EDL	00:10:01,599	00:10:03,135	| IOT150 |	It's part of the deep heart study
+EDL	00:10:03,135	00:10:03,903	| IOT150 |	Cardiogram
+EDL	00:10:03,903	00:10:04,415	| IOT150 |	UCSF
+EDL	00:10:04,927	00:10:05,695	| IOT150 |	But
+EDL	00:10:05,695	00:10:10,303	| IOT150 |	This one says we Apple watch can detect diabetes with an 85%
+EDL	00:10:10,303	00:10:10,815	| IOT150 |	Accuracy
+EDL	00:10:11,327	00:10:12,607	| IOT150 |	I thought that was
+EDL	00:10:12,607	00:10:13,375	| IOT150 |	Beijing
+EDL	00:10:13,375	00:10:15,167	| IOT150 |	They've already been shown to
+EDL	00:10:15,167	00:10:17,983	| IOT150 |	Detect abnormal heart rhythms with 97%
+EDL	00:10:18,495	00:10:21,055	| IOT150 |	Accuracy sleep apnea with 90% accuracy
+EDL	00:10:21,567	00:10:22,847	| IOT150 |	And even hypertension
+EDL	00:10:22,847	00:10:24,127	| IOT150 |	So in this is using
+EDL	00:10:24,639	00:10:26,431	| IOT150 |	Cardiograms ail
+EDL	00:10:26,431	00:10:27,199	| IOT150 |	So
+EDL	00:10:27,199	00:10:28,223	| IOT150 |	It's using the date of honey
+EDL	00:10:28,735	00:10:30,271	| IOT150 |	Watch to run
+EDL	00:10:30,271	00:10:36,671	| IOT150 |	Reading that data is the resting heart rate and heart rate variability which is the metric they added
+EDL	00:10:36,671	00:10:37,439	| IOT150 |	With the latest
+EDL	00:10:37,951	00:10:38,975	| IOT150 |	Version of
+EDL	00:10:38,975	00:10:41,535	| IOT150 |	Watch it was if I recall correctly so
+EDL	00:10:41,535	00:10:46,911	| IOT150 |	Caring the data for the two of those is what's giving them the insight as to who may have diabetes
+EDL	00:10:46,911	00:10:47,423	| IOT150 |	And I think that's
+EDL	00:10:47,935	00:10:49,727	| IOT150 |	Awesome I think
+EDL	00:10:49,727	00:10:52,031	| IOT150 |	What apple is do in healthcare
+EDL	00:10:52,543	00:10:54,079	| IOT150 |	Is pretty impressive
+EDL	00:10:55,103	00:10:59,455	| IOT150 |	Its reputation for privacy and making the consumer experience
+EDL	00:10:59,455	00:11:01,503	| IOT150 |	Easier I think is really going to
+EDL	00:11:02,527	00:11:03,551	| IOT150 |	Gwen in this market
+EDL	00:11:04,831	00:11:08,159	| IOT150 |	Frustration is you cannot win in this market unless you buy
+EDL	00:11:08,671	00:11:09,951	| IOT150 |	Crazy expensive
+EDL	00:11:09,951	00:11:10,719	| IOT150 |	Watch in a
+EDL	00:11:10,719	00:11:11,999	| IOT150 |	Crazy expensive phone
+EDL	00:11:11,999	00:11:12,511	| IOT150 |	Can you buy into
+EDL	00:11:13,023	00:11:19,423	| IOT150 |	Ecosystem that's definitely true there are some companies and stores that have looked at giving Apple
+EDL	00:11:19,423	00:11:25,567	| IOT150 |	Watches to the customers and so on so you may not have to spend the money at least not upfront maybe party or premium who knows
+EDL	00:11:26,335	00:11:27,871	| IOT150 |	No argument there
+EDL	00:11:27,871	00:11:32,991	| IOT150 |	I have to say I remember going to the Apple event where they launched a Apple watch
+EDL	00:11:32,991	00:11:36,575	| IOT150 |	And I think I went to another one where they upgraded it
+EDL	00:11:36,575	00:11:40,159	| IOT150 |	Which was most impressed with the health kit
+EDL	00:11:40,671	00:11:41,439	| IOT150 |	Information
+EDL	00:11:41,951	00:11:44,511	| IOT150 |	As opposed to the hardware and software the Apple watch itself
+EDL	00:11:44,511	00:11:46,303	| IOT150 |	The amount of data that they are
+EDL	00:11:46,303	00:11:50,655	| IOT150 |	Wrangling properly I would say it's on studies such as the one you just mention
+EDL	00:11:50,655	00:11:52,191	| IOT150 |	Is mind-blowing
+EDL	00:11:52,191	00:11:54,495	| IOT150 |	It really is a lot of other companies that make
+EDL	00:11:54,495	00:11:57,311	| IOT150 |	Devices wearable devices I can do this kind of stuff too
+EDL	00:11:57,311	00:11:58,847	| IOT150 |	Apple seems to have
+EDL	00:11:58,847	00:12:02,431	| IOT150 |	Beyblade do more with that data working with its medical partners
+EDL	00:12:02,431	00:12:03,199	| IOT150 |	And
+EDL	00:12:03,199	00:12:04,735	| IOT150 |	As an example of this
+EDL	00:12:04,735	00:12:06,527	| IOT150 |	Actually just in January
+EDL	00:12:06,527	00:12:09,343	| IOT150 |	They did an update to iOS 11
+EDL	00:12:09,855	00:12:12,415	| IOT150 |	3 lets people see their medical
+EDL	00:12:12,415	00:12:13,439	| IOT150 |	Records
+EDL	00:12:14,463	00:12:17,279	| IOT150 |	That is amazing and they work with Johns Hopkins
+EDL	00:12:18,047	00:12:19,583	| IOT150 |	Cedars-Sinai pain
+EDL	00:12:19,583	00:12:21,119	| IOT150 |	Hospitals
+EDL	00:12:21,119	00:12:23,167	| IOT150 |	To get those records in for their
+EDL	00:12:23,679	00:12:24,703	| IOT150 |	The patients in
+EDL	00:12:25,471	00:12:26,751	| IOT150 |	You know I don't know
+EDL	00:12:27,263	00:12:28,031	| IOT150 |	S i a Gemini
+EDL	00:12:28,543	00:12:31,103	| IOT150 |	Holy cow I forgotten so many aspects of
+EDL	00:12:31,871	00:12:32,383	| IOT150 |	Overtime that
+EDL	00:12:33,663	00:12:35,199	| IOT150 |	And so
+EDL	00:12:35,199	00:12:39,807	| IOT150 |	I would love to have this cuz right now my health records are all basically in an epic system
+EDL	00:12:40,319	00:12:41,343	| IOT150 |	Locked away
+EDL	00:12:42,367	00:12:43,647	| IOT150 |	Like 20 different.
+EDL	00:12:43,647	00:12:44,159	| IOT150 |	Offices
+EDL	00:12:45,951	00:12:52,351	| IOT150 |	Same here and I don't know that any other big company any of Apple's competitors lesao
+EDL	00:12:52,351	00:12:55,679	| IOT150 |	Google Microsoft or Amazon
+EDL	00:12:55,679	00:12:56,703	| IOT150 |	Have the
+EDL	00:12:57,215	00:12:58,495	| IOT150 |	What's called the
+EDL	00:12:58,495	00:13:01,311	| IOT150 |	Approach to privacy that would allow
+EDL	00:13:01,311	00:13:03,103	| IOT150 |	Healthcare professionals to work with them
+EDL	00:13:03,103	00:13:07,455	| IOT150 |	Because obviously Healthcare data is very private we have laws on that here I'm sure there
+EDL	00:13:07,455	00:13:08,479	| IOT150 |	Elsewhere as well
+EDL	00:13:08,479	00:13:10,015	| IOT150 |	So I think they've got a big
+EDL	00:13:10,527	00:13:14,879	| IOT150 |	Advantage here with that and speaking of health records one of the things that I recently did was
+EDL	00:13:15,391	00:13:17,183	| IOT150 |	I told my family they all have iPhones
+EDL	00:13:17,695	00:13:21,279	| IOT150 |	Go put everything in your medical ID card
+EDL	00:13:21,279	00:13:24,351	| IOT150 |	For your Apple Health app on your phone all the medications are taken
+EDL	00:13:24,863	00:13:27,167	| IOT150 |	Something happens to you I don't know what you
+EDL	00:13:27,167	00:13:29,471	| IOT150 |	You taking I don't know all your allergies and what not
+EDL	00:13:29,471	00:13:33,823	| IOT150 |	And that's all accessible right through the medical ID part of Apple health so I have them do that
+EDL	00:13:33,823	00:13:38,943	| IOT150 |	Again there's other apps that will do this as well but into Apple health and what they're doing here
+EDL	00:13:38,943	00:13:41,759	| IOT150 |	Man if you could just print that out that would save you so much time when
+EDL	00:13:41,759	00:13:42,527	| IOT150 |	On your first docker
+EDL	00:13:48,671	00:13:50,463	| IOT150 |	So yes I think apple has a
+EDL	00:13:50,463	00:13:54,559	| IOT150 |	Huge Advantage here and I actually I wonder as I get older
+EDL	00:13:54,559	00:13:58,143	| IOT150 |	If I would invest in the ecosystem simply for the health
+EDL	00:13:58,911	00:14:00,447	| IOT150 |	That's right or the health app
+EDL	00:14:00,959	00:14:02,751	| IOT150 |	As much as I dislike
+EDL	00:14:03,519	00:14:05,823	| IOT150 |	Constrained closed Apple world
+EDL	00:14:06,335	00:14:07,359	| IOT150 |	I got to say
+EDL	00:14:07,359	00:14:08,127	| IOT150 |	4Health it makes sense
+EDL	00:14:08,895	00:14:09,407	| IOT150 |	If only it were cheaper
+EDL	00:14:11,455	00:14:11,967	| IOT150 |	All right
+EDL	00:14:12,479	00:14:13,503	| IOT150 |	Let's talk about
+EDL	00:14:13,503	00:14:15,295	| IOT150 |	Arlo Netgear
+EDL	00:14:15,295	00:14:16,831	| IOT150 |	This week announced
+EDL	00:14:16,831	00:14:19,391	| IOT150 |	Its board has approved the separation of its are Lucic
+EDL	00:14:20,159	00:14:20,927	| IOT150 |	Camera
+EDL	00:14:20,927	00:14:21,951	| IOT150 |	Into except
+EDL	00:14:21,951	00:14:22,463	| IOT150 |	Business
+EDL	00:14:22,975	00:14:26,815	| IOT150 |	And it's going to offer an initial public offering
+EDL	00:14:26,815	00:14:29,119	| IOT150 |	A shares in Arlo Technologies
+EDL	00:14:29,119	00:14:31,167	| IOT150 |	It is going to issue less
+EDL	00:14:31,167	00:14:33,471	| IOT150 |	20% of its common stock and IPOs so
+EDL	00:14:33,471	00:14:35,007	| IOT150 |	Netgear still going to have it
+EDL	00:14:35,007	00:14:35,519	| IOT150 |	Pretty powerful
+EDL	00:14:36,031	00:14:36,799	| IOT150 |	Shakiness
+EDL	00:14:36,799	00:14:37,567	| IOT150 |	I got to be honest
+EDL	00:14:37,567	00:14:38,591	| IOT150 |	I don't know if I buy it at
+EDL	00:14:39,615	00:14:40,895	| IOT150 |	It doesn't feel like a
+EDL	00:14:40,895	00:14:42,175	| IOT150 |	Picking up business
+EDL	00:14:42,687	00:14:43,455	| IOT150 |	Terry Lee
+EDL	00:14:44,479	00:14:47,039	| IOT150 |	And IPO to be a standalone business is kind
+EDL	00:14:48,063	00:14:49,599	| IOT150 |	There's the cameras
+EDL	00:14:49,599	00:14:51,135	| IOT150 |	And then there's
+EDL	00:14:51,135	00:14:54,463	| IOT150 |	Subscription offering so it's kind of an interesting business model
+EDL	00:14:54,975	00:14:55,487	| IOT150 |	I just
+EDL	00:14:55,999	00:14:58,303	| IOT150 |	I don't love that it's mostly Hardware
+EDL	00:14:58,303	00:14:59,839	| IOT150 |	So I guess I'm just kind of like
+EDL	00:15:00,607	00:15:04,191	| IOT150 |	I kind of feel the same way I'd say if that unit is
+EDL	00:15:04,191	00:15:05,727	| IOT150 |	Profitable or has
+EDL	00:15:05,727	00:15:12,127	| IOT150 |	Great Expectations keep it in-house you're still going to have it work with your other networking Year anyway
+EDL	00:15:12,127	00:15:14,175	| IOT150 |	I'm not sure why they're doing this
+EDL	00:15:14,175	00:15:16,991	| IOT150 |	I mean I look at it as hey if I was Netgear
+EDL	00:15:16,991	00:15:21,087	| IOT150 |	X number years ago I figure hey there going to be a router or two and every house let's see no
+EDL	00:15:22,111	00:15:25,183	| IOT150 |	And now I'm going to be multiple cameras in every house
+EDL	00:15:25,951	00:15:32,351	| IOT150 |	Is that a whole business by itself does it need to be myself I'm not sure why they feel the need to do this
+EDL	00:15:32,351	00:15:34,911	| IOT150 |	Money money money money I will say
+EDL	00:15:34,911	00:15:36,959	| IOT150 |	With Amazon
+EDL	00:15:36,959	00:15:39,775	| IOT150 |	Launch of like the wise camera
+EDL	00:15:40,799	00:15:41,823	| IOT150 |	Knickers
+EDL	00:15:41,823	00:15:44,127	| IOT150 |	Offering their own connect
+EDL	00:15:44,127	00:15:44,895	| IOT150 |	2 cameras
+EDL	00:15:44,895	00:15:48,479	| IOT150 |	Is a highly saturated market so maybe they just want to get a capital
+EDL	00:15:48,479	00:15:49,503	| IOT150 |	Infusion to do something
+EDL	00:15:49,503	00:15:51,551	| IOT150 |	Cool what that cool thing is I
+EDL	00:15:53,087	00:15:53,599	| IOT150 |	I don't know
+EDL	00:15:54,111	00:15:56,671	| IOT150 |	So that's our financial advice for the
+EDL	00:15:58,463	00:15:58,975	| IOT150 |	Arlo
+EDL	00:16:01,023	00:16:02,815	| IOT150 |	Now for the rapid
+EDL	00:16:03,327	00:16:04,095	| IOT150 |	Here we go
+EDL	00:16:04,095	00:16:04,607	| IOT150 |	First step
+EDL	00:16:05,887	00:16:06,911	| IOT150 |	Speaking of
+EDL	00:16:06,911	00:16:12,287	| IOT150 |	Camera scanner just rolled out their person detection algorithms that they announced several months ago
+EDL	00:16:12,799	00:16:18,687	| IOT150 |	My canary devices were updated just happens automatically
+EDL	00:16:18,687	00:16:21,503	| IOT150 |	Interessant they're going to roll this out over the next two weeks
+EDL	00:16:21,503	00:16:23,551	| IOT150 |	There's nothing that users need to do
+EDL	00:16:23,551	00:16:25,343	| IOT150 |	And this is really good I think
+EDL	00:16:25,343	00:16:30,719	| IOT150 |	I get pictures and notifications of my dog all day long running around the house and I don't really care about that
+EDL	00:16:30,719	00:16:37,119	| IOT150 |	Partially because I'm home as well
+EDL	00:16:37,119	00:16:39,167	| IOT150 |	Moving around so this does exactly that
+EDL	00:16:39,679	00:16:43,263	| IOT150 |	A little Pro tip if you want to enable this and only see people
+EDL	00:16:43,263	00:16:46,335	| IOT150 |	Set your sensitivity on the notifications
+EDL	00:16:46,335	00:16:47,359	| IOT150 |	Or emotion
+EDL	00:16:47,359	00:16:48,895	| IOT150 |	3 or less
+EDL	00:16:48,895	00:16:54,015	| IOT150 |	Unfortunate cut out all the cute pictures of my dog but really that's what you want for personification
+EDL	00:16:54,015	00:16:54,783	| IOT150 |	Got it
+EDL	00:16:54,783	00:16:58,367	| IOT150 |	What's the Super Bowl last on Amazon
+EDL	00:16:58,367	00:17:00,927	| IOT150 |	The echo commercial and
+EDL	00:17:00,927	00:17:02,975	| IOT150 |	How when you set my demise name
+EDL	00:17:02,975	00:17:03,999	| IOT150 |	On the TV
+EDL	00:17:03,999	00:17:05,023	| IOT150 |	Is she did not respond
+EDL	00:17:05,023	00:17:08,863	| IOT150 |	And the reason is because Amazon is doing a little in audible tone
+EDL	00:17:09,631	00:17:10,143	| IOT150 |	Before
+EDL	00:17:11,167	00:17:12,191	| IOT150 |	Saying her name
+EDL	00:17:12,191	00:17:13,727	| IOT150 |	So it doesn't actually activate
+EDL	00:17:14,751	00:17:15,519	| IOT150 |	I wish we could
+EDL	00:17:16,031	00:17:18,591	| IOT150 |	I wish we could use that tone for the show
+EDL	00:17:18,591	00:17:19,871	| IOT150 |	Meet
+EDL	00:17:19,871	00:17:22,431	| IOT150 |	Padme is kind of an awkward thing
+EDL	00:17:22,431	00:17:23,199	| IOT150 |	Plus
+EDL	00:17:23,199	00:17:27,039	| IOT150 |	Now I kind of think about that way and so sometimes
+EDL	00:17:27,807	00:17:29,343	| IOT150 |	Yeah that's not her name
+EDL	00:17:31,647	00:17:34,463	| IOT150 |	Maybe hey anyone at Amazon how can we get one of these
+EDL	00:17:35,999	00:17:38,303	| IOT150 |	And speaking of Amazon are filed a patent
+EDL	00:17:38,303	00:17:43,167	| IOT150 |	For a wristband that tracks workers movement so they can make sure that they are
+EDL	00:17:43,167	00:17:43,679	| IOT150 |	Performing
+EDL	00:17:44,191	00:17:44,703	| IOT150 |	I guess
+EDL	00:17:45,471	00:17:45,983	| IOT150 |	Appropriate level
+EDL	00:17:47,775	00:17:53,663	| IOT150 |	I don't know I meant they already have carts that they push around that track how far they walk in salon but
+EDL	00:17:53,663	00:17:57,503	| IOT150 |	What Amazon could do is make sure the people are in the right spot for the right products
+EDL	00:17:57,503	00:17:58,271	| IOT150 |	Naked
+EDL	00:17:58,271	00:18:02,111	| IOT150 |	See perhaps somebody's working too hard by the heart rate there's a lot of things they could do
+EDL	00:18:02,111	00:18:05,439	| IOT150 |	In a warehouse
+EDL	00:18:05,439	00:18:08,511	| IOT150 |	People on construction sites who actually want to measure the
+EDL	00:18:08,511	00:18:09,791	| IOT150 |	Vital signs
+EDL	00:18:09,791	00:18:11,327	| IOT150 |	Workers so if they're dehydrated
+EDL	00:18:11,327	00:18:11,839	| IOT150 |	Can tell him to go
+EDL	00:18:12,607	00:18:13,887	| IOT150 |	So it's not all
+EDL	00:18:13,887	00:18:19,007	| IOT150 |	Work faster or else a few but it is probably the most productivity out of a person by
+EDL	00:18:19,007	00:18:22,847	| IOT150 |	I totally digitizing a reading all the signals that they can be like oh
+EDL	00:18:22,847	00:18:24,895	| IOT150 |	This person is not as productive because they are
+EDL	00:18:25,407	00:18:26,175	| IOT150 |	They're thirsty
+EDL	00:18:26,175	00:18:26,687	| IOT150 |	Quick
+EDL	00:18:27,199	00:18:30,271	| IOT150 |	It could even be safety I mean what's a pallet full of
+EDL	00:18:30,271	00:18:32,063	| IOT150 |	I don't know Apple watches fall on somebody
+EDL	00:18:32,831	00:18:34,879	| IOT150 |	You know their heart rates going to spike big time
+EDL	00:18:34,879	00:18:36,159	| IOT150 |	There's a lot of
+EDL	00:18:36,159	00:18:37,183	| IOT150 |	A lot of aspects
+EDL	00:18:37,183	00:18:39,743	| IOT150 |	Yeah and I've actually so there's a company
+EDL	00:18:39,743	00:18:40,511	| IOT150 |	That was called
+EDL	00:18:40,511	00:18:41,279	| IOT150 |	Clue
+EDL	00:18:41,279	00:18:43,839	| IOT150 |	The software on Apple watches that can
+EDL	00:18:43,839	00:18:46,143	| IOT150 |	They actually use it for weight loss
+EDL	00:18:46,143	00:18:48,191	| IOT150 |	Food tracking so attracts
+EDL	00:18:48,191	00:18:50,495	| IOT150 |	Your motions of your wrists they can discern between
+EDL	00:18:51,007	00:18:52,799	| IOT150 |	Glass of water
+EDL	00:18:52,799	00:18:54,079	| IOT150 |	Or holding a wine glass
+EDL	00:18:54,847	00:18:57,151	| IOT150 |	And they use that to say hey this is how
+EDL	00:18:57,151	00:18:57,919	| IOT150 |	How many calories are consumed
+EDL	00:19:00,223	00:19:02,271	| IOT150 |	This is why I drink my wine out of water glasses
+EDL	00:19:05,599	00:19:07,647	| IOT150 |	I was talking to someone in the restaurant industry
+EDL	00:19:08,671	00:19:12,255	| IOT150 |	You can actually use something like that to see if your workers are
+EDL	00:19:12,767	00:19:14,303	| IOT150 |	Performing like chopping
+EDL	00:19:14,303	00:19:14,815	| IOT150 |	Pink skirt
+EDL	00:19:15,583	00:19:18,399	| IOT150 |	And I could be like a very good education
+EDL	00:19:18,399	00:19:19,167	| IOT150 |	Feedback
+EDL	00:19:19,167	00:19:20,447	| IOT150 |	Watch vibrate
+EDL	00:19:20,447	00:19:20,959	| IOT150 |	When you're not doing it
+EDL	00:19:21,727	00:19:22,495	| IOT150 |	So
+EDL	00:19:22,495	00:19:25,055	| IOT150 |	The flipside is all of that data can also be a
+EDL	00:19:25,567	00:19:28,383	| IOT150 |	I think I said when I talked about it on the show I was like
+EDL	00:19:28,383	00:19:30,687	| IOT150 |	How you can tell if I was going to slap in my kid around
+EDL	00:19:31,711	00:19:32,991	| IOT150 |	That's probably something
+EDL	00:19:32,991	00:19:33,759	| IOT150 |	The people would want
+EDL	00:19:33,759	00:19:37,855	| IOT150 |	But once you have this information you can apply
+EDL	00:19:37,855	00:19:39,391	| IOT150 |	All kinds of algorithms to it to determine
+EDL	00:19:40,159	00:19:43,487	| IOT150 |	Oh my God is that person picking their nose or are they drinking a glass of wine
+EDL	00:19:46,047	00:19:46,815	| IOT150 |	Yikes
+EDL	00:19:46,815	00:19:47,327	| IOT150 |	Okay
+EDL	00:19:47,839	00:19:51,423	| IOT150 |	That I lied to you
+EDL	00:19:51,423	00:19:52,447	| IOT150 |	You know me
+EDL	00:19:52,447	00:19:53,983	| IOT150 |	That software that we constantly
+EDL	00:19:53,983	00:19:54,751	| IOT150 |	Play talk about
+EDL	00:19:54,751	00:19:55,775	| IOT150 |	We have been lately
+EDL	00:19:56,287	00:19:57,311	| IOT150 |	They have announced
+EDL	00:19:57,823	00:19:58,847	| IOT150 |	Native integration
+EDL	00:19:58,847	00:20:03,199	| IOT150 |	With Sonos which means there are third-party integration that all the you know me
+EDL	00:20:03,199	00:20:04,223	| IOT150 |	People have known and loved
+EDL	00:20:04,735	00:20:06,527	| IOT150 |	It's going to go away and with it
+EDL	00:20:06,527	00:20:07,039	| IOT150 |	This is sad
+EDL	00:20:07,807	00:20:10,111	| IOT150 |	Is the text-to-speech announcement
+EDL	00:20:10,623	00:20:12,927	| IOT150 |	So I at one point in time cuz I was silly
+EDL	00:20:12,927	00:20:13,439	| IOT150 |	We had my you know
+EDL	00:20:15,743	00:20:16,511	| IOT150 |	When I came
+EDL	00:20:16,511	00:20:17,023	| IOT150 |	And
+EDL	00:20:21,375	00:20:22,399	| IOT150 |	So that's going to go away
+EDL	00:20:26,495	00:20:31,359	| IOT150 |	Which Native Integrations tend to be better anyway
+EDL	00:20:31,359	00:20:33,151	| IOT150 |	Man middleware etcetera
+EDL	00:20:33,663	00:20:40,063	| IOT150 |	Which makes me wonder about that you know me is the string of size and someone eventually is more Partners get made
+EDL	00:20:40,063	00:20:42,623	| IOT150 |	Giving equations to the resistance what happens to these things
+EDL	00:20:43,135	00:20:43,647	| IOT150 |	Like what
+EDL	00:20:44,671	00:20:45,439	| IOT150 |	Middle players
+EDL	00:20:45,439	00:20:50,303	| IOT150 |	I think they still have a good role to play as an energy
+EDL	00:20:50,303	00:20:54,911	| IOT150 |	Greater so like I do routines through these things that I could not otherwise do
+EDL	00:20:55,423	00:20:56,959	| IOT150 |	Through the Amazon
+EDL	00:20:56,959	00:20:59,519	| IOT150 |	Or the Google
+EDL	00:21:00,031	00:21:00,543	| IOT150 |	True
+EDL	00:21:01,567	00:21:03,615	| IOT150 |	But you're right I don't know what happens to them
+EDL	00:21:03,615	00:21:06,943	| IOT150 |	And you know he has an entirely different business on the backend so
+EDL	00:21:07,455	00:21:09,247	| IOT150 |	And stringify is now part of Comcast
+EDL	00:21:12,575	00:21:13,855	| IOT150 |	Belle Delphine
+EDL	00:21:14,367	00:21:16,672	| IOT150 |	All right and now it's time for Kevin
+EDL	00:21:16,672	00:21:17,696	| IOT150 |	Review of
+EDL	00:21:19,488	00:21:21,280	| IOT150 |	Changing my 7 word review
+EDL	00:21:22,560	00:21:23,328	| IOT150 |	WeMo Bridge
+EDL	00:21:23,840	00:21:24,352	| IOT150 |	It's a bridge
+EDL	00:21:24,864	00:21:25,376	| IOT150 |	Portofino
+EDL	00:21:25,888	00:21:28,192	| IOT150 |	More information
+EDL	00:21:28,192	00:21:34,592	| IOT150 |	I can expand upon that I did write this up over at Stacy and I were too.
+EDL	00:21:34,592	00:21:35,360	| IOT150 |	Calm so you can
+EDL	00:21:35,360	00:21:36,384	| IOT150 |	Read my thoughts
+EDL	00:21:36,384	00:21:38,176	| IOT150 |	This is a $40
+EDL	00:21:38,176	00:21:42,016	| IOT150 |	Bridge device that adds homekit support for WeMo devices
+EDL	00:21:42,016	00:21:44,832	| IOT150 |	Not all of them very important that you realized
+EDL	00:21:44,832	00:21:48,928	| IOT150 |	WeMo bulbs will not be added or supported by this
+EDL	00:21:48,928	00:21:50,464	| IOT150 |	So if you have Outlets
+EDL	00:21:50,464	00:21:51,232	| IOT150 |	Or switches
+EDL	00:21:51,744	00:21:54,816	| IOT150 |	Go by Wiimote anyone integrate those into your home app
+EDL	00:21:55,328	00:22:00,192	| IOT150 |	On iOS devices and Siri to control them this will do that just not for the bulbs
+EDL	00:22:00,704	00:22:02,240	| IOT150 |	It does work very well
+EDL	00:22:02,240	00:22:03,008	| IOT150 |	It took me all of
+EDL	00:22:03,008	00:22:09,408	| IOT150 |	3 minutes to set up and get working at fantastic one of the things I'm not a fan of and this is a personal preference
+EDL	00:22:09,408	00:22:10,176	| IOT150 |	I'm not trying to
+EDL	00:22:10,176	00:22:11,712	| IOT150 |	Say this applies to everybody
+EDL	00:22:11,712	00:22:13,504	| IOT150 |	It does require a wider
+EDL	00:22:14,016	00:22:18,368	| IOT150 |	Connection to your network so you need to have an open ethernet port and also requires
+EDL	00:22:18,368	00:22:21,440	| IOT150 |	Power on a sew-in so you need a power outlet near it
+EDL	00:22:21,952	00:22:24,000	| IOT150 |	This is why I like wireless devices
+EDL	00:22:24,000	00:22:25,280	| IOT150 |	But that's just me
+EDL	00:22:25,792	00:22:27,328	| IOT150 |	I don't have a lot of ports on my router
+EDL	00:22:27,328	00:22:33,728	| IOT150 |	If you can live with those two things and really need Siri and or home support
+EDL	00:22:33,728	00:22:36,288	| IOT150 |	We're spending if you've got a lot of WeMo devices
+EDL	00:22:36,288	00:22:39,104	| IOT150 |	I'm fine just using that Ma and Google for August
+EDL	00:22:40,128	00:22:42,944	| IOT150 |	Steelworks and cancer
+EDL	00:22:43,456	00:22:49,600	| IOT150 |	I will probably just kind of takis off my network as a result I don't need it on homekit but it's really really
+EDL	00:22:50,112	00:22:50,624	| IOT150 |	And
+EDL	00:22:51,136	00:22:51,904	| IOT150 |	If you are sad
+EDL	00:22:54,720	00:22:56,768	| IOT150 |	May I recommend my favorite
+EDL	00:22:57,280	00:23:02,400	| IOT150 |	Switch which I have all over my house is
+EDL	00:23:02,912	00:23:04,192	| IOT150 |	It's 25 bucks
+EDL	00:23:04,192	00:23:05,216	| IOT150 |	And
+EDL	00:23:05,216	00:23:06,240	| IOT150 |	I have three of them
+EDL	00:23:06,240	00:23:07,776	| IOT150 |	For possibly more
+EDL	00:23:07,776	00:23:09,824	| IOT150 |	Read out I don't know how many I have
+EDL	00:23:11,872	00:23:12,640	| IOT150 |	I have many ports
+EDL	00:23:14,432	00:23:16,736	| IOT150 |	So if you're out there it's not
+EDL	00:23:17,248	00:23:18,016	| IOT150 |	Proposition
+EDL	00:23:18,016	00:23:18,528	| IOT150 |	Switch to your home
+EDL	00:23:20,832	00:23:22,624	| IOT150 |	Okay this is someone
+EDL	00:23:23,904	00:23:28,256	| IOT150 |	And after we recorded most the show but we thought was worth
+EDL	00:23:30,560	00:23:31,328	| IOT150 |	Canon
+EDL	00:23:31,328	00:23:32,352	| IOT150 |	And we're talking about
+EDL	00:23:32,864	00:23:33,888	| IOT150 |	Nest
+EDL	00:23:36,192	00:23:37,984	| IOT150 |	Google alphabet Zoo
+EDL	00:23:38,496	00:23:39,264	| IOT150 |	Absorb
+EDL	00:23:39,264	00:23:40,800	| IOT150 |	All right so what happened is
+EDL	00:23:41,312	00:23:46,944	| IOT150 |	Fiscally today set the nest
+EDL	00:23:46,944	00:23:48,736	| IOT150 |	Into the
+EDL	00:23:49,504	00:23:50,784	| IOT150 |	Started
+EDL	00:23:50,784	00:23:51,296	| IOT150 |	Where it
+EDL	00:23:52,832	00:23:54,624	| IOT150 |	No it didn't start with perfect
+EDL	00:23:54,624	00:23:55,648	| IOT150 |	Is purchased by
+EDL	00:23:57,184	00:23:57,952	| IOT150 |	20
+EDL	00:23:57,952	00:24:00,256	| IOT150 |	14 / 3.2
+EDL	00:24:00,768	00:24:02,304	| IOT150 |	And after
+EDL	00:24:03,584	00:24:04,608	| IOT150 |	4 years of
+EDL	00:24:05,120	00:24:07,936	| IOT150 |	Not much excitement the nest
+EDL	00:24:08,704	00:24:12,032	| IOT150 |	We saw three directions of the nest we saw more iterations of the
+EDL	00:24:12,544	00:24:16,128	| IOT150 |	Nest cam what used to be Dropcam which was a complete for purchase
+EDL	00:24:16,128	00:24:16,640	| IOT150 |	That was
+EDL	00:24:18,176	00:24:18,944	| IOT150 |	Actually nothing St
+EDL	00:24:21,504	00:24:22,272	| IOT150 |	After that
+EDL	00:24:22,784	00:24:23,808	| IOT150 |	Spawn that all out
+EDL	00:24:25,600	00:24:27,392	| IOT150 |	The point is Google bringing this
+EDL	00:24:29,696	00:24:32,000	| IOT150 |	They're saying it's because they want to take advantage of
+EDL	00:24:33,536	00:24:34,304	| IOT150 |	Infrastructure that Google
+EDL	00:24:36,864	00:24:37,888	| IOT150 |	Kevin
+EDL	00:24:38,656	00:24:39,168	| IOT150 |	Esketit
+EDL	00:24:39,936	00:24:44,288	| IOT150 |	Well if that were true that would indicate they didn't have access to Google
+EDL	00:24:44,288	00:24:49,408	| IOT150 |	MLA I Envision recognition which I find that very hard to believe
+EDL	00:24:50,944	00:24:51,456	| IOT150 |	Took advantage of
+EDL	00:24:52,992	00:24:58,624	| IOT150 |	Exactly so would the reasons for this be publicly Spoken Reasons by the executives
+EDL	00:24:59,136	00:25:00,672	| IOT150 |	Ring a little Hollow to me person
+EDL	00:25:01,184	00:25:07,584	| IOT150 |	See this is alphabet / Google trying to save face here because let's be honest message
+EDL	00:25:07,584	00:25:08,608	| IOT150 |	Pretty stagnant
+EDL	00:25:08,608	00:25:09,888	| IOT150 |	I would say
+EDL	00:25:09,888	00:25:16,288	| IOT150 |	What the headlines you said the tree decorations of the nest thermostat they had the Dropcam purchase which became Nest cams
+EDL	00:25:16,288	00:25:19,360	| IOT150 |	And they have since out of the nest security system
+EDL	00:25:19,360	00:25:22,176	| IOT150 |	Toward the tail end of 2017
+EDL	00:25:22,688	00:25:23,968	| IOT150 |	Other than that
+EDL	00:25:23,968	00:25:24,992	| IOT150 |	They do have the nest for
+EDL	00:25:25,760	00:25:26,784	| IOT150 |	We cannot forget this
+EDL	00:25:26,784	00:25:27,808	| IOT150 |	Smoke alarm
+EDL	00:25:28,320	00:25:29,344	| IOT150 |	Was
+EDL	00:25:29,856	00:25:30,624	| IOT150 |	Not as awesome
+EDL	00:25:31,392	00:25:31,904	| IOT150 |	Initially wanted
+EDL	00:25:32,416	00:25:34,208	| IOT150 |	Which is actually a good tagline
+EDL	00:25:34,976	00:25:37,024	| IOT150 |	I think nest + Tony fadell came on
+EDL	00:25:37,536	00:25:39,072	| IOT150 |	With this vision for the Smart Home
+EDL	00:25:39,584	00:25:42,656	| IOT150 |	Really was awesome and very compelling a very intuitive Smart Home
+EDL	00:25:43,680	00:25:46,496	| IOT150 |	And the fact of the matter is it's very hard to build something
+EDL	00:25:47,264	00:25:47,776	| IOT150 |	With
+EDL	00:25:48,288	00:25:50,592	| IOT150 |	Not being able to control every single device
+EDL	00:25:52,640	00:25:58,272	| IOT150 |	Yeah but I would say I would say this I personally have a lot of faith in Rick osterloh who was
+EDL	00:25:58,784	00:26:01,856	| IOT150 |	Charge of some Hardware at Motorola
+EDL	00:26:01,856	00:26:06,464	| IOT150 |	Both prior to and when Google actually on the road
+EDL	00:26:06,464	00:26:08,000	| IOT150 |	Then they brought
+EDL	00:26:08,000	00:26:09,536	| IOT150 |	He's in charge of Google's Hardware
+EDL	00:26:09,536	00:26:11,584	| IOT150 |	And between the pixel slate
+EDL	00:26:12,352	00:26:14,144	| IOT150 |	And the pixelbook
+EDL	00:26:14,144	00:26:16,448	| IOT150 |	The purchase will not purchase
+EDL	00:26:16,448	00:26:19,520	| IOT150 |	About the hiring of about 2000 HTC employees
+EDL	00:26:19,520	00:26:21,056	| IOT150 |	What's more likely for the phone group
+EDL	00:26:21,568	00:26:22,592	| IOT150 |	Oscar Lopez
+EDL	00:26:22,592	00:26:28,480	| IOT150 |	Could the right person to be in charge of Hardware that's where the existing person
+EDL	00:26:28,480	00:26:30,016	| IOT150 |	He will report to Rick osterloh
+EDL	00:26:30,528	00:26:31,808	| IOT150 |	Kinesio marwen
+EDL	00:26:32,320	00:26:32,832	| IOT150 |	The wise
+EDL	00:26:33,344	00:26:34,624	| IOT150 |	Will report to
+EDL	00:26:34,624	00:26:35,136	| IOT150 |	Rick osterloh
+EDL	00:26:35,648	00:26:36,928	| IOT150 |	Yes and
+EDL	00:26:36,928	00:26:37,440	| IOT150 |	Actually
+EDL	00:26:39,232	00:26:40,000	| IOT150 |	For the Telecom
+EDL	00:26:40,000	00:26:40,512	| IOT150 |	2sao
+EDL	00:26:41,024	00:26:41,792	| IOT150 |	These guys
+EDL	00:26:41,792	00:26:43,072	| IOT150 |	Is recent past correct
+EDL	00:26:43,072	00:26:43,840	| IOT150 |	So this is
+EDL	00:26:44,608	00:26:45,376	| IOT150 |	Yeah
+EDL	00:26:45,376	00:26:46,656	| IOT150 |	This is a face-saving
+EDL	00:26:47,424	00:26:49,472	| IOT150 |	You can't idea was basically they were going to have
+EDL	00:26:49,472	00:26:50,240	| IOT150 |	Beaver sell nest
+EDL	00:26:50,752	00:26:51,520	| IOT150 |	And
+EDL	00:26:51,520	00:26:52,544	| IOT150 |	Or spit it back in
+EDL	00:26:53,824	00:26:56,128	| IOT150 |	I would also say for companies that are
+EDL	00:26:56,128	00:27:00,992	| IOT150 |	Ring searching for evaluation right now it's part of their fundraising up a billion dollars and
+EDL	00:27:00,992	00:27:02,016	| IOT150 |	Netgear
+EDL	00:27:02,016	00:27:03,552	| IOT150 |	As we talked about earlier
+EDL	00:27:03,552	00:27:04,832	| IOT150 |	Doing the Arlo
+EDL	00:27:05,344	00:27:05,856	| IOT150 |	IPO
+EDL	00:27:06,368	00:27:08,160	| IOT150 |	I think this is actually bad news for like
+EDL	00:27:08,672	00:27:09,440	| IOT150 |	Harbor players
+EDL	00:27:09,440	00:27:09,952	| IOT150 |	I think
+EDL	00:27:11,232	00:27:17,632	| IOT150 |	Yeah I mean with the right strategy and mean if I spend up make sense and spin-off make sense to spin-off just for the sake
+EDL	00:27:17,632	00:27:21,984	| IOT150 |	Lakers raising money and so on I'm not so sure that that's going to fly long-term
+EDL	00:27:21,984	00:27:26,080	| IOT150 |	I will be very curious to see if going back to the first thing I said if nest
+EDL	00:27:26,592	00:27:31,456	| IOT150 |	Continues to stagnate I'm hoping not I'm hoping now that Google
+EDL	00:27:31,456	00:27:32,992	| IOT150 |	Pushes the product
+EDL	00:27:32,992	00:27:34,016	| IOT150 |	Rideout
+EDL	00:27:34,528	00:27:36,832	| IOT150 |	And to be honest there's a lot of
+EDL	00:27:36,832	00:27:40,416	| IOT150 |	Google partners that can do some of the same stuff that you think I could do
+EDL	00:27:40,928	00:27:41,696	| IOT150 |	Because they
+EDL	00:27:41,696	00:27:46,304	| IOT150 |	Partner on Android
+EDL	00:27:46,304	00:27:49,632	| IOT150 |	I would love to see
+EDL	00:27:49,632	00:27:51,424	| IOT150 |	Could be pushed to do
+EDL	00:27:51,424	00:27:55,264	| IOT150 |	I would love to see presents because I don't think anybody does that well in the home
+EDL	00:27:55,776	00:28:00,128	| IOT150 |	And be honest well anyone could do it this way I'm thinking Google could do it through Bluetooth
+EDL	00:28:00,640	00:28:02,176	| IOT150 |	Which almost like a Tracker
+EDL	00:28:02,688	00:28:04,480	| IOT150 |	Which Bluetooth
+EDL	00:28:04,480	00:28:10,624	| IOT150 |	Device are you closest to in your house whether it's a Bluetooth thing you're wearing in on a Android Wear watch
+EDL	00:28:11,136	00:28:17,024	| IOT150 |	If you have all these Google homes and Nest products around which one are you closest to and I can start putting more context around that present
+EDL	00:28:17,536	00:28:18,816	| IOT150 |	That's what I'm going to say
+EDL	00:28:19,328	00:28:22,912	| IOT150 |	Yes eyes Kevin and I both said we think that the Value Inn
+EDL	00:28:24,448	00:28:29,568	| IOT150 |	Big influence as it were in the smart home is
+EDL	00:28:30,848	00:28:34,688	| IOT150 |	Google home and Google Assistant
+EDL	00:28:34,688	00:28:35,968	| IOT150 |	The question is really
+EDL	00:28:36,480	00:28:37,760	| IOT150 |	How does nest
+EDL	00:28:37,760	00:28:39,552	| IOT150 |	How does Nest Hardware fit into that
+EDL	00:28:39,552	00:28:41,088	| IOT150 |	Catfishing
+EDL	00:28:41,088	00:28:41,600	| IOT150 |	Presences
+EDL	00:28:43,904	00:28:44,672	| IOT150 |	End
+EDL	00:28:44,672	00:28:47,488	| IOT150 |	Maybe they could
+EDL	00:28:48,256	00:28:50,560	| IOT150 |	Outlets would be a way to get presents but
+EDL	00:28:50,560	00:28:52,352	| IOT150 |	Who needs another Outlet light switches
+EDL	00:28:53,888	00:28:55,168	| IOT150 |	I like your Bluetooth
+EDL	00:28:55,680	00:28:56,704	| IOT150 |	I should also
+EDL	00:28:57,216	00:28:58,240	| IOT150 |	According to CNET
+EDL	00:28:58,752	00:29:00,032	| IOT150 |	In an interview they did
+EDL	00:29:00,032	00:29:01,312	| IOT150 |	Is part of the snooze
+EDL	00:29:01,312	00:29:04,128	| IOT150 |	Nestle sold 11 million devices which
+EDL	00:29:04,640	00:29:05,664	| IOT150 |	I actually think it's a little low
+EDL	00:29:06,176	00:29:07,456	| IOT150 |	I would agree with you
+EDL	00:29:08,224	00:29:09,248	| IOT150 |	Compared to
+EDL	00:29:09,248	00:29:11,808	| IOT150 |	You know the Amazon Echo which is really like
+EDL	00:29:11,808	00:29:14,112	| IOT150 |	The chiller killer
+EDL	00:29:15,648	00:29:16,160	| IOT150 |	I don't know I'm
+EDL	00:29:17,184	00:29:23,328	| IOT150 |	After all this time I would agree with you
+EDL	00:29:26,912	00:29:30,240	| IOT150 |	Maybe they can actually drive the price down for
+EDL	00:29:30,240	00:29:32,032	| IOT150 |	These devices Fitness high prices are
+EDL	00:29:33,056	00:29:39,456	| IOT150 |	They're challenged I would agree with that and if you're working in one Hardware division where you can manage the supply chain from one point of presence
+EDL	00:29:39,456	00:29:40,736	| IOT150 |	I think you're right that can help
+EDL	00:29:41,248	00:29:43,808	| IOT150 |	So what do you think
+EDL	00:29:43,808	00:29:47,648	| IOT150 |	Set the nest brand which obviously makes sense to keep the nest brand right now
+EDL	00:29:47,648	00:29:48,672	| IOT150 |	Eating at last
+EDL	00:29:48,672	00:29:50,720	| IOT150 |	So cuz I'm not so sure it doesn't
+EDL	00:29:52,000	00:29:53,280	| IOT150 |	I'd like it as a brand
+EDL	00:29:54,560	00:29:57,120	| IOT150 |	It conveys all kinds of things
+EDL	00:29:57,888	00:29:58,656	| IOT150 |	Google
+EDL	00:29:58,656	00:29:59,936	| IOT150 |	Haji does it do
+EDL	00:29:59,936	00:30:03,008	| IOT150 |	Right so Google Assistant
+EDL	00:30:03,520	00:30:04,800	| IOT150 |	Connecting with consumers problem
+EDL	00:30:05,824	00:30:07,104	| IOT150 |	I would love to see Nest help
+EDL	00:30:08,128	00:30:11,968	| IOT150 |	So I hope the brand stays and they actually invest in
+EDL	00:30:12,736	00:30:15,808	| IOT150 |	Mean things a little more consumer-friendly cuz that has been
+EDL	00:30:15,808	00:30:16,576	| IOT150 |	A nice aspect
+EDL	00:30:17,600	00:30:18,112	| IOT150 |	It is very
+EDL	00:30:19,136	00:30:24,768	| IOT150 |	I'm going to play Devil's Advocate and I don't know which of us is going
+EDL	00:30:24,768	00:30:29,888	| IOT150 |	As a brand last for maybe 18 or 24 months and they just become part of the Google home brand
+EDL	00:30:37,056	00:30:39,360	| IOT150 |	All right we shall see 18 months from now
+EDL	00:30:40,640	00:30:42,176	| IOT150 |	And whoever wins gets
+EDL	00:30:46,784	00:30:47,296	| IOT150 |	All right
+EDL	00:30:47,808	00:30:48,576	| IOT150 |	Well
+EDL	00:30:48,576	00:30:50,112	| IOT150 |	That's it for this little
+EDL	00:30:50,112	00:30:51,904	| IOT150 |	News on our thing 2nd and
+EDL	00:30:51,904	00:30:52,416	| IOT150 |	Google move on
+EDL	00:30:53,696	00:30:54,464	| IOT150 |	Previously recorded
+EDL	00:30:55,232	00:30:56,000	| IOT150 |	Now
+EDL	00:30:56,000	00:30:57,024	| IOT150 |	What is go
+EDL	00:30:57,024	00:30:57,536	| IOT150 |	2 hour
+EDL	00:30:58,304	00:31:00,096	| IOT150 |	Iot podcast
+EDL	00:31:00,608	00:31:01,632	| IOT150 |	Listener hotline
+EDL	00:31:02,656	00:31:04,192	| IOT150 |	Question of the week
+EDL	00:31:04,960	00:31:05,728	| IOT150 |	Ashley before I do that
+EDL	00:31:06,240	00:31:08,800	| IOT150 |	If you have a question for us give us a call at 5 1/2
+EDL	00:31:09,312	00:31:10,336	| IOT150 |	6 to 3
+EDL	00:31:10,336	00:31:10,848	| IOT150 |	7:40
+EDL	00:31:11,360	00:31:11,872	| IOT150 |	To 4
+EDL	00:31:12,640	00:31:15,712	| IOT150 |	The iot podcast listener hotline is brought to
+EDL	00:31:15,712	00:31:16,992	| IOT150 |	Schlage
+EDL	00:31:17,504	00:31:19,296	| IOT150 |	Maker of electronic locks
+EDL	00:31:19,296	00:31:20,320	| IOT150 |	Electronic locks
+EDL	00:31:21,600	00:31:22,112	| IOT150 |	Much easier in
+EDL	00:31:24,928	00:31:27,488	| IOT150 |	PCH member of your family can have their own access code
+EDL	00:31:28,256	00:31:29,280	| IOT150 |	To see what's possible
+EDL	00:31:30,560	00:31:31,072	| IOT150 |	Dot-com
+EDL	00:31:32,352	00:31:32,864	| IOT150 |	All right
+EDL	00:31:33,888	00:31:34,656	| IOT150 |	Play that message
+EDL	00:31:35,168	00:31:39,008	| IOT150 |	Hi Kevin hi Stacy love the show
+EDL	00:31:40,288	00:31:41,824	| IOT150 |	According to me like a kingdom
+EDL	00:31:42,592	00:31:43,872	| IOT150 |	We haven't talked yet
+EDL	00:31:44,896	00:31:46,176	| IOT150 |	So we will be shortly
+EDL	00:31:48,480	00:31:49,760	| IOT150 |	I'm an alcoholic
+EDL	00:31:50,528	00:31:51,808	| IOT150 |	I thought 5 Alexa
+EDL	00:31:52,576	00:31:54,368	| IOT150 |	Someone one of my friends
+EDL	00:31:56,416	00:31:57,184	| IOT150 |	What you like
+EDL	00:31:58,208	00:31:58,720	| IOT150 |	Moving
+EDL	00:32:00,256	00:32:01,024	| IOT150 |	Or just one
+EDL	00:32:06,656	00:32:08,448	| IOT150 |	Alexis should I re
+EDL	00:32:12,544	00:32:13,056	| IOT150 |	Cinemax
+EDL	00:32:14,848	00:32:17,408	| IOT150 |	But you can help speak too soon take care of the show
+EDL	00:32:18,688	00:32:19,968	| IOT150 |	OKC
+EDL	00:32:19,968	00:32:20,992	| IOT150 |	I
+EDL	00:32:20,992	00:32:21,760	| IOT150 |	I have
+EDL	00:32:21,760	00:32:24,320	| IOT150 |	You may not like it because
+EDL	00:32:24,832	00:32:26,112	| IOT150 |	It's going to involve
+EDL	00:32:26,112	00:32:27,904	| IOT150 |	Psychic powers on behalf
+EDL	00:32:27,904	00:32:28,928	| IOT150 |	The person you're trying
+EDL	00:32:28,928	00:32:30,208	| IOT150 |	Call or who's trying to call you
+EDL	00:32:31,744	00:32:34,560	| IOT150 |	First off you have to name all of your Amazon echos
+EDL	00:32:35,072	00:32:37,120	| IOT150 |	Thanks so pretty
+EDL	00:32:37,632	00:32:38,656	| IOT150 |	My daughter
+EDL	00:32:40,192	00:32:42,496	| IOT150 |	Anna original
+EDL	00:32:43,008	00:32:44,288	| IOT150 |	My husband and I
+EDL	00:32:44,288	00:32:45,824	| IOT150 |	10 to
+EDL	00:32:45,824	00:32:47,616	| IOT150 |	Banana as opposed to drop in on Amazon
+EDL	00:32:50,432	00:32:51,712	| IOT150 |	Anna's room
+EDL	00:32:51,712	00:32:52,224	| IOT150 |	Right
+EDL	00:32:52,992	00:32:54,272	| IOT150 |	Yes
+EDL	00:32:54,272	00:32:54,784	| IOT150 |	I change that
+EDL	00:32:55,296	00:32:58,880	| IOT150 |	So every room of your house should have every Echo should have a
+EDL	00:32:59,904	00:33:00,672	| IOT150 |	And then
+EDL	00:33:00,672	00:33:01,440	| IOT150 |	When someone wants to
+EDL	00:33:03,488	00:33:04,512	| IOT150 |	They actually have
+EDL	00:33:04,512	00:33:05,024	| IOT150 |	To call you
+EDL	00:33:06,304	00:33:06,816	| IOT150 |	And that's the second
+EDL	00:33:08,096	00:33:08,864	| IOT150 |	Well
+EDL	00:33:08,864	00:33:10,144	| IOT150 |	I would agree with you but
+EDL	00:33:10,144	00:33:10,912	| IOT150 |	ICU
+EDL	00:33:10,912	00:33:11,424	| IOT150 |	Could
+EDL	00:33:11,936	00:33:13,216	| IOT150 |	Could be
+EDL	00:33:13,216	00:33:16,800	| IOT150 |	A little less psychic because there are settings in The Madam a app
+EDL	00:33:17,312	00:33:22,432	| IOT150 |	That allows you to a have drop-in supported work being not supported
+EDL	00:33:22,432	00:33:28,320	| IOT150 |	And also their setting for only my household so if you don't want space if you don't want me dropping in
+EDL	00:33:28,320	00:33:29,088	| IOT150 |	To your house on
+EDL	00:33:29,600	00:33:32,672	| IOT150 |	Anna you could just say only my household for Anna's room
+EDL	00:33:35,232	00:33:36,768	| IOT150 |	It's in the settings of the device
+EDL	00:33:37,280	00:33:41,120	| IOT150 |	She have to go into each individual device and then down towards the bottom
+EDL	00:33:41,120	00:33:42,656	| IOT150 |	Under General there's a drop in
+EDL	00:33:43,424	00:33:43,936	| IOT150 |	Setting
+EDL	00:33:44,448	00:33:47,520	| IOT150 |	Oh okay so this is where you would go anyway to change
+EDL	00:33:48,288	00:33:50,080	| IOT150 |	That is correct same tap yes
+EDL	00:33:50,080	00:33:50,848	| IOT150 |	So
+EDL	00:33:50,848	00:33:51,360	| IOT150 |	I'm doing that
+EDL	00:33:54,176	00:33:54,688	| IOT150 |	Yes
+EDL	00:33:55,712	00:33:56,224	| IOT150 |	So drop in
+EDL	00:33:58,272	00:33:59,808	| IOT150 |	But you can say only my household
+EDL	00:34:00,576	00:34:02,880	| IOT150 |	Utah P if I do
+EDL	00:34:03,392	00:34:05,952	| IOT150 |	Course I'm right I'm looking at the screen
+EDL	00:34:06,464	00:34:09,792	| IOT150 |	So now I am too so I totally believe you okay
+EDL	00:34:09,792	00:34:12,608	| IOT150 |	So that may help Sam a little bit
+EDL	00:34:13,120	00:34:14,912	| IOT150 |	I kind of choosing which
+EDL	00:34:15,680	00:34:17,728	| IOT150 |	Echo devices you would accept
+EDL	00:34:17,728	00:34:19,520	| IOT150 |	Outside drop in calls from
+EDL	00:34:22,336	00:34:23,360	| IOT150 |	Send me
+EDL	00:34:23,360	00:34:25,408	| IOT150 |	Heaven
+EDL	00:34:25,408	00:34:25,920	| IOT150 |	On my living
+EDL	00:34:26,688	00:34:29,248	| IOT150 |	Amazon Echo Show
+EDL	00:34:31,040	00:34:32,320	| IOT150 |	Oh but that has a video camera
+EDL	00:34:36,672	00:34:37,184	| IOT150 |	This is true
+EDL	00:34:37,952	00:34:38,720	| IOT150 |	Very fun
+EDL	00:34:38,720	00:34:40,512	| IOT150 |	Okay so I hope that helps
+EDL	00:34:41,280	00:34:42,304	| IOT150 |	And if it doesn't help
+EDL	00:34:43,072	00:34:43,584	| IOT150 |	Carlos Bacca
+EDL	00:34:45,376	00:34:46,144	| IOT150 |	All right
+EDL	00:34:46,144	00:34:48,448	| IOT150 |	Remember if you would like us to answer your
+EDL	00:34:48,448	00:34:49,216	| IOT150 |	Questions
+EDL	00:34:49,216	00:34:51,008	| IOT150 |	60
+EDL	00:34:51,008	00:34:51,776	| IOT150 |	742
+EDL	00:34:53,824	00:34:55,616	| IOT150 |	Stay tuned for our guest
+EDL	00:34:55,616	00:34:57,920	| IOT150 |	Bruce Charlie CEO of Senate
+EDL	00:34:57,920	00:34:59,456	| IOT150 |	Talking about
+EDL	00:34:59,456	00:35:01,760	| IOT150 |	Specifically Laura roaming and
+EDL	00:35:01,760	00:35:02,528	| IOT150 |	Pretty fun use cases
+EDL	00:35:03,552	00:35:07,904	| IOT150 |	Stop before that let's go to a message from our sponsor
+EDL	00:35:07,904	00:35:14,304	| IOT150 |	Hey everyone we're taking a break from this week's podcast for a message from our sponsor this week sponsor is
+EDL	00:35:14,304	00:35:17,632	| IOT150 |	President
+EDL	00:35:18,656	00:35:20,704	| IOT150 |	So let's get started with what
+EDL	00:35:20,704	00:35:21,728	| IOT150 |	Display Central do
+EDL	00:35:22,240	00:35:23,776	| IOT150 |	Pointcentral is
+EDL	00:35:23,776	00:35:29,152	| IOT150 |	City of alarm.com and we are the leading provider of enterprise-grade home automation Solutions as a business tool
+EDL	00:35:29,152	00:35:32,736	| IOT150 |	Too short and long-term managers of single-family and multi-family property
+EDL	00:35:33,248	00:35:35,040	| IOT150 |	So let's talk about the property manager
+EDL	00:35:35,040	00:35:36,832	| IOT150 |	Why are they into
+EDL	00:35:36,832	00:35:37,600	| IOT150 |	Home automation
+EDL	00:35:37,600	00:35:39,392	| IOT150 |	Today's property managers have a
+EDL	00:35:39,904	00:35:46,304	| IOT150 |	Presidents that have needs always trying to find people to rent on TalkBack homes or trying to manage and turn those
+EDL	00:35:46,304	00:35:52,704	| IOT150 |	Homes especially as possible and Technologies really starting to emerge as a tool that can use it points to improve
+EDL	00:35:52,704	00:35:54,240	| IOT150 |	Presidents and how they run their business
+EDL	00:35:54,240	00:35:55,008	| IOT150 |	The two buckets
+EDL	00:35:55,008	00:35:56,288	| IOT150 |	DC property managers
+EDL	00:35:56,288	00:35:59,872	| IOT150 |	See benefits from home automation in operational efficiency
+EDL	00:36:00,384	00:36:01,920	| IOT150 |	Is an asset protection
+EDL	00:36:01,920	00:36:02,944	| IOT150 |	As well as
+EDL	00:36:02,944	00:36:03,968	| IOT150 |	Asset enhancement
+EDL	00:36:04,480	00:36:05,504	| IOT150 |	Okay so tell me about those
+EDL	00:36:06,272	00:36:08,064	| IOT150 |	Grape from the acid enhancement
+EDL	00:36:08,064	00:36:10,880	| IOT150 |	Point of view we touched on this a little bit last week
+EDL	00:36:10,880	00:36:11,904	| IOT150 |	What really helps
+EDL	00:36:11,904	00:36:14,208	| IOT150 |	Turn the acid from a rental unit
+EDL	00:36:14,208	00:36:15,744	| IOT150 |	Into a home for the resident
+EDL	00:36:15,744	00:36:19,584	| IOT150 |	Because it brings this technology into their lives and it's easy and accessible way
+EDL	00:36:19,584	00:36:24,448	| IOT150 |	From an operational efficiency standpoint there several ways the property manager
+EDL	00:36:24,448	00:36:25,216	| IOT150 |	She's been
+EDL	00:36:25,216	00:36:26,752	| IOT150 |	First channel access
+EDL	00:36:26,752	00:36:28,800	| IOT150 |	Control the weather it's a vendor
+EDL	00:36:28,800	00:36:32,384	| IOT150 |	Maintenance staff for the units occupied or unoccupied
+EDL	00:36:32,384	00:36:37,504	| IOT150 |	They know who's entering the property at all times they're saving time from people having to run and get
+EDL	00:36:37,504	00:36:43,904	| IOT150 |	Keys and check them out of a front office and they're also protecting themselves from rekey cost when Keys it inevitably get lost and a half
+EDL	00:36:43,904	00:36:44,928	| IOT150 |	How to go change a lock out
+EDL	00:36:44,928	00:36:51,328	| IOT150 |	From HVAC perspective to get the benefit of the thermostat controlling the temperature in on I-5 units and as we talked about
+EDL	00:36:51,328	00:36:55,680	| IOT150 |	First podcast we also features in HVAC to help them
+EDL	00:36:55,680	00:36:56,704	| IOT150 |	Be notified
+EDL	00:36:56,704	00:36:57,984	| IOT150 |	When an HVAC unit
+EDL	00:36:57,984	00:36:58,496	| IOT150 |	Meat service
+EDL	00:36:59,008	00:37:00,544	| IOT150 |	Waters Another bitbucket
+EDL	00:37:00,544	00:37:01,568	| IOT150 |	Property managers
+EDL	00:37:01,568	00:37:03,360	| IOT150 |	Water sensors around
+EDL	00:37:03,360	00:37:07,456	| IOT150 |	A water heater around main lines coming in under a sink Etc
+EDL	00:37:07,456	00:37:12,832	| IOT150 |	Are very cost-effective and can help them avoid very costly water leak damage
+EDL	00:37:12,832	00:37:15,136	| IOT150 |	And lastly propertyware tasso Weatherby
+EDL	00:37:15,648	00:37:18,208	| IOT150 |	Doorbell cameras exterior cameras
+EDL	00:37:18,208	00:37:19,744	| IOT150 |	Sensors Etc
+EDL	00:37:19,744	00:37:21,280	| IOT150 |	Do we want to watch and see
+EDL	00:37:21,280	00:37:25,888	| IOT150 |	Who's at a property in our people entering a property when that property should be unoccupied
+EDL	00:37:25,888	00:37:27,424	| IOT150 |	Tell me about the underlying system
+EDL	00:37:27,936	00:37:28,448	| IOT150 |	It takes care of
+EDL	00:37:29,472	00:37:31,008	| IOT150 |	So with alarm.com
+EDL	00:37:31,008	00:37:32,288	| IOT150 |	We collectively have
+EDL	00:37:32,288	00:37:35,360	| IOT150 |	5 million individual households on our cloud
+EDL	00:37:35,360	00:37:37,920	| IOT150 |	George very familiar with what we need to do to provide
+EDL	00:37:37,920	00:37:39,200	| IOT150 |	Secure and reliable test
+EDL	00:37:39,712	00:37:40,992	| IOT150 |	We do that by
+EDL	00:37:40,992	00:37:46,880	| IOT150 |	Utilizing Z-Wave at the local level and encrypting devices there will use a private cellular lines
+EDL	00:37:46,880	00:37:49,440	| IOT150 |	That we encrypt to get the data out of the household
+EDL	00:37:49,440	00:37:50,720	| IOT150 |	I never had a real bus
+EDL	00:37:50,720	00:37:52,512	| IOT150 |	Data privacy policy
+EDL	00:37:52,512	00:37:56,864	| IOT150 |	That helps keep all of that individual household information safe on our cloud
+EDL	00:37:57,376	00:37:59,936	| IOT150 |	So where can the stars go to find out more about points
+EDL	00:38:00,704	00:38:03,776	| IOT150 |	To learn all about what we can do for both property managers
+EDL	00:38:03,776	00:38:04,800	| IOT150 |	And residence
+EDL	00:38:04,800	00:38:06,848	| IOT150 |	Feel free to visit point central.com
+EDL	00:38:14,272	00:38:20,672	| IOT150 |	Welcome back to the Internet of Things podcast this is your house Stacey Higginbotham and today's guest is Bruce
+EDL	00:38:20,672	00:38:22,976	| IOT150 |	Chatterley who is the CEO of
+EDL	00:38:22,976	00:38:23,744	| IOT150 |	Send it
+EDL	00:38:23,744	00:38:25,280	| IOT150 |	Hi Bruce how are you doing today
+EDL	00:38:25,792	00:38:26,816	| IOT150 |	I'm doing great thank you
+EDL	00:38:27,328	00:38:28,608	| IOT150 |	Well thanks for doing this
+EDL	00:38:28,608	00:38:32,192	| IOT150 |	We spend a lot of time talking about low-power wide area network
+EDL	00:38:32,192	00:38:33,472	| IOT150 |	Works for the Internet of Things
+EDL	00:38:33,984	00:38:35,776	| IOT150 |	And it's nice to have someone who
+EDL	00:38:36,544	00:38:37,056	| IOT150 |	Talk to us
+EDL	00:38:37,568	00:38:38,080	| IOT150 |	About
+EDL	00:38:38,592	00:38:39,872	| IOT150 |	Laura specifically
+EDL	00:38:40,384	00:38:41,152	| IOT150 |	Lorawan
+EDL	00:38:41,664	00:38:43,200	| IOT150 |	So let's get started
+EDL	00:38:43,200	00:38:45,248	| IOT150 |	Let's get people excited about Laura
+EDL	00:38:45,248	00:38:49,088	| IOT150 |	Let's talk about some of the use cases that so far people are using it
+EDL	00:38:49,856	00:38:52,160	| IOT150 |	This might be a good opportunity to describe
+EDL	00:38:52,160	00:38:53,440	| IOT150 |	A little bit house in it
+EDL	00:38:53,440	00:38:56,512	| IOT150 |	Became a player in the Lord's face we were founded in
+EDL	00:38:56,512	00:38:57,536	| IOT150 |	2009
+EDL	00:38:57,536	00:38:59,840	| IOT150 |	As one of the first iot Apple
+EDL	00:38:59,840	00:39:01,888	| IOT150 |	Locations that has really scaled
+EDL	00:39:01,888	00:39:04,704	| IOT150 |	It was an application that put a monitor on
+EDL	00:39:04,704	00:39:07,520	| IOT150 |	Propane or fuel tanks in a residential environment
+EDL	00:39:07,520	00:39:10,592	| IOT150 |	You know those big White Tanks it's outside of rural homes in
+EDL	00:39:10,592	00:39:11,360	| IOT150 |	Farms in
+EDL	00:39:11,360	00:39:11,872	| IOT150 |	Industrial era
+EDL	00:39:12,384	00:39:13,664	| IOT150 |	At the time
+EDL	00:39:13,664	00:39:15,968	| IOT150 |	We decided that the Lora Technology Way
+EDL	00:39:15,968	00:39:17,248	| IOT150 |	It was a really good set
+EDL	00:39:17,248	00:39:20,064	| IOT150 |	For this application because once you place a
+EDL	00:39:20,064	00:39:22,112	| IOT150 |	There's usually no power at the
+EDL	00:39:22,112	00:39:24,672	| IOT150 |	These tanks so you have to have a battery-powered sensor
+EDL	00:39:24,672	00:39:29,024	| IOT150 |	In many of these sensors are in hard to get to are these tanks from hard to get to places
+EDL	00:39:29,536	00:39:30,560	| IOT150 |	So you want it basic
+EDL	00:39:30,560	00:39:33,888	| IOT150 |	Be able to put a sensor down and walk away for 10 years and having
+EDL	00:39:33,888	00:39:34,912	| IOT150 |	Communicate flawless
+EDL	00:39:34,912	00:39:36,448	| IOT150 |	And so we built out
+EDL	00:39:36,448	00:39:37,728	| IOT150 |	We built our own sensors
+EDL	00:39:37,728	00:39:39,264	| IOT150 |	We built our own base stations
+EDL	00:39:39,264	00:39:40,800	| IOT150 |	Because there was no lure ecosystem
+EDL	00:39:41,312	00:39:45,152	| IOT150 |	The time and then we built our own cloud-based software and services
+EDL	00:39:45,152	00:39:46,944	| IOT150 |	Is to manage both the network and the
+EDL	00:39:46,944	00:39:48,224	| IOT150 |	Devices and
+EDL	00:39:48,224	00:39:49,248	| IOT150 |	We deploy this app
+EDL	00:39:49,248	00:39:50,272	| IOT150 |	Location and scaled
+EDL	00:39:50,272	00:39:51,296	| IOT150 |	Dramatically
+EDL	00:39:51,296	00:39:52,832	| IOT150 |	One day we sat back
+EDL	00:39:52,832	00:39:53,600	| IOT150 |	Instead we've got the
+EDL	00:39:53,600	00:39:56,416	| IOT150 |	Large Lauren that work we can do more than just
+EDL	00:39:56,416	00:39:57,184	| IOT150 |	Tank monitor
+EDL	00:39:57,184	00:39:58,208	| IOT150 |	And so
+EDL	00:39:58,208	00:39:59,232	| IOT150 |	We
+EDL	00:39:59,232	00:40:00,512	| IOT150 |	Put an umbrella company
+EDL	00:40:00,512	00:40:01,792	| IOT150 |	Place called Senate
+EDL	00:40:01,792	00:40:04,608	| IOT150 |	Which was really designed to deliver horizontal app
+EDL	00:40:04,608	00:40:05,632	| IOT150 |	Applications across the
+EDL	00:40:05,632	00:40:08,192	| IOT150 |	Does not work one of the largest cities in the United States
+EDL	00:40:08,704	00:40:12,288	| IOT150 |	The city passed an ordinance last year that said that the
+EDL	00:40:12,288	00:40:14,080	| IOT150 |	Department of Public Health needed
+EDL	00:40:14,080	00:40:16,640	| IOT150 |	To know where every food truck and food cart
+EDL	00:40:17,152	00:40:17,920	| IOT150 |	In the city
+EDL	00:40:17,920	00:40:19,968	| IOT150 |	Is at any given time so they can
+EDL	00:40:19,968	00:40:20,992	| IOT150 |	Do random help
+EDL	00:40:20,992	00:40:21,504	| IOT150 |	Inspections
+EDL	00:40:22,272	00:40:26,880	| IOT150 |	One that deal with a systems integrator and we are pulling Network as we
+EDL	00:40:26,880	00:40:27,904	| IOT150 |	Speak in a major city
+EDL	00:40:28,928	00:40:31,232	| IOT150 |	We are putting trackers on
+EDL	00:40:31,232	00:40:32,256	| IOT150 |	Initial 5000
+EDL	00:40:32,768	00:40:34,048	| IOT150 |	Food trucks and food carts
+EDL	00:40:34,048	00:40:36,352	| IOT150 |	And we are also working with the city
+EDL	00:40:36,352	00:40:37,632	| IOT150 |	Who gave us access
+EDL	00:40:37,632	00:40:38,912	| IOT150 |	To their public building
+EDL	00:40:39,424	00:40:42,496	| IOT150 |	To deploy the base stations and in our parlance
+EDL	00:40:42,496	00:40:43,520	| IOT150 |	Discord Gateway
+EDL	00:40:43,520	00:40:44,800	| IOT150 |	To serve that Network
+EDL	00:40:44,800	00:40:46,080	| IOT150 |	And now this
+EDL	00:40:46,080	00:40:47,104	| IOT150 |	We have a network
+EDL	00:40:47,104	00:40:48,640	| IOT150 |	The city is looking at
+EDL	00:40:48,640	00:40:49,664	| IOT150 |	Applying multiple
+EDL	00:40:50,176	00:40:51,200	| IOT150 |	Tencent net worth
+EDL	00:40:51,200	00:40:53,760	| IOT150 |	Which is exciting
+EDL	00:40:53,760	00:40:57,344	| IOT150 |	Case for Laura LP when were you want to put a tracker on a phone
+EDL	00:40:57,344	00:41:00,416	| IOT150 |	Food cart could be a hot dog cart or whatever and
+EDL	00:41:00,416	00:41:01,440	| IOT150 |	You don't want to have to
+EDL	00:41:01,440	00:41:02,464	| IOT150 |	Replace it all the time
+EDL	00:41:03,488	00:41:05,536	| IOT150 |	Can your battery life is really important
+EDL	00:41:05,536	00:41:09,120	| IOT150 |	Can you talk to me about the difference between Laura and Laura Wang
+EDL	00:41:09,632	00:41:12,960	| IOT150 |	Well I've been in there commingle so maybe the best way to de
+EDL	00:41:12,960	00:41:14,752	| IOT150 |	Describe it is to put it in
+EDL	00:41:14,752	00:41:16,544	| IOT150 |	Context of the industry and so
+EDL	00:41:17,056	00:41:18,080	| IOT150 |	We kind of view the end of
+EDL	00:41:18,080	00:41:19,104	| IOT150 |	History is being divided in
+EDL	00:41:19,616	00:41:20,384	| IOT150 |	Three segments
+EDL	00:41:20,384	00:41:21,664	| IOT150 |	The first segment
+EDL	00:41:21,664	00:41:24,224	| IOT150 |	Is really about things that are close
+EDL	00:41:24,224	00:41:25,248	| IOT150 |	To the sensor
+EDL	00:41:25,248	00:41:26,528	| IOT150 |	And are powered
+EDL	00:41:26,528	00:41:29,344	| IOT150 |	And are close to the communications technology
+EDL	00:41:29,344	00:41:31,392	| IOT150 |	Sosebee bike application
+EDL	00:41:31,392	00:41:33,696	| IOT150 |	Who's that can use Bluetooth or Wi-Fi or
+EDL	00:41:33,696	00:41:34,208	| IOT150 |	Connected eats
+EDL	00:41:34,720	00:41:35,744	| IOT150 |	And that's not what
+EDL	00:41:35,744	00:41:36,512	| IOT150 |	We're focused on
+EDL	00:41:36,512	00:41:37,536	| IOT150 |	The second segment
+EDL	00:41:37,536	00:41:39,328	| IOT150 |	Is applications that
+EDL	00:41:39,328	00:41:40,096	| IOT150 |	Require
+EDL	00:41:40,096	00:41:41,632	| IOT150 |	Should have more high bandwidth
+EDL	00:41:41,632	00:41:45,216	| IOT150 |	Two-way real-time Communications and that would be like telematics
+EDL	00:41:45,216	00:41:46,496	| IOT150 |	Driverless cars those kinds
+EDL	00:41:47,264	00:41:50,336	| IOT150 |	And that's a technology that 5G is being Ark
+EDL	00:41:50,336	00:41:51,104	| IOT150 |	Architected for
+EDL	00:41:52,128	00:41:53,663	| IOT150 |	Is really sore the Bastion
+EDL	00:41:53,663	00:41:54,687	| IOT150 |	Big cellular comp
+EDL	00:41:55,199	00:42:01,343	| IOT150 |	Would license technology and then the third category which we think represents about 55% of
+EDL	00:42:01,855	00:42:02,879	| IOT150 |	Potential connector
+EDL	00:42:02,879	00:42:03,391	| IOT150 |	Devices
+EDL	00:42:03,903	00:42:04,671	| IOT150 |	Internet of Things
+EDL	00:42:05,183	00:42:07,487	| IOT150 |	Is called the low powered wide area
+EDL	00:42:07,487	00:42:09,791	| IOT150 |	Networking in really this segment
+EDL	00:42:09,791	00:42:10,815	| IOT150 |	Is divided up into
+EDL	00:42:10,815	00:42:12,863	| IOT150 |	To a couple players first is
+EDL	00:42:13,887	00:42:14,399	| IOT150 |	Technology
+EDL	00:42:14,911	00:42:19,263	| IOT150 |	People may have heard this referred to as nb-iot or cat
+EDL	00:42:19,775	00:42:21,567	| IOT150 |	And so it's really designed
+EDL	00:42:21,567	00:42:24,895	| IOT150 |	To be a slower speed and more cost-effective
+EDL	00:42:24,895	00:42:26,687	| IOT150 |	Then kind of like your home cellular sir
+EDL	00:42:27,199	00:42:30,783	| IOT150 |	The second category of Sky technology in this space is
+EDL	00:42:30,783	00:42:31,807	| IOT150 |	What I would call
+EDL	00:42:31,807	00:42:32,575	| IOT150 |	Proprietary
+EDL	00:42:33,087	00:42:35,135	| IOT150 |	How do you say these are closed ecosystem
+EDL	00:42:35,135	00:42:38,975	| IOT150 |	Companies that have built their own technology using
+EDL	00:42:39,487	00:42:39,999	| IOT150 |	Spectrum
+EDL	00:42:40,511	00:42:44,607	| IOT150 |	Meaning the company didn't have to pay billions of dollars to get over-the-air Spectrum
+EDL	00:42:44,607	00:42:45,887	| IOT150 |	And they do some
+EDL	00:42:45,887	00:42:47,167	| IOT150 |	Close technology
+EDL	00:42:47,167	00:42:48,959	| IOT150 |	Which means they're the only ones that can
+EDL	00:42:48,959	00:42:50,239	| IOT150 |	Control NYC
+EDL	00:42:50,239	00:42:52,287	| IOT150 |	And manufacture the hardware
+EDL	00:42:52,287	00:42:53,311	| IOT150 |	And the networking
+EDL	00:42:53,311	00:42:54,591	| IOT150 |	Equipment associated with that
+EDL	00:42:55,103	00:43:00,479	| IOT150 |	Those are companies examples of companies in that category would be a French company called sick Fox
+EDL	00:43:00,479	00:43:01,503	| IOT150 |	An American company
+EDL	00:43:01,503	00:43:02,271	| IOT150 |	Call Don
+EDL	00:43:02,271	00:43:06,111	| IOT150 |	And on the third category is Laura LP win
+EDL	00:43:06,111	00:43:08,927	| IOT150 |	And Laura LT win uses unlicensed
+EDL	00:43:08,927	00:43:09,695	| IOT150 |	Spectrum
+EDL	00:43:09,695	00:43:14,303	| IOT150 |	So essentially available to anyone for use much like your homework
+EDL	00:43:14,303	00:43:15,583	| IOT150 |	Cordless phone uses
+EDL	00:43:15,583	00:43:16,607	| IOT150 |	This kind of
+EDL	00:43:16,607	00:43:17,375	| IOT150 |	Spectrum
+EDL	00:43:17,375	00:43:18,911	| IOT150 |	And essentially
+EDL	00:43:18,911	00:43:20,959	| IOT150 |	It uses of Lora protocol
+EDL	00:43:20,959	00:43:24,287	| IOT150 |	To create a what I would call a trickle data
+EDL	00:43:24,799	00:43:25,311	| IOT150 |	Connection
+EDL	00:43:25,823	00:43:27,871	| IOT150 |	So very low speed very small
+EDL	00:43:27,871	00:43:29,407	| IOT150 |	Small amounts of data
+EDL	00:43:29,407	00:43:32,479	| IOT150 |	To communicate with what I would call massively
+EDL	00:43:32,991	00:43:33,503	| IOT150 |	Scales
+EDL	00:43:34,015	00:43:35,039	| IOT150 |	Sensor application
+EDL	00:43:35,551	00:43:36,319	| IOT150 |	So these are
+EDL	00:43:36,319	00:43:37,343	| IOT150 |	Applications
+EDL	00:43:37,343	00:43:40,671	| IOT150 |	Is that where the requirement is for them to be deployed
+EDL	00:43:40,671	00:43:42,463	| IOT150 |	In either the hundreds of thousand
+EDL	00:43:42,463	00:43:43,231	| IOT150 |	Dinosaur the Millions
+EDL	00:43:43,743	00:43:45,023	| IOT150 |	In terms of device cam
+EDL	00:43:45,023	00:43:46,559	| IOT150 |	And for application
+EDL	00:43:46,559	00:43:48,351	| IOT150 |	Things that require very long battery
+EDL	00:43:49,119	00:43:51,935	| IOT150 |	So what we're finding and Laura is up to
+EDL	00:43:51,935	00:43:53,215	| IOT150 |	10 year battery life
+EDL	00:43:53,215	00:43:54,239	| IOT150 |	In some cases longer
+EDL	00:43:54,751	00:43:57,567	| IOT150 |	And require very efficient Network
+EDL	00:43:57,567	00:43:58,335	| IOT150 |	Deployment so
+EDL	00:43:58,847	00:44:02,687	| IOT150 |	With the Lora technology I think the world record for a sensor
+EDL	00:44:02,687	00:44:06,527	| IOT150 |	Communicating with a Gateway or a base station is 70 MI
+EDL	00:44:06,527	00:44:09,343	| IOT150 |	What I mean by efficient as you don't need a lot of base station
+EDL	00:44:09,855	00:44:10,623	| IOT150 |	To get
+EDL	00:44:10,623	00:44:11,647	| IOT150 |	Really really good cover
+EDL	00:44:12,159	00:44:13,183	| IOT150 |	In the United States
+EDL	00:44:13,695	00:44:16,767	| IOT150 |	You know it's pretty common knowledge that Laura
+EDL	00:44:16,767	00:44:17,535	| IOT150 |	And
+EDL	00:44:17,535	00:44:23,167	| IOT150 |	The cellular license Technologies for LP when are going to be the winners and the Laura ecosystem
+EDL	00:44:23,167	00:44:24,447	| IOT150 |	Time is growing dramatica
+EDL	00:44:24,447	00:44:27,519	| IOT150 |	Play inside I was at a conference last week where they
+EDL	00:44:27,519	00:44:33,151	| IOT150 |	Show statistics that the Laura Alliance which is gone from 0 to over 500
+EDL	00:44:33,151	00:44:33,919	| IOT150 |	Numbers
+EDL	00:44:33,919	00:44:36,735	| IOT150 |	Is one of the fastest growing technology alliances
+EDL	00:44:36,735	00:44:38,527	| IOT150 |	In history so it's got a lot of them
+EDL	00:44:39,039	00:44:41,343	| IOT150 |	Lets people a little bit with
+EDL	00:44:41,343	00:44:44,927	| IOT150 |	With this characterization because I talked to a lot of people who are really excited about law
+EDL	00:44:45,439	00:44:49,535	| IOT150 |	But they are very concerned about being pulled into Semtech witch
+EDL	00:44:49,535	00:44:50,815	| IOT150 |	Is the
+EDL	00:44:50,815	00:44:53,119	| IOT150 |	Primary maker of Lora chips
+EDL	00:44:53,119	00:44:56,191	| IOT150 |	They're sorry I'm curious this is an issue that came up
+EDL	00:44:56,191	00:44:57,215	| IOT150 |	How many years ago was
+EDL	00:44:57,215	00:44:58,495	| IOT150 |	Z-Wave
+EDL	00:44:58,495	00:44:59,519	| IOT150 |	Because signal was there
+EDL	00:45:00,031	00:45:01,823	| IOT150 |	Producer so I'm just curious your thoughts on
+EDL	00:45:02,591	00:45:04,895	| IOT150 |	Well I think the first thought is
+EDL	00:45:04,895	00:45:07,711	| IOT150 |	Is that the reason were excited about Laura is
+EDL	00:45:07,711	00:45:09,503	| IOT150 |	Is that it's an open standard
+EDL	00:45:09,503	00:45:13,343	| IOT150 |	So it's published and anyone can actually
+EDL	00:45:13,343	00:45:16,159	| IOT150 |	Create technology both hardware and software
+EDL	00:45:16,671	00:45:17,439	| IOT150 |	To connect in
+EDL	00:45:17,439	00:45:17,951	| IOT150 |	The standard
+EDL	00:45:18,463	00:45:19,231	| IOT150 |	NBA player in
+EDL	00:45:19,743	00:45:20,767	| IOT150 |	Any part of the Eagles
+EDL	00:45:21,535	00:45:23,839	| IOT150 |	The second thing I would say is
+EDL	00:45:23,839	00:45:25,119	| IOT150 |	Is that some tax
+EDL	00:45:25,119	00:45:26,143	| IOT150 |	Is actually license
+EDL	00:45:26,143	00:45:29,215	| IOT150 |	Sing the chip technology for manufacturer
+EDL	00:45:29,215	00:45:29,983	| IOT150 |	Two other chip maker
+EDL	00:45:30,495	00:45:31,519	| IOT150 |	And so we're starting
+EDL	00:45:31,519	00:45:32,287	| IOT150 |	Can you see that
+EDL	00:45:32,287	00:45:33,055	| IOT150 |	Ecosystem
+EDL	00:45:33,055	00:45:33,567	| IOT150 |	Groin
+EDL	00:45:34,079	00:45:35,103	| IOT150 |	In fact it wisely
+EDL	00:45:35,615	00:45:36,383	| IOT150 |	The manufacturer
+EDL	00:45:36,383	00:45:37,151	| IOT150 |	Floor chips
+EDL	00:45:37,151	00:45:37,919	| IOT150 |	Tutu
+EDL	00:45:38,431	00:45:39,711	| IOT150 |	Very very large chip
+EDL	00:45:40,479	00:45:43,039	| IOT150 |	Is one is microchip and I believe the other is
+EDL	00:45:43,039	00:45:44,063	| IOT150 |	Stmicro
+EDL	00:45:44,063	00:45:44,831	| IOT150 |	So we're starting to
+EDL	00:45:45,343	00:45:46,367	| IOT150 |	Some diversification
+EDL	00:45:46,879	00:45:47,647	| IOT150 |	Significant
+EDL	00:45:47,647	00:45:48,415	| IOT150 |	Verification
+EDL	00:45:48,415	00:45:49,951	| IOT150 |	Insource of chips
+EDL	00:45:49,951	00:45:51,999	| IOT150 |	You know while simtek is the
+EDL	00:45:51,999	00:45:53,279	| IOT150 |	Original owner of the
+EDL	00:45:53,279	00:45:54,303	| IOT150 |	The protocol
+EDL	00:45:54,303	00:45:55,071	| IOT150 |	I think the
+EDL	00:45:55,071	00:45:58,655	| IOT150 |	The technology itself is getting more and more pervasive
+EDL	00:45:58,655	00:46:01,215	| IOT150 |	In the public domain and there are more and more
+EDL	00:46:01,215	00:46:02,239	| IOT150 |	Either license
+EDL	00:46:02,239	00:46:04,543	| IOT150 |	Store participating innovators in
+EDL	00:46:04,543	00:46:05,311	| IOT150 |	In the ecosystem
+EDL	00:46:05,311	00:46:07,615	| IOT150 |	So let's go to this idea because
+EDL	00:46:08,127	00:46:11,455	| IOT150 |	It's one thing to track location using something like this
+EDL	00:46:11,455	00:46:14,527	| IOT150 |	It's another thing to get lots of data on a Lowrance
+EDL	00:46:14,527	00:46:17,087	| IOT150 |	I'm at work so it's not about the constraints of the technology
+EDL	00:46:17,087	00:46:20,159	| IOT150 |	My understanding is your data rates are
+EDL	00:46:20,159	00:46:21,183	| IOT150 |	Are fairly Limited
+EDL	00:46:21,695	00:46:22,719	| IOT150 |	Yep they are highly
+EDL	00:46:23,231	00:46:23,999	| IOT150 |	Red so
+EDL	00:46:23,999	00:46:26,559	| IOT150 |	You really young and that's why in my view
+EDL	00:46:26,559	00:46:28,863	| IOT150 |	When I talked about the landscape of the industry
+EDL	00:46:29,375	00:46:30,143	| IOT150 |	Is that
+EDL	00:46:30,143	00:46:33,471	| IOT150 |	You know the iot industry is not homogeneous
+EDL	00:46:33,471	00:46:36,543	| IOT150 |	There are opportunities for multiple Technologies
+EDL	00:46:37,055	00:46:38,591	| IOT150 |	And it's really a matter of
+EDL	00:46:38,591	00:46:39,359	| IOT150 |	Sitting
+EDL	00:46:39,359	00:46:40,127	| IOT150 |	The characteristic
+EDL	00:46:40,127	00:46:41,407	| IOT150 |	Except the technology
+EDL	00:46:41,407	00:46:43,711	| IOT150 |	Lead to the ideal application and so
+EDL	00:46:43,711	00:46:46,271	| IOT150 |	What we're looking for our application
+EDL	00:46:46,271	00:46:47,295	| IOT150 |	Things that require
+EDL	00:46:47,807	00:46:49,343	| IOT150 |	Very limited data that
+EDL	00:46:49,343	00:46:50,879	| IOT150 |	Require very long battery life
+EDL	00:46:51,391	00:46:53,439	| IOT150 |	And so obviously not powered
+EDL	00:46:53,439	00:46:56,511	| IOT150 |	And require a network that's very efficiently
+EDL	00:46:56,511	00:46:59,839	| IOT150 |	Deployed and so the end result of that ends up being that you need
+EDL	00:47:00,351	00:47:01,119	| IOT150 |	End up
+EDL	00:47:01,119	00:47:01,631	| IOT150 |	Serving
+EDL	00:47:02,143	00:47:03,423	| IOT150 |	An application
+EDL	00:47:03,423	00:47:04,703	| IOT150 |	With a network
+EDL	00:47:04,703	00:47:07,775	| IOT150 |	Gets down into a couple dollars a year
+EDL	00:47:07,775	00:47:09,823	| IOT150 |	Per device for monthly recurring
+EDL	00:47:09,823	00:47:10,591	| IOT150 |	Cars
+EDL	00:47:10,591	00:47:11,871	| IOT150 |	So it's really important
+EDL	00:47:11,871	00:47:18,015	| IOT150 |	Automatically give me another example in the Smart City space were working with the largest water meter
+EDL	00:47:18,015	00:47:18,527	| IOT150 |	Manufacture
+EDL	00:47:19,295	00:47:20,831	| IOT150 |	In the world and in fact
+EDL	00:47:20,831	00:47:21,599	| IOT150 |	Water
+EDL	00:47:21,599	00:47:22,879	| IOT150 |	As a utility is
+EDL	00:47:22,879	00:47:23,903	| IOT150 |	Perfect application
+EDL	00:47:24,671	00:47:25,439	| IOT150 |	Because
+EDL	00:47:25,439	00:47:26,207	| IOT150 |	Usually
+EDL	00:47:26,207	00:47:27,487	| IOT150 |	The water meters are on
+EDL	00:47:27,487	00:47:29,791	| IOT150 |	Empowered they're usually in very hard to get
+EDL	00:47:29,791	00:47:31,583	| IOT150 |	Two places and that's another
+EDL	00:47:31,583	00:47:34,655	| IOT150 |	Strength of Laura because of the 900 megahertz specs
+EDL	00:47:35,423	00:47:38,239	| IOT150 |	Scott very good propagation characteristics
+EDL	00:47:38,239	00:47:39,007	| IOT150 |	Meaning of
+EDL	00:47:39,007	00:47:40,543	| IOT150 |	Penetrate concrete
+EDL	00:47:40,543	00:47:42,591	| IOT150 |	Water meters are usually in pits
+EDL	00:47:42,591	00:47:44,895	| IOT150 |	So they're very hard to get to and so
+EDL	00:47:44,895	00:47:46,431	| IOT150 |	Will be announcing in the neck
+EDL	00:47:46,431	00:47:51,807	| IOT150 |	Week or two of full City that we've deployed with a water meter manufacturer
+EDL	00:47:51,807	00:47:58,207	| IOT150 |	So that's another really good example and by the way they communicate once or twice a day and they just Bass
+EDL	00:47:58,207	00:47:58,719	| IOT150 |	We take a reading
+EDL	00:47:59,487	00:48:00,255	| IOT150 |	A very small package
+EDL	00:48:01,023	00:48:02,047	| IOT150 |	So to your point
+EDL	00:48:02,559	00:48:03,327	| IOT150 |	The perfect fit
+EDL	00:48:03,327	00:48:04,607	| IOT150 |	For the Lord technology
+EDL	00:48:04,607	00:48:07,679	| IOT150 |	So let's talk about the carriers because
+EDL	00:48:07,679	00:48:10,495	| IOT150 |	While you mentioned 5G but they're also
+EDL	00:48:10,495	00:48:11,263	| IOT150 |	Working
+EDL	00:48:11,263	00:48:12,799	| IOT150 |	Some of them not all of them
+EDL	00:48:12,799	00:48:15,615	| IOT150 |	On nb iot and Cat M1
+EDL	00:48:15,615	00:48:20,735	| IOT150 |	These look very competitive with what Laura's doing except it would be obviously
+EDL	00:48:20,735	00:48:21,503	| IOT150 |	Bison Spectrum
+EDL	00:48:22,271	00:48:26,111	| IOT150 |	And I'm just curious your thoughts there I believe the modules are also
+EDL	00:48:26,111	00:48:29,695	| IOT150 |	More expensive so it's more expensive to put that capability in the end device
+EDL	00:48:30,463	00:48:33,279	| IOT150 |	Right it's less flexible from a deployment
+EDL	00:48:33,279	00:48:37,119	| IOT150 |	One of the things that's interesting about iot and I've started in this
+EDL	00:48:37,119	00:48:38,655	| IOT150 |	Business in June of last year
+EDL	00:48:39,167	00:48:45,311	| IOT150 |	And one of those things I've learned is the only thing certain and by the way this goes for wireless carriers as well as for us
+EDL	00:48:45,823	00:48:49,151	| IOT150 |	The only thing certain when an application provider comes to us
+EDL	00:48:49,151	00:48:50,687	| IOT150 |	Is that we won't have coverage
+EDL	00:48:50,687	00:48:52,735	| IOT150 |	100% of the places they need it
+EDL	00:48:52,735	00:48:54,783	| IOT150 |	And one of the strengths of Laura is
+EDL	00:48:55,807	00:48:57,087	| IOT150 |	To buy a gateway
+EDL	00:48:57,087	00:48:59,391	| IOT150 |	And create coverage and other gateways
+EDL	00:48:59,391	00:49:02,463	| IOT150 |	Run anywhere from 3,000 to $5,000
+EDL	00:49:02,463	00:49:03,231	| IOT150 |	Versus
+EDL	00:49:03,231	00:49:04,511	| IOT150 |	What we all know about
+EDL	00:49:04,511	00:49:06,047	| IOT150 |	Cell tower Gateway
+EDL	00:49:06,047	00:49:08,351	| IOT150 |	C&R or a base stations very very
+EDL	00:49:08,863	00:49:11,423	| IOT150 |	So while the NB iot guys were
+EDL	00:49:11,423	00:49:12,191	| IOT150 |	Will tell you that
+EDL	00:49:12,191	00:49:13,727	| IOT150 |	It's just a software update
+EDL	00:49:13,727	00:49:18,335	| IOT150 |	What do they do when you need coverage in a farmer's field where you don't currently have coverage
+EDL	00:49:18,335	00:49:19,103	| IOT150 |	And
+EDL	00:49:19,103	00:49:21,919	| IOT150 |	We have a great model for that will put a Gateway on top of
+EDL	00:49:21,919	00:49:22,943	| IOT150 |	The grain silo
+EDL	00:49:22,943	00:49:24,735	| IOT150 |	And that will then cover
+EDL	00:49:24,735	00:49:27,295	| IOT150 |	That application and by the way once we've done that
+EDL	00:49:27,807	00:49:28,575	| IOT150 |	Tank monitoring
+EDL	00:49:29,087	00:49:29,855	| IOT150 |	Send a play
+EDL	00:49:29,855	00:49:31,647	| IOT150 |	Soil moisture monitoring
+EDL	00:49:31,647	00:49:32,927	| IOT150 |	Yeah there's a variety of Apple
+EDL	00:49:32,927	00:49:37,279	| IOT150 |	Locations we can do on that day station so I think there are also and I'm not an ex
+EDL	00:49:37,279	00:49:39,071	| IOT150 |	Expert in NB iot but from
+EDL	00:49:39,071	00:49:40,351	| IOT150 |	Comparison standpoint
+EDL	00:49:40,863	00:49:42,399	| IOT150 |	We have better battery life
+EDL	00:49:42,399	00:49:45,727	| IOT150 |	Regardless of what you're reading we've done side-by-side comparison
+EDL	00:49:45,727	00:49:47,007	| IOT150 |	Their cost azure
+EDL	00:49:47,007	00:49:47,775	| IOT150 |	He said
+EDL	00:49:47,775	00:49:48,543	| IOT150 |	Fire
+EDL	00:49:48,543	00:49:50,079	| IOT150 |	Because of the technology in the
+EDL	00:49:50,079	00:49:53,151	| IOT150 |	Device and the cost of services
+EDL	00:49:53,151	00:49:54,687	| IOT150 |	Just hire so there are limitations
+EDL	00:49:55,199	00:49:56,991	| IOT150 |	That we don't have in fact
+EDL	00:49:56,991	00:49:59,551	| IOT150 |	We were the first ones in the United States
+EDL	00:49:59,551	00:50:00,831	| IOT150 |	To demonstrate back in
+EDL	00:50:00,831	00:50:02,879	| IOT150 |	In Las Vegas a couple weeks ago
+EDL	00:50:02,879	00:50:05,439	| IOT150 |	A new capability that Laura has
+EDL	00:50:05,439	00:50:06,975	| IOT150 |	It's called geolocation
+EDL	00:50:06,975	00:50:07,999	| IOT150 |	And just a quick
+EDL	00:50:07,999	00:50:08,511	| IOT150 |	Description
+EDL	00:50:09,023	00:50:10,303	| IOT150 |	The way Laura works
+EDL	00:50:10,303	00:50:10,815	| IOT150 |	What is very
+EDL	00:50:11,327	00:50:12,351	| IOT150 |	Cell towers
+EDL	00:50:12,351	00:50:14,399	| IOT150 |	In that a sensor Allura sense
+EDL	00:50:15,167	00:50:15,935	| IOT150 |	Is it cancer
+EDL	00:50:15,935	00:50:17,727	| IOT150 |	Cafa station
+EDL	00:50:17,727	00:50:18,495	| IOT150 |	It will
+EDL	00:50:18,495	00:50:19,007	| IOT150 |	Communicate with
+EDL	00:50:19,519	00:50:22,079	| IOT150 |	So for example if I've deployed 5
+EDL	00:50:22,079	00:50:22,847	| IOT150 |	Gateway's
+EDL	00:50:22,847	00:50:23,615	| IOT150 |	Air base station
+EDL	00:50:23,615	00:50:24,383	| IOT150 |	China City
+EDL	00:50:24,383	00:50:25,407	| IOT150 |	NF sensor
+EDL	00:50:25,407	00:50:26,431	| IOT150 |	Can see all five
+EDL	00:50:26,431	00:50:28,223	| IOT150 |	It will simultaneously
+EDL	00:50:28,223	00:50:29,503	| IOT150 |	Communicate with all five
+EDL	00:50:29,503	00:50:31,807	| IOT150 |	And what that creates is an opportunity
+EDL	00:50:31,807	00:50:33,343	| IOT150 |	To take readings
+EDL	00:50:33,343	00:50:34,367	| IOT150 |	From all five of those
+EDL	00:50:34,879	00:50:38,719	| IOT150 |	Antennas and send that data to what's called a solver
+EDL	00:50:38,719	00:50:39,487	| IOT150 |	And
+EDL	00:50:39,487	00:50:43,327	| IOT150 |	Basically create a fairly accurate location for that ass
+EDL	00:50:43,839	00:50:45,631	| IOT150 |	It's all done without GPS
+EDL	00:50:46,143	00:50:47,167	| IOT150 |	Which has a couple dentist
+EDL	00:50:47,935	00:50:49,215	| IOT150 |	1 GPS
+EDL	00:50:49,215	00:50:50,239	| IOT150 |	Chips are expense
+EDL	00:50:50,239	00:50:51,519	| IOT150 |	Relative basis
+EDL	00:50:51,519	00:50:52,543	| IOT150 |	Casino in terms of
+EDL	00:50:52,543	00:50:53,567	| IOT150 |	The end device
+EDL	00:50:53,567	00:50:55,871	| IOT150 |	And to GPS is a big battery
+EDL	00:50:56,639	00:50:58,943	| IOT150 |	And by the way the advantage of GPS is a
+EDL	00:50:58,943	00:51:00,223	| IOT150 |	It's very precise and
+EDL	00:51:00,223	00:51:01,759	| IOT150 |	You know it's limited by the
+EDL	00:51:01,759	00:51:04,831	| IOT150 |	In terms of how precise it is with the Laura Kate
+EDL	00:51:04,831	00:51:06,367	| IOT150 |	Disability I think it's
+EDL	00:51:06,367	00:51:07,647	| IOT150 |	Yeah probably
+EDL	00:51:07,647	00:51:11,231	| IOT150 |	Safe to say that you can get within 50 Mi of the asset
+EDL	00:51:11,743	00:51:15,327	| IOT150 |	Now there other carriers doing Laura deployment so
+EDL	00:51:15,839	00:51:22,239	| IOT150 |	There's orange in France has a lower deployment and then I'm also thinking of Comcast has a division called machine
+EDL	00:51:22,239	00:51:23,519	| IOT150 |	Thank you that's doing lorawan
+EDL	00:51:24,543	00:51:26,847	| IOT150 |	Are you guys involved in that or is that just Tianjin
+EDL	00:51:27,615	00:51:30,943	| IOT150 |	That is tangential so Comcast has announced
+EDL	00:51:30,943	00:51:35,807	| IOT150 |	So they're going to deploy 12 cities I believe and I believe they've only deployed three
+EDL	00:51:35,807	00:51:37,343	| IOT150 |	You know I think it's good
+EDL	00:51:37,343	00:51:41,695	| IOT150 |	It's a good anointing of the Lora technology that a company like Comcast
+EDL	00:51:41,695	00:51:42,463	| IOT150 |	Has chosen it
+EDL	00:51:42,975	00:51:46,303	| IOT150 |	As its iot Network so I think that's positive
+EDL	00:51:46,303	00:51:49,887	| IOT150 |	And then the second thing I would say is you're right there are many Network
+EDL	00:51:49,887	00:51:51,423	| IOT150 |	Deployed around the world
+EDL	00:51:51,423	00:51:54,751	| IOT150 |	In particular from incumbent Wireless carriers like orange and
+EDL	00:51:54,751	00:51:55,775	| IOT150 |	Kpn
+EDL	00:51:55,775	00:51:57,055	| IOT150 |	Niy Friday bother
+EDL	00:51:57,055	00:51:59,871	| IOT150 |	And what's interesting is we were also the
+EDL	00:51:59,871	00:52:01,919	| IOT150 |	The first in the US to demonstrate
+EDL	00:52:01,919	00:52:03,711	| IOT150 |	In Las Vegas at CES
+EDL	00:52:03,711	00:52:06,271	| IOT150 |	The new roaming interface for Laura
+EDL	00:52:06,271	00:52:07,039	| IOT150 |	Call one version
+EDL	00:52:07,551	00:52:09,343	| IOT150 |	And it's a roaming interface
+EDL	00:52:09,343	00:52:13,183	| IOT150 |	What'll be interesting is if you're orange and you have an Enterprise
+EDL	00:52:13,183	00:52:15,487	| IOT150 |	That's the point sensors for a global app
+EDL	00:52:15,487	00:52:19,839	| IOT150 |	Application through this roaming interface you could place devices on the Senate Network
+EDL	00:52:19,839	00:52:20,863	| IOT150 |	Can the United States and Canada
+EDL	00:52:21,375	00:52:23,423	| IOT150 |	What kind of pricing your house
+EDL	00:52:23,423	00:52:26,239	| IOT150 |	How would that work I think about Romanian you know my wallet instinct
+EDL	00:52:27,263	00:52:31,359	| IOT150 |	Whenever so is that going to follow kind of the cellular model
+EDL	00:52:31,359	00:52:33,663	| IOT150 |	Will it look different I mean
+EDL	00:52:35,711	00:52:36,735	| IOT150 |	Business
+EDL	00:52:36,735	00:52:38,527	| IOT150 |	Terms are being negotiated as we
+EDL	00:52:38,527	00:52:39,551	| IOT150 |	We speak but
+EDL	00:52:39,551	00:52:40,831	| IOT150 |	What I could say is
+EDL	00:52:40,831	00:52:41,599	| IOT150 |	It has to
+EDL	00:52:41,599	00:52:43,135	| IOT150 |	You cannot follow
+EDL	00:52:43,135	00:52:44,415	| IOT150 |	Cellular model
+EDL	00:52:44,415	00:52:47,487	| IOT150 |	That model was designed on a $50 per month kind of
+EDL	00:52:49,023	00:52:52,095	| IOT150 |	And as I said earlier we're talking $2 to $2
+EDL	00:52:52,095	00:52:53,119	| IOT150 |	Per year per device
+EDL	00:52:53,119	00:52:55,167	| IOT150 |	And so there's a unique model that need
+EDL	00:52:55,679	00:52:56,191	| IOT150 |	Be created here
+EDL	00:52:56,703	00:52:57,471	| IOT150 |	That
+EDL	00:52:57,471	00:52:58,751	| IOT150 |	Yahweh centrally is
+EDL	00:52:58,751	00:52:59,775	| IOT150 |	Ends up being
+EDL	00:52:59,775	00:53:03,615	| IOT150 |	In the pennies if anything at all and I think you're going to see a lot of partnership
+EDL	00:53:04,127	00:53:05,151	| IOT150 |	Versus caffe
+EDL	00:53:05,151	00:53:05,919	| IOT150 |	Roaming
+EDL	00:53:05,919	00:53:06,687	| IOT150 |	Commercial agreement
+EDL	00:53:07,199	00:53:08,991	| IOT150 |	They are based on the economics of the business
+EDL	00:53:09,503	00:53:10,271	| IOT150 |	And what me
+EDL	00:53:10,783	00:53:14,879	| IOT150 |	No one other Innovation that sun it announced last year
+EDL	00:53:14,879	00:53:16,671	| IOT150 |	So when are customers too
+EDL	00:53:16,671	00:53:17,951	| IOT150 |	Deploy Lora network
+EDL	00:53:18,463	00:53:19,487	| IOT150 |	We allowed them
+EDL	00:53:19,487	00:53:20,767	| IOT150 |	How to register
+EDL	00:53:20,767	00:53:21,791	| IOT150 |	Their Network
+EDL	00:53:21,791	00:53:25,631	| IOT150 |	They stations to what's called a LPN virtual Network
+EDL	00:53:25,631	00:53:28,191	| IOT150 |	Work sucks whenever we Implement a customer
+EDL	00:53:28,191	00:53:32,287	| IOT150 |	Whether it be a carrier or a systems integrator or a application
+EDL	00:53:32,287	00:53:33,055	| IOT150 |	Provider
+EDL	00:53:33,055	00:53:34,591	| IOT150 |	We always connect does not work
+EDL	00:53:34,591	00:53:37,151	| IOT150 |	Works together virtually through this lvm
+EDL	00:53:37,151	00:53:39,199	| IOT150 |	And essentially what that allows is
+EDL	00:53:39,711	00:53:41,759	| IOT150 |	As long as they're on our LVN
+EDL	00:53:41,759	00:53:45,343	| IOT150 |	Any one of our customers can put a device on any one of our other custom
+EDL	00:53:46,367	00:53:48,671	| IOT150 |	And whoever the hosting network is
+EDL	00:53:49,183	00:53:50,463	| IOT150 |	Will get a share of
+EDL	00:53:50,463	00:53:51,231	| IOT150 |	Is revenue
+EDL	00:53:51,231	00:53:51,999	| IOT150 |	From that
+EDL	00:53:51,999	00:53:52,767	| IOT150 |	Devices Revenue
+EDL	00:53:54,047	00:53:54,815	| IOT150 |	Okay
+EDL	00:53:54,815	00:53:58,399	| IOT150 |	And what's interesting is that open up business models that we didn't even
+EDL	00:53:58,399	00:54:00,959	| IOT150 |	Contemplate when we conceived of this LDN
+EDL	00:54:01,471	00:54:03,519	| IOT150 |	And I'll give you an example we're talkin
+EDL	00:54:03,519	00:54:07,103	| IOT150 |	Two owners of commercial cell towers who are saying hey
+EDL	00:54:07,103	00:54:09,151	| IOT150 |	That means I can buy the Gateway
+EDL	00:54:09,151	00:54:10,431	| IOT150 |	Put it up on my cell tower
+EDL	00:54:10,943	00:54:12,223	| IOT150 |	And I can sit back
+EDL	00:54:12,223	00:54:12,991	| IOT150 |	Flask devices
+EDL	00:54:12,991	00:54:13,503	| IOT150 |	Disconnect
+EDL	00:54:14,527	00:54:15,039	| IOT150 |	Can generate
+EDL	00:54:16,575	00:54:17,855	| IOT150 |	And so we're doing that
+EDL	00:54:17,855	00:54:18,879	| IOT150 |	We're also talking
+EDL	00:54:18,879	00:54:21,695	| IOT150 |	The owners of commercial signs and billboards
+EDL	00:54:21,695	00:54:22,463	| IOT150 |	And so in fact
+EDL	00:54:22,463	00:54:24,255	| IOT150 |	Dinner Las Vegas Network that we
+EDL	00:54:24,255	00:54:25,535	| IOT150 |	2.4 CES
+EDL	00:54:25,535	00:54:27,327	| IOT150 |	Three of our gateways are on
+EDL	00:54:27,327	00:54:27,839	| IOT150 |	Commercial dildo
+EDL	00:54:28,607	00:54:30,911	| IOT150 |	And they're doing the same thing I've got these assets
+EDL	00:54:31,423	00:54:33,983	| IOT150 |	Empowered and usually connected to the internet these
+EDL	00:54:33,983	00:54:34,751	| IOT150 |	Laura
+EDL	00:54:34,751	00:54:37,567	| IOT150 |	Gateways are very small you know maybe
+EDL	00:54:37,567	00:54:39,103	| IOT150 |	6in by 6in
+EDL	00:54:39,103	00:54:40,127	| IOT150 |	12in by 12in
+EDL	00:54:40,639	00:54:42,687	| IOT150 |	And they put them up on their goboard
+EDL	00:54:43,199	00:54:46,271	| IOT150 |	And because of the LDN model they can generate Revenue stream off
+EDL	00:54:47,039	00:54:50,879	| IOT150 |	And let's talk about how many devices you can serve on one
+EDL	00:54:51,903	00:54:55,231	| IOT150 |	I know that's highly dependent on how often they're paying the Gateway
+EDL	00:54:55,999	00:54:56,511	| IOT150 |	Datastream
+EDL	00:54:57,023	00:54:57,791	| IOT150 |	And all of that but
+EDL	00:54:58,303	00:54:59,839	| IOT150 |	Like I mean even cellular Networks
+EDL	00:55:00,863	00:55:01,631	| IOT150 |	You can only
+EDL	00:55:01,631	00:55:02,911	| IOT150 |	You can only cram so many bits
+EDL	00:55:03,423	00:55:03,935	| IOT150 |	So
+EDL	00:55:04,447	00:55:05,983	| IOT150 |	What are those limitations look
+EDL	00:55:07,775	00:55:08,543	| IOT150 |	Yeah it's
+EDL	00:55:08,543	00:55:14,943	| IOT150 |	Obviously highly dependent on which Gateway you choose but if you have a macro cell that's a high-capacity macro cell
+EDL	00:55:14,943	00:55:18,015	| IOT150 |	AR testing is showing you know up to 200000 device
+EDL	00:55:18,527	00:55:19,295	| IOT150 |	Gateway
+EDL	00:55:19,295	00:55:21,343	| IOT150 |	The other things it to know is
+EDL	00:55:21,343	00:55:23,135	| IOT150 |	Is that as I said earlier that
+EDL	00:55:23,647	00:55:24,671	| IOT150 |	A single device
+EDL	00:55:24,671	00:55:25,951	| IOT150 |	Will most likely be
+EDL	00:55:25,951	00:55:28,255	| IOT150 |	Communicating with multiple gateways simultaneously
+EDL	00:55:28,767	00:55:30,559	| IOT150 |	So if there's a capacity
+EDL	00:55:30,559	00:55:32,095	| IOT150 |	Constrain on one it will automatically
+EDL	00:55:32,607	00:55:34,143	| IOT150 |	You know switch to another
+EDL	00:55:34,143	00:55:37,215	| IOT150 |	All right I feel like I know a lot more about Laura now
+EDL	00:55:37,215	00:55:40,031	| IOT150 |	Thank you so much Bruce I appreciate you coming on the show today
+EDL	00:55:40,031	00:55:41,567	| IOT150 |	Yeah thank you for your time
+EDL	00:55:41,567	00:55:47,967	| IOT150 |	That's it for this week thanks so much for listening and remember if you'd like more iot
+EDL	00:55:47,967	00:55:52,831	| IOT150 |	Sign up for my newsletter and Stacey on iot. Com 

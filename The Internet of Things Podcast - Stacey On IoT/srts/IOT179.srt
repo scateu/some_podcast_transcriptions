@@ -1,0 +1,6151 @@
+1
+00:00:06,656 --> 00:00:11,776
+Hey everyone welcome back to the Internet of Things podcast this is your house
+
+2
+00:00:12,032 --> 00:00:13,056
+Stacey Higginbotham
+
+3
+00:00:13,312 --> 00:00:14,080
+And your co-host
+
+4
+00:00:14,336 --> 00:00:15,104
+Kevin tofel
+
+5
+00:00:15,360 --> 00:00:16,384
+And we have
+
+6
+00:00:16,640 --> 00:00:17,920
+Awesome show for you this
+
+7
+00:00:18,688 --> 00:00:19,200
+We might call it
+
+8
+00:00:19,456 --> 00:00:20,224
+Vitastiq
+
+9
+00:00:20,480 --> 00:00:26,624
+Because we are going to be talking about news bits from Eva we've got a company that just raised a lot of money to help you in your home
+
+10
+00:00:26,880 --> 00:00:30,976
+Ares God of course smart speaker news because this is a day that ends
+
+11
+00:00:31,488 --> 00:00:32,000
+Why
+
+12
+00:00:32,256 --> 00:00:34,560
+And Kevin and I are going to talk about some
+
+13
+00:00:35,072 --> 00:00:36,608
+I don't know user experience
+
+14
+00:00:37,120 --> 00:00:38,656
+Challenges we faced in the last
+
+15
+00:00:39,168 --> 00:00:41,472
+That you'll probably want to stick around for
+
+16
+00:00:41,728 --> 00:00:42,496
+After that
+
+17
+00:00:42,752 --> 00:00:43,776
+We've got a message from this week
+
+18
+00:00:44,032 --> 00:00:46,848
+Sponsor of pharaoh and our guests who is
+
+19
+00:00:47,104 --> 00:00:48,128
+Chris Young this
+
+20
+00:00:48,384 --> 00:00:49,152
+CEO of Chef
+
+21
+00:00:49,408 --> 00:00:50,944
+What steps you can be talking about the
+
+22
+00:00:51,200 --> 00:00:52,480
+Joule sous vide cooker
+
+23
+00:00:52,736 --> 00:00:56,064
+Why it doesn't have an interface and his strategy about
+
+24
+00:00:56,320 --> 00:00:56,832
+Weather today
+
+25
+00:00:57,088 --> 00:00:58,368
+Go to load or license
+
+26
+00:00:58,624 --> 00:00:59,136
+With someone else
+
+27
+00:00:59,392 --> 00:00:59,904
+All of this
+
+28
+00:01:00,160 --> 00:01:01,440
+What's a good recipe
+
+29
+00:01:01,952 --> 00:01:02,976
+Now let's hear from
+
+30
+00:01:03,232 --> 00:01:04,512
+This week's weather
+
+31
+00:01:04,768 --> 00:01:06,304
+Looking for an iot platform
+
+32
+00:01:06,560 --> 00:01:08,096
+Find out my Kenmore and D-Link
+
+33
+00:01:08,608 --> 00:01:09,120
+Picked a pharaoh
+
+34
+00:01:09,376 --> 00:01:14,240
+A pharaoh customers have experienced as much as an 80% reduction in time to Market
+
+35
+00:01:14,496 --> 00:01:16,032
+99% pure
+
+36
+00:01:16,288 --> 00:01:16,800
+Support calls
+
+37
+00:01:17,056 --> 00:01:18,080
+In a 10x
+
+38
+00:01:18,336 --> 00:01:19,104
+Higher activation
+
+39
+00:01:19,616 --> 00:01:20,128
+Plus
+
+40
+00:01:20,384 --> 00:01:23,712
+They can never use 90% of their work from one project to the neck
+
+41
+00:01:24,480 --> 00:01:26,016
+To learn more visit a pharaoh
+
+42
+00:01:26,272 --> 00:01:27,040
+Dot IO
+
+43
+00:01:27,296 --> 00:01:29,600
+That's a fair o a f e r o
+
+44
+00:01:29,856 --> 00:01:30,880
+Dot IO
+
+45
+00:01:32,160 --> 00:01:33,184
+Okay
+
+46
+00:01:33,440 --> 00:01:33,952
+Heaven
+
+47
+00:01:34,464 --> 00:01:35,488
+I know it's Eva
+
+48
+00:01:35,744 --> 00:01:36,512
+But first
+
+49
+00:01:36,768 --> 00:01:38,048
+Actually let's just talk about Eva
+
+50
+00:01:38,560 --> 00:01:40,352
+Let's just get started this is a giant
+
+51
+00:01:40,608 --> 00:01:41,632
+Home Appliance
+
+52
+00:01:41,888 --> 00:01:43,168
+And houseware show in
+
+53
+00:01:43,424 --> 00:01:43,936
+In Germany
+
+54
+00:01:44,192 --> 00:01:46,240
+And up until a few years ago
+
+55
+00:01:46,496 --> 00:01:48,288
+It was not even on my radar
+
+56
+00:01:48,544 --> 00:01:49,056
+But
+
+57
+00:01:49,312 --> 00:01:50,336
+With the era of
+
+58
+00:01:50,592 --> 00:01:53,920
+The connected Home Smart appliances and even things like
+
+59
+00:01:54,176 --> 00:01:55,456
+The Amazon Echo
+
+60
+00:01:55,712 --> 00:01:56,736
+If I had become a
+
+61
+00:01:56,992 --> 00:01:58,272
+Huge trade show for us
+
+62
+00:01:58,784 --> 00:01:59,808
+I would have gone but
+
+63
+00:02:00,320 --> 00:02:01,600
+I'm actually going on vacation
+
+64
+00:02:01,856 --> 00:02:02,368
+Tomorrow so I'd
+
+65
+00:02:03,392 --> 00:02:04,160
+Yeah it's
+
+66
+00:02:04,416 --> 00:02:07,744
+I've actually follow it for a long time because it reminds me of like the
+
+67
+00:02:08,000 --> 00:02:09,024
+International version of
+
+68
+00:02:09,280 --> 00:02:15,424
+CSN degrees held in Berlin every year and aside from the stuff we talked about on this show there are laptops in
+
+69
+00:02:15,680 --> 00:02:16,192
+Mobile devices
+
+70
+00:02:16,448 --> 00:02:17,216
+And so on so forth
+
+71
+00:02:17,472 --> 00:02:21,568
+Things that I cover elsewhere so there's a ton of stuff I made when I get out there
+
+72
+00:02:23,104 --> 00:02:23,616
+But no
+
+73
+00:02:23,872 --> 00:02:28,736
+I know now we're still going to hear if I just started so we're still going to be hearing news
+
+74
+00:02:28,992 --> 00:02:30,016
+Will cover probably neck
+
+75
+00:02:30,528 --> 00:02:31,040
+Score in the newsletter
+
+76
+00:02:31,296 --> 00:02:32,320
+But for now
+
+77
+00:02:32,576 --> 00:02:33,856
+With some smart speaker news
+
+78
+00:02:34,112 --> 00:02:34,880
+Harman Kardon
+
+79
+00:02:35,136 --> 00:02:39,232
+Which is now owned by Samsung actually announced a $600 Google Assistant
+
+80
+00:02:39,744 --> 00:02:41,536
+Speaker at feels like a lot of money
+
+81
+00:02:42,560 --> 00:02:43,584
+Yeah but
+
+82
+00:02:44,096 --> 00:02:44,608
+I mean it
+
+83
+00:02:44,864 --> 00:02:48,192
+You're buying is for sound quality the Google assistant is kind of like
+
+84
+00:02:48,448 --> 00:02:51,520
+Well I guess it's becoming table States these days for speaker in a sentence
+
+85
+00:02:51,776 --> 00:02:55,360
+You know when you can get a Google home Max for $200 less this has
+
+86
+00:02:55,616 --> 00:02:57,408
+200 watt stereo speakers
+
+87
+00:02:57,664 --> 00:03:00,992
+Support high definition audio streaming has an LCD
+
+88
+00:03:01,248 --> 00:03:03,808
+Touch panel at the top so this is definitely a high end
+
+89
+00:03:04,064 --> 00:03:08,160
+Device I assume it sounds good haven't heard it obviously but it is strange to me that
+
+90
+00:03:08,416 --> 00:03:13,536
+Harman Kardon is making a Google Assistant speaker when they are owned by Samsung
+
+91
+00:03:13,792 --> 00:03:16,864
+I guess they in a good way they're keeping that line still
+
+92
+00:03:17,120 --> 00:03:17,888
+Semi agnostic
+
+93
+00:03:18,400 --> 00:03:20,192
+Yes although I would say this is
+
+94
+00:03:20,448 --> 00:03:23,520
+I'm a little concerned because remember when Sonos was talkin
+
+95
+00:03:23,776 --> 00:03:26,592
+The information actually did a story several months back about
+
+96
+00:03:27,104 --> 00:03:31,712
+Sonos being able to do both madhumeh which is what we call the Amazon Echo as a
+
+97
+00:03:31,968 --> 00:03:33,248
+Assistant to avoid setting off
+
+98
+00:03:33,504 --> 00:03:37,344
+Assistant everywhere so they wanted to add madhumeh and the Google
+
+99
+00:03:38,112 --> 00:03:40,672
+And to do that they shared a bludgeon Google with
+
+100
+00:03:40,928 --> 00:03:41,440
+Patents
+
+101
+00:03:41,952 --> 00:03:42,464
+And
+
+102
+00:03:42,720 --> 00:03:43,232
+What I'm
+
+103
+00:03:43,488 --> 00:03:46,816
+Certain about is you might have several speakers but you're not going to have
+
+104
+00:03:47,072 --> 00:03:47,840
+Voice assistant
+
+105
+00:03:48,096 --> 00:03:49,120
+On that one
+
+106
+00:03:49,376 --> 00:03:51,424
+Speaker even though technically it is very doable
+
+107
+00:03:51,936 --> 00:03:58,080
+What it is very doable and it becomes I think a political battle between the companies that provide the voice services and
+
+108
+00:03:58,592 --> 00:04:04,736
+Have they said his son has said that they're not doing the Google Assistant know cuz they did say by the end of the year so I'm kind of holding out
+
+109
+00:04:04,992 --> 00:04:05,504
+You know they are
+
+110
+00:04:05,760 --> 00:04:06,784
+They are still doing it but
+
+111
+00:04:07,040 --> 00:04:13,184
+To get get the ability to make a madame a speaker and a Google Assistant speaker they actually asserted their patent
+
+112
+00:04:14,208 --> 00:04:15,232
+Smart speaker technology
+
+113
+00:04:15,488 --> 00:04:17,791
+The series The kooples using it in the Google Max
+
+114
+00:04:18,303 --> 00:04:18,815
+I don't
+
+115
+00:04:19,071 --> 00:04:20,863
+Those are deep inside or negotiations
+
+116
+00:04:21,119 --> 00:04:22,399
+So I don't know how that exactly
+
+117
+00:04:22,911 --> 00:04:23,935
+It does make em like
+
+118
+00:04:24,191 --> 00:04:25,215
+You know I don't want to have to
+
+119
+00:04:25,471 --> 00:04:25,983
+To pick and choose
+
+120
+00:04:26,239 --> 00:04:28,031
+If I really want awesome sound
+
+121
+00:04:28,287 --> 00:04:29,823
+You know that's expensive
+
+122
+00:04:30,079 --> 00:04:32,383
+To have a matinee version and a
+
+123
+00:04:32,639 --> 00:04:33,663
+Google Assistant version
+
+124
+00:04:34,175 --> 00:04:34,943
+Absolutely
+
+125
+00:04:35,199 --> 00:04:36,479
+No I don't either but
+
+126
+00:04:36,735 --> 00:04:41,087
+Hey if you want to spend even more money you can because did you see the Bang & Olufsen
+
+127
+00:04:41,343 --> 00:04:43,391
+Speakers with the Google Assistant built in
+
+128
+00:04:43,647 --> 00:04:44,159
+Yes
+
+129
+00:04:44,415 --> 00:04:44,927
+That was
+
+130
+00:04:45,439 --> 00:04:45,951
+Neat looking
+
+131
+00:04:46,207 --> 00:04:47,487
+Like all of bang it all
+
+132
+00:04:48,511 --> 00:04:52,607
+Did it look like it was worth $1,750
+
+133
+00:04:54,911 --> 00:04:57,983
+No no didn't know this only get you
+
+134
+00:04:58,239 --> 00:04:59,007
+Google right
+
+135
+00:04:59,263 --> 00:05:00,031
+That is correct
+
+136
+00:05:00,799 --> 00:05:01,311
+Yeah
+
+137
+00:05:01,823 --> 00:05:02,591
+That is correct
+
+138
+00:05:03,103 --> 00:05:03,615
+Sono
+
+139
+00:05:03,871 --> 00:05:04,895
+I'm going with them knowing
+
+140
+00:05:06,175 --> 00:05:07,455
+We say no
+
+141
+00:05:08,991 --> 00:05:09,759
+All right but
+
+142
+00:05:10,271 --> 00:05:11,295
+There is another option
+
+143
+00:05:11,551 --> 00:05:12,575
+There's booze
+
+144
+00:05:12,831 --> 00:05:15,647
+Which also introduced a new smart speaker and Sound Bars
+
+145
+00:05:15,903 --> 00:05:17,951
+And I really don't know
+
+146
+00:05:19,743 --> 00:05:20,511
+Like
+
+147
+00:05:20,767 --> 00:05:22,815
+This what does Amazon
+
+148
+00:05:23,071 --> 00:05:23,839
+Matinee
+
+149
+00:05:24,095 --> 00:05:24,607
+And
+
+150
+00:05:24,863 --> 00:05:25,887
+Leader voice assist
+
+151
+00:05:26,143 --> 00:05:26,911
+Since we'll follow
+
+152
+00:05:27,167 --> 00:05:27,679
+And
+
+153
+00:05:27,935 --> 00:05:30,239
+Also AirPlay 2 for simple streaming from
+
+154
+00:05:30,495 --> 00:05:31,263
+Apple devices
+
+155
+00:05:31,519 --> 00:05:32,287
+That's going to happen next
+
+156
+00:05:32,799 --> 00:05:36,383
+As well write the interesting thing are there voice assistants to follow
+
+157
+00:05:36,639 --> 00:05:37,663
+Now the question is
+
+158
+00:05:37,919 --> 00:05:41,247
+Will it be Google would it be Bixby would it be Cortana
+
+159
+00:05:43,807 --> 00:05:45,599
+Yeah I don't know
+
+160
+00:05:45,855 --> 00:05:46,623
+And I look
+
+161
+00:05:46,879 --> 00:05:47,647
+Looking for prices on these
+
+162
+00:05:47,903 --> 00:05:48,415
+And I don't
+
+163
+00:05:49,695 --> 00:05:50,719
+$100
+
+164
+00:05:50,975 --> 00:05:51,487
+400
+
+165
+00:05:51,743 --> 00:05:52,255
+Dollars okay
+
+166
+00:05:52,511 --> 00:05:53,535
+So this is our mid-range
+
+167
+00:05:53,791 --> 00:05:55,327
+No that's her low-end actually right now
+
+168
+00:05:56,095 --> 00:05:57,375
+Speaker for a large speaker area
+
+169
+00:05:58,143 --> 00:06:00,191
+So large speaker in The Sound Bars there's a
+
+170
+00:06:00,447 --> 00:06:01,215
+The small one and big one
+
+171
+00:06:01,471 --> 00:06:04,031
+Retailing for roughly 550 + 8
+
+172
+00:06:06,335 --> 00:06:07,359
+Yay
+
+173
+00:06:07,615 --> 00:06:09,151
+All right we're not a speaker show
+
+174
+00:06:10,175 --> 00:06:10,943
+Train to Busan 2
+
+175
+00:06:11,455 --> 00:06:13,503
+Crazy stuff you could do in the home front
+
+176
+00:06:14,015 --> 00:06:14,527
+So
+
+177
+00:06:14,783 --> 00:06:15,295
+Eve
+
+178
+00:06:15,551 --> 00:06:16,063
+Barry
+
+179
+00:06:16,319 --> 00:06:17,855
+Sensor maker for homekit
+
+180
+00:06:18,111 --> 00:06:18,623
+Devices
+
+181
+00:06:18,879 --> 00:06:21,695
+They actually launched a homekit air quality Mount
+
+182
+00:06:22,463 --> 00:06:23,487
+A t v that
+
+183
+00:06:24,255 --> 00:06:26,303
+Measures temperature humidity
+
+184
+00:06:26,559 --> 00:06:28,863
+Air quality it's actually really tiny like
+
+185
+00:06:29,119 --> 00:06:30,911
+Lot of their Eve sensors it's about
+
+186
+00:06:31,167 --> 00:06:32,703
+I don't know half the size of a cell phone
+
+187
+00:06:32,959 --> 00:06:34,751
+And this is their room to
+
+188
+00:06:35,007 --> 00:06:35,775
+And it's going to cost
+
+189
+00:06:36,031 --> 00:06:37,055
+$100
+
+190
+00:06:37,567 --> 00:06:38,079
+So
+
+191
+00:06:38,335 --> 00:06:38,847
+Kind of
+
+192
+00:06:39,359 --> 00:06:41,663
+Actually that's exactly how much I paid for my oh where
+
+193
+00:06:41,919 --> 00:06:43,199
+Glow that measures all of these
+
+194
+00:06:43,967 --> 00:06:46,271
+What I like about this is that it's a small
+
+195
+00:06:46,527 --> 00:06:47,807
+Units and
+
+196
+00:06:48,063 --> 00:06:48,831
+Doesn't run on
+
+197
+00:06:49,343 --> 00:06:49,855
+Power cord
+
+198
+00:06:50,111 --> 00:06:51,903
+And some people might say well that kind of sucks
+
+199
+00:06:52,159 --> 00:06:52,671
+Because
+
+200
+00:06:52,927 --> 00:06:55,743
+Charge it or change batteries yes you do that's correct but
+
+201
+00:06:55,999 --> 00:06:58,815
+You can move it from room to room much easier I think that anywhere
+
+202
+00:06:59,071 --> 00:06:59,583
+And
+
+203
+00:06:59,839 --> 00:07:01,119
+That makes it very handy
+
+204
+00:07:01,631 --> 00:07:02,911
+Yes and worth noting
+
+205
+00:07:03,167 --> 00:07:04,703
+That this is the
+
+206
+00:07:04,959 --> 00:07:07,263
+First thing launched since Eve actually
+
+207
+00:07:07,775 --> 00:07:08,287
+Split
+
+208
+00:07:08,799 --> 00:07:11,359
+Gaming Division and ditched it Salgado
+
+209
+00:07:11,871 --> 00:07:13,407
+Saudis used to be Elgato Eve
+
+210
+00:07:13,919 --> 00:07:14,943
+Interstate in June
+
+211
+00:07:15,199 --> 00:07:15,967
+Banda June
+
+212
+00:07:16,223 --> 00:07:18,783
+They actually created Eve systems
+
+213
+00:07:19,039 --> 00:07:19,807
+Only focus on the
+
+214
+00:07:20,831 --> 00:07:23,903
+Worth noting so this is the first one everything else is old
+
+215
+00:07:25,183 --> 00:07:26,975
+And moving right along to
+
+216
+00:07:27,231 --> 00:07:27,743
+You crazy
+
+217
+00:07:27,999 --> 00:07:29,023
+Stuff from
+
+218
+00:07:29,279 --> 00:07:29,791
+Bosch
+
+219
+00:07:30,303 --> 00:07:32,095
+Holy moly
+
+220
+00:07:32,863 --> 00:07:33,375
+Okay
+
+221
+00:07:33,631 --> 00:07:34,399
+I got so excited by
+
+222
+00:07:35,423 --> 00:07:38,239
+Weird Ibiza so we turned into Rai
+
+223
+00:07:38,495 --> 00:07:39,007
+Oh I never know
+
+224
+00:07:39,263 --> 00:07:42,591
+It's Chris Christ he is a scene at home reporter he's a lovely fellow
+
+225
+00:07:42,847 --> 00:07:44,127
+We read about the time he's been on the show
+
+226
+00:07:44,639 --> 00:07:45,919
+So he actually
+
+227
+00:07:46,431 --> 00:07:46,943
+Tweeted
+
+228
+00:07:47,199 --> 00:07:48,223
+Cannabis presser
+
+229
+00:07:48,479 --> 00:07:49,247
+A bunch of stuff
+
+230
+00:07:49,759 --> 00:07:50,271
+Including
+
+231
+00:07:50,527 --> 00:07:52,831
+Induction cooktops with intelligence
+
+232
+00:07:53,087 --> 00:07:55,135
+So you could understand if you're
+
+233
+00:07:55,391 --> 00:07:56,159
+Burning stuff
+
+234
+00:07:56,415 --> 00:07:57,439
+For cooking stuffed
+
+235
+00:07:57,695 --> 00:07:58,207
+Too hot which
+
+236
+00:07:58,463 --> 00:07:59,231
+I thought was really
+
+237
+00:07:59,999 --> 00:08:01,535
+And he also showed off
+
+238
+00:08:02,303 --> 00:08:02,815
+Schecter
+
+239
+00:08:03,071 --> 00:08:05,631
+And it's basically a projector that projects
+
+240
+00:08:05,887 --> 00:08:08,447
+An image that you can interact with on your countertop
+
+241
+00:08:08,959 --> 00:08:09,471
+Okay
+
+242
+00:08:09,727 --> 00:08:10,239
+I thought I sent
+
+243
+00:08:10,495 --> 00:08:11,007
+So excited
+
+244
+00:08:11,263 --> 00:08:12,031
+Because I actually saw the
+
+245
+00:08:12,287 --> 00:08:14,847
+The semiconductor that made this possible in the Bosch booth
+
+246
+00:08:15,359 --> 00:08:15,871
+Yes
+
+247
+00:08:16,127 --> 00:08:17,919
+I did a whole story on it
+
+248
+00:08:18,431 --> 00:08:19,455
+Super stoked because
+
+249
+00:08:19,967 --> 00:08:21,247
+This thing was amazing UK
+
+250
+00:08:21,759 --> 00:08:22,271
+You
+
+251
+00:08:22,527 --> 00:08:23,295
+If you put this
+
+252
+00:08:23,551 --> 00:08:29,695
+Since they're showing is a standalone unit but if you put this you've put this on like an Amazon Echo or something like that it actually could show you
+
+253
+00:08:29,951 --> 00:08:30,463
+You video
+
+254
+00:08:30,719 --> 00:08:32,255
+You can show you video on any surface
+
+255
+00:08:32,511 --> 00:08:35,839
+You could move your hand up and down and the resolution changed
+
+256
+00:08:36,095 --> 00:08:38,143
+Seamlessly and then you could interact with
+
+257
+00:08:38,655 --> 00:08:41,727
+So imagine if you could say if your doorbell rang in
+
+258
+00:08:41,983 --> 00:08:43,519
+You could turn and put your nest
+
+259
+00:08:43,775 --> 00:08:45,055
+Doorbell camera
+
+260
+00:08:45,311 --> 00:08:46,079
+Image into this
+
+261
+00:08:46,335 --> 00:08:47,615
+It could just show it to you on your counter
+
+262
+00:08:48,127 --> 00:08:48,639
+So that's cool
+
+263
+00:08:48,895 --> 00:08:50,431
+Write absolute
+
+264
+00:08:50,687 --> 00:08:54,783
+What school is you could actually all the controls right now like we're very excited about the
+
+265
+00:08:55,039 --> 00:08:56,575
+Controls on the Lenovo
+
+266
+00:08:56,831 --> 00:08:58,367
+Smart display for things like lights
+
+267
+00:08:58,623 --> 00:08:59,135
+Because you can take
+
+268
+00:08:59,391 --> 00:09:00,415
+Haji
+
+269
+00:09:00,671 --> 00:09:01,695
+Turn on the lights
+
+270
+00:09:01,951 --> 00:09:03,231
+And then it'll show you
+
+271
+00:09:03,487 --> 00:09:04,255
+A control
+
+272
+00:09:04,511 --> 00:09:06,047
+4like color tuning or thinks
+
+273
+00:09:06,303 --> 00:09:10,143
+Like that to me if you imagine that popping up on your counter via this type of
+
+274
+00:09:10,399 --> 00:09:11,167
+Splayed then you just
+
+275
+00:09:11,423 --> 00:09:12,959
+Like to it right there on the counter
+
+276
+00:09:13,471 --> 00:09:15,263
+Yeah this is it's interesting
+
+277
+00:09:15,519 --> 00:09:21,663
+Because there's a whole Suite of apps that you can have it it really looks to me like they've taken the open-source version of Android and crew
+
+278
+00:09:21,919 --> 00:09:24,735
+Created their own little interface with it but I mean you could even use
+
+279
+00:09:24,991 --> 00:09:27,039
+I mean they're showing a video not a video picture of
+
+280
+00:09:27,295 --> 00:09:29,343
+Yeah the Chrome browser in Pinterest and all that
+
+281
+00:09:30,111 --> 00:09:34,719
+Do all that without a display because the Earth countertop is the display and I presume there's some kind of
+
+282
+00:09:34,975 --> 00:09:40,351
+And what kind of sensors they would have in the projection part itself but to allow you the interaction refit interact
+
+283
+00:09:40,607 --> 00:09:43,679
+With these apps and so on for recipes or
+
+284
+00:09:44,191 --> 00:09:47,007
+Who knows what I meant I like the idea of it I don't know that I would just
+
+285
+00:09:47,263 --> 00:09:51,359
+Put this on my countertop but I could see it as a future thing especially as they
+
+286
+00:09:51,615 --> 00:09:52,895
+Tweet this idea and implementation
+
+287
+00:09:53,151 --> 00:09:58,783
+If I get reminds me of the very last CS that Bill Gates was that he showed the quote-unquote home of the future
+
+288
+00:09:59,807 --> 00:10:01,855
+And they had projection balls so you can
+
+289
+00:10:02,111 --> 00:10:05,183
+Change the look and feel of you know what your view is like
+
+290
+00:10:05,439 --> 00:10:06,463
+Pretend you're in the middle of the ocean
+
+291
+00:10:06,975 --> 00:10:12,607
+What is all interactive and they had a projection on the countertop that you could you know through recipes and so on
+
+292
+00:10:12,863 --> 00:10:15,423
+Okay so don't just think about recipe
+
+293
+00:10:15,935 --> 00:10:19,007
+Is think about something like an interactive cooking demonstration
+
+294
+00:10:19,263 --> 00:10:20,287
+That if you
+
+295
+00:10:20,543 --> 00:10:21,823
+Put something underneath it
+
+296
+00:10:22,079 --> 00:10:22,847
+It could tell you like
+
+297
+00:10:23,103 --> 00:10:23,615
+Hey
+
+298
+00:10:23,871 --> 00:10:25,407
+Here's how to cut the chicken and it
+
+299
+00:10:25,663 --> 00:10:26,943
+Show like lions where you
+
+300
+00:10:27,199 --> 00:10:27,711
+Chop your chick
+
+301
+00:10:27,967 --> 00:10:29,247
+So imagine kind of like an
+
+302
+00:10:29,503 --> 00:10:30,271
+AR on
+
+303
+00:10:30,527 --> 00:10:31,039
+On top of
+
+304
+00:10:31,295 --> 00:10:31,807
+Your actual
+
+305
+00:10:32,319 --> 00:10:37,951
+And that's along the lines of what he showed it was kind of like you put a certain amount of food in a spot and a projector wood
+
+306
+00:10:38,207 --> 00:10:43,327
+Visualize it the density and someone say you need a little bit more that's too much of this recipe
+
+307
+00:10:43,583 --> 00:10:45,119
+You're right when you start melding
+
+308
+00:10:45,375 --> 00:10:45,887
+AI
+
+309
+00:10:46,143 --> 00:10:47,167
+And sensors and
+
+310
+00:10:47,423 --> 00:10:50,495
+Get rid of the screens have projection there something you can do
+
+311
+00:10:51,007 --> 00:10:52,287
+Yeah I'm super high on projector
+
+312
+00:10:52,543 --> 00:10:53,055
+I have been
+
+313
+00:10:54,079 --> 00:10:55,359
+So I love this guy
+
+314
+00:10:55,871 --> 00:10:57,663
+If it's like a r without the glasses
+
+315
+00:10:57,919 --> 00:10:58,687
+Yeah basically
+
+316
+00:10:58,943 --> 00:10:59,711
+Although in a limit
+
+317
+00:11:00,223 --> 00:11:00,735
+Like this
+
+318
+00:11:03,039 --> 00:11:07,903
+You'll have your induction charging spot and then you'll have your projection spot and then you'll have your I don't know what's
+
+319
+00:11:08,415 --> 00:11:11,743
+Bosch also shut off a washer and dryer that basically you just
+
+320
+00:11:11,999 --> 00:11:16,351
+Throw stuff in it it senses what it is and it says this is the type of wash you should do this
+
+321
+00:11:16,607 --> 00:11:17,375
+This is how much soap I need
+
+322
+00:11:17,631 --> 00:11:19,167
+Dispense this feels like something I have to
+
+323
+00:11:19,679 --> 00:11:21,471
+Maybe tahini laundry is not
+
+324
+00:11:21,983 --> 00:11:23,263
+This could be like a revelation
+
+325
+00:11:23,519 --> 00:11:27,615
+Remember the June and when I got this I was like even might toast taste better you guys
+
+326
+00:11:27,871 --> 00:11:29,919
+And that was a function of like really opt
+
+327
+00:11:30,175 --> 00:11:30,943
+Optimizing for that part
+
+328
+00:11:31,455 --> 00:11:32,479
+Everything with
+
+329
+00:11:32,735 --> 00:11:33,247
+Washing
+
+330
+00:11:33,503 --> 00:11:38,623
+Baby there is better washing and I just don't do it no notice it overtime that my clothes are cleaner and maybe they're less
+
+331
+00:11:39,391 --> 00:11:40,415
+What's the word I'm looking for
+
+332
+00:11:40,671 --> 00:11:41,951
+Born by washing
+
+333
+00:11:42,207 --> 00:11:42,975
+But it feels like
+
+334
+00:11:43,231 --> 00:11:44,255
+I don't know that I know
+
+335
+00:11:44,511 --> 00:11:45,023
+What I need
+
+336
+00:11:45,279 --> 00:11:45,791
+Jhene Aiko
+
+337
+00:11:47,071 --> 00:11:48,607
+Right and this is a big part of
+
+338
+00:11:48,863 --> 00:11:52,447
+The IRT conundrum we don't know what we don't know yet it's almost like
+
+339
+00:11:52,703 --> 00:11:53,983
+Until you implement something
+
+340
+00:11:54,239 --> 00:11:58,591
+You want don't know that it's better or maybe it's not it will save it that's a big Challenger
+
+341
+00:11:59,103 --> 00:12:00,639
+Self-hating wouldn't Bosch
+
+342
+00:12:00,895 --> 00:12:02,175
+I want to test this out
+
+343
+00:12:02,431 --> 00:12:02,943
+See if it acts
+
+344
+00:12:03,711 --> 00:12:04,479
+What color
+
+345
+00:12:04,735 --> 00:12:09,855
+That was the fridge any of the fridges come in different colors that are replaceable doors as well
+
+346
+00:12:10,111 --> 00:12:13,183
+Cuz it's not really technically iot but Bosch also did show off these
+
+347
+00:12:13,439 --> 00:12:16,255
+Refrigerator doors that you can swap out in their different colors
+
+348
+00:12:16,767 --> 00:12:18,559
+I love color so I was really a
+
+349
+00:12:18,815 --> 00:12:19,327
+Excited by this
+
+350
+00:12:19,583 --> 00:12:20,351
+But again there's no spark
+
+351
+00:12:21,119 --> 00:12:21,631
+Associated with this
+
+352
+00:12:22,143 --> 00:12:24,447
+I know I brought it up just cuz you were so excited about
+
+353
+00:12:24,959 --> 00:12:25,727
+Not as excited
+
+354
+00:12:27,007 --> 00:12:27,519
+But that's okay
+
+355
+00:12:27,775 --> 00:12:28,287
+All right
+
+356
+00:12:28,543 --> 00:12:31,871
+So let's move from FIFA those are the big things we've seen so far that
+
+357
+00:12:32,383 --> 00:12:36,479
+Exciting let's talk about a 50 billion dollar funding for a company called pulse
+
+358
+00:12:36,735 --> 00:12:37,503
+Technologies
+
+359
+00:12:38,015 --> 00:12:39,039
+Pulse
+
+360
+00:12:39,551 --> 00:12:41,855
+These guys basically come in and
+
+361
+00:12:42,111 --> 00:12:42,879
+Hang your television
+
+362
+00:12:43,391 --> 00:12:45,183
+They even program your smart lights
+
+363
+00:12:45,439 --> 00:12:47,743
+Send apparently this is a bang-up business first
+
+364
+00:12:48,511 --> 00:12:51,583
+Yeah they got about 2500 vetted professionals
+
+365
+00:12:51,839 --> 00:12:55,423
+In 50 Metro areas to get them kind of like the Best Buy Geek Squad what they are
+
+366
+00:12:55,679 --> 00:12:57,727
+Train to do pretty much anything here
+
+367
+00:12:57,983 --> 00:12:58,751
+A smart home
+
+368
+00:12:59,007 --> 00:13:00,031
+Service is
+
+369
+00:13:00,287 --> 00:13:05,407
+Part of the deal so they can set things up for you probably help you with routines assistance Etc
+
+370
+00:13:05,663 --> 00:13:06,943
+Send some people leave that enough
+
+371
+00:13:07,199 --> 00:13:07,967
+You don't even know where
+
+372
+00:13:08,223 --> 00:13:12,063
+Still more oven DIY kind of thing with these devices available you know if
+
+373
+00:13:12,319 --> 00:13:13,855
+She's at Walmart Target and everywhere else
+
+374
+00:13:14,367 --> 00:13:15,391
+Some people still look like
+
+375
+00:13:15,647 --> 00:13:16,671
+I don't even know how to set it up
+
+376
+00:13:16,927 --> 00:13:19,231
+So you got to think about like
+
+377
+00:13:19,487 --> 00:13:24,351
+What was it we had Charlie Kendall who was the head of the Amazon Echo smart home platform
+
+378
+00:13:24,607 --> 00:13:28,191
+For a long time go over to control for which is very much a professional answer
+
+379
+00:13:29,471 --> 00:13:31,263
+So you know I can see how
+
+380
+00:13:31,775 --> 00:13:33,055
+There's a limited layer of us
+
+381
+00:13:33,311 --> 00:13:34,335
+That are willing to go to
+
+382
+00:13:35,871 --> 00:13:40,223
+Later and there's probably a lot of us who if you can make it affordable would totally be like you
+
+383
+00:13:40,479 --> 00:13:40,991
+Please come in
+
+384
+00:13:41,247 --> 00:13:46,623
+I'll give you you know maybe I don't know if the prices like closer to like $2,000 to outfit my home and make it
+
+385
+00:13:46,879 --> 00:13:48,415
+Get smart you think that's a reasonable price
+
+386
+00:13:48,671 --> 00:13:53,023
+Maybe it depends on the home how many devices what you want the waypost as it is that this is
+
+387
+00:13:53,279 --> 00:13:55,583
+Flat fee for the service depending on the type of job
+
+388
+00:13:55,839 --> 00:13:58,399
+They must be doing okay though because apparently their text
+
+389
+00:13:58,655 --> 00:14:00,191
+Between 70 and 80000 a year
+
+390
+00:14:00,447 --> 00:14:01,727
+That's Not Unusual I mean
+
+391
+00:14:01,983 --> 00:14:03,775
+You're messing around with lots of stuff
+
+392
+00:14:04,543 --> 00:14:07,359
+So I'm on their website and it looks like
+
+393
+00:14:07,615 --> 00:14:08,639
+The way they do it is
+
+394
+00:14:08,895 --> 00:14:12,479
+If I want to do a smart home thing I basically pick a zip code so we can get the
+
+395
+00:14:12,735 --> 00:14:15,295
+Pricing I'm assuming that New York cost more than Austin
+
+396
+00:14:15,551 --> 00:14:16,831
+And it's like hey
+
+397
+00:14:17,087 --> 00:14:17,855
+Do you have a thermostat
+
+398
+00:14:18,111 --> 00:14:18,623
+And I'm like
+
+399
+00:14:18,879 --> 00:14:20,159
+Yes I want install that
+
+400
+00:14:20,415 --> 00:14:21,439
+Do you have Smart Home devices
+
+401
+00:14:21,951 --> 00:14:22,719
+What kind
+
+402
+00:14:22,975 --> 00:14:24,767
+It looks like they don't have
+
+403
+00:14:25,023 --> 00:14:25,791
+Electricians
+
+404
+00:14:26,303 --> 00:14:28,351
+Because they don't do any
+
+405
+00:14:28,607 --> 00:14:29,119
+Lighting
+
+406
+00:14:29,375 --> 00:14:30,655
+Aunt that is like a light switches
+
+407
+00:14:30,911 --> 00:14:32,959
+Which is kind of a pain cuz that's a lot of the problems
+
+408
+00:14:33,471 --> 00:14:36,031
+People have but they do support like SimpliSafe
+
+409
+00:14:36,287 --> 00:14:38,847
+Security they have a bunch of baby monitors
+
+410
+00:14:39,103 --> 00:14:39,871
+Cameras
+
+411
+00:14:40,383 --> 00:14:42,175
+August door locks ring doorbell
+
+412
+00:14:43,199 --> 00:14:44,223
+Detarius hubs
+
+413
+00:14:44,735 --> 00:14:46,271
+So that's kind of a bummer
+
+414
+00:14:46,783 --> 00:14:48,063
+Yeah maybe.
+
+415
+00:14:48,319 --> 00:14:51,135
+Expand that cuz if I recall these guys are actually like
+
+416
+00:14:51,391 --> 00:14:52,415
+Smartphone repair
+
+417
+00:14:52,671 --> 00:14:54,719
+Best internet expanded into this
+
+418
+00:14:54,975 --> 00:14:55,487
+Sector
+
+419
+00:14:55,743 --> 00:15:01,119
+So maybe this is a future Edition for them is to add Electrical Services
+
+420
+00:15:01,375 --> 00:15:02,399
+Because that is actually a
+
+421
+00:15:02,655 --> 00:15:03,423
+Competitive advantage
+
+422
+00:15:03,679 --> 00:15:04,447
+Or like
+
+423
+00:15:04,703 --> 00:15:07,007
+Comcast when I talk to them about their installernet
+
+424
+00:15:07,263 --> 00:15:08,543
+Working like that's awesome you have this
+
+425
+00:15:08,799 --> 00:15:10,591
+It's a very big deal but they don't have a
+
+426
+00:15:10,847 --> 00:15:11,871
+Electricians and
+
+427
+00:15:12,383 --> 00:15:12,895
+That
+
+428
+00:15:13,151 --> 00:15:16,991
+How is a really convenient thing to have someone who can install light switches
+
+429
+00:15:17,247 --> 00:15:18,527
+Just for you order Outlets
+
+430
+00:15:20,063 --> 00:15:24,415
+That's just my take one of the more painful things I have to do is install Outlets
+
+431
+00:15:24,671 --> 00:15:25,695
+So maybe that's just me
+
+432
+00:15:25,951 --> 00:15:26,719
+Maybe that's just me
+
+433
+00:15:27,487 --> 00:15:28,255
+Okay
+
+434
+00:15:28,511 --> 00:15:29,023
+So
+
+435
+00:15:29,279 --> 00:15:30,559
+These guys got a lot of money
+
+436
+00:15:30,815 --> 00:15:31,327
+What else is
+
+437
+00:15:32,607 --> 00:15:34,399
+Oster some changes coming to the Google app
+
+438
+00:15:34,655 --> 00:15:38,239
+Assistant 95 Google took a look at the latest
+
+439
+00:15:38,495 --> 00:15:40,799
+File installation for Google Assistant
+
+440
+00:15:41,055 --> 00:15:42,847
+I don't know if it's nothing released yet
+
+441
+00:15:43,103 --> 00:15:47,455
+They're seeing bits of code revealing household family mode and downtime
+
+442
+00:15:47,967 --> 00:15:51,039
+So it looks like we got some adjustments coming there or some improvement
+
+443
+00:15:51,295 --> 00:15:52,319
+Since they're so that's good
+
+444
+00:15:52,831 --> 00:15:54,623
+I'm chasing household will let you kind of
+
+445
+00:15:54,879 --> 00:15:59,743
+Put different people's personal information together in the home you know
+
+446
+00:15:59,999 --> 00:16:01,023
+I appreciate that
+
+447
+00:16:01,279 --> 00:16:02,815
+You know they got it right and do this
+
+448
+00:16:03,071 --> 00:16:05,631
+But I will say every time they update something
+
+449
+00:16:05,887 --> 00:16:06,399
+I have to
+
+450
+00:16:06,655 --> 00:16:09,215
+Like they're adding basically a new user interface
+
+451
+00:16:09,983 --> 00:16:13,311
+Austin away and then suddenly like half the time I find it I have now
+
+452
+00:16:13,567 --> 00:16:16,895
+If I want to use this new functionality I have named my devices
+
+453
+00:16:17,151 --> 00:16:17,919
+Does poorly or maybe
+
+454
+00:16:18,175 --> 00:16:18,687
+Put them in the wrong
+
+455
+00:16:18,943 --> 00:16:19,711
+Rooms
+
+456
+00:16:19,967 --> 00:16:21,503
+Or I need to put them in rooms
+
+457
+00:16:21,759 --> 00:16:26,623
+So the sounds terrible this iterative process I'm not sure it's working really well for
+
+458
+00:16:26,879 --> 00:16:28,927
+Are people and I think they probably just give up
+
+459
+00:16:29,183 --> 00:16:31,999
+Cuz I know that sometimes I just look at this and I'm like oh
+
+460
+00:16:32,511 --> 00:16:33,535
+I'm not going to connect this
+
+461
+00:16:33,791 --> 00:16:38,911
+Google home because I already have something called the front door and that's the lock and now I've got to have a doorbell called
+
+462
+00:16:39,167 --> 00:16:40,447
+Light called this
+
+463
+00:16:40,703 --> 00:16:41,727
+Synonym like
+
+464
+00:16:42,495 --> 00:16:47,871
+Yeah we're going to talk about this little more later but I'm right there with you with some recent challenges on these
+
+465
+00:16:48,127 --> 00:16:49,919
+Updates and changes in the First Reactions
+
+466
+00:16:50,175 --> 00:16:52,223
+So yeah I don't know the answer because it's like
+
+467
+00:16:52,479 --> 00:16:53,247
+Don't do it
+
+468
+00:16:53,503 --> 00:16:58,879
+Wait install it professionally I mean I do want them to iterate on things right that's a
+
+469
+00:16:59,903 --> 00:17:01,183
+Jumping ahead
+
+470
+00:17:01,695 --> 00:17:06,815
+Last little bit of news for us is Google Assistant now can control your nest by Yale lock
+
+471
+00:17:08,351 --> 00:17:09,375
+Organys
+
+472
+00:17:09,631 --> 00:17:10,143
+Because
+
+473
+00:17:10,399 --> 00:17:12,703
+I tried this and perhaps it's just not
+
+474
+00:17:12,959 --> 00:17:13,727
+Rolled out yet
+
+475
+00:17:13,983 --> 00:17:15,519
+Maybe it's a rolling release
+
+476
+00:17:15,775 --> 00:17:16,287
+But
+
+477
+00:17:16,543 --> 00:17:17,823
+My home app is not even
+
+478
+00:17:18,079 --> 00:17:18,847
+Show the
+
+479
+00:17:19,103 --> 00:17:19,615
+Nest
+
+480
+00:17:19,871 --> 00:17:20,639
+Buy a lock
+
+481
+00:17:20,895 --> 00:17:22,431
+It does show my Nest hello doorbell
+
+482
+00:17:22,687 --> 00:17:24,223
+And it shows my nest
+
+483
+00:17:24,735 --> 00:17:25,247
+Camera
+
+484
+00:17:25,503 --> 00:17:28,063
+So Stacy suggested wisely you know what
+
+485
+00:17:28,575 --> 00:17:29,855
+I think you've got to unlink
+
+486
+00:17:30,111 --> 00:17:30,623
+Your nest
+
+487
+00:17:30,879 --> 00:17:34,207
+Products from Google home a demand account back and then it should appear
+
+488
+00:17:34,463 --> 00:17:35,231
+So I did that
+
+489
+00:17:35,487 --> 00:17:36,511
+But in doing so
+
+490
+00:17:36,767 --> 00:17:42,399
+I need to get the verification code Nest will send you free SMS when you add an account to Google home
+
+491
+00:17:42,655 --> 00:17:43,935
+And it never came
+
+492
+00:17:44,191 --> 00:17:48,799
+Okay well I should say never about 30 minutes later we'd already given up it came so I finally re-added
+
+493
+00:17:49,055 --> 00:17:50,335
+The Nest back to Google home
+
+494
+00:17:50,591 --> 00:17:51,359
+And guess what happened
+
+495
+00:17:51,615 --> 00:17:52,127
+It's not there
+
+496
+00:17:52,383 --> 00:17:53,663
+It's still not there so
+
+497
+00:17:53,919 --> 00:18:00,063
+Maybe just rolling out with the whole fact that you have to unlink accounts just to add new devices
+
+498
+00:18:00,319 --> 00:18:01,087
+Is Eminem
+
+499
+00:18:01,343 --> 00:18:02,879
+Maybe will magically disappear
+
+500
+00:18:03,135 --> 00:18:03,903
+Google home for me
+
+501
+00:18:04,159 --> 00:18:06,207
+Mine has not met so I have one
+
+502
+00:18:06,463 --> 00:18:08,511
+And I have linked to my Google home account
+
+503
+00:18:09,023 --> 00:18:10,303
+To my nest
+
+504
+00:18:10,559 --> 00:18:12,095
+Account it is not magically appear
+
+505
+00:18:13,375 --> 00:18:14,655
+Okay what when it does
+
+506
+00:18:14,911 --> 00:18:17,215
+If and when it does you should be able to
+
+507
+00:18:17,471 --> 00:18:19,007
+Query your Google home
+
+508
+00:18:19,263 --> 00:18:23,615
+To see if the front door or the front door any door the lock is locked or not
+
+509
+00:18:23,871 --> 00:18:25,663
+And you can lock it by voice
+
+510
+00:18:25,919 --> 00:18:27,199
+For security reasons
+
+511
+00:18:27,455 --> 00:18:30,271
+They have decided to not allow voice unlocking at this
+
+512
+00:18:32,319 --> 00:18:33,343
+Before start complaining
+
+513
+00:18:33,599 --> 00:18:34,879
+Kevin would you like
+
+514
+00:18:35,135 --> 00:18:36,927
+To talk about the new device that you tried
+
+515
+00:18:37,695 --> 00:18:38,975
+I would love to talk about
+
+516
+00:18:39,231 --> 00:18:42,303
+I tested out and still testing out the Phillips
+
+517
+00:18:42,559 --> 00:18:44,095
+Hue Lily spotlight
+
+518
+00:18:44,351 --> 00:18:46,911
+I'll tell you right up front what you get they are
+
+519
+00:18:47,167 --> 00:18:47,679
+3
+
+520
+00:18:47,935 --> 00:18:49,471
+LED outdoor spots
+
+521
+00:18:49,983 --> 00:18:51,007
+And a low voltage
+
+522
+00:18:51,263 --> 00:18:57,151
+Plug-in Transformer so you literally just plugged into an outlet they are weather resistant so they obviously they could be outside
+
+523
+00:18:57,663 --> 00:18:59,199
+It's $280
+
+524
+00:18:59,455 --> 00:18:59,967
+For these
+
+525
+00:19:00,479 --> 00:19:01,759
+If you would like to add additional
+
+526
+00:19:02,015 --> 00:19:02,527
+Spots
+
+527
+00:19:03,039 --> 00:19:06,879
+They are $80 each and I know that sounds odd because you're like what wattage is by
+
+528
+00:19:07,135 --> 00:19:07,647
+Free
+
+529
+00:19:07,903 --> 00:19:09,439
+Regular spots because you don't get the
+
+530
+00:19:09,695 --> 00:19:10,975
+A Transformer with a single
+
+531
+00:19:11,231 --> 00:19:11,743
+LED
+
+532
+00:19:11,999 --> 00:19:13,279
+Spot
+
+533
+00:19:13,535 --> 00:19:15,327
+Transformer can handle up a 5 spotlights
+
+534
+00:19:15,839 --> 00:19:16,863
+Being from Philips Hue
+
+535
+00:19:17,119 --> 00:19:17,631
+You got your choice
+
+536
+00:19:18,143 --> 00:19:19,167
+16 million colors
+
+537
+00:19:19,679 --> 00:19:22,239
+The nice thing about these you can control each
+
+538
+00:19:22,751 --> 00:19:23,263
+Color
+
+539
+00:19:23,519 --> 00:19:25,055
+Honeyspot individually
+
+540
+00:19:25,311 --> 00:19:29,151
+So I kind of celebrating Christmas for example with one red and one green eye
+
+541
+00:19:29,919 --> 00:19:34,015
+Last night which everybody was walking by going what are you doing and I said okay I'll put it back to White
+
+542
+00:19:34,271 --> 00:19:36,831
+So you got all your choice of the colors and regular white
+
+543
+00:19:37,343 --> 00:19:43,487
+Set up pretty easy I like how they've done that they've made a wiring heavy duty and these connectors will you
+
+544
+00:19:43,999 --> 00:19:45,023
+Connect and
+
+545
+00:19:45,279 --> 00:19:46,303
+Screw in the
+
+546
+00:19:46,559 --> 00:19:47,071
+1
+
+547
+00:19:47,327 --> 00:19:51,679
+Wire to the next wire it's very simple you cannot not do it correctly it's impossible to do wrong
+
+548
+00:19:51,935 --> 00:19:53,215
+So that part is easy
+
+549
+00:19:53,471 --> 00:19:55,007
+Is about 15 ft in between each
+
+550
+00:19:55,263 --> 00:19:56,287
+Anywhere
+
+551
+00:19:56,543 --> 00:19:57,055
+Scrapy
+
+552
+00:19:57,311 --> 00:19:59,359
+However I don't know maybe it's my home
+
+553
+00:19:59,615 --> 00:20:00,639
+I could not
+
+554
+00:20:00,895 --> 00:20:01,407
+Connect this
+
+555
+00:20:01,663 --> 00:20:04,223
+2eather matinee
+
+556
+00:20:04,479 --> 00:20:05,247
+Google assist
+
+557
+00:20:05,759 --> 00:20:07,295
+I was successful with
+
+558
+00:20:07,551 --> 00:20:08,319
+Siri and
+
+559
+00:20:08,575 --> 00:20:09,087
+Home Care
+
+560
+00:20:09,599 --> 00:20:12,927
+So that worked out fine but I don't know why I could not connect this
+
+561
+00:20:13,183 --> 00:20:15,487
+True either my other assistants for my wake up
+
+562
+00:20:15,743 --> 00:20:16,255
+So
+
+563
+00:20:16,767 --> 00:20:21,119
+Not sure this requires the Philips Hue Bridge which is not included so hopefully you already have one
+
+564
+00:20:21,375 --> 00:20:22,911
+If not I can take over about 60 bucks
+
+565
+00:20:23,167 --> 00:20:25,983
+And pre-teen just like any other
+
+566
+00:20:26,239 --> 00:20:28,543
+Set of bulbs you know it's very similar just meant for outdoors
+
+567
+00:20:29,567 --> 00:20:31,359
+And you had a hue Bridge
+
+568
+00:20:33,151 --> 00:20:35,967
+I do have a Hubert sent to me all these are loaner units yes
+
+569
+00:20:36,223 --> 00:20:37,759
+One Challenge
+
+570
+00:20:38,271 --> 00:20:43,903
+That I had during setup I said it was easy and it was but for some reason not the bridge but the bulbs themselves
+
+571
+00:20:44,159 --> 00:20:44,927
+Needed a firmware up
+
+572
+00:20:45,183 --> 00:20:47,999
+Update and it said right in the app this could take up to an hour
+
+573
+00:20:48,255 --> 00:20:51,327
+And I told you say so you're like I haven't felt I'm sorry quick
+
+574
+00:20:51,583 --> 00:20:53,375
+It wasn't quick it was like 30 minutes
+
+575
+00:20:53,887 --> 00:20:59,519
+30 minutes to get that firmware update pushed over I guess because of the zigbee connection
+
+576
+00:21:01,055 --> 00:21:01,823
+Yes signius
+
+577
+00:21:04,383 --> 00:21:07,711
+Is that happened but that is a constant Source actually for me
+
+578
+00:21:07,967 --> 00:21:08,479
+With my shoes
+
+579
+00:21:08,735 --> 00:21:09,503
+I very rarely going
+
+580
+00:21:09,759 --> 00:21:10,271
+NBA app
+
+581
+00:21:10,527 --> 00:21:11,039
+Cuz I have home
+
+582
+00:21:11,295 --> 00:21:12,063
+Factory automated
+
+583
+00:21:12,319 --> 00:21:14,879
+So it is inevitable that when I want to do something
+
+584
+00:21:15,391 --> 00:21:15,903
+Like a little
+
+585
+00:21:16,159 --> 00:21:16,672
+Fancy
+
+586
+00:21:16,928 --> 00:21:17,952
+I turned it the app
+
+587
+00:21:18,208 --> 00:21:19,744
+Inevitably there is an update
+
+588
+00:21:20,000 --> 00:21:20,512
+Waiting for me
+
+589
+00:21:21,024 --> 00:21:22,560
+And that I can't do what I want to do
+
+590
+00:21:22,816 --> 00:21:23,328
+Until I
+
+591
+00:21:23,584 --> 00:21:24,096
+Download
+
+592
+00:21:24,352 --> 00:21:24,864
+The update
+
+593
+00:21:25,120 --> 00:21:28,448
+I kind of wish those were automatic I understand why they might not be
+
+594
+00:21:28,704 --> 00:21:30,752
+Because sometimes when they do an update the lights to flash
+
+595
+00:21:31,264 --> 00:21:36,128
+For example dated at 2 a.m. and I was sleeping in my lights only flash tan I would be
+
+596
+00:21:36,640 --> 00:21:38,432
+Upset so I can get where like
+
+597
+00:21:38,688 --> 00:21:40,992
+As a manufacturer there when do we let the
+
+598
+00:21:41,248 --> 00:21:44,320
+Control passed to the user versus us doing it
+
+599
+00:21:44,832 --> 00:21:45,856
+But it is
+
+600
+00:21:46,368 --> 00:21:47,392
+And that is a long time
+
+601
+00:21:47,648 --> 00:21:49,184
+And speaking of frustrating
+
+602
+00:21:49,440 --> 00:21:50,720
+Let's talk about some frustration
+
+603
+00:21:52,000 --> 00:21:53,536
+So this week I have had
+
+604
+00:21:54,048 --> 00:21:56,096
+Two devices do software update
+
+605
+00:21:56,352 --> 00:21:57,888
+Broken functionality
+
+606
+00:21:59,168 --> 00:21:59,680
+It makes me sad
+
+607
+00:22:00,192 --> 00:22:00,960
+The first is my Tesla
+
+608
+00:22:01,472 --> 00:22:01,984
+I don't know what
+
+609
+00:22:02,496 --> 00:22:04,288
+There is some update and now
+
+610
+00:22:04,544 --> 00:22:05,568
+My garage door won't
+
+611
+00:22:05,824 --> 00:22:06,336
+Open the Homelink
+
+612
+00:22:06,592 --> 00:22:07,872
+Functionality does not work on
+
+613
+00:22:08,384 --> 00:22:09,664
+And I can't reprogram it
+
+614
+00:22:09,920 --> 00:22:10,432
+I can't do anything
+
+615
+00:22:11,200 --> 00:22:11,968
+And so basically
+
+616
+00:22:12,736 --> 00:22:15,808
+This is very much a first world problem probably a one percenter problem
+
+617
+00:22:16,064 --> 00:22:17,600
+Not actually 1-percenter but
+
+618
+00:22:17,856 --> 00:22:18,880
+I get this is not something
+
+619
+00:22:19,136 --> 00:22:19,904
+Is attic about
+
+620
+00:22:20,160 --> 00:22:21,696
+I don't have to use my garage door opener
+
+621
+00:22:21,952 --> 00:22:24,512
+My car does not automatically open the garage door anymore
+
+622
+00:22:26,048 --> 00:22:26,560
+Because
+
+623
+00:22:26,816 --> 00:22:28,096
+Can a lot of money for this car
+
+624
+00:22:29,120 --> 00:22:30,400
+I don't really have a lot of recoil
+
+625
+00:22:30,656 --> 00:22:32,448
+Of course I called the Tesla people in there going to
+
+626
+00:22:32,704 --> 00:22:33,472
+I'll look into it but
+
+627
+00:22:33,728 --> 00:22:37,056
+It's a little frustrating to have something work one day and then the next.
+
+628
+00:22:38,592 --> 00:22:40,640
+Yeah software updates in general it's
+
+629
+00:22:40,896 --> 00:22:47,040
+Hit or miss you know you'd hope things are tested but is every single function tested somebody test the Homelink feature
+
+630
+00:22:47,296 --> 00:22:50,112
+Probably not because it changes are likely not related
+
+631
+00:22:50,368 --> 00:22:52,672
+To it but something broke something is what it sounds like
+
+632
+00:22:53,184 --> 00:22:54,208
+So the other asp
+
+633
+00:22:55,232 --> 00:22:55,744
+Is
+
+634
+00:22:56,000 --> 00:22:58,048
+Frustrating is my June oven
+
+635
+00:22:58,304 --> 00:22:59,840
+Y'all my June oven
+
+636
+00:23:00,096 --> 00:23:01,632
+The device I thought could do no wrong
+
+637
+00:23:02,144 --> 00:23:03,168
+And I still love it but
+
+638
+00:23:03,680 --> 00:23:05,472
+It didn't update to add some
+
+639
+00:23:05,984 --> 00:23:09,568
+Actually really good functionality that's more instructions for people like where to put the
+
+640
+00:23:09,824 --> 00:23:11,360
+The temperature probe when you're trying to cook
+
+641
+00:23:11,616 --> 00:23:12,640
+It shows you a picture
+
+642
+00:23:13,152 --> 00:23:13,664
+Nice
+
+643
+00:23:13,920 --> 00:23:14,944
+Because some people that were like
+
+644
+00:23:15,200 --> 00:23:16,480
+My food isn't done and I'm like
+
+645
+00:23:16,736 --> 00:23:20,576
+Kitchen start at deeply enough in the right spot and they're like no insert the probe
+
+646
+00:23:21,088 --> 00:23:23,136
+So that was good but somehow
+
+647
+00:23:23,648 --> 00:23:24,160
+I don't know how
+
+648
+00:23:24,416 --> 00:23:25,440
+It no longer recognizes
+
+649
+00:23:25,696 --> 00:23:26,208
+Does my toast
+
+650
+00:23:26,464 --> 00:23:27,232
+My brand of bread
+
+651
+00:23:27,488 --> 00:23:29,792
+So it keeps telling me I put my bread in the oven
+
+652
+00:23:30,048 --> 00:23:30,560
+To toast it
+
+653
+00:23:31,072 --> 00:23:31,584
+And it's like
+
+654
+00:23:31,840 --> 00:23:33,376
+Is a strudel or a poptart
+
+655
+00:23:35,936 --> 00:23:40,544
+Is Pop-Tarts and salmon one of the other cuz they're both kind of square
+
+656
+00:23:40,800 --> 00:23:41,312
+Oh yeah yeah
+
+657
+00:23:41,824 --> 00:23:43,872
+So it's not strudel it's not Pop-Tarts
+
+658
+00:23:44,128 --> 00:23:45,664
+It's toast and it used to recognize it
+
+659
+00:23:45,920 --> 00:23:47,712
+It needs to be all cool if you like oh
+
+660
+00:23:47,968 --> 00:23:48,992
+The bread and
+
+661
+00:23:49,248 --> 00:23:50,784
+Four pieces of it do you want me to toast
+
+662
+00:23:51,040 --> 00:23:51,552
+Lately or
+
+663
+00:23:52,320 --> 00:23:53,088
+Medium or whatever
+
+664
+00:23:53,344 --> 00:23:54,368
+But now I have to press
+
+665
+00:23:55,648 --> 00:23:56,160
+Again
+
+666
+00:23:56,416 --> 00:23:57,440
+Not the end of the world
+
+667
+00:23:57,696 --> 00:23:58,208
+Nobody
+
+668
+00:23:58,464 --> 00:24:01,792
+But it's not functioning the way you expect as you are was functioning
+
+669
+00:24:02,048 --> 00:24:02,816
+Totally agree
+
+670
+00:24:03,072 --> 00:24:07,424
+I'm going to take a wild guess here though because I actually had a problem with my June oven as well Reese
+
+671
+00:24:08,960 --> 00:24:12,288
+Mine was not preheating anything you would literally
+
+672
+00:24:12,544 --> 00:24:14,336
+Set a temperature in normally would say
+
+673
+00:24:14,592 --> 00:24:15,104
+Pre-heating
+
+674
+00:24:15,360 --> 00:24:16,640
+But it just wasn't preheating
+
+675
+00:24:16,896 --> 00:24:17,920
+They would just start cooking
+
+676
+00:24:18,432 --> 00:24:21,248
+And that's not good because that's not the right temperature yet
+
+677
+00:24:21,504 --> 00:24:24,576
+The good thing about the June there support people are fantastic
+
+678
+00:24:24,832 --> 00:24:26,368
+Tandoori over there help me out
+
+679
+00:24:27,904 --> 00:24:34,048
+They're all good they're all good but somehow I always get to where the thing is they can actually
+
+680
+00:24:34,304 --> 00:24:35,072
+Delete with your permission
+
+681
+00:24:35,328 --> 00:24:36,608
+Go and look at the logs
+
+682
+00:24:36,864 --> 00:24:37,376
+Of
+
+683
+00:24:37,632 --> 00:24:39,424
+The oven see everything that happened
+
+684
+00:24:39,680 --> 00:24:44,288
+Which is awesome for finding problems and they found a problem with one of my heating elements one time before and
+
+685
+00:24:44,544 --> 00:24:46,080
+Literally just sent me a brand new oven
+
+686
+00:24:46,336 --> 00:24:48,640
+You know they paid to send that and send back the other one
+
+687
+00:24:48,896 --> 00:24:51,200
+So they found that out from the logs in this case
+
+688
+00:24:51,712 --> 00:24:54,528
+The problem that I had anymore wondering if it's related
+
+689
+00:24:54,784 --> 00:24:56,064
+Christine
+
+690
+00:24:56,320 --> 00:24:58,112
+Camera up top of the oven
+
+691
+00:24:58,368 --> 00:25:00,160
+Gets eventually covered with
+
+692
+00:25:00,416 --> 00:25:00,928
+Stuff
+
+693
+00:25:03,488 --> 00:25:09,376
+You have to at least clean the camera off and I'll tell you why because the June my June was functioning as
+
+694
+00:25:09,632 --> 00:25:11,680
+Design it doesn't see any food
+
+695
+00:25:11,936 --> 00:25:13,984
+In there that's how it goes to preheat
+
+696
+00:25:14,496 --> 00:25:19,104
+Because they were struts on the camera said we must be something here I don't know what it is but
+
+697
+00:25:19,360 --> 00:25:20,128
+Let's start cooking
+
+698
+00:25:20,640 --> 00:25:21,152
+So
+
+699
+00:25:21,408 --> 00:25:23,200
+That's what happened to me and sure enough
+
+700
+00:25:23,968 --> 00:25:24,992
+After checking the log
+
+701
+00:25:25,504 --> 00:25:27,808
+We determined that was my issue I clean off the camera
+
+702
+00:25:28,064 --> 00:25:29,344
+And I got my preheat function back
+
+703
+00:25:29,600 --> 00:25:34,720
+100% of the time so it could be the food ID is not quite right because you're not giving it
+
+704
+00:25:34,976 --> 00:25:35,488
+Best data
+
+705
+00:25:36,000 --> 00:25:39,072
+OKC and that's a very analog problem
+
+706
+00:25:39,584 --> 00:25:40,352
+I love it okay
+
+707
+00:25:40,608 --> 00:25:42,912
+D'usse try that and then go down the South
+
+708
+00:25:43,936 --> 00:25:44,960
+And I was thinking
+
+709
+00:25:45,216 --> 00:25:46,240
+Another aspect of
+
+710
+00:25:46,752 --> 00:25:47,520
+Especially with
+
+711
+00:25:47,776 --> 00:25:50,848
+And you'll see because I have the CEO of chefsteps
+
+712
+00:25:51,104 --> 00:25:51,616
+Which makes the
+
+713
+00:25:51,872 --> 00:25:52,640
+Joule sous vide
+
+714
+00:25:52,896 --> 00:25:55,456
+I was thinking about some of their recipes so
+
+715
+00:25:55,712 --> 00:25:56,224
+June
+
+716
+00:25:56,480 --> 00:25:58,272
+Creates these pre-selected
+
+717
+00:25:58,528 --> 00:25:59,296
+Recipes for you so you just
+
+718
+00:25:59,552 --> 00:26:00,832
+Pop salmon in and say
+
+719
+00:26:01,088 --> 00:26:02,880
+Hadist I want it done and it just does it
+
+720
+00:26:03,136 --> 00:26:05,184
+But those things get tweaked over time
+
+721
+00:26:05,696 --> 00:26:07,744
+I was thinking band what if I really liked
+
+722
+00:26:08,000 --> 00:26:11,072
+One way they cooked it and they change that recipe over time and then
+
+723
+00:26:11,328 --> 00:26:13,888
+Suddenly It's just slightly different and maybe not as good
+
+724
+00:26:14,144 --> 00:26:15,424
+And you may not there's not a lot of
+
+725
+00:26:15,680 --> 00:26:16,448
+Transparency
+
+726
+00:26:16,960 --> 00:26:17,472
+So
+
+727
+00:26:17,728 --> 00:26:19,008
+You may just be like huh
+
+728
+00:26:19,264 --> 00:26:19,776
+What's happened here
+
+729
+00:26:20,032 --> 00:26:20,800
+I was thinking about that
+
+730
+00:26:21,056 --> 00:26:22,336
+Because I was thinking about changing
+
+731
+00:26:23,104 --> 00:26:27,200
+The sous-vide and suddenly I was like I kind of have lost all control over how things
+
+732
+00:26:27,456 --> 00:26:27,968
+Thanks might taste
+
+733
+00:26:28,224 --> 00:26:30,784
+But most of it is better so that's an okay tradeoff
+
+734
+00:26:31,040 --> 00:26:31,808
+I don't know these are things
+
+735
+00:26:32,320 --> 00:26:36,416
+Yeah I know you're right it's not transparent because the algorithms get tweet
+
+736
+00:26:36,672 --> 00:26:38,464
+Is all the information from device owners
+
+737
+00:26:38,720 --> 00:26:40,512
+It's crowdsource on the cooking results and such
+
+738
+00:26:40,768 --> 00:26:41,280
+So
+
+739
+00:26:41,536 --> 00:26:44,864
+I guess when we took a stake it tastes the same for everybody as a June oven
+
+740
+00:26:45,120 --> 00:26:45,888
+Cooking a steak
+
+741
+00:26:46,144 --> 00:26:49,216
+And I would love I'm pretty sure I suggested it on the
+
+742
+00:26:49,472 --> 00:26:50,240
+User forum
+
+743
+00:26:50,496 --> 00:26:51,776
+He let me save
+
+744
+00:26:52,032 --> 00:26:53,312
+The cooking method
+
+745
+00:26:53,568 --> 00:26:54,848
+Because that's how I like it
+
+746
+00:26:55,104 --> 00:26:59,968
+Right you did it right but all the sudden it changed and all I wanted the way that used to be so let me save that
+
+747
+00:27:00,224 --> 00:27:00,736
+Yes
+
+748
+00:27:00,992 --> 00:27:02,528
+Basically your own personal rollbacks on
+
+749
+00:27:03,040 --> 00:27:04,064
+I like it
+
+750
+00:27:04,320 --> 00:27:06,624
+Okay which is only useful for
+
+751
+00:27:06,880 --> 00:27:08,672
+Things that are not security-related that's
+
+752
+00:27:08,928 --> 00:27:09,440
+Probably have
+
+753
+00:27:10,720 --> 00:27:11,488
+You got a patch
+
+754
+00:27:12,512 --> 00:27:13,280
+But other than that
+
+755
+00:27:14,048 --> 00:27:14,560
+Okay
+
+756
+00:27:14,816 --> 00:27:16,096
+Well this was our
+
+757
+00:27:16,352 --> 00:27:17,632
+Yes weekly complain session
+
+758
+00:27:17,888 --> 00:27:19,424
+We don't usually complain very much but
+
+759
+00:27:20,192 --> 00:27:21,216
+Monthly
+
+760
+00:27:21,472 --> 00:27:23,264
+So let's go to Riot
+
+761
+00:27:23,520 --> 00:27:26,848
+She podcast listener hotline for a question from you guys
+
+762
+00:27:27,360 --> 00:27:28,384
+The iot podcast
+
+763
+00:27:28,640 --> 00:27:30,688
+Listener hotline is brought to you by Schlage
+
+764
+00:27:30,944 --> 00:27:35,040
+Don't miss your chance to win a Schlage sense smart deadbolt and Wi-Fi at
+
+765
+00:27:35,808 --> 00:27:41,952
+We are giving those away through the end of this month to enter all you have to do is call us at 5 1/2
+
+766
+00:27:42,208 --> 00:27:42,976
+6 to 3
+
+767
+00:27:43,232 --> 00:27:46,048
+7424 and ask us a question
+
+768
+00:27:46,304 --> 00:27:47,328
+And we will
+
+769
+00:27:47,584 --> 00:27:48,352
+Are you into the drawing
+
+770
+00:27:48,608 --> 00:27:53,728
+This month's drawing actually ends Friday at midnight eastern time so Friday August 31st
+
+771
+00:27:53,984 --> 00:27:54,496
+Pikachu
+
+772
+00:27:54,752 --> 00:27:56,032
+Basically a day-and-a-half
+
+773
+00:27:56,288 --> 00:27:57,312
+Tacoma's and remember
+
+774
+00:27:57,568 --> 00:27:58,336
+Smarter homes
+
+775
+00:27:58,592 --> 00:27:59,360
+Starfish leg
+
+776
+00:27:59,872 --> 00:28:04,480
+As of last week we answered a question from the a listener about tracking his
+
+777
+00:28:04,992 --> 00:28:09,088
+And we gave many options but we kind of forgot a really obvious one in
+
+778
+00:28:09,344 --> 00:28:10,624
+A bunch of guys called us on it
+
+779
+00:28:10,880 --> 00:28:11,392
+So thank you
+
+780
+00:28:11,648 --> 00:28:12,928
+We forgot about life
+
+781
+00:28:13,952 --> 00:28:20,096
+Which is a really good app that it is an app that you can put on your phone it also integrates with lots of services like if this
+
+782
+00:28:20,352 --> 00:28:23,168
+Send that it has a deal with BMW has a deal with some
+
+783
+00:28:23,680 --> 00:28:27,776
+Security companies in basically this app lets you see where your kids are
+
+784
+00:28:28,032 --> 00:28:28,800
+Where any of your family
+
+785
+00:28:29,568 --> 00:28:32,640
+And it can be really useful and if you use it with f
+
+786
+00:28:32,896 --> 00:28:36,992
+When your kids get within your house range they can actually give you an alert
+
+787
+00:28:37,248 --> 00:28:40,320
+So David include some nice pictures like a group chat
+
+788
+00:28:40,576 --> 00:28:42,112
+Fear family and such within the app
+
+789
+00:28:42,624 --> 00:28:43,136
+So
+
+790
+00:28:43,392 --> 00:28:44,928
+Guys we didn't talk about that
+
+791
+00:28:45,184 --> 00:28:48,000
+Because it's not a thing but we should have because it does talk to things
+
+792
+00:28:48,512 --> 00:28:49,280
+What is a thing
+
+793
+00:28:49,792 --> 00:28:50,304
+Is the thing on your phone
+
+794
+00:28:51,584 --> 00:28:52,096
+Okay
+
+795
+00:28:52,352 --> 00:28:54,656
+So this week's question comes to us from
+
+796
+00:28:55,168 --> 00:28:55,680
+Donna
+
+797
+00:28:56,192 --> 00:28:56,960
+Hey guys
+
+798
+00:28:57,472 --> 00:28:57,984
+Doncic
+
+799
+00:28:59,776 --> 00:29:01,056
+My question for you is
+
+800
+00:29:01,568 --> 00:29:02,592
+Is it against
+
+801
+00:29:02,848 --> 00:29:03,616
+I'm wondering
+
+802
+00:29:03,872 --> 00:29:05,664
+Is there something you can think of
+
+803
+00:29:05,920 --> 00:29:07,200
+I could either make
+
+804
+00:29:07,456 --> 00:29:08,224
+Or by
+
+805
+00:29:08,736 --> 00:29:09,248
+The budget of
+
+806
+00:29:09,504 --> 00:29:10,528
+Lesson about fish
+
+807
+00:29:10,784 --> 00:29:11,296
+Dollars
+
+808
+00:29:11,552 --> 00:29:12,576
+Love you good gifts
+
+809
+00:29:12,832 --> 00:29:16,160
+For someone who is moving into a college dorm
+
+810
+00:29:17,440 --> 00:29:18,720
+So the money is leaving home
+
+811
+00:29:19,744 --> 00:29:20,768
+Moving into a dorm
+
+812
+00:29:23,584 --> 00:29:26,656
+I'd love to hear your ideas
+
+813
+00:29:27,424 --> 00:29:27,936
+Project
+
+814
+00:29:29,984 --> 00:29:30,496
+Show
+
+815
+00:29:31,520 --> 00:29:37,664
+Oh. Free question and Kevin actually just wrote a story last week about how to out
+
+816
+00:29:37,920 --> 00:29:41,760
+Take your kids to worm with some smart stuff so you should definitely check that out
+
+817
+00:29:42,016 --> 00:29:44,576
+But it sounds like this isn't your kids are just trying to be a thot
+
+818
+00:29:44,832 --> 00:29:45,344
+4% witch
+
+819
+00:29:45,856 --> 00:29:46,368
+Amazing
+
+820
+00:29:46,624 --> 00:29:49,440
+So we try to come up with some equally thoughtful
+
+821
+00:29:49,696 --> 00:29:50,720
+Ideas for you that are
+
+822
+00:29:50,976 --> 00:29:51,744
+Beyond Justice
+
+823
+00:29:53,536 --> 00:29:54,304
+Plant sow
+
+824
+00:29:54,816 --> 00:29:56,096
+Kevin came up with
+
+825
+00:29:56,352 --> 00:29:56,864
+I really don't want
+
+826
+00:29:57,120 --> 00:30:01,472
+Well it's a potentially good one it depends on the person that you're buying for
+
+827
+00:30:01,728 --> 00:30:03,776
+This past weekend I move my
+
+828
+00:30:04,032 --> 00:30:06,592
+Daughter into Kutztown University for her
+
+829
+00:30:06,848 --> 00:30:08,896
+First-year College one thing I noticed
+
+830
+00:30:09,152 --> 00:30:10,176
+A lot of the kids
+
+831
+00:30:10,432 --> 00:30:12,480
+Walking around with water bottles
+
+832
+00:30:12,992 --> 00:30:18,368
+There was a hot day I will say that but you know they weren't carrying a Starbucks cup they were carrying their own water bottle
+
+833
+00:30:18,624 --> 00:30:23,744
+So I thought you know what Stacy has a bunch of water bottles I'll bet you there's an inexpensive one
+
+834
+00:30:24,000 --> 00:30:29,376
+It's kind of connected to help you track your hydration for under fifty bucks and I think you found one
+
+835
+00:30:29,632 --> 00:30:30,912
+It is called the hydrate
+
+836
+00:30:31,168 --> 00:30:31,936
+Hi
+
+837
+00:30:32,192 --> 00:30:33,216
+Dra.
+
+838
+00:30:33,472 --> 00:30:34,240
+Spark
+
+839
+00:30:34,496 --> 00:30:35,264
+To. O
+
+840
+00:30:35,520 --> 00:30:36,800
+There are two of these
+
+841
+00:30:37,312 --> 00:30:38,592
+One is $50
+
+842
+00:30:38,848 --> 00:30:39,616
+But that's right
+
+843
+00:30:39,872 --> 00:30:43,456
+The edge of your price range there so I say go for the $45 one
+
+844
+00:30:43,968 --> 00:30:44,736
+Is Bluetooth
+
+845
+00:30:44,992 --> 00:30:46,272
+It links to an app
+
+846
+00:30:46,528 --> 00:30:47,040
+And it
+
+847
+00:30:47,296 --> 00:30:47,808
+The Lowe's
+
+848
+00:30:48,320 --> 00:30:49,344
+When you need to drink more
+
+849
+00:30:49,600 --> 00:30:53,184
+So it starts blowing and it also integrates with Fitbit Apple watch
+
+850
+00:30:53,440 --> 00:30:53,952
+Other things
+
+851
+00:30:54,464 --> 00:30:56,512
+So basically as you drink
+
+852
+00:30:56,768 --> 00:31:00,352
+That water's going to get transferred into your Fitbit data and
+
+853
+00:31:00,608 --> 00:31:02,656
+As you need to drink it'll start
+
+854
+00:31:02,912 --> 00:31:09,056
+Chloe which actually might be kind of disruptive so think about it in a darkened classroom or movie theater you may want to turn that glow
+
+855
+00:31:09,312 --> 00:31:10,336
+Low functionality off
+
+856
+00:31:10,848 --> 00:31:11,616
+Oh I wouldn't
+
+857
+00:31:16,736 --> 00:31:20,320
+I got a battery-powered Hue Spotlight I'm taking with me to the movies
+
+858
+00:31:21,344 --> 00:31:26,208
+So that was one option another I was looking for a bluetooth light bulb
+
+859
+00:31:26,720 --> 00:31:27,744
+That had a remote
+
+860
+00:31:28,256 --> 00:31:30,816
+Because I thought it'd be nice to have a
+
+861
+00:31:31,072 --> 00:31:31,584
+Light bulb
+
+862
+00:31:31,840 --> 00:31:33,888
+That you could put in something like a lamp
+
+863
+00:31:34,144 --> 00:31:35,424
+And be able to turn it off
+
+864
+00:31:35,680 --> 00:31:36,960
+Even if the switch is across the
+
+865
+00:31:37,216 --> 00:31:37,984
+The real or
+
+866
+00:31:38,496 --> 00:31:39,008
+At night
+
+867
+00:31:39,264 --> 00:31:41,056
+But I couldn't find a Bluetooth one that had a remote
+
+868
+00:31:41,312 --> 00:31:41,824
+So if anyone else
+
+869
+00:31:42,080 --> 00:31:42,592
+Found one
+
+870
+00:31:42,848 --> 00:31:46,176
+Let me know I did find some on Amazon but I can't say that
+
+871
+00:31:46,432 --> 00:31:50,528
+Use them or heard of anybody that uses them and almost all of them they did have remotes
+
+872
+00:31:50,784 --> 00:31:54,368
+But almost all of them also had a speaker built in which actually might be nicer
+
+873
+00:31:54,624 --> 00:31:55,392
+Tazewell for playing
+
+874
+00:31:55,648 --> 00:31:56,160
+Some music
+
+875
+00:31:56,416 --> 00:31:58,720
+But I cannot speak to the quality of the morning like that
+
+876
+00:32:00,512 --> 00:32:01,536
+So I found
+
+877
+00:32:01,792 --> 00:32:02,560
+I recommend
+
+878
+00:32:02,816 --> 00:32:03,328
+The
+
+879
+00:32:03,584 --> 00:32:04,352
+Ikea
+
+880
+00:32:04,608 --> 00:32:05,376
+Tradfri
+
+881
+00:32:05,632 --> 00:32:06,656
+For $50 you can
+
+882
+00:32:06,912 --> 00:32:07,936
+Barely get away with it
+
+883
+00:32:08,192 --> 00:32:09,984
+So there is a dimmer and a bulb
+
+884
+00:32:10,240 --> 00:32:12,288
+And then you have to buy the hub for $30
+
+885
+00:32:12,800 --> 00:32:14,592
+If that appeals to you
+
+886
+00:32:14,848 --> 00:32:16,896
+It's going to have a Wi-Fi component I was trying to avoid
+
+887
+00:32:18,176 --> 00:32:19,200
+But I couldn't
+
+888
+00:32:19,456 --> 00:32:25,600
+So those are the two things that we thought might be a good gift for someone going away to college that are under $50
+
+889
+00:32:26,112 --> 00:32:29,184
+We also found one other thing that you may love or hate
+
+890
+00:32:29,440 --> 00:32:30,208
+T Phillips
+
+891
+00:32:30,464 --> 00:32:32,512
+Makes a wake up light alarm clock
+
+892
+00:32:32,768 --> 00:32:33,280
+With a sunrise
+
+893
+00:32:34,048 --> 00:32:35,328
+It also has a clock in there
+
+894
+00:32:35,584 --> 00:32:36,352
+So this is
+
+895
+00:32:36,608 --> 00:32:39,424
+About 50 bucks on Amazon there are more expensive models
+
+896
+00:32:40,192 --> 00:32:44,800
+Colors that basically you set your alarm and it can make noise but it doesn't have to
+
+897
+00:32:45,056 --> 00:32:46,080
+It can also
+
+898
+00:32:46,336 --> 00:32:47,360
+That is that it would
+
+899
+00:32:47,616 --> 00:32:48,128
+Light up
+
+900
+00:32:48,640 --> 00:32:50,944
+Instead so this might be good if you have a roommate
+
+901
+00:32:51,200 --> 00:32:51,712
+That you know
+
+902
+00:32:52,224 --> 00:32:52,992
+Doesn't like
+
+903
+00:32:53,248 --> 00:32:54,784
+To wake up as early as you do
+
+904
+00:32:55,040 --> 00:32:58,112
+And it might also be a nice way for someone who may not be used
+
+905
+00:32:58,368 --> 00:33:00,160
+Used to getting up in the morning on their own
+
+906
+00:33:00,416 --> 00:33:01,184
+Kind of
+
+907
+00:33:01,440 --> 00:33:05,280
+Set up an alarm that's loud and also a force function with the lady
+
+908
+00:33:05,536 --> 00:33:06,048
+I don't know
+
+909
+00:33:06,560 --> 00:33:07,328
+There's another ID
+
+910
+00:33:08,352 --> 00:33:09,632
+Okay Donna I hope that helps
+
+911
+00:33:09,888 --> 00:33:10,400
+End
+
+912
+00:33:10,912 --> 00:33:11,936
+Guys if you guys think of any
+
+913
+00:33:12,960 --> 00:33:13,472
+What is that
+
+914
+00:33:13,728 --> 00:33:14,240
+All right
+
+915
+00:33:14,752 --> 00:33:15,520
+I think it is
+
+916
+00:33:15,776 --> 00:33:17,312
+Now time for us to
+
+917
+00:33:17,568 --> 00:33:18,592
+Take a break for a bit
+
+918
+00:33:18,848 --> 00:33:22,432
+Message from our sponsor and stick around because after that we are going to be talking to
+
+919
+00:33:22,688 --> 00:33:25,248
+To Chris Young the CEO of chefsteps
+
+920
+00:33:25,504 --> 00:33:29,088
+About why he didn't put it in her face on the Joule sous vide cooker
+
+921
+00:33:29,344 --> 00:33:30,880
+We're going to tell you about what the heck sous vide
+
+922
+00:33:31,136 --> 00:33:31,904
+Actually is
+
+923
+00:33:32,160 --> 00:33:32,672
+And
+
+924
+00:33:32,928 --> 00:33:34,464
+His decision to
+
+925
+00:33:34,720 --> 00:33:36,768
+Go it alone as opposed to licensing
+
+926
+00:33:37,024 --> 00:33:38,304
+With large Appliance vendor
+
+927
+00:33:38,816 --> 00:33:39,328
+Aldis
+
+928
+00:33:39,584 --> 00:33:40,864
+And more in a moment
+
+929
+00:33:41,888 --> 00:33:48,032
+Hey everyone we are taking a break from this week's Internet of Things podcast for a message from our sponsor this week
+
+930
+00:33:48,288 --> 00:33:48,800
+Cancer is a
+
+931
+00:33:49,056 --> 00:33:49,568
+Pharaoh
+
+932
+00:33:49,824 --> 00:33:50,848
+And I have Joe Britt
+
+933
+00:33:51,104 --> 00:33:52,384
+CEO of a feral here
+
+934
+00:33:53,664 --> 00:33:55,968
+To get started why don't you describe a pharaoh for
+
+935
+00:33:56,736 --> 00:33:59,040
+A pharaoh is a sensor to Cloud IO
+
+936
+00:33:59,296 --> 00:33:59,808
+Party platform
+
+937
+00:34:00,064 --> 00:34:02,112
+We really take a lot of pride in
+
+938
+00:34:02,368 --> 00:34:03,904
+The fact that it really just
+
+939
+00:34:04,160 --> 00:34:10,048
+Works our customers tell us that it's the best choice for them for a fantastic end-user experience
+
+940
+00:34:10,560 --> 00:34:12,096
+And great developer productivity
+
+941
+00:34:12,352 --> 00:34:13,632
+I think a lot of this comes
+
+942
+00:34:13,888 --> 00:34:17,984
+From the fact that a bunch of acid of pharaoh came from places like apple nest
+
+943
+00:34:18,240 --> 00:34:24,384
+Google Android or Netflix and we really wanted to bring the best of engineering and design disciplines from the
+
+944
+00:34:24,640 --> 00:34:25,152
+Those previous
+
+945
+00:34:25,408 --> 00:34:26,944
+Experiences into iot
+
+946
+00:34:27,200 --> 00:34:32,576
+We've been talking for the last few weeks about a pharaoh and how some of its customers such as Kenmore and D-Link
+
+947
+00:34:32,832 --> 00:34:35,136
+Camping using your software to cut 80%
+
+948
+00:34:35,392 --> 00:34:36,416
+Off their time-to-market
+
+949
+00:34:36,672 --> 00:34:39,488
+And giving them the ability to reuse 90%
+
+950
+00:34:39,744 --> 00:34:40,256
+Of their works
+
+951
+00:34:40,512 --> 00:34:41,024
+Someone project
+
+952
+00:34:41,792 --> 00:34:43,072
+This is really exceptional
+
+953
+00:34:43,328 --> 00:34:46,656
+So let's focus today on what you guys do with the
+
+954
+00:34:46,912 --> 00:34:47,936
+Back end of
+
+955
+00:34:48,192 --> 00:34:48,704
+Iot system
+
+956
+00:34:49,216 --> 00:34:52,288
+You can really think of Artie and three big parts
+
+957
+00:34:52,800 --> 00:34:54,336
+There's first the supply chain
+
+958
+00:34:54,592 --> 00:34:55,872
+Which is all about the sea
+
+959
+00:34:56,128 --> 00:34:57,408
+Security and efficiency
+
+960
+00:34:57,664 --> 00:34:58,176
+Actually
+
+961
+00:34:58,432 --> 00:34:58,944
+Building a
+
+962
+00:34:59,456 --> 00:35:00,480
+Then you've got the
+
+963
+00:35:00,736 --> 00:35:01,248
+Device in
+
+964
+00:35:01,504 --> 00:35:06,368
+Which has to do with the security and Wade that particular device communicates
+
+965
+00:35:06,624 --> 00:35:07,904
+But then we reach the part that you
+
+966
+00:35:08,672 --> 00:35:09,184
+The back
+
+967
+00:35:09,696 --> 00:35:10,720
+And the backend device
+
+968
+00:35:11,488 --> 00:35:13,024
+Is really the engine room of
+
+969
+00:35:13,280 --> 00:35:14,816
+The system and it's all about how
+
+970
+00:35:15,072 --> 00:35:15,584
+Responsive
+
+971
+00:35:16,096 --> 00:35:19,680
+Scalable and how resilient the system is insecurity has to undergo
+
+972
+00:35:19,936 --> 00:35:20,448
+And all of that
+
+973
+00:35:20,704 --> 00:35:22,752
+Many end-user complaints that we
+
+974
+00:35:23,008 --> 00:35:24,800
+We heard can ultimately be traced
+
+975
+00:35:25,056 --> 00:35:28,640
+2 problems with the back end the back end is the part that guides the
+
+976
+00:35:28,896 --> 00:35:35,040
+Policy and business logic and is triggered by different events that translate ultimately into the vital control
+
+977
+00:35:35,296 --> 00:35:36,832
+And asset data for an application
+
+978
+00:35:37,088 --> 00:35:38,624
+So what happens to device
+
+979
+00:35:38,880 --> 00:35:39,648
+Stata when it arrives
+
+980
+00:35:40,416 --> 00:35:41,184
+This is critical
+
+981
+00:35:41,440 --> 00:35:43,488
+The data has to be processed instantly
+
+982
+00:35:43,744 --> 00:35:46,816
+So the end-user feels like they're just using
+
+983
+00:35:47,072 --> 00:35:51,936
+Normal or traditional remote control and he can't be something that takes seconds and seconds to respond
+
+984
+00:35:52,192 --> 00:35:53,728
+So we've got to take into account
+
+985
+00:35:53,984 --> 00:35:54,752
+Whole round trip
+
+986
+00:35:55,008 --> 00:35:55,520
+The traffic
+
+987
+00:35:55,776 --> 00:35:57,056
+Plus acting on whatever the
+
+988
+00:35:57,312 --> 00:35:59,616
+Particular command was and implementing whatever the
+
+989
+00:35:59,872 --> 00:36:01,920
+The policies are there relevant to that command
+
+990
+00:36:02,176 --> 00:36:03,712
+We have to squeeze all of this down in
+
+991
+00:36:03,968 --> 00:36:04,480
+2 millisecond
+
+992
+00:36:04,992 --> 00:36:05,760
+This demands
+
+993
+00:36:06,016 --> 00:36:07,040
+I truly elasticum
+
+994
+00:36:07,296 --> 00:36:09,856
+Implementation that is extremely optimized
+
+995
+00:36:10,112 --> 00:36:11,136
+In terms of processing
+
+996
+00:36:11,392 --> 00:36:11,904
+Achieve that
+
+997
+00:36:12,160 --> 00:36:13,952
+The data also has
+
+998
+00:36:14,208 --> 00:36:15,232
+Be structured properly
+
+999
+00:36:15,488 --> 00:36:19,328
+So that once we retrieve it we can easily feed it into different Analytics
+
+1000
+00:36:19,584 --> 00:36:20,608
+Machine learning tool
+
+1001
+00:36:20,864 --> 00:36:22,656
+And then we have to scale all of that
+
+1002
+00:36:22,912 --> 00:36:23,680
+Up to thousands
+
+1003
+00:36:23,936 --> 00:36:24,960
+Millions of devices
+
+1004
+00:36:25,216 --> 00:36:29,824
+Without sacrificing any of that responsiveness or security then on top of the whole thing
+
+1005
+00:36:30,336 --> 00:36:33,920
+We have to make it super reliable and that means High availability
+
+1006
+00:36:34,176 --> 00:36:36,480
+Multi-zone multi cloud implementations
+
+1007
+00:36:36,992 --> 00:36:40,064
+That sounds like a lot so where can people go to find out more
+
+1008
+00:36:40,576 --> 00:36:41,088
+In about a pharaoh
+
+1009
+00:36:41,344 --> 00:36:42,112
+The best place
+
+1010
+00:36:42,368 --> 00:36:44,416
+To start is a pharaoh.
+
+1011
+00:36:44,672 --> 00:36:45,696
+Slash go big
+
+1012
+00:36:45,952 --> 00:36:46,464
+That's
+
+1013
+00:36:46,720 --> 00:36:47,744
+AF yarrow
+
+1014
+00:36:48,000 --> 00:36:48,768
+Dot IO
+
+1015
+00:36:49,280 --> 00:36:50,560
+/ go
+
+1016
+00:36:50,816 --> 00:36:51,584
+Big
+
+1017
+00:36:51,840 --> 00:36:52,864
+And if you're a developer
+
+1018
+00:36:53,120 --> 00:36:56,704
+Please also check out developer. Afero. IO
+
+1019
+00:37:05,152 --> 00:37:09,760
+Hey everyone welcome back to the Internet of Things podcast this is your host Stacey Higginbotham
+
+1020
+00:37:10,016 --> 00:37:10,784
+And today's guest
+
+1021
+00:37:11,040 --> 00:37:11,552
+Is
+
+1022
+00:37:12,320 --> 00:37:13,088
+Young who is this
+
+1023
+00:37:13,344 --> 00:37:14,880
+CEO and co-founder at
+
+1024
+00:37:15,136 --> 00:37:15,648
+Chefsteps
+
+1025
+00:37:16,416 --> 00:37:17,184
+Hi Chris how are you doing
+
+1026
+00:37:17,696 --> 00:37:18,208
+I'm doing great
+
+1027
+00:37:18,976 --> 00:37:19,744
+You're having me on today
+
+1028
+00:37:20,000 --> 00:37:20,768
+All right
+
+1029
+00:37:21,024 --> 00:37:22,560
+I am super excited because
+
+1030
+00:37:22,816 --> 00:37:23,328
+You guys
+
+1031
+00:37:23,584 --> 00:37:25,120
+Not only are you a recipe site
+
+1032
+00:37:25,376 --> 00:37:26,400
+But you are also
+
+1033
+00:37:26,656 --> 00:37:28,704
+The maker of the Joule sous vide
+
+1034
+00:37:28,960 --> 00:37:31,008
+Booker and I've been playing with us for a while
+
+1035
+00:37:31,520 --> 00:37:35,360
+Okay let's kick it off with why you guys decided to basic
+
+1036
+00:37:35,616 --> 00:37:37,152
+Invent a
+
+1037
+00:37:37,408 --> 00:37:38,432
+Internet connected
+
+1038
+00:37:38,688 --> 00:37:39,200
+Cooking device
+
+1039
+00:37:40,224 --> 00:37:41,504
+Sure it's not the most obvious
+
+1040
+00:37:42,016 --> 00:37:45,344
+Project that supposedly we didn't start as a Huntington recipe
+
+1041
+00:37:45,600 --> 00:37:49,184
+Late 2011 early 2012 and we had a real Folk
+
+1042
+00:37:49,952 --> 00:37:50,976
+Modernist approaches
+
+1043
+00:37:51,232 --> 00:37:53,024
+Cooking because I had been too cooperative.
+
+1044
+00:37:54,048 --> 00:37:54,560
+We started this
+
+1045
+00:37:55,584 --> 00:37:56,864
+Videos up on YouTube
+
+1046
+00:37:57,376 --> 00:37:58,400
+Cookie recipes
+
+1047
+00:37:58,656 --> 00:37:59,424
+Stuff.com
+
+1048
+00:37:59,680 --> 00:38:00,960
+And the real point was to see if anyone
+
+1049
+00:38:01,472 --> 00:38:03,008
+Interested if anybody you know
+
+1050
+00:38:03,520 --> 00:38:04,032
+Would follow what
+
+1051
+00:38:04,544 --> 00:38:05,824
+And that was about as far as
+
+1052
+00:38:07,360 --> 00:38:10,176
+The really good news was it turned out there was a huge Global audience
+
+1053
+00:38:10,432 --> 00:38:11,456
+Dewberry very quickly
+
+1054
+00:38:11,712 --> 00:38:12,224
+And a lot of
+
+1055
+00:38:13,248 --> 00:38:15,296
+Custom content videos
+
+1056
+00:38:15,552 --> 00:38:17,088
+The information we were providing
+
+1057
+00:38:17,344 --> 00:38:18,368
+And there was a real
+
+1058
+00:38:19,136 --> 00:38:20,672
+That we were clearly serving
+
+1059
+00:38:20,928 --> 00:38:24,512
+Okay before we go any further we should probably tell everybody what sous vide
+
+1060
+00:38:25,792 --> 00:38:29,632
+Chevy cooking is I think about it is just the way of adding a measured amount of
+
+1061
+00:38:30,144 --> 00:38:31,936
+A recipe for that food is never older cook
+
+1062
+00:38:32,192 --> 00:38:32,704
+Or under
+
+1063
+00:38:33,216 --> 00:38:35,776
+And it's a technique that used and many of the best restaurants
+
+1064
+00:38:36,032 --> 00:38:38,592
+Around the world and even many restaurants does it surprise you
+
+1065
+00:38:43,200 --> 00:38:47,808
+Usually in some sort of flexible food grade plastic bag of your vacuum sealed bags
+
+1066
+00:38:48,064 --> 00:38:50,624
+FoodSaver you didn't put the food into a water bath
+
+1067
+00:38:51,136 --> 00:38:51,904
+You have some device
+
+1068
+00:38:52,160 --> 00:38:54,464
+Marquesa Jewel suvee cooker
+
+1069
+00:38:55,488 --> 00:38:56,512
+Temperature for the doneness
+
+1070
+00:38:56,768 --> 00:38:57,536
+You want so if
+
+1071
+00:38:57,792 --> 00:39:00,352
+Do you want your steak medium rare you might put it in the water
+
+1072
+00:39:00,608 --> 00:39:01,376
+The water might heat up
+
+1073
+00:39:01,632 --> 00:39:07,776
+Tuesday 122 degrees 124 degrees Fahrenheit
+
+1074
+00:39:08,032 --> 00:39:11,360
+The water and when you're ready to eat you can take the food out and give it a quick
+
+1075
+00:39:11,616 --> 00:39:15,968
+Beer and you're going to have a steak this better than I would say probably 95% of all dressed
+
+1076
+00:39:16,480 --> 00:39:16,992
+You would go to
+
+1077
+00:39:17,248 --> 00:39:21,600
+Because the food is actually going to have no risk of being overcooked and it's relatively simple
+
+1078
+00:39:21,856 --> 00:39:22,880
+Okay
+
+1079
+00:39:23,136 --> 00:39:24,416
+So from the website
+
+1080
+00:39:24,672 --> 00:39:27,488
+You decided that people are interested especially in sous vide
+
+1081
+00:39:29,536 --> 00:39:31,328
+Yeah so we decided ultimately
+
+1082
+00:39:31,584 --> 00:39:32,864
+We recognize it was a real
+
+1083
+00:39:33,120 --> 00:39:33,888
+I'll need to have a better p
+
+1084
+00:39:34,144 --> 00:39:37,216
+Piece of sushi Hardware that we could see that no matter how much cost
+
+1085
+00:39:38,240 --> 00:39:40,288
+After we put in education
+
+1086
+00:39:41,312 --> 00:39:44,384
+Should we give people the most accurate thermostat
+
+1087
+00:39:44,640 --> 00:39:46,176
+Ever had in their kitchen before
+
+1088
+00:39:46,432 --> 00:39:46,944
+The problem is
+
+1089
+00:39:47,200 --> 00:39:47,712
+Nobody else
+
+1090
+00:39:48,224 --> 00:39:50,016
+Set it to 2 degrees difference
+
+1091
+00:39:50,272 --> 00:39:52,064
+A pretty big difference in the final outcome
+
+1092
+00:39:53,600 --> 00:39:54,368
+Or that chicken
+
+1093
+00:39:54,624 --> 00:39:56,672
+And you know what we saw was everything
+
+1094
+00:39:56,928 --> 00:39:58,720
+The time was a direct descendant of Laboratory
+
+1095
+00:39:58,976 --> 00:40:00,512
+Gadget
+
+1096
+00:40:00,768 --> 00:40:01,536
+Intimidating
+
+1097
+00:40:01,792 --> 00:40:02,816
+And we need the benefits
+
+1098
+00:40:03,072 --> 00:40:04,096
+Tremendous
+
+1099
+00:40:04,352 --> 00:40:05,120
+Professional
+
+1100
+00:40:05,632 --> 00:40:08,192
+Habits to be tremendously helpful to Homefront
+
+1101
+00:40:08,448 --> 00:40:09,472
+But you're going to need
+
+1102
+00:40:09,728 --> 00:40:12,032
+To have a piece of Hardware it was designs in the ground up
+
+1103
+00:40:12,288 --> 00:40:13,056
+Be more helpful to home
+
+1104
+00:40:14,080 --> 00:40:14,848
+Not forcing
+
+1105
+00:40:17,920 --> 00:40:21,504
+We did spend some time talking to other Hardware manufacturers about this because
+
+1106
+00:40:21,760 --> 00:40:24,064
+Our eyes were recently wide open about whatever
+
+1107
+00:40:25,088 --> 00:40:26,112
+Make a hardware device
+
+1108
+00:40:26,368 --> 00:40:28,416
+Ourselves but after spending several months
+
+1109
+00:40:29,184 --> 00:40:34,304
+Leading Hardware manufacturers became convinced that they didn't see the same vision that we did for what was
+
+1110
+00:40:34,560 --> 00:40:35,072
+Possible
+
+1111
+00:40:35,328 --> 00:40:37,632
+In terms of creating internet-connected devices
+
+1112
+00:40:37,888 --> 00:40:39,168
+It would actually be there till
+
+1113
+00:40:40,192 --> 00:40:41,728
+Help them get the most out of their tools
+
+1114
+00:40:46,592 --> 00:40:47,872
+We're going to make the device
+
+1115
+00:40:48,128 --> 00:40:51,712
+We safe to be an actual cooking tool that's really going to empower
+
+1116
+00:40:52,992 --> 00:40:54,528
+That was supposed to be goal and it was
+
+1117
+00:40:54,784 --> 00:40:57,088
+Still pretty naive about making
+
+1118
+00:41:00,160 --> 00:41:00,928
+You opened it right up
+
+1119
+00:41:01,184 --> 00:41:01,696
+Let's talk about
+
+1120
+00:41:03,232 --> 00:41:05,792
+One of the things that we thought was important as we didn't want it to be a gadget
+
+1121
+00:41:06,048 --> 00:41:07,072
+We wanted it to be
+
+1122
+00:41:07,584 --> 00:41:08,864
+What is a professional chef
+
+1123
+00:41:11,424 --> 00:41:12,960
+The knife for example
+
+1124
+00:41:13,216 --> 00:41:14,240
+Play the tool I reline a tie
+
+1125
+00:41:14,496 --> 00:41:15,776
+Use it all the time it is
+
+1126
+00:41:16,032 --> 00:41:16,800
+Central Perk
+
+1127
+00:41:17,056 --> 00:41:17,824
+Do my job
+
+1128
+00:41:18,080 --> 00:41:19,104
+You might look at a bread maker
+
+1129
+00:41:22,688 --> 00:41:24,992
+Who bought one maybe comes out once a year and then it goes to
+
+1130
+00:41:25,248 --> 00:41:26,528
+The back of the cupboard and never get
+
+1131
+00:41:26,784 --> 00:41:27,296
+It again
+
+1132
+00:41:27,552 --> 00:41:28,576
+We didn't want to be
+
+1133
+00:41:28,832 --> 00:41:30,112
+All in the back
+
+1134
+00:41:30,624 --> 00:41:31,136
+We knew how beautiful
+
+1135
+00:41:31,648 --> 00:41:32,416
+Holiday today
+
+1136
+00:41:32,672 --> 00:41:33,696
+Understand
+
+1137
+00:41:33,952 --> 00:41:34,976
+People's Kitchen
+
+1138
+00:41:35,232 --> 00:41:36,000
+And you know
+
+1139
+00:41:36,256 --> 00:41:38,816
+Countertop real estate or top-drawer real estate
+
+1140
+00:41:39,328 --> 00:41:40,352
+Really really valuable
+
+1141
+00:41:40,608 --> 00:41:41,888
+And things need to be compact
+
+1142
+00:41:43,680 --> 00:41:45,216
+CB devices wait about 9 or 10
+
+1143
+00:41:45,472 --> 00:41:47,520
+Towns they were relatively enormous
+
+1144
+00:41:48,544 --> 00:41:49,568
+Reskin Laboratory
+
+1145
+00:41:49,824 --> 00:41:50,592
+We set out with the
+
+1146
+00:41:51,616 --> 00:41:55,199
+Small enough that it could fit in that top drawer easy to grab
+
+1147
+00:41:55,455 --> 00:41:56,991
+Quick to use on a Wednesday night
+
+1148
+00:41:57,247 --> 00:41:58,271
+But one of the challenges
+
+1149
+00:41:58,527 --> 00:41:59,551
+Sous vide is your heating water
+
+1150
+00:42:00,063 --> 00:42:02,623
+And anybody who has a background in physics
+
+1151
+00:42:02,879 --> 00:42:04,415
+Tremendous amount of heat energy
+
+1152
+00:42:04,671 --> 00:42:05,183
+Teresa Teng
+
+1153
+00:42:07,743 --> 00:42:08,767
+The power of a light bulb
+
+1154
+00:42:09,023 --> 00:42:09,791
+We're dealing with you
+
+1155
+00:42:10,047 --> 00:42:11,071
+1100 Watts
+
+1156
+00:42:11,327 --> 00:42:11,839
+Power Wiki
+
+1157
+00:42:12,351 --> 00:42:14,911
+Maybe about 80% of what you can even take out of an outlet
+
+1158
+00:42:16,959 --> 00:42:17,983
+Please check the device down.
+
+1159
+00:42:18,495 --> 00:42:23,615
+Small enough to fit into a countertop door needs to be about an inch and 3/4 deep
+
+1160
+00:42:23,871 --> 00:42:24,383
+You're sinking
+
+1161
+00:42:24,639 --> 00:42:25,407
+Huge amount of power
+
+1162
+00:42:25,663 --> 00:42:26,175
+Smaller
+
+1163
+00:42:26,431 --> 00:42:30,271
+Smaller surface area
+
+1164
+00:42:31,551 --> 00:42:33,087
+Tiny heater core
+
+1165
+00:42:33,343 --> 00:42:34,367
+80% of the water
+
+1166
+00:42:34,879 --> 00:42:36,159
+A nuclear reactor core
+
+1167
+00:42:36,415 --> 00:42:37,951
+Actually pull that off
+
+1168
+00:42:38,207 --> 00:42:38,975
+We had to invent some
+
+1169
+00:42:39,231 --> 00:42:40,767
+Proprietary New Heating technology
+
+1170
+00:42:41,023 --> 00:42:44,607
+Even make that possible so these are in retrospect there was a lot of goo
+
+1171
+00:42:44,863 --> 00:42:46,911
+We thought we could do that those are just some of the engineer
+
+1172
+00:42:47,935 --> 00:42:49,983
+Let you know we wrangled with
+
+1173
+00:42:50,239 --> 00:42:51,263
+Trying to figure out how do you be a hardware
+
+1174
+00:42:52,543 --> 00:42:54,591
+Actually want to tell people I'm cooking with nuclear fission
+
+1175
+00:42:54,847 --> 00:42:55,359
+I know
+
+1176
+00:42:55,615 --> 00:42:56,127
+I'm right
+
+1177
+00:42:56,383 --> 00:42:59,711
+Let's talk about one of the controversial decision
+
+1178
+00:43:00,223 --> 00:43:00,735
+You guys made
+
+1179
+00:43:00,991 --> 00:43:06,879
+Because I'll be honest when I pulled out the jewel I was like hey there's just this one button on the top and
+
+1180
+00:43:07,135 --> 00:43:10,719
+I don't actually I'm not a huge lover of screen to my smartphone to
+
+1181
+00:43:11,231 --> 00:43:13,023
+Pest control things so I kind of looked askance
+
+1182
+00:43:13,279 --> 00:43:13,791
+The fact that this
+
+1183
+00:43:14,559 --> 00:43:18,399
+$180 or $200 device that had no interface without
+
+1184
+00:43:19,423 --> 00:43:20,447
+I will say that was a contra
+
+1185
+00:43:21,471 --> 00:43:22,239
+Botanica
+
+1186
+00:43:22,495 --> 00:43:23,519
+Wasn't taken light
+
+1187
+00:43:25,311 --> 00:43:26,079
+It was polarized
+
+1188
+00:43:26,591 --> 00:43:28,639
+In fact I think when we first launched I remember reading
+
+1189
+00:43:28,895 --> 00:43:30,175
+Comments on the subreddit
+
+1190
+00:43:30,431 --> 00:43:30,943
+Sous vide
+
+1191
+00:43:32,479 --> 00:43:33,759
+This decision should be dragging the
+
+1192
+00:43:34,271 --> 00:43:35,039
+Shotwell
+
+1193
+00:43:35,295 --> 00:43:36,319
+Whoever that person was
+
+1194
+00:43:36,831 --> 00:43:37,855
+And the person you want to go out
+
+1195
+00:43:38,367 --> 00:43:39,135
+The reason for that
+
+1196
+00:43:40,927 --> 00:43:41,951
+We did as good a job as we
+
+1197
+00:43:42,207 --> 00:43:42,975
+Lights up.
+
+1198
+00:43:43,231 --> 00:43:45,279
+Explaining your customers why we met
+
+1199
+00:43:45,791 --> 00:43:47,583
+This goes back to
+
+1200
+00:43:48,863 --> 00:43:50,655
+Werecognizeyou
+
+1201
+00:43:51,423 --> 00:43:51,935
+Keep things up
+
+1202
+00:43:52,447 --> 00:43:56,287
+Luke heat energy around the real opportunity was to
+
+1203
+00:43:56,543 --> 00:43:57,055
+Devices
+
+1204
+00:43:57,311 --> 00:43:58,591
+Because if you think about it
+
+1205
+00:43:58,847 --> 00:44:00,127
+Every technology we have
+
+1206
+00:44:00,639 --> 00:44:01,663
+The average home kitchen
+
+1207
+00:44:01,919 --> 00:44:03,199
+Is actually recognized
+
+1208
+00:44:04,479 --> 00:44:07,295
+It hasn't changed that much
+
+1209
+00:44:07,551 --> 00:44:11,647
+And all of them require you to translate what you want I want
+
+1210
+00:44:11,903 --> 00:44:12,415
+My check in Taiwan
+
+1211
+00:44:13,951 --> 00:44:14,719
+Christmas Canon
+
+1212
+00:44:14,975 --> 00:44:18,047
+I want it done at 7:30 you have to translate that into
+
+1213
+00:44:18,303 --> 00:44:19,839
+Engineer parameters like should the oven be
+
+1214
+00:44:22,143 --> 00:44:23,167
+How long will it
+
+1215
+00:44:23,679 --> 00:44:25,215
+This is where a lot of
+
+1216
+00:44:25,471 --> 00:44:28,031
+Fusion comes up
+
+1217
+00:44:28,543 --> 00:44:29,823
+Opportunity
+
+1218
+00:44:30,335 --> 00:44:32,127
+What's the actually create a way of interacting
+
+1219
+00:44:32,383 --> 00:44:34,431
+What devices does a fundamentally more human weigh
+
+1220
+00:44:34,687 --> 00:44:36,223
+You could express your crap
+
+1221
+00:44:36,479 --> 00:44:39,039
+Princes of Hell won't mistake to look like this I want to eat it
+
+1222
+00:44:39,295 --> 00:44:43,903
+This time and you didn't have to translate that necessarily into knowing that that means
+
+1223
+00:44:44,159 --> 00:44:45,695
+Probably want your water Bassett
+
+1224
+00:44:46,207 --> 00:44:48,767
+28 degrees Fahrenheit
+
+1225
+00:44:49,279 --> 00:44:52,351
+Putting a manual temperature
+
+1226
+00:44:52,607 --> 00:44:53,631
+Or you can just look at the image
+
+1227
+00:44:54,143 --> 00:44:57,471
+Which of the following human vocabulary
+
+1228
+00:44:57,727 --> 00:44:58,239
+The one I want
+
+1229
+00:44:58,495 --> 00:44:59,519
+The texture of that short
+
+1230
+00:44:59,775 --> 00:45:00,799
+Rib that looks right to me
+
+1231
+00:45:01,055 --> 00:45:02,847
+Here's how my food is that
+
+1232
+00:45:03,359 --> 00:45:05,151
+Geometric information
+
+1233
+00:45:05,407 --> 00:45:07,711
+It looks like the food will be done at this
+
+1234
+00:45:10,271 --> 00:45:12,575
+Pulled over
+
+1235
+00:45:12,831 --> 00:45:13,343
+2% right
+
+1236
+00:45:13,599 --> 00:45:14,111
+We also
+
+1237
+00:45:14,879 --> 00:45:15,647
+Depersonalized
+
+1238
+00:45:15,903 --> 00:45:19,487
+Because different people would want to post advice in different ways by moving all those
+
+1239
+00:45:19,743 --> 00:45:20,255
+Bulldog
+
+1240
+00:45:22,559 --> 00:45:25,119
+Ability to make the device better over time
+
+1241
+00:45:25,375 --> 00:45:26,143
+It gave us the Opera
+
+1242
+00:45:26,655 --> 00:45:28,447
+To think about new ways to interact such as
+
+1243
+00:45:28,703 --> 00:45:29,215
+We have now
+
+1244
+00:45:31,263 --> 00:45:32,799
+Because voice when your hand
+
+1245
+00:45:33,311 --> 00:45:35,615
+Voices of phenomena way of communicating with your device
+
+1246
+00:45:38,431 --> 00:45:40,223
+Baby apple juice phone there's information
+
+1247
+00:45:41,759 --> 00:45:44,063
+Another way
+
+1248
+00:45:44,575 --> 00:45:45,343
+Preverbal
+
+1249
+00:45:45,599 --> 00:45:47,391
+Why we know some people would like to have that fish
+
+1250
+00:45:47,903 --> 00:45:49,439
+We basically felt it
+
+1251
+00:45:49,695 --> 00:45:50,463
+The trade-offs
+
+1252
+00:45:50,719 --> 00:45:55,839
+Worth living things
+
+1253
+00:45:56,095 --> 00:45:59,167
+We were really interested in finding the customers who bought into this idea
+
+1254
+00:46:00,447 --> 00:46:00,959
+More devices
+
+1255
+00:46:01,215 --> 00:46:07,359
+Create new features we can get better over time and that's really the long-term View
+
+1256
+00:46:07,615 --> 00:46:11,199
+Just about Joule sous-vide device there will be other Hardware there will be other services
+
+1257
+00:46:11,455 --> 00:46:12,223
+We wanted to demonstrate
+
+1258
+00:46:12,991 --> 00:46:15,551
+The kitchen can actually leverage software in a way
+
+1259
+00:46:15,807 --> 00:46:16,575
+It allows you to
+
+1260
+00:46:17,087 --> 00:46:17,855
+More
+
+1261
+00:46:18,111 --> 00:46:21,439
+Make it more human not less human because there are things
+
+1262
+00:46:21,951 --> 00:46:23,999
+Computers and software can do they're just really hard
+
+1263
+00:46:24,255 --> 00:46:25,791
+Skilled professional set
+
+1264
+00:46:26,303 --> 00:46:28,351
+That was kind of a decision behind it
+
+1265
+00:46:28,607 --> 00:46:29,631
+And I think on some level
+
+1266
+00:46:30,143 --> 00:46:30,911
+We could have put us
+
+1267
+00:46:31,167 --> 00:46:34,751
+That really would have been
+
+1268
+00:46:35,263 --> 00:46:37,311
+Thai chicken the pressure off us
+
+1269
+00:46:37,823 --> 00:46:39,615
+Really think very hard about how to make
+
+1270
+00:46:41,919 --> 00:46:44,479
+14 function that required us to be really good at
+
+1271
+00:46:45,247 --> 00:46:47,039
+I need to be really focused on reliability
+
+1272
+00:46:47,551 --> 00:46:49,087
+To really think about user experience
+
+1273
+00:46:49,343 --> 00:46:50,623
+How does needed to work
+
+1274
+00:46:52,415 --> 00:46:53,439
+We could have laid out but you know
+
+1275
+00:46:53,695 --> 00:46:59,839
+As far as we can tell where the best-selling connected to be device now where the number two in the market the leading devices is large
+
+1276
+00:47:00,095 --> 00:47:00,863
+Actually not Reliant
+
+1277
+00:47:01,375 --> 00:47:02,911
+And that gives us
+
+1278
+00:47:03,679 --> 00:47:05,215
+Going relationship with our customers
+
+1279
+00:47:05,471 --> 00:47:08,031
+So that we keep getting better over time so it looks like that
+
+1280
+00:47:08,287 --> 00:47:08,799
+Asian accent
+
+1281
+00:47:09,055 --> 00:47:10,335
+Panned out pretty well for us
+
+1282
+00:47:10,591 --> 00:47:11,103
+Havaianas
+
+1283
+00:47:11,359 --> 00:47:12,127
+Totally honest
+
+1284
+00:47:12,639 --> 00:47:18,015
+Continue to demonstrate our customers that was a good decision I continually shipping updates
+
+1285
+00:47:18,527 --> 00:47:19,039
+Okay
+
+1286
+00:47:19,295 --> 00:47:21,855
+So what is your thought process around if
+
+1287
+00:47:22,111 --> 00:47:23,391
+The company goes out of business
+
+1288
+00:47:23,647 --> 00:47:25,439
+Do you have actual things in place
+
+1289
+00:47:25,695 --> 00:47:26,975
+Sword is everyone sous vide
+
+1290
+00:47:27,231 --> 00:47:27,743
+To stop work
+
+1291
+00:47:28,255 --> 00:47:30,047
+One of the nice day
+
+1292
+00:47:30,303 --> 00:47:33,375
+Think about that in there are we've actually had
+
+1293
+00:47:34,143 --> 00:47:37,983
+I'll be able to security pretty seriously so there are aspects of
+
+1294
+00:47:38,239 --> 00:47:39,519
+The device where we would have to
+
+1295
+00:47:40,031 --> 00:47:43,871
+To make it possible for other developers to support it but there are plans
+
+1296
+00:47:44,639 --> 00:47:48,991
+Do that the infrastructure is in place simply we're using our own internal apis to do
+
+1297
+00:47:49,247 --> 00:47:55,391
+Do these kind of things that would be relatively trivial press to open that up this is kind of the end of life for Oscar
+
+1298
+00:47:55,647 --> 00:47:57,951
+That would be something we could do and we have seen enough
+
+1299
+00:47:58,207 --> 00:48:00,511
+People attempt to reverse-engineer some
+
+1300
+00:48:00,767 --> 00:48:01,535
+I'm going to basic
+
+1301
+00:48:04,607 --> 00:48:07,167
+Acordeon Sol
+
+1302
+00:48:08,959 --> 00:48:10,239
+That's a tricky question
+
+1303
+00:48:10,495 --> 00:48:13,055
+Still an internal discussion of where those boundaries are how do we
+
+1304
+00:48:13,567 --> 00:48:16,895
+Spectre customers data privacy so we're not quite ready to do
+
+1305
+00:48:17,407 --> 00:48:19,711
+But that is something we're actively thinking about how do we
+
+1306
+00:48:19,967 --> 00:48:23,039
+Encourage more people to keep innovating with soccer in the kitchen
+
+1307
+00:48:23,295 --> 00:48:24,319
+And connecting your device
+
+1308
+00:48:24,575 --> 00:48:25,855
+Put that software
+
+1309
+00:48:26,879 --> 00:48:27,903
+Apache Corp
+
+1310
+00:48:28,927 --> 00:48:30,463
+Along this line
+
+1311
+00:48:30,719 --> 00:48:33,023
+Let's talk about business models for the smart
+
+1312
+00:48:33,791 --> 00:48:35,071
+Because a lot of Kinect
+
+1313
+00:48:35,327 --> 00:48:35,839
+Set device maker
+
+1314
+00:48:36,351 --> 00:48:37,631
+There's a lot of innovation have
+
+1315
+00:48:42,495 --> 00:48:46,591
+But there's also a really big establish number of vendors out there who make
+
+1316
+00:48:46,847 --> 00:48:48,127
+The traditional home appliances
+
+1317
+00:48:48,639 --> 00:48:51,199
+When I look at what they're trying to do it feels like
+
+1318
+00:48:51,711 --> 00:48:54,527
+You're a pure software the intelligence you guys are built
+
+1319
+00:48:55,039 --> 00:48:56,319
+The years might be
+
+1320
+00:48:56,575 --> 00:49:00,159
+Well suited for GE or Whirlpool to come in and buy in
+
+1321
+00:49:00,415 --> 00:49:01,183
+Maybe make part of
+
+1322
+00:49:01,695 --> 00:49:04,767
+I know they don't have a sous-vide option yet but make part of their own
+
+1323
+00:49:05,023 --> 00:49:05,791
+Kitchen ecosys
+
+1324
+00:49:06,303 --> 00:49:07,327
+What are your thoughts around
+
+1325
+00:49:07,583 --> 00:49:08,095
+How that's going
+
+1326
+00:49:12,447 --> 00:49:12,959
+These companies
+
+1327
+00:49:13,215 --> 00:49:14,239
+But we haven't yet results
+
+1328
+00:49:14,495 --> 00:49:15,775
+Questions we have
+
+1329
+00:49:16,031 --> 00:49:16,799
+Allow us to go forward
+
+1330
+00:49:17,055 --> 00:49:17,823
+One of the first
+
+1331
+00:49:18,079 --> 00:49:18,591
+Issues X
+
+1332
+00:49:18,847 --> 00:49:19,359
+Pragmatic
+
+1333
+00:49:19,615 --> 00:49:20,895
+A lot of the things we really want
+
+1334
+00:49:21,151 --> 00:49:22,687
+We will have more announced
+
+1335
+00:49:27,807 --> 00:49:29,599
+Control over the hardware the sensors
+
+1336
+00:49:29,855 --> 00:49:30,367
+Calibration
+
+1337
+00:49:30,879 --> 00:49:31,903
+Be able to
+
+1338
+00:49:32,415 --> 00:49:33,439
+Provide clean data
+
+1339
+00:49:33,695 --> 00:49:35,231
+To our various cloud services
+
+1340
+00:49:35,487 --> 00:49:36,255
+To do things like
+
+1341
+00:49:36,767 --> 00:49:37,279
+Cooking times
+
+1342
+00:49:37,535 --> 00:49:40,095
+Significantly or make predictions about how the
+
+1343
+00:49:41,119 --> 00:49:42,655
+Do you think you certainly see how they would be a
+
+1344
+00:49:42,911 --> 00:49:44,703
+But those device manufacturers
+
+1345
+00:49:44,959 --> 00:49:47,519
+We have to get on board
+
+1346
+00:49:47,775 --> 00:49:50,847
+Much much better sensors in the device make the best of it
+
+1347
+00:49:51,103 --> 00:49:51,615
+The market
+
+1348
+00:49:51,871 --> 00:49:52,895
+$10,000 rack
+
+1349
+00:49:53,919 --> 00:49:54,943
+If you actually test
+
+1350
+00:49:55,199 --> 00:49:55,967
+And we did for love
+
+1351
+00:49:56,223 --> 00:49:58,015
+You'd be surprised to find that the app
+
+1352
+00:49:58,527 --> 00:49:59,295
+About plus or minus
+
+1353
+00:50:00,575 --> 00:50:01,087
+Dad
+
+1354
+00:50:01,599 --> 00:50:02,111
+It's terrible
+
+1355
+00:50:02,367 --> 00:50:03,135
+Right
+
+1356
+00:50:05,951 --> 00:50:09,279
+Humidity control is well so these oem's of
+
+1357
+00:50:09,535 --> 00:50:10,047
+Kitchen Hardware
+
+1358
+00:50:12,607 --> 00:50:14,655
+We have to get really serious about
+
+1359
+00:50:14,911 --> 00:50:15,679
+Pretty much better
+
+1360
+00:50:16,191 --> 00:50:18,751
+The hard work of calibrating to get
+
+1361
+00:50:19,263 --> 00:50:20,287
+Usually reserved for
+
+1362
+00:50:20,543 --> 00:50:23,615
+Precision lab equipment
+
+1363
+00:50:25,919 --> 00:50:27,711
+You could imagine we could work with him on that but
+
+1364
+00:50:28,991 --> 00:50:30,015
+Distortion everything for us
+
+1365
+00:50:30,527 --> 00:50:31,807
+All the sudden we're really having
+
+1366
+00:50:32,063 --> 00:50:35,903
+And most of our time working with these licensees to bring them up to where we're already
+
+1367
+00:50:37,439 --> 00:50:38,207
+How much is
+
+1368
+00:50:39,999 --> 00:50:41,279
+What is teams
+
+1369
+00:50:41,535 --> 00:50:42,559
+Other issue is
+
+1370
+00:50:43,071 --> 00:50:44,351
+We're building our own Hardware
+
+1371
+00:50:46,143 --> 00:50:46,655
+Software
+
+1372
+00:50:46,911 --> 00:50:48,447
+When were citic vertically integrated that way
+
+1373
+00:50:48,703 --> 00:50:49,983
+We have real Clarity over
+
+1374
+00:50:50,239 --> 00:50:50,751
+Lacoste
+
+1375
+00:50:51,007 --> 00:50:56,383
+There's no ambiguity of how we make money there's no ambiguity about like whose needs are you serving
+
+1376
+00:50:56,639 --> 00:50:57,151
+Change it
+
+1377
+00:50:57,663 --> 00:50:59,455
+Licensing organization well
+
+1378
+00:50:59,711 --> 00:51:00,735
+Is Electrolux a customer
+
+1379
+00:51:00,991 --> 00:51:01,759
+Is there any
+
+1380
+00:51:03,807 --> 00:51:05,087
+When you start to get ambiguity
+
+1381
+00:51:05,343 --> 00:51:07,391
+In particular we want a very low structure and Bayern
+
+1382
+00:51:07,647 --> 00:51:09,695
+Anderson in a company
+
+1383
+00:51:09,951 --> 00:51:11,231
+Customer is always LED
+
+1384
+00:51:11,743 --> 00:51:14,047
+Problem bad decision-making about
+
+1385
+00:51:14,303 --> 00:51:16,351
+What's a prioritize what's a really work on
+
+1386
+00:51:16,607 --> 00:51:17,375
+So does that
+
+1387
+00:51:17,887 --> 00:51:22,495
+You guys kind of has a niche product or a luxury product for a while to come then
+
+1388
+00:51:23,007 --> 00:51:25,823
+I don't think $100 a day
+
+1389
+00:51:26,079 --> 00:51:28,895
+Without disclosing numbers and we have customers
+
+1390
+00:51:29,151 --> 00:51:32,735
+In the six-figure range and growing rapidly
+
+1391
+00:51:34,271 --> 00:51:37,087
+Free to continue to grow out from this week
+
+1392
+00:51:37,343 --> 00:51:38,879
+Can't wait to grow our Revenue fast
+
+1393
+00:51:39,135 --> 00:51:40,927
+Goodbye license yet but that's never been out
+
+1394
+00:51:41,439 --> 00:51:44,511
+Yeah we are really focused on making sure that we are
+
+1395
+00:51:44,767 --> 00:51:47,071
+Retaining our customers engaging them and serving them
+
+1396
+00:51:47,327 --> 00:51:50,143
+Well over time so that they continue to be customer for years
+
+1397
+00:51:50,655 --> 00:51:53,471
+And let's talk about additional Hardware I'm sure you're not going to
+
+1398
+00:51:53,727 --> 00:51:54,751
+Disclosure product ramp
+
+1399
+00:51:55,007 --> 00:51:56,799
+But let's talk about where you might
+
+1400
+00:51:57,055 --> 00:51:58,335
+Go pure products
+
+1401
+00:51:58,591 --> 00:52:00,383
+Lot of companies who build Hardware looking
+
+1402
+00:52:00,895 --> 00:52:01,663
+Milky Chance
+
+1403
+00:52:01,919 --> 00:52:02,431
+So
+
+1404
+00:52:02,687 --> 00:52:03,455
+What are you guys think
+
+1405
+00:52:03,967 --> 00:52:04,479
+There's a few things
+
+1406
+00:52:04,735 --> 00:52:05,503
+Hardware's Apopka
+
+1407
+00:52:06,015 --> 00:52:07,295
+You're always under margin pressure
+
+1408
+00:52:07,551 --> 00:52:11,647
+And that's never going to go away and you run the risk of having your business kind of blown up by
+
+1409
+00:52:11,903 --> 00:52:13,439
+Politically on Fallout trade Wars
+
+1410
+00:52:14,463 --> 00:52:14,975
+Be careful of
+
+1411
+00:52:15,231 --> 00:52:15,743
+You sign up for
+
+1412
+00:52:15,999 --> 00:52:17,023
+When we look at it
+
+1413
+00:52:18,559 --> 00:52:19,583
+As a professional chef I've been
+
+1414
+00:52:20,863 --> 00:52:22,143
+College 2001
+
+1415
+00:52:22,399 --> 00:52:24,703
+We have a long history that but we would all say
+
+1416
+00:52:24,959 --> 00:52:26,239
+Great books
+
+1417
+00:52:26,495 --> 00:52:27,007
+Only thing
+
+1418
+00:52:27,263 --> 00:52:29,311
+It could be smarter in your kitchen that could actually
+
+1419
+00:52:29,567 --> 00:52:30,591
+Do a better job
+
+1420
+00:52:32,383 --> 00:52:33,919
+Looking out on the hardware key or act
+
+1421
+00:52:34,175 --> 00:52:35,967
+Sibley developing tend to be complementary
+
+1422
+00:52:36,223 --> 00:52:42,111
+Technology so for example went on a Wednesday night TV may not be fast enough or you're just not in the mood for something that might be a protein
+
+1423
+00:52:42,367 --> 00:52:43,135
+Teen dominated milf
+
+1424
+00:52:43,391 --> 00:52:43,903
+The ark
+
+1425
+00:52:44,415 --> 00:52:44,927
+Free Technologies
+
+1426
+00:52:45,183 --> 00:52:51,327
+Do heat a meal that we think can be Mass Market that can be made shame and that you can deliver on some of the same core
+
+1427
+00:52:51,583 --> 00:52:52,351
+4 Promises of
+
+1428
+00:52:52,607 --> 00:52:53,631
+We guaranteed Foods
+
+1429
+00:52:53,887 --> 00:52:56,703
+Guarantee it's going to be relatively convenient to do it
+
+1430
+00:52:56,959 --> 00:52:57,727
+And we think there's
+
+1431
+00:52:57,983 --> 00:52:59,263
+Real meaning of ways that
+
+1432
+00:52:59,519 --> 00:53:00,543
+Better interfaces
+
+1433
+00:53:00,799 --> 00:53:02,335
+Facial interfaces machine learning
+
+1434
+00:53:02,591 --> 00:53:03,359
+Actually put
+
+1435
+00:53:03,615 --> 00:53:06,687
+Human Experience even more and make it easier for you to
+
+1436
+00:53:07,967 --> 00:53:09,759
+Which is really dark or metric Azara
+
+1437
+00:53:10,015 --> 00:53:10,783
+Customers choosing a cup
+
+1438
+00:53:11,039 --> 00:53:11,551
+Or they call you
+
+1439
+00:53:12,831 --> 00:53:13,855
+And we are looking at
+
+1440
+00:53:14,367 --> 00:53:16,159
+Bass we are saying how can we make it easier
+
+1441
+00:53:16,415 --> 00:53:19,999
+Pictures to cook on a Wednesday night we were playing with meal kits back in 20
+
+1442
+00:53:20,255 --> 00:53:21,023
+Tina's Chester
+
+1443
+00:53:21,535 --> 00:53:24,095
+Prototype then we beta-tested them with some of our community
+
+1444
+00:53:24,351 --> 00:53:25,887
+To love them
+
+1445
+00:53:26,399 --> 00:53:27,935
+We should have listened to we don't know when these
+
+1446
+00:53:28,191 --> 00:53:29,471
+Economics address look right side up
+
+1447
+00:53:29,727 --> 00:53:30,751
+So we had a team that's
+
+1448
+00:53:31,007 --> 00:53:34,335
+Started working on that bumper few years and they had a real break
+
+1449
+00:53:34,591 --> 00:53:37,663
+Late last year and in fact they've been building a pilot production
+
+1450
+00:53:37,919 --> 00:53:38,687
+Facility in Seattle
+
+1451
+00:53:38,943 --> 00:53:42,527
+1011 manufacturing the way they want to and we hope to have something to announce
+
+1452
+00:53:42,783 --> 00:53:43,295
+In a few weeks
+
+1453
+00:53:43,551 --> 00:53:46,367
+Ella comes out of beta but we really see this as a product
+
+1454
+00:53:47,903 --> 00:53:49,951
+Consumable space
+
+1455
+00:53:51,743 --> 00:53:55,839
+To choose to cook more frequently and have a greater diversity of options and have more compass
+
+1456
+00:53:58,911 --> 00:53:59,423
+Caviar
+
+1457
+00:53:59,679 --> 00:54:00,703
+I like that's your stand
+
+1458
+00:54:02,239 --> 00:54:02,751
+Okay
+
+1459
+00:54:03,007 --> 00:54:04,031
+Before we go
+
+1460
+00:54:04,287 --> 00:54:04,799
+Let's see
+
+1461
+00:54:05,055 --> 00:54:05,567
+What is your
+
+1462
+00:54:05,823 --> 00:54:09,407
+Favorite thing to sous vide and give us a recommendation
+
+1463
+00:54:09,663 --> 00:54:10,687
+For anybody who's
+
+1464
+00:54:10,943 --> 00:54:11,455
+A novice
+
+1465
+00:54:11,711 --> 00:54:12,223
+Austin saying
+
+1466
+00:54:14,271 --> 00:54:15,551
+So tell us what you like to do
+
+1467
+00:54:15,807 --> 00:54:19,391
+As a super duper complicated Chef person and then
+
+1468
+00:54:19,647 --> 00:54:21,695
+Maybe something to convince everyone else
+
+1469
+00:54:22,207 --> 00:54:22,719
+Sous vide might be
+
+1470
+00:54:23,231 --> 00:54:26,559
+Okay so for the meat lovers there's two things that are free
+
+1471
+00:54:26,815 --> 00:54:27,583
+Goat cheese for me
+
+1472
+00:54:27,839 --> 00:54:28,863
+Beef short rib
+
+1473
+00:54:29,119 --> 00:54:30,399
+You really want to get from ribs
+
+1474
+00:54:30,655 --> 00:54:36,543
+4 5 and 6 that doesn't mean anything to you go talk to a butcher it will mean something to them but that's the thickest part of the short rib
+
+1475
+00:54:36,799 --> 00:54:38,591
+You take that short ribs
+
+1476
+00:54:39,103 --> 00:54:42,687
+You cook it at 54 degrees Celsius or you pull our visual Douglas guidance
+
+1477
+00:54:42,943 --> 00:54:43,711
+Pictures of textures
+
+1478
+00:54:43,967 --> 00:54:45,503
+Little wind up with this for three days
+
+1479
+00:54:45,759 --> 00:54:46,527
+That sounds crazy
+
+1480
+00:54:47,551 --> 00:54:48,063
+3 days book
+
+1481
+00:54:48,319 --> 00:54:52,671
+I promise you this is one of these dishes at tends to change people wise the first day and they have it
+
+1482
+00:54:52,927 --> 00:54:53,951
+Especially
+
+1483
+00:54:54,207 --> 00:54:55,487
+Is just so much more flavor
+
+1484
+00:54:55,743 --> 00:55:01,887
+In a short Redmond sale ribeye or especially a flaming yawn but three days of cooking in a very low temperature Converse All That
+
+1485
+00:55:02,399 --> 00:55:02,911
+In the short rib
+
+1486
+00:55:03,167 --> 00:55:04,703
+The tender gelatin without making it
+
+1487
+00:55:04,959 --> 00:55:07,775
+Play Ear braised and you end up something is very steak like
+
+1488
+00:55:08,287 --> 00:55:09,311
+The tender filet mignon in
+
+1489
+00:55:10,079 --> 00:55:11,359
+Ugly delicious
+
+1490
+00:55:12,383 --> 00:55:13,407
+Play something more easy
+
+1491
+00:55:13,919 --> 00:55:15,967
+Weeknight you usually can find in supermarkets
+
+1492
+00:55:16,223 --> 00:55:18,527
+Pork shoulder steaks that usually at uppercut
+
+1493
+00:55:18,783 --> 00:55:20,831
+Flavorful but you drop those in the morning when you
+
+1494
+00:55:21,087 --> 00:55:22,111
+You go to work and
+
+1495
+00:55:22,367 --> 00:55:23,391
+Cook them they'll be
+
+1496
+00:55:23,647 --> 00:55:25,183
+Incredibly tender when you get home
+
+1497
+00:55:25,439 --> 00:55:26,463
+Perfect medium-rare
+
+1498
+00:55:26,975 --> 00:55:28,255
+Really it's hot pork should be cooked
+
+1499
+00:55:28,511 --> 00:55:29,791
+I really recommend adding up
+
+1500
+00:55:30,047 --> 00:55:31,583
+Char sui sauce to the bags
+
+1501
+00:55:33,375 --> 00:55:35,935
+Candy at the end for those who are not
+
+1502
+00:55:36,447 --> 00:55:36,959
+Beats
+
+1503
+00:55:37,471 --> 00:55:38,239
+Lentils and
+
+1504
+00:55:38,495 --> 00:55:39,007
+Asparagus
+
+1505
+00:55:39,263 --> 00:55:41,567
+Are just vegetables or grain preparation
+
+1506
+00:55:41,823 --> 00:55:45,407
+Can really benefit from CBD cooking chicken with the grain
+
+1507
+00:55:45,663 --> 00:55:47,199
+What's nice
+
+1508
+00:55:47,455 --> 00:55:48,479
+Leave them in the fridge
+
+1509
+00:55:48,735 --> 00:55:49,759
+Easily up to a month
+
+1510
+00:55:50,015 --> 00:55:53,343
+So you can have a really quick meal for together
+
+1511
+00:55:53,855 --> 00:55:54,367
+What you want
+
+1512
+00:55:54,623 --> 00:55:55,903
+And to get The Machinist out of them
+
+1513
+00:55:56,159 --> 00:55:56,671
+They're really great
+
+1514
+00:55:56,927 --> 00:55:58,719
+Beat you retain their natural sweetness
+
+1515
+00:55:58,975 --> 00:55:59,743
+Earthy flavors
+
+1516
+00:55:59,999 --> 00:56:02,303
+Little goat cheese for salad
+
+1517
+00:56:02,559 --> 00:56:03,327
+Maybe some toast it
+
+1518
+00:56:03,583 --> 00:56:04,095
+Conn's
+
+1519
+00:56:04,351 --> 00:56:05,119
+Classic restaurant
+
+1520
+00:56:05,375 --> 00:56:06,399
+Starter and it's delicious
+
+1521
+00:56:06,655 --> 00:56:07,679
+Asparagus
+
+1522
+00:56:07,935 --> 00:56:09,215
+Is one of these things where
+
+1523
+00:56:09,471 --> 00:56:12,799
+It really just needs to be lightly cooked you wanted to snap but you don't want it
+
+1524
+00:56:13,055 --> 00:56:13,567
+He stood
+
+1525
+00:56:13,823 --> 00:56:16,383
+You don't really want to cook it in anything other than it
+
+1526
+00:56:16,639 --> 00:56:20,223
+On juices maybe a knob of butter so asparagus is one of these things where
+
+1527
+00:56:20,479 --> 00:56:21,247
+It will be much better.
+
+1528
+00:56:21,503 --> 00:56:24,831
+Asparagus you typically getting a restaurant that has been steamed
+
+1529
+00:56:25,343 --> 00:56:26,879
+Color now in Gilbert
+
+1530
+00:56:27,135 --> 00:56:28,927
+Christmas and precious. I love about you
+
+1531
+00:56:29,439 --> 00:56:29,951
+Okay
+
+1532
+00:56:30,207 --> 00:56:31,743
+You guys didn't know you were listening to a cooking
+
+1533
+00:56:32,255 --> 00:56:32,767
+There you go
+
+1534
+00:56:33,023 --> 00:56:33,535
+All right
+
+1535
+00:56:33,791 --> 00:56:35,071
+Chris thanks so much for
+
+1536
+00:56:36,607 --> 00:56:42,751
+That's it for this week thanks so much for listening
+
+1537
+00:56:43,007 --> 00:56:49,151
+Remember if you'd like more iot news sign up for my newsletter at Stacey on iot. Com
+
+1538
+00:56:49,407 --> 00:56:50,431
+Will see you next week

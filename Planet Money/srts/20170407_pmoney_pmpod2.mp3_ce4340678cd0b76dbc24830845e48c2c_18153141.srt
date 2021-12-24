@@ -1,0 +1,1919 @@
+1
+00:00:01,280 --> 00:00:03,584
+Last week the biggest investment firm in the world
+
+2
+00:00:04,096 --> 00:00:05,632
+Laid off a bunch of it stop stop
+
+3
+00:00:06,400 --> 00:00:07,168
+And replace them with
+
+4
+00:00:07,424 --> 00:00:07,936
+Computer Pro
+
+5
+00:00:08,960 --> 00:00:10,752
+This is happening all over Wall Street
+
+6
+00:00:11,264 --> 00:00:13,056
+Firms are moving away from having
+
+7
+00:00:13,312 --> 00:00:15,360
+Humans decide what stocks to buy and sell
+
+8
+00:00:15,616 --> 00:00:16,128
+And towards
+
+9
+00:00:16,384 --> 00:00:18,176
+Having humans program computers
+
+10
+00:00:18,432 --> 00:00:20,224
+And then letting the computer decide
+
+11
+00:00:20,736 --> 00:00:21,248
+What to buy and sell
+
+12
+00:00:22,016 --> 00:00:24,064
+Computers are cheaper than humans
+
+13
+00:00:24,320 --> 00:00:27,904
+They are more disciplined they can think about more things at once
+
+14
+00:00:28,160 --> 00:00:33,280
+Like they can scan Facebook for Trent they can count the number of cars in Walmart parking lot
+
+15
+00:00:33,536 --> 00:00:34,560
+And then use all that
+
+16
+00:00:34,816 --> 00:00:35,328
+To figure out
+
+17
+00:00:35,584 --> 00:00:36,864
+What stock to buy and sell
+
+18
+00:00:37,376 --> 00:00:38,400
+And do it automatic
+
+19
+00:00:39,168 --> 00:00:40,448
+This is the way the world is
+
+20
+00:00:41,216 --> 00:00:43,264
+This is what the stock market is becoming
+
+21
+00:00:44,288 --> 00:00:44,800
+And I
+
+22
+00:00:45,056 --> 00:00:45,568
+Want
+
+23
+00:00:45,824 --> 00:00:46,336
+In
+
+24
+00:00:47,360 --> 00:00:49,152
+I want to see this world from the inside
+
+25
+00:00:49,408 --> 00:00:52,224
+I want to build a machine that will buy and sell stocks
+
+26
+00:00:52,480 --> 00:00:54,016
+For me automatically
+
+27
+00:00:54,528 --> 00:00:55,552
+Based on some
+
+28
+00:00:55,808 --> 00:00:58,112
+Cold hard data out there in the world
+
+29
+00:00:58,368 --> 00:00:59,392
+No Wyld
+
+30
+00:00:59,648 --> 00:01:00,160
+Human MO
+
+31
+00:01:01,696 --> 00:01:02,976
+And I want my machine
+
+32
+00:01:03,488 --> 00:01:04,000
+Do it
+
+33
+00:01:04,256 --> 00:01:04,768
+Based
+
+34
+00:01:05,024 --> 00:01:05,792
+On the tweets
+
+35
+00:01:06,304 --> 00:01:06,816
+A president
+
+36
+00:01:07,072 --> 00:01:07,840
+Donald J
+
+37
+00:01:08,352 --> 00:01:08,864
+Trump
+
+38
+00:01:09,120 --> 00:01:15,264
+Hello in Welsh
+
+39
+00:01:15,520 --> 00:01:20,384
+Welcome to Planet Money I'm Alex goldmark and I'm Jacob Goldstein today on the show Planet Money builds a robot
+
+40
+00:01:20,640 --> 00:01:21,152
+A bot
+
+41
+00:01:21,408 --> 00:01:22,176
+Trade stocks
+
+42
+00:01:22,688 --> 00:01:23,200
+Real money
+
+43
+00:01:23,456 --> 00:01:25,248
+We have no idea what will happen
+
+44
+00:01:25,504 --> 00:01:31,648
+Support for Planet Money in the following message
+
+45
+00:01:31,904 --> 00:01:37,792
+Search come from Wonder Capital Wonder capitals online investment platform allows you to invest in solar energy project
+
+46
+00:01:38,048 --> 00:01:38,816
+It's across the US
+
+47
+00:01:39,328 --> 00:01:44,960
+Burn up to 8.5% annually while diversifying your portfolio and combating global climate change
+
+48
+00:01:45,472 --> 00:01:50,336
+In fact investors like you financed 40 large-scale solar projects in 2016
+
+49
+00:01:50,592 --> 00:01:54,688
+Offsetting the CO2 emissions from 2.8 million pounds of burned coal
+
+50
+00:01:55,456 --> 00:02:01,600
+Create an account for free at Wonder capital.com Planet Money
+
+51
+00:02:05,184 --> 00:02:06,464
+So there's a thing that
+
+52
+00:02:06,720 --> 00:02:08,768
+Often happens when President Trump
+
+53
+00:02:09,024 --> 00:02:09,792
+Tweets about
+
+54
+00:02:10,048 --> 00:02:10,560
+Accompany
+
+55
+00:02:10,816 --> 00:02:13,376
+When he said something positive about a company
+
+56
+00:02:13,888 --> 00:02:16,192
+The stock price tends to go up at least for a little while
+
+57
+00:02:16,448 --> 00:02:18,496
+What is that something negative the stock price has to go down
+
+58
+00:02:19,008 --> 00:02:19,520
+So here's what I want
+
+59
+00:02:20,288 --> 00:02:23,872
+I want to build a computer program that monitors President Trump's tweets
+
+60
+00:02:24,128 --> 00:02:26,176
+And when he says something nice about a company
+
+61
+00:02:26,432 --> 00:02:32,576
+We buy that company stock and when President Trump tweet something negative about a company we will sell that company stock
+
+62
+00:02:32,832 --> 00:02:37,440
+But that just means that we will set ourselves up to make a profit if the stock price goes down
+
+63
+00:02:38,208 --> 00:02:41,536
+If you listen to Planet Money for awhile you know that we sometimes
+
+64
+00:02:41,792 --> 00:02:47,424
+Make investments with our own money that was NPR's money but like my money your money are personal money
+
+65
+00:02:47,936 --> 00:02:51,520
+We do this weekend you don't get into the world for real feel how the world
+
+66
+00:02:51,776 --> 00:02:52,544
+Gotta have skin in the
+
+67
+00:02:52,800 --> 00:02:55,360
+For this project I did some math and I figured out
+
+68
+00:02:55,616 --> 00:02:58,944
+Did I needed $100 from each member of Planet Money
+
+69
+00:02:59,968 --> 00:03:00,992
+So I went around the office
+
+70
+00:03:01,248 --> 00:03:01,760
+With my pet
+
+71
+00:03:02,272 --> 00:03:03,040
+Starting with Noel King
+
+72
+00:03:03,552 --> 00:03:05,856
+Terrific is a great idea
+
+73
+00:03:06,368 --> 00:03:08,416
+Okay so you're in Yu-Gi-Oh how much do I owe you
+
+74
+00:03:09,184 --> 00:03:09,952
+$100
+
+75
+00:03:14,048 --> 00:03:17,632
+How to rent in New York
+
+76
+00:03:18,144 --> 00:03:21,728
+You'll get it back and then some and then alright I'll break your kneecaps
+
+77
+00:03:21,984 --> 00:03:24,544
+That is roughly how it went all around the office
+
+78
+00:03:24,800 --> 00:03:26,592
+Jacob going to play you the tape of when I pushed
+
+79
+00:03:27,616 --> 00:03:28,640
+We are going to build
+
+80
+00:03:29,920 --> 00:03:31,200
+Stock trading bot
+
+81
+00:03:31,456 --> 00:03:31,968
+That will
+
+82
+00:03:32,224 --> 00:03:34,016
+Trade off of Donald Trump
+
+83
+00:03:34,272 --> 00:03:34,784
+Tweets
+
+84
+00:03:35,040 --> 00:03:38,624
+You know how he does these things that I have learned about economics
+
+85
+00:03:38,880 --> 00:03:39,904
+Suggest me the best
+
+86
+00:03:40,928 --> 00:03:41,696
+Okay
+
+87
+00:03:41,952 --> 00:03:42,720
+I responded to her
+
+88
+00:03:43,232 --> 00:03:44,256
+You didn't get my $100
+
+89
+00:03:44,512 --> 00:03:46,048
+Let me just explain myself briefly
+
+90
+00:03:46,560 --> 00:03:50,144
+Mike Mike basic view of the world is if there's some way to make money out there
+
+91
+00:03:50,400 --> 00:03:51,424
+Somebody's already doing it
+
+92
+00:03:51,680 --> 00:03:55,264
+Somebody's already got their trumpet I don't believe that we can build a better Trump
+
+93
+00:03:55,776 --> 00:03:57,824
+But we're going to try Charnel look obviously
+
+94
+00:03:58,080 --> 00:04:00,384
+I'm not in it for the money I'm in it for the for the
+
+95
+00:04:00,640 --> 00:04:03,200
+And I gladly took your skeptical 100
+
+96
+00:04:04,224 --> 00:04:04,992
+I got my
+
+97
+00:04:05,248 --> 00:04:06,272
+Thousand dollars from
+
+98
+00:04:06,528 --> 00:04:07,040
+My other
+
+99
+00:04:07,296 --> 00:04:08,320
+Skeptical colleagues
+
+100
+00:04:08,576 --> 00:04:09,856
+I took everybody's money
+
+101
+00:04:10,112 --> 00:04:11,136
+I put it in a trading account
+
+102
+00:04:11,648 --> 00:04:12,160
+And then I did
+
+103
+00:04:12,416 --> 00:04:13,184
+The one more
+
+104
+00:04:13,696 --> 00:04:15,744
+Very important think before we could get started
+
+105
+00:04:16,512 --> 00:04:17,024
+I named
+
+106
+00:04:17,280 --> 00:04:17,791
+Arbat
+
+107
+00:04:18,303 --> 00:04:18,815
+Go on
+
+108
+00:04:19,071 --> 00:04:20,095
+Arbat will be called
+
+109
+00:04:20,607 --> 00:04:21,119
+Botas
+
+110
+00:04:21,375 --> 00:04:23,423
+I see what you did there.
+
+111
+00:04:23,679 --> 00:04:25,983
+So you know how the president's Twitter handle POTUS
+
+112
+00:04:26,239 --> 00:04:28,543
+President of the US the official Twitter handle
+
+113
+00:04:28,799 --> 00:04:29,567
+Botas
+
+114
+00:04:29,823 --> 00:04:30,847
+Bought of the United
+
+115
+00:04:31,103 --> 00:04:31,871
+Okay.
+
+116
+00:04:32,895 --> 00:04:37,759
+Okay it's good yeah I'm kind of proud of it but now you got to like build the thing right now you got to make the machine
+
+117
+00:04:38,271 --> 00:04:39,807
+So I found some professional
+
+118
+00:04:40,063 --> 00:04:41,599
+I found a company that
+
+119
+00:04:41,855 --> 00:04:44,671
+Buildbox and helps other companies with their trading
+
+120
+00:04:44,927 --> 00:04:45,695
+Technology is called
+
+121
+00:04:45,951 --> 00:04:46,975
+Trade works with an
+
+122
+00:04:47,231 --> 00:04:48,767
+ACT scores at the end of it
+
+123
+00:04:49,023 --> 00:04:52,351
+Their offices in New Jersey about 90 minutes outside of New York City
+
+124
+00:04:52,607 --> 00:04:53,631
+Commercial strip
+
+125
+00:04:54,143 --> 00:04:54,655
+It's like very low
+
+126
+00:04:55,423 --> 00:04:57,471
+I went there to meet with Monte Maggiore their head oven
+
+127
+00:04:58,239 --> 00:04:58,751
+He runs
+
+128
+00:04:59,007 --> 00:05:01,055
+Whole team of people making all kinds of Bot
+
+129
+00:05:01,567 --> 00:05:04,127
+He is very secretive about what those parts do
+
+130
+00:05:04,383 --> 00:05:06,943
+But explain to me the essence of trading with Bots
+
+131
+00:05:07,455 --> 00:05:08,223
+In a few
+
+132
+00:05:08,479 --> 00:05:12,063
+Take a simple idea and do it three thousand times four times a year
+
+133
+00:05:12,319 --> 00:05:18,463
+It doesn't have to be right that it can be like just slightly right you know and end over overtime it's
+
+134
+00:05:18,719 --> 00:05:20,255
+It's like a casino except for the house
+
+135
+00:05:20,511 --> 00:05:22,559
+Yeah we only have to be right like
+
+136
+00:05:22,815 --> 00:05:26,399
+Fifty-one 52% of the time right we can be wrong a lot
+
+137
+00:05:26,655 --> 00:05:29,471
+As long as we're right a little more often than we're wrong
+
+138
+00:05:31,007 --> 00:05:34,847
+We'll make a lot of money you're starting to come around I like that
+
+139
+00:05:35,359 --> 00:05:35,871
+So
+
+140
+00:05:36,383 --> 00:05:36,895
+I told him my idea
+
+141
+00:05:37,663 --> 00:05:39,967
+To get a bot to read Trump's tweets and then by and
+
+142
+00:05:40,223 --> 00:05:41,503
+Sell stocks based on that
+
+143
+00:05:42,271 --> 00:05:43,551
+And he said first problem
+
+144
+00:05:44,063 --> 00:05:46,111
+And the computer read Trump's tweets
+
+145
+00:05:46,367 --> 00:05:47,391
+Can't figure out
+
+146
+00:05:47,647 --> 00:05:50,463
+Whether the president is saying something nice or saying something mean
+
+147
+00:05:50,719 --> 00:05:56,863
+This is this is the this is what more than positive and negative words this is a computer actually determining the
+
+148
+00:05:57,119 --> 00:05:57,631
+Sentiment of it
+
+149
+00:05:57,887 --> 00:06:04,031
+Type any sentence in and it will give you a sense of what the cinnamon is
+
+150
+00:06:04,287 --> 00:06:07,615
+More than you have lying around the office more less
+
+151
+00:06:08,127 --> 00:06:11,711
+Computers have gotten much better at doing this kind of thing over the past
+
+152
+00:06:12,223 --> 00:06:13,503
+Sentiment analysis
+
+153
+00:06:14,015 --> 00:06:19,903
+And companies use it a lot with social media to figure out how people feel about movies and new products and whatever
+
+154
+00:06:20,159 --> 00:06:24,767
+It's so common now that money and his team had already done a little test by the time I show
+
+155
+00:06:25,279 --> 00:06:28,095
+They'd run hundreds of Donald Trump's tweets through this algorithm
+
+156
+00:06:28,351 --> 00:06:30,143
+This computer program that use to find the scent
+
+157
+00:06:30,911 --> 00:06:34,751
+And then when I got there it was time for us humans to check the computer
+
+158
+00:06:35,007 --> 00:06:36,799
+To see how often I found the right in
+
+159
+00:06:37,311 --> 00:06:40,127
+Do you want to pull up bar scores
+
+160
+00:06:40,639 --> 00:06:41,663
+At the computer
+
+161
+00:06:41,919 --> 00:06:43,199
+It read this tweet
+
+162
+00:06:43,455 --> 00:06:44,223
+From January
+
+163
+00:06:45,503 --> 00:06:48,319
+Toyota motor said will build new plant in Baja Mex
+
+164
+00:06:48,575 --> 00:06:50,367
+Go to build Corolla cars for us
+
+165
+00:06:50,879 --> 00:06:52,415
+No way!
+
+166
+00:06:52,927 --> 00:06:53,439
+The caps
+
+167
+00:06:53,695 --> 00:06:55,999
+Bill plant in us or pay big border
+
+168
+00:06:56,511 --> 00:06:58,303
+If my gut check says that is negative
+
+169
+00:06:59,071 --> 00:07:00,095
+Human say negative
+
+170
+00:07:00,607 --> 00:07:01,375
+Computers
+
+171
+00:07:01,887 --> 00:07:03,935
+Okay so the algorithm got this one right
+
+172
+00:07:04,191 --> 00:07:08,031
+He got a lot of them right we look through the list one after another after another
+
+173
+00:07:08,287 --> 00:07:09,567
+Almost every time
+
+174
+00:07:10,079 --> 00:07:11,103
+The algorithm got it right
+
+175
+00:07:11,871 --> 00:07:14,687
+And it really interesting thing about Donald Trump is stows
+
+176
+00:07:14,943 --> 00:07:16,735
+Does algorithms work really well
+
+177
+00:07:16,991 --> 00:07:21,087
+Because he uses words like bad and sad and great
+
+178
+00:07:21,343 --> 00:07:24,671
+They always mean what he means them to mean so
+
+179
+00:07:24,927 --> 00:07:26,719
+From that perspective he makes it really easy for
+
+180
+00:07:26,975 --> 00:07:27,487
+Computers
+
+181
+00:07:27,743 --> 00:07:29,791
+Not subtle easy for a computer
+
+182
+00:07:30,303 --> 00:07:31,839
+Which means are trading Bots
+
+183
+00:07:32,095 --> 00:07:32,607
+Botas
+
+184
+00:07:32,863 --> 00:07:33,631
+Past the first
+
+185
+00:07:34,399 --> 00:07:35,679
+I was feeling pretty good
+
+186
+00:07:35,935 --> 00:07:36,703
+And so is mine
+
+187
+00:07:36,959 --> 00:07:37,983
+Yeah this is definitely doable
+
+188
+00:07:39,007 --> 00:07:40,031
+That was a few weeks ago
+
+189
+00:07:40,543 --> 00:07:42,079
+Describe the offices that is
+
+190
+00:07:42,335 --> 00:07:44,639
+When the real work started when I got down to making
+
+191
+00:07:44,895 --> 00:07:45,407
+POTUS
+
+192
+00:07:45,663 --> 00:07:48,735
+And money handed over the project to one of his programmers
+
+193
+00:07:49,247 --> 00:07:50,527
+A person named Camilo Jimenez
+
+194
+00:07:51,551 --> 00:07:52,575
+It started out fine
+
+195
+00:07:52,831 --> 00:07:55,135
+Emmylou did what he usually does when he's researching
+
+196
+00:07:55,391 --> 00:07:57,951
+Chatting is home office a little wood desk in his bedroom
+
+197
+00:07:58,207 --> 00:07:58,975
+Keep it simple
+
+198
+00:07:59,487 --> 00:08:02,559
+Just my laptop coffee Notepad
+
+199
+00:08:03,583 --> 00:08:05,119
+Laptop notepads of coffee
+
+200
+00:08:06,911 --> 00:08:08,447
+Okay sometimes right Biblia
+
+201
+00:08:08,703 --> 00:08:09,471
+Sometimes red.
+
+202
+00:08:09,727 --> 00:08:10,239
+Yeah
+
+203
+00:08:10,495 --> 00:08:12,031
+Sort of a parody of a coder
+
+204
+00:08:12,287 --> 00:08:14,847
+Except he's a physicist by training not such a classic
+
+205
+00:08:15,359 --> 00:08:18,687
+So okay so we already know that the bot can tell nice from me
+
+206
+00:08:19,455 --> 00:08:20,223
+What's like the next
+
+207
+00:08:21,247 --> 00:08:22,271
+The next thing yesterday
+
+208
+00:08:22,527 --> 00:08:23,807
+How to do is be able to tell
+
+209
+00:08:24,063 --> 00:08:24,831
+What company
+
+210
+00:08:25,343 --> 00:08:26,367
+Trump is tweeting about
+
+211
+00:08:26,623 --> 00:08:28,415
+That one sounds like relatively easy
+
+212
+00:08:28,927 --> 00:08:29,439
+Nope
+
+213
+00:08:29,695 --> 00:08:31,487
+Does a Honda City for human
+
+214
+00:08:31,743 --> 00:08:32,255
+That's a half rack
+
+215
+00:08:32,511 --> 00:08:33,023
+Computer
+
+216
+00:08:33,279 --> 00:08:35,071
+Because they
+
+217
+00:08:35,583 --> 00:08:36,351
+Did the text
+
+218
+00:08:36,607 --> 00:08:37,887
+Cooling clothes
+
+219
+00:08:38,399 --> 00:08:41,471
+Either the name of a person or the company or a product
+
+220
+00:08:41,983 --> 00:08:43,007
+I do have to link that
+
+221
+00:08:43,263 --> 00:08:44,287
+Two company
+
+222
+00:08:44,543 --> 00:08:49,407
+So is is Donald Trump is saying he ate an Apple for lunch or she talking about Apple Computers correct
+
+223
+00:08:49,663 --> 00:08:50,687
+That's hot.
+
+224
+00:08:51,199 --> 00:08:52,479
+So this is what making a body
+
+225
+00:08:53,247 --> 00:08:53,759
+Puzzle solving
+
+226
+00:08:54,015 --> 00:08:54,527
+Over and out
+
+227
+00:08:55,039 --> 00:08:58,111
+For something like Apple stock versus Apple the food
+
+228
+00:08:58,367 --> 00:09:01,183
+We'll have to do something to train our body to tell them apart
+
+229
+00:09:01,439 --> 00:09:03,999
+So he added what's called a context
+
+230
+00:09:04,511 --> 00:09:05,023
+Right
+
+231
+00:09:05,279 --> 00:09:10,143
+He had her but a little but read a whole bunch of financial articles about Apple the company
+
+232
+00:09:10,399 --> 00:09:15,519
+And learn the kinds of things kind of words and phrases and topics associated with the company
+
+233
+00:09:15,775 --> 00:09:17,823
+Apple Cupertino Steve Jobs
+
+234
+00:09:18,079 --> 00:09:20,639
+Tim Cook iPhone exactly
+
+235
+00:09:20,895 --> 00:09:25,247
+Aha and the things that are not associated with the company but with apple the food
+
+236
+00:09:26,015 --> 00:09:26,527
+Crunchy
+
+237
+00:09:26,783 --> 00:09:27,551
+Mushy
+
+238
+00:09:28,063 --> 00:09:28,575
+Delicious
+
+239
+00:09:29,599 --> 00:09:31,647
+Are but might accidentally short
+
+240
+00:09:31,903 --> 00:09:32,927
+I actually would shorten
+
+241
+00:09:33,695 --> 00:09:34,975
+I think that would be a great call
+
+242
+00:09:35,231 --> 00:09:37,023
+I still think it's over Valentine long on food
+
+243
+00:09:37,535 --> 00:09:38,559
+Okay powerbot
+
+244
+00:09:38,815 --> 00:09:40,607
+It can now tell the different one
+
+245
+00:09:41,119 --> 00:09:42,399
+Russ get back on task
+
+246
+00:09:42,655 --> 00:09:43,167
+Focus
+
+247
+00:09:43,423 --> 00:09:46,751
+Focus on arbat okay our body can tell the difference between apple
+
+248
+00:09:47,007 --> 00:09:47,519
+The fruit
+
+249
+00:09:48,287 --> 00:09:49,311
+Okay right it's a big three
+
+250
+00:09:50,335 --> 00:09:53,407
+Another a few types of companies that were especially hard to deal with
+
+251
+00:09:54,175 --> 00:09:55,711
+One of them's were talking about
+
+252
+00:09:55,967 --> 00:09:57,759
+Trump tweets about the media all the
+
+253
+00:09:58,271 --> 00:09:59,551
+But that's because he is
+
+254
+00:09:59,807 --> 00:10:05,951
+Commenting on the media he's not saying like I'm threatening to put some tax on news right that will affect the business
+
+255
+00:10:06,207 --> 00:10:07,743
+I don't like the story that was on the
+
+256
+00:10:08,255 --> 00:10:11,327
+Usually doesn't affect the stock price of a Mediacom
+
+257
+00:10:11,839 --> 00:10:12,607
+So Canelo decided
+
+258
+00:10:12,863 --> 00:10:13,631
+Media companies
+
+259
+00:10:13,887 --> 00:10:17,215
+Not nurturing Universe to me because
+
+260
+00:10:17,983 --> 00:10:19,519
+This is like the human decision made
+
+261
+00:10:20,031 --> 00:10:20,799
+Right
+
+262
+00:10:21,055 --> 00:10:24,639
+You know we we propose this thing is like what's just going to be a machine
+
+263
+00:10:24,895 --> 00:10:27,199
+But once you actually have to make
+
+264
+00:10:27,711 --> 00:10:28,479
+The machine
+
+265
+00:10:28,991 --> 00:10:29,503
+You have to
+
+266
+00:10:29,759 --> 00:10:30,527
+Tell the machine hottest
+
+267
+00:10:30,783 --> 00:10:34,623
+I think the machine that in this case it's not exactly thinking for itself right Camilo
+
+268
+00:10:34,879 --> 00:10:36,415
+Is the is a human being
+
+269
+00:10:36,671 --> 00:10:40,767
+And he is setting up a set of decisions based on his kamilos human judgement
+
+270
+00:10:41,279 --> 00:10:43,327
+Well it's it's it's a mix of his
+
+271
+00:10:43,583 --> 00:10:44,095
+And the computer
+
+272
+00:10:44,351 --> 00:10:45,887
+The machine really is making
+
+273
+00:10:46,143 --> 00:10:46,655
+Decisions
+
+274
+00:10:46,911 --> 00:10:48,191
+It is learning about Apple
+
+275
+00:10:48,703 --> 00:10:49,983
+It is interpreting language
+
+276
+00:10:50,751 --> 00:10:51,263
+It's just that
+
+277
+00:10:51,519 --> 00:10:52,287
+In some places
+
+278
+00:10:52,799 --> 00:10:54,335
+Humans have stepped in and said
+
+279
+00:10:54,847 --> 00:10:55,359
+Some puzzles
+
+280
+00:10:55,615 --> 00:10:57,407
+They would just take way too long to solve
+
+281
+00:10:57,663 --> 00:10:58,175
+Not worth it
+
+282
+00:10:58,431 --> 00:10:59,199
+For instance
+
+283
+00:10:59,455 --> 00:11:02,271
+I want to give you this one I love it there is this one company
+
+284
+00:11:02,527 --> 00:11:03,039
+That the body
+
+285
+00:11:03,295 --> 00:11:04,063
+Could not record
+
+286
+00:11:04,831 --> 00:11:05,855
+You want to guess what it was
+
+287
+00:11:06,367 --> 00:11:09,439
+I guess I'm very excited I have give me a clue
+
+288
+00:11:09,951 --> 00:11:11,231
+Is very close to Donald Trump
+
+289
+00:11:11,743 --> 00:11:13,023
+Physically and emotionally
+
+290
+00:11:16,095 --> 00:11:17,631
+Is it
+
+291
+00:11:18,655 --> 00:11:19,167
+Boeing
+
+292
+00:11:19,423 --> 00:11:20,191
+They make Air Force
+
+293
+00:11:20,703 --> 00:11:21,215
+No
+
+294
+00:11:21,471 --> 00:11:22,495
+Here is Camilla's boss
+
+295
+00:11:22,751 --> 00:11:23,263
+My again
+
+296
+00:11:24,543 --> 00:11:25,055
+Are we
+
+297
+00:11:25,311 --> 00:11:28,895
+In our in our production hour then we won't trade the company Tiffany's
+
+298
+00:11:29,151 --> 00:11:35,295
+Cuz computer can't tell when Trump is talking about his daughter and when he's talking about the actual company Tiffany Trump
+
+299
+00:11:35,551 --> 00:11:36,575
+Lesser-known Trump.
+
+300
+00:11:37,087 --> 00:11:39,135
+And Tiffany's the Jeweler which is just down the block
+
+301
+00:11:39,391 --> 00:11:39,903
+From Trump Tower
+
+302
+00:11:41,183 --> 00:11:42,975
+It will not trade Tiffin
+
+303
+00:11:43,231 --> 00:11:44,255
+Stats the decision in it
+
+304
+00:11:44,511 --> 00:11:45,023
+Which is fine
+
+305
+00:11:45,279 --> 00:11:45,791
+No big deal
+
+306
+00:11:46,303 --> 00:11:49,887
+So okay our machine are Buddhist to be it can
+
+307
+00:11:51,167 --> 00:11:54,751
+Tell when the president is being positive or negative say nice things were mean things
+
+308
+00:11:55,263 --> 00:11:56,031
+And be
+
+309
+00:11:56,287 --> 00:11:57,311
+It can figure out
+
+310
+00:11:57,567 --> 00:11:58,335
+What companies
+
+311
+00:11:58,591 --> 00:11:59,871
+The president is tweeting about
+
+312
+00:12:00,383 --> 00:12:03,711
+The last thing we have to tell it is how soon after the Tweet to buy
+
+313
+00:12:03,967 --> 00:12:04,735
+And how long
+
+314
+00:12:04,991 --> 00:12:05,503
+Do we hold it
+
+315
+00:12:06,015 --> 00:12:07,039
+Okay
+
+316
+00:12:08,831 --> 00:12:10,623
+Okay but right away what does that mean
+
+317
+00:12:10,879 --> 00:12:12,415
+This is not an obvious question
+
+318
+00:12:12,671 --> 00:12:13,951
+So money setup
+
+319
+00:12:14,463 --> 00:12:15,487
+Who makes a simulation
+
+320
+00:12:15,743 --> 00:12:16,255
+Of the stock
+
+321
+00:12:16,511 --> 00:12:17,279
+Mark the whole stock market
+
+322
+00:12:17,535 --> 00:12:18,303
+In the past few months
+
+323
+00:12:18,559 --> 00:12:19,583
+He adds in Trump's tweet
+
+324
+00:12:20,351 --> 00:12:20,863
+And then
+
+325
+00:12:21,119 --> 00:12:22,399
+He runs our Bots through the
+
+326
+00:12:22,911 --> 00:12:24,447
+So it's like going back in time
+
+327
+00:12:24,959 --> 00:12:26,495
+To see what I would have done
+
+328
+00:12:26,751 --> 00:12:28,287
+If it had existed a few months
+
+329
+00:12:28,799 --> 00:12:31,359
+Clear our path did not exist a few months ago
+
+330
+00:12:31,615 --> 00:12:33,663
+This is not trading with your money this is just
+
+331
+00:12:34,431 --> 00:12:35,711
+He runs it over and over again
+
+332
+00:12:35,967 --> 00:12:38,783
+Tweaking the variable of when to buy and when to sell
+
+333
+00:12:39,039 --> 00:12:39,551
+Each time he runs
+
+334
+00:12:41,599 --> 00:12:42,111
+At my desk
+
+335
+00:12:43,903 --> 00:12:44,927
+Late for dinner
+
+336
+00:12:45,439 --> 00:12:46,975
+And I'm worried about that
+
+337
+00:12:47,231 --> 00:12:49,023
+And but I remember
+
+338
+00:12:49,279 --> 00:12:50,303
+Sitting there and saying you know
+
+339
+00:12:50,815 --> 00:12:52,351
+Here are some options you know the week
+
+340
+00:12:52,863 --> 00:12:56,447
+But we could try we could try holding it overnight we could try holding it for a little while
+
+341
+00:12:56,703 --> 00:12:57,471
+You know what you're holding for
+
+342
+00:12:57,727 --> 00:13:02,079
+4 days what is simulation pointed to get in and get out relatively
+
+343
+00:13:02,847 --> 00:13:03,359
+But
+
+344
+00:13:03,871 --> 00:13:06,431
+Not like the exact number of minutes matter.
+
+345
+00:13:07,455 --> 00:13:10,271
+You know so that that made us feel good because that made us a like well
+
+346
+00:13:10,527 --> 00:13:12,319
+It's not going to hold this thing for 30 minutes
+
+347
+00:13:12,831 --> 00:13:16,671
+I'm just something magic about 30 minutes or if I hold it for 40 minutes there's something broken
+
+348
+00:13:16,927 --> 00:13:17,695
+It turned out that
+
+349
+00:13:18,207 --> 00:13:19,487
+What mattered most was
+
+350
+00:13:19,743 --> 00:13:20,255
+You know
+
+351
+00:13:21,023 --> 00:13:25,119
+Getting reasonably close to one that we happened you know in trying to get out by the end of the
+
+352
+00:13:25,887 --> 00:13:26,911
+So that is what
+
+353
+00:13:27,935 --> 00:13:29,983
+When Donald Trump tweets about a company
+
+354
+00:13:30,495 --> 00:13:31,007
+Botas
+
+355
+00:13:31,263 --> 00:13:34,591
+Will buy a stock right away not in milliseconds like some high-speed train
+
+356
+00:13:35,871 --> 00:13:37,407
+Pretty much
+
+357
+00:13:38,431 --> 00:13:39,455
+It'll take like a few seconds
+
+358
+00:13:39,711 --> 00:13:40,223
+And then
+
+359
+00:13:40,991 --> 00:13:42,015
+30 minutes after that
+
+360
+00:13:43,295 --> 00:13:43,807
+Will be out
+
+361
+00:13:45,855 --> 00:13:47,135
+The last time I talked to money
+
+362
+00:13:47,391 --> 00:13:47,903
+You show me the
+
+363
+00:13:48,159 --> 00:13:48,671
+Chart
+
+364
+00:13:49,183 --> 00:13:52,255
+Show me how much money we would have made if we had lunch
+
+365
+00:13:52,511 --> 00:13:53,023
+Right after eating
+
+366
+00:13:53,279 --> 00:13:55,071
+Because we did not launch them this is just
+
+367
+00:13:55,327 --> 00:13:57,375
+Pns simulations more like the ad
+
+368
+00:13:57,631 --> 00:13:58,399
+Freibott then
+
+369
+00:14:00,447 --> 00:14:01,727
+Okay so now I'm looking at a chart
+
+370
+00:14:01,983 --> 00:14:03,263
+How much money we're going to make
+
+371
+00:14:03,775 --> 00:14:05,567
+And what it looks like is
+
+372
+00:14:06,079 --> 00:14:07,871
+You flatlines
+
+373
+00:14:08,383 --> 00:14:09,919
+And then it shoots up really fast
+
+374
+00:14:10,431 --> 00:14:12,735
+Presumably I guess that's when there's a tweet and we make money
+
+375
+00:14:12,991 --> 00:14:16,063
+And then there's another Flatline for a while and it shoots up again
+
+376
+00:14:16,319 --> 00:14:20,159
+There's one that goes down others to work as a couple work goes down but
+
+377
+00:14:20,415 --> 00:14:21,183
+Overhaul
+
+378
+00:14:21,439 --> 00:14:26,815
+It looks like we are on the slow and steady path towards riches on this chart
+
+379
+00:14:27,071 --> 00:14:28,095
+My interpreting it right
+
+380
+00:14:28,351 --> 00:14:30,399
+You are interpreting it optimistic lyrics
+
+381
+00:14:30,655 --> 00:14:33,215
+Yes that's what I do when I'm in Bethany
+
+382
+00:14:33,727 --> 00:14:34,751
+I'm not a very good investor
+
+383
+00:14:35,263 --> 00:14:37,055
+But money said it did pass the bar for
+
+384
+00:14:37,311 --> 00:14:38,335
+And if it were his but
+
+385
+00:14:38,591 --> 00:14:39,103
+He would start trading
+
+386
+00:14:41,151 --> 00:14:41,919
+You know where
+
+387
+00:14:42,431 --> 00:14:44,479
+We feel good about the strategy
+
+388
+00:14:44,735 --> 00:14:45,247
+You know
+
+389
+00:14:45,759 --> 00:14:46,527
+And
+
+390
+00:14:46,783 --> 00:14:48,319
+Can you say that with a little more confidence
+
+391
+00:14:48,575 --> 00:14:54,719
+Your ear your chance you're saying it to me like she don't really believe
+
+392
+00:14:54,975 --> 00:14:55,743
+I want to overstate
+
+393
+00:14:56,255 --> 00:14:57,535
+I don't understand the risk
+
+394
+00:14:57,791 --> 00:14:58,815
+Overstate
+
+395
+00:14:59,327 --> 00:14:59,839
+The benefit
+
+396
+00:15:00,095 --> 00:15:00,863
+Of doing something
+
+397
+00:15:01,119 --> 00:15:02,399
+I just feel like
+
+398
+00:15:05,727 --> 00:15:07,007
+You know it's not
+
+399
+00:15:07,775 --> 00:15:09,567
+We haven't scientifically proven anyting
+
+400
+00:15:10,079 --> 00:15:10,847
+I like this guy
+
+401
+00:15:11,359 --> 00:15:14,943
+Like I respect this guy I it actually gives me more confidence
+
+402
+00:15:15,455 --> 00:15:16,223
+That he is
+
+403
+00:15:16,735 --> 00:15:19,039
+Skeptical it was like well we don't really know maybe it's
+
+404
+00:15:19,295 --> 00:15:21,343
+Flukey I'm that is what he saying here and like
+
+405
+00:15:21,855 --> 00:15:22,879
+That makes me like him more
+
+406
+00:15:23,135 --> 00:15:26,207
+What was really interesting about talking with him about strategy
+
+407
+00:15:26,463 --> 00:15:30,047
+Is it is very clearly driven by the scientific method that he wants
+
+408
+00:15:30,303 --> 00:15:31,327
+Pose a hypothesis
+
+409
+00:15:31,583 --> 00:15:32,095
+Contested
+
+410
+00:15:32,351 --> 00:15:32,863
+All of the data
+
+411
+00:15:34,399 --> 00:15:36,959
+He understands but that has a major limitations
+
+412
+00:15:37,471 --> 00:15:42,591
+Because if you wait around for the data to be just right you're going to miss a lot of opportunities absolutely true
+
+413
+00:15:42,847 --> 00:15:44,127
+You have just described my life
+
+414
+00:15:44,639 --> 00:15:47,455
+You know there's just a practical aspect of it which is you know like so
+
+415
+00:15:47,967 --> 00:15:51,295
+You know if you have this is an option you know to invest some of your money in like
+
+416
+00:15:51,551 --> 00:15:52,831
+Doesn't seem like a good bat
+
+417
+00:15:53,855 --> 00:15:54,367
+Yes
+
+418
+00:15:55,391 --> 00:15:55,903
+Today
+
+419
+00:15:56,415 --> 00:15:58,207
+At the moment we publish this podcast
+
+420
+00:15:58,719 --> 00:15:59,743
+We are pushing go
+
+421
+00:15:59,999 --> 00:16:00,511
+Anarbagh
+
+422
+00:16:01,023 --> 00:16:01,535
+Botas
+
+423
+00:16:02,047 --> 00:16:06,911
+It will start trading real money our real money so if you are listening to this podcast
+
+424
+00:16:07,167 --> 00:16:07,679
+It means
+
+425
+00:16:07,935 --> 00:16:08,447
+The machine
+
+426
+00:16:08,703 --> 00:16:09,215
+Is life
+
+427
+00:16:12,543 --> 00:16:18,687
+You can follow botas in the real world how to do it after this
+
+428
+00:16:18,943 --> 00:16:25,087
+Support for this podcast and the following message come from The Economic Development Authority of Fairfax
+
+429
+00:16:25,343 --> 00:16:26,111
+County Virginia
+
+430
+00:16:26,367 --> 00:16:31,743
+Home to more than 350 cyber companies and 8900 technology-related firms
+
+431
+00:16:31,999 --> 00:16:38,143
+Details at Power of ideas. Org
+
+432
+00:16:38,399 --> 00:16:40,959
+This is more than a stock trading bot it also tweets
+
+433
+00:16:41,471 --> 00:16:42,751
+You can follow at
+
+434
+00:16:43,007 --> 00:16:46,335
+Botas on Twitter at botus
+
+435
+00:16:46,591 --> 00:16:47,359
+And you will see
+
+436
+00:16:47,615 --> 00:16:48,639
+Every trade that we make
+
+437
+00:16:48,895 --> 00:16:49,663
+How are you doing
+
+438
+00:16:49,919 --> 00:16:51,455
+Few other little surprises
+
+439
+00:16:52,479 --> 00:16:55,807
+And what about it starts training you will also be able to follow along on our website
+
+440
+00:16:56,063 --> 00:16:57,087
+Npr.org
+
+441
+00:16:57,343 --> 00:16:58,623
+We genuinely don't know what to do
+
+442
+00:16:58,879 --> 00:17:00,415
+We could make money we could lose money
+
+443
+00:17:00,927 --> 00:17:07,071
+Trump stop tweeting about companies perhaps the least interesting option for us but if there is something interesting we will let you know about
+
+444
+00:17:07,583 --> 00:17:09,119
+On the website on the Twitter account
+
+445
+00:17:09,375 --> 00:17:10,399
+Right here on the Pike
+
+446
+00:17:10,911 --> 00:17:14,239
+Today Show was produced by Sally Helm and edited by Bryant
+
+447
+00:17:15,007 --> 00:17:20,895
+He thinks you money and Camilo and everyone at tradeworks who helps build our bot and then endure all of my questions in the week.
+
+448
+00:17:21,407 --> 00:17:26,271
+Interactive brokers who let us set up a very small trading account without charging us extra fees
+
+449
+00:17:26,783 --> 00:17:28,575
+Kevin mcpartland
+
+450
+00:17:28,831 --> 00:17:30,879
+And the folks at the NPR Visual and digital
+
+451
+00:17:31,391 --> 00:17:37,535
+If you're looking for something else to listen to try up first its Interiors newest podcast it is a daily news show
+
+452
+00:17:37,791 --> 00:17:41,887
+Show hosted by some of the biggest names that NPR David Greene Steve inskeep
+
+453
+00:17:42,143 --> 00:17:42,911
+Rachel Martin
+
+454
+00:17:43,167 --> 00:17:43,679
+Called up
+
+455
+00:17:43,935 --> 00:17:49,311
+First and you can find it at npr.org podcast on the NPR one app or wherever you get your
+
+456
+00:17:50,079 --> 00:17:56,223
+I'm Jacob Goldstein
+
+457
+00:17:56,991 --> 00:17:59,039
+What Naruto got some footnotes
+
+458
+00:17:59,295 --> 00:18:00,319
+Okay footnote number one
+
+459
+00:18:00,831 --> 00:18:02,111
+One detail of those tweets
+
+460
+00:18:02,367 --> 00:18:03,135
+To the computer analyzed
+
+461
+00:18:03,391 --> 00:18:05,183
+Figure out which were positive and which were negative
+
+462
+00:18:05,951 --> 00:18:09,535
+The most negative of all of the tweets scored by the computer
+
+463
+00:18:09,791 --> 00:18:10,815
+It was about
+
+464
+00:18:11,071 --> 00:18:12,351
+Saturday Night Live
+
+465
+00:18:13,887 --> 00:18:14,399
+Because
+
+466
+00:18:14,655 --> 00:18:18,495
+@nbcnews is bad but Saturday Night Live is the worst of NBC
+
+467
+00:18:18,751 --> 00:18:20,543
+Not funny cast is terrible
+
+468
+00:18:20,799 --> 00:18:22,335
+Always a complete hit job
+
+469
+00:18:22,591 --> 00:18:23,871
+Really bad television
+
+470
+00:18:24,127 --> 00:18:24,895
+Bad
+
+471
+00:18:25,663 --> 00:18:27,199
+Terrible really bad
+
+472
+00:18:27,711 --> 00:18:28,223
+Worst
+
+473
+00:18:30,015 --> 00:18:31,039
+Footnote number 2
+
+474
+00:18:31,295 --> 00:18:31,807
+Number two
+
+475
+00:18:32,063 --> 00:18:34,623
+On Tiffany's the company and Tiffany stock
+
+476
+00:18:34,879 --> 00:18:35,903
+Donald Trump's daughter
+
+477
+00:18:36,159 --> 00:18:38,719
+Is reportedly named after Tiffany's the company
+
+478
+00:18:38,975 --> 00:18:39,487
+And Trump
+
+479
+00:18:39,743 --> 00:18:42,559
+Bought the air rights over Tiffany's the store
+
+480
+00:18:42,815 --> 00:18:46,143
+Which is what enabled him to build Trump Tower as tall as it is

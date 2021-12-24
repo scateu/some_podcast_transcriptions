@@ -1,0 +1,5223 @@
+1
+00:00:06,656 --> 00:00:12,288
+Hey everyone it's time for The Internet of Things podcast
+
+2
+00:00:12,544 --> 00:00:15,616
+This is your house Stacy
+
+3
+00:00:16,128 --> 00:00:16,896
+Kevin tofel
+
+4
+00:00:18,944 --> 00:00:19,456
+Are you today
+
+5
+00:00:19,712 --> 00:00:20,224
+First off
+
+6
+00:00:20,736 --> 00:00:21,504
+We should say that
+
+7
+00:00:21,760 --> 00:00:22,784
+Hey welcome back
+
+8
+00:00:23,296 --> 00:00:24,064
+Good to be back
+
+9
+00:00:25,600 --> 00:00:26,368
+Rite Aid
+
+10
+00:00:26,880 --> 00:00:27,904
+A run for your money
+
+11
+00:00:28,160 --> 00:00:29,184
+I heard that
+
+12
+00:00:29,440 --> 00:00:29,952
+I heard that
+
+13
+00:00:30,976 --> 00:00:37,120
+First off Kevin's back today and we have
+
+14
+00:00:37,376 --> 00:00:38,144
+We can talk about
+
+15
+00:00:38,912 --> 00:00:39,936
+Cool uses for
+
+16
+00:00:40,448 --> 00:00:40,960
+Lighter
+
+17
+00:00:41,728 --> 00:00:42,240
+Rings
+
+18
+00:00:42,496 --> 00:00:43,520
+Security
+
+19
+00:00:44,032 --> 00:00:45,824
+Roomba
+
+20
+00:00:46,336 --> 00:00:49,664
+Iot design Manifesto I learned about at South by Southwest
+
+21
+00:00:55,808 --> 00:01:00,416
+You're going to enjoy it and I still can't get my SmartThings and Lutron integration to work
+
+22
+00:01:02,976 --> 00:01:05,536
+We'll have a message from our sponsor Samsung
+
+23
+00:01:06,048 --> 00:01:10,656
+And our guest this week is concerned who is with Hogan Lovells
+
+24
+00:01:10,912 --> 00:01:11,680
+Oh Law Firm
+
+25
+00:01:12,192 --> 00:01:13,472
+And she specializes in
+
+26
+00:01:13,728 --> 00:01:15,776
+Class action suit can we talk about
+
+27
+00:01:16,032 --> 00:01:18,336
+What the iot is going to do
+
+28
+00:01:18,592 --> 00:01:20,896
+For class action lawsuits and
+
+29
+00:01:21,152 --> 00:01:23,456
+Product liability and deceptive trade practices
+
+30
+00:01:23,712 --> 00:01:25,248
+She actually taught me a lot
+
+31
+00:01:26,784 --> 00:01:27,296
+Before we get
+
+32
+00:01:30,368 --> 00:01:31,392
+Another one of our sponsors
+
+33
+00:01:31,904 --> 00:01:33,184
+SSO
+
+34
+00:01:33,952 --> 00:01:40,096
+The world's top three automakers use wolf SSL to secure their vehicles and they aren't alone
+
+35
+00:01:40,352 --> 00:01:46,496
+Wolf SSL secure is 2 billion connections across a multitude of iot devices including Automotive
+
+36
+00:01:46,752 --> 00:01:52,896
+Connected home industrial military and medical devices with the Mirai botnet in the girl
+
+37
+00:01:53,152 --> 00:01:59,296
+Rolling threat of ransomware attacks on the Internet of Things companies have to pay attention to security or wrist litigation
+
+38
+00:01:59,552 --> 00:02:05,696
+Bad PR and their brand value securing the iot is hard but wolf SSL has he
+
+39
+00:02:05,952 --> 00:02:08,256
+Sperian specialized expertise to help
+
+40
+00:02:08,512 --> 00:02:12,096
+Shouldn't you be using both SSL to find out more
+
+41
+00:02:12,352 --> 00:02:18,496
+Visit wolf ssl.com and yes you probably
+
+42
+00:02:18,752 --> 00:02:23,360
+You should be using SSL because as we learned later in Today Show security is a big part of
+
+43
+00:02:23,872 --> 00:02:24,384
+Risk
+
+44
+00:02:24,640 --> 00:02:25,152
+Management
+
+45
+00:02:27,712 --> 00:02:28,224
+All right
+
+46
+00:02:28,992 --> 00:02:29,504
+Kevin
+
+47
+00:02:30,272 --> 00:02:30,784
+Stacy
+
+48
+00:02:31,040 --> 00:02:33,600
+Let's just get started with Intel
+
+49
+00:02:33,856 --> 00:02:34,624
+15
+
+50
+00:02:34,880 --> 00:02:38,464
+Three billion dollar acquisition of mobileye
+
+51
+00:02:38,720 --> 00:02:44,864
+That's huge well I mean not as Huges other Acquisitions until has made but I didn't
+
+52
+00:02:45,120 --> 00:02:47,680
+Not see this one coming and for those who are not familiar
+
+53
+00:02:48,192 --> 00:02:50,496
+Mobileye is in is really based
+
+54
+00:02:51,008 --> 00:02:54,336
+Company that started back in 1999 and
+
+55
+00:02:54,592 --> 00:02:57,664
+Their technology Powers a large percentage of
+
+56
+00:02:58,176 --> 00:03:01,248
+SA
+
+57
+00:03:01,760 --> 00:03:02,528
+Vehicles
+
+58
+00:03:03,040 --> 00:03:05,600
+That's what was using them for quite a while if I recall correctly
+
+59
+00:03:05,856 --> 00:03:07,904
+Yeah and then I know other automakers are
+
+60
+00:03:08,416 --> 00:03:10,720
+Are also using mobileye for their
+
+61
+00:03:11,232 --> 00:03:16,096
+Self-driving efforts but yeah
+
+62
+00:03:16,352 --> 00:03:16,864
+Deal
+
+63
+00:03:17,376 --> 00:03:21,472
+It was $63.54 per share
+
+64
+00:03:21,984 --> 00:03:26,080
+Which was a 33% premium to the prior day closing price for mobileye
+
+65
+00:03:26,848 --> 00:03:31,200
+That is up a chunk of their short-term cash they see you and I were looking at until
+
+66
+00:03:31,456 --> 00:03:32,736
+Recent balance sheet
+
+67
+00:03:32,992 --> 00:03:36,832
+Just before the show minutes it's almost like all of it
+
+68
+00:03:37,088 --> 00:03:37,856
+I think was 17
+
+69
+00:03:38,112 --> 00:03:38,624
+2.1 billion
+
+70
+00:03:39,648 --> 00:03:40,672
+Are cash and short term
+
+71
+00:03:41,696 --> 00:03:42,976
+That's not to say they can't raise me
+
+72
+00:03:43,232 --> 00:03:43,744
+More cash they can
+
+73
+00:03:46,304 --> 00:03:46,816
+We sell a lot
+
+74
+00:03:47,072 --> 00:03:47,584
+Or chips
+
+75
+00:03:47,840 --> 00:03:48,608
+But it's a big deal
+
+76
+00:03:50,144 --> 00:03:50,912
+Tide like
+
+77
+00:03:51,168 --> 00:03:54,496
+It's actually almost as big as their recent acquisition about Tara
+
+78
+00:03:55,008 --> 00:03:56,032
+Which was about
+
+79
+00:03:56,288 --> 00:03:57,568
+Two years ago that they announce the
+
+80
+00:03:57,824 --> 00:03:59,104
+Still I think it closed last year
+
+81
+00:03:59,616 --> 00:04:01,920
+And this was Intel spending 16
+
+82
+00:04:02,432 --> 00:04:03,712
+7 billion dollars
+
+83
+00:04:03,968 --> 00:04:05,504
+Company that makes
+
+84
+00:04:06,016 --> 00:04:06,528
+Programmable
+
+85
+00:04:06,784 --> 00:04:07,296
+Chips
+
+86
+00:04:08,064 --> 00:04:09,344
+So I'll tear with an F
+
+87
+00:04:10,880 --> 00:04:12,672
+So you guys might be looking at this
+
+88
+00:04:13,440 --> 00:04:14,976
+Hey Intel has just bought
+
+89
+00:04:15,232 --> 00:04:16,256
+Mobil ISO
+
+90
+00:04:17,280 --> 00:04:18,303
+Computer vision for cars
+
+91
+00:04:18,815 --> 00:04:21,887
+Then they also bought a company called movidius which was computer vision
+
+92
+00:04:22,143 --> 00:04:22,911
+On battery power device
+
+93
+00:04:24,447 --> 00:04:25,727
+And prior to that
+
+94
+00:04:26,495 --> 00:04:28,543
+Nervana systems which was all about AI
+
+95
+00:04:29,311 --> 00:04:33,663
+And there's a company making an AI chip but also an AI kind of software-as-a-service layer
+
+96
+00:04:34,175 --> 00:04:38,783
+And then I'll Tara so what's happening here is Intel is really try this time around 2
+
+97
+00:04:39,039 --> 00:04:40,575
+Get ahead of where it thinks
+
+98
+00:04:40,831 --> 00:04:41,599
+Computing is going
+
+99
+00:04:43,135 --> 00:04:44,159
+Can I just say
+
+100
+00:04:44,671 --> 00:04:46,207
+Spending a lot to get there but
+
+101
+00:04:46,719 --> 00:04:48,767
+I want that again I will never bet against it
+
+102
+00:04:50,815 --> 00:04:52,351
+Cuz they have money and they have
+
+103
+00:04:52,607 --> 00:04:53,375
+Know-how and
+
+104
+00:04:54,143 --> 00:04:56,703
+Brian krzanich the current CEO is just like
+
+105
+00:04:57,215 --> 00:04:58,751
+For a long time until was hobbled by a
+
+106
+00:04:59,007 --> 00:05:00,799
+It's dedication to x86
+
+107
+00:05:01,055 --> 00:05:01,567
+Picture witches
+
+108
+00:05:04,383 --> 00:05:05,151
+And now they're like
+
+109
+00:05:05,407 --> 00:05:05,919
+You know what
+
+110
+00:05:06,687 --> 00:05:07,199
+It's in the past
+
+111
+00:05:10,527 --> 00:05:12,063
+And when you say Havel they mean
+
+112
+00:05:12,575 --> 00:05:14,111
+It was always up for a large
+
+113
+00:05:14,367 --> 00:05:16,415
+Curative time until was focusing on
+
+114
+00:05:16,671 --> 00:05:18,719
+Processing speed and Power
+
+115
+00:05:19,231 --> 00:05:21,023
+Just at the time when we were looking at
+
+116
+00:05:21,535 --> 00:05:22,559
+Chip efficiency
+
+117
+00:05:22,815 --> 00:05:23,583
+Hence the rise of
+
+118
+00:05:23,839 --> 00:05:26,143
+Arm architecture and mobile devices which
+
+119
+00:05:26,655 --> 00:05:28,703
+Sure power is great in your performance
+
+120
+00:05:28,959 --> 00:05:32,799
+Empower a great but you need to be efficient because everything's battery-powered so
+
+121
+00:05:33,055 --> 00:05:34,847
+We kind of lost out in a large
+
+122
+00:05:35,359 --> 00:05:36,383
+Way on mobile
+
+123
+00:05:36,639 --> 00:05:37,151
+So far
+
+124
+00:05:37,663 --> 00:05:38,943
+What's notable
+
+125
+00:05:40,223 --> 00:05:42,783
+Is wise chips
+
+126
+00:05:43,295 --> 00:05:44,575
+Their IQ
+
+127
+00:05:45,087 --> 00:05:46,111
+Their chips are the IQ
+
+128
+00:05:46,367 --> 00:05:47,135
+They're basically
+
+129
+00:05:47,903 --> 00:05:50,207
+Massive supercomputing type
+
+130
+00:05:50,463 --> 00:05:51,487
+Power for doing
+
+131
+00:05:51,743 --> 00:05:52,511
+Computer vision
+
+132
+00:05:54,303 --> 00:05:55,839
+325 Watts
+
+133
+00:05:57,631 --> 00:05:58,143
+Really
+
+134
+00:05:58,911 --> 00:05:59,423
+It's not like
+
+135
+00:05:59,679 --> 00:06:00,191
+Cell phone
+
+136
+00:06:00,447 --> 00:06:02,495
+It's definitely loafers
+
+137
+00:06:04,543 --> 00:06:05,055
+Power that is
+
+138
+00:06:06,079 --> 00:06:08,639
+Pray I mean I think even Intel's Adams back
+
+139
+00:06:08,895 --> 00:06:11,455
+Time my last used one was probably more like a
+
+140
+00:06:11,711 --> 00:06:12,735
+5 watt chip
+
+141
+00:06:13,759 --> 00:06:14,271
+So
+
+142
+00:06:15,807 --> 00:06:16,831
+I think that
+
+143
+00:06:17,343 --> 00:06:22,719
+Yes Intel is clearly getting into cars in autonomous vehicles which is going to be huge
+
+144
+00:06:22,975 --> 00:06:23,743
+Ed koehn Ford
+
+145
+00:06:23,999 --> 00:06:24,767
+It's also just
+
+146
+00:06:25,279 --> 00:06:28,607
+Look at it as Intel continuing to invest in lower power
+
+147
+00:06:29,119 --> 00:06:29,887
+Computer vision
+
+148
+00:06:30,143 --> 00:06:31,679
+Or even lower power arcade
+
+149
+00:06:32,703 --> 00:06:33,215
+Rail
+
+150
+00:06:33,471 --> 00:06:35,775
+And for scope of the other potential here
+
+151
+00:06:36,031 --> 00:06:40,639
+Goldman Sachs has a projection for Advanced Driver assistance systems and autonomous vehicles
+
+152
+00:06:41,151 --> 00:06:45,503
+They're saying they expect that market to grow from about 3 billion dollars in 2015
+
+153
+00:06:46,015 --> 00:06:50,111
+296 billion in 2025 and 290 billion
+
+154
+00:06:50,367 --> 00:06:51,391
+20:35
+
+155
+00:06:51,647 --> 00:06:52,927
+Predator
+
+156
+00:06:53,183 --> 00:06:55,743
+View out and lot of things can change but
+
+157
+00:06:55,999 --> 00:06:57,279
+You can see why
+
+158
+00:06:57,791 --> 00:06:59,071
+15 billion dollar investment
+
+159
+00:06:59,583 --> 00:07:01,119
+Is chump change with a potential error
+
+160
+00:07:01,887 --> 00:07:02,911
+Now the question I have
+
+161
+00:07:04,191 --> 00:07:06,495
+Built its dominance on the fact that
+
+162
+00:07:07,775 --> 00:07:11,359
+The x86 architecture license
+
+163
+00:07:13,663 --> 00:07:14,175
+Inside out
+
+164
+00:07:18,015 --> 00:07:20,831
+Intel's now moving into markets where it's going to have to be
+
+165
+00:07:21,087 --> 00:07:23,135
+Competitive
+
+166
+00:07:23,391 --> 00:07:24,927
+This this type of silica
+
+167
+00:07:25,439 --> 00:07:25,951
+So
+
+168
+00:07:26,207 --> 00:07:28,255
+It will be really interesting to see
+
+169
+00:07:28,511 --> 00:07:29,023
+Howard
+
+170
+00:07:30,559 --> 00:07:31,071
+Only
+
+171
+00:07:32,351 --> 00:07:38,495
+Agreed and it's funny because it's competing against the same folks that are it's competing Us in the mobile market medicine video call, so
+
+172
+00:07:38,751 --> 00:07:39,263
+Citrus soap
+
+173
+00:07:39,519 --> 00:07:40,799
+It's not like it's competing against
+
+174
+00:07:41,055 --> 00:07:42,591
+Players here at the same
+
+175
+00:07:42,847 --> 00:07:44,895
+Players and you're right this is a different
+
+176
+00:07:45,407 --> 00:07:48,223
+Environment for until 2 to try and succeed in
+
+177
+00:07:48,735 --> 00:07:49,247
+So we'll see
+
+178
+00:07:50,015 --> 00:07:51,807
+In other exciting news
+
+179
+00:07:52,063 --> 00:07:52,575
+About
+
+180
+00:07:53,087 --> 00:07:54,623
+Kevin actually
+
+181
+00:07:55,135 --> 00:07:56,671
+Told me something today that had me
+
+182
+00:07:57,183 --> 00:07:58,207
+Oh my gosh
+
+183
+00:07:58,463 --> 00:08:00,511
+I have Associated a technology called lighter
+
+184
+00:08:01,023 --> 00:08:01,791
+With
+
+185
+00:08:02,047 --> 00:08:04,607
+Drive self-driving cars only self-driving cars
+
+186
+00:08:04,863 --> 00:08:09,215
+Forever Kevin shared with me that when he was gone last week he was doing
+
+187
+00:08:09,983 --> 00:08:10,495
+People with lighter
+
+188
+00:08:10,751 --> 00:08:12,799
+Before I talk about it I'll just
+
+189
+00:08:13,055 --> 00:08:17,663
+You might standard disclosure that I do work as a consultant for Google and it's actually work
+
+190
+00:08:17,919 --> 00:08:22,527
+I was last week it was working for Google at our Google Cloud next event in San Francisco
+
+191
+00:08:23,039 --> 00:08:26,367
+And I was Manning the booze for my area which is
+
+192
+00:08:26,623 --> 00:08:28,415
+Cloud devices and Mobility
+
+193
+00:08:28,671 --> 00:08:33,279
+And we had in that Booth I didn't realize it at the time or beforehand
+
+194
+00:08:33,535 --> 00:08:36,351
+We had a $25,000 lidar sensor there
+
+195
+00:08:36,863 --> 00:08:37,887
+Nami by velodyne
+
+196
+00:08:38,143 --> 00:08:42,751
+Which of the same type of sensor you see on the self-driving cars that unit sits on top and spins around
+
+197
+00:08:43,263 --> 00:08:44,031
+And so on and so forth
+
+198
+00:08:44,543 --> 00:08:48,895
+And yes you're my most people associate that with self-driving cars for obvious reasons
+
+199
+00:08:49,407 --> 00:08:52,479
+Put together a prototype demo
+
+200
+00:08:52,991 --> 00:08:56,063
+Of using lidar to basically instrument
+
+201
+00:08:56,319 --> 00:08:58,367
+A space that could be any space
+
+202
+00:08:58,879 --> 00:09:03,231
+Some of the ideas that we had we were sharing with customers were hey you could put this in
+
+203
+00:09:03,487 --> 00:09:05,023
+A retail store for example
+
+204
+00:09:05,279 --> 00:09:05,791
+And
+
+205
+00:09:06,047 --> 00:09:10,143
+You can then get a physical heat map of your store
+
+206
+00:09:10,399 --> 00:09:16,031
+Showing where people are walking you know it's late to traffic patterns where people are stopping and looking at product etcetera
+
+207
+00:09:16,287 --> 00:09:19,615
+Manufacturing in office environment
+
+208
+00:09:19,871 --> 00:09:26,015
+How many people are standing by the printer right now and why are they standing there is a problem with the printer or you can start gathering this type of
+
+209
+00:09:26,271 --> 00:09:30,879
+Space data and apply in totally different ways from the self-driving vehicle application
+
+210
+00:09:31,391 --> 00:09:33,695
+It's kind of interesting
+
+211
+00:09:40,095 --> 00:09:43,935
+Yeah that's the exact same sensor yeah we just had it mounted up high
+
+212
+00:09:44,191 --> 00:09:47,007
+And you know people are walking by it was tracking
+
+213
+00:09:47,519 --> 00:09:49,567
+Weatherlock hanging over there standing
+
+214
+00:09:49,823 --> 00:09:55,967
+There's no personally identifiable information which makes it a very interesting application so as opposed to a camera
+
+215
+00:09:56,223 --> 00:09:57,247
+Example in the store
+
+216
+00:09:57,503 --> 00:10:00,831
+You just see these wireframe stick figures essentially people
+
+217
+00:10:03,135 --> 00:10:05,439
+And whatnot but you can't really see who's who
+
+218
+00:10:05,695 --> 00:10:06,463
+So I think that's
+
+219
+00:10:06,719 --> 00:10:08,767
+A kind of advantage of a camera and
+
+220
+00:10:09,535 --> 00:10:11,839
+You think about the data that you're capturing a man
+
+221
+00:10:12,095 --> 00:10:15,935
+Tons and tons of data because these things take like seven hundred thousand
+
+222
+00:10:16,191 --> 00:10:17,727
+Pieces of data per second
+
+223
+00:10:17,983 --> 00:10:20,543
+Because that thing spins around there's multiple lasers in there
+
+224
+00:10:21,055 --> 00:10:21,823
+It's just
+
+225
+00:10:22,079 --> 00:10:23,615
+Amazing amount of data that actually
+
+226
+00:10:23,871 --> 00:10:24,639
+Generate so
+
+227
+00:10:25,151 --> 00:10:28,479
+I'm just an interesting number of applications that maybe people haven't thought of
+
+228
+00:10:28,991 --> 00:10:29,503
+I like it
+
+229
+00:10:29,759 --> 00:10:32,575
+Anakin versus Cameron
+
+230
+00:10:32,831 --> 00:10:33,855
+We might be having
+
+231
+00:10:34,367 --> 00:10:34,879
+Until the end
+
+232
+00:10:37,695 --> 00:10:38,207
+All right
+
+233
+00:10:38,463 --> 00:10:38,975
+So
+
+234
+00:10:39,487 --> 00:10:41,279
+If you have a ring doorbell
+
+235
+00:10:41,535 --> 00:10:42,303
+Because
+
+236
+00:10:44,095 --> 00:10:49,727
+This is a security challenge for the ring doorbell
+
+237
+00:10:49,983 --> 00:10:54,847
+What happened is somebody noticed that
+
+238
+00:10:55,103 --> 00:10:56,895
+Was heading to a server in
+
+239
+00:10:57,407 --> 00:10:58,175
+China
+
+240
+00:10:58,431 --> 00:10:58,943
+And they said
+
+241
+00:11:00,479 --> 00:11:03,039
+Why are some of my package getting diverted to China
+
+242
+00:11:03,551 --> 00:11:05,087
+And they wouldn't read it
+
+243
+00:11:05,343 --> 00:11:09,439
+They posted it which is exactly where I would go if I notice some highly technical
+
+244
+00:11:11,487 --> 00:11:13,023
+The response actually
+
+245
+00:11:13,279 --> 00:11:15,839
+To their credit the VP of security at ring answers
+
+246
+00:11:17,375 --> 00:11:18,655
+He basically said that the
+
+247
+00:11:18,911 --> 00:11:21,215
+End of a live color motion they lose connectivity
+
+248
+00:11:21,727 --> 00:11:23,519
+Occasionally
+
+249
+00:11:24,031 --> 00:11:25,823
+Rather than abandoning the entire call
+
+250
+00:11:26,591 --> 00:11:28,383
+They said the last few audio packets that are
+
+251
+00:11:28,639 --> 00:11:29,151
+Corrupted
+
+252
+00:11:29,407 --> 00:11:29,919
+2
+
+253
+00:11:30,175 --> 00:11:32,735
+A non routable address on a protocol that
+
+254
+00:11:32,991 --> 00:11:33,503
+No one uses
+
+255
+00:11:34,271 --> 00:11:34,783
+Okay
+
+256
+00:11:37,855 --> 00:11:39,903
+The plan is that they're going to update the firmware
+
+257
+00:11:40,159 --> 00:11:40,671
+So this doesn't have
+
+258
+00:11:41,439 --> 00:11:45,535
+And he talks a little bit more about why they're doing that kind of architecture design
+
+259
+00:11:45,791 --> 00:11:49,631
+What I don't think they talk about and what I imagine is also taking place here
+
+260
+00:11:50,143 --> 00:11:51,935
+Is ring uses a camera from China
+
+261
+00:11:52,447 --> 00:11:53,471
+Ring does not build its own
+
+262
+00:11:55,519 --> 00:11:57,823
+I'm wondering if this is something that was
+
+263
+00:11:58,079 --> 00:12:01,407
+Basically part of the camera architecture and they just for like
+
+264
+00:12:01,919 --> 00:12:03,455
+Don't mess with that we'll just leave that is it is
+
+265
+00:12:05,759 --> 00:12:07,039
+I could be I could be
+
+266
+00:12:07,295 --> 00:12:11,647
+It's interesting to me in and I hope we post the link to this conversation in the show notes because
+
+267
+00:12:11,903 --> 00:12:15,487
+Is this actually the whole conversation went on a lot longer than we have time to
+
+268
+00:12:15,743 --> 00:12:16,255
+Cover
+
+269
+00:12:16,511 --> 00:12:17,791
+There's a lot of back-and-forth
+
+270
+00:12:19,327 --> 00:12:21,375
+UDP packet
+
+271
+00:12:21,631 --> 00:12:23,679
+So long story short
+
+272
+00:12:23,935 --> 00:12:26,751
+Conversation went back and forth this was a technical user
+
+273
+00:12:27,007 --> 00:12:33,151
+Going back and forth with the VP of security at ring ends explained
+
+274
+00:12:33,407 --> 00:12:39,039
+It's a really good conversation and I'm glad that's person knew what she was talking about
+
+275
+00:12:39,551 --> 00:12:41,855
+Doubly glad that ring is finally said
+
+276
+00:12:42,111 --> 00:12:44,415
+Yeah we're going to take it from her since no longer happens
+
+277
+00:12:44,927 --> 00:12:46,719
+Yeah the point here is
+
+278
+00:12:47,487 --> 00:12:49,791
+When you are building connected devices
+
+279
+00:12:50,303 --> 00:12:51,327
+You are building
+
+280
+00:12:51,839 --> 00:12:53,887
+On top of infrastructure that is
+
+281
+00:12:54,143 --> 00:12:55,167
+Already in place
+
+282
+00:12:55,423 --> 00:12:57,215
+And you need to evaluate
+
+283
+00:12:57,471 --> 00:12:59,775
+Every piece of infrastructure
+
+284
+00:13:01,311 --> 00:13:02,591
+To create your product
+
+285
+00:13:02,847 --> 00:13:03,615
+Ridiculously hard
+
+286
+00:13:05,151 --> 00:13:06,687
+Or we need to come up with some sleep
+
+287
+00:13:07,199 --> 00:13:10,271
+Unified certification layers or levels
+
+288
+00:13:10,527 --> 00:13:11,807
+For each layer of
+
+289
+00:13:12,063 --> 00:13:12,831
+Kind of a product
+
+290
+00:13:13,855 --> 00:13:15,903
+You don't understand how this happened
+
+291
+00:13:16,159 --> 00:13:19,487
+Happens if your sourcing in a products from someplace and
+
+292
+00:13:20,255 --> 00:13:22,303
+Ear like this is good
+
+293
+00:13:23,071 --> 00:13:23,583
+Put it here
+
+294
+00:13:24,351 --> 00:13:25,887
+Yeah you don't know what's in the firmware
+
+295
+00:13:27,935 --> 00:13:29,983
+The point root beer need to see here
+
+296
+00:13:30,239 --> 00:13:31,263
+Is you need to learn
+
+297
+00:13:32,543 --> 00:13:33,823
+Exactly
+
+298
+00:13:34,079 --> 00:13:34,847
+Where your
+
+299
+00:13:35,103 --> 00:13:37,151
+Cloud-hosted service provider is
+
+300
+00:13:37,407 --> 00:13:38,431
+Is putting your data
+
+301
+00:13:38,943 --> 00:13:43,039
+You need to understand what kind of security practices accompanies you contract with
+
+302
+00:13:43,295 --> 00:13:44,319
+Having place
+
+303
+00:13:44,575 --> 00:13:46,367
+For example the connected
+
+304
+00:13:46,879 --> 00:13:48,671
+Teddy bear hat from a couple weeks ago
+
+305
+00:13:48,927 --> 00:13:53,023
+Part of the issue there was it the toy company had contracted with
+
+306
+00:13:53,279 --> 00:13:54,815
+An outside vendor to set up
+
+307
+00:13:55,071 --> 00:13:55,583
+Therap
+
+308
+00:13:56,095 --> 00:13:56,607
+Which
+
+309
+00:13:56,863 --> 00:13:57,887
+Relied on
+
+310
+00:13:58,655 --> 00:14:02,751
+A mongodb database that had it like 14 month old security flaws oh shoot
+
+311
+00:14:03,519 --> 00:14:04,031
+Right
+
+312
+00:14:06,591 --> 00:14:07,359
+You can't do
+
+313
+00:14:08,127 --> 00:14:08,639
+Black Sheep tattoo
+
+314
+00:14:09,407 --> 00:14:13,247
+It goes back to what we said many times if you're going to deliver a product or service
+
+315
+00:14:13,503 --> 00:14:14,271
+You have to
+
+316
+00:14:14,527 --> 00:14:18,623
+Evaluated from a security perspective from beginning to end an everywhere in between
+
+317
+00:14:19,135 --> 00:14:19,903
+That means every
+
+318
+00:14:20,159 --> 00:14:21,183
+Server touches
+
+319
+00:14:21,439 --> 00:14:21,951
+Every
+
+320
+00:14:22,207 --> 00:14:22,719
+Network
+
+321
+00:14:22,975 --> 00:14:23,999
+Part uses
+
+322
+00:14:24,511 --> 00:14:26,047
+Cameras any parlor
+
+323
+00:14:26,815 --> 00:14:28,095
+The databases
+
+324
+00:14:28,351 --> 00:14:30,655
+It all has to be secured and evaluated
+
+325
+00:14:30,911 --> 00:14:33,983
+And now we're going to add another layer into that be
+
+326
+00:14:34,239 --> 00:14:35,007
+Has Kevin found
+
+327
+00:14:36,031 --> 00:14:37,311
+Some crazy
+
+328
+00:14:37,823 --> 00:14:41,151
+Crazy research that puts the physical in the Cyber visit
+
+329
+00:14:41,407 --> 00:14:41,919
+Call security
+
+330
+00:14:42,943 --> 00:14:47,295
+Yeah I never thought of this but it totally makes sense so
+
+331
+00:14:47,807 --> 00:14:49,343
+University of Michigan
+
+332
+00:14:49,599 --> 00:14:50,623
+Research esthetician
+
+333
+00:14:51,647 --> 00:14:52,415
+Different research
+
+334
+00:14:52,671 --> 00:14:53,695
+Earlier this week
+
+335
+00:14:54,207 --> 00:14:55,231
+That shows that
+
+336
+00:14:55,487 --> 00:14:56,511
+How you can use
+
+337
+00:14:56,767 --> 00:14:58,303
+Sound frequencies
+
+338
+00:14:58,559 --> 00:14:59,583
+2
+
+339
+00:14:59,839 --> 00:15:01,887
+Kind of wants a hack but I'll say
+
+340
+00:15:02,143 --> 00:15:02,655
+Yeah
+
+341
+00:15:02,911 --> 00:15:03,423
+Creek
+
+342
+00:15:03,679 --> 00:15:07,519
+Accelerometers that are in common devices that we use everyday such as
+
+343
+00:15:08,031 --> 00:15:10,847
+Watches Fitness tracker smart phones Etc
+
+344
+00:15:11,103 --> 00:15:13,151
+I didn't make sense when you think about it
+
+345
+00:15:13,407 --> 00:15:16,479
+Because accelerometers I mean they're measuring movement
+
+346
+00:15:16,991 --> 00:15:19,039
+And sound waves do
+
+347
+00:15:19,295 --> 00:15:21,343
+Have movement
+
+348
+00:15:21,855 --> 00:15:24,159
+So what these folks did was they actually just
+
+349
+00:15:25,439 --> 00:15:27,231
+They use a $5 speaker
+
+350
+00:15:27,743 --> 00:15:31,071
+And injected thousands of fictitious steps into a Fitbit
+
+351
+00:15:31,327 --> 00:15:32,351
+Just by playing
+
+352
+00:15:32,607 --> 00:15:34,655
+Particular sound frequency
+
+353
+00:15:34,911 --> 00:15:39,519
+They also used a music file on a smartphone Zone speaker
+
+354
+00:15:40,031 --> 00:15:42,847
+To Pilot a toy remote control car
+
+355
+00:15:43,359 --> 00:15:43,871
+And he
+
+356
+00:15:44,127 --> 00:15:47,455
+They took a different music file and got the word Walnut spelled
+
+357
+00:15:47,711 --> 00:15:48,479
+Autograph
+
+358
+00:15:48,735 --> 00:15:51,551
+On a Samsung Galaxy S5 because of its accelerometer
+
+359
+00:15:51,807 --> 00:15:54,111
+I just never thought of it but sound waves are
+
+360
+00:15:54,367 --> 00:15:55,391
+Vibrating
+
+361
+00:15:56,159 --> 00:15:58,463
+Chinese memes
+
+362
+00:15:58,975 --> 00:16:01,279
+These accelerometers can be affected
+
+363
+00:16:01,791 --> 00:16:05,375
+Basically a meme is a digital component
+
+364
+00:16:06,143 --> 00:16:07,423
+Physical world
+
+365
+00:16:07,935 --> 00:16:10,751
+So the accelerometer is usually like tiny little Springs
+
+366
+00:16:12,799 --> 00:16:14,335
+The digital component Translate
+
+367
+00:16:14,591 --> 00:16:16,127
+The movement of Springs into
+
+368
+00:16:16,639 --> 00:16:17,919
+Footsteps or whatever
+
+369
+00:16:18,431 --> 00:16:19,199
+Whatever algorithm
+
+370
+00:16:19,711 --> 00:16:20,223
+The company is putter
+
+371
+00:16:22,015 --> 00:16:23,039
+Here it's just
+
+372
+00:16:23,295 --> 00:16:24,063
+Be somebody
+
+373
+00:16:24,319 --> 00:16:25,343
+Springs
+
+374
+00:16:26,879 --> 00:16:30,463
+What's crazy is if you know the types of algorithms used you could do something like
+
+375
+00:16:30,975 --> 00:16:34,559
+Fake a seizure across a wide number of the population
+
+376
+00:16:34,815 --> 00:16:35,327
+For example
+
+377
+00:16:35,583 --> 00:16:37,375
+Aziz accelerometers if they've got
+
+378
+00:16:37,887 --> 00:16:39,935
+Devices that track Falls right
+
+379
+00:16:43,007 --> 00:16:44,031
+You might be like Wyatt
+
+380
+00:16:44,543 --> 00:16:45,055
+Would that matter but then
+
+381
+00:16:45,311 --> 00:16:47,359
+Emergency resources someplace
+
+382
+00:16:47,615 --> 00:16:48,127
+Right
+
+383
+00:16:48,639 --> 00:16:50,175
+I don't know I don't think like someone
+
+384
+00:16:52,479 --> 00:16:54,015
+If I could but if I did
+
+385
+00:16:57,343 --> 00:16:59,391
+I guess that's that other layer that
+
+386
+00:17:02,207 --> 00:17:08,351
+And I don't know from a security standpoint how you would protect against that that's that's going to be challenging
+
+387
+00:17:10,143 --> 00:17:10,655
+Okay
+
+388
+00:17:10,911 --> 00:17:12,191
+So that was a little bit of
+
+389
+00:17:13,215 --> 00:17:14,495
+4r
+
+390
+00:17:14,751 --> 00:17:18,591
+Habits of Happiness we have any happy news today
+
+391
+00:17:18,847 --> 00:17:22,943
+I was at South by Southwest and I didn't do a whole lot of stuff there
+
+392
+00:17:23,199 --> 00:17:23,711
+Because
+
+393
+00:17:24,479 --> 00:17:26,527
+It was really raining in cold and terrible
+
+394
+00:17:28,063 --> 00:17:28,831
+I did
+
+395
+00:17:29,343 --> 00:17:33,183
+Design workshop for iot
+
+396
+00:17:33,695 --> 00:17:37,279
+Devices and I discovered the iot design Manifesto
+
+397
+00:17:37,535 --> 00:17:40,607
+Manifesto
+
+398
+00:17:41,631 --> 00:17:42,911
+And it was basically
+
+399
+00:17:43,167 --> 00:17:45,471
+In this Workshop we actually built
+
+400
+00:17:47,007 --> 00:17:47,775
+We designed it
+
+401
+00:17:49,055 --> 00:17:53,919
+In the one thing I notice there are 10 things to think about with Society design
+
+402
+00:17:54,175 --> 00:17:54,687
+Manifesto
+
+403
+00:17:56,479 --> 00:17:57,759
+Privacy of data there's a secure
+
+404
+00:17:58,015 --> 00:17:58,527
+Charity
+
+405
+00:17:58,783 --> 00:17:59,295
+Element
+
+406
+00:17:59,807 --> 00:18:00,575
+There is
+
+407
+00:18:01,087 --> 00:18:04,415
+Parties parties associated with an iot product
+
+408
+00:18:04,671 --> 00:18:05,695
+Explicit
+
+409
+00:18:05,951 --> 00:18:06,463
+If your
+
+410
+00:18:06,719 --> 00:18:09,023
+Send your data to someplace else that they're using
+
+411
+00:18:11,071 --> 00:18:13,119
+And all these are awesome but what I didn't see
+
+412
+00:18:13,887 --> 00:18:14,655
+Is
+
+413
+00:18:15,679 --> 00:18:16,703
+Anything about business model
+
+414
+00:18:16,959 --> 00:18:18,495
+And I thought that was really kind of
+
+415
+00:18:18,751 --> 00:18:19,775
+Huge oversight
+
+416
+00:18:20,031 --> 00:18:20,543
+Cuz I think
+
+417
+00:18:21,311 --> 00:18:23,871
+I say this all the time so you guys might be sick of it but
+
+418
+00:18:24,895 --> 00:18:26,943
+We don't know how without a business model
+
+419
+00:18:27,455 --> 00:18:27,967
+You can't
+
+420
+00:18:28,223 --> 00:18:34,367
+Allocate the resources you need to continuously secure something or you can't tell customers that their device isn't going to die
+
+421
+00:18:34,623 --> 00:18:35,391
+In
+
+422
+00:18:36,927 --> 00:18:39,999
+Because I think it is
+
+423
+00:18:40,255 --> 00:18:40,767
+A great
+
+424
+00:18:41,023 --> 00:18:41,535
+Start
+
+425
+00:18:42,303 --> 00:18:46,399
+So are you suggesting maybe they need to add something that says you know
+
+426
+00:18:46,655 --> 00:18:49,215
+If you're providing a device or service
+
+427
+00:18:50,239 --> 00:18:52,799
+Promise to go open source if you go under
+
+428
+00:18:53,311 --> 00:18:55,359
+Oh that's a good idea I don't know how to think of
+
+429
+00:18:55,871 --> 00:18:59,711
+If you're designing a business model you probably also want to think about like
+
+430
+00:19:00,991 --> 00:19:03,295
+If your business model is selling data Maybe you
+
+431
+00:19:03,551 --> 00:19:06,367
+Have to add a clause about how you deal with the
+
+432
+00:19:06,623 --> 00:19:07,391
+When you sell it
+
+433
+00:19:09,439 --> 00:19:12,255
+If you shut up you don't but if you do
+
+434
+00:19:15,071 --> 00:19:16,351
+Put the source code in escrow
+
+435
+00:19:18,655 --> 00:19:22,239
+I don't know I just thought you know it's worth thinking the nice thing is
+
+436
+00:19:25,055 --> 00:19:28,127
+If you guys think it's worth doing you can actually
+
+437
+00:19:28,639 --> 00:19:30,943
+Submit thoughts and ideas to these people and maybe it will
+
+438
+00:19:31,455 --> 00:19:32,223
+Captain
+
+439
+00:19:34,783 --> 00:19:35,295
+That was that
+
+440
+00:19:37,855 --> 00:19:40,159
+Which is my favorite store
+
+441
+00:19:40,671 --> 00:19:42,207
+They don't pay me to say that I just like store
+
+442
+00:19:43,743 --> 00:19:47,839
+A San Francisco location and an Austin location
+
+443
+00:19:48,095 --> 00:19:50,143
+They already have a Seattle
+
+444
+00:19:50,399 --> 00:19:51,167
+Palo Alto
+
+445
+00:19:52,191 --> 00:19:52,703
+But
+
+446
+00:19:53,215 --> 00:19:55,263
+They're coming to my state
+
+447
+00:19:56,799 --> 00:19:57,311
+For my house
+
+448
+00:19:58,847 --> 00:19:59,615
+Very nice
+
+449
+00:20:00,383 --> 00:20:03,199
+And it turns out they're already in Seattle you said
+
+450
+00:20:04,223 --> 00:20:10,367
+And I am going out to Seattle in June to run the Rock and Roll Marathon with my other podcasting but
+
+451
+00:20:10,879 --> 00:20:12,159
+My mobile tech Roundup show
+
+452
+00:20:12,671 --> 00:20:13,695
+Just to get in through the hole
+
+453
+00:20:13,951 --> 00:20:17,279
+His first marathon and I think I will have time to go visit
+
+454
+00:20:20,351 --> 00:20:20,863
+Because it is
+
+455
+00:20:21,375 --> 00:20:22,655
+In each store stocks differ
+
+456
+00:20:22,911 --> 00:20:23,679
+Devices I should say
+
+457
+00:20:25,215 --> 00:20:27,775
+You could you could go to one in one place and see
+
+458
+00:20:28,287 --> 00:20:29,055
+Certain devices
+
+459
+00:20:29,311 --> 00:20:30,591
+And then go to another place
+
+460
+00:20:30,847 --> 00:20:31,615
+Play something totally different
+
+461
+00:20:33,663 --> 00:20:36,223
+Cool thing is they don't actually care if you buy it there
+
+462
+00:20:37,247 --> 00:20:39,807
+There gold the companies pay to be in the store
+
+463
+00:20:40,063 --> 00:20:40,831
+And it's basically
+
+464
+00:20:41,087 --> 00:20:41,599
+Additional mark
+
+465
+00:20:45,695 --> 00:20:46,719
+Go try to be our
+
+466
+00:20:49,023 --> 00:20:51,327
+Let's see we also have everything
+
+467
+00:20:51,839 --> 00:20:52,351
+Which
+
+468
+00:20:52,863 --> 00:20:53,887
+Doesn't have any vowels in it
+
+469
+00:20:55,167 --> 00:20:55,679
+This is
+
+470
+00:20:56,959 --> 00:21:00,031
+I like you're not going to find this company if you search for it but it's everything
+
+471
+00:21:00,287 --> 00:21:03,103
+With no vowels in it except for that first to eat
+
+472
+00:21:03,359 --> 00:21:04,895
+Is an iot platform
+
+473
+00:21:05,151 --> 00:21:06,687
+Based out of Europe
+
+474
+00:21:06,943 --> 00:21:10,527
+Gotten 24.8 million in series B funding
+
+475
+00:21:11,039 --> 00:21:13,343
+This is an Enterprise kind of corporate platform
+
+476
+00:21:13,855 --> 00:21:17,440
+But it's got deals with like Avery Dennison which is bigger
+
+477
+00:21:20,256 --> 00:21:20,768
+Crown holding
+
+478
+00:21:22,304 --> 00:21:23,072
+And westrock
+
+479
+00:21:23,328 --> 00:21:26,912
+So these are all big packaging companies and what they do is make smart Packaging
+
+480
+00:21:27,424 --> 00:21:28,704
+Dave provide the platform
+
+481
+00:21:28,960 --> 00:21:29,984
+For these guys
+
+482
+00:21:30,240 --> 00:21:30,752
+2
+
+483
+00:21:31,008 --> 00:21:31,520
+Put
+
+484
+00:21:31,776 --> 00:21:34,080
+No NFC or RFID tags on stuff
+
+485
+00:21:35,104 --> 00:21:35,616
+Shipman
+
+486
+00:21:35,872 --> 00:21:36,896
+Monitor
+
+487
+00:21:37,408 --> 00:21:37,920
+Train Transport
+
+488
+00:21:38,688 --> 00:21:41,504
+It's platform is used to monitor things like
+
+489
+00:21:42,272 --> 00:21:43,808
+Where to buy citizen the shipment
+
+490
+00:21:44,320 --> 00:21:46,112
+It gives consumers product information if they
+
+491
+00:21:46,368 --> 00:21:46,880
+They want it
+
+492
+00:21:47,136 --> 00:21:48,672
+And it also sends data back to
+
+493
+00:21:55,072 --> 00:21:56,352
+Like when I buy my
+
+494
+00:21:56,608 --> 00:22:02,752
+Liverpool Football Club Jersey there's an authenticity thing on and I can scan that and register it so it sounds like that's one of the things I can
+
+495
+00:22:03,008 --> 00:22:03,776
+Theoretically do
+
+496
+00:22:05,824 --> 00:22:09,408
+I actually had a conversation with another company
+
+497
+00:22:11,456 --> 00:22:14,272
+There's some really cool stuff Packaging
+
+498
+00:22:15,040 --> 00:22:17,344
+And I think I'll probably be ready
+
+499
+00:22:17,600 --> 00:22:18,880
+Stay tuned for that
+
+500
+00:22:19,136 --> 00:22:20,416
+Feels like something we probably shouldn't
+
+501
+00:22:20,672 --> 00:22:21,184
+Talk about 2
+
+502
+00:22:23,488 --> 00:22:25,280
+It's a little nerdy not everybody
+
+503
+00:22:25,536 --> 00:22:26,048
+He's excited about the
+
+504
+00:22:26,560 --> 00:22:27,328
+Packaging
+
+505
+00:22:30,656 --> 00:22:31,424
+Let me just leave it at
+
+506
+00:22:31,680 --> 00:22:32,704
+You will be
+
+507
+00:22:44,992 --> 00:22:45,760
+Get air
+
+508
+00:22:46,016 --> 00:22:47,040
+Echo integration
+
+509
+00:22:47,808 --> 00:22:50,880
+This is only the 900 series which has a
+
+510
+00:22:51,136 --> 00:22:51,904
+Wi-Fi connection
+
+511
+00:22:52,672 --> 00:22:53,184
+App
+
+512
+00:22:54,464 --> 00:22:56,768
+The idea is that soon you'll be able to tell your
+
+513
+00:22:57,792 --> 00:23:00,096
+Or ask the echo to start your Roomba
+
+514
+00:23:00,352 --> 00:23:00,864
+Which is
+
+515
+00:23:01,376 --> 00:23:02,656
+Pretty awesome
+
+516
+00:23:03,424 --> 00:23:05,216
+I have long wanted
+
+517
+00:23:05,984 --> 00:23:07,776
+Fly my pretties
+
+518
+00:23:08,544 --> 00:23:10,848
+And have my Roomba go because I am
+
+519
+00:23:11,104 --> 00:23:11,872
+A strange person who
+
+520
+00:23:12,640 --> 00:23:15,200
+Deep affection for The Wizard of Oz
+
+521
+00:23:16,224 --> 00:23:19,296
+You don't remember seeing the roomba's flying around in The Wizard of Oz but maybe in the
+
+522
+00:23:19,808 --> 00:23:22,368
+Yeah they're they're like the flying monkeys all day
+
+523
+00:23:22,624 --> 00:23:23,136
+You thinking about
+
+524
+00:23:23,392 --> 00:23:23,904
+Bratz
+
+525
+00:23:24,416 --> 00:23:25,184
+Or track poop
+
+526
+00:23:25,696 --> 00:23:26,464
+Whichever
+
+527
+00:23:26,720 --> 00:23:28,000
+Depending on your situation
+
+528
+00:23:29,536 --> 00:23:30,048
+So
+
+529
+00:23:30,304 --> 00:23:33,120
+Roomba is been really vocal about this in
+
+530
+00:23:33,632 --> 00:23:34,912
+I'm excited
+
+531
+00:23:35,168 --> 00:23:35,680
+I don't know if it's
+
+532
+00:23:36,960 --> 00:23:39,264
+Reba spent a lot of time talking about how they can be
+
+533
+00:23:39,776 --> 00:23:40,288
+Rooms
+
+534
+00:23:41,312 --> 00:23:42,592
+But they're not lighter
+
+535
+00:23:43,360 --> 00:23:43,872
+Twitter
+
+536
+00:23:44,128 --> 00:23:45,152
+Sensors
+
+537
+00:23:46,432 --> 00:23:50,016
+But it is an economical
+
+538
+00:23:51,552 --> 00:23:55,648
+And sharing that information back to other products in the home
+
+539
+00:23:56,416 --> 00:23:59,744
+Because of where the Rumba is I'm not 100% sure how
+
+540
+00:24:00,512 --> 00:24:04,096
+Useful that's going to be a me the stuff my Roomba normal encounters isn't stuff
+
+541
+00:24:04,352 --> 00:24:05,120
+The whole lot
+
+542
+00:24:05,376 --> 00:24:06,144
+Right right
+
+543
+00:24:06,912 --> 00:24:08,448
+I'm thinking this could be
+
+544
+00:24:08,704 --> 00:24:11,008
+Maybe you want to vacuum is very specific room
+
+545
+00:24:12,800 --> 00:24:15,872
+Maybe you don't want to pick up the room by bring it in there at the Starbuck whatever
+
+546
+00:24:16,128 --> 00:24:16,640
+You can just
+
+547
+00:24:16,896 --> 00:24:17,408
+Tablet
+
+548
+00:24:17,664 --> 00:24:19,200
+You don't go vacuum the dining room
+
+549
+00:24:19,456 --> 00:24:21,248
+Gas coming over something
+
+550
+00:24:21,504 --> 00:24:26,112
+And it will learn what room is what room and and therefore through voice control you can
+
+551
+00:24:26,624 --> 00:24:27,392
+You can do that
+
+552
+00:24:28,160 --> 00:24:30,976
+Yeah and they're also saying
+
+553
+00:24:31,488 --> 00:24:33,024
+Since the Roomba knows what room is
+
+554
+00:24:33,280 --> 00:24:33,792
+The kitchen
+
+555
+00:24:34,304 --> 00:24:35,584
+Eventually
+
+556
+00:24:36,352 --> 00:24:36,864
+The kitchen
+
+557
+00:24:37,120 --> 00:24:38,144
+Yeah
+
+558
+00:24:38,400 --> 00:24:39,168
+Information to
+
+559
+00:24:39,936 --> 00:24:42,752
+Other devices and then you can just say turn on lights in the kitchen
+
+560
+00:24:43,520 --> 00:24:48,640
+And you wouldn't have to program it in your essay so it so that I get it so today like when I I have
+
+561
+00:24:48,896 --> 00:24:52,992
+Lights in my kitchen I have them specifically labeled as kitchen light so that my
+
+562
+00:24:53,248 --> 00:24:54,784
+Want to turn them on to have to say that but
+
+563
+00:24:55,040 --> 00:24:58,112
+Element that naming programming Park in the setup
+
+564
+00:24:58,368 --> 00:24:59,648
+Because the information of
+
+565
+00:24:59,904 --> 00:25:02,208
+Kitchen would be found through the room up raps
+
+566
+00:25:05,024 --> 00:25:08,096
+Everything to make life easier it's all good
+
+567
+00:25:09,632 --> 00:25:10,144
+All right
+
+568
+00:25:10,400 --> 00:25:12,448
+I feel like that's pretty good for this week
+
+569
+00:25:12,960 --> 00:25:15,520
+It wasn't a whole lot of news
+
+570
+00:25:15,776 --> 00:25:19,872
+The Neo Smart Car debuted at South by Southwest and it's pretty
+
+571
+00:25:21,408 --> 00:25:21,920
+It's far offs
+
+572
+00:25:24,480 --> 00:25:27,040
+We should mention this because we have a lot of people who like their echoes
+
+573
+00:25:27,296 --> 00:25:29,088
+AWS has
+
+574
+00:25:29,600 --> 00:25:30,880
+AWS promotional credit
+
+575
+00:25:31,136 --> 00:25:31,648
+It's for
+
+576
+00:25:31,904 --> 00:25:32,928
+She who shall not be named
+
+577
+00:25:34,464 --> 00:25:38,816
+Basically you're saying it's free for Echo and I'm just going to say instead of
+
+578
+00:25:39,840 --> 00:25:40,352
+How to say Echo
+
+579
+00:25:43,168 --> 00:25:46,240
+So it is now free for Echo Developers
+
+580
+00:25:46,496 --> 00:25:47,264
+Echo skills
+
+581
+00:25:47,520 --> 00:25:48,544
+Using AWS
+
+582
+00:25:49,056 --> 00:25:50,336
+And they're going to offer
+
+583
+00:25:50,848 --> 00:25:51,872
+You can apply to get
+
+584
+00:25:52,128 --> 00:25:52,896
+An additional
+
+585
+00:25:53,408 --> 00:25:55,456
+$100 promotional credit each month
+
+586
+00:25:56,480 --> 00:25:58,016
+That you know you encouraged
+
+587
+00:25:58,528 --> 00:25:59,808
+Use your scale says you're skilled
+
+588
+00:26:00,064 --> 00:26:03,392
+What happens if it's free to develop usually it's free for life
+
+589
+00:26:03,648 --> 00:26:06,720
+Like a small number of users but if it gets really popular
+
+590
+00:26:08,000 --> 00:26:08,512
+Which is fine
+
+591
+00:26:09,024 --> 00:26:09,536
+Is prison
+
+592
+00:26:12,864 --> 00:26:13,376
+This way
+
+593
+00:26:13,632 --> 00:26:15,680
+You can apply and get an extra hundred dollars in
+
+594
+00:26:16,448 --> 00:26:16,960
+From
+
+595
+00:26:18,240 --> 00:26:20,288
+I will put the link to that so you can
+
+596
+00:26:20,544 --> 00:26:21,056
+Can I apply for that
+
+597
+00:26:24,640 --> 00:26:26,176
+They're letting you scale
+
+598
+00:26:26,432 --> 00:26:29,760
+On the cheap or for free because what they're saying here is if your skill
+
+599
+00:26:30,016 --> 00:26:34,368
+Surpasses the AWS for usage tier you may be eligible to continue receiving promotional credits in
+
+600
+00:26:34,624 --> 00:26:35,136
+I think
+
+601
+00:26:35,648 --> 00:26:41,280
+To get pass at 4 usage tear it was 1 million AWS Lambda requests in a given month
+
+602
+00:26:41,792 --> 00:26:47,936
+And or up to 750 hours of the Amazon elastic Cloud compute or easy to compute time
+
+603
+00:26:48,192 --> 00:26:49,984
+So if you're still really takes off
+
+604
+00:26:50,496 --> 00:26:54,592
+Don't panic and think I'm going to have to pay a lot of money to continue scaling
+
+605
+00:26:55,360 --> 00:26:56,384
+Does not look like you will
+
+606
+00:26:57,152 --> 00:27:00,480
+Exactly you know this make sense they want to get developers on board
+
+607
+00:27:00,992 --> 00:27:01,504
+There's
+
+608
+00:27:02,016 --> 00:27:03,552
+Increasing competition
+
+609
+00:27:04,064 --> 00:27:07,392
+And if you have all the skills I mean cuz like if I've developed
+
+610
+00:27:09,440 --> 00:27:15,584
+It will work across any hardware that's also using that platform which is actually really cool because a lot of other companies are
+
+611
+00:27:15,840 --> 00:27:17,632
+Building devices that have
+
+612
+00:27:20,448 --> 00:27:24,032
+If we should make an echo skill that so you can just say
+
+613
+00:27:24,288 --> 00:27:26,592
+Her name and save play the latest iPod
+
+614
+00:27:27,360 --> 00:27:28,384
+So you can actually do
+
+615
+00:27:29,152 --> 00:27:30,944
+Play that latest I know you could actually
+
+616
+00:27:33,760 --> 00:27:36,576
+Play The Internet of Things
+
+617
+00:27:37,856 --> 00:27:38,368
+Because we are
+
+618
+00:27:39,136 --> 00:27:39,648
+Yeah
+
+619
+00:27:39,904 --> 00:27:45,280
+But I have been thinking about a recipe of the day skill which I think would be kind of fun
+
+620
+00:27:45,792 --> 00:27:47,328
+Or maybe it's recipe
+
+621
+00:27:47,840 --> 00:27:49,888
+I like that's a lot of recipes to come up with
+
+622
+00:27:51,424 --> 00:27:52,960
+I just haven't gotten to the point
+
+623
+00:27:53,472 --> 00:27:55,264
+Okay I'm ready to do an echo skill
+
+624
+00:27:55,520 --> 00:27:56,032
+But
+
+625
+00:27:56,544 --> 00:27:58,848
+I'm talking to the Amazon team tomorrow so
+
+626
+00:27:59,104 --> 00:27:59,616
+We'll see what happens
+
+627
+00:28:02,688 --> 00:28:03,712
+I have a complete
+
+628
+00:28:04,224 --> 00:28:04,736
+So
+
+629
+00:28:04,992 --> 00:28:05,504
+Lutron
+
+630
+00:28:05,760 --> 00:28:11,648
+And SmartThings integration between the two platforms where you can control your Lutron lights with
+
+631
+00:28:11,904 --> 00:28:13,952
+The SmartThings the Samsung SmartThings platform
+
+632
+00:28:14,464 --> 00:28:16,000
+Super excited
+
+633
+00:28:16,256 --> 00:28:16,768
+Because
+
+634
+00:28:19,840 --> 00:28:21,120
+I was like because which one is awesome
+
+635
+00:28:21,888 --> 00:28:24,448
+Samsung actually works with the Google home and
+
+636
+00:28:24,704 --> 00:28:25,984
+Currently the wink doesn't
+
+637
+00:28:27,008 --> 00:28:28,032
+Oh yeah
+
+638
+00:28:28,288 --> 00:28:30,080
+Now I can control more stuff for the Google home
+
+639
+00:28:31,616 --> 00:28:32,128
+Well
+
+640
+00:28:32,896 --> 00:28:33,920
+I haven't gotten a tour
+
+641
+00:28:34,176 --> 00:28:36,736
+So last week I told you guys that for some reason I was having
+
+642
+00:28:36,992 --> 00:28:37,760
+Itachi issue
+
+643
+00:28:42,112 --> 00:28:44,160
+In touch with me they deleted my account
+
+644
+00:28:44,672 --> 00:28:45,440
+SmartThings
+
+645
+00:28:45,696 --> 00:28:47,232
+So I could restart from scratch
+
+646
+00:28:47,488 --> 00:28:49,024
+That did not solve the issue
+
+647
+00:28:49,280 --> 00:28:50,304
+What was happening as I could
+
+648
+00:28:50,560 --> 00:28:51,072
+Connect
+
+649
+00:28:51,584 --> 00:28:52,608
+My Lutron
+
+650
+00:28:53,120 --> 00:28:53,888
+Bridge
+
+651
+00:28:54,400 --> 00:28:55,680
+To the SmartThings app
+
+652
+00:28:55,936 --> 00:28:56,960
+But when it went to this
+
+653
+00:28:57,216 --> 00:28:58,496
+Discover my devices
+
+654
+00:28:59,776 --> 00:29:00,288
+It didn't work
+
+655
+00:29:00,544 --> 00:29:01,056
+I kept getting an
+
+656
+00:29:03,616 --> 00:29:04,384
+Send that to them
+
+657
+00:29:04,896 --> 00:29:05,408
+An
+
+658
+00:29:05,920 --> 00:29:06,432
+They
+
+659
+00:29:06,688 --> 00:29:08,480
+The first was like okay
+
+660
+00:29:09,248 --> 00:29:09,760
+Try again
+
+661
+00:29:10,784 --> 00:29:11,296
+Because
+
+662
+00:29:11,808 --> 00:29:12,320
+Networks
+
+663
+00:29:13,088 --> 00:29:19,232
+It didn't in this case and then they they looked further they said well we don't see your buchon Bridges connecting
+
+664
+00:29:20,000 --> 00:29:20,768
+To the server
+
+665
+00:29:21,024 --> 00:29:23,072
+It doesn't look like it's actually connecting out to the intern
+
+666
+00:29:24,608 --> 00:29:25,120
+But
+
+667
+00:29:25,632 --> 00:29:26,144
+That's not true
+
+668
+00:29:26,656 --> 00:29:27,168
+I
+
+669
+00:29:28,192 --> 00:29:28,960
+Next ACT test
+
+670
+00:29:29,472 --> 00:29:31,264
+I was like turn off the Wi-Fi on my phone
+
+671
+00:29:35,360 --> 00:29:35,872
+Text my
+
+672
+00:29:36,896 --> 00:29:39,456
+Bridge turn my lights off
+
+673
+00:29:40,992 --> 00:29:41,760
+That sounds like
+
+674
+00:29:42,016 --> 00:29:42,784
+Nope it is connected
+
+675
+00:29:43,296 --> 00:29:44,320
+Soul for some reason
+
+676
+00:29:44,832 --> 00:29:46,624
+SmartThings doesn't see
+
+677
+00:29:47,136 --> 00:29:47,648
+Miley Trump
+
+678
+00:29:49,440 --> 00:29:51,232
+And I've now reached out to
+
+679
+00:29:51,744 --> 00:29:52,256
+Bouchon
+
+680
+00:29:53,536 --> 00:29:54,304
+Maybe next week
+
+681
+00:29:54,560 --> 00:29:56,096
+Cuz I really just want to test this integration
+
+682
+00:30:01,728 --> 00:30:04,032
+If anyone is experienced this issue and knows how to solve it
+
+683
+00:30:04,544 --> 00:30:05,312
+Please let me know
+
+684
+00:30:06,848 --> 00:30:09,408
+If you've experienced the integration and you love it
+
+685
+00:30:09,664 --> 00:30:10,432
+That's also a good thing.
+
+686
+00:30:11,456 --> 00:30:12,736
+She said I can tell
+
+687
+00:30:12,992 --> 00:30:14,272
+I can tell all of our listeners
+
+688
+00:30:14,784 --> 00:30:15,552
+Hey guys
+
+689
+00:30:18,624 --> 00:30:19,136
+Maybe
+
+690
+00:30:19,392 --> 00:30:24,000
+I mean I know I have a lot of stuff I always I always test the stuff it doesn't work
+
+691
+00:30:25,280 --> 00:30:30,144
+There there are more variables in your environment than most people's I will I will grant you that
+
+692
+00:30:30,400 --> 00:30:30,912
+But
+
+693
+00:30:32,448 --> 00:30:34,240
+I don't really see why this would be an issue
+
+694
+00:30:34,496 --> 00:30:36,800
+On this case anyone it feels like somewhere
+
+695
+00:30:37,312 --> 00:30:38,848
+Somewhere there's something getting lost
+
+696
+00:30:41,408 --> 00:30:41,920
+We'll see
+
+697
+00:30:42,176 --> 00:30:43,456
+Alright Kevin I feel like
+
+698
+00:30:43,968 --> 00:30:44,992
+Wechat
+
+699
+00:30:45,504 --> 00:30:47,296
+We should probably move on to our guest
+
+700
+00:30:47,552 --> 00:30:48,320
+Phoebe Wilkinson
+
+701
+00:30:48,832 --> 00:30:50,112
+Who is a partner at Hogan Lovells
+
+702
+00:30:50,880 --> 00:30:52,416
+And we are going to be talking about
+
+703
+00:30:53,184 --> 00:30:54,720
+Lawsuits and the internet
+
+704
+00:30:55,488 --> 00:30:56,512
+Stay tuned
+
+705
+00:30:56,768 --> 00:30:57,280
+For that
+
+706
+00:30:57,536 --> 00:31:01,632
+And now a message from our sponsor
+
+707
+00:31:01,888 --> 00:31:08,032
+Hey everyone this is Stacy and we are taking a break in the podcast for a message from this week sponsor this week
+
+708
+00:31:08,288 --> 00:31:10,080
+Sponsor is Samsung artik
+
+709
+00:31:10,592 --> 00:31:13,152
+And today we're going to learn about smart lighting and
+
+710
+00:31:13,408 --> 00:31:14,688
+Building automation
+
+711
+00:31:15,200 --> 00:31:16,480
+Friend Thomas
+
+712
+00:31:16,736 --> 00:31:20,832
+Let's just get started by telling me what Samsung is doing in smart lighting
+
+713
+00:31:21,088 --> 00:31:22,368
+What we're doing is
+
+714
+00:31:22,624 --> 00:31:23,136
+2
+
+715
+00:31:23,392 --> 00:31:23,904
+Connect
+
+716
+00:31:24,160 --> 00:31:25,696
+Different lighting devices
+
+717
+00:31:25,952 --> 00:31:26,720
+Aesthetic system
+
+718
+00:31:26,976 --> 00:31:27,488
+Silo's
+
+719
+00:31:27,744 --> 00:31:28,256
+Today
+
+720
+00:31:28,768 --> 00:31:29,536
+In the cloud
+
+721
+00:31:29,792 --> 00:31:35,936
+Imagine a building where your sensors and light switches your flight fixes Luminaires they're from different men
+
+722
+00:31:36,192 --> 00:31:39,264
+The factors to operate on different connectivity protocols
+
+723
+00:31:39,776 --> 00:31:41,824
+And they do not talk to one another
+
+724
+00:31:42,080 --> 00:31:43,104
+So what you do is
+
+725
+00:31:43,360 --> 00:31:45,664
+Build a platform that allows two
+
+726
+00:31:45,920 --> 00:31:46,944
+Connect all this device
+
+727
+00:31:47,200 --> 00:31:47,712
+McLeod
+
+728
+00:31:48,224 --> 00:31:50,272
+And interoperate with one another
+
+729
+00:31:50,784 --> 00:31:52,576
+And smart lighting is part of
+
+730
+00:31:52,832 --> 00:31:53,600
+A bigger picture
+
+731
+00:31:53,856 --> 00:31:55,136
+Actually building automation
+
+732
+00:31:55,392 --> 00:31:58,464
+Why are people investing in building automation
+
+733
+00:31:58,976 --> 00:32:00,256
+That's right lighting
+
+734
+00:32:00,512 --> 00:32:04,352
+Heart of building Automation in the building you have
+
+735
+00:32:04,608 --> 00:32:05,632
+Traditionally
+
+736
+00:32:05,888 --> 00:32:07,168
+HVAC systems UFC
+
+737
+00:32:07,424 --> 00:32:10,752
+Security systems of data center North Coast lighting system
+
+738
+00:32:11,008 --> 00:32:12,288
+All operating in
+
+739
+00:32:12,544 --> 00:32:13,568
+Silo's today
+
+740
+00:32:13,824 --> 00:32:14,848
+And by
+
+741
+00:32:15,104 --> 00:32:17,920
+Connecting these different disciplines
+
+742
+00:32:18,176 --> 00:32:23,040
+You can optimize the energy used in buildings you can also
+
+743
+00:32:23,296 --> 00:32:24,320
+Connect the lights
+
+744
+00:32:24,576 --> 00:32:25,344
+This remotely
+
+745
+00:32:25,600 --> 00:32:26,624
+And operator
+
+746
+00:32:26,880 --> 00:32:27,904
+Building
+
+747
+00:32:28,160 --> 00:32:30,208
+Any place in the world hangzhou smart
+
+748
+00:32:30,976 --> 00:32:32,000
+How do you bring this together
+
+749
+00:32:32,256 --> 00:32:34,560
+Using art
+
+750
+00:32:35,072 --> 00:32:36,864
+Brings all these different devices
+
+751
+00:32:37,120 --> 00:32:39,680
+Together such that third-party devices
+
+752
+00:32:39,936 --> 00:32:41,216
+Interoperate
+
+753
+00:32:41,728 --> 00:32:42,496
+One another
+
+754
+00:32:43,008 --> 00:32:44,032
+In one place
+
+755
+00:32:44,800 --> 00:32:45,568
+Securely
+
+756
+00:32:45,824 --> 00:32:47,104
+Easy onboarding
+
+757
+00:32:47,360 --> 00:32:53,504
+It's the one place that brings Hardware software third-party devices and services
+
+758
+00:32:53,760 --> 00:32:54,528
+Together
+
+759
+00:32:54,784 --> 00:32:58,368
+So that they can truly interoperate which is the true meaning
+
+760
+00:32:58,624 --> 00:32:59,904
+Off the Internet of Things
+
+761
+00:33:00,672 --> 00:33:02,720
+Now that I've taken my building automation
+
+762
+00:33:03,488 --> 00:33:04,512
+Thumbs all through Samsung
+
+763
+00:33:05,024 --> 00:33:06,304
+What kind of Roi
+
+764
+00:33:07,328 --> 00:33:13,216
+Yeah that's a great question so the ROI can be brought down to half a year
+
+765
+00:33:13,472 --> 00:33:17,056
+Maybe one and a half years which is significantly better than
+
+766
+00:33:17,568 --> 00:33:19,872
+The four years you have to have today
+
+767
+00:33:20,128 --> 00:33:22,176
+Traditional building management system
+
+768
+00:33:22,432 --> 00:33:23,200
+Consider that
+
+769
+00:33:23,712 --> 00:33:29,600
+Traditional building management systems you pay a minimum of $2 50 per square foot sometimes after
+
+770
+00:33:29,856 --> 00:33:30,624
+$7
+
+771
+00:33:30,880 --> 00:33:32,160
+Square foot
+
+772
+00:33:32,416 --> 00:33:32,928
+Modern
+
+773
+00:33:33,184 --> 00:33:33,696
+Iot
+
+774
+00:33:33,952 --> 00:33:37,024
+Base building management system you can bring this down
+
+775
+00:33:37,280 --> 00:33:38,048
+2 hours
+
+776
+00:33:38,304 --> 00:33:39,328
+75 cent
+
+777
+00:33:40,352 --> 00:33:43,936
+What's it about five times less than that of the traditional
+
+778
+00:33:44,192 --> 00:33:44,704
+Billy Madison
+
+779
+00:33:45,472 --> 00:33:47,008
+And this week Samsung
+
+780
+00:33:47,264 --> 00:33:48,544
+Has launched a new e-book
+
+781
+00:33:48,800 --> 00:33:49,568
+Unconnected lighting
+
+782
+00:33:49,824 --> 00:33:52,640
+It's called iot connected Commercial Lighting solution
+
+783
+00:33:53,152 --> 00:33:55,456
+7 questions for achieving optimal value
+
+784
+00:33:55,712 --> 00:33:57,504
+It's an insightful look on what it takes
+
+785
+00:33:57,760 --> 00:33:59,040
+2 connector lighting
+
+786
+00:33:59,296 --> 00:34:02,624
+And you can find it at www
+
+787
+00:34:02,880 --> 00:34:04,160
+Slash connected lighting
+
+788
+00:34:04,416 --> 00:34:05,184
+Remember that
+
+789
+00:34:05,440 --> 00:34:06,464
+Www
+
+790
+00:34:06,720 --> 00:34:07,488
+. artic
+
+791
+00:34:07,744 --> 00:34:09,280
+AR Tik
+
+792
+00:34:09,536 --> 00:34:10,304
+Dot IO
+
+793
+00:34:10,816 --> 00:34:16,960
+/ connected lighting go download it today
+
+794
+00:34:17,216 --> 00:34:23,360
+Hey everyone welcome back to the Internet of Things podcast this is your host Stacy
+
+795
+00:34:24,384 --> 00:34:28,736
+And today I have a wonderful guest for you guys this is Phoebe Wilkinson
+
+796
+00:34:28,992 --> 00:34:30,784
+Who is a partner at Hogan Lovells
+
+797
+00:34:32,064 --> 00:34:32,576
+CD
+
+798
+00:34:32,832 --> 00:34:33,856
+Why don't you tell us
+
+799
+00:34:34,112 --> 00:34:34,880
+What your specialty
+
+800
+00:34:36,160 --> 00:34:37,184
+Thanks Stacy I'm just
+
+801
+00:34:37,440 --> 00:34:40,000
+Really pleased to be doing this podcast with you
+
+802
+00:34:40,512 --> 00:34:45,120
+My area of specialty is that I represent manufacturers of products
+
+803
+00:34:45,376 --> 00:34:48,704
+In court litigation or perhaps sometimes in arbitration
+
+804
+00:34:49,216 --> 00:34:53,312
+With a heavy focus on class actions as their litigated here in the US courts
+
+805
+00:34:53,568 --> 00:34:56,896
+Basically she tells people how to make things that won't get them sued
+
+806
+00:34:57,152 --> 00:34:57,920
+Is that a good summation
+
+807
+00:34:58,432 --> 00:35:04,576
+I do I try to make sure they do not get sued working with people you know as they bring products to Market but
+
+808
+00:35:04,832 --> 00:35:08,928
+Also to the degree the inevitable happens and they they do get sued
+
+809
+00:35:09,440 --> 00:35:12,000
+Routinely in their defending them and
+
+810
+00:35:12,512 --> 00:35:15,328
+Trying to make sure classes never get certified against my client
+
+811
+00:35:16,352 --> 00:35:21,216
+Exactly so I thought it would be really awesome to have you come on the show to talk about the Internet of Things
+
+812
+00:35:21,472 --> 00:35:24,032
+Because it feels like a really ripe area for
+
+813
+00:35:24,288 --> 00:35:26,080
+Gosh class action lawsuits
+
+814
+00:35:26,592 --> 00:35:31,200
+I see a lot of people talking about how the government is not regulating this area so maybe it will be regulated
+
+815
+00:35:31,456 --> 00:35:31,968
+Quartz
+
+816
+00:35:32,224 --> 00:35:34,528
+And I would love to just get your sun sign
+
+817
+00:35:34,784 --> 00:35:35,552
+Big picture
+
+818
+00:35:35,808 --> 00:35:37,600
+What role do you think the Court's going to play
+
+819
+00:35:38,624 --> 00:35:41,184
+Kind of making the internet of things a little bit
+
+820
+00:35:41,440 --> 00:35:42,464
+Maybe more secure
+
+821
+00:35:42,720 --> 00:35:43,488
+Baby
+
+822
+00:35:43,744 --> 00:35:44,256
+I don't know
+
+823
+00:35:44,512 --> 00:35:45,792
+More consumer-friendly
+
+824
+00:35:46,304 --> 00:35:50,144
+Given that these devices are so new and
+
+825
+00:35:50,400 --> 00:35:53,472
+Regulations always sort of lag a little bit behind
+
+826
+00:35:53,728 --> 00:35:58,336
+Technology and advancement that you often find that the courts when they're faced with lawsuit
+
+827
+00:35:58,592 --> 00:36:03,456
+It's often become the first area where where policy or laws or
+
+828
+00:36:03,712 --> 00:36:07,552
+Howa manufacturer needs to operate in terms of thinking about the risk
+
+829
+00:36:07,808 --> 00:36:11,392
+Of operating in the space that courts play a pretty big role
+
+830
+00:36:11,648 --> 00:36:16,512
+And shaping how we all operate before maybe regulators and legislators ketchup
+
+831
+00:36:17,024 --> 00:36:23,168
+Got it so when we talked to earlier you actually gave me this awesome history of class action lawsuits in the first I was like
+
+832
+00:36:23,680 --> 00:36:24,704
+Why are we doing this
+
+833
+00:36:24,960 --> 00:36:26,240
+But as you explain to me
+
+834
+00:36:26,496 --> 00:36:30,336
+This actually helps understand what's a class action lawsuit and what isn't
+
+835
+00:36:30,592 --> 00:36:33,152
+So I'd love for you to kind of explain that to her audio
+
+836
+00:36:34,176 --> 00:36:34,688
+Sure
+
+837
+00:36:34,944 --> 00:36:36,480
+So the class action
+
+838
+00:36:36,992 --> 00:36:41,344
+Mechanism in the tool really came about I want to stay in the 70s
+
+839
+00:36:41,856 --> 00:36:44,672
+And it came about for a very logical reason
+
+840
+00:36:45,184 --> 00:36:48,256
+So you had an airplane that unfortunately perhaps
+
+841
+00:36:48,512 --> 00:36:49,024
+Crashed
+
+842
+00:36:49,280 --> 00:36:49,792
+Or maybe a
+
+843
+00:36:50,048 --> 00:36:51,328
+Skywalk fell
+
+844
+00:36:51,840 --> 00:36:55,168
+Before they had the class-action rule in the procedure
+
+845
+00:36:55,424 --> 00:37:01,312
+Every person who was involved in the crash or the Skywalk that fell
+
+846
+00:37:01,568 --> 00:37:02,592
+They have to sue
+
+847
+00:37:02,848 --> 00:37:08,992
+The manufacturer or any of the defendants one by one and what someone came up with was you know what
+
+848
+00:37:09,248 --> 00:37:10,272
+I shouldn't really have to
+
+849
+00:37:10,528 --> 00:37:11,040
+Prove
+
+850
+00:37:11,552 --> 00:37:13,344
+That the engine was defective
+
+851
+00:37:13,600 --> 00:37:17,696
+But if there was a problem where there was a liability 230 times
+
+852
+00:37:17,952 --> 00:37:19,744
+I should really only have to do it once
+
+853
+00:37:20,000 --> 00:37:22,304
+Because if we know the person was on the plane
+
+854
+00:37:22,560 --> 00:37:25,120
+There's really going to be no question as to causation
+
+855
+00:37:25,632 --> 00:37:26,656
+The plane went down
+
+856
+00:37:26,912 --> 00:37:29,728
+Liability was determined to be the fault of
+
+857
+00:37:29,984 --> 00:37:31,264
+XYZ
+
+858
+00:37:31,520 --> 00:37:32,800
+And then everybody on the plane
+
+859
+00:37:33,056 --> 00:37:36,384
+You should get the benefit of all that work and not have to do it
+
+860
+00:37:36,640 --> 00:37:38,944
+230 * an individual lawsuit
+
+861
+00:37:39,712 --> 00:37:40,992
+That made a lot of sense
+
+862
+00:37:41,504 --> 00:37:44,064
+What's happened however since that time
+
+863
+00:37:44,576 --> 00:37:45,600
+Is that
+
+864
+00:37:45,856 --> 00:37:49,440
+Lawyers and even technology and products
+
+865
+00:37:50,208 --> 00:37:50,720
+Have started
+
+866
+00:37:50,976 --> 00:37:56,096
+Look to that tool and they said we'll meet him in it maybe I can use that tool for other loss
+
+867
+00:37:57,120 --> 00:37:57,888
+And at one stage
+
+868
+00:37:58,144 --> 00:38:01,728
+They were used against the tobacco industry against the Pharma industry
+
+869
+00:38:01,984 --> 00:38:08,128
+The world of el diseno that's really too many individual issues there so we can't really use it for those
+
+870
+00:38:08,384 --> 00:38:09,920
+Personal injury type cases
+
+871
+00:38:10,176 --> 00:38:12,480
+But then the next advancement was
+
+872
+00:38:12,992 --> 00:38:16,064
+Famous lawyers or litigants who said well
+
+873
+00:38:16,576 --> 00:38:19,392
+But I have a deceptive trade practice or disc
+
+874
+00:38:19,648 --> 00:38:21,696
+Deceptive thing that a company did
+
+875
+00:38:22,208 --> 00:38:24,512
+In connection with how they advertised
+
+876
+00:38:24,768 --> 00:38:25,280
+The product
+
+877
+00:38:25,792 --> 00:38:28,608
+Or whether they made it safe and reasonable for youth
+
+878
+00:38:29,120 --> 00:38:31,424
+And the class action tool is actually
+
+879
+00:38:31,936 --> 00:38:36,288
+Really the right tool to use in terms of an action
+
+880
+00:38:36,544 --> 00:38:39,360
+That goes after what those activities were
+
+881
+00:38:39,872 --> 00:38:41,152
+So for example
+
+882
+00:38:41,664 --> 00:38:43,200
+Do you secure your data
+
+883
+00:38:43,456 --> 00:38:44,736
+How do you use your data
+
+884
+00:38:44,992 --> 00:38:46,528
+What have you told people
+
+885
+00:38:47,040 --> 00:38:50,112
+And that is sort of I think the New Frontier 4
+
+886
+00:38:50,624 --> 00:38:53,184
+Manufacturers are people who are in the
+
+887
+00:38:53,440 --> 00:38:58,048
+In the world of Internet of things and just think about that because it does present
+
+888
+00:38:58,304 --> 00:38:59,072
+A challenge
+
+889
+00:38:59,328 --> 00:39:03,936
+Going forward but when I think that they can at least think about how to mitigate some of that risk
+
+890
+00:39:04,192 --> 00:39:07,008
+That was really helpful so that the challenge has become
+
+891
+00:39:07,520 --> 00:39:08,288
+Inks Lake
+
+892
+00:39:08,544 --> 00:39:10,592
+So deceptive trade practice that's things
+
+893
+00:39:10,848 --> 00:39:13,152
+I'm saying my device does something that
+
+894
+00:39:13,664 --> 00:39:14,176
+May not
+
+895
+00:39:14,432 --> 00:39:15,712
+Or maybe I'm overstating it
+
+896
+00:39:16,224 --> 00:39:16,736
+Abilities
+
+897
+00:39:16,992 --> 00:39:20,576
+Could it also tie into devices that
+
+898
+00:39:20,832 --> 00:39:23,904
+Consumer might have an assumption that they'll be around awhile but then they get
+
+899
+00:39:24,672 --> 00:39:25,184
+Richter
+
+900
+00:39:25,440 --> 00:39:25,952
+Turned off
+
+901
+00:39:26,464 --> 00:39:27,232
+This is actually happen
+
+902
+00:39:27,488 --> 00:39:29,792
+Find a lot in the internet of things with devices
+
+903
+00:39:30,304 --> 00:39:33,632
+That you know maybe the company goes out of business and they're not going to support it
+
+904
+00:39:33,888 --> 00:39:36,704
+Or music company gets acquired in the new company isn't going to support it
+
+905
+00:39:37,472 --> 00:39:37,984
+So
+
+906
+00:39:38,240 --> 00:39:39,264
+I really trying to figure out
+
+907
+00:39:40,032 --> 00:39:41,056
+What cases
+
+908
+00:39:41,312 --> 00:39:42,080
+Might come up
+
+909
+00:39:42,336 --> 00:39:43,616
+For class-action status
+
+910
+00:39:44,896 --> 00:39:48,480
+I think there's a variety of them and I think you've identified number
+
+911
+00:39:48,992 --> 00:39:51,552
+But think about a very sort of straightforward one
+
+912
+00:39:52,064 --> 00:39:58,208
+And we've actually seen this play out recently with respect to to a manufacturer of a smart device
+
+913
+00:39:58,464 --> 00:40:00,512
+Smart devices collect a lot of data
+
+914
+00:40:01,280 --> 00:40:01,792
+And
+
+915
+00:40:02,048 --> 00:40:04,352
+It's a manufacturer is going to do anything
+
+916
+00:40:04,608 --> 00:40:07,168
+Set data so for example maybe they'd like to
+
+917
+00:40:07,424 --> 00:40:08,192
+To sell the data
+
+918
+00:40:08,448 --> 00:40:09,984
+To companies that
+
+919
+00:40:10,496 --> 00:40:13,312
+Track advertising or track audience measurement
+
+920
+00:40:13,824 --> 00:40:16,128
+Or track the successive advertise
+
+921
+00:40:16,896 --> 00:40:18,432
+If the manufacturer of noctis
+
+922
+00:40:18,688 --> 00:40:19,200
+Closed
+
+923
+00:40:19,968 --> 00:40:22,528
+To the purchasers of the smart device
+
+924
+00:40:23,296 --> 00:40:25,344
+Hey I'm going to be collecting the data
+
+925
+00:40:25,600 --> 00:40:26,112
+And
+
+926
+00:40:26,368 --> 00:40:30,976
+You can opt-out if you'd like but also I may use that data that omission
+
+927
+00:40:31,488 --> 00:40:35,584
+Not telling a consumer about what you're doing with respect
+
+928
+00:40:35,840 --> 00:40:38,656
+To their privacy their viewing history
+
+929
+00:40:38,912 --> 00:40:40,448
+Whatever it is it the smart device
+
+930
+00:40:40,704 --> 00:40:44,032
+Does Tracking not telling them actually is actionable in this
+
+931
+00:40:44,544 --> 00:40:46,080
+Because every state
+
+932
+00:40:46,336 --> 00:40:47,360
+All 50 states
+
+933
+00:40:47,616 --> 00:40:50,688
+Pretty much have what they call a deceptive Trade Practices Act
+
+934
+00:40:51,200 --> 00:40:54,272
+All of them in essence a manufacturers
+
+935
+00:40:54,528 --> 00:40:57,344
+Or sellers of products cannot engage in
+
+936
+00:40:57,600 --> 00:41:00,672
+Deceptive trade practices which includes advertising
+
+937
+00:41:01,184 --> 00:41:06,816
+What you say about a product if it turns out not to be true or what you don't say about a product
+
+938
+00:41:07,072 --> 00:41:09,120
+Internet since that's my omission
+
+939
+00:41:09,632 --> 00:41:12,192
+Example and the danger of these
+
+940
+00:41:12,448 --> 00:41:15,520
+These statutes and the way they can be used very
+
+941
+00:41:15,776 --> 00:41:17,312
+Aggressively is that
+
+942
+00:41:17,824 --> 00:41:21,920
+Most states allow you to bring a class-action using that statute there's a few that don't
+
+943
+00:41:22,432 --> 00:41:24,992
+But they carry treble damages often
+
+944
+00:41:25,504 --> 00:41:26,784
+They carry the right
+
+945
+00:41:27,040 --> 00:41:28,320
+For the manufacturer
+
+946
+00:41:28,576 --> 00:41:30,368
+Have to pay attorneys fees back
+
+947
+00:41:30,880 --> 00:41:31,392
+To the planets
+
+948
+00:41:31,904 --> 00:41:33,440
+And in some instances provide
+
+949
+00:41:33,696 --> 00:41:34,464
+Punitive damages
+
+950
+00:41:34,720 --> 00:41:37,024
+So the stakes are very very high
+
+951
+00:41:37,280 --> 00:41:41,120
+And the actions you take as a manufacturer
+
+952
+00:41:41,376 --> 00:41:42,656
+Can very much be
+
+953
+00:41:42,912 --> 00:41:46,240
+Implicated because if you say something but you don't say everything
+
+954
+00:41:46,496 --> 00:41:48,800
+Or if you say something but you don't say it
+
+955
+00:41:49,056 --> 00:41:50,080
+Sweetly truthfully
+
+956
+00:41:50,336 --> 00:41:55,455
+There's a lot that can be done with attorneys who say that is a deceptive trade
+
+957
+00:41:56,223 --> 00:42:00,063
+It also frankly can come up with a to Securities if you don't secure the data
+
+958
+00:42:00,319 --> 00:42:04,159
+And you have a big reach that's not going to be a deceptive Trade Practices Act
+
+959
+00:42:04,415 --> 00:42:07,231
+Per se but they're either can be class actions
+
+960
+00:42:07,743 --> 00:42:10,047
+That are lodged against you for failing to
+
+961
+00:42:10,303 --> 00:42:12,351
+Secure the data that you've collected
+
+962
+00:42:12,863 --> 00:42:14,655
+In a way that is reasonable
+
+963
+00:42:14,911 --> 00:42:17,471
+In terms of your obligations to secure that data
+
+964
+00:42:18,239 --> 00:42:20,031
+Okay so we've got ate a security
+
+965
+00:42:20,287 --> 00:42:21,055
+We've got
+
+966
+00:42:21,311 --> 00:42:22,335
+This idea of decep
+
+967
+00:42:22,591 --> 00:42:23,359
+How to trade practices
+
+968
+00:42:23,871 --> 00:42:25,151
+Are there other issues
+
+969
+00:42:25,407 --> 00:42:26,175
+That
+
+970
+00:42:26,431 --> 00:42:27,199
+Might be risky
+
+971
+00:42:27,455 --> 00:42:28,479
+Kefir manufacturers of
+
+972
+00:42:30,015 --> 00:42:33,343
+Those are the primary ones if you're going to collect data you have to
+
+973
+00:42:33,599 --> 00:42:39,743
+Secure it but if you're going to collect data or if you're going to do anything with respect to the information that you obtained from your
+
+974
+00:42:39,999 --> 00:42:41,791
+Are consumers connected to
+
+975
+00:42:42,303 --> 00:42:44,863
+Smart devices you really need to make
+
+976
+00:42:45,119 --> 00:42:45,631
+Disclosures
+
+977
+00:42:46,143 --> 00:42:48,447
+I guess there is one other risk and it's not
+
+978
+00:42:48,703 --> 00:42:51,007
+Pacific to say a cause of action
+
+979
+00:42:51,519 --> 00:42:52,799
+But the reality is
+
+980
+00:42:53,055 --> 00:42:53,567
+That
+
+981
+00:42:54,335 --> 00:42:58,943
+Data izax it's not expensive to hold we know that these days right
+
+982
+00:42:59,199 --> 00:43:01,247
+It's pretty actually cheap to hold data in the cloud
+
+983
+00:43:01,759 --> 00:43:03,295
+But if you're involved in a litigation
+
+984
+00:43:03,807 --> 00:43:07,135
+And then you have to produce the data through the court process
+
+985
+00:43:07,647 --> 00:43:08,927
+That can be an exception
+
+986
+00:43:09,183 --> 00:43:09,951
+Soleus pain
+
+987
+00:43:10,719 --> 00:43:15,327
+Addition and severe say I think companies need to think about if they are going to collect data is
+
+988
+00:43:15,839 --> 00:43:19,935
+Do we really need to hold on to it for any particular period of time
+
+989
+00:43:20,447 --> 00:43:24,031
+In legal parlance we call it a document retention policy
+
+990
+00:43:24,287 --> 00:43:26,335
+Birthday tarp reservation policy
+
+991
+00:43:26,591 --> 00:43:31,455
+Where you sit beside you know what we really don't need to keep anything for longer than x years
+
+992
+00:43:31,711 --> 00:43:32,991
+Let's go a little crazy here
+
+993
+00:43:33,759 --> 00:43:34,271
+Because
+
+994
+00:43:34,783 --> 00:43:40,159
+What you're talking about artificial intelligence
+
+995
+00:43:40,671 --> 00:43:43,743
+And how people are using data collected off to train
+
+996
+00:43:44,255 --> 00:43:45,535
+Models in SoHo
+
+997
+00:43:45,791 --> 00:43:47,327
+That becomes really interesting be
+
+998
+00:43:47,583 --> 00:43:49,119
+Because the data
+
+999
+00:43:49,375 --> 00:43:50,399
+Is used to create
+
+1000
+00:43:50,655 --> 00:43:52,959
+Basically a model that says like this is a dog this is
+
+1001
+00:43:53,215 --> 00:43:53,983
+The cat this is whatever
+
+1002
+00:43:54,239 --> 00:43:55,007
+R4 Leica camera
+
+1003
+00:43:55,263 --> 00:43:55,775
+For example
+
+1004
+00:43:56,287 --> 00:43:57,567
+And then that algorithm
+
+1005
+00:43:57,823 --> 00:43:59,359
+Lives on four
+
+1006
+00:43:59,615 --> 00:44:00,127
+Forever
+
+1007
+00:44:00,383 --> 00:44:02,687
+And then it gets gradually retrained with more data
+
+1008
+00:44:03,199 --> 00:44:04,479
+So if I'm thinking about like
+
+1009
+00:44:04,735 --> 00:44:05,759
+Data retention
+
+1010
+00:44:06,015 --> 00:44:12,159
+Do I need to keep the data that becomes part of an algorithm especially as algorithm start making things happen so a
+
+1011
+00:44:12,415 --> 00:44:12,927
+Actually eating things
+
+1012
+00:44:13,695 --> 00:44:16,511
+I may not get a notification on my security camera
+
+1013
+00:44:16,767 --> 00:44:17,791
+If it thinks it's a dog
+
+1014
+00:44:18,559 --> 00:44:21,375
+I'm in maybe someone breaks into my house because of that and I'm
+
+1015
+00:44:21,887 --> 00:44:22,399
+Timeout money
+
+1016
+00:44:22,911 --> 00:44:23,935
+Maybe there's a fly in there
+
+1017
+00:44:24,959 --> 00:44:25,471
+Product
+
+1018
+00:44:25,727 --> 00:44:26,751
+I don't know I'm kind of
+
+1019
+00:44:27,007 --> 00:44:29,311
+I feel like it's a little far out there but then I'm also like
+
+1020
+00:44:31,615 --> 00:44:37,759
+I don't think there's anything that's far out there and in this evolving world of smart data smart technology
+
+1021
+00:44:38,015 --> 00:44:40,575
+And I think you've identified a lot of things
+
+1022
+00:44:40,831 --> 00:44:42,111
+The people need to think about
+
+1023
+00:44:42,623 --> 00:44:48,767
+In terms of the retention there's no question that if the algorithms that you have or any of the technology
+
+1024
+00:44:49,023 --> 00:44:49,535
+LG
+
+1025
+00:44:50,047 --> 00:44:51,583
+That you have that operate
+
+1026
+00:44:51,839 --> 00:44:52,351
+It's the device
+
+1027
+00:44:52,863 --> 00:44:59,007
+You're going to want to keep that right because you're going to want to make sure that you have the ability to always create the history of how we got there
+
+1028
+00:44:59,263 --> 00:45:00,031
+And keep it updated
+
+1029
+00:45:00,543 --> 00:45:06,687
+But there may be other data that you decide is not necessary to maintain in terms of the Opera
+
+1030
+00:45:06,943 --> 00:45:07,455
+Recent
+
+1031
+00:45:07,967 --> 00:45:12,831
+Of the business or the or the operation of what your business is doing or what you're looking at
+
+1032
+00:45:13,343 --> 00:45:14,879
+And so it's that day that I was
+
+1033
+00:45:15,135 --> 00:45:19,487
+Suggesting that they're up there can be instances where companies will not want to keep that data
+
+1034
+00:45:19,999 --> 00:45:21,279
+Because it's expensive
+
+1035
+00:45:21,535 --> 00:45:23,839
+Down the road if there's ever any sort of it
+
+1036
+00:45:24,095 --> 00:45:24,607
+Disputes have to
+
+1037
+00:45:24,863 --> 00:45:25,375
+Producent
+
+1038
+00:45:25,631 --> 00:45:27,935
+But you're right there are there going to be categories
+
+1039
+00:45:28,191 --> 00:45:29,983
+The data that you're going to want to hold onto
+
+1040
+00:45:30,239 --> 00:45:33,055
+For the viability and for the progression of the business
+
+1041
+00:45:33,823 --> 00:45:38,431
+Okay well that makes it so maybe they don't need to keep that it's my cat but they should probably keep the record that it
+
+1042
+00:45:38,687 --> 00:45:39,199
+It's a cat
+
+1043
+00:45:39,455 --> 00:45:40,223
+That is great
+
+1044
+00:45:40,991 --> 00:45:41,503
+So
+
+1045
+00:45:41,759 --> 00:45:42,783
+Let's think about
+
+1046
+00:45:43,039 --> 00:45:45,343
+Disclosures because you've mentioned this
+
+1047
+00:45:45,599 --> 00:45:48,159
+As a risky area for companies
+
+1048
+00:45:48,671 --> 00:45:52,767
+I'm very curious because I buy a lot of connected devices and I
+
+1049
+00:45:53,023 --> 00:45:54,303
+Click through a lot of terms of
+
+1050
+00:45:54,559 --> 00:45:56,095
+Service agreements
+
+1051
+00:45:56,351 --> 00:45:59,935
+Where a lot of these devices will say hey we're going to sell your data.
+
+1052
+00:46:02,239 --> 00:46:03,007
+Make algorithms
+
+1053
+00:46:03,519 --> 00:46:04,031
+And
+
+1054
+00:46:05,823 --> 00:46:06,335
+Enough
+
+1055
+00:46:06,591 --> 00:46:12,735
+I feel like when I'm clicking through a terms of service on a 4-inch screen on my oven or maybe it's the 2-inch screen on my
+
+1056
+00:46:12,991 --> 00:46:13,759
+My thermostat and like
+
+1057
+00:46:14,271 --> 00:46:17,343
+Is it really reasonable that I read a 40-page ulloa on
+
+1058
+00:46:17,855 --> 00:46:18,623
+That particular time
+
+1059
+00:46:18,879 --> 00:46:19,391
+I don't know
+
+1060
+00:46:19,903 --> 00:46:20,415
+So
+
+1061
+00:46:20,671 --> 00:46:21,951
+Any any thoughts there
+
+1062
+00:46:22,719 --> 00:46:24,255
+I think if you want to be
+
+1063
+00:46:24,767 --> 00:46:25,279
+Really
+
+1064
+00:46:25,535 --> 00:46:27,071
+Prudent and manager risk
+
+1065
+00:46:27,583 --> 00:46:30,399
+You consider identifying at the top
+
+1066
+00:46:30,655 --> 00:46:31,679
+Of those
+
+1067
+00:46:32,191 --> 00:46:32,959
+Documents
+
+1068
+00:46:33,471 --> 00:46:37,311
+Or somewhere prominent right where and then user starting to use it
+
+1069
+00:46:37,823 --> 00:46:38,591
+That the
+
+1070
+00:46:38,847 --> 00:46:40,895
+30 page or the 40 pages
+
+1071
+00:46:41,151 --> 00:46:42,175
+Contains
+
+1072
+00:46:42,431 --> 00:46:44,991
+The following types of disclosures
+
+1073
+00:46:45,503 --> 00:46:47,807
+And identify them by category and say
+
+1074
+00:46:48,063 --> 00:46:50,367
+You have the opportunity if you'd like to opt out
+
+1075
+00:46:50,879 --> 00:46:52,159
+And if you do want it
+
+1076
+00:46:52,415 --> 00:46:53,695
+See more about this right away
+
+1077
+00:46:53,951 --> 00:46:57,023
+To create that link that maybe they can go there right away
+
+1078
+00:46:57,279 --> 00:47:01,375
+I'm a defense lawyer and I tell my clients all the time it is always safer
+
+1079
+00:47:01,887 --> 00:47:03,935
+When you start out to anticipate the worst
+
+1080
+00:47:04,191 --> 00:47:05,215
+And work backwards
+
+1081
+00:47:05,983 --> 00:47:08,287
+And so if you think about ways and terms of the
+
+1082
+00:47:08,543 --> 00:47:09,055
+Disclosures
+
+1083
+00:47:09,823 --> 00:47:10,591
+That you make
+
+1084
+00:47:11,615 --> 00:47:13,919
+The especially if you are going to
+
+1085
+00:47:14,175 --> 00:47:15,199
+Use the data
+
+1086
+00:47:15,455 --> 00:47:19,295
+Sell the data or you want to do something with the data that you capture
+
+1087
+00:47:19,807 --> 00:47:21,855
+From a person smart
+
+1088
+00:47:22,111 --> 00:47:22,623
+Device
+
+1089
+00:47:23,135 --> 00:47:24,415
+I think it is prudent
+
+1090
+00:47:24,671 --> 00:47:29,535
+To be pretty clear about that up front and if you give them the opt-out right and they don't
+
+1091
+00:47:30,047 --> 00:47:32,607
+At least if there's ever a problem down the road
+
+1092
+00:47:33,119 --> 00:47:37,727
+You can say if your face was some sort of a regulatory inquiry or a lawsuit
+
+1093
+00:47:37,983 --> 00:47:39,775
+Hey I was very upfront
+
+1094
+00:47:40,287 --> 00:47:43,359
+Early on as to what this document contains
+
+1095
+00:47:43,871 --> 00:47:47,711
+I just closed it and I gave them an easy way to opt out
+
+1096
+00:47:47,967 --> 00:47:48,735
+And they chose not
+
+1097
+00:47:49,247 --> 00:47:51,039
+It does depend on the type
+
+1098
+00:47:51,295 --> 00:47:54,111
+Of disclosure and probably the type of device
+
+1099
+00:47:54,879 --> 00:47:56,415
+So your thermostat
+
+1100
+00:47:56,927 --> 00:47:58,975
+It's probably not collecting
+
+1101
+00:47:59,999 --> 00:48:02,303
+What people would consider what should be a
+
+1102
+00:48:03,327 --> 00:48:05,119
+Private data essay
+
+1103
+00:48:05,375 --> 00:48:06,655
+Your television viewing
+
+1104
+00:48:07,423 --> 00:48:12,287
+Or either we have seen even recently there was some case involving
+
+1105
+00:48:12,543 --> 00:48:14,335
+Data involving sex toys
+
+1106
+00:48:15,103 --> 00:48:16,127
+So there are there's a
+
+1107
+00:48:16,383 --> 00:48:18,687
+Whole spectrum of privacy
+
+1108
+00:48:19,199 --> 00:48:20,223
+In terms of water
+
+1109
+00:48:20,479 --> 00:48:21,503
+Particular device
+
+1110
+00:48:21,759 --> 00:48:22,783
+My capture
+
+1111
+00:48:23,039 --> 00:48:26,367
+The probably will also dictate the degree to which
+
+1112
+00:48:26,623 --> 00:48:28,415
+You should make your disclosures
+
+1113
+00:48:28,671 --> 00:48:29,439
+Very prominent
+
+1114
+00:48:29,951 --> 00:48:30,719
+Does that make sense
+
+1115
+00:48:30,975 --> 00:48:33,535
+It does so my sex toys they should probably be saying
+
+1116
+00:48:33,791 --> 00:48:36,095
+We are collecting this information and we will share it
+
+1117
+00:48:36,607 --> 00:48:39,423
+Also with probably my television or my Broadband viewing history
+
+1118
+00:48:39,935 --> 00:48:41,471
+Maybe my thermostat
+
+1119
+00:48:44,543 --> 00:48:46,335
+On the idea of opt out
+
+1120
+00:48:46,847 --> 00:48:50,687
+This is always kind of irked me because I usually read these things and then I'm like
+
+1121
+00:48:51,199 --> 00:48:52,223
+And to opt-out
+
+1122
+00:48:52,479 --> 00:48:54,271
+You can not use our software or device
+
+1123
+00:48:55,039 --> 00:48:55,551
+And
+
+1124
+00:48:55,807 --> 00:48:56,575
+In many ways
+
+1125
+00:48:56,831 --> 00:48:59,647
+That feels eminently reasonable especially when I'm
+
+1126
+00:49:00,927 --> 00:49:01,951
+What is essentially a luxury
+
+1127
+00:49:02,207 --> 00:49:02,719
+Thermostat
+
+1128
+00:49:03,743 --> 00:49:04,255
+But
+
+1129
+00:49:04,511 --> 00:49:05,791
+As we kind of put
+
+1130
+00:49:06,047 --> 00:49:09,119
+Technology in four places it feels very strange like
+
+1131
+00:49:09,631 --> 00:49:11,167
+If I buy a car for exam
+
+1132
+00:49:11,935 --> 00:49:15,775
+When I sign into the app for the first time after I've taken possession of
+
+1133
+00:49:16,031 --> 00:49:16,543
+The car
+
+1134
+00:49:16,799 --> 00:49:18,847
+Probably not the best time to tell me I can opt out
+
+1135
+00:49:19,103 --> 00:49:19,615
+Play not using
+
+1136
+00:49:20,639 --> 00:49:21,919
+So I am very curious like
+
+1137
+00:49:22,175 --> 00:49:23,455
+Do you think we'll see a shift in
+
+1138
+00:49:24,223 --> 00:49:27,039
+Maybe when were offered an opt-out or how those might work
+
+1139
+00:49:28,063 --> 00:49:32,927
+You raise a good point and I think we probably will and I say that because
+
+1140
+00:49:33,439 --> 00:49:34,719
+In other areas
+
+1141
+00:49:34,975 --> 00:49:38,815
+Where we have faced opt-out questions we have seen
+
+1142
+00:49:39,071 --> 00:49:44,959
+The law of evolved to a place where you have to make it pretty easy for the consumer top doubts
+
+1143
+00:49:45,471 --> 00:49:47,775
+The specifically I'm referring to
+
+1144
+00:49:48,031 --> 00:49:49,311
+Mandatory arbitration
+
+1145
+00:49:49,567 --> 00:49:50,335
+For example
+
+1146
+00:49:51,103 --> 00:49:57,247
+The law has developed over the years where a mandatory arbitration Clause may have been buried somewhere
+
+1147
+00:49:57,503 --> 00:50:00,063
+Are in a warranty document or in a manual
+
+1148
+00:50:00,319 --> 00:50:03,903
+And then you know Court said no you got to be prominent about it and
+
+1149
+00:50:04,415 --> 00:50:06,719
+What we saw was that manufacturers
+
+1150
+00:50:07,487 --> 00:50:10,559
+Said okay will make the disclosure of the arbitration
+
+1151
+00:50:10,815 --> 00:50:12,863
+Claws more prominent but we're going
+
+1152
+00:50:13,119 --> 00:50:15,167
+To put conditions on it and say
+
+1153
+00:50:15,679 --> 00:50:17,215
+If you return it to us
+
+1154
+00:50:17,471 --> 00:50:19,519
+Then you can opt out and by the way there's a Reece
+
+1155
+00:50:19,775 --> 00:50:20,287
+Restocking fee
+
+1156
+00:50:21,055 --> 00:50:23,359
+And Court said no you really can't
+
+1157
+00:50:23,615 --> 00:50:24,639
+Put a burden on the
+
+1158
+00:50:24,895 --> 00:50:26,431
+Consumer if they want to opt out
+
+1159
+00:50:26,687 --> 00:50:28,735
+Answer the manufacturers have been the most
+
+1160
+00:50:28,991 --> 00:50:29,759
+Successful
+
+1161
+00:50:30,271 --> 00:50:32,319
+Getting arbitration clauses
+
+1162
+00:50:32,575 --> 00:50:36,415
+To be deemed valid or the ones who have said very prominently
+
+1163
+00:50:36,671 --> 00:50:39,487
+There is an arbitration clause in this document
+
+1164
+00:50:39,743 --> 00:50:44,863
+And if you would like to opt out please call the following number within 30 days of purchase
+
+1165
+00:50:45,375 --> 00:50:46,911
+And so they've made it easy
+
+1166
+00:50:47,167 --> 00:50:48,191
+For the consumer
+
+1167
+00:50:48,703 --> 00:50:54,847
+They've made a reasonable amount of time 30 days and courts have said you know what that is appropriate
+
+1168
+00:50:55,103 --> 00:50:59,711
+And if someone does not opt out by making a phone call in 30 days then yes
+
+1169
+00:51:00,223 --> 00:51:00,991
+We are going
+
+1170
+00:51:01,503 --> 00:51:02,783
+To enforce arbitration
+
+1171
+00:51:03,807 --> 00:51:06,367
+So I can see something like that happening
+
+1172
+00:51:06,623 --> 00:51:08,415
+With smart devices wear
+
+1173
+00:51:08,671 --> 00:51:09,951
+If it's litigated
+
+1174
+00:51:10,207 --> 00:51:13,535
+I suspected the manufacturers who make it easy
+
+1175
+00:51:14,047 --> 00:51:15,839
+For someone to opt out
+
+1176
+00:51:16,351 --> 00:51:17,887
+Are the ones who will see
+
+1177
+00:51:18,143 --> 00:51:19,423
+The greatest success
+
+1178
+00:51:19,935 --> 00:51:20,959
+And having
+
+1179
+00:51:21,215 --> 00:51:23,263
+Chorus or Regulators say
+
+1180
+00:51:23,519 --> 00:51:25,055
+That was a reasonable step
+
+1181
+00:51:25,567 --> 00:51:29,407
+They didn't do so and so you were free to use the data
+
+1182
+00:51:30,175 --> 00:51:31,711
+Thank you I'm glad that that might have
+
+1183
+00:51:32,223 --> 00:51:34,015
+Because I I've been thinking a lot about that
+
+1184
+00:51:34,271 --> 00:51:35,551
+I almost never give something up
+
+1185
+00:51:36,319 --> 00:51:38,623
+Let's tackle one more issue that I think is really
+
+1186
+00:51:38,879 --> 00:51:39,391
+I think
+
+1187
+00:51:39,903 --> 00:51:40,927
+But we'll see what you say
+
+1188
+00:51:41,183 --> 00:51:47,327
+A lot of these devices we're getting to a point where they're not just tracking data and notifying us there actually taking action
+
+1189
+00:51:47,583 --> 00:51:48,095
+Action on our behalf
+
+1190
+00:51:48,607 --> 00:51:49,887
+Something at things like
+
+1191
+00:51:50,399 --> 00:51:52,447
+When I leave I program my door locks
+
+1192
+00:51:52,703 --> 00:51:53,471
+Tlaloc behind
+
+1193
+00:51:53,983 --> 00:52:00,127
+And this gets really interesting because like insurance companies are paying for people to put you know connected smoke alarms and things in their house
+
+1194
+00:52:00,383 --> 00:52:00,895
+So
+
+1195
+00:52:01,407 --> 00:52:02,687
+When you have a connected device
+
+1196
+00:52:02,943 --> 00:52:03,455
+Styx
+
+1197
+00:52:03,711 --> 00:52:05,247
+Controlling the real world
+
+1198
+00:52:05,759 --> 00:52:07,807
+Does that introduce new levels of
+
+1199
+00:52:09,343 --> 00:52:09,855
+Caution
+
+1200
+00:52:10,111 --> 00:52:10,623
+Baby
+
+1201
+00:52:11,135 --> 00:52:16,511
+Can you share a duties that I don't know the legal terms for these things but as a manufacturer what should you be thinking about
+
+1202
+00:52:16,767 --> 00:52:17,279
+When your
+
+1203
+00:52:17,535 --> 00:52:18,047
+Actually
+
+1204
+00:52:18,815 --> 00:52:19,583
+It's a great Quest
+
+1205
+00:52:19,839 --> 00:52:22,911
+And it's one that is undeveloped yet
+
+1206
+00:52:23,167 --> 00:52:25,471
+In our legal system but I do think that
+
+1207
+00:52:25,727 --> 00:52:27,519
+To the degree that say it doesn't work
+
+1208
+00:52:28,031 --> 00:52:28,799
+Write your
+
+1209
+00:52:29,311 --> 00:52:35,455
+House doesn't lock for whatever reason or becomes unlocked for some reason after it was locked for a few hours in
+
+1210
+00:52:35,711 --> 00:52:36,223
+When you are away
+
+1211
+00:52:36,735 --> 00:52:37,759
+And something happens
+
+1212
+00:52:38,271 --> 00:52:39,807
+Or for some reason
+
+1213
+00:52:40,063 --> 00:52:46,207
+The device doesn't give the warnings it's supposed to say it's a thermostat that actually operates also
+
+1214
+00:52:46,463 --> 00:52:47,231
+So it's some sort of us
+
+1215
+00:52:47,487 --> 00:52:49,023
+Security or fire hazard
+
+1216
+00:52:49,791 --> 00:52:51,583
+I think there certainly is risk
+
+1217
+00:52:52,095 --> 00:52:54,143
+That a manufacturer will face
+
+1218
+00:52:54,655 --> 00:52:56,959
+A lawsuit in that regard for
+
+1219
+00:52:57,215 --> 00:53:03,359
+Basically the product didn't work right or there was a malfunction and it'll go then to was it designed appropriately
+
+1220
+00:53:03,615 --> 00:53:05,151
+Or if something happened
+
+1221
+00:53:05,919 --> 00:53:06,943
+Remotely that
+
+1222
+00:53:07,199 --> 00:53:11,551
+The company somehow there's something happened at the company that caused the device to
+
+1223
+00:53:11,807 --> 00:53:13,087
+Turn off or to unlock
+
+1224
+00:53:13,599 --> 00:53:14,623
+What were the safeguards
+
+1225
+00:53:15,135 --> 00:53:16,159
+That were
+
+1226
+00:53:16,671 --> 00:53:21,791
+Use of the company to make sure that that didn't happen did they have warnings had it happened before
+
+1227
+00:53:22,303 --> 00:53:25,631
+And there you get into very straightforward product liability law
+
+1228
+00:53:25,887 --> 00:53:28,447
+I think you're unlikely in that instance
+
+1229
+00:53:28,959 --> 00:53:30,751
+Sia real class-action risk
+
+1230
+00:53:31,263 --> 00:53:33,567
+Because those are one-off event
+
+1231
+00:53:34,335 --> 00:53:37,151
+Is it a risk of liability for manufacturer sure
+
+1232
+00:53:37,663 --> 00:53:39,711
+Because either now they're not just
+
+1233
+00:53:40,223 --> 00:53:46,367
+And think about the old days they didn't just sell the product and they weren't they were done with it they're actively now interact
+
+1234
+00:53:46,623 --> 00:53:48,415
+Staying with the product even while you use it
+
+1235
+00:53:48,927 --> 00:53:51,743
+To the degree that it's connected and
+
+1236
+00:53:52,511 --> 00:53:53,791
+To the manufacturer and that
+
+1237
+00:53:54,303 --> 00:53:55,583
+Things are happening or not happen
+
+1238
+00:53:55,839 --> 00:53:57,119
+Running right so it's
+
+1239
+00:53:57,375 --> 00:53:59,935
+Created a relationship that's almost day-to-day
+
+1240
+00:54:00,191 --> 00:54:01,215
+Goes beyond
+
+1241
+00:54:01,471 --> 00:54:02,239
+The point of sale
+
+1242
+00:54:02,495 --> 00:54:04,799
+With the the old way that devices
+
+1243
+00:54:05,055 --> 00:54:05,567
+Where sold
+
+1244
+00:54:05,823 --> 00:54:09,919
+So do you think it's going to be interesting to see how the law developed
+
+1245
+00:54:10,175 --> 00:54:10,943
+In that regard
+
+1246
+00:54:11,711 --> 00:54:14,783
+But I don't see that lending itself to class action
+
+1247
+00:54:15,039 --> 00:54:16,319
+Treatment or risk
+
+1248
+00:54:16,831 --> 00:54:18,111
+As much as I do
+
+1249
+00:54:18,623 --> 00:54:20,927
+The security of the actual data
+
+1250
+00:54:21,183 --> 00:54:22,463
+Disclosures Etc
+
+1251
+00:54:23,487 --> 00:54:25,023
+That's that's over the large
+
+1252
+00:54:25,279 --> 00:54:27,327
+Large pool of people versus individual action
+
+1253
+00:54:27,583 --> 00:54:28,095
+And although
+
+1254
+00:54:28,863 --> 00:54:31,935
+I could imagine if my connected pet feeder you know stopped working in
+
+1255
+00:54:32,191 --> 00:54:33,215
+Till the whole bunch of cats
+
+1256
+00:54:33,983 --> 00:54:34,495
+Interesting
+
+1257
+00:54:34,751 --> 00:54:35,263
+In terrible
+
+1258
+00:54:35,519 --> 00:54:36,287
+I should have terrible
+
+1259
+00:54:36,543 --> 00:54:37,055
+Okay
+
+1260
+00:54:38,079 --> 00:54:40,383
+TV I feel like I have learned a lot
+
+1261
+00:54:40,639 --> 00:54:43,199
+Are there any other topics that you're like Stacy
+
+1262
+00:54:43,711 --> 00:54:46,271
+Just for all the people making smart devices out here
+
+1263
+00:54:46,527 --> 00:54:47,807
+You should also think about this
+
+1264
+00:54:48,319 --> 00:54:49,855
+I think the big ones are
+
+1265
+00:54:50,367 --> 00:54:52,671
+We started touchdown them indirectly but just
+
+1266
+00:54:53,183 --> 00:54:59,327
+Assume as you go down the road of new technology and advancement and the more connected your
+
+1267
+00:54:59,583 --> 00:55:00,095
+Becoming
+
+1268
+00:55:00,607 --> 00:55:02,911
+Two people that you're nowhere near
+
+1269
+00:55:03,423 --> 00:55:04,959
+I do think think about work
+
+1270
+00:55:05,215 --> 00:55:06,751
+Work from the back what are the risks
+
+1271
+00:55:07,263 --> 00:55:10,847
+What are the risk of something goes wrong what are the risks of what we're doing
+
+1272
+00:55:11,103 --> 00:55:13,663
+And work backwards from what anybody see this
+
+1273
+00:55:14,175 --> 00:55:16,223
+As a infringement of some
+
+1274
+00:55:16,479 --> 00:55:17,759
+Sores that would cause
+
+1275
+00:55:18,271 --> 00:55:22,879
+A whole bunch of people to be able to in one Fell Swoop say that we had done something wrong
+
+1276
+00:55:23,135 --> 00:55:25,439
+And I think working backwards like that
+
+1277
+00:55:25,695 --> 00:55:28,767
+It's just a great risk management technique and I think
+
+1278
+00:55:29,023 --> 00:55:32,095
+Is important to always think about risk mitigation
+
+1279
+00:55:32,607 --> 00:55:34,143
+And risk management
+
+1280
+00:55:34,399 --> 00:55:38,239
+At the same time that you're evolving and developing technology because
+
+1281
+00:55:38,751 --> 00:55:44,639
+The companies of Osteen get in trouble or the ones that things get too big too fast and sort of the infrastructure
+
+1282
+00:55:44,895 --> 00:55:48,735
+And the thought process about how to manage risk and how to
+
+1283
+00:55:49,247 --> 00:55:50,015
+Mitigate risk
+
+1284
+00:55:50,527 --> 00:55:55,391
+Doesn't keep up with the Amazing Ideas in The Amazing advancements in technology
+
+1285
+00:55:55,647 --> 00:55:56,671
+And that imbalance
+
+1286
+00:55:57,183 --> 00:55:58,463
+Can just create
+
+1287
+00:55:58,719 --> 00:56:01,791
+A lot of problems down the road it only takes one
+
+1288
+00:56:02,303 --> 00:56:06,655
+You know bad class action or one really bad regulatory fine
+
+1289
+00:56:06,911 --> 00:56:07,935
+Manele hits
+
+1290
+00:56:08,447 --> 00:56:10,495
+Your bottom line in terms of whatever you have
+
+1291
+00:56:10,751 --> 00:56:11,263
+Hey
+
+1292
+00:56:11,519 --> 00:56:15,359
+But it's hugely disruptive to the company to go through that kind of
+
+1293
+00:56:15,871 --> 00:56:19,967
+Litigation or regulatory oversight or regulatory investigations
+
+1294
+00:56:20,223 --> 00:56:26,367
+And also you take a hit in the media and in all of those things I really think can be mitigated by a little bit of thought they had
+
+1295
+00:56:27,391 --> 00:56:32,767
+All right so I made all your techno razzle-dazzle cheerleaders in your smart home companies also hire
+
+1296
+00:56:33,279 --> 00:56:35,071
+A few Debbie Downer
+
+1297
+00:56:35,583 --> 00:56:36,095
+First happens
+
+1298
+00:56:36,863 --> 00:56:37,887
+Exactly
+
+1299
+00:56:38,143 --> 00:56:44,031
+I never popular but you love them down the road when you realized oh thank God we put that clause in there the way that we did
+
+1300
+00:56:44,543 --> 00:56:45,055
+There you go
+
+1301
+00:56:46,335 --> 00:56:48,895
+Alright thank you so much for coming on the show The
+
+1302
+00:56:50,175 --> 00:56:54,015
+Well it's been an absolute pleasure for me and thank you
+
+1303
+00:56:54,271 --> 00:57:00,415
+Well that's it for this week's podcast to thank you so much for listening and remember if you want to know more
+
+1304
+00:57:00,671 --> 00:57:06,815
+More about the internet of things please sign up for my newsletter Stacey knows things at Stacey on iot
+
+1305
+00:57:07,071 --> 00:57:07,583
+Dot-com
+
+1306
+00:57:07,839 --> 00:57:09,375
+See you next week

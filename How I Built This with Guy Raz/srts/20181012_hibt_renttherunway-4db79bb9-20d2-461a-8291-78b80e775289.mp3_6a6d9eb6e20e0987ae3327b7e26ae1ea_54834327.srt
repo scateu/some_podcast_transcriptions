@@ -1,0 +1,5459 @@
+1
+00:00:00,256 --> 00:00:02,560
+This message comes from NPR sponsors snowfall
+
+2
+00:00:03,072 --> 00:00:04,352
+The only data warehouse
+
+3
+00:00:04,608 --> 00:00:05,632
+Built for the cloud
+
+4
+00:00:05,888 --> 00:00:08,960
+Unlock deep Data Insights with the instantly scalable
+
+5
+00:00:09,216 --> 00:00:10,752
+Cloudbuilt data warehouse
+
+6
+00:00:11,264 --> 00:00:13,568
+Start your journey towards data-driven decision
+
+7
+00:00:14,080 --> 00:00:16,384
+It's snowflake. Com NPR
+
+8
+00:00:17,408 --> 00:00:18,176
+Hey it's guy here
+
+9
+00:00:19,712 --> 00:00:20,480
+Pretty silly idea
+
+10
+00:00:20,736 --> 00:00:22,528
+Storing our stuff in the cloud right like
+
+11
+00:00:22,784 --> 00:00:23,552
+Files
+
+12
+00:00:23,808 --> 00:00:24,832
+Photos of music
+
+13
+00:00:25,088 --> 00:00:26,112
+Lives up there
+
+14
+00:00:26,368 --> 00:00:26,880
+Somewhere
+
+15
+00:00:27,136 --> 00:00:29,696
+But when Jennifer Hyman launched Rent the Runway
+
+16
+00:00:30,208 --> 00:00:34,048
+She essentially wanted our clothing to live in the Cloud 2
+
+17
+00:00:34,560 --> 00:00:35,840
+So she created a website
+
+18
+00:00:36,096 --> 00:00:38,656
+What does huge inventory of women's clothing that
+
+19
+00:00:38,912 --> 00:00:40,704
+You never had to own you would do
+
+20
+00:00:41,216 --> 00:00:42,496
+Rent it and send it back
+
+21
+00:00:43,264 --> 00:00:44,544
+Jen calls it a closet
+
+22
+00:00:44,800 --> 00:00:45,312
+In the cloud
+
+23
+00:00:45,824 --> 00:00:47,104
+Here's a story of how she and her
+
+24
+00:00:47,360 --> 00:00:48,640
+Your partner built Rent the Runway
+
+25
+00:00:49,152 --> 00:00:50,432
+Is episode first Grand
+
+26
+00:00:50,688 --> 00:00:51,200
+August
+
+27
+00:00:54,528 --> 00:00:59,904
+I sent you know we should really call Diane Von Furstenberg the famous fashion designer
+
+28
+00:01:00,160 --> 00:01:06,304
+Fast forward a few weeks and we're driving to the second meeting and her system calls and says Dad no longer wants to see
+
+29
+00:01:06,560 --> 00:01:09,632
+She's not interested in this idea and I said
+
+30
+00:01:09,888 --> 00:01:10,912
+Oh yeah
+
+31
+00:01:11,168 --> 00:01:14,240
+We're just around the corner like what will the strap by for a second
+
+32
+00:01:15,008 --> 00:01:21,152
+And add her sister very firmly said she doesn't want to see you what do you not
+
+33
+00:01:21,408 --> 00:01:27,552
+Understand and I said I saw for cutting off and I hung up and then I said down the
+
+34
+00:01:27,808 --> 00:01:29,856
+West Side Highway and we were
+
+35
+00:01:30,112 --> 00:01:31,904
+At her office and we just showed up
+
+36
+00:01:37,792 --> 00:01:41,120
+NPR how I built this
+
+37
+00:01:41,376 --> 00:01:43,424
+A show that innovators entrepreneurs
+
+38
+00:01:43,680 --> 00:01:44,192
+Idealist
+
+39
+00:01:44,704 --> 00:01:46,240
+Stories behind the movements
+
+40
+00:01:46,496 --> 00:01:47,008
+They felt
+
+41
+00:01:52,128 --> 00:01:55,968
+How to women who wanted High fashion but couldn't afford the price tag
+
+42
+00:01:56,224 --> 00:01:58,016
+Decided to make it possible
+
+43
+00:01:58,272 --> 00:01:59,552
+The Rent the Runway
+
+44
+00:02:05,952 --> 00:02:07,488
+So Rent the Runway is
+
+45
+00:02:08,000 --> 00:02:09,792
+Now we're the hottest fashion companies
+
+46
+00:02:10,048 --> 00:02:10,560
+Is in the US
+
+47
+00:02:10,816 --> 00:02:12,096
+Growing like crazy
+
+48
+00:02:12,352 --> 00:02:15,680
+Doing more than a hundred million dollars a year in Revenue
+
+49
+00:02:17,216 --> 00:02:17,728
+12
+
+50
+00:02:17,984 --> 00:02:19,008
+Hundred employees
+
+51
+00:02:19,776 --> 00:02:21,568
+Core product is
+
+52
+00:02:21,824 --> 00:02:22,848
+Designer dresses
+
+53
+00:02:23,104 --> 00:02:25,408
+Surprised to discover
+
+54
+00:02:25,920 --> 00:02:29,248
+But just 10 of its employees work in the fashion depart
+
+55
+00:02:29,760 --> 00:02:30,784
+Most of the rest
+
+56
+00:02:31,296 --> 00:02:31,808
+Well
+
+57
+00:02:32,064 --> 00:02:33,600
+They work for a technology company
+
+58
+00:02:34,112 --> 00:02:36,672
+Because that's actually what Rent the Runway is
+
+59
+00:02:37,440 --> 00:02:40,768
+The way it works is you go online or you go to the app
+
+60
+00:02:41,024 --> 00:02:44,864
+And well you better dress
+
+61
+00:02:45,120 --> 00:02:46,912
+Thousands of dollars to buy
+
+62
+00:02:47,168 --> 00:02:53,056
+Except you only pay a small fraction of that look fabulous for one night
+
+63
+00:02:53,568 --> 00:02:56,128
+And then in the morning covered
+
+64
+00:02:56,384 --> 00:02:57,664
+You mail it back
+
+65
+00:02:57,920 --> 00:02:59,968
+It's kind of like Zipcar means Netflix
+
+66
+00:03:00,480 --> 00:03:02,272
+Zappos
+
+67
+00:03:02,784 --> 00:03:05,600
+Hyman and Jennifer Fleiss
+
+68
+00:03:05,856 --> 00:03:08,416
+Came up with the idea when they met in Business School
+
+69
+00:03:09,440 --> 00:03:10,464
+As you will hear
+
+70
+00:03:10,720 --> 00:03:15,328
+The path to building their company was fraught with all kinds of challenges
+
+71
+00:03:15,584 --> 00:03:16,096
+Among them
+
+72
+00:03:16,608 --> 00:03:17,632
+Rampant sexism
+
+73
+00:03:18,144 --> 00:03:19,424
+And even harassment
+
+74
+00:03:19,936 --> 00:03:23,264
+Recently been opening up about that
+
+75
+00:03:23,776 --> 00:03:27,104
+Their Story begins just after she graduates College
+
+76
+00:03:27,360 --> 00:03:29,920
+And job working as a junior analyst
+
+77
+00:03:30,176 --> 00:03:31,456
+For the hotel company
+
+78
+00:03:31,712 --> 00:03:32,224
+Starwood
+
+79
+00:03:32,736 --> 00:03:37,088
+About a year into my time at Starwood when I was 22
+
+80
+00:03:37,600 --> 00:03:40,672
+I had this thesis that we had entered
+
+81
+00:03:40,928 --> 00:03:41,696
+The experience
+
+82
+00:03:41,952 --> 00:03:42,464
+Economy
+
+83
+00:03:42,720 --> 00:03:46,304
+And people were getting married later and starting to value
+
+84
+00:03:46,560 --> 00:03:47,328
+Experiences
+
+85
+00:03:47,584 --> 00:03:48,352
+Like travel
+
+86
+00:03:48,608 --> 00:03:49,376
+Over owning
+
+87
+00:03:50,400 --> 00:03:52,704
+And so I had an idea at the time
+
+88
+00:03:53,728 --> 00:03:54,496
+To Launch
+
+89
+00:03:54,752 --> 00:03:56,032
+The first honeymoon
+
+90
+00:03:56,288 --> 00:03:57,056
+History in the world
+
+91
+00:03:57,312 --> 00:03:59,872
+Where couples could register for
+
+92
+00:04:00,128 --> 00:04:03,712
+Their honeymoons and their friends and family could contribute by
+
+93
+00:04:03,968 --> 00:04:07,552
+You know paying for scuba diving or paying for a massage in Hotel night
+
+94
+00:04:07,808 --> 00:04:09,856
+As opposed to buying them pots and pans
+
+95
+00:04:10,368 --> 00:04:10,880
+So
+
+96
+00:04:11,648 --> 00:04:13,696
+As a 22 year old I
+
+97
+00:04:14,464 --> 00:04:16,512
+Was really passionate about this idea
+
+98
+00:04:17,024 --> 00:04:19,327
+I emailed the president of Starwood
+
+99
+00:04:19,839 --> 00:04:22,911
+And I pitched him on this idea
+
+100
+00:04:23,167 --> 00:04:24,447
+To start a wedding business
+
+101
+00:04:24,703 --> 00:04:29,055
+Starwood where the Cornerstone of it would be with the first honeymoon registry just ever so
+
+102
+00:04:29,311 --> 00:04:31,103
+R22
+
+103
+00:04:31,615 --> 00:04:35,711
+That's that's incredibly precocious but was there anybody around you who is like
+
+104
+00:04:35,967 --> 00:04:39,039
+Hey stay in your lane or you know was there anybody was trying to
+
+105
+00:04:39,295 --> 00:04:40,319
+Tell you to
+
+106
+00:04:41,855 --> 00:04:42,367
+Oh yeah
+
+107
+00:04:42,623 --> 00:04:43,903
+Several boxes of mine
+
+108
+00:04:44,159 --> 00:04:45,439
+We're telling me
+
+109
+00:04:45,695 --> 00:04:46,719
+To keep quiet and
+
+110
+00:04:47,231 --> 00:04:47,743
+One of
+
+111
+00:04:47,999 --> 00:04:50,559
+The experience is that really impacted me
+
+112
+00:04:51,327 --> 00:04:52,095
+Was
+
+113
+00:04:52,863 --> 00:04:53,631
+I
+
+114
+00:04:54,143 --> 00:04:55,167
+Had a female boss
+
+115
+00:04:55,679 --> 00:04:57,471
+And at the time I think she was like
+
+116
+00:04:57,727 --> 00:05:00,031
+35 or 36 so
+
+117
+00:05:00,287 --> 00:05:02,335
+Kind of about my age right now
+
+118
+00:05:02,847 --> 00:05:04,639
+And I would often
+
+119
+00:05:05,151 --> 00:05:08,223
+Raise my hand in meetings and speak and make points
+
+120
+00:05:08,735 --> 00:05:09,247
+And
+
+121
+00:05:10,271 --> 00:05:11,551
+I remember her
+
+122
+00:05:11,807 --> 00:05:14,623
+Grabbing me after a meeting one day and
+
+123
+00:05:15,135 --> 00:05:17,951
+She said you know Jen I really want to give you some feedback
+
+124
+00:05:18,719 --> 00:05:20,767
+It's really important for your career
+
+125
+00:05:21,023 --> 00:05:24,095
+And I said oh you know I'd love to hear what's your feedback
+
+126
+00:05:24,607 --> 00:05:25,375
+And she said
+
+127
+00:05:26,143 --> 00:05:28,447
+You really need to shut up wow
+
+128
+00:05:29,215 --> 00:05:30,239
+You're a girl
+
+129
+00:05:31,007 --> 00:05:31,775
+And
+
+130
+00:05:32,799 --> 00:05:34,591
+It would be much more becoming
+
+131
+00:05:34,847 --> 00:05:36,383
+If you acted
+
+132
+00:05:36,639 --> 00:05:37,151
+Sweet
+
+133
+00:05:37,663 --> 00:05:39,711
+In conversations
+
+134
+00:05:40,223 --> 00:05:44,063
+Because you know you're you're too confident you're too bold
+
+135
+00:05:44,575 --> 00:05:46,879
+And it's coming across the wrong way
+
+136
+00:05:48,671 --> 00:05:49,695
+Hand of course
+
+137
+00:05:50,207 --> 00:05:53,279
+I didn't really know how to take this I mean I don't even know how I would take the
+
+138
+00:05:53,535 --> 00:05:59,679
+22 year olds I started hysterically crying I was in the middle of like an open floor
+
+139
+00:05:59,935 --> 00:06:00,447
+Plan
+
+140
+00:06:01,471 --> 00:06:03,519
+And a more senior man
+
+141
+00:06:04,799 --> 00:06:05,311
+Sami
+
+142
+00:06:06,335 --> 00:06:09,407
+I literally credit this guy for my entire career
+
+143
+00:06:09,919 --> 00:06:11,199
+He took me aside
+
+144
+00:06:11,711 --> 00:06:12,479
+And because I
+
+145
+00:06:12,991 --> 00:06:18,367
+Didn't even understand office politics at the time and like what I should and shouldn't say I kind of just blurted out
+
+146
+00:06:18,623 --> 00:06:19,647
+Oh my God like
+
+147
+00:06:19,903 --> 00:06:23,743
+Just want to just told me X Y and Z and I repeated the entire conversation to him
+
+148
+00:06:24,255 --> 00:06:25,791
+And he said you know Jen
+
+149
+00:06:26,559 --> 00:06:28,095
+You keep doing what you're doing
+
+150
+00:06:28,351 --> 00:06:30,911
+Because that woman's going to be working for you one day
+
+151
+00:06:31,167 --> 00:06:31,679
+Wow
+
+152
+00:06:32,959 --> 00:06:35,519
+She innocence gave me permission
+
+153
+00:06:36,031 --> 00:06:37,567
+To just act like myself
+
+154
+00:06:38,079 --> 00:06:38,591
+End
+
+155
+00:06:39,103 --> 00:06:41,151
+Who I was as a 22 year old
+
+156
+00:06:41,407 --> 00:06:43,967
+The same person is who I am today it's the person who
+
+157
+00:06:44,223 --> 00:06:46,271
+How to creative idea about
+
+158
+00:06:47,039 --> 00:06:49,343
+The Experience economy and I wanted to share it
+
+159
+00:06:51,903 --> 00:06:57,279
+What are you doing with it with the idea you pitch this to the to the president of Starwood
+
+160
+00:06:57,535 --> 00:06:58,047
+Yeah
+
+161
+00:06:58,303 --> 00:07:00,351
+I think he thought I was so
+
+162
+00:07:01,119 --> 00:07:02,399
+Little bit crazy
+
+163
+00:07:02,655 --> 00:07:07,263
+For going in and pitching to him that his response was like yeah sure whatever
+
+164
+00:07:07,519 --> 00:07:09,311
+And I took that as a yes
+
+165
+00:07:09,823 --> 00:07:11,359
+Wait he said
+
+166
+00:07:11,615 --> 00:07:14,431
+He didn't say yes he just said yeah that's interesting in you
+
+167
+00:07:14,687 --> 00:07:15,455
+Went back to your
+
+168
+00:07:15,711 --> 00:07:17,247
+Your desk and you started to
+
+169
+00:07:17,759 --> 00:07:19,295
+Map out how this could happen
+
+170
+00:07:19,551 --> 00:07:20,575
+I started to work on it
+
+171
+00:07:20,831 --> 00:07:22,367
+I spent the next three years working on it
+
+172
+00:07:22,879 --> 00:07:23,647
+And
+
+173
+00:07:24,159 --> 00:07:26,719
+You know Starwood still participates in
+
+174
+00:07:27,231 --> 00:07:28,255
+The honeymoon registry
+
+175
+00:07:28,511 --> 00:07:29,791
+To this day
+
+176
+00:07:30,303 --> 00:07:33,375
+Has taken it to a whole other level since I left
+
+177
+00:07:34,143 --> 00:07:40,031
+But it was such a fun experience for me to a work on something that I loved and was passionate about
+
+178
+00:07:40,287 --> 00:07:42,847
+Indeed be part of the process of creation
+
+179
+00:07:43,103 --> 00:07:49,247
+So you are obviously on the fast track to like if you were still Starwood today you might be running the place and you were
+
+180
+00:07:49,503 --> 00:07:50,783
+Doing this at such a young age
+
+181
+00:07:51,039 --> 00:07:51,807
+Why did you
+
+182
+00:07:52,063 --> 00:07:53,855
+Decide to leave after after a couple years
+
+183
+00:07:54,111 --> 00:07:55,903
+I always thought
+
+184
+00:07:56,159 --> 00:07:57,183
+But I would go to Business School
+
+185
+00:07:57,439 --> 00:07:59,999
+Both my parents have gone to Business School
+
+186
+00:08:01,023 --> 00:08:04,351
+And so I thought that the track was you work for 4 years
+
+187
+00:08:04,607 --> 00:08:06,143
+Between college and then you go to business
+
+188
+00:08:06,399 --> 00:08:06,911
+Also when
+
+189
+00:08:07,423 --> 00:08:08,703
+I was at Starwood first
+
+190
+00:08:08,959 --> 00:08:11,263
+3 + years I applied to business
+
+191
+00:08:11,519 --> 00:08:12,799
+School and I got into Harvard
+
+192
+00:08:13,055 --> 00:08:15,615
+So here's a question for you about
+
+193
+00:08:15,871 --> 00:08:19,455
+Cuz we're going to get I want to ask you about of course what happens business coaches
+
+194
+00:08:19,967 --> 00:08:21,247
+The Incredibles 2
+
+195
+00:08:21,503 --> 00:08:22,527
+Rent the Runway but
+
+196
+00:08:23,039 --> 00:08:26,879
+The vast majority of the of the entrepreneurs that would have been on the show
+
+197
+00:08:27,135 --> 00:08:28,159
+Did not go to business
+
+198
+00:08:28,415 --> 00:08:33,023
+You had all this incredible experience and you were really ambitious and you were
+
+199
+00:08:33,535 --> 00:08:34,559
+Entrepreneurial already
+
+200
+00:08:35,839 --> 00:08:36,863
+Why did you think you needed
+
+201
+00:08:37,119 --> 00:08:38,143
+Take to go to Business School
+
+202
+00:08:38,655 --> 00:08:39,167
+Well first
+
+203
+00:08:39,423 --> 00:08:40,191
+I
+
+204
+00:08:40,447 --> 00:08:43,519
+Have always had Big Dreams for my career but I
+
+205
+00:08:43,775 --> 00:08:45,567
+Didn't exactly know what those dreams were
+
+206
+00:08:46,079 --> 00:08:46,591
+You know
+
+207
+00:08:47,359 --> 00:08:48,895
+Sara Blakely was
+
+208
+00:08:49,663 --> 00:08:51,455
+A guest on your program and
+
+209
+00:08:51,711 --> 00:08:52,991
+She's someone who
+
+210
+00:08:53,503 --> 00:08:57,599
+Has always been an inspiration to me I remember being a
+
+211
+00:08:58,367 --> 00:08:59,647
+Younger girl
+
+212
+00:08:59,903 --> 00:09:00,415
+And
+
+213
+00:09:00,671 --> 00:09:01,951
+Seeing her on Oprah
+
+214
+00:09:02,463 --> 00:09:05,791
+And she had this amazing business but she also like
+
+215
+00:09:06,559 --> 00:09:08,351
+Seem like a real person
+
+216
+00:09:08,863 --> 00:09:11,935
+Who cared about getting married and having kids and
+
+217
+00:09:12,191 --> 00:09:14,751
+Having friends and having a social life and
+
+218
+00:09:16,031 --> 00:09:17,567
+That was really important to me
+
+219
+00:09:17,823 --> 00:09:19,359
+I was still fearful
+
+220
+00:09:19,615 --> 00:09:20,895
+That you had to make a choice
+
+221
+00:09:21,151 --> 00:09:22,175
+Between having
+
+222
+00:09:22,431 --> 00:09:25,759
+An incredible career as a woman or having a family
+
+223
+00:09:26,271 --> 00:09:27,807
+And I've always wanted both
+
+224
+00:09:28,831 --> 00:09:33,183
+So incensed going to business school with a chance for you to really think those things through
+
+225
+00:09:33,439 --> 00:09:36,511
+To think it through to get that kind of extra
+
+226
+00:09:36,767 --> 00:09:40,095
+Potentially stamp of approval that I thought that I needed
+
+227
+00:09:40,863 --> 00:09:44,191
+I had lots of opportunities that I could go into
+
+228
+00:09:44,447 --> 00:09:46,751
+Different kinds of companies in different fields
+
+229
+00:09:47,007 --> 00:09:48,287
+But I really wanted the time to
+
+230
+00:09:48,543 --> 00:09:49,311
+To think about like
+
+231
+00:09:50,079 --> 00:09:51,615
+Where do I want to spend my time
+
+232
+00:09:52,383 --> 00:09:54,175
+Like what am I most passionate about
+
+233
+00:09:54,431 --> 00:09:54,943
+Yeah
+
+234
+00:09:55,455 --> 00:09:59,551
+You are why you were at at Harvard Business School you met the person who would become
+
+235
+00:09:59,807 --> 00:10:02,623
+The co-founder of Rent the Runway Jennifer Fleiss
+
+236
+00:10:03,135 --> 00:10:05,439
+Yes how did you know
+
+237
+00:10:06,463 --> 00:10:09,279
+So it's a really funny story my sister Becky
+
+238
+00:10:10,559 --> 00:10:14,911
+Prior to me going to business school put a Post-It note on my pillow one night
+
+239
+00:10:15,423 --> 00:10:15,935
+With
+
+240
+00:10:16,447 --> 00:10:18,751
+Jenny Fleiss has maiden name on it
+
+241
+00:10:19,263 --> 00:10:20,287
+Which was Jenny Carter
+
+242
+00:10:20,799 --> 00:10:21,311
+And
+
+243
+00:10:21,823 --> 00:10:25,151
+She said that you have to meet this girl when you go to Business School
+
+244
+00:10:25,663 --> 00:10:28,479
+Because a friend of a friend of hers new Jenny Carter
+
+245
+00:10:28,991 --> 00:10:31,039
+And my response to Becky
+
+246
+00:10:31,551 --> 00:10:32,831
+At the time was
+
+247
+00:10:33,087 --> 00:10:34,623
+Keto while meter if I meter
+
+248
+00:10:35,135 --> 00:10:36,415
+Needless to say
+
+249
+00:10:36,927 --> 00:10:38,975
+Jenny was one of the first people I met at Harvard
+
+250
+00:10:39,487 --> 00:10:41,791
+The school because we were placed in the same section
+
+251
+00:10:42,047 --> 00:10:48,191
+Because her name had been on a Post-It note for me I was like oh my God you'll never believe this like
+
+252
+00:10:48,447 --> 00:10:50,495
+My sister told me we need to be friends
+
+253
+00:10:50,751 --> 00:10:53,055
+And we became really fast friends and
+
+254
+00:10:53,567 --> 00:10:56,639
+You know the rest is history and at what point did you say
+
+255
+00:10:56,895 --> 00:10:58,687
+What's your business together when we leave this place
+
+256
+00:10:59,967 --> 00:11:00,991
+So we were friends
+
+257
+00:11:01,503 --> 00:11:02,271
+We actually
+
+258
+00:11:02,527 --> 00:11:04,319
+Through our birthdays together
+
+259
+00:11:04,575 --> 00:11:06,623
+I'm in September of
+
+260
+00:11:06,879 --> 00:11:08,159
+That second year of business
+
+261
+00:11:08,415 --> 00:11:13,023
+School and in November of the secondary business school I went home for Thanksgiving
+
+262
+00:11:13,279 --> 00:11:15,071
+And I was in Becky's apartment
+
+263
+00:11:15,327 --> 00:11:18,399
+And Becky had just gone to a store and bought a dress
+
+264
+00:11:18,655 --> 00:11:21,471
+That was higher cost than her rent
+
+265
+00:11:23,263 --> 00:11:24,287
+Azhar
+
+266
+00:11:24,543 --> 00:11:27,359
+Responsible older sister I was
+
+267
+00:11:27,615 --> 00:11:28,895
+Embarking how
+
+268
+00:11:29,151 --> 00:11:30,687
+She should probably wear
+
+269
+00:11:30,943 --> 00:11:31,711
+One of the dress
+
+270
+00:11:31,967 --> 00:11:35,295
+This isn't her closet again as opposed to being in credit card debt
+
+271
+00:11:36,063 --> 00:11:37,855
+And her response to me was
+
+272
+00:11:38,623 --> 00:11:41,439
+You know everything in my closet is dead to me
+
+273
+00:11:41,695 --> 00:11:43,231
+I've been photographed in it
+
+274
+00:11:43,487 --> 00:11:46,559
+The photographs are up on Facebook and I need something new
+
+275
+00:11:47,327 --> 00:11:49,631
+You know Becky was a 25 year old
+
+276
+00:11:50,143 --> 00:11:53,471
+Like normal girl who lived in New York she wasn't a celebrity
+
+277
+00:11:53,983 --> 00:11:58,847
+But she was talking about being photographed and not being able to wear something again
+
+278
+00:11:59,871 --> 00:12:02,175
+And I like it was a lightbulb moment
+
+279
+00:12:02,431 --> 00:12:02,943
+For me
+
+280
+00:12:03,199 --> 00:12:03,967
+Cuz I realized
+
+281
+00:12:04,223 --> 00:12:06,783
+I was having a conversation with my sister about the
+
+282
+00:12:07,295 --> 00:12:07,807
+Experience
+
+283
+00:12:08,319 --> 00:12:09,343
+Of wearing
+
+284
+00:12:09,599 --> 00:12:12,159
+An amazing dress up walking into a party
+
+285
+00:12:12,415 --> 00:12:14,975
+Feeling self-confident and feeling beautiful and that's
+
+286
+00:12:15,231 --> 00:12:15,999
+What she cared about
+
+287
+00:12:16,511 --> 00:12:20,607
+And she didn't care about the actual ownership of the items in
+
+288
+00:12:20,863 --> 00:12:21,375
+Her closet
+
+289
+00:12:21,887 --> 00:12:22,399
+The other things
+
+290
+00:12:22,655 --> 00:12:23,423
+She cared about was the
+
+291
+00:12:24,191 --> 00:12:26,751
+Photograph that would exist after the party
+
+292
+00:12:27,007 --> 00:12:28,031
+That she could post on
+
+293
+00:12:28,287 --> 00:12:32,383
+Facebook and kind of share with everyone she knew how awesome she felt and how,
+
+294
+00:12:32,639 --> 00:12:33,407
+But she felt it that way
+
+295
+00:12:33,663 --> 00:12:35,967
+Sweating with this idea happened on a Saturday night
+
+296
+00:12:36,223 --> 00:12:37,759
+I go back to school on Monday
+
+297
+00:12:38,015 --> 00:12:40,063
+I happen to have lunch that day with Jenny
+
+298
+00:12:40,319 --> 00:12:42,111
+We were talking about our weekend
+
+299
+00:12:42,367 --> 00:12:44,415
+Cuz I was like oh I had this idea like
+
+300
+00:12:44,927 --> 00:12:45,951
+What if we rent a dress
+
+301
+00:12:47,743 --> 00:12:49,791
+She responded on this sounds fun
+
+302
+00:12:50,303 --> 00:12:51,327
+You know that's like
+
+303
+00:12:51,839 --> 00:12:53,119
+Work on this idea together
+
+304
+00:12:53,631 --> 00:12:54,655
+Who do you think we should call
+
+305
+00:12:54,911 --> 00:12:56,191
+To figure out if it's a good idea
+
+306
+00:12:56,703 --> 00:12:57,215
+And
+
+307
+00:12:57,727 --> 00:13:00,543
+I said you know we should really call Diane Von Furstenberg
+
+308
+00:13:01,311 --> 00:13:04,895
+And like the famous fashion designer
+
+309
+00:13:05,919 --> 00:13:06,687
+Jennifer
+
+310
+00:13:06,943 --> 00:13:08,735
+Do you know Diane Von Furstenberg
+
+311
+00:13:08,991 --> 00:13:09,759
+And I said
+
+312
+00:13:10,015 --> 00:13:14,111
+Obviously I don't know Diane Von Furstenberg but we could probably figure out her email address
+
+313
+00:13:15,135 --> 00:13:19,231
+You could have this point figure out anyone's email address in the entire world
+
+314
+00:13:19,743 --> 00:13:23,583
+So Jenny and I wrote an email that afternoon
+
+315
+00:13:24,351 --> 00:13:28,447
+Too many different versions of Diane Von Furstenberg email address
+
+316
+00:13:28,959 --> 00:13:33,823
+And we basically said hey we're two women at Harvard Business School we have an idea
+
+317
+00:13:34,079 --> 00:13:35,871
+We'd love to come in and talk to you about it
+
+318
+00:13:36,383 --> 00:13:37,919
+This is where luck
+
+319
+00:13:38,175 --> 00:13:38,687
+Plays into
+
+320
+00:13:38,943 --> 00:13:39,711
+To the situation
+
+321
+00:13:39,967 --> 00:13:40,479
+Because
+
+322
+00:13:40,991 --> 00:13:43,295
+She or someone from her office
+
+323
+00:13:43,551 --> 00:13:44,575
+Open that email
+
+324
+00:13:44,831 --> 00:13:48,927
+She responded I'll see you tomorrow at 5 p.m. tomorrow at 5 p.m.
+
+325
+00:13:49,183 --> 00:13:50,207
+Yep and we
+
+326
+00:13:50,975 --> 00:13:51,999
+Drove down
+
+327
+00:13:52,511 --> 00:13:53,535
+To New York
+
+328
+00:13:54,047 --> 00:13:54,815
+That next day
+
+329
+00:13:55,327 --> 00:13:57,119
+Put on our dvf dresses
+
+330
+00:13:57,375 --> 00:14:01,983
+And walked into her office and introduced ourselves as the co-founders of Rent the Runway
+
+331
+00:14:02,239 --> 00:14:04,031
+You have a name
+
+332
+00:14:04,287 --> 00:14:05,055
+You came up with a name
+
+333
+00:14:05,567 --> 00:14:06,079
+Yeah we just
+
+334
+00:14:06,847 --> 00:14:08,127
+We did everything very quickly
+
+335
+00:14:09,151 --> 00:14:11,455
+Now we didn't really have a structured idea
+
+336
+00:14:11,967 --> 00:14:12,735
+So
+
+337
+00:14:12,991 --> 00:14:15,807
+You know we were kind of iterating the idea
+
+338
+00:14:16,063 --> 00:14:16,575
+Baidu
+
+339
+00:14:17,599 --> 00:14:18,111
+And
+
+340
+00:14:18,367 --> 00:14:20,671
+The initial idea actually a witch
+
+341
+00:14:20,927 --> 00:14:25,279
+You know we've never really told the initial idea was what if we could rent the dresses
+
+342
+00:14:25,535 --> 00:14:29,631
+That she is selling on her website so what if we powered rental
+
+343
+00:14:29,887 --> 00:14:30,399
+Her
+
+344
+00:14:30,655 --> 00:14:31,935
+Dvf.com
+
+345
+00:14:33,983 --> 00:14:35,007
+You know when we went
+
+346
+00:14:35,263 --> 00:14:36,031
+To chat with her
+
+347
+00:14:36,287 --> 00:14:36,799
+She
+
+348
+00:14:37,567 --> 00:14:38,847
+Was not too thrilled about
+
+349
+00:14:39,103 --> 00:14:40,127
+The idea of
+
+350
+00:14:40,895 --> 00:14:44,479
+Renting clothes in general and thought that it would
+
+351
+00:14:44,991 --> 00:14:46,271
+Cannibalize her
+
+352
+00:14:47,295 --> 00:14:49,343
+Retail sales and it would dilute
+
+353
+00:14:49,599 --> 00:14:50,879
+Herbrand +
+
+354
+00:14:51,391 --> 00:14:54,719
+She was ready to end the meeting with us after a few minutes and
+
+355
+00:14:54,975 --> 00:14:58,815
+I started asking her questions about what she disliked about the idea what was
+
+356
+00:14:59,327 --> 00:15:00,863
+She scared about end
+
+357
+00:15:01,887 --> 00:15:03,423
+By the end of what was
+
+358
+00:15:03,679 --> 00:15:04,703
+Almost a
+
+359
+00:15:04,959 --> 00:15:07,007
+You know hour-and-a-half conversation
+
+360
+00:15:07,263 --> 00:15:08,031
+We learned
+
+361
+00:15:08,543 --> 00:15:09,055
+That
+
+362
+00:15:10,079 --> 00:15:12,895
+A lot of her customers were in their fifties and sixties
+
+363
+00:15:13,919 --> 00:15:14,687
+And not
+
+364
+00:15:14,943 --> 00:15:18,015
+If we were to build a business that could
+
+365
+00:15:18,783 --> 00:15:20,063
+Make her relevant
+
+366
+00:15:20,319 --> 00:15:20,831
+To put
+
+367
+00:15:21,087 --> 00:15:21,855
+Her products
+
+368
+00:15:22,111 --> 00:15:23,135
+Into the hands
+
+369
+00:15:23,391 --> 00:15:23,903
+News of women
+
+370
+00:15:24,159 --> 00:15:26,463
+In their teens twenties thirties and forties
+
+371
+00:15:26,975 --> 00:15:30,303
+But that might be interesting to her and she might want to work with us
+
+372
+00:15:30,815 --> 00:15:33,119
+So what's next for you guys
+
+373
+00:15:33,631 --> 00:15:34,655
+Nervous I mean
+
+374
+00:15:35,423 --> 00:15:37,471
+Just that you said business school students mean
+
+375
+00:15:38,495 --> 00:15:44,639
+I can imagine like what that would feel like to walk into that room and and try to get them keep her attention in
+
+376
+00:15:44,895 --> 00:15:45,407
+Get her excited
+
+377
+00:15:45,663 --> 00:15:47,455
+What's a funny story so
+
+378
+00:15:47,711 --> 00:15:52,063
+At that first meeting I've always learned you know when you're in the first meeting schedule second meeting
+
+379
+00:15:52,575 --> 00:15:56,671
+So when we're in the first meeting we scheduled the conversation for a few weeks later with her
+
+380
+00:15:57,183 --> 00:15:59,999
+Fast forward a few weeks and we're driving to the meeting
+
+381
+00:16:00,255 --> 00:16:01,279
+And
+
+382
+00:16:01,535 --> 00:16:03,839
+And we got a call while we're in the car
+
+383
+00:16:04,095 --> 00:16:05,375
+From her system
+
+384
+00:16:06,143 --> 00:16:08,447
+And we're on the West Side Highway where about
+
+385
+00:16:08,703 --> 00:16:10,495
+40 blocks from her office
+
+386
+00:16:11,007 --> 00:16:14,079
+And her system calls and says Dad no longer wants to see you
+
+387
+00:16:15,103 --> 00:16:15,871
+And
+
+388
+00:16:16,639 --> 00:16:18,431
+I said oh you know well
+
+389
+00:16:18,943 --> 00:16:20,223
+We're on our way
+
+390
+00:16:20,735 --> 00:16:22,015
+We'll just come in and say hi
+
+391
+00:16:22,271 --> 00:16:23,807
+And persistence like
+
+392
+00:16:24,319 --> 00:16:25,087
+No
+
+393
+00:16:25,343 --> 00:16:27,391
+She really doesn't want to see you
+
+394
+00:16:28,415 --> 00:16:29,951
+She's not interested in this idea
+
+395
+00:16:30,463 --> 00:16:31,999
+Can I set
+
+396
+00:16:32,511 --> 00:16:33,791
+We're just around the corner like
+
+397
+00:16:34,047 --> 00:16:35,583
+What will the stop by for a second
+
+398
+00:16:36,351 --> 00:16:37,631
+And again her sister
+
+399
+00:16:37,887 --> 00:16:41,471
+Very firmly said she doesn't want to see you
+
+400
+00:16:41,727 --> 00:16:43,007
+What do you not understand
+
+401
+00:16:43,263 --> 00:16:46,591
+And I said we're cutting off or cutting off and I hung up
+
+402
+00:16:47,103 --> 00:16:47,615
+And then I
+
+403
+00:16:48,127 --> 00:16:50,943
+Dead down the West Side Highway and we were
+
+404
+00:16:51,455 --> 00:16:53,247
+At her office and we just showed up
+
+405
+00:16:53,503 --> 00:16:56,831
+Wait most people in that situation would have just been like
+
+406
+00:16:57,599 --> 00:16:58,111
+Crashed
+
+407
+00:16:58,367 --> 00:17:04,511
+Would have felt so dejected like I don't know what I would and would have just said well forget it forget dialysis move on
+
+408
+00:17:05,535 --> 00:17:06,815
+How did you not
+
+409
+00:17:07,583 --> 00:17:09,887
+Feel that how did you how are you able to just say
+
+410
+00:17:10,655 --> 00:17:12,959
+We're just going to do that for no walk in there
+
+411
+00:17:13,471 --> 00:17:19,615
+Well Jenny initially was actually started to cry and was a little bit upset about the situation which I polish them
+
+412
+00:17:19,871 --> 00:17:23,199
+People would yeah which I think is the much more natural reaction
+
+413
+00:17:23,455 --> 00:17:23,967
+And
+
+414
+00:17:24,223 --> 00:17:27,039
+I was like we're just going to do this what do we have to lose like
+
+415
+00:17:27,295 --> 00:17:33,439
+What's the worst thing in the world we show up and she doesn't meet us what if you walked in there and they were like security please a Scorpio
+
+416
+00:17:33,695 --> 00:17:34,207
+Flipping out
+
+417
+00:17:34,719 --> 00:17:37,791
+Great then we have a story that we could tell all of our friends
+
+418
+00:17:40,095 --> 00:17:43,679
+When we come back what actually happened when Jen and Jenny
+
+419
+00:17:43,935 --> 00:17:46,495
+Finally showed up at the house on 1st and Briggs Avenue
+
+420
+00:17:47,263 --> 00:17:49,567
+I'm grozny listening to how I built this
+
+421
+00:17:49,823 --> 00:17:50,591
+From NPR
+
+422
+00:17:59,039 --> 00:18:01,087
+Support for NPR comes from Gemini
+
+423
+00:18:01,343 --> 00:18:02,367
+Presenting this message
+
+424
+00:18:02,623 --> 00:18:04,927
+Gemini is the regulated licensed Exchange
+
+425
+00:18:05,183 --> 00:18:05,951
+That makes it easy
+
+426
+00:18:06,207 --> 00:18:10,303
+To buy Bitcoin and other cryptocurrencies to your long-term investing strategy
+
+427
+00:18:10,815 --> 00:18:14,911
+You can buy crypto safely and securely on Geminis mobile app or website
+
+428
+00:18:15,423 --> 00:18:19,775
+Knowing Investments are insured and protected with state-of-the-art cybersecurity
+
+429
+00:18:20,031 --> 00:18:25,663
+Launch your crypto portfolio today and open a free account at gemini.com built
+
+430
+00:18:25,919 --> 00:18:26,431
+Gemini
+
+431
+00:18:26,687 --> 00:18:27,711
+The regulated placed
+
+432
+00:18:27,967 --> 00:18:30,527
+To buy sell and store cryptocurrency
+
+433
+00:18:31,551 --> 00:18:34,111
+Support also comes from the United States Postal
+
+434
+00:18:34,623 --> 00:18:35,135
+Everyday
+
+435
+00:18:35,391 --> 00:18:38,207
+Innovative companies are Reinventing the way business app
+
+436
+00:18:38,719 --> 00:18:41,279
+But none of that is possible without the right people
+
+437
+00:18:41,791 --> 00:18:45,631
+People who get packages to over a hundred and fifty million delivery play
+
+438
+00:18:45,887 --> 00:18:49,727
+Affordably and on time with the latest technology and expertise
+
+439
+00:18:50,239 --> 00:18:52,799
+Who can help you deliver the future of Commerce
+
+440
+00:18:53,055 --> 00:18:58,175
+The United States Postal Service see why they deliver more e-commerce packages to home
+
+441
+00:18:58,431 --> 00:18:59,711
+Has been anyone in the country
+
+442
+00:18:59,967 --> 00:19:02,527
+USPS.com future
+
+443
+00:19:05,599 --> 00:19:06,879
+Hey welcome back to how I built this
+
+444
+00:19:07,135 --> 00:19:07,903
+From NPR
+
+445
+00:19:08,927 --> 00:19:09,951
+Before the break
+
+446
+00:19:10,207 --> 00:19:13,023
+Jen was talking about how she and her co-founder Jenny
+
+447
+00:19:13,279 --> 00:19:13,791
+Basically
+
+448
+00:19:14,047 --> 00:19:18,399
+Busted into Diane Von Furstenberg xoffice to have a second meeting
+
+449
+00:19:18,655 --> 00:19:19,679
+An amazingly
+
+450
+00:19:20,191 --> 00:19:21,471
+Diane agreed to meet with them
+
+451
+00:19:24,031 --> 00:19:24,799
+Pretty good advice
+
+452
+00:19:25,311 --> 00:19:28,639
+Actually that was the meeting where she told us you know I don't want you to do
+
+453
+00:19:28,895 --> 00:19:30,431
+Do this on my website
+
+454
+00:19:31,199 --> 00:19:32,735
+You are going to have to
+
+455
+00:19:32,991 --> 00:19:34,271
+You sell this idea
+
+456
+00:19:34,527 --> 00:19:35,039
+The other
+
+457
+00:19:35,295 --> 00:19:38,879
+Designers and get lots of people on board if I'm going to do this to
+
+458
+00:19:39,135 --> 00:19:41,951
+So in a sense in that meeting she gave us permission
+
+459
+00:19:42,463 --> 00:19:45,279
+To make it a consumer-facing business and to approach
+
+460
+00:19:45,535 --> 00:19:47,327
+The rest of the industry
+
+461
+00:19:47,583 --> 00:19:50,655
+Reroute your business plan right right there
+
+462
+00:19:51,167 --> 00:19:51,679
+Yeah
+
+463
+00:19:51,935 --> 00:19:56,799
+So did you walk out of her office would like names or contacts or did you just walk out of her office
+
+464
+00:19:57,311 --> 00:20:00,127
+This is this is clarified we now know
+
+465
+00:20:00,895 --> 00:20:01,407
+We're heading
+
+466
+00:20:02,175 --> 00:20:03,967
+Well we did ask her
+
+467
+00:20:04,223 --> 00:20:04,735
+4
+
+468
+00:20:04,991 --> 00:20:09,599
+Some introductions and I think that she introduced us to one or two people in the industry
+
+469
+00:20:09,855 --> 00:20:13,951
+We then would meet with those people and we'd ask them for introductions and so on and so forth
+
+470
+00:20:14,719 --> 00:20:16,767
+But we continue to just cold coffee
+
+471
+00:20:17,023 --> 00:20:20,863
+People so one of the next people that I cold called was
+
+472
+00:20:21,119 --> 00:20:21,631
+The
+
+473
+00:20:22,143 --> 00:20:23,423
+President of Neiman Marcus
+
+474
+00:20:24,447 --> 00:20:25,471
+Because
+
+475
+00:20:25,727 --> 00:20:28,799
+He was Botha HBS alarm so I had access to his
+
+476
+00:20:29,055 --> 00:20:29,567
+Is email address
+
+477
+00:20:30,335 --> 00:20:32,639
+And I thought that you know if this whole
+
+478
+00:20:32,895 --> 00:20:33,919
+Rent the Runway thing
+
+479
+00:20:34,175 --> 00:20:35,199
+Falls through like
+
+480
+00:20:35,711 --> 00:20:37,759
+Maybe I could work for Jim gold Neiman Marcus
+
+481
+00:20:38,271 --> 00:20:38,783
+What he say
+
+482
+00:20:39,807 --> 00:20:45,183
+He said yeah this is a really good idea women have been renting the runway from my stores for decades
+
+483
+00:20:45,951 --> 00:20:49,791
+It's called buying something keeping the tags on and then returning it to the store
+
+484
+00:20:50,047 --> 00:20:51,583
+Which probably cost them
+
+485
+00:20:51,839 --> 00:20:52,607
+Millions of dollars
+
+486
+00:20:53,887 --> 00:20:54,399
+Yes
+
+487
+00:20:54,655 --> 00:20:56,191
+Kind of the dirty secret of retail
+
+488
+00:20:56,703 --> 00:20:59,007
+That the return rate especially addresses
+
+489
+00:20:59,263 --> 00:21:01,311
+And special occasion
+
+490
+00:21:01,567 --> 00:21:03,359
+A tire is extremely high
+
+491
+00:21:03,871 --> 00:21:06,175
+Cash pot for second a-10s this question which is
+
+492
+00:21:06,431 --> 00:21:10,015
+I'm wearing the outfit I'm wearing today like I've worn this in the last
+
+493
+00:21:10,271 --> 00:21:10,783
+Few days
+
+494
+00:21:11,295 --> 00:21:14,367
+I have no shame about it and obviously there's a difference
+
+495
+00:21:14,623 --> 00:21:16,928
+Society has different standards for men and women
+
+496
+00:21:18,464 --> 00:21:20,512
+What is this about what does thing where where
+
+497
+00:21:21,024 --> 00:21:21,536
+Women
+
+498
+00:21:21,792 --> 00:21:23,072
+Do you like they can't wear the same dress
+
+499
+00:21:24,096 --> 00:21:24,608
+Two different function
+
+500
+00:21:25,632 --> 00:21:26,912
+I really think that
+
+501
+00:21:27,424 --> 00:21:29,728
+There's a value that women place on
+
+502
+00:21:29,984 --> 00:21:31,008
+Self-expression
+
+503
+00:21:31,264 --> 00:21:33,056
+And that clothes make
+
+504
+00:21:33,312 --> 00:21:34,848
+You feel a certain way about yourself
+
+505
+00:21:35,104 --> 00:21:37,408
+You put on an amazing outfit in the morning and
+
+506
+00:21:37,664 --> 00:21:42,784
+It makes you feel powerful or beautiful or sexy or relaxed or however you want to feel that day
+
+507
+00:21:43,296 --> 00:21:45,856
+There's just a general value in
+
+508
+00:21:46,112 --> 00:21:49,696
+Our society right now around individuality and self-expression
+
+509
+00:21:50,464 --> 00:21:52,768
+And so the way that you're going to achieve that
+
+510
+00:21:53,280 --> 00:21:54,048
+With fashion
+
+511
+00:21:54,304 --> 00:21:55,328
+Is Viva variety
+
+512
+00:21:55,840 --> 00:21:57,120
+So I had seen
+
+513
+00:21:57,888 --> 00:22:00,448
+At the time and it's even more true today
+
+514
+00:22:00,704 --> 00:22:05,056
+Set the way that women were accessing variety and individuality was
+
+515
+00:22:05,312 --> 00:22:05,824
+Through
+
+516
+00:22:06,336 --> 00:22:07,104
+Fast fashion
+
+517
+00:22:07,360 --> 00:22:08,128
+An off-price
+
+518
+00:22:08,384 --> 00:22:09,664
+Because the only place
+
+519
+00:22:09,920 --> 00:22:11,968
+That you could buy a quantity of items
+
+520
+00:22:12,480 --> 00:22:15,040
+Was at a place that was selling them for a very cheap
+
+521
+00:22:15,296 --> 00:22:16,576
+Forever 21 or
+
+522
+00:22:17,344 --> 00:22:18,112
+Exactly
+
+523
+00:22:18,368 --> 00:22:21,184
+So I think sit when you don't have to buy something
+
+524
+00:22:21,696 --> 00:22:22,976
+It allows you
+
+525
+00:22:23,488 --> 00:22:25,024
+To try
+
+526
+00:22:25,792 --> 00:22:29,120
+New things to constantly be playful to Experiment 2
+
+527
+00:22:29,632 --> 00:22:31,424
+Try things that are in colors or in
+
+528
+00:22:31,936 --> 00:22:33,728
+Trends were you know different kinds
+
+529
+00:22:33,984 --> 00:22:35,264
+The styles that you never would
+
+530
+00:22:35,776 --> 00:22:37,056
+Because they're irrational
+
+531
+00:22:37,568 --> 00:22:38,848
+So with Rent the Runway
+
+532
+00:22:39,104 --> 00:22:40,896
+It's like a Willy Wonka land of fashion
+
+533
+00:22:41,152 --> 00:22:43,456
+Then you can have whatever you want whenever you want it
+
+534
+00:22:43,968 --> 00:22:44,992
+Let's say you have a job in
+
+535
+00:22:45,248 --> 00:22:46,016
+Curfew you have
+
+536
+00:22:46,272 --> 00:22:47,808
+A party you have a wedding you're going to
+
+537
+00:22:48,320 --> 00:22:50,624
+You're saying I wanted to arrive at my home on
+
+538
+00:22:51,136 --> 00:22:54,720
+September 15th and I'm going to wear it and use it for a few days and then I'm going to run
+
+539
+00:22:55,488 --> 00:22:57,536
+And it's about 10% of the
+
+540
+00:22:57,792 --> 00:22:58,304
+Retail price
+
+541
+00:22:58,816 --> 00:22:59,840
+So how did you know for sure that
+
+542
+00:23:00,096 --> 00:23:01,632
+Are the women will be interested
+
+543
+00:23:02,144 --> 00:23:02,912
+In like
+
+544
+00:23:03,168 --> 00:23:05,472
+Doing this mean did you get any research
+
+545
+00:23:05,728 --> 00:23:11,104
+No we never did research in an academic sense we did real life research which was
+
+546
+00:23:11,616 --> 00:23:12,640
+We went
+
+547
+00:23:12,896 --> 00:23:13,664
+To Bloomingdale's
+
+548
+00:23:14,176 --> 00:23:15,968
+We bought about a hundred dresses
+
+549
+00:23:16,736 --> 00:23:17,504
+All In
+
+550
+00:23:17,760 --> 00:23:18,528
+Our own sizes
+
+551
+00:23:18,784 --> 00:23:22,880
+So that if this whole experiment didn't work out we would have an awesome new wardrobe
+
+552
+00:23:23,392 --> 00:23:25,184
+We spent a lot of our savings on this
+
+553
+00:23:26,720 --> 00:23:27,232
+We
+
+554
+00:23:27,488 --> 00:23:28,512
+Hosted a pop-up
+
+555
+00:23:29,024 --> 00:23:30,560
+At Harvard undergrad
+
+556
+00:23:30,816 --> 00:23:34,912
+And we invited different groups of Harvard undergrads to the pop-up and
+
+557
+00:23:35,936 --> 00:23:38,240
+Idea behind this was to learn a
+
+558
+00:23:38,496 --> 00:23:39,776
+Will women rent dresses
+
+559
+00:23:40,544 --> 00:23:43,360
+B what are they rent how much will they pay
+
+560
+00:23:44,128 --> 00:23:45,664
+What brands do they want
+
+561
+00:23:45,920 --> 00:23:47,200
+And most importantly
+
+562
+00:23:47,456 --> 00:23:48,480
+If they do run
+
+563
+00:23:48,736 --> 00:23:49,504
+What happened
+
+564
+00:23:49,760 --> 00:23:50,272
+Titties
+
+565
+00:23:50,528 --> 00:23:52,320
+Garments
+
+566
+00:23:52,576 --> 00:23:53,344
+Destroyed
+
+567
+00:23:53,856 --> 00:23:56,160
+Can you send them through the mail
+
+568
+00:23:56,416 --> 00:23:58,464
+How do you dry clean these items
+
+569
+00:23:58,720 --> 00:23:59,744
+And so on and so forth
+
+570
+00:24:00,768 --> 00:24:02,304
+This is like still like
+
+571
+00:24:02,560 --> 00:24:03,584
+Travis sing
+
+572
+00:24:03,840 --> 00:24:04,608
+Like a no-brainer but
+
+573
+00:24:04,864 --> 00:24:06,912
+Is what 2008/2009
+
+574
+00:24:07,424 --> 00:24:10,496
+This our first pop-up was in April 2009
+
+575
+00:24:10,752 --> 00:24:13,568
+At that time Netflix would like mailing
+
+576
+00:24:14,080 --> 00:24:16,640
+DVDs in the mail so that was going on
+
+577
+00:24:16,896 --> 00:24:17,920
+Zappos
+
+578
+00:24:18,176 --> 00:24:20,480
+You could get shoes need to mail them back but was still
+
+579
+00:24:20,736 --> 00:24:23,808
+It wasn't like when it is now then it was still new
+
+580
+00:24:24,576 --> 00:24:25,600
+It was and
+
+581
+00:24:26,368 --> 00:24:27,136
+It feels
+
+582
+00:24:27,392 --> 00:24:29,952
+Both so long ago and also yesterday
+
+583
+00:24:30,464 --> 00:24:33,280
+So you got the The Descent right away that
+
+584
+00:24:33,792 --> 00:24:38,656
+This that this could work because these these undergraduates useless women were like yeah I want to read this
+
+585
+00:24:39,168 --> 00:24:43,520
+I got the sense that it would work because I saw the emotional effect
+
+586
+00:24:44,032 --> 00:24:46,592
+So in this pop-up I saw girls
+
+587
+00:24:46,848 --> 00:24:47,360
+You know
+
+588
+00:24:47,616 --> 00:24:48,640
+Stripping down
+
+589
+00:24:49,152 --> 00:24:50,176
+Trying on
+
+590
+00:24:50,432 --> 00:24:52,224
+These amazing dresses and
+
+591
+00:24:52,736 --> 00:24:53,504
+Feeling
+
+592
+00:24:54,016 --> 00:24:54,528
+Beautiful
+
+593
+00:24:55,040 --> 00:24:56,064
+And you saw it
+
+594
+00:24:56,576 --> 00:24:57,600
+Their facial expression
+
+595
+00:24:58,880 --> 00:25:03,232
+They threw their shoulders back and they tussled their hair and they walked with a new sense of confidence
+
+596
+00:25:03,488 --> 00:25:04,000
+Tencent
+
+597
+00:25:04,256 --> 00:25:06,560
+You know I really thought wow
+
+598
+00:25:06,816 --> 00:25:12,192
+This could be a business that isn't just about offering her irrational or smart choice
+
+599
+00:25:12,704 --> 00:25:15,520
+But it also can be a business that is
+
+600
+00:25:15,776 --> 00:25:20,640
+Delivering something emotional to her making her feel
+
+601
+00:25:21,152 --> 00:25:22,944
+Beautiful every single day
+
+602
+00:25:26,272 --> 00:25:30,112
+Founders choose to do it on their own
+
+603
+00:25:30,368 --> 00:25:33,696
+Like me like Gary Erickson from Clif bar or even Sara Blakely
+
+604
+00:25:33,952 --> 00:25:36,768
+Thanks and she has a hundred percent of her company
+
+605
+00:25:37,280 --> 00:25:38,048
+But
+
+606
+00:25:38,304 --> 00:25:40,352
+You guys went for venture capital
+
+607
+00:25:40,608 --> 00:25:42,912
+Pretty quickly player Leon y
+
+608
+00:25:43,936 --> 00:25:45,216
+We had to
+
+609
+00:25:45,472 --> 00:25:50,848
+Raise money because we needed to invest hundreds of thousands of dollars in inventory
+
+610
+00:25:51,104 --> 00:25:51,872
+2 even
+
+611
+00:25:52,384 --> 00:25:55,200
+Launch a business or twists whether it was
+
+612
+00:25:55,712 --> 00:25:56,480
+A viable
+
+613
+00:25:56,992 --> 00:25:57,760
+Idea
+
+614
+00:25:58,272 --> 00:26:03,136
+And I don't come from a family that has hundreds of thousands of dollars
+
+615
+00:26:03,392 --> 00:26:03,904
+Savings
+
+616
+00:26:04,672 --> 00:26:05,696
+Especially
+
+617
+00:26:06,208 --> 00:26:08,768
+King of savings that they're going to invest in their daughters
+
+618
+00:26:09,536 --> 00:26:10,560
+Crazy idea
+
+619
+00:26:10,816 --> 00:26:15,680
+Until when you were pitching venture capitalist how much money were you looking to raise it in the first round
+
+620
+00:26:16,192 --> 00:26:21,056
+We raised 1.75 million dollars
+
+621
+00:26:21,312 --> 00:26:23,872
+What could you do is build a website right
+
+622
+00:26:24,640 --> 00:26:26,944
+You could buy initial inventory in
+
+623
+00:26:27,200 --> 00:26:29,248
+Various-sized runs with some depth
+
+624
+00:26:29,504 --> 00:26:31,040
+Because we knew we needed many
+
+625
+00:26:31,296 --> 00:26:35,136
+Different designers we needed a selection right you weren't going to come and start renting
+
+626
+00:26:35,648 --> 00:26:36,928
+If there were only
+
+627
+00:26:37,184 --> 00:26:38,976
+5 units of inventory on the site
+
+628
+00:26:39,232 --> 00:26:40,512
+We could hire some people
+
+629
+00:26:41,280 --> 00:26:42,304
+We could launch a website
+
+630
+00:26:43,328 --> 00:26:46,144
+That was about it and take photos of the dresses and put them on the web
+
+631
+00:26:46,656 --> 00:26:48,960
+Tell us another funny story until 2 weeks
+
+632
+00:26:49,216 --> 00:26:52,800
+Before the website launched we didn't realize that we would have to take photos at the end of
+
+633
+00:26:53,056 --> 00:26:55,616
+We thought of course in this industry
+
+634
+00:26:55,872 --> 00:27:02,016
+There's some centralized plant that takes photos of this how ridiculous is it that every retailer would have to photograph
+
+635
+00:27:02,528 --> 00:27:04,320
+This inventory over and over again
+
+636
+00:27:04,576 --> 00:27:05,088
+Needless
+
+637
+00:27:05,344 --> 00:27:05,856
+To say
+
+638
+00:27:06,368 --> 00:27:08,416
+We figure out like right before the website
+
+639
+00:27:08,672 --> 00:27:10,720
+Meant to launch that we have no photos
+
+640
+00:27:11,232 --> 00:27:12,256
+And we
+
+641
+00:27:12,768 --> 00:27:16,352
+Put together a impromptu photo shoot where we
+
+642
+00:27:16,864 --> 00:27:18,656
+Found a photographer on Craigslist
+
+643
+00:27:19,168 --> 00:27:21,984
+Who ended up working with Rent the Runway for
+
+644
+00:27:22,240 --> 00:27:23,264
+6 years
+
+645
+00:27:25,824 --> 00:27:29,664
+Bring our own shoes and our own accessories to this photoshoot and
+
+646
+00:27:30,432 --> 00:27:32,224
+Are you know initial team
+
+647
+00:27:32,736 --> 00:27:33,248
+Of
+
+648
+00:27:33,504 --> 00:27:36,832
+5 employees in many interns at the time kind of
+
+649
+00:27:37,344 --> 00:27:38,368
+Figure out how to do it
+
+650
+00:27:38,624 --> 00:27:39,648
+So once you
+
+651
+00:27:39,904 --> 00:27:44,000
+Watch how do you get the word out how do you how do you get people to even know what this says
+
+652
+00:27:44,768 --> 00:27:45,280
+Hustling
+
+653
+00:27:48,096 --> 00:27:51,424
+So was the hustle the hustle was we wanted to build
+
+654
+00:27:51,680 --> 00:27:52,192
+Alyssa
+
+655
+00:27:52,448 --> 00:27:54,496
+Of as many women as
+
+656
+00:27:54,752 --> 00:27:55,520
+Possible
+
+657
+00:27:55,776 --> 00:27:58,848
+You know the Sex in the City movie had come out that summer
+
+658
+00:27:59,104 --> 00:28:00,384
+And we would
+
+659
+00:28:00,640 --> 00:28:05,760
+Go to movie theaters with women who were attending that movie and we would get their email addresses we would
+
+660
+00:28:06,272 --> 00:28:07,296
+Convince friend
+
+661
+00:28:07,808 --> 00:28:09,856
+Just send us email addresses of other friends
+
+662
+00:28:10,112 --> 00:28:13,184
+They're so like we were really doing anything and everything
+
+663
+00:28:13,440 --> 00:28:16,000
+So what are the names that was on this list
+
+664
+00:28:16,256 --> 00:28:19,072
+That we had built it Rent the Runway had
+
+665
+00:28:19,328 --> 00:28:21,632
+A at newyorktimes.com
+
+666
+00:28:22,400 --> 00:28:22,912
+And
+
+667
+00:28:23,424 --> 00:28:25,472
+I was like wow like there's someone who works at the New York
+
+668
+00:28:25,728 --> 00:28:30,592
+What timezone is email address and I looked her up and I saw that she was a twenty-two-year-old technology
+
+669
+00:28:30,848 --> 00:28:31,360
+Reporter
+
+670
+00:28:32,128 --> 00:28:33,664
+Invite her in
+
+671
+00:28:33,920 --> 00:28:35,712
+Maybe she can write about Rent the Runway
+
+672
+00:28:36,224 --> 00:28:39,808
+So we met with her and we decided we were going to give her a story
+
+673
+00:28:40,320 --> 00:28:40,832
+And
+
+674
+00:28:41,088 --> 00:28:41,600
+I
+
+675
+00:28:41,856 --> 00:28:42,368
+Thought
+
+676
+00:28:42,624 --> 00:28:43,136
+That
+
+677
+00:28:43,392 --> 00:28:45,440
+If Jenny and I were photographed
+
+678
+00:28:45,696 --> 00:28:46,720
+For this article
+
+679
+00:28:46,976 --> 00:28:49,024
+Potentially we could be on the front page of the business
+
+680
+00:28:49,280 --> 00:28:50,560
+If it was a photo that
+
+681
+00:28:50,816 --> 00:28:51,328
+Two of you
+
+682
+00:28:51,584 --> 00:28:52,096
+Yes
+
+683
+00:28:52,352 --> 00:28:54,144
+Because it was a technology
+
+684
+00:28:54,400 --> 00:28:57,984
+Reporter and no women are ever covered in the Technologies
+
+685
+00:28:59,008 --> 00:28:59,776
+So
+
+686
+00:29:00,032 --> 00:29:00,544
+I
+
+687
+00:29:00,800 --> 00:29:05,152
+Say to this reporter oh maybe you know you should take maybe you could take a photograph of us
+
+688
+00:29:05,408 --> 00:29:06,944
+At the kuantan port warehouse
+
+689
+00:29:07,456 --> 00:29:07,968
+The dry cleaner
+
+690
+00:29:08,992 --> 00:29:11,296
+So we put on like these crazy dresses
+
+691
+00:29:11,552 --> 00:29:12,064
+And
+
+692
+00:29:12,576 --> 00:29:13,600
+We showed up when the
+
+693
+00:29:13,856 --> 00:29:14,624
+Photographer
+
+694
+00:29:14,880 --> 00:29:15,648
+I showed up to
+
+695
+00:29:15,904 --> 00:29:16,416
+To the dry cleaner
+
+696
+00:29:16,928 --> 00:29:17,696
+And we
+
+697
+00:29:17,952 --> 00:29:18,976
+Stewart on ladders
+
+698
+00:29:19,488 --> 00:29:22,560
+And we told the photographer to take a photo of us on ladders
+
+699
+00:29:22,816 --> 00:29:23,584
+In front of
+
+700
+00:29:23,840 --> 00:29:24,608
+Kind of the
+
+701
+00:29:25,120 --> 00:29:26,400
+Array of addresses
+
+702
+00:29:26,656 --> 00:29:28,192
+Does that we're on the kind of dry cleaning
+
+703
+00:29:28,960 --> 00:29:29,728
+Machine
+
+704
+00:29:30,240 --> 00:29:30,752
+And
+
+705
+00:29:31,520 --> 00:29:32,800
+Because the photo was so
+
+706
+00:29:33,056 --> 00:29:34,336
+Utterly absurd
+
+707
+00:29:34,848 --> 00:29:37,664
+It ended up on the front page of the business section and
+
+708
+00:29:37,920 --> 00:29:42,272
+The headline A1 photo on nytimes.com
+
+709
+00:29:42,784 --> 00:29:47,904
+So we had a hundred thousand people sign up for Rent the Runway off of that story wow
+
+710
+00:29:48,160 --> 00:29:53,280
+People making orders yes
+
+711
+00:29:53,536 --> 00:29:56,864
+Did you have the inventory to handle all the orders no
+
+712
+00:29:57,120 --> 00:29:58,144
+So what you do
+
+713
+00:29:58,400 --> 00:30:02,240
+We raised more money so because of of
+
+714
+00:30:02,496 --> 00:30:03,264
+Hustling
+
+715
+00:30:03,776 --> 00:30:08,384
+To get this story in the luck of ending up on the front page of the New York Times
+
+716
+00:30:08,896 --> 00:30:11,712
+We met our first year sales projections in 3 weeks
+
+717
+00:30:12,224 --> 00:30:14,784
+And we had a clamoring of
+
+718
+00:30:15,296 --> 00:30:16,832
+Venture Capital investors
+
+719
+00:30:17,344 --> 00:30:20,672
+We're kind of coming into our office pitching us on
+
+720
+00:30:20,928 --> 00:30:23,488
+Siri say so we got we have gone from
+
+721
+00:30:23,744 --> 00:30:27,328
+You know a very undesirable investment to
+
+722
+00:30:27,584 --> 00:30:28,608
+Black people
+
+723
+00:30:28,864 --> 00:30:29,632
+Showing up
+
+724
+00:30:29,888 --> 00:30:31,168
+At the elevator
+
+725
+00:30:31,424 --> 00:30:32,448
+In our building
+
+726
+00:30:32,704 --> 00:30:34,496
+To meet with us unannounced wow
+
+727
+00:30:34,752 --> 00:30:40,384
+Because they wanted to pounce on the deal
+
+728
+00:30:40,640 --> 00:30:42,944
+I mean both you and
+
+729
+00:30:45,248 --> 00:30:45,760
+Unfortunately
+
+730
+00:30:46,016 --> 00:30:49,088
+Still rare in in the startup world and they are your two women
+
+731
+00:30:50,624 --> 00:30:52,928
+Bleeding a huge company and end
+
+732
+00:30:53,440 --> 00:30:55,232
+The time when you were raising money
+
+733
+00:30:56,000 --> 00:30:59,328
+Did you ever get the sense from venture capitalist who presumably most
+
+734
+00:30:59,584 --> 00:31:00,352
+Leslie Mann
+
+735
+00:31:00,608 --> 00:31:01,888
+That I don't know they were like
+
+736
+00:31:02,400 --> 00:31:04,192
+I'm a bit dismissive or
+
+737
+00:31:04,448 --> 00:31:05,984
+Condescending or
+
+738
+00:31:06,496 --> 00:31:07,008
+You know
+
+739
+00:31:07,776 --> 00:31:08,800
+I know treat you differently
+
+740
+00:31:09,312 --> 00:31:14,432
+Yeah we had several different very condescending conversations one
+
+741
+00:31:14,688 --> 00:31:18,016
+In which a partner at a very
+
+742
+00:31:18,272 --> 00:31:22,880
+Prestigious firm took my hand into his and he said you know this is so adorable
+
+743
+00:31:23,648 --> 00:31:29,024
+You're going to get to wear such pretty dresses this must be so fun for you how did you react
+
+744
+00:31:29,536 --> 00:31:31,584
+We both froze a little bit
+
+745
+00:31:33,376 --> 00:31:34,912
+We were very polite
+
+746
+00:31:35,680 --> 00:31:37,984
+And we walked out and we said you know thanks for
+
+747
+00:31:38,240 --> 00:31:40,288
+The feedback no of course we never
+
+748
+00:31:41,312 --> 00:31:42,592
+Interacted with
+
+749
+00:31:43,104 --> 00:31:49,248
+This former this investor again we never pitched them on any subsequent round we were like kind of good riddance to these people
+
+750
+00:31:49,760 --> 00:31:51,808
+So there's an element of
+
+751
+00:31:52,576 --> 00:31:53,600
+You know we
+
+752
+00:31:54,880 --> 00:31:55,648
+Hydac
+
+753
+00:31:56,160 --> 00:31:56,928
+The capital
+
+754
+00:31:57,184 --> 00:31:58,208
+We had choices
+
+755
+00:31:58,720 --> 00:32:00,000
+Because the business was growing
+
+756
+00:32:00,768 --> 00:32:01,280
+And
+
+757
+00:32:01,792 --> 00:32:02,816
+That's a privilege
+
+758
+00:32:03,840 --> 00:32:07,168
+I read an article that you that one investor says feel like
+
+759
+00:32:07,680 --> 00:32:10,240
+About about this idea
+
+760
+00:32:11,008 --> 00:32:13,824
+Well that's something that we heard all the time
+
+761
+00:32:14,080 --> 00:32:16,128
+That wasn't one investor that was most
+
+762
+00:32:16,640 --> 00:32:17,920
+Let me talk to my wife
+
+763
+00:32:18,176 --> 00:32:19,968
+My daughter or my admin
+
+764
+00:32:20,224 --> 00:32:21,504
+Those were the three
+
+765
+00:32:22,016 --> 00:32:22,528
+You know
+
+766
+00:32:23,040 --> 00:32:24,832
+Target customers that we would hear and
+
+767
+00:32:25,088 --> 00:32:26,112
+Let me tell you why eat
+
+768
+00:32:26,368 --> 00:32:26,880
+Is problematic
+
+769
+00:32:27,392 --> 00:32:29,696
+Number one the wife of a venture capitalist
+
+770
+00:32:29,952 --> 00:32:30,464
+What is the billionaire
+
+771
+00:32:30,976 --> 00:32:33,024
+So the wife of a venture capitalist
+
+772
+00:32:33,280 --> 00:32:35,072
+Is not Mike Target
+
+773
+00:32:35,840 --> 00:32:39,168
+Write the daughter of a venture capitalist in most cases
+
+774
+00:32:39,424 --> 00:32:40,192
+This is about 12
+
+775
+00:32:40,704 --> 00:32:42,752
+Because most Venture capitalists are
+
+776
+00:32:43,520 --> 00:32:46,080
+When they're in the prime of their careers their kind of
+
+777
+00:32:46,336 --> 00:32:47,872
+45 to
+
+778
+00:32:48,128 --> 00:32:48,896
+50
+
+779
+00:32:49,408 --> 00:32:49,920
+So
+
+780
+00:32:50,432 --> 00:32:52,480
+You know their daughter is not a great Target
+
+781
+00:32:52,736 --> 00:32:53,248
+Either
+
+782
+00:32:53,504 --> 00:32:55,808
+And their admin admins who work
+
+783
+00:32:56,064 --> 00:32:58,112
+In the Venture Capital industry cuz it's such a prick
+
+784
+00:32:58,368 --> 00:32:59,392
+Prestigious job
+
+785
+00:32:59,904 --> 00:33:02,720
+Are often women who are in their 50s and 60s
+
+786
+00:33:02,976 --> 00:33:03,744
+Again
+
+787
+00:33:04,000 --> 00:33:06,816
+Not women who were in my target demo so
+
+788
+00:33:07,328 --> 00:33:07,840
+We would
+
+789
+00:33:08,096 --> 00:33:08,608
+Preempt
+
+790
+00:33:08,864 --> 00:33:09,376
+.
+
+791
+00:33:10,144 --> 00:33:11,424
+By showing videos
+
+792
+00:33:11,680 --> 00:33:13,728
+Inviting these investors
+
+793
+00:33:13,984 --> 00:33:16,800
+To some of our pop up show them who discussed
+
+794
+00:33:17,824 --> 00:33:19,616
+So that they really got a son
+
+795
+00:33:19,872 --> 00:33:21,408
+Thanks for who we were catering to
+
+796
+00:33:21,920 --> 00:33:23,456
+That there's been a lot of
+
+797
+00:33:23,968 --> 00:33:26,272
+A lot of attention recently to
+
+798
+00:33:26,784 --> 00:33:27,808
+Tula
+
+799
+00:33:28,064 --> 00:33:29,856
+Roguish culture of
+
+800
+00:33:30,112 --> 00:33:31,648
+Venture capital in Silicon Valley
+
+801
+00:33:31,904 --> 00:33:32,416
+The end
+
+802
+00:33:33,184 --> 00:33:38,304
+And how women are are finally in a publicly being able to come out and talk more about
+
+803
+00:33:38,560 --> 00:33:39,584
+Their experiences
+
+804
+00:33:40,864 --> 00:33:42,400
+Did you experience some of that
+
+805
+00:33:42,656 --> 00:33:43,936
+Culture in in this process
+
+806
+00:33:44,960 --> 00:33:47,008
+I through the process of building
+
+807
+00:33:47,520 --> 00:33:50,080
+Renttherunway was sexually harassed
+
+808
+00:33:50,592 --> 00:33:52,128
+I'm by one individual
+
+809
+00:33:52,640 --> 00:33:54,176
+And I'm happy to
+
+810
+00:33:54,432 --> 00:33:55,712
+Share that experience
+
+811
+00:33:56,480 --> 00:33:58,528
+However I will say that
+
+812
+00:33:58,784 --> 00:34:00,832
+I've had interactions with
+
+813
+00:34:01,856 --> 00:34:04,928
+Dozens and dozens of venture capitalist at
+
+814
+00:34:05,184 --> 00:34:06,720
+Dozens of firms and
+
+815
+00:34:07,232 --> 00:34:07,744
+This was
+
+816
+00:34:08,000 --> 00:34:09,024
+Just one individual
+
+817
+00:34:09,792 --> 00:34:10,304
+So
+
+818
+00:34:10,816 --> 00:34:11,328
+The
+
+819
+00:34:12,096 --> 00:34:14,656
+Far far far majority of my interaction
+
+820
+00:34:14,912 --> 00:34:15,424
+Have been
+
+821
+00:34:15,936 --> 00:34:20,800
+Incredibly positive but I was in a situation once where I was kind of
+
+822
+00:34:21,312 --> 00:34:25,664
+Proposition sent sexual text messages
+
+823
+00:34:26,432 --> 00:34:27,712
+Trying to raise my Rent the Runway
+
+824
+00:34:28,480 --> 00:34:34,624
+While I was building the company yes from someone in the investor Community sending you text messages like
+
+825
+00:34:34,880 --> 00:34:36,416
+Let's go on a date or whatever it was
+
+826
+00:34:37,440 --> 00:34:41,024
+God and things that are more explicit than that
+
+827
+00:34:41,280 --> 00:34:42,560
+Toot toot sissy to get those
+
+828
+00:34:44,864 --> 00:34:45,376
+I was
+
+829
+00:34:46,144 --> 00:34:47,168
+I thought that it was
+
+830
+00:34:48,192 --> 00:34:53,568
+Inappropriate and fairly bizarre given that it was happening over text message so there was
+
+831
+00:34:54,080 --> 00:34:55,104
+Evidence created
+
+832
+00:34:55,616 --> 00:34:56,640
+Now there was also
+
+833
+00:34:56,896 --> 00:35:00,224
+You know conversations that were happening in person
+
+834
+00:35:00,736 --> 00:35:01,248
+That
+
+835
+00:35:01,504 --> 00:35:03,808
+We're also threatening and
+
+836
+00:35:04,320 --> 00:35:05,344
+Very bizarre
+
+837
+00:35:05,856 --> 00:35:06,368
+Did you just
+
+838
+00:35:06,624 --> 00:35:08,928
+Ignore it was there anything you could have
+
+839
+00:35:09,696 --> 00:35:12,256
+Did you feel like you could really do anything about it except just ignore it
+
+840
+00:35:13,280 --> 00:35:14,560
+So I initially
+
+841
+00:35:14,816 --> 00:35:15,584
+Ignored it
+
+842
+00:35:16,352 --> 00:35:17,632
+And that was the plan
+
+843
+00:35:17,888 --> 00:35:19,680
+I was planning on ignoring it in
+
+844
+00:35:19,936 --> 00:35:20,448
+You know
+
+845
+00:35:20,704 --> 00:35:22,240
+Decided you know I was going to keep it silent
+
+846
+00:35:22,752 --> 00:35:23,520
+And then
+
+847
+00:35:24,032 --> 00:35:24,544
+This
+
+848
+00:35:24,800 --> 00:35:25,312
+Person
+
+849
+00:35:26,080 --> 00:35:26,848
+Decided to
+
+850
+00:35:27,104 --> 00:35:29,408
+To call one of my board members up on the phone
+
+851
+00:35:29,920 --> 00:35:30,944
+And so you know
+
+852
+00:35:31,200 --> 00:35:32,992
+John never responds to me
+
+853
+00:35:34,528 --> 00:35:37,856
+And I think that this is a real problem and
+
+854
+00:35:38,368 --> 00:35:44,256
+She's a really unresponsive CEO and she's probably she's doing this to me she's probably doing this other people and
+
+855
+00:35:44,512 --> 00:35:47,840
+He really challenged my behavior as a CEO
+
+856
+00:35:48,352 --> 00:35:50,400
+Actually that board member
+
+857
+00:35:50,656 --> 00:35:52,192
+Came into my office to give me
+
+858
+00:35:52,448 --> 00:35:52,960
+Feedback
+
+859
+00:35:53,472 --> 00:35:55,520
+And say I need to be more responsive
+
+860
+00:35:56,032 --> 00:35:56,544
+Which
+
+861
+00:35:57,056 --> 00:35:57,568
+Was
+
+862
+00:35:57,824 --> 00:35:59,616
+My instantaneous reaction was
+
+863
+00:35:59,872 --> 00:36:01,408
+Oh my God I can't believe
+
+864
+00:36:01,920 --> 00:36:02,944
+Fattest person
+
+865
+00:36:03,200 --> 00:36:07,808
+After being rejected by making me sexual advances is now trying to ruin my career
+
+866
+00:36:10,624 --> 00:36:11,392
+And just a minute
+
+867
+00:36:11,648 --> 00:36:14,976
+How Jen handled that very tricky situation
+
+868
+00:36:15,488 --> 00:36:18,048
+I'm guy Raz and you're listening to how I built this
+
+869
+00:36:18,560 --> 00:36:19,328
+NPR
+
+870
+00:36:25,472 --> 00:36:27,520
+This is Terry Gross the host of fresh air
+
+871
+00:36:28,032 --> 00:36:33,152
+We do long-form interviews with the people behind the best books pop culture journalism and more
+
+872
+00:36:33,408 --> 00:36:35,712
+So you can get to know the people whose work you love
+
+873
+00:36:35,968 --> 00:36:39,808
+You'll find Fresh Air on NPR one or wherever you get your podcasts
+
+874
+00:36:43,392 --> 00:36:46,208
+Peyton just one more thing before I get back to the show
+
+875
+00:36:46,720 --> 00:36:51,840
+We still have a few tickets left for our upcoming live show in LA on December 5th
+
+876
+00:36:52,096 --> 00:36:52,864
+Ace theater
+
+877
+00:36:53,120 --> 00:36:54,656
+It was Michael Dubin diesel
+
+878
+00:36:54,912 --> 00:36:56,960
+The co-founder of Dollar Shave Club and
+
+879
+00:36:57,216 --> 00:37:01,312
+It's an amazing story of how he turned that into a billion dollar company
+
+880
+00:37:01,824 --> 00:37:04,896
+And you haven't been to a live show they are so much
+
+881
+00:37:07,456 --> 00:37:11,552
+The team behind the show and also a chance to meet your fellow HIV to listeners
+
+882
+00:37:12,064 --> 00:37:13,344
+So if you want to get a ticket
+
+883
+00:37:13,600 --> 00:37:14,880
+Go to NPR presents
+
+884
+00:37:15,136 --> 00:37:15,648
+. org
+
+885
+00:37:15,904 --> 00:37:16,416
+The show is
+
+886
+00:37:16,672 --> 00:37:17,440
+Supported by America
+
+887
+00:37:17,696 --> 00:37:18,720
+Express and Ayo
+
+888
+00:37:18,976 --> 00:37:19,744
+Hope to see you there
+
+889
+00:37:27,680 --> 00:37:30,240
+Hey welcome back to how I built this from NPR
+
+890
+00:37:30,496 --> 00:37:31,264
+Gyros
+
+891
+00:37:32,032 --> 00:37:34,080
+So in those early days if Rent the Runway
+
+892
+00:37:34,592 --> 00:37:38,432
+Jenn Hyman face the situation where one of our investors was
+
+893
+00:37:39,712 --> 00:37:41,504
+When she ignored his advances
+
+894
+00:37:42,528 --> 00:37:46,112
+Took it out on her he actually complained about her to a member of her board
+
+895
+00:37:49,696 --> 00:37:50,464
+She decided to be
+
+896
+00:37:50,720 --> 00:37:53,024
+Totally transparent about what was going on
+
+897
+00:37:53,536 --> 00:37:54,048
+I
+
+898
+00:37:54,560 --> 00:37:57,120
+I showed this board member the text messages
+
+899
+00:37:57,632 --> 00:37:58,400
+At that time
+
+900
+00:37:59,936 --> 00:38:00,704
+Basically
+
+901
+00:38:00,960 --> 00:38:02,752
+You know ask my board member
+
+902
+00:38:03,008 --> 00:38:05,056
+How how they like me to respond
+
+903
+00:38:05,568 --> 00:38:06,336
+What do board members
+
+904
+00:38:06,848 --> 00:38:09,152
+I mean the board member was shocked I bet
+
+905
+00:38:10,688 --> 00:38:13,248
+I proceeded to tell everyone else in my board
+
+906
+00:38:13,504 --> 00:38:14,784
+As well as some
+
+907
+00:38:15,040 --> 00:38:16,832
+Key Executives who
+
+908
+00:38:17,344 --> 00:38:19,392
+We're working with me at Rent the Runway at the time
+
+909
+00:38:21,184 --> 00:38:21,696
+The board was
+
+910
+00:38:21,952 --> 00:38:23,488
+Unbelievably supportive
+
+911
+00:38:24,256 --> 00:38:26,560
+And we decided that we were
+
+912
+00:38:26,816 --> 00:38:29,888
+Not going to do business anymore with this individual or his firm
+
+913
+00:38:32,192 --> 00:38:38,336
+So there's that form of sexual harassment and I think that that's a lot of what's been getting recent media cup
+
+914
+00:38:39,872 --> 00:38:40,384
+End
+
+915
+00:38:40,640 --> 00:38:43,200
+Hopefully by nature of a lot of very
+
+916
+00:38:43,456 --> 00:38:44,480
+Brave women
+
+917
+00:38:44,992 --> 00:38:46,272
+Speaking out right now
+
+918
+00:38:47,040 --> 00:38:49,344
+That sort of sexual harassment will
+
+919
+00:38:49,856 --> 00:38:53,696
+Stamped Out of the industry in one way that I think over time
+
+920
+00:38:53,952 --> 00:38:56,256
+That it needs to be stamped out as bi
+
+921
+00:38:56,768 --> 00:39:00,352
+Diversifying the sources of capital making sure that
+
+922
+00:39:00,608 --> 00:39:01,376
+50%
+
+923
+00:39:01,632 --> 00:39:04,192
+Investors are women but let's put that aside.
+
+924
+00:39:04,448 --> 00:39:04,960
+Just for a second
+
+925
+00:39:05,472 --> 00:39:07,008
+The second form of
+
+926
+00:39:08,288 --> 00:39:09,056
+Sexual
+
+927
+00:39:09,824 --> 00:39:10,848
+Harassment
+
+928
+00:39:11,104 --> 00:39:11,872
+Flash
+
+929
+00:39:12,896 --> 00:39:14,944
+Gender discrimination
+
+930
+00:39:15,200 --> 00:39:16,736
+Is way more subtle
+
+931
+00:39:17,248 --> 00:39:18,528
+And it's way more difficult
+
+932
+00:39:19,296 --> 00:39:20,064
+But for insta
+
+933
+00:39:20,576 --> 00:39:21,344
+Overall
+
+934
+00:39:21,600 --> 00:39:23,392
+I have seen mail founders
+
+935
+00:39:23,904 --> 00:39:24,672
+Receive
+
+936
+00:39:24,928 --> 00:39:25,952
+You know sometimes
+
+937
+00:39:26,464 --> 00:39:27,488
+More mentorship
+
+938
+00:39:27,744 --> 00:39:28,512
+Or
+
+939
+00:39:28,768 --> 00:39:29,536
+More
+
+940
+00:39:30,048 --> 00:39:30,560
+Chances
+
+941
+00:39:30,816 --> 00:39:32,864
+Is to be successful they get more
+
+942
+00:39:33,376 --> 00:39:37,216
+Strikes against them before their investors kind of pull the plugs
+
+943
+00:39:37,472 --> 00:39:38,240
+In a lot of cases
+
+944
+00:39:38,496 --> 00:39:39,776
+Women are only given
+
+945
+00:39:40,032 --> 00:39:42,080
+You know it's a one Striker you're out as this
+
+946
+00:39:42,336 --> 00:39:43,360
+CEO and founder
+
+947
+00:39:45,152 --> 00:39:47,200
+There are situations where
+
+948
+00:39:47,968 --> 00:39:51,040
+I've now come to understand that a lot of how deals get done
+
+949
+00:39:51,296 --> 00:39:54,368
+And how companies let they get acquired is
+
+950
+00:39:54,880 --> 00:39:57,184
+Someone is saying something like oh you should really meet the
+
+951
+00:39:57,440 --> 00:40:00,512
+This guy he's a Visionary he's incredible yet get to know him
+
+952
+00:40:01,024 --> 00:40:01,536
+And
+
+953
+00:40:01,792 --> 00:40:03,072
+I think across-the-board
+
+954
+00:40:03,328 --> 00:40:04,352
+More of those
+
+955
+00:40:04,864 --> 00:40:08,448
+Comments are being made about male entrepreneurs than they are about females
+
+956
+00:40:08,960 --> 00:40:09,728
+Vsac
+
+957
+00:40:09,984 --> 00:40:10,496
+Society
+
+958
+00:40:11,008 --> 00:40:12,288
+Feel uncomfortable
+
+959
+00:40:13,312 --> 00:40:15,872
+Using the words Visionary or brilliant
+
+960
+00:40:16,384 --> 00:40:17,664
+To describe women
+
+961
+00:40:18,176 --> 00:40:19,456
+That's not always in
+
+962
+00:40:19,712 --> 00:40:20,736
+Tensional I think it's
+
+963
+00:40:22,528 --> 00:40:23,552
+Ingrained in
+
+964
+00:40:23,808 --> 00:40:26,624
+People I would say in in in a lot of different instances
+
+965
+00:40:28,160 --> 00:40:31,232
+People have actually genuinely been trying to be helpful
+
+966
+00:40:31,744 --> 00:40:34,560
+To me like there was a time early in my career where
+
+967
+00:40:35,328 --> 00:40:37,120
+An investment firm
+
+968
+00:40:37,376 --> 00:40:38,400
+Beto sesame
+
+969
+00:40:38,656 --> 00:40:40,448
+OG and you know you should really meet
+
+970
+00:40:40,704 --> 00:40:41,216
+These other
+
+971
+00:40:41,728 --> 00:40:46,336
+Entrepreneurs are around your own age their brilliant you can learn a lot from them
+
+972
+00:40:46,848 --> 00:40:49,664
+They're building incredible companies they're going to change the world
+
+973
+00:40:49,920 --> 00:40:50,944
+Now all of those
+
+974
+00:40:51,200 --> 00:40:53,760
+Entrepreneurs were men and they were kind of
+
+975
+00:40:54,016 --> 00:40:56,320
+Breakfast is being Geniuses brilliant excetera
+
+976
+00:40:56,832 --> 00:40:57,344
+And
+
+977
+00:40:57,856 --> 00:41:04,000
+The same firm never introduced me in that same way to the same entrepreneurs even though we were at similar 10
+
+978
+00:41:04,256 --> 00:41:04,768
+On your end
+
+979
+00:41:05,024 --> 00:41:06,560
+Similar stages in our company
+
+980
+00:41:07,072 --> 00:41:08,352
+The irony is a lot of
+
+981
+00:41:08,608 --> 00:41:10,656
+Those guys their businesses
+
+982
+00:41:11,680 --> 00:41:12,704
+You know aren't around anymore
+
+983
+00:41:13,728 --> 00:41:14,240
+And
+
+984
+00:41:14,752 --> 00:41:16,544
+You know I'm the one who still chugging
+
+985
+00:41:16,800 --> 00:41:18,848
+I don't think that they were
+
+986
+00:41:19,104 --> 00:41:20,640
+Trying to be intentionally
+
+987
+00:41:20,896 --> 00:41:21,408
+Sexist
+
+988
+00:41:22,176 --> 00:41:23,200
+It's just that
+
+989
+00:41:23,456 --> 00:41:25,248
+There's a shade to which we
+
+990
+00:41:25,504 --> 00:41:26,272
+We all operate
+
+991
+00:41:26,784 --> 00:41:28,576
+That puts women at a bit of a
+
+992
+00:41:29,856 --> 00:41:31,392
+It's really amazing in you
+
+993
+00:41:31,648 --> 00:41:33,696
+It it it speaks to the this like
+
+994
+00:41:33,952 --> 00:41:35,488
+Perception of a power dynamic
+
+995
+00:41:36,000 --> 00:41:36,512
+It's so
+
+996
+00:41:36,768 --> 00:41:37,280
+Prevalent
+
+997
+00:41:38,048 --> 00:41:39,328
+In the end Adventure World
+
+998
+00:41:40,096 --> 00:41:41,888
+I think that those power dynamics
+
+999
+00:41:42,144 --> 00:41:43,680
+Exist in so many different in Des
+
+1000
+00:41:43,936 --> 00:41:44,704
+3 up
+
+1001
+00:41:44,960 --> 00:41:45,984
+I don't think that it's
+
+1002
+00:41:46,240 --> 00:41:47,008
+Just a
+
+1003
+00:41:47,520 --> 00:41:50,080
+Silicon Valley or technology problem
+
+1004
+00:41:50,336 --> 00:41:51,616
+And that's why
+
+1005
+00:41:52,128 --> 00:41:53,407
+I think that the more
+
+1006
+00:41:53,663 --> 00:41:54,943
+Egregious
+
+1007
+00:41:55,967 --> 00:41:58,271
+Sending you a text message in the middle of the night
+
+1008
+00:41:58,783 --> 00:41:59,551
+Asking to
+
+1009
+00:41:59,807 --> 00:42:00,831
+Sleep with you sort of
+
+1010
+00:42:01,087 --> 00:42:02,111
+Sexual harassment
+
+1011
+00:42:02,623 --> 00:42:03,391
+Hopefully
+
+1012
+00:42:03,903 --> 00:42:04,415
+Can
+
+1013
+00:42:05,439 --> 00:42:05,951
+Peace
+
+1014
+00:42:06,207 --> 00:42:07,487
+Stamped Out via just
+
+1015
+00:42:07,743 --> 00:42:08,767
+Being more vocal about it
+
+1016
+00:42:09,023 --> 00:42:11,071
+I think so that the more subtle
+
+1017
+00:42:11,327 --> 00:42:12,095
+Form of
+
+1018
+00:42:12,607 --> 00:42:13,119
+Harassment
+
+1019
+00:42:13,375 --> 00:42:13,887
+Slashed
+
+1020
+00:42:14,143 --> 00:42:16,191
+Discrimination or just lack of opportunity
+
+1021
+00:42:16,447 --> 00:42:17,471
+Is actually the
+
+1022
+00:42:17,727 --> 00:42:20,287
+Harder problem to solve
+
+1023
+00:42:20,543 --> 00:42:21,055
+This problem it's
+
+1024
+00:42:21,311 --> 00:42:22,335
+The reason why
+
+1025
+00:42:22,591 --> 00:42:25,407
+Only 4% of venture capital dollars are going
+
+1026
+00:42:25,663 --> 00:42:26,431
+Towards women and
+
+1027
+00:42:26,943 --> 00:42:29,503
+You know very very few investors are women
+
+1028
+00:42:30,015 --> 00:42:30,527
+So
+
+1029
+00:42:30,783 --> 00:42:32,319
+You know we need to fundamentally
+
+1030
+00:42:32,575 --> 00:42:33,599
+Versify
+
+1031
+00:42:34,111 --> 00:42:35,135
+Who has access to
+
+1032
+00:42:35,391 --> 00:42:36,159
+The power of was Axl
+
+1033
+00:42:36,415 --> 00:42:39,743
+What's the capital in order to get a diversity of ideas and
+
+1034
+00:42:39,999 --> 00:42:40,511
+There is out there
+
+1035
+00:42:41,279 --> 00:42:41,791
+Yeah
+
+1036
+00:42:42,047 --> 00:42:44,351
+And obviously you have had incredible
+
+1037
+00:42:44,607 --> 00:42:46,399
+Success despite the challenges
+
+1038
+00:42:46,655 --> 00:42:49,727
+That you faced and women in in in Texas
+
+1039
+00:42:51,263 --> 00:42:52,031
+As usual.
+
+1040
+00:42:52,287 --> 00:42:54,591
+Begin to develop as a leader as a CEO
+
+1041
+00:42:54,847 --> 00:42:59,711
+How did you how did you make that transition how did you figure out how to get to manage Lots
+
+1042
+00:43:01,247 --> 00:43:02,015
+I think that
+
+1043
+00:43:02,527 --> 00:43:04,831
+It is a continuous work in progress
+
+1044
+00:43:05,343 --> 00:43:10,207
+I had never manage people across the diversity of functions that we have it Rent the Runway
+
+1045
+00:43:10,975 --> 00:43:14,815
+Rent the Runway is primarily a technology & logistics company
+
+1046
+00:43:15,071 --> 00:43:18,399
+If 1200 employees 10 employees are in my fashion Department
+
+1047
+00:43:18,911 --> 00:43:19,423
+And
+
+1048
+00:43:20,959 --> 00:43:25,311
+Hundreds are in my Logistics Department hundreds are in my engineering department
+
+1049
+00:43:25,823 --> 00:43:27,103
+And these are areas
+
+1050
+00:43:27,359 --> 00:43:28,895
+In which I had no experience
+
+1051
+00:43:29,151 --> 00:43:29,919
+End
+
+1052
+00:43:30,175 --> 00:43:35,295
+One thing that I've learned is that leadership
+
+1053
+00:43:35,551 --> 00:43:40,671
+Evolved over time for small being a leader of a 1200 person company is different
+
+1054
+00:43:40,927 --> 00:43:43,487
+Then being a leader of 100% company
+
+1055
+00:43:43,743 --> 00:43:49,375
+And so I have to really evolve even though I've had the same title for 8 plus years like
+
+1056
+00:43:49,631 --> 00:43:51,423
+There's so many things.
+
+1057
+00:43:51,679 --> 00:43:54,239
+You know I've done wrong along the way
+
+1058
+00:43:54,751 --> 00:43:55,519
+And
+
+1059
+00:43:55,775 --> 00:43:57,823
+I think that the thing that has
+
+1060
+00:43:58,079 --> 00:44:00,383
+Made me grow and develop is
+
+1061
+00:44:01,663 --> 00:44:02,943
+The recognition
+
+1062
+00:44:03,199 --> 00:44:03,711
+Of
+
+1063
+00:44:04,223 --> 00:44:04,991
+Failure
+
+1064
+00:44:05,247 --> 00:44:05,759
+And
+
+1065
+00:44:06,271 --> 00:44:07,295
+Desire to
+
+1066
+00:44:07,807 --> 00:44:09,087
+Improve in the desire to get better
+
+1067
+00:44:11,391 --> 00:44:13,695
+I don't want people to have the impression that this was
+
+1068
+00:44:13,951 --> 00:44:14,463
+Is all
+
+1069
+00:44:14,975 --> 00:44:15,487
+You know you do
+
+1070
+00:44:15,999 --> 00:44:17,535
+Freda From Success to success.
+
+1071
+00:44:17,791 --> 00:44:18,815
+Easy never know
+
+1072
+00:44:19,071 --> 00:44:19,583
+Low point
+
+1073
+00:44:19,839 --> 00:44:21,887
+It's because I have been like with any company
+
+1074
+00:44:22,399 --> 00:44:22,911
+And
+
+1075
+00:44:23,167 --> 00:44:23,935
+And in 2000
+
+1076
+00:44:24,191 --> 00:44:24,703
+15
+
+1077
+00:44:25,215 --> 00:44:26,751
+You got some some tough press
+
+1078
+00:44:27,007 --> 00:44:27,519
+About
+
+1079
+00:44:27,775 --> 00:44:29,567
+Some people who left the company
+
+1080
+00:44:30,079 --> 00:44:34,431
+They were quotes newspapers calling it a Amin culture and
+
+1081
+00:44:34,943 --> 00:44:35,711
+And
+
+1082
+00:44:36,479 --> 00:44:37,503
+And things like that
+
+1083
+00:44:37,759 --> 00:44:39,551
+From some of these employees who left to that
+
+1084
+00:44:39,807 --> 00:44:41,343
+Which would hurt by tweeting that
+
+1085
+00:44:41,599 --> 00:44:42,623
+That stuff was sobibor
+
+1086
+00:44:43,903 --> 00:44:46,975
+Criticizing you and and your and your management style leadership
+
+1087
+00:44:47,999 --> 00:44:48,767
+It was
+
+1088
+00:44:49,023 --> 00:44:50,559
+The most difficult experience
+
+1089
+00:44:50,815 --> 00:44:52,351
+Of my life actually
+
+1090
+00:44:53,631 --> 00:44:55,423
+It was such a difficult time
+
+1091
+00:44:56,191 --> 00:44:56,703
+Because
+
+1092
+00:44:57,215 --> 00:44:58,239
+As a woman
+
+1093
+00:44:59,775 --> 00:45:01,823
+There's two things they could really call you as a woman
+
+1094
+00:45:02,335 --> 00:45:03,871
+They could call you the B word
+
+1095
+00:45:04,639 --> 00:45:05,663
+Or they could say you're in it
+
+1096
+00:45:06,943 --> 00:45:07,967
+Never really had a
+
+1097
+00:45:08,223 --> 00:45:11,039
+Had a fear of someone calling me an idiot
+
+1098
+00:45:12,063 --> 00:45:13,855
+But I do value myself
+
+1099
+00:45:14,623 --> 00:45:16,159
+For how I treat others
+
+1100
+00:45:17,183 --> 00:45:19,231
+So to be called mean
+
+1101
+00:45:19,487 --> 00:45:20,255
++ 2
+
+1102
+00:45:20,511 --> 00:45:21,279
+You know
+
+1103
+00:45:22,303 --> 00:45:25,631
+Be quoted as having a Mean Girls culture at the company
+
+1104
+00:45:25,887 --> 00:45:26,911
+Was so
+
+1105
+00:45:28,191 --> 00:45:30,751
+Unsettling and sad and horrible to me
+
+1106
+00:45:31,007 --> 00:45:34,079
+Cuz it's the thing that's the most important to me
+
+1107
+00:45:34,591 --> 00:45:35,103
+Pino
+
+1108
+00:45:35,615 --> 00:45:37,151
+What had been happening at
+
+1109
+00:45:37,407 --> 00:45:37,919
+At the time
+
+1110
+00:45:38,175 --> 00:45:38,687
+Was
+
+1111
+00:45:39,711 --> 00:45:41,759
+The company was going through
+
+1112
+00:45:43,039 --> 00:45:43,551
+Quite
+
+1113
+00:45:43,807 --> 00:45:45,855
+Painful and difficult transition
+
+1114
+00:45:46,111 --> 00:45:47,903
+From being a
+
+1115
+00:45:48,159 --> 00:45:48,671
+You know
+
+1116
+00:45:49,951 --> 00:45:56,095
+One phase of a startup to trying to develop some sense of entering our teen years are adolescent years
+
+1117
+00:45:56,607 --> 00:45:59,935
+And I started to realize that I needed to
+
+1118
+00:46:00,191 --> 00:46:02,239
+Make the tough calls
+
+1119
+00:46:02,495 --> 00:46:03,007
+End
+
+1120
+00:46:03,263 --> 00:46:04,543
+Fire some people
+
+1121
+00:46:06,079 --> 00:46:07,871
+Was very unsettling to people
+
+1122
+00:46:08,383 --> 00:46:09,151
+Because
+
+1123
+00:46:09,407 --> 00:46:10,687
+We give men permission
+
+1124
+00:46:11,199 --> 00:46:13,503
+As leaders and a CEOs
+
+1125
+00:46:13,759 --> 00:46:17,087
+To make the tough choices you know with women
+
+1126
+00:46:17,599 --> 00:46:19,903
+We don't give them as much permission
+
+1127
+00:46:20,159 --> 00:46:21,439
+To make those tough decisions
+
+1128
+00:46:21,695 --> 00:46:24,255
+And we often when when we do make those decisions
+
+1129
+00:46:24,511 --> 00:46:25,535
+We're often labeled as
+
+1130
+00:46:25,791 --> 00:46:28,351
+The B word
+
+1131
+00:46:28,607 --> 00:46:29,887
+Etc so
+
+1132
+00:46:30,143 --> 00:46:32,191
+It certainly was a low point
+
+1133
+00:46:32,447 --> 00:46:32,959
+But
+
+1134
+00:46:33,471 --> 00:46:35,775
+Lead to the biggest outpouring
+
+1135
+00:46:36,031 --> 00:46:37,567
+Of support of ever had
+
+1136
+00:46:37,823 --> 00:46:39,359
+It led to more
+
+1137
+00:46:39,615 --> 00:46:40,895
+Courage around
+
+1138
+00:46:41,151 --> 00:46:42,687
+My own decision making
+
+1139
+00:46:43,455 --> 00:46:43,967
+Because
+
+1140
+00:46:44,735 --> 00:46:48,063
+I led the company into the best place it's ever been
+
+1141
+00:46:48,319 --> 00:46:48,831
+And
+
+1142
+00:46:49,087 --> 00:46:55,231
+In a sense it makes the future less scary because that article or
+
+1143
+00:46:55,487 --> 00:46:56,255
+Reversion of it
+
+1144
+00:46:56,511 --> 00:46:58,047
+It will come out again
+
+1145
+00:46:58,815 --> 00:47:01,119
+And the next time it comes out
+
+1146
+00:47:01,631 --> 00:47:03,423
+It's just not going to have the same impact
+
+1147
+00:47:03,679 --> 00:47:04,191
+On me
+
+1148
+00:47:05,983 --> 00:47:07,775
+You mentioned earlier in the interview how
+
+1149
+00:47:08,287 --> 00:47:09,567
+You always wanted to
+
+1150
+00:47:10,335 --> 00:47:11,871
+Run a successful company
+
+1151
+00:47:12,127 --> 00:47:13,919
+Start a successful company but also
+
+1152
+00:47:14,175 --> 00:47:17,247
+Have a family and a kid and you did that Yoo-hoo
+
+1153
+00:47:17,503 --> 00:47:19,551
+You have a child and a partner and
+
+1154
+00:47:19,807 --> 00:47:20,831
+How have you
+
+1155
+00:47:21,343 --> 00:47:22,623
+Figured out how to
+
+1156
+00:47:23,391 --> 00:47:24,415
+To do in the way you wanted to
+
+1157
+00:47:25,695 --> 00:47:27,487
+First of all let's backtrack
+
+1158
+00:47:27,743 --> 00:47:32,351
+To being 28 and having the idea for run the runway and I just want to tell the real story here
+
+1159
+00:47:33,375 --> 00:47:36,447
+I because I think that a lot of women to go through this and end
+
+1160
+00:47:36,959 --> 00:47:37,983
+They don't talk about it
+
+1161
+00:47:38,751 --> 00:47:41,567
+One of the major considerations that I had
+
+1162
+00:47:42,079 --> 00:47:43,359
+In starting Rent the Runway
+
+1163
+00:47:43,871 --> 00:47:44,639
+Was
+
+1164
+00:47:45,407 --> 00:47:47,455
+Is this a smart idea for me
+
+1165
+00:47:48,223 --> 00:47:50,783
+Because if Rent the Runway is successful
+
+1166
+00:47:51,295 --> 00:47:53,343
+Will I ever be able to get married
+
+1167
+00:47:54,367 --> 00:47:55,903
+I was always confident that I would
+
+1168
+00:47:56,927 --> 00:47:58,975
+Turn Rent the Runway into a
+
+1169
+00:47:59,487 --> 00:48:03,071
+Consumer behavior that millions of people did and that I would be able to
+
+1170
+00:48:03,583 --> 00:48:06,911
+You know I still believe we're going to build a multi-billion-dollar company
+
+1171
+00:48:07,679 --> 00:48:10,751
+But at the very very beginning when Rent the Runway launch
+
+1172
+00:48:12,031 --> 00:48:13,567
+I had been dating someone
+
+1173
+00:48:13,823 --> 00:48:16,383
+From Harvard Business School who I was very much in love with
+
+1174
+00:48:18,687 --> 00:48:19,455
+The day that
+
+1175
+00:48:19,711 --> 00:48:23,039
+Rent the Runway came out and we were on the front page of the New York Times
+
+1176
+00:48:24,063 --> 00:48:26,879
+She broke up with me shortly thereafter
+
+1177
+00:48:27,391 --> 00:48:28,671
+Auntie told me
+
+1178
+00:48:29,183 --> 00:48:29,695
+That
+
+1179
+00:48:29,951 --> 00:48:30,719
+He
+
+1180
+00:48:30,975 --> 00:48:31,743
+Realized
+
+1181
+00:48:32,511 --> 00:48:34,559
+That he didn't want to be with his equal
+
+1182
+00:48:36,607 --> 00:48:37,887
+So that was really
+
+1183
+00:48:38,399 --> 00:48:40,959
+Sad and disheartening cuz I was very in love with this
+
+1184
+00:48:41,215 --> 00:48:41,983
+6%
+
+1185
+00:48:42,495 --> 00:48:44,799
+And that's what led into the sphere
+
+1186
+00:48:45,055 --> 00:48:45,567
+No
+
+1187
+00:48:45,823 --> 00:48:48,383
+Sphere was completely
+
+1188
+00:48:48,895 --> 00:48:51,455
+Unfounded and I had no issues
+
+1189
+00:48:51,711 --> 00:48:55,807
+You know falling in love while building Rent the Runway I just think that
+
+1190
+00:48:56,575 --> 00:48:57,087
+It
+
+1191
+00:48:57,599 --> 00:48:58,623
+Paralyzed
+
+1192
+00:49:00,159 --> 00:49:01,951
+The number one priority in my life
+
+1193
+00:49:02,207 --> 00:49:04,255
+Has always been having a family and having kids
+
+1194
+00:49:04,767 --> 00:49:05,279
+So
+
+1195
+00:49:05,535 --> 00:49:08,351
+The amount of happiness that I have now
+
+1196
+00:49:08,607 --> 00:49:11,935
+Having a daughter I just got back from maternity leave last week
+
+1197
+00:49:12,191 --> 00:49:15,007
+I'm engaged to the love of my life
+
+1198
+00:49:15,263 --> 00:49:16,031
+I can't even
+
+1199
+00:49:16,287 --> 00:49:17,055
+Describe to you
+
+1200
+00:49:17,567 --> 00:49:18,079
+The
+
+1201
+00:49:18,335 --> 00:49:19,359
+Level of
+
+1202
+00:49:19,615 --> 00:49:20,127
+Joy
+
+1203
+00:49:20,383 --> 00:49:22,943
+But it brings into my life on a daily basis
+
+1204
+00:49:23,199 --> 00:49:24,223
+To truly
+
+1205
+00:49:24,479 --> 00:49:25,759
+Have all of my dreams
+
+1206
+00:49:26,015 --> 00:49:26,527
+To come true
+
+1207
+00:49:28,575 --> 00:49:29,343
+Plaster you guys
+
+1208
+00:49:29,599 --> 00:49:30,367
+Pad Thai
+
+1209
+00:49:32,415 --> 00:49:33,695
+Which I should point out
+
+1210
+00:49:34,975 --> 00:49:35,999
+Exceedingly rare soap
+
+1211
+00:49:37,023 --> 00:49:38,047
+And
+
+1212
+00:49:38,303 --> 00:49:38,815
+I mean your
+
+1213
+00:49:39,327 --> 00:49:40,351
+Revenues
+
+1214
+00:49:40,607 --> 00:49:41,887
+Over a hundred million dollars
+
+1215
+00:49:42,143 --> 00:49:42,911
+La Quinta
+
+1216
+00:49:43,423 --> 00:49:44,191
+Public reports
+
+1217
+00:49:44,447 --> 00:49:46,495
+Devaluation of companies I don't even know what it is
+
+1218
+00:49:46,751 --> 00:49:47,263
+Do you know what it is
+
+1219
+00:49:48,287 --> 00:49:50,079
+I do know what it is
+
+1220
+00:49:50,591 --> 00:49:51,615
+Yeah but it's it's
+
+1221
+00:49:51,871 --> 00:49:52,895
+Probably higher than you
+
+1222
+00:49:53,151 --> 00:49:53,663
+Ever imagine
+
+1223
+00:49:54,687 --> 00:49:56,991
+Even though it it it may still be on
+
+1224
+00:49:57,247 --> 00:49:57,759
+Paper
+
+1225
+00:49:58,527 --> 00:49:59,039
+This
+
+1226
+00:49:59,295 --> 00:50:01,855
+Thing that you felt that you in NN Jenny built
+
+1227
+00:50:02,367 --> 00:50:03,647
+Has made both of you rich
+
+1228
+00:50:03,903 --> 00:50:05,183
+Show me you are even though babe
+
+1229
+00:50:05,439 --> 00:50:07,231
+Spam paper you are rich your rich
+
+1230
+00:50:07,487 --> 00:50:08,767
+You did not grow up that
+
+1231
+00:50:09,279 --> 00:50:14,655
+Well being rich on paper is very different than being rich and reality so let's talk in the future
+
+1232
+00:50:15,167 --> 00:50:15,679
+Because
+
+1233
+00:50:15,935 --> 00:50:18,239
+I didn't grow up saying I want to found a company
+
+1234
+00:50:18,495 --> 00:50:24,639
+I had this idea for renttherunway I saw that it was mission-driven I saw that it was driving self-confidence and making with
+
+1235
+00:50:24,895 --> 00:50:29,503
+Women feel incredible about themselves and I knew that I had to commit my life to that
+
+1236
+00:50:30,015 --> 00:50:31,295
+And I'm really proud
+
+1237
+00:50:31,807 --> 00:50:32,319
+Got
+
+1238
+00:50:32,575 --> 00:50:33,343
+We have
+
+1239
+00:50:33,599 --> 00:50:34,879
+Had many
+
+1240
+00:50:35,647 --> 00:50:36,671
+Different women
+
+1241
+00:50:36,927 --> 00:50:42,815
+Leave Rent the Runway and then raise their own venture capital and start their own companies and go after their own dream
+
+1242
+00:50:43,583 --> 00:50:44,095
+And
+
+1243
+00:50:44,607 --> 00:50:45,631
+Jenny and I
+
+1244
+00:50:46,399 --> 00:50:47,423
+2 years ago
+
+1245
+00:50:47,679 --> 00:50:49,471
+Decided to start a foundation
+
+1246
+00:50:49,983 --> 00:50:51,263
+Where we've raised
+
+1247
+00:50:51,519 --> 00:50:53,055
+Millions of dollars to
+
+1248
+00:50:53,311 --> 00:50:55,359
+Support other female entrepreneur
+
+1249
+00:50:55,615 --> 00:50:57,663
+Scaling their companies and we've now helped
+
+1250
+00:50:57,919 --> 00:51:00,223
+Thousands of women throughout the United
+
+1251
+00:51:01,247 --> 00:51:03,039
+In scaling their organization
+
+1252
+00:51:03,551 --> 00:51:04,063
+So
+
+1253
+00:51:04,831 --> 00:51:05,855
+This mission
+
+1254
+00:51:06,111 --> 00:51:06,623
+Of
+
+1255
+00:51:07,135 --> 00:51:11,999
+Empowering women and making women feel confident is the actual thing that I care
+
+1256
+00:51:13,023 --> 00:51:15,071
+Now if it happens to be
+
+1257
+00:51:15,583 --> 00:51:17,631
+That Rent the Runway brings
+
+1258
+00:51:17,887 --> 00:51:18,399
+With me
+
+1259
+00:51:19,423 --> 00:51:24,799
+The ability to provide for my family and thank my parents that would be wonderful
+
+1260
+00:51:25,055 --> 00:51:27,871
+But honestly if it amounts to nothing it is
+
+1261
+00:51:28,127 --> 00:51:32,223
+The absolute best experience of my life and I would do it over a million times
+
+1262
+00:51:35,295 --> 00:51:37,599
+Jenn Hyman founder of Rent the Runway
+
+1263
+00:51:37,855 --> 00:51:40,415
+By the way her co-founder Jennifer Fleiss recently left
+
+1264
+00:51:40,671 --> 00:51:41,183
+The company
+
+1265
+00:51:41,439 --> 00:51:42,207
+It was amicable
+
+1266
+00:51:42,463 --> 00:51:45,023
+Both Jen and Jennifer each own 13
+
+1267
+00:51:45,279 --> 00:51:46,303
+Percent of the company
+
+1268
+00:51:46,559 --> 00:51:50,399
+Put them on the Forbes list of the richest self-made women to watch
+
+1269
+00:51:50,911 --> 00:51:52,959
+Renttherunway isn't just profitable
+
+1270
+00:51:53,215 --> 00:51:56,287
+It's also become America's single largest dry cleaner
+
+1271
+00:51:56,799 --> 00:51:59,615
+Dresses from 500 different designers
+
+1272
+00:51:59,871 --> 00:52:00,383
+Including
+
+1273
+00:52:00,639 --> 00:52:02,175
+So it took a while to convince her
+
+1274
+00:52:02,943 --> 00:52:03,967
+Diane Von Furstenberg
+
+1275
+00:52:06,015 --> 00:52:10,111
+Please do stick around because it just a moment to hear from you about the things
+
+1276
+00:52:10,367 --> 00:52:10,879
+Your building
+
+1277
+00:52:11,135 --> 00:52:14,207
+But first a quick thanks to one of our sponsors MailChimp
+
+1278
+00:52:14,719 --> 00:52:17,023
+MailChimp is so much more than female
+
+1279
+00:52:17,279 --> 00:52:18,559
+They've outgrown their name
+
+1280
+00:52:19,071 --> 00:52:22,143
+With automation ad campaigns and audience management
+
+1281
+00:52:22,399 --> 00:52:23,935
+MailChimp could help your business
+
+1282
+00:52:24,191 --> 00:52:25,471
+Outgrow its name to
+
+1283
+00:52:25,727 --> 00:52:27,263
+Not just mail MailChimp
+
+1284
+00:52:30,335 --> 00:52:32,383
+Hey thanks so much for sticking around because it's
+
+1285
+00:52:32,639 --> 00:52:38,783
+I know for how you built that and today we're going to update the story we ran a while back with Monica
+
+1286
+00:52:39,039 --> 00:52:40,831
+Huarache in San Diego California
+
+1287
+00:52:41,343 --> 00:52:44,671
+And her story starts a few years ago when her daughter Leo was
+
+1288
+00:52:44,927 --> 00:52:47,743
+Packing to go overseas on a gap year program
+
+1289
+00:52:47,999 --> 00:52:50,559
+She was going to be traveling to 14 different countries
+
+1290
+00:52:51,071 --> 00:52:57,215
+Which meant that she was going to be living out of a suitcase so we needed to find the system where she would be very organized
+
+1291
+00:52:57,471 --> 00:53:01,311
+Tyson her travels to be able to survive out of a suitcase pretty much for the year
+
+1292
+00:53:01,567 --> 00:53:05,151
+This for me or maybe even you you know we can just
+
+1293
+00:53:05,407 --> 00:53:09,503
+Throw a bunch of clothes into a suitcase and forget about it but Monica
+
+1294
+00:53:09,759 --> 00:53:10,783
+She is in
+
+1295
+00:53:11,039 --> 00:53:12,063
+Probably organized
+
+1296
+00:53:12,319 --> 00:53:14,111
+I was a mathematician College
+
+1297
+00:53:14,623 --> 00:53:15,135
+And I was
+
+1298
+00:53:15,391 --> 00:53:19,743
+What was daring to order like in math is one solution
+
+1299
+00:53:19,999 --> 00:53:23,583
+Came to packing I just couldn't find the system we tried
+
+1300
+00:53:23,839 --> 00:53:27,423
+With Ziploc bags we tried many other packing cubes
+
+1301
+00:53:27,679 --> 00:53:29,727
+But you couldn't see your things
+
+1302
+00:53:30,239 --> 00:53:33,823
+And I wanted to turn a suitcase into a set of drawers
+
+1303
+00:53:34,079 --> 00:53:37,151
+And what Monica came up with was a modular set of
+
+1304
+00:53:37,407 --> 00:53:43,551
+Clear squishy plastic cubes that you can stack inside a suitcase and pull out by a
+
+1305
+00:53:43,807 --> 00:53:45,855
+Handle it when you open your suitcase you can see
+
+1306
+00:53:46,111 --> 00:53:52,255
+Everything from your suitcase and eventually Monica ran into a friend at a barbecue who happened to work with
+
+1307
+00:53:52,511 --> 00:53:55,583
+Factories in China so of course she showed him her plan
+
+1308
+00:53:56,095 --> 00:53:58,399
+Then he says this looks really interesting
+
+1309
+00:53:58,655 --> 00:54:00,191
+Then he took it to China
+
+1310
+00:54:00,447 --> 00:54:06,079
+You made a prototype for me I told him I wanted to clear and Wanda piping I wanted to have a handle
+
+1311
+00:54:06,591 --> 00:54:07,615
+And she made
+
+1312
+00:54:07,871 --> 00:54:08,895
+The first prototype
+
+1313
+00:54:09,151 --> 00:54:11,711
+Soon after that Marcus scrape together some money
+
+1314
+00:54:11,967 --> 00:54:13,759
+And placed an order for 14
+
+1315
+00:54:14,015 --> 00:54:15,551
+Thousand of these packing Cube
+
+1316
+00:54:16,063 --> 00:54:17,343
+And a few months later
+
+1317
+00:54:17,599 --> 00:54:18,879
+A truck driver pulled up
+
+1318
+00:54:19,135 --> 00:54:19,903
+In front of her house
+
+1319
+00:54:20,159 --> 00:54:23,231
+I thought I was getting maybe 60 boxes or something
+
+1320
+00:54:23,743 --> 00:54:28,095
+We had a 20-foot Container full of boxes on a bike
+
+1321
+00:54:28,351 --> 00:54:29,887
+Oh my God what
+
+1322
+00:54:30,143 --> 00:54:36,287
+Did we do and that was the precise moment when Monica realized she'd forgotten one very crew
+
+1323
+00:54:36,543 --> 00:54:37,311
+Crucial detail
+
+1324
+00:54:37,823 --> 00:54:43,967
+She had not gotten the word out about the packing cubes no I didn't have a single client I haven't sold us
+
+1325
+00:54:44,223 --> 00:54:44,735
+Singlecue
+
+1326
+00:54:44,991 --> 00:54:48,575
+Fortunately her son Solomon had study business and marketing
+
+1327
+00:54:48,831 --> 00:54:49,343
+In college
+
+1328
+00:54:49,855 --> 00:54:53,951
+And so he stepped in and he said he said we are going to work really hard
+
+1329
+00:54:54,207 --> 00:54:56,767
+We're going to put it online and we're going to sell it
+
+1330
+00:54:57,023 --> 00:55:02,911
+So Solomon started to email Mommy bloggers about the cubes and one of them posted it on Pinterest
+
+1331
+00:55:03,167 --> 00:55:04,447
+And sure enough he says
+
+1332
+00:55:04,703 --> 00:55:05,727
+We just got you
+
+1333
+00:55:06,495 --> 00:55:12,639
+Six or seven orders in like that was a big deal at the time that was like wow like this is working you know
+
+1334
+00:55:12,895 --> 00:55:17,503
+And he actually liked the idea so much that Solomon bought the company you from his mom
+
+1335
+00:55:17,759 --> 00:55:19,295
+And he called it easy packing
+
+1336
+00:55:19,551 --> 00:55:23,647
+She still helps out with the accounting and her husband does the legal work
+
+1337
+00:55:24,159 --> 00:55:26,463
+And other kids how about you but Solomon
+
+1338
+00:55:26,719 --> 00:55:27,487
+How does the
+
+1339
+00:55:27,743 --> 00:55:28,511
+Bulk of the work
+
+1340
+00:55:28,767 --> 00:55:30,815
+You know what it's been an amazing honor
+
+1341
+00:55:31,071 --> 00:55:33,887
+To work with my son I never thought I would work with my son
+
+1342
+00:55:34,143 --> 00:55:36,959
+If it hadn't been for him I would not have been able to do it
+
+1343
+00:55:37,983 --> 00:55:39,263
+That's Monica mizrachi
+
+1344
+00:55:39,519 --> 00:55:40,543
+Easy packing
+
+1345
+00:55:40,799 --> 00:55:41,311
+Today
+
+1346
+00:55:41,567 --> 00:55:43,871
+Her son Solomon and his fiance
+
+1347
+00:55:44,127 --> 00:55:44,895
+Company full time
+
+1348
+00:55:45,407 --> 00:55:46,943
+Monica Still helps out
+
+1349
+00:55:47,199 --> 00:55:52,319
+And since we first ran the story they've expanded to selling in Europe and have basically
+
+1350
+00:55:52,575 --> 00:55:57,183
+Doubled their business selling over 10000 packing cubes in the past year alone
+
+1351
+00:55:57,439 --> 00:56:03,583
+If you want to learn more about ezpacking or hear previous episodes add to our podcast page how I built this
+
+1352
+00:56:03,839 --> 00:56:08,703
+Npr.org and of course if you want to tell us your story go to build
+
+1353
+00:56:09,215 --> 00:56:10,751
+Npr.org
+
+1354
+00:56:11,007 --> 00:56:16,895
+Thanks so much for listening to the show this week you can subscribe wherever you get your podcasts and why you're there
+
+1355
+00:56:17,151 --> 00:56:18,175
+Please do give us a review
+
+1356
+00:56:18,431 --> 00:56:22,271
+You can also write us directly at HRBT at npr.org
+
+1357
+00:56:22,783 --> 00:56:25,855
+And if you want to send a tweet It's Pat how I built this
+
+1358
+00:56:26,111 --> 00:56:30,719
+A Show's producer Suite by run. Dale fukka with music composed by run teen Arab Louis
+
+1359
+00:56:30,975 --> 00:56:35,071
+Thanks also to neva grandson as meshkinpour Lawrence Wu and Jeff Rodgers
+
+1360
+00:56:35,327 --> 00:56:36,095
+Our intern
+
+1361
+00:56:36,351 --> 00:56:42,495
+Mia venkat I'm Gyros and you been listening to how I built this from NPR
+
+1362
+00:56:57,855 --> 00:57:00,159
+This message comes from NPR sponsors snowfall
+
+1363
+00:57:00,415 --> 00:57:03,231
+The only data warehouse built for the cloud
+
+1364
+00:57:03,487 --> 00:57:09,631
+Unlock deep Data Insights with the instantly scalable Cloud build data warehouse start your Journey 2
+
+1365
+00:57:09,887 --> 00:57:11,167
+Towards data-driven decision-making

@@ -1,0 +1,997 @@
+EDL	Record In	Record Out	Clipname	Subtitle
+EDL	00:00:06,656	00:00:12,800	| IOT077 |	Hey everyone welcome to the Internet of Things podcast I have your host Stacey Higginbotham
+EDL	00:00:12,800	00:00:14,080	| IOT077 |	And this is your co-host
+EDL	00:00:14,080	00:00:15,104	| IOT077 |	Kevin tofel
+EDL	00:00:15,104	00:00:16,896	| IOT077 |	And this week's podcast
+EDL	00:00:16,896	00:00:19,712	| IOT077 |	Is brought to you by security we have
+EDL	00:00:20,224	00:00:23,040	| IOT077 |	A quick word about Kevo we're going to be talking about Google
+EDL	00:00:23,040	00:00:24,576	| IOT077 |	And we got
+EDL	00:00:24,576	00:00:28,160	| IOT077 |	A new chip from arm we got some autonomous car laws
+EDL	00:00:28,160	00:00:34,560	| IOT077 |	And a new security framework for the industrial internet-of-things plus an assortment of bits and bobs
+EDL	00:00:34,560	00:00:35,072	| IOT077 |	If we get today
+EDL	00:00:35,584	00:00:40,192	| IOT077 |	And this week's guest is John Troutman of canary the All In One Security System talking about
+EDL	00:00:40,192	00:00:42,240	| IOT077 |	How to build services for The Internet of Things
+EDL	00:00:43,008	00:00:44,288	| IOT077 |	But before we get anywhere
+EDL	00:00:44,800	00:00:46,080	| IOT077 |	Let's have a quick word
+EDL	00:00:46,080	00:00:47,104	| IOT077 |	From one of our sponsors
+EDL	00:00:48,128	00:00:54,272	| IOT077 |	Are you interested in how the internet of things will change the way we discover Shop store and cook our food
+EDL	00:00:54,272	00:01:00,672	| IOT077 |	Did you will not want to miss the smart Kitchen Summit an event that's happening October 5th and 6th
+EDL	00:01:00,672	00:01:07,072	| IOT077 |	It explores the technology and design convergence that's changing how we eat buy and store it in Iraq
+EDL	00:01:07,072	00:01:13,472	| IOT077 |	With our food the smart Kitchen Summit is brought to you by my friend Michael Wolff show and he's created
+EDL	00:01:13,472	00:01:19,872	| IOT077 |	Discount especially for listeners of our podcast so just go to smart Kitchen Summit. Calm and use the code
+EDL	00:01:19,872	00:01:26,016	| IOT077 |	Iot podcast all one word to get 10% off tickets I'll be there and I hope you will join
+EDL	00:01:27,040	00:01:29,344	| IOT077 |	Alright let's start this week show
+EDL	00:01:29,344	00:01:29,856	| IOT077 |	So
+EDL	00:01:30,368	00:01:31,136	| IOT077 |	Last week
+EDL	00:01:31,136	00:01:31,904	| IOT077 |	We talked about the
+EDL	00:01:31,904	00:01:32,928	| IOT077 |	Kevo Smart Lock
+EDL	00:01:32,928	00:01:33,440	| IOT077 |	Which
+EDL	00:01:33,952	00:01:38,048	| IOT077 |	2nd generation Kevo and I said that I was not enjoying it so much because it was
+EDL	00:01:38,048	00:01:41,376	| IOT077 |	Is a bit iffy the touch-to-open feature didn't always work
+EDL	00:01:43,168	00:01:46,752	| IOT077 |	You're not the only one that actually had some issues too from reviews that I read
+EDL	00:01:47,520	00:01:48,288	| IOT077 |	True
+EDL	00:01:48,288	00:01:52,128	| IOT077 |	But you know I'm still playing with it maybe it'll get better over time but I did
+EDL	00:01:52,128	00:01:53,664	| IOT077 |	Actually make a mistake
+EDL	00:01:54,176	00:01:55,712	| IOT077 |	Winnipesaukee
+EDL	00:01:56,224	00:01:56,992	| IOT077 |	This is terrible
+EDL	00:01:56,992	00:01:58,016	| IOT077 |	It happens it does
+EDL	00:01:58,528	00:01:59,552	| IOT077 |	But we hate when it
+EDL	00:01:59,552	00:02:01,344	| IOT077 |	Happened so let me let me correct this
+EDL	00:02:01,344	00:02:04,672	| IOT077 |	I told you guys that the smart key rekeying feature
+EDL	00:02:05,184	00:02:08,000	| IOT077 |	Was a new feature in the Kevo 2nd gen
+EDL	00:02:08,000	00:02:09,024	| IOT077 |	But it's not
+EDL	00:02:09,024	00:02:11,072	| IOT077 |	It's actually what they've done is maven
+EDL	00:02:11,072	00:02:11,584	| IOT077 |	Improved it
+EDL	00:02:12,608	00:02:13,376	| IOT077 |	Moore security
+EDL	00:02:13,376	00:02:14,144	| IOT077 |	So
+EDL	00:02:14,144	00:02:16,960	| IOT077 |	Do so people know in case they missed it or don't know what
+EDL	00:02:16,960	00:02:19,776	| IOT077 |	Smart key is that's where you can actually bring your own key to the lock
+EDL	00:02:20,288	00:02:21,568	| IOT077 |	And have the lock
+EDL	00:02:21,568	00:02:23,872	| IOT077 |	Intelligently rekey itself to the key correct
+EDL	00:02:24,384	00:02:25,664	| IOT077 |	Yes
+EDL	00:02:25,664	00:02:26,688	| IOT077 |	Is it only for
+EDL	00:02:26,688	00:02:27,200	| IOT077 |	I think it's only fair
+EDL	00:02:28,480	00:02:31,296	| IOT077 |	That's a good question I know the Kwikset
+EDL	00:02:31,296	00:02:32,320	| IOT077 |	Lock that I have
+EDL	00:02:32,832	00:02:38,976	| IOT077 |	Does it so yeah I guess maybe it is that's a good question I had to get something else around here and by saying yes when I don't know
+EDL	00:02:39,744	00:02:42,560	| IOT077 |	I haven't seen it yeah I haven't seen on other brands
+EDL	00:02:46,912	00:02:47,424	| IOT077 |	But
+EDL	00:02:49,728	00:02:50,496	| IOT077 |	Searching
+EDL	00:02:53,056	00:02:57,152	| IOT077 |	Yeah I don't I don't recall seeing that on other another devices and
+EDL	00:02:57,152	00:02:59,968	| IOT077 |	It was actually kind of interesting
+EDL	00:02:59,968	00:03:02,016	| IOT077 |	New technology that's only offered in select
+EDL	00:03:02,016	00:03:03,040	| IOT077 |	Kwikset keyed entry
+EDL	00:03:03,808	00:03:05,088	| IOT077 |	There you go
+EDL	00:03:05,088	00:03:05,856	| IOT077 |	There you go
+EDL	00:03:07,392	00:03:08,928	| IOT077 |	So we got it we got it right that time
+EDL	00:03:08,928	00:03:10,208	| IOT077 |	We did we got it right
+EDL	00:03:10,720	00:03:11,744	| IOT077 |	And I should also say
+EDL	00:03:12,256	00:03:13,024	| IOT077 |	I don't
+EDL	00:03:13,024	00:03:14,816	| IOT077 |	If in the excitement over this
+EDL	00:03:14,816	00:03:15,840	| IOT077 |	I mentioned that
+EDL	00:03:15,840	00:03:17,376	| IOT077 |	The Kevo Kwikset
+EDL	00:03:17,376	00:03:18,144	| IOT077 |	Bob's
+EDL	00:03:18,144	00:03:19,680	| IOT077 |	So the little fobs you can carry
+EDL	00:03:22,240	00:03:23,520	| IOT077 |	They actually just
+EDL	00:03:24,032	00:03:24,544	| IOT077 |	Actors
+EDL	00:03:25,056	00:03:28,896	| IOT077 |	A replacement for your phone so you might give that to your kid if they don't have a smartphone
+EDL	00:03:28,896	00:03:30,176	| IOT077 |	And then they too
+EDL	00:03:30,176	00:03:30,688	| IOT077 |	Can touch soap
+EDL	00:03:33,504	00:03:36,576	| IOT077 |	Yeah so it's like a Bluetooth presence sensor probably
+EDL	00:03:36,576	00:03:37,088	| IOT077 |	Yes
+EDL	00:03:40,160	00:03:41,440	| IOT077 |	There's the Kevo stuff
+EDL	00:03:42,464	00:03:45,280	| IOT077 |	The bottom line still is that this lock is
+EDL	00:03:45,280	00:03:46,304	| IOT077 |	A still a bit temper
+EDL	00:03:46,304	00:03:47,840	| IOT077 |	It works it's really cool
+EDL	00:03:49,376	00:03:49,888	| IOT077 |	You Really Want Your Love
+EDL	00:03:51,168	00:03:51,680	| IOT077 |	100%
+EDL	00:03:53,984	00:03:54,752	| IOT077 |	Moving along
+EDL	00:03:55,264	00:03:56,544	| IOT077 |	Let's talk about
+EDL	00:03:56,544	00:03:57,568	| IOT077 |	I don't know Kevin
+EDL	00:03:57,568	00:04:00,128	| IOT077 |	Which of our things should we talk about you talk about the new autonomous car laws
+EDL	00:04:01,152	00:04:07,552	| IOT077 |	We can do that cuz it's going to turn into something else on the chips either we're going to talk about later so the Federal
+EDL	00:04:07,552	00:04:13,440	| IOT077 |	Government has decided before the states get all crazy with car laws for autonomous cars
+EDL	00:04:13,952	00:04:17,280	| IOT077 |	We're going to put out a list of guidelines and
+EDL	00:04:17,280	00:04:19,327	| IOT077 |	I don't the regulations yet
+EDL	00:04:19,327	00:04:20,351	| IOT077 |	But
+EDL	00:04:20,351	00:04:21,119	| IOT077 |	It's a framework
+EDL	00:04:21,119	00:04:27,519	| IOT077 |	So framework that's what we call things and in-flight yes it's a Frameworks
+EDL	00:04:27,519	00:04:30,591	| IOT077 |	It's just a framework
+EDL	00:04:30,591	00:04:32,127	| IOT077 |	. so not only
+EDL	00:04:32,639	00:04:33,151	| IOT077 |	Framework that is
+EDL	00:04:34,431	00:04:36,479	| IOT077 |	A public framework
+EDL	00:04:36,479	00:04:38,783	| IOT077 |	Yeah so so this is going to
+EDL	00:04:38,783	00:04:40,063	| IOT077 |	Address
+EDL	00:04:40,063	00:04:46,463	| IOT077 |	Some of the potential rules of the road for autonomous cars again before the states decide to all do different things
+EDL	00:04:46,463	00:04:52,351	| IOT077 |	Really be crazy for car manufacturers in such as to deal with so we didn't look at it I think it's like a
+EDL	00:04:52,351	00:04:54,143	| IOT077 |	300 Pages this thing is
+EDL	00:04:55,679	00:04:57,215	| IOT077 |	15 rules okay
+EDL	00:04:57,983	00:04:59,007	| IOT077 |	We can't call the rules
+EDL	00:04:59,007	00:04:59,519	| IOT077 |	Suggestions
+EDL	00:05:00,287	00:05:03,615	| IOT077 |	It's a 15-point safety assessment that's
+EDL	00:05:03,615	00:05:04,639	| IOT077 |	That's my bad CI
+EDL	00:05:05,151	00:05:07,199	| IOT077 |	Yeah what they're talking about
+EDL	00:05:07,199	00:05:08,223	| IOT077 |	Is some of the things
+EDL	00:05:08,223	00:05:08,991	| IOT077 |	Include
+EDL	00:05:08,991	00:05:10,271	| IOT077 |	Ethics so
+EDL	00:05:10,271	00:05:11,039	| IOT077 |	What
+EDL	00:05:11,039	00:05:15,391	| IOT077 |	So having the same set of ethical decisions around a self-driving car so
+EDL	00:05:15,903	00:05:17,439	| IOT077 |	Do you run over the small child
+EDL	00:05:18,975	00:05:23,327	| IOT077 |	I'm going to suggest no and I really don't need the government to tell me that but anyway
+EDL	00:05:23,327	00:05:24,095	| IOT077 |	You know you're not enough
+EDL	00:05:27,423	00:05:30,751	| IOT077 |	And I imagine there's going to be safety standards
+EDL	00:05:30,751	00:05:31,519	| IOT077 |	Like I said
+EDL	00:05:31,519	00:05:32,543	| IOT077 |	Like we have ISO
+EDL	00:05:33,055	00:05:34,591	| IOT077 |	We have nist standards for the
+EDL	00:05:35,103	00:05:38,687	| IOT077 |	Elements of physical safety
+EDL	00:05:38,687	00:05:39,199	| IOT077 |	Echeckup
+EDL	00:05:40,479	00:05:44,319	| IOT077 |	Don't make sense that makes sense and also in here I see some information about
+EDL	00:05:44,319	00:05:47,647	| IOT077 |	The manufacturers of these cars providing actual data
+EDL	00:05:47,647	00:05:48,927	| IOT077 |	And I guess that's going to help
+EDL	00:05:49,439	00:05:52,511	| IOT077 |	Home some of the potential rules of the road later on
+EDL	00:05:52,511	00:05:58,911	| IOT077 |	I wonder how these sad that you know how the Tesla's and all these other car companies are going to feel about sharing such data because
+EDL	00:05:58,911	00:06:03,007	| IOT077 |	I just think back to the unfortunate incidents with Tesla of of late
+EDL	00:06:03,519	00:06:08,895	| IOT077 |	You know I'm sure they they want to do their own investigations keep all the information kind of close to the to the best
+EDL	00:06:09,407	00:06:13,247	| IOT077 |	But I don't know they're all going to be able to do that and are they going to push back on that
+EDL	00:06:13,759	00:06:15,039	| IOT077 |	I think it's important
+EDL	00:06:15,039	00:06:15,551	| IOT077 |	To have
+EDL	00:06:16,063	00:06:18,623	| IOT077 |	There may be rules about like how the data shared
+EDL	00:06:19,135	00:06:20,671	| IOT077 |	Like make it doesn't become
+EDL	00:06:21,183	00:06:21,951	| IOT077 |	Completely public
+EDL	00:06:22,463	00:06:24,255	| IOT077 |	But it's important for every autumn
+EDL	00:06:25,791	00:06:26,815	| IOT077 |	Reddit self driving
+EDL	00:06:26,815	00:06:28,607	| IOT077 |	And it shouldn't should actually starting
+EDL	00:06:28,607	00:06:29,375	| IOT077 |	2B standard
+EDL	00:06:29,375	00:06:31,167	| IOT077 |	And in some cases it may be
+EDL	00:06:31,167	00:06:32,703	| IOT077 |	How kind of a black box so
+EDL	00:06:33,215	00:06:37,311	| IOT077 |	When something happens we can determine exactly what happen
+EDL	00:06:38,335	00:06:40,127	| IOT077 |	Is it a software failure is it
+EDL	00:06:40,639	00:06:41,663	| IOT077 |	Driver error
+EDL	00:06:42,431	00:06:42,943	| IOT077 |	Somehow
+EDL	00:06:43,455	00:06:45,759	| IOT077 |	Just like we have with planes
+EDL	00:06:45,759	00:06:46,527	| IOT077 |	Just because
+EDL	00:06:47,039	00:06:49,855	| IOT077 |	We're going to have to be able to interview these cars basic
+EDL	00:06:50,623	00:06:51,391	| IOT077 |	If some
+EDL	00:06:51,391	00:06:51,903	| IOT077 |	Nothing goes wrong
+EDL	00:06:53,439	00:06:54,975	| IOT077 |	Safety purposes but also like lawsuit
+EDL	00:06:55,999	00:06:56,511	| IOT077 |	So
+EDL	00:06:57,279	00:06:58,559	| IOT077 |	Right
+EDL	00:06:59,071	00:07:00,351	| IOT077 |	Thanks Obama
+EDL	00:07:01,375	00:07:02,911	| IOT077 |	Temperature
+EDL	00:07:02,911	00:07:06,239	| IOT077 |	Also on the safety front
+EDL	00:07:06,239	00:07:07,519	| IOT077 |	So if your autonomous car
+EDL	00:07:08,031	00:07:09,311	| IOT077 |	It's got to be super safe
+EDL	00:07:09,311	00:07:10,079	| IOT077 |	Because there's
+EDL	00:07:10,079	00:07:11,615	| IOT077 |	The risk of a huge loss of
+EDL	00:07:12,383	00:07:18,271	| IOT077 |	What should be in that car I wanted to be there new cortex r52 design
+EDL	00:07:18,783	00:07:20,319	| IOT077 |	That they put out this week
+EDL	00:07:21,087	00:07:22,367	| IOT077 |	And this is a chip
+EDL	00:07:23,135	00:07:24,415	| IOT077 |	Actually it's not a chip
+EDL	00:07:24,415	00:07:25,439	| IOT077 |	Sorry
+EDL	00:07:25,439	00:07:28,511	| IOT077 |	Arm is a company that licenses its architecture to other ship make
+EDL	00:07:30,047	00:07:30,815	| IOT077 |	A design
+EDL	00:07:30,815	00:07:32,863	| IOT077 |	The first licensee is St micro
+EDL	00:07:33,375	00:07:39,263	| IOT077 |	And this is for it's for autonomous cars robotics it's for what did you say Kevin something about loss of life and limb
+EDL	00:07:39,775	00:07:45,151	| IOT077 |	Will it it adheres to certain standards in industrial circles
+EDL	00:07:45,151	00:07:46,943	| IOT077 |	Set that have to do with safety and
+EDL	00:07:46,943	00:07:51,039	| IOT077 |	There's a whole level of criticality on potential accidents that this would
+EDL	00:07:51,039	00:07:57,183	| IOT077 |	Theoretically avoid and yes so they categorize them by you know but just a minor injury maybe loss of it.
+EDL	00:07:57,695	00:08:00,255	| IOT077 |	Whenever I live to massive loss of life
+EDL	00:08:00,255	00:08:03,327	| IOT077 |	So it kind of fits with the car which a moving vehicle could
+EDL	00:08:03,839	00:08:05,631	| IOT077 |	You know take out 50 people so
+EDL	00:08:06,143	00:08:11,007	| IOT077 |	They're playing industry level standards to the Safety and Security of the cortex r52
+EDL	00:08:11,519	00:08:13,823	| IOT077 |	In my Safety and Security they're talking about
+EDL	00:08:13,823	00:08:18,943	| IOT077 |	Prevention from hackers root access to the chip itself but they're also talking about
+EDL	00:08:19,711	00:08:21,247	| IOT077 |	How the chip is built
+EDL	00:08:21,247	00:08:23,295	| IOT077 |	So it's built to be really fast
+EDL	00:08:23,807	00:08:25,599	| IOT077 |	In understanding what's going on
+EDL	00:08:26,111	00:08:28,159	| IOT077 |	To be incredibly redundant
+EDL	00:08:28,671	00:08:34,303	| IOT077 |	So there are two processors working in parallel to do each job so if One processor overheat
+EDL	00:08:34,303	00:08:36,351	| IOT077 |	I can lose one engine you still got one left
+EDL	00:08:37,375	00:08:38,911	| IOT077 |	So these are the types of thing
+EDL	00:08:39,679	00:08:40,703	| IOT077 |	Talking about this is a new design
+EDL	00:08:41,983	00:08:43,775	| IOT077 |	And it shows how the
+EDL	00:08:43,775	00:08:44,543	| IOT077 |	Somebody is trying to
+EDL	00:08:44,543	00:08:45,311	| IOT077 |	The push into
+EDL	00:08:45,823	00:08:47,103	| IOT077 |	Obviously outside of just
+EDL	00:08:47,615	00:08:49,663	| IOT077 |	Apple phones fit into all of these
+EDL	00:08:49,663	00:08:51,455	| IOT077 |	Robotics and Industrial
+EDL	00:08:51,455	00:08:52,991	| IOT077 |	Kind of manufacturing jobs that are
+EDL	00:08:54,015	00:08:56,319	| IOT077 |	Happy just Automation in general
+EDL	00:08:56,319	00:09:01,183	| IOT077 |	They're showing all kinds of potential applications are saying farming Healthcare Industrial
+EDL	00:09:01,183	00:09:03,743	| IOT077 |	Obviously Transportation building automation
+EDL	00:09:03,743	00:09:04,511	| IOT077 |	Aviation
+EDL	00:09:05,023	00:09:10,655	| IOT077 |	So they won't expand obviously beyond the handheld devices and such that they're pretty much known for right right now
+EDL	00:09:10,655	00:09:14,495	| IOT077 |	And this is an area that's really up in the air because Nvidia has been doing
+EDL	00:09:14,495	00:09:15,007	| IOT077 |	Great work
+EDL	00:09:16,287	00:09:17,823	| IOT077 |	Self-driving car side
+EDL	00:09:18,335	00:09:22,175	| IOT077 |	With the processing of like lidar and radar and all of this information
+EDL	00:09:22,175	00:09:22,687	| IOT077 |	And
+EDL	00:09:23,455	00:09:24,735	| IOT077 |	This doesn't
+EDL	00:09:24,735	00:09:27,551	| IOT077 |	Do the cortex r52 isn't going to be
+EDL	00:09:28,063	00:09:30,879	| IOT077 |	Investigating your lighter this is the stuff that's going to be
+EDL	00:09:31,391	00:09:34,463	| IOT077 |	Running your engine and making sure that all the information
+EDL	00:09:35,487	00:09:36,767	| IOT077 |	It's coming into it
+EDL	00:09:36,767	00:09:37,279	| IOT077 |	Actually
+EDL	00:09:39,071	00:09:40,351	| IOT077 |	Is acted upon accordingly
+EDL	00:09:41,375	00:09:41,887	| IOT077 |	Yeah
+EDL	00:09:42,911	00:09:45,983	| IOT077 |	It'll be it'll be interesting cuz you're right in video
+EDL	00:09:45,983	00:09:50,079	| IOT077 |	The last couple CES show is NVIDIA time how you think that four years ago and
+EDL	00:09:50,079	00:09:51,871	| IOT077 |	Their partner speaker would be like
+EDL	00:09:51,871	00:09:55,199	| IOT077 |	Audi and they were talking about it look at our trip runs their dashboard
+EDL	00:09:55,199	00:09:58,271	| IOT077 |	Dismiss missing their car I wonder if Nvidia
+EDL	00:09:58,271	00:10:00,319	| IOT077 |	Which is an RN license ewill
+EDL	00:10:00,319	00:10:04,927	| IOT077 |	Implement the core r52 security features in some of their upcoming ship designs for the cars
+EDL	00:10:05,439	00:10:06,719	| IOT077 |	Hello we shall see
+EDL	00:10:10,047	00:10:11,327	| IOT077 |	Another security story for you
+EDL	00:10:11,839	00:10:13,887	| IOT077 |	Industrial internet Consortium
+EDL	00:10:13,887	00:10:14,911	| IOT077 |	Which is
+EDL	00:10:14,911	00:10:19,519	| IOT077 |	It's just a bunch of companies I'm not even to go through all of them tons of companies EMC now Dell
+EDL	00:10:20,031	00:10:21,055	| IOT077 |	All these guys doing
+EDL	00:10:21,567	00:10:22,591	| IOT077 |	Industrial internet stuff
+EDL	00:10:22,591	00:10:24,639	| IOT077 |	Have released on Monday
+EDL	00:10:24,639	00:10:27,455	| IOT077 |	An industrial Internet Security framework
+EDL	00:10:27,455	00:10:28,991	| IOT077 |	There's that word again Kevin
+EDL	00:10:28,991	00:10:30,527	| IOT077 |	So this is the iic
+EDL	00:10:31,039	00:10:32,575	| IOT077 |	Doing the ISS
+EDL	00:10:32,575	00:10:35,647	| IOT077 |	Independent set of best practices to help people
+EDL	00:10:35,647	00:10:36,671	| IOT077 |	Assess risk
+EDL	00:10:36,671	00:10:37,439	| IOT077 |	And defend against
+EDL	00:10:38,207	00:10:38,975	| IOT077 |	So
+EDL	00:10:38,975	00:10:39,487	| IOT077 |	This is
+EDL	00:10:39,999	00:10:40,767	| IOT077 |	The big threat
+EDL	00:10:41,279	00:10:43,071	| IOT077 |	For the industrial internet-of-things
+EDL	00:10:43,071	00:10:44,351	| IOT077 |	What is nobody knows how to
+EDL	00:10:44,863	00:10:49,471	| IOT077 |	There's no standard everybody's doing different things at everyone's pointing fingers when things go wrong
+EDL	00:10:49,983	00:10:50,751	| IOT077 |	In
+EDL	00:10:50,751	00:10:51,519	| IOT077 |	It's terrible
+EDL	00:10:51,519	00:10:55,359	| IOT077 |	This group says it wants to identify requirements to
+EDL	00:10:55,359	00:10:56,127	| IOT077 |	Create stand
+EDL	00:10:56,127	00:10:57,407	| IOT077 |	Syncope
+EDL	00:10:57,407	00:10:58,175	| IOT077 |	Practices
+EDL	00:10:58,175	00:10:59,711	| IOT077 |	It's a good idea it is
+EDL	00:10:59,711	00:11:03,039	| IOT077 |	They haven't gotten into big specifics they're basically like
+EDL	00:11:03,039	00:11:06,623	| IOT077 |	Hear the big things we need to focus on safety reliability
+EDL	00:11:06,623	00:11:07,391	| IOT077 |	Resilience
+EDL	00:11:07,903	00:11:08,671	| IOT077 |	Security and privacy
+EDL	00:11:09,183	00:11:15,583	| IOT077 |	Electoral Givens obviously but I do like that they are outlining the areas that they're focusing on an accent
+EDL	00:11:15,583	00:11:18,911	| IOT077 |	Communications monitoring and configuration
+EDL	00:11:18,911	00:11:20,191	| IOT077 |	So at least
+EDL	00:11:20,191	00:11:24,031	| IOT077 |	Because I said something physical to think about here and see where they're going with us
+EDL	00:11:24,543	00:11:28,127	| IOT077 |	And they did something that's really smart and this is something that I
+EDL	00:11:28,127	00:11:31,967	| IOT077 |	I think we take for granted a lot they're pointing out that everybody
+EDL	00:11:31,967	00:11:32,735	| IOT077 |	In the chain
+EDL	00:11:33,247	00:11:34,015	| IOT077 |	Kaiser roll
+EDL	00:11:34,015	00:11:36,319	| IOT077 |	Also in a chip makers to
+EDL	00:11:36,319	00:11:38,623	| IOT077 |	Systems integrators to the actual end-users
+EDL	00:11:40,159	00:11:44,255	| IOT077 |	I think that's really important and we don't kind of harp on this enough insecurity
+EDL	00:11:44,767	00:11:46,815	| IOT077 |	But it matters in this way
+EDL	00:11:47,583	00:11:50,911	| IOT077 |	So it's not enough to be like oh I just bought a new secure smartphone
+EDL	00:11:50,911	00:11:51,423	| IOT077 |	And actually
+EDL	00:11:52,191	00:11:55,007	| IOT077 |	This is a wonderful example actually this week
+EDL	00:11:55,007	00:11:57,055	| IOT077 |	Where someone posted on Reddit that
+EDL	00:11:57,567	00:12:01,151	| IOT077 |	Their neighbor was able to unlock their front door using their
+EDL	00:12:01,919	00:12:02,687	| IOT077 |	Siri
+EDL	00:12:02,687	00:12:04,991	| IOT077 |	Telling Siri to unlock the front door
+EDL	00:12:05,503	00:12:08,319	| IOT077 |	In August lock that was attached to Siri
+EDL	00:12:09,087	00:12:10,111	| IOT077 |	Is part of the homekit thing
+EDL	00:12:11,647	00:12:13,439	| IOT077 |	And I read this and I was like
+EDL	00:12:13,951	00:12:14,719	| IOT077 |	Okay no
+EDL	00:12:14,719	00:12:16,767	| IOT077 |	That is not how that could ever happen
+EDL	00:12:17,279	00:12:18,303	| IOT077 |	What actually did happen
+EDL	00:12:18,303	00:12:18,815	| IOT077 |	Bend is
+EDL	00:12:19,327	00:12:21,631	| IOT077 |	When you use homekit to unlock a door
+EDL	00:12:22,143	00:12:23,423	| IOT077 |	It makes you
+EDL	00:12:23,423	00:12:24,191	| IOT077 |	Put in your path
+EDL	00:12:24,703	00:12:25,983	| IOT077 |	Even if your phone's like
+EDL	00:12:25,983	00:12:26,495	| IOT077 |	Hanging out there
+EDL	00:12:27,263	00:12:27,775	| IOT077 |	Or the iPad
+EDL	00:12:28,543	00:12:29,311	| IOT077 |	And
+EDL	00:12:29,311	00:12:31,359	| IOT077 |	This particular user apparently didn't have a
+EDL	00:12:31,359	00:12:32,639	| IOT077 |	Password on there
+EDL	00:12:32,639	00:12:36,223	| IOT077 |	Hello major major faux pas
+EDL	00:12:36,223	00:12:36,735	| IOT077 |	So
+EDL	00:12:37,247	00:12:40,319	| IOT077 |	This is a wonderful example of hay user
+EDL	00:12:40,319	00:12:43,135	| IOT077 |	You are also responsible for your own security
+EDL	00:12:43,135	00:12:43,903	| IOT077 |	Be in the situation
+EDL	00:12:44,415	00:12:45,183	| IOT077 |	Yes
+EDL	00:12:45,183	00:12:45,695	| IOT077 |	And
+EDL	00:12:46,207	00:12:51,327	| IOT077 |	I also bring this up in case anybody is running homekit and doesn't have a password on their iPad or
+EDL	00:12:52,607	00:12:53,887	| IOT077 |	Because Hey look
+EDL	00:12:55,423	00:12:57,471	| IOT077 |	I'm a little skeptical about the story itself but
+EDL	00:12:59,263	00:13:02,079	| IOT077 |	You know I'm a maybe I can I don't have a
+EDL	00:13:02,079	00:13:04,127	| IOT077 |	I'm Catholic I mean
+EDL	00:13:04,127	00:13:07,711	| IOT077 |	The thermostat hear it which I can control my voice in a security issue there
+EDL	00:13:07,711	00:13:09,503	| IOT077 |	I would love to get to really see if that
+EDL	00:13:09,503	00:13:11,551	| IOT077 |	An accurate story because if it is
+EDL	00:13:12,063	00:13:15,647	| IOT077 |	Well yes I agree with you 100% from a user standpoint
+EDL	00:13:15,647	00:13:19,743	| IOT077 |	That iPad a homekit Hub whatever she is should have a password
+EDL	00:13:20,255	00:13:22,559	| IOT077 |	I think there's a little bit of
+EDL	00:13:22,559	00:13:25,375	| IOT077 |	An opportunity for improvement on Apple spark there
+EDL	00:13:25,375	00:13:27,679	| IOT077 |	To say if you're going to
+EDL	00:13:27,679	00:13:29,471	| IOT077 |	Control these things by voice
+EDL	00:13:29,471	00:13:31,007	| IOT077 |	Require password on the device
+EDL	00:13:32,031	00:13:32,543	| IOT077 |	That's a fair
+EDL	00:13:33,567	00:13:37,919	| IOT077 |	Amiibo spoofing should happen I'm not I'm not blaming Apple here I'm just saying nothing area for opportunity
+EDL	00:13:37,919	00:13:39,967	| IOT077 |	The user should absolutely have the password there
+EDL	00:13:40,735	00:13:42,015	| IOT077 |	Yes and
+EDL	00:13:42,015	00:13:42,783	| IOT077 |	This is why
+EDL	00:13:43,295	00:13:45,087	| IOT077 |	Like the August integration
+EDL	00:13:45,087	00:13:48,671	| IOT077 |	The echo the Amazon Echo doesn't actually allow you to unlock the
+EDL	00:13:49,183	00:13:49,695	| IOT077 |	She calmly lock your door
+EDL	00:13:50,207	00:13:50,719	| IOT077 |	Exactly
+EDL	00:13:52,767	00:13:54,047	| IOT077 |	Yes so anyway
+EDL	00:13:54,559	00:13:55,839	| IOT077 |	Safety Frameworks
+EDL	00:13:55,839	00:13:58,143	| IOT077 |	Tell me about recognizing the entire chain of value
+EDL	00:13:58,655	00:14:00,447	| IOT077 |	One more security type thing
+EDL	00:14:00,447	00:14:01,983	| IOT077 |	I was at fig monk last week
+EDL	00:14:02,495	00:14:03,519	| IOT077 |	London witch
+EDL	00:14:03,519	00:14:05,823	| IOT077 |	Amy's really super hot
+EDL	00:14:05,823	00:14:08,127	| IOT077 |	My God it was like almost 90° there
+EDL	00:14:08,127	00:14:09,407	| IOT077 |	And there's no air conditioning Inlet
+EDL	00:14:11,199	00:14:14,015	| IOT077 |	There was three presentations about the Smart Home
+EDL	00:14:14,015	00:14:15,807	| IOT077 |	Antenna consumer iot that
+EDL	00:14:15,807	00:14:16,831	| IOT077 |	Really bums me out
+EDL	00:14:17,599	00:14:19,903	| IOT077 |	Basically there is a lovely fellow
+EDL	00:14:19,903	00:14:21,183	| IOT077 |	Whose house
+EDL	00:14:21,183	00:14:22,975	| IOT077 |	Sounds like my house basically
+EDL	00:14:22,975	00:14:25,023	| IOT077 |	Play he's implemented all of these things
+EDL	00:14:25,535	00:14:26,047	| IOT077 |	And
+EDL	00:14:26,815	00:14:27,839	| IOT077 |	He was miserable
+EDL	00:14:28,351	00:14:33,215	| IOT077 |	On the smart home because it's it's
+EDL	00:14:33,727	00:14:34,239	| IOT077 |	Which is
+EDL	00:14:35,775	00:14:40,639	| IOT077 |	But he also pointed out that most IP security cameras can be
+EDL	00:14:40,639	00:14:42,943	| IOT077 |	Gordon Court hacked by just sticking a
+EDL	00:14:43,455	00:14:46,271	| IOT077 |	Paperclip in them to reset them which I haven't thought about
+EDL	00:14:46,271	00:14:46,783	| IOT077 |	But
+EDL	00:14:48,575	00:14:54,975	| IOT077 |	No I mean that that okay so that resets it and then I guess you could set up yourself as a user and didn't gainax
+EDL	00:14:54,975	00:14:55,743	| IOT077 |	Access to it
+EDL	00:14:55,743	00:15:00,351	| IOT077 |	And probably the individual owns the camera wouldn't really know other than the fact that they can no longer see their camera
+EDL	00:15:01,119	00:15:01,887	| IOT077 |	Right so if you
+EDL	00:15:01,887	00:15:02,911	| IOT077 |	You came in and ride
+EDL	00:15:02,911	00:15:06,751	| IOT077 |	They did not in every case so especially cameras that set up their own wife
+EDL	00:15:06,751	00:15:08,287	| IOT077 |	Wifi hotspot so if you brought your own way
+EDL	00:15:08,287	00:15:08,799	| IOT077 |	MiFi hotspot
+EDL	00:15:09,311	00:15:10,079	| IOT077 |	Eventually
+EDL	00:15:11,871	00:15:12,383	| IOT077 |	Wifi hotspot
+EDL	00:15:14,943	00:15:15,711	| IOT077 |	This isn't something I've
+EDL	00:15:16,223	00:15:18,271	| IOT077 |	But even just hit a reset just
+EDL	00:15:18,271	00:15:18,783	| IOT077 |	Turns off at
+EDL	00:15:19,551	00:15:20,063	| IOT077 |	It reset
+EDL	00:15:20,575	00:15:21,855	| IOT077 |	So right
+EDL	00:15:22,367	00:15:22,879	| IOT077 |	You're no longer
+EDL	00:15:23,647	00:15:24,671	| IOT077 |	Yeah
+EDL	00:15:25,695	00:15:26,463	| IOT077 |	So I thought about that
+EDL	00:15:28,255	00:15:30,559	| IOT077 |	All right I'm going to have to Outlaw the paperclip
+EDL	00:15:31,327	00:15:32,095	| IOT077 |	Dang it
+EDL	00:15:34,399	00:15:36,703	| IOT077 |	It's so useful for resetting
+EDL	00:15:38,239	00:15:39,775	| IOT077 |	So there's there's one thing that I learned it
+EDL	00:15:40,799	00:15:41,567	| IOT077 |	And then basically
+EDL	00:15:42,079	00:15:43,359	| IOT077 |	We got a long way to go and smart
+EDL	00:15:44,127	00:15:44,895	| IOT077 |	Yeah
+EDL	00:15:44,895	00:15:46,175	| IOT077 |	But we're getting there
+EDL	00:15:46,687	00:15:47,711	| IOT077 |	This is a fun
+EDL	00:15:47,711	00:15:49,247	| IOT077 |	Kind of concept as we're
+EDL	00:15:49,759	00:15:52,319	| IOT077 |	Coming up to October 4th which is the
+EDL	00:15:52,319	00:15:55,391	| IOT077 |	David Google is presumably launching Google home
+EDL	00:15:56,159	00:15:56,927	| IOT077 |	Here we should
+EDL	00:15:56,927	00:15:57,951	| IOT077 |	Take a moment for
+EDL	00:15:57,951	00:15:58,975	| IOT077 |	Kevin's disclosure
+EDL	00:15:59,487	00:16:03,839	| IOT077 |	Yep I consult for Google and I do not work on any other Smart Home Products
+EDL	00:16:03,839	00:16:05,887	| IOT077 |	I told any views are my own
+EDL	00:16:05,887	00:16:06,399	| IOT077 |	And store
+EDL	00:16:07,935	00:16:09,727	| IOT077 |	I was speaking Google
+EDL	00:16:09,727	00:16:11,007	| IOT077 |	When you talk to Google
+EDL	00:16:11,007	00:16:12,031	| IOT077 |	You don't say that
+EDL	00:16:12,031	00:16:14,847	| IOT077 |	Like when you talk to Amazon you say hey she who shall not be named
+EDL	00:16:16,383	00:16:16,895	| IOT077 |	Hey Siri
+EDL	00:16:19,711	00:16:22,015	| IOT077 |	Sorry if not you're okay cuz
+EDL	00:16:22,527	00:16:25,343	| IOT077 |	Press the buttons on the phone song
+EDL	00:16:26,623	00:16:27,135	| IOT077 |	For much longer
+EDL	00:16:28,159	00:16:28,927	| IOT077 |	All right
+EDL	00:16:28,927	00:16:29,695	| IOT077 |	So you have
+EDL	00:16:30,463	00:16:31,231	| IOT077 |	These women
+EDL	00:16:33,791	00:16:34,303	| IOT077 |	Google
+EDL	00:16:34,815	00:16:35,583	| IOT077 |	Have a name
+EDL	00:16:35,583	00:16:37,375	| IOT077 |	Google home have a name
+EDL	00:16:38,655	00:16:41,471	| IOT077 |	OSHA 12 students assistant have
+EDL	00:16:43,519	00:16:45,823	| IOT077 |	Assisting is what Google calls its AI ever
+EDL	00:16:45,823	00:16:46,847	| IOT077 |	Hertz in
+EDL	00:16:46,847	00:16:48,383	| IOT077 |	Write the powers
+EDL	00:16:48,383	00:16:48,895	| IOT077 |	When you say
+EDL	00:16:49,407	00:16:50,943	| IOT077 |	Should I say it ok Google
+EDL	00:16:50,943	00:16:54,015	| IOT077 |	Brexit who doesn't have a
+EDL	00:16:54,015	00:16:56,319	| IOT077 |	A name it's a mean other than the company name
+EDL	00:16:56,319	00:17:00,671	| IOT077 |	Right it's a branding thing to me so I don't really have a problem I think
+EDL	00:17:00,671	00:17:04,511	| IOT077 |	I'm very used to eat saying OK Google to my devices
+EDL	00:17:04,511	00:17:06,047	| IOT077 |	I have four I don't know
+EDL	00:17:06,047	00:17:07,839	| IOT077 |	3ish Warriors how long
+EDL	00:17:08,351	00:17:09,119	| IOT077 |	It's been out
+EDL	00:17:09,631	00:17:11,423	| IOT077 |	But how if you've got like
+EDL	00:17:11,423	00:17:14,751	| IOT077 |	My phone is almost always around if I say that am I going to set off my phone
+EDL	00:17:14,751	00:17:15,519	| IOT077 |	Pain in my home
+EDL	00:17:15,519	00:17:17,055	| IOT077 |	That was a question that
+EDL	00:17:17,055	00:17:20,895	| IOT077 |	Many people had a Google IO in Google home was actually showing off we don't
+EDL	00:17:21,407	00:17:22,687	| IOT077 |	No because
+EDL	00:17:23,455	00:17:25,759	| IOT077 |	They're not going into details about that so
+EDL	00:17:26,271	00:17:28,831	| IOT077 |	Her people don't know you on an Android device
+EDL	00:17:29,343	00:17:30,879	| IOT077 |	You can have
+EDL	00:17:30,879	00:17:34,719	| IOT077 |	Your phone always listening as well as an Android Wear watch if you raise it
+EDL	00:17:34,719	00:17:37,023	| IOT077 |	You can say OK Google and
+EDL	00:17:37,023	00:17:38,047	| IOT077 |	Korean sauce
+EDL	00:17:38,559	00:17:39,839	| IOT077 |	So how will all this work
+EDL	00:17:39,839	00:17:41,887	| IOT077 |	But the same keyword is the question
+EDL	00:17:41,887	00:17:43,167	| IOT077 |	And I don't think that
+EDL	00:17:43,167	00:17:45,215	| IOT077 |	Question has been answered yet so
+EDL	00:17:45,983	00:17:47,263	| IOT077 |	My suspicions
+EDL	00:17:47,775	00:17:50,335	| IOT077 |	Is yes it will cause conflict
+EDL	00:17:50,335	00:17:51,871	| IOT077 |	Commence just a guess on my part
+EDL	00:17:52,383	00:17:56,479	| IOT077 |	That's because there's no mechanism in place today to prevent it from multiple
+EDL	00:17:56,991	00:17:59,039	| IOT077 |	Android Wear Android devices
+EDL	00:17:59,039	00:18:02,367	| IOT077 |	Right so unless there's eight some new secret sauce
+EDL	00:18:02,367	00:18:03,391	| IOT077 |	Hearing Google home
+EDL	00:18:03,391	00:18:04,671	| IOT077 |	It will be an issue
+EDL	00:18:04,671	00:18:06,207	| IOT077 |	What about the
+EDL	00:18:06,207	00:18:06,975	| IOT077 |	I always mess up
+EDL	00:18:07,487	00:18:08,255	| IOT077 |	What is a
+EDL	00:18:08,255	00:18:09,023	| IOT077 |	VSP
+EDL	00:18:09,535	00:18:12,095	| IOT077 |	That Amazon introduced for the
+EDL	00:18:12,095	00:18:13,119	| IOT077 |	Multiple echos
+EDL	00:18:14,911	00:18:15,679	| IOT077 |	The latest I
+EDL	00:18:17,727	00:18:18,239	| IOT077 |	With room level
+EDL	00:18:19,519	00:18:20,031	| IOT077 |	Right
+EDL	00:18:21,567	00:18:27,967	| IOT077 |	So yeah so that was announced last week with a. Where if you have multiple Echo devices which she would
+EDL	00:18:27,967	00:18:28,479	| IOT077 |	And I both do
+EDL	00:18:28,991	00:18:30,015	| IOT077 |	When you speak
+EDL	00:18:30,527	00:18:31,807	| IOT077 |	Out loud to them
+EDL	00:18:31,807	00:18:33,855	| IOT077 |	Only one should
+EDL	00:18:33,855	00:18:35,647	| IOT077 |	Listen to take action words today
+EDL	00:18:36,159	00:18:41,791	| IOT077 |	Got me I have two or three of them go at the same time because they can all hear me so my guess is they are then
+EDL	00:18:41,791	00:18:45,631	| IOT077 |	Owning the software to say which is the highest level
+EDL	00:18:45,631	00:18:48,191	| IOT077 |	Up from the microphone and I'm going to presume that
+EDL	00:18:48,703	00:18:51,007	| IOT077 |	The one the person speaking together closest to it
+EDL	00:18:51,519	00:18:54,591	| IOT077 |	So they could do something like that here with Google home
+EDL	00:18:55,103	00:18:55,615	| IOT077 |	Possible
+EDL	00:18:56,127	00:18:59,199	| IOT077 |	Or if knowing a phone is in the house today
+EDL	00:18:59,199	00:19:02,271	| IOT077 |	Are nearby maybe they route everything to the
+EDL	00:19:05,855	00:19:08,927	| IOT077 |	Well I don't know I don't know
+EDL	00:19:08,927	00:19:14,815	| IOT077 |	It gets complex when you start doing things like that because you're relying on so many different potential data points that you may or may not have
+EDL	00:19:16,351	00:19:19,167	| IOT077 |	Agreed but it will actually that goes to what I was going to say
+EDL	00:19:19,679	00:19:20,703	| IOT077 |	Google
+EDL	00:19:20,703	00:19:22,751	| IOT077 |	Probably does know
+EDL	00:19:22,751	00:19:25,823	| IOT077 |	If your phone has the always listening function on
+EDL	00:19:26,591	00:19:30,687	| IOT077 |	Because all this is tied your Google account and there's Telemetry information that can read
+EDL	00:19:30,687	00:19:33,759	| IOT077 |	So my guess is
+EDL	00:19:33,759	00:19:38,111	| IOT077 |	I'm getting more people than not actually don't have the always listening function on
+EDL	00:19:38,111	00:19:39,391	| IOT077 |	Japanese
+EDL	00:19:39,391	00:19:40,671	| IOT077 |	It's not on by default
+EDL	00:19:40,671	00:19:42,207	| IOT077 |	So typically you have to like
+EDL	00:19:42,207	00:19:45,279	| IOT077 |	To use the function you have to actually go into the
+EDL	00:19:45,279	00:19:46,047	| IOT077 |	Google app
+EDL	00:19:46,815	00:19:48,607	| IOT077 |	Pour into a Google search screen
+EDL	00:19:49,119	00:19:52,959	| IOT077 |	And from there once it's enabled you can say OK Google it will do
+EDL	00:19:52,959	00:19:53,727	| IOT077 |	Whatever
+EDL	00:19:53,727	00:19:56,287	| IOT077 |	I think very few people have that always listening
+EDL	00:19:56,287	00:19:57,823	| IOT077 |	Picture on always on their phone
+EDL	00:19:59,359	00:20:00,639	| IOT077 |	No this was just cuz like
+EDL	00:20:01,151	00:20:02,687	| IOT077 |	And then there's also the personality
+EDL	00:20:03,967	00:20:04,991	| IOT077 |	I mean I would not
+EDL	00:20:05,759	00:20:06,527	| IOT077 |	She who shall not
+EDL	00:20:08,575	00:20:09,343	| IOT077 |	She's getting there
+EDL	00:20:09,343	00:20:10,879	| IOT077 |	To get their High great as
+EDL	00:20:11,647	00:20:12,415	| IOT077 |	I've never actually
+EDL	00:20:15,231	00:20:19,327	| IOT077 |	Yeah but I like Cortana Lotta Love what Microsoft is down there
+EDL	00:20:19,327	00:20:21,375	| IOT077 |	NF personality are for sure it's
+EDL	00:20:21,375	00:20:27,775	| IOT077 |	I think she's a really good example of a blend between Siri and Google Now to be quite honest and
+EDL	00:20:27,775	00:20:28,287	| IOT077 |	Play well done
+EDL	00:20:29,055	00:20:35,455	| IOT077 |	I don't know even even on the new today Google released the allo messaging app and that has assistant built in
+EDL	00:20:35,455	00:20:36,223	| IOT077 |	And as well
+EDL	00:20:36,223	00:20:38,015	| IOT077 |	So that way if you're in a chat
+EDL	00:20:38,015	00:20:41,599	| IOT077 |	You can even make me make a group chat you can do a nap Google
+EDL	00:20:42,111	00:20:48,255	| IOT077 |	In the chat and say show up show me great taco places right and everybody will see the results and we can all decide oh yeah let's go
+EDL	00:20:49,535	00:20:52,351	| IOT077 |	So but there's no name it's just
+EDL	00:20:52,351	00:20:54,143	| IOT077 |	Google it's at Google right
+EDL	00:20:54,655	00:20:55,935	| IOT077 |	Teuta consistent thing
+EDL	00:20:56,447	00:20:59,263	| IOT077 |	Do we like it or not I don't know I'm guessing you don't you
+EDL	00:20:59,775	00:21:01,055	| IOT077 |	Just like I just
+EDL	00:21:01,567	00:21:02,847	| IOT077 |	As you move it
+EDL	00:21:03,359	00:21:05,407	| IOT077 |	A as it becomes more aware of
+EDL	00:21:06,943	00:21:08,223	| IOT077 |	It feels weird
+EDL	00:21:08,735	00:21:09,247	| IOT077 |	To have it be
+EDL	00:21:13,343	00:21:14,111	| IOT077 |	And then also
+EDL	00:21:14,879	00:21:18,464	| IOT077 |	As it's in your house and more people are interacting with it like
+EDL	00:21:18,464	00:21:20,512	| IOT077 |	Yes my daughter will be fine
+EDL	00:21:20,512	00:21:21,024	| IOT077 |	I'm saying
+EDL	00:21:22,560	00:21:24,864	| IOT077 |	Alexa in some ways and I'm sorry
+EDL	00:21:24,864	00:21:25,632	| IOT077 |	Guys
+EDL	00:21:25,632	00:21:29,216	| IOT077 |	Has become like our arbitrator at the dinner table for exam
+EDL	00:21:29,728	00:21:33,824	| IOT077 |	Pause for a moment
+EDL	00:21:33,824	00:21:34,592	| IOT077 |	Oh wait no
+EDL	00:21:36,384	00:21:37,408	| IOT077 |	We're like boom
+EDL	00:21:37,408	00:21:38,688	| IOT077 |	And she's almost got like a seat at the
+EDL	00:21:39,456	00:21:40,480	| IOT077 |	Inside
+EDL	00:21:40,480	00:21:45,856	| IOT077 |	I totally get that because and doesn't sound stupid when we stayed anyway there many many times just buy
+EDL	00:21:45,856	00:21:46,880	| IOT077 |	Conditioning in
+EDL	00:21:46,880	00:21:50,208	| IOT077 |	And politeness when I'm done speaking to my echo I'll say thank you
+EDL	00:21:51,488	00:21:53,024	| IOT077 |	I wouldn't do that with
+EDL	00:21:53,792	00:21:54,816	| IOT077 |	Google home I don't
+EDL	00:21:55,840	00:21:56,352	| IOT077 |	Cuz it's a
+EDL	00:21:56,864	00:22:00,192	| IOT077 |	Company it's a brand it's not a personality or a
+EDL	00:22:00,704	00:22:02,752	| IOT077 |	In a person in a in a box
+EDL	00:22:02,752	00:22:03,264	| IOT077 |	So to speak
+EDL	00:22:04,288	00:22:06,592	| IOT077 |	Flip a person out of the box
+EDL	00:22:06,592	00:22:07,104	| IOT077 |	Orsillo
+EDL	00:22:09,920	00:22:11,456	| IOT077 |	Kushner and air freshener
+EDL	00:22:11,968	00:22:12,992	| IOT077 |	Alright so
+EDL	00:22:12,992	00:22:14,016	| IOT077 |	That is our
+EDL	00:22:14,016	00:22:14,528	| IOT077 |	Our question
+EDL	00:22:17,600	00:22:19,648	| IOT077 |	It's not a food never done but now we have one
+EDL	00:22:19,648	00:22:21,440	| IOT077 |	So it's not bad
+EDL	00:22:21,440	00:22:23,232	| IOT077 |	All right I think that's
+EDL	00:22:23,232	00:22:24,000	| IOT077 |	Cats
+EDL	00:22:24,000	00:22:28,608	| IOT077 |	Great for this week show please stay tuned for john-troutman a co-founder of
+EDL	00:22:28,608	00:22:30,912	| IOT077 |	Canary which just launched a brand new outdoor camera
+EDL	00:22:31,424	00:22:33,216	| IOT077 |	And a new service that
+EDL	00:22:33,216	00:22:34,496	| IOT077 |	Is really
+EDL	00:22:34,496	00:22:35,008	| IOT077 |	Interesting
+EDL	00:22:35,520	00:22:39,104	| IOT077 |	First a message from our sponsor
+EDL	00:22:39,104	00:22:45,504	| IOT077 |	This week's monster is macadamia and we are talking about the role of prototypes I have time in the day in for Macadamia
+EDL	00:22:45,504	00:22:49,600	| IOT077 |	And Kevin Bailey the CEO of design first anyone can make a prototype
+EDL	00:22:50,112	00:22:51,392	| IOT077 |	What should I be eating
+EDL	00:22:51,392	00:22:51,904	| IOT077 |	To do when I stop
+EDL	00:22:52,416	00:22:52,928	| IOT077 |	This process
+EDL	00:22:53,440	00:22:54,720	| IOT077 |	With the maker movement
+EDL	00:22:54,720	00:22:58,048	| IOT077 |	Anyone can build something and deliver a proof-of-concept
+EDL	00:22:58,048	00:23:04,448	| IOT077 |	But detected make a prototype that actually looks and feels like the actual product should can get it
+EDL	00:23:04,448	00:23:07,008	| IOT077 |	User passed a Chasm of disbelief
+EDL	00:23:07,008	00:23:12,640	| IOT077 |	Actually touch it and feel it and start thinking about the services that that product can deliver for them
+EDL	00:23:12,640	00:23:13,408	| IOT077 |	Questions
+EDL	00:23:13,408	00:23:14,688	| IOT077 |	Should my prototype
+EDL	00:23:14,688	00:23:15,200	| IOT077 |	Seek to answer
+EDL	00:23:15,712	00:23:17,248	| IOT077 |	It's helping you answer
+EDL	00:23:17,248	00:23:19,552	| IOT077 |	Whether you can make this product desirable
+EDL	00:23:19,552	00:23:22,624	| IOT077 |	And will you be able to make 500 of these and at what cost
+EDL	00:23:22,624	00:23:23,392	| IOT077 |	And can you
+EDL	00:23:23,392	00:23:27,232	| IOT077 |	Kayla can you deliver it to thousands of users ethical is viral
+EDL	00:23:27,232	00:23:30,304	| IOT077 |	A lot of people think that building a prototype is more just
+EDL	00:23:30,304	00:23:32,096	| IOT077 |	Putting their ideas in physical Hardware
+EDL	00:23:32,608	00:23:33,888	| IOT077 |	And bring that into show
+EDL	00:23:34,656	00:23:35,936	| IOT077 |	Without thinking about the
+EDL	00:23:35,936	00:23:37,472	| IOT077 |	Future manufacturing viability
+EDL	00:23:37,984	00:23:40,800	| IOT077 |	Is that really the right way to design something like this
+EDL	00:23:40,800	00:23:44,384	| IOT077 |	The concern there is it if you start moving from makerbase
+EDL	00:23:44,384	00:23:50,784	| IOT077 |	Piece of hardware and try to commercialize it you're going to miss some key elements around security around have you been asked
+EDL	00:23:50,784	00:23:53,856	| IOT077 |	Scale with a platform is with the cloud infrastructure is
+EDL	00:23:53,856	00:23:59,488	| IOT077 |	And by building a prototype on top of the scalable platform from the get-go which the cloud enables
+EDL	00:23:59,488	00:24:01,536	| IOT077 |	You can actually save a number of iteration
+EDL	00:24:01,536	00:24:02,560	| IOT077 |	And get there
+EDL	00:24:02,560	00:24:07,680	| IOT077 |	For a cheaper and faster
+EDL	00:24:07,680	00:24:08,448	| IOT077 |	Physical
+EDL	00:24:08,448	00:24:09,984	| IOT077 |	And software
+EDL	00:24:09,984	00:24:11,008	| IOT077 |	Virtual based
+EDL	00:24:11,008	00:24:14,848	| IOT077 |	How do we think about bringing those two experiences together
+EDL	00:24:14,848	00:24:16,640	| IOT077 |	The challenge with the hardware
+EDL	00:24:16,640	00:24:18,432	| IOT077 |	Inside wall is
+EDL	00:24:18,432	00:24:20,480	| IOT077 |	To understand limitations
+EDL	00:24:20,480	00:24:21,504	| IOT077 |	Communications
+EDL	00:24:23,808	00:24:25,856	| IOT077 |	Coin collection of us playthrough
+EDL	00:24:26,368	00:24:31,488	| IOT077 |	Proof of concept where you have a very rich
+EDL	00:24:31,488	00:24:32,000	| IOT077 |	Play
+EDL	00:24:32,512	00:24:35,584	| IOT077 |	Only to find out on the product you going to have to come up with something much
+EDL	00:24:35,584	00:24:41,984	| IOT077 |	Experiential and turn the colors and then size of this playing
+EDL	00:24:41,984	00:24:46,336	| IOT077 |	Concepts
+EDL	00:24:46,336	00:24:46,848	| IOT077 |	Cos2x
+EDL	00:24:48,384	00:24:51,712	| IOT077 |	That way when people experience about accusing optimize around
+EDL	00:24:51,712	00:24:55,040	| IOT077 |	Something still enjoyable within the context of what product
+EDL	00:24:55,040	00:24:55,808	| IOT077 |	Become
+EDL	00:24:55,808	00:24:59,648	| IOT077 |	The whole proof-of-concept is looking at Opportunity risk
+EDL	00:25:00,160	00:25:06,560	| IOT077 |	It's an opportunity with balance the designers are looking at opportunity and then the engineer
+EDL	00:25:06,560	00:25:08,352	| IOT077 |	Earring team is looking at with
+EDL	00:25:08,352	00:25:09,120	| IOT077 |	And their jobs
+EDL	00:25:09,632	00:25:11,424	| IOT077 |	Change nothing
+EDL	00:25:11,424	00:25:13,216	| IOT077 |	Together any prototyping
+EDL	00:25:14,240	00:25:15,520	| IOT077 |	You really doing
+EDL	00:25:15,520	00:25:17,312	| IOT077 |	Creation building test
+EDL	00:25:17,312	00:25:17,824	| IOT077 |	Sing learning
+EDL	00:25:19,104	00:25:21,664	| IOT077 |	And that posters get you towards a viable
+EDL	00:25:22,432	00:25:28,832	| IOT077 |	So if you can balance the risk and Designs constraints earlier on in the Prototype phase you'll be able to ski
+EDL	00:25:28,832	00:25:34,464	| IOT077 |	Scale that prototype as it involves and take many of the ideas and Concepts from that prototype into production
+EDL	00:25:34,464	00:25:34,976	| IOT077 |	Commercial
+EDL	00:25:36,000	00:25:37,280	| IOT077 |	Where can we find more
+EDL	00:25:37,280	00:25:43,680	| IOT077 |	Jumpstart your IT solutions go to Macadamia.com JumpStart
+EDL	00:25:43,680	00:25:49,824	| IOT077 |	Hey everybody this is Stacey Higginbotham and you are listening to the internet
+EDL	00:25:51,104	00:25:52,384	| IOT077 |	We are back with this week
+EDL	00:25:52,384	00:25:55,200	| IOT077 |	Guessed it is John Troutman who is a co-founder at
+EDL	00:25:55,712	00:25:56,224	| IOT077 |	Neri
+EDL	00:25:56,736	00:25:58,016	| IOT077 |	Hi John how are you doing today
+EDL	00:25:58,528	00:26:01,088	| IOT077 |	Hi Stacy I'm great thanks for having me on the show
+EDL	00:26:01,088	00:26:03,904	| IOT077 |	Thanks for coming I have like the canary forever
+EDL	00:26:04,416	00:26:07,744	| IOT077 |	And by forever I mean like for the last year to have to
+EDL	00:26:07,744	00:26:08,256	| IOT077 |	Sears Helena
+EDL	00:26:09,280	00:26:13,120	| IOT077 |	And that's basically forever yeah yeah
+EDL	00:26:13,120	00:26:17,984	| IOT077 |	Okay so for those of you guys who don't know the canary is an all-in-one security system at this little Lake
+EDL	00:26:18,496	00:26:21,056	| IOT077 |	Black or white cylinder that you stick in your house
+EDL	00:26:21,824	00:26:23,360	| IOT077 |	All these sensors in it
+EDL	00:26:23,360	00:26:26,432	| IOT077 |	And a camera and now Canary you guys are
+EDL	00:26:26,432	00:26:28,992	| IOT077 |	Introducing a whole bunch of new stuff so
+EDL	00:26:28,992	00:26:32,064	| IOT077 |	Starting with everybody's favorite device and outdoor camera
+EDL	00:26:32,064	00:26:33,344	| IOT077 |	Yay
+EDL	00:26:33,856	00:26:37,440	| IOT077 |	That's right yeah we just announced this week the launch of canary Flex
+EDL	00:26:37,952	00:26:39,744	| IOT077 |	Which is a companion products
+EDL	00:26:39,744	00:26:42,048	| IOT077 |	To Canary and it's an indoor outdoor camera
+EDL	00:26:42,048	00:26:48,192	| IOT077 |	It works plugged in or wire for Isa has built-in rechargeable batteries and it's totally weatherproof so you can use it
+EDL	00:26:49,984	00:26:54,080	| IOT077 |	Spider house you can mount it up on a tree in your front yard you can put in the garage
+EDL	00:26:54,080	00:26:57,408	| IOT077 |	Or you can use it inside in the baby's room or just like
+EDL	00:26:57,408	00:26:58,944	| IOT077 |	The same way you would use Canary indoors
+EDL	00:26:59,456	00:27:00,480	| IOT077 |	Okay so
+EDL	00:27:00,992	00:27:03,296	| IOT077 |	There is like an outdoor camera zeitgeist
+EDL	00:27:03,808	00:27:04,320	| IOT077 |	Right now
+EDL	00:27:04,832	00:27:08,928	| IOT077 |	So you got to talk to me about why you guys decided on this particular
+EDL	00:27:09,696	00:27:10,976	| IOT077 |	Product because
+EDL	00:27:10,976	00:27:12,768	| IOT077 |	S&S has one
+EDL	00:27:12,768	00:27:14,560	| IOT077 |	Netatmo is launching a new one
+EDL	00:27:15,328	00:27:18,400	| IOT077 |	We just got the ring stick up cams out there
+EDL	00:27:18,400	00:27:20,704	| IOT077 |	I'm trying out these are Lowe's I mean there's
+EDL	00:27:21,216	00:27:23,008	| IOT077 |	There's a lot of outdoor cameras
+EDL	00:27:23,520	00:27:24,544	| IOT077 |	Yeah when we launched
+EDL	00:27:24,544	00:27:26,592	| IOT077 |	Canary a couple years ago
+EDL	00:27:26,592	00:27:28,640	| IOT077 |	We're really interesting this idea of being
+EDL	00:27:28,640	00:27:35,040	| IOT077 |	What's be connected on the inside of your home in and even if you're on the other side of the world feel like you're inside your home you know what's happening
+EDL	00:27:35,040	00:27:35,808	| IOT077 |	And you have that
+EDL	00:27:35,808	00:27:38,624	| IOT077 |	Immediate connection was happening there
+EDL	00:27:38,624	00:27:42,976	| IOT077 |	I think as soon as people have gotten a taste of that either through Canary or through other Wi-Fi cameras
+EDL	00:27:43,488	00:27:46,560	| IOT077 |	It just makes sense that they wanted to expand that into
+EDL	00:27:46,560	00:27:49,120	| IOT077 |	Even more areas of places they care about
+EDL	00:27:49,120	00:27:50,656	| IOT077 |	So it's an outdoor
+EDL	00:27:50,656	00:27:52,192	| IOT077 |	Security camera but it's also
+EDL	00:27:52,192	00:27:55,008	| IOT077 |	Just a very versatile camera that can go anywhere
+EDL	00:27:55,008	00:27:56,544	| IOT077 |	It's our goal was really to
+EDL	00:27:57,568	00:27:59,872	| IOT077 |	Take what people are already interested in which is
+EDL	00:27:59,872	00:28:01,152	| IOT077 |	Can I give me places they care about
+EDL	00:28:01,664	00:28:03,200	| IOT077 |	And allow that coverage
+EDL	00:28:03,200	00:28:06,272	| IOT077 |	Ensure that connection to go wherever people really wanted to go
+EDL	00:28:06,784	00:28:12,416	| IOT077 |	One of our core tenants has always been to really listen to our community when we launched a crowdfunding product
+EDL	00:28:13,696	00:28:16,000	| IOT077 |	Community became really important to
+EDL	00:28:16,000	00:28:20,864	| IOT077 |	Canary as a company we had about 10,000 people that were immediately kind of bought in and giving us feedback
+EDL	00:28:21,376	00:28:23,680	| IOT077 |	And so as soon as we launched keryflex
+EDL	00:28:24,192	00:28:29,824	| IOT077 |	Got a lot of feedback as far as what what it was doing for people and then what people wanted it to do for them that it wasn't doing yet
+EDL	00:28:29,824	00:28:32,640	| IOT077 |	And one of those things that we heard kind of right away was
+EDL	00:28:32,640	00:28:36,736	| IOT077 |	This desire to take it outside or two to put in other places which the product wasn't
+EDL	00:28:36,736	00:28:37,248	| IOT077 |	Designed to do
+EDL	00:28:39,040	00:28:40,064	| IOT077 |	All right
+EDL	00:28:40,064	00:28:40,576	| IOT077 |	Tumi
+EDL	00:28:41,088	00:28:44,928	| IOT077 |	Not that I don't love outdoor cameras the most exciting thing that you guys are doing
+EDL	00:28:44,928	00:28:46,976	| IOT077 |	Is launching a service Club membership
+EDL	00:28:47,488	00:28:48,000	| IOT077 |	And
+EDL	00:28:48,512	00:28:49,280	| IOT077 |	This is
+EDL	00:28:49,280	00:28:50,048	| IOT077 |	This is
+EDL	00:28:50,048	00:28:53,888	| IOT077 |	Security service in a lot of ways very similar to
+EDL	00:28:54,656	00:28:57,984	| IOT077 |	Like 10 for storage on an ester ring or something like that
+EDL	00:28:59,008	00:29:01,312	| IOT077 |	You guys are taking it a slightly different direction
+EDL	00:29:01,824	00:29:05,920	| IOT077 |	With being able to reimburse people for their deductible
+EDL	00:29:05,920	00:29:08,480	| IOT077 |	In any idea is much more proact
+EDL	00:29:08,480	00:29:10,016	| IOT077 |	I'd love for you to describe
+EDL	00:29:10,016	00:29:10,784	| IOT077 |	The thinking behind
+EDL	00:29:11,296	00:29:11,808	| IOT077 |	Worship
+EDL	00:29:12,320	00:29:15,136	| IOT077 |	Yeah absolutely right now with
+EDL	00:29:15,136	00:29:16,672	| IOT077 |	With Wi-Fi cameras right now
+EDL	00:29:16,672	00:29:18,208	| IOT077 |	Well a lot of what we're seeing is
+EDL	00:29:18,208	00:29:18,720	| IOT077 |	Companies
+EDL	00:29:19,232	00:29:23,072	| IOT077 |	Trying to compete with Who had who got the lowest price for a for video storage
+EDL	00:29:23,584	00:29:26,144	| IOT077 |	Everytime recognizes more like you know we don't want to
+EDL	00:29:26,144	00:29:28,192	| IOT077 |	That's not the game we want to compete at United mean
+EDL	00:29:29,728	00:29:31,520	| IOT077 |	Baidu the idea of
+EDL	00:29:31,520	00:29:32,544	| IOT077 |	Paying for storage
+EDL	00:29:35,104	00:29:36,128	| IOT077 |	Yeah exactly
+EDL	00:29:36,128	00:29:37,664	| IOT077 |	What is you guys design like
+EDL	00:29:38,432	00:29:39,456	| IOT077 |	If that's your plan
+EDL	00:29:39,456	00:29:40,480	| IOT077 |	How does membership
+EDL	00:29:40,480	00:29:40,992	| IOT077 |	I feel that
+EDL	00:29:41,504	00:29:43,296	| IOT077 |	We designed membership to really
+EDL	00:29:43,296	00:29:45,344	| IOT077 |	Go against what all the other what other
+EDL	00:29:45,344	00:29:48,416	| IOT077 |	Wi-Fi cameras are offering it's it's not based on
+EDL	00:29:48,416	00:29:51,232	| IOT077 |	Video storage is based on benefits that
+EDL	00:29:51,744	00:29:52,768	| IOT077 |	That are
+EDL	00:29:52,768	00:29:54,048	| IOT077 |	Really designed to give you
+EDL	00:29:54,048	00:29:55,584	| IOT077 |	Better security and
+EDL	00:29:55,584	00:29:59,680	| IOT077 |	Have Canary work with you if you do have a security or an emergency incident
+EDL	00:29:59,680	00:30:03,776	| IOT077 |	So that starts with a dedicated and incident support agent
+EDL	00:30:03,776	00:30:06,080	| IOT077 |	So as a canary member we actually
+EDL	00:30:06,080	00:30:07,104	| IOT077 |	We have dedicated
+EDL	00:30:07,104	00:30:08,640	| IOT077 |	Supporting us that will work with you
+EDL	00:30:09,152	00:30:12,736	| IOT077 |	2 and hold your hand really through if they're everything you need to do in the case of
+EDL	00:30:13,248	00:30:14,528	| IOT077 |	You have your home burglarized
+EDL	00:30:14,528	00:30:20,672	| IOT077 |	It's crazy because when we when we launched Canary we've seen we have discussion Hunter the discussions of people that have
+EDL	00:30:21,184	00:30:22,208	| IOT077 |	Just had their home burglarized
+EDL	00:30:24,000	00:30:26,048	| IOT077 |	You stay as I don't have any sexy have you ever
+EDL	00:30:26,560	00:30:29,376	| IOT077 |	I don't even want to say it cuz what if someone shows up but
+EDL	00:30:29,376	00:30:30,400	| IOT077 |	But yeah
+EDL	00:30:30,912	00:30:32,448	| IOT077 |	As you might imagine it's very like
+EDL	00:30:33,216	00:30:35,520	| IOT077 |	Scary and Adam Panos
+EDL	00:30:35,520	00:30:39,872	| IOT077 |	It's a difficult situation to go to a people out of time people are kind of like scrambling to figure out
+EDL	00:30:39,872	00:30:46,272	| IOT077 |	It what I do what's the what's the right steps how do I how do I manage this process you feel very like violated when it happens and so what we
+EDL	00:30:46,272	00:30:49,344	| IOT077 |	One of the four things we designer Canary membership is how do we
+EDL	00:30:49,344	00:30:50,624	| IOT077 |	Actually be an active
+EDL	00:30:50,624	00:30:52,672	| IOT077 |	Participant wenzhou users and help them through that
+EDL	00:30:53,184	00:30:54,208	| IOT077 |	How come to that process
+EDL	00:30:54,720	00:30:56,000	| IOT077 |	So
+EDL	00:30:56,000	00:30:58,048	| IOT077 |	So this this feature having a
+EDL	00:30:58,560	00:31:04,960	| IOT077 |	Dedicated incident report person that we can actually hop on the phone with you and help you know here's the information needed
+EDL	00:31:04,960	00:31:05,728	| IOT077 |	Connecticut police
+EDL	00:31:06,240	00:31:09,824	| IOT077 |	Kira is at here's how you handle working with your insurance company
+EDL	00:31:09,824	00:31:12,128	| IOT077 |	Especially walking through every step of that process
+EDL	00:31:12,128	00:31:14,944	| IOT077 |	So before like right after I called nine-one-one I should call Kenny
+EDL	00:31:15,712	00:31:22,112	| IOT077 |	Yeah I mean obviously the first thing you should you do it you should do is call 911 actually use the canary out to disconnect with the police
+EDL	00:31:22,112	00:31:23,392	| IOT077 |	And then you know once
+EDL	00:31:23,392	00:31:24,928	| IOT077 |	Once you do that will actually walk
+EDL	00:31:24,928	00:31:28,768	| IOT077 |	Things you can do we can go in and help you you know
+EDL	00:31:28,768	00:31:29,536	| IOT077 |	Access
+EDL	00:31:29,536	00:31:31,584	| IOT077 |	Nav other information that you might
+EDL	00:31:31,584	00:31:33,376	| IOT077 |	Need from the canary app as far as
+EDL	00:31:33,376	00:31:36,448	| IOT077 |	You know exact timestamp when things happen
+EDL	00:31:36,960	00:31:39,264	| IOT077 |	And then we can actually work if you have a really strong about
+EDL	00:31:39,264	00:31:40,800	| IOT077 |	State Farm
+EDL	00:31:40,800	00:31:43,872	| IOT077 |	And and other insurance agencies
+EDL	00:31:43,872	00:31:48,736	| IOT077 |	So I can walk you through the best process of how you work with your insurance company and then on top of that we actually
+EDL	00:31:48,736	00:31:53,088	| IOT077 |	Do as for Canary members we reimburse you for your insurance deductible
+EDL	00:31:53,088	00:31:59,488	| IOT077 |	So you know that your insurance will cover everything after you pay your deductible will actually reimburse you for that deductible so if your
+EDL	00:31:59,488	00:32:01,792	| IOT077 |	I'll miss burglarizing your Canary number
+EDL	00:32:01,792	00:32:03,328	| IOT077 |	I'm going to be out of pocket
+EDL	00:32:03,328	00:32:04,608	| IOT077 |	Anything that has well
+EDL	00:32:04,608	00:32:05,376	| IOT077 |	Pepper that for you
+EDL	00:32:05,888	00:32:06,656	| IOT077 |	Okay
+EDL	00:32:06,656	00:32:07,168	| IOT077 |	That's
+EDL	00:32:07,680	00:32:11,264	| IOT077 |	That's an interesting idea because it feels like
+EDL	00:32:11,776	00:32:12,800	| IOT077 |	The canary
+EDL	00:32:13,312	00:32:15,360	| IOT077 |	The canary in a lot of these cameras not just connect
+EDL	00:32:15,872	00:32:16,640	| IOT077 |	Feels like
+EDL	00:32:17,152	00:32:20,736	| IOT077 |	Something I could use after I've been burglarized but not something that
+EDL	00:32:20,736	00:32:21,248	| IOT077 |	Pitstop app
+EDL	00:32:22,272	00:32:24,320	| IOT077 |	So what am I missing
+EDL	00:32:24,320	00:32:29,184	| IOT077 |	Cuz I'm paying my deductible
+EDL	00:32:30,208	00:32:31,744	| IOT077 |	Will not actually we're not even worried that you're going
+EDL	00:32:33,024	00:32:36,864	| IOT077 |	Yeah it's it is interesting security companies I think have
+EDL	00:32:37,376	00:32:38,912	| IOT077 |	Failed to come
+EDL	00:32:38,912	00:32:41,984	| IOT077 |	Complete the circle of life protecting you before an incident
+EDL	00:32:41,984	00:32:44,288	| IOT077 |	During an incident and after its incident
+EDL	00:32:44,288	00:32:46,336	| IOT077 |	Often times it's only
+EDL	00:32:46,336	00:32:47,616	| IOT077 |	Kind of like part of that
+EDL	00:32:47,616	00:32:48,896	| IOT077 |	And so we've actually
+EDL	00:32:48,896	00:32:50,944	| IOT077 |	Designed Canary in the canary
+EDL	00:32:50,944	00:32:54,272	| IOT077 |	Experience to help you in all three of those cases so
+EDL	00:32:54,272	00:32:55,552	| IOT077 |	It's before an incident
+EDL	00:32:55,552	00:32:58,880	| IOT077 |	Can I give you an insight into what's happening your home let you be connected to your home
+EDL	00:32:59,392	00:33:01,696	| IOT077 |	During an incident will send you a notification
+EDL	00:33:01,696	00:33:04,512	| IOT077 |	Allow you to sound the siren that's built into the device
+EDL	00:33:05,024	00:33:06,560	| IOT077 |	Connect to the police duty app
+EDL	00:33:06,560	00:33:09,632	| IOT077 |	And then after the incident that's really working right memberships comes in
+EDL	00:33:09,632	00:33:11,424	| IOT077 |	Are we helping you can't manage that process
+EDL	00:33:11,936	00:33:14,752	| IOT077 |	That's really complaining that circle before during and after
+EDL	00:33:15,520	00:33:16,288	| IOT077 |	The circular
+EDL	00:33:17,056	00:33:19,104	| IOT077 |	Crisis I'm sure that's not your
+EDL	00:33:20,128	00:33:22,176	| IOT077 |	How to say idea
+EDL	00:33:22,944	00:33:24,992	| IOT077 |	I am fascinated by this idea
+EDL	00:33:25,504	00:33:31,648	| IOT077 |	People who are building Hardware recognizing that iot is really about services and so I love membership because it's
+EDL	00:33:31,648	00:33:33,440	| IOT077 |	A really interesting service
+EDL	00:33:33,440	00:33:35,232	| IOT077 |	How did you guys go
+EDL	00:33:35,744	00:33:39,072	| IOT077 |	Come to this idea that you needed to deliver a service or was it always there
+EDL	00:33:40,608	00:33:41,888	| IOT077 |	I mean I think a lot of it is coming
+EDL	00:33:42,400	00:33:43,168	| IOT077 |	Come to
+EDL	00:33:43,680	00:33:45,728	| IOT077 |	Come from recognizing that
+EDL	00:33:45,728	00:33:46,752	| IOT077 |	So many
+EDL	00:33:46,752	00:33:48,800	| IOT077 |	Subscription plans that
+EDL	00:33:48,800	00:33:50,336	| IOT077 |	Coming in not even just talking
+EDL	00:33:50,336	00:33:51,360	| IOT077 |	In the
+EDL	00:33:52,640	00:33:54,176	| IOT077 |	Subscription plans
+EDL	00:33:54,176	00:33:55,968	| IOT077 |	Tech companies are usually about
+EDL	00:33:55,968	00:33:58,016	| IOT077 |	How do we strip away some features
+EDL	00:33:58,016	00:34:00,064	| IOT077 |	Put it behind a paywall somebody has to
+EDL	00:34:00,832	00:34:03,136	| IOT077 |	Has to have a transactional relationship with us and pay us
+EDL	00:34:03,648	00:34:04,672	| IOT077 |	You know what I mean
+EDL	00:34:04,672	00:34:08,512	| IOT077 |	It's like how do we how do we make the free experience or product not good enough
+EDL	00:34:08,512	00:34:10,304	| IOT077 |	They have to pay us so we here
+EDL	00:34:10,816	00:34:11,584	| IOT077 |	Ensure
+EDL	00:34:12,352	00:34:14,144	| IOT077 |	Yeah we're like
+EDL	00:34:15,680	00:34:17,216	| IOT077 |	I mean
+EDL	00:34:17,216	00:34:18,240	| IOT077 |	Most up
+EDL	00:34:18,240	00:34:21,568	| IOT077 |	Most companies that do the state don't have like a son of a freemium
+EDL	00:34:21,568	00:34:22,848	| IOT077 |	Then where
+EDL	00:34:22,848	00:34:24,128	| IOT077 |	Shirley Spotify
+EDL	00:34:24,128	00:34:24,896	| IOT077 |	Yeah like Spotify
+EDL	00:34:25,664	00:34:26,688	| IOT077 |	Adam
+EDL	00:34:26,688	00:34:30,016	| IOT077 |	Or even even other connected home cameras are products like
+EDL	00:34:30,016	00:34:35,904	| IOT077 |	You know you have a little bit and then after a month all the sudden you like oh that's the product I bought I thought it was going to do all this other stuff
+EDL	00:34:36,672	00:34:42,048	| IOT077 |	And we don't we don't want that kind of relationship with our customers we don't want to transactional relationship we actually want
+EDL	00:34:42,560	00:34:45,888	| IOT077 |	A relationship where we're going to be there for you and help you and so
+EDL	00:34:45,888	00:34:46,912	| IOT077 |	Service plans to us
+EDL	00:34:47,424	00:34:48,448	| IOT077 |	We didn't want to come
+EDL	00:34:48,448	00:34:49,216	| IOT077 |	Key.
+EDL	00:34:49,216	00:34:49,984	| IOT077 |	Hayward's going to make
+EDL	00:34:50,496	00:34:51,776	| IOT077 |	Cheaper and cheaper storage
+EDL	00:34:52,288	00:34:54,848	| IOT077 |	But keep it behind a paywall to where you have to do it
+EDL	00:34:55,360	00:34:56,640	| IOT077 |	What other things
+EDL	00:34:56,640	00:34:58,944	| IOT077 |	Can we offer that would be meaningful that would actually
+EDL	00:34:59,456	00:35:04,832	| IOT077 |	Frito-Lay relationship that exist longer than them purchasing us selling their products and then
+EDL	00:35:05,600	00:35:07,392	| IOT077 |	Maybe it's hanging up paying us on a monthly basis
+EDL	00:35:07,904	00:35:10,976	| IOT077 |	Cancel membership came from that it's like how do we actually
+EDL	00:35:10,976	00:35:14,304	| IOT077 |	Hold hands with our users through things that could be difficult for them
+EDL	00:35:15,072	00:35:18,400	| IOT077 |	It reminds me a lot of AAA so you could obviously drive a car
+EDL	00:35:18,400	00:35:19,168	| IOT077 |	Without
+EDL	00:35:19,168	00:35:19,936	| IOT077 |	Having a membership in
+EDL	00:35:22,240	00:35:22,752	| IOT077 |	If you have it so
+EDL	00:35:23,264	00:35:23,776	| IOT077 |	Yeah yeah
+EDL	00:35:24,288	00:35:25,824	| IOT077 |	Also underlying
+EDL	00:35:25,824	00:35:26,592	| IOT077 |	The whole
+EDL	00:35:26,592	00:35:27,360	| IOT077 |	Membership
+EDL	00:35:27,872	00:35:31,968	| IOT077 |	Platform that we built is this idea of a Marketplace instead of underneath that right
+EDL	00:35:31,968	00:35:35,552	| IOT077 |	That initially there's these three benefits that come
+EDL	00:35:35,552	00:35:37,856	| IOT077 |	With membership for because it also
+EDL	00:35:37,856	00:35:38,624	| IOT077 |	Include
+EDL	00:35:38,624	00:35:41,696	| IOT077 |	Stop 38th and video history and unlimited downloads
+EDL	00:35:41,696	00:35:42,976	| IOT077 |	Now there is a storage
+EDL	00:35:43,744	00:35:44,768	| IOT077 |	Yeah but it's like
+EDL	00:35:44,768	00:35:47,328	| IOT077 |	You know we kind of take it off a table cuz it's like
+EDL	00:35:47,328	00:35:48,096	| IOT077 |	Call
+EDL	00:35:48,096	00:35:49,120	| IOT077 |	Is the whole month of
+EDL	00:35:49,120	00:35:49,888	| IOT077 |	A video storage
+EDL	00:35:50,400	00:35:52,192	| IOT077 |	I'm ready downloads no data caps
+EDL	00:35:52,704	00:35:57,312	| IOT077 |	Add rat like tearing it like pay this much I pay this much more to get more storage just just
+EDL	00:35:57,824	00:35:59,360	| IOT077 |	Built in there that's not really even
+EDL	00:36:00,128	00:36:01,408	| IOT077 |	That's not the core focus of it
+EDL	00:36:02,432	00:36:04,992	| IOT077 |	So with the marketplace are these going to be
+EDL	00:36:04,992	00:36:06,272	| IOT077 |	Mostly security
+EDL	00:36:06,272	00:36:09,344	| IOT077 |	Focused in oriented or is it going to also
+EDL	00:36:09,856	00:36:12,928	| IOT077 |	Build upon Lake dictionary for example has air quality
+EDL	00:36:13,440	00:36:14,208	| IOT077 |	And
+EDL	00:36:14,720	00:36:16,000	| IOT077 |	Sensors in
+EDL	00:36:16,000	00:36:17,792	| IOT077 |	I don't know what else you could build with that but
+EDL	00:36:17,792	00:36:18,560	| IOT077 |	I'm sure someone's created
+EDL	00:36:20,608	00:36:24,192	| IOT077 |	Yeah I mean there's really no limit to what they can be our our Focus
+EDL	00:36:24,192	00:36:27,264	| IOT077 |	Has been out of the gate to make sure that we're offering
+EDL	00:36:27,264	00:36:29,056	| IOT077 |	Time cover security that's been
+EDL	00:36:29,056	00:36:30,592	| IOT077 |	Core focus our company
+EDL	00:36:30,592	00:36:32,384	| IOT077 |	Manticore promised to our users
+EDL	00:36:32,896	00:36:34,176	| IOT077 |	But if there's definitely
+EDL	00:36:34,176	00:36:36,224	| IOT077 |	Potential in an opportunity to a lot
+EDL	00:36:36,224	00:36:38,272	| IOT077 |	Opportunity to do a lot more
+EDL	00:36:38,272	00:36:42,624	| IOT077 |	And I wish I could tell you everything we know that but there's definitely going to be some
+EDL	00:36:42,624	00:36:45,440	| IOT077 |	More exciting things coming through the marketplace in the future
+EDL	00:36:45,440	00:36:46,208	| IOT077 |	I
+EDL	00:36:46,208	00:36:46,720	| IOT077 |	I cannot wait for that
+EDL	00:36:47,232	00:36:47,744	| IOT077 |	So
+EDL	00:36:49,024	00:36:50,560	| IOT077 |	Go it looking forward to
+EDL	00:36:50,560	00:36:51,072	| IOT077 |	In your company
+EDL	00:36:52,096	00:36:53,376	| IOT077 |	Your focus is on security
+EDL	00:36:53,888	00:36:54,400	| IOT077 |	Usell
+EDL	00:36:55,168	00:36:59,264	| IOT077 |	Couple pieces of Hardware you got your existing Canary you got the flex
+EDL	00:36:59,264	00:37:01,056	| IOT077 |	Got some accessories to go with that
+EDL	00:37:01,824	00:37:04,384	| IOT077 |	What percentage of your business is going to be
+EDL	00:37:04,384	00:37:05,920	| IOT077 |	Services versus hard
+EDL	00:37:06,688	00:37:08,736	| IOT077 |	Yeah I mean I think we should consider ourselves
+EDL	00:37:08,736	00:37:11,040	| IOT077 |	In the services business PCS
+EDL	00:37:12,576	00:37:15,136	| IOT077 |	Dabbing built a thing here that we can build
+EDL	00:37:15,136	00:37:16,416	| IOT077 |	Continue to build upon
+EDL	00:37:16,416	00:37:17,696	| IOT077 |	And really offer a lot
+EDL	00:37:17,696	00:37:18,976	| IOT077 |	Tree services at Canobie
+EDL	00:37:18,976	00:37:20,000	| IOT077 |	Corridor business
+EDL	00:37:20,512	00:37:21,280	| IOT077 |	That being said
+EDL	00:37:21,792	00:37:25,120	| IOT077 |	Where is very very design-driven Product Company
+EDL	00:37:25,120	00:37:26,656	| IOT077 |	And the hardware is
+EDL	00:37:27,168	00:37:29,216	| IOT077 |	Is just as important as anything else
+EDL	00:37:29,728	00:37:33,824	| IOT077 |	We're not we're not in the business of how do we get how do we make cheaper and cheaper components
+EDL	00:37:34,336	00:37:35,104	| IOT077 |	And then
+EDL	00:37:35,104	00:37:37,408	| IOT077 |	And just tell those so that we can do services
+EDL	00:37:37,920	00:37:40,736	| IOT077 |	It's really like all tied together for us like we're
+EDL	00:37:40,736	00:37:42,016	| IOT077 |	We're committed to
+EDL	00:37:42,016	00:37:43,808	| IOT077 |	Delivering really high quality
+EDL	00:37:43,808	00:37:45,088	| IOT077 |	Hardware wood
+EDL	00:37:45,088	00:37:46,112	| IOT077 |	Nazi from
+EDL	00:37:46,112	00:37:49,184	| IOT077 |	All the companies in the states so that's something that's very important to us
+EDL	00:37:49,184	00:37:50,208	| IOT077 |	We're very focused on
+EDL	00:37:50,976	00:37:54,304	| IOT077 |	Doing a really great user experience through your mobile app
+EDL	00:37:54,304	00:37:58,144	| IOT077 |	I'm in now with membership we're showing that we're going to level up some
+EDL	00:37:58,144	00:38:01,984	| IOT077 |	Step up our game when it comes to Services Sarasota Trulia
+EDL	00:38:01,984	00:38:03,520	| IOT077 |	All three of those things together for us
+EDL	00:38:04,288	00:38:07,616	| IOT077 |	What would make in your mind membership successful like what kind of
+EDL	00:38:08,384	00:38:11,200	| IOT077 |	I don't know acceptance rate among your users or
+EDL	00:38:12,480	00:38:15,808	| IOT077 |	I have no idea what how are you going to judge the success of them
+EDL	00:38:15,808	00:38:16,320	| IOT077 |	Membership
+EDL	00:38:18,112	00:38:21,184	| IOT077 |	We judge the success of a level lot of what we do
+EDL	00:38:21,184	00:38:22,208	| IOT077 |	Bust through
+EDL	00:38:22,208	00:38:27,840	| IOT077 |	Quantitative stuff but also qualitatively a lot and we spent a lot of time reaching out to
+EDL	00:38:27,840	00:38:28,864	| IOT077 |	Our user base
+EDL	00:38:28,864	00:38:31,680	| IOT077 |	That's a lot of the success in my mind is going to come from
+EDL	00:38:31,680	00:38:34,496	| IOT077 |	Actually talking to our community and hearing from them
+EDL	00:38:34,496	00:38:35,776	| IOT077 |	If we delivered
+EDL	00:38:35,776	00:38:37,824	| IOT077 |	What we believe is a needs they have
+EDL	00:38:37,824	00:38:39,104	| IOT077 |	We want to hear that from our users
+EDL	00:38:40,640	00:38:41,920	| IOT077 |	With your products
+EDL	00:38:42,432	00:38:46,784	| IOT077 |	I've got to ask this poem kid has become a bigger deal especially with the launch of iOS 10
+EDL	00:38:47,296	00:38:47,808	| IOT077 |	And the home app
+EDL	00:38:48,320	00:38:51,136	| IOT077 |	And you guys a couple months ago said that you
+EDL	00:38:51,136	00:38:53,952	| IOT077 |	We're going to release a second-generation Canary product
+EDL	00:38:53,952	00:38:54,976	| IOT077 |	It was homekit compatible
+EDL	00:38:55,488	00:38:56,256	| IOT077 |	Yes yes
+EDL	00:38:57,024	00:38:57,792	| IOT077 |	So
+EDL	00:38:57,792	00:38:59,584	| IOT077 |	When can we expect that
+EDL	00:38:59,584	00:39:00,864	| IOT077 |	Or do you want to give us an update
+EDL	00:39:01,376	00:39:01,888	| IOT077 |	On the home
+EDL	00:39:02,912	00:39:06,240	| IOT077 |	Sure sure yeah we are we have been working with apple on this actually
+EDL	00:39:06,240	00:39:08,032	| IOT077 |	For a little while it's if it's been
+EDL	00:39:08,032	00:39:08,544	| IOT077 |	Good
+EDL	00:39:09,056	00:39:11,104	| IOT077 |	Fun process working with them as they've been
+EDL	00:39:11,616	00:39:14,688	| IOT077 |	Trapping to announce if they recently did the home platform
+EDL	00:39:15,200	00:39:18,784	| IOT077 |	We have the beginning of next year when we watching was called Canary Plus
+EDL	00:39:19,296	00:39:22,112	| IOT077 |	Which is the next generation of the of our first
+EDL	00:39:24,160	00:39:24,672	| IOT077 |	System
+EDL	00:39:25,184	00:39:29,536	| IOT077 |	Entire place was going to be as a pumpkin chicken batter Bowl
+EDL	00:39:29,536	00:39:31,584	| IOT077 |	And we think for at least at least
+EDL	00:39:32,096	00:39:33,120	| IOT077 |	A subset of our users
+EDL	00:39:33,632	00:39:34,656	| IOT077 |	I'm nothing to you
+EDL	00:39:34,656	00:39:36,448	| IOT077 |	Kevin exciting and meaningful addition
+EDL	00:39:37,728	00:39:40,800	| IOT077 |	Guess I'm sure it will be could you bridge from one Canary to the other
+EDL	00:39:40,800	00:39:41,824	| IOT077 |	You're old Canary to the
+EDL	00:39:41,824	00:39:42,336	| IOT077 |	Canary
+EDL	00:39:43,616	00:39:45,920	| IOT077 |	What are there all accessible through the same
+EDL	00:39:45,920	00:39:47,200	| IOT077 |	A map of course
+EDL	00:39:47,712	00:39:48,992	| IOT077 |	Homekit
+EDL	00:39:48,992	00:39:51,040	| IOT077 |	Ship that you're at the harborage if you put in the product
+EDL	00:39:51,552	00:39:53,600	| IOT077 |	That makes it home kit accessible
+EDL	00:39:54,624	00:39:57,952	| IOT077 |	Doesn't mean you can't pull in a video feed from a different
+EDL	00:40:00,256	00:40:01,536	| IOT077 |	So I could I could see that one
+EDL	00:40:02,304	00:40:02,816	| IOT077 |	Made in the home app
+EDL	00:40:05,376	00:40:06,656	| IOT077 |	Which means I'll be hanging out
+EDL	00:40:06,656	00:40:07,168	| IOT077 |	Still in the canary
+EDL	00:40:09,216	00:40:09,984	| IOT077 |	In the flex camera
+EDL	00:40:10,496	00:40:11,008	| IOT077 |	And is that
+EDL	00:40:12,800	00:40:14,592	| IOT077 |	Careflex isn't at this time
+EDL	00:40:15,872	00:40:16,384	| IOT077 |	Okay
+EDL	00:40:17,408	00:40:17,920	| IOT077 |	Chine
+EDL	00:40:18,688	00:40:22,784	| IOT077 |	Thank you so much for coming on the show I'm excited to see you guys evolved
+EDL	00:40:23,808	00:40:25,088	| IOT077 |	We need to talk about computer vision
+EDL	00:40:29,696	00:40:31,232	| IOT077 |	But it lets go back just one step
+EDL	00:40:31,744	00:40:33,024	| IOT077 |	Cuz I I do want to actually
+EDL	00:40:33,536	00:40:36,608	| IOT077 |	You guys have actually been one of the Pioneers in
+EDL	00:40:36,608	00:40:37,888	| IOT077 |	Deep learning computer vision
+EDL	00:40:37,888	00:40:38,912	| IOT077 |	To your camera Prada
+EDL	00:40:39,680	00:40:42,240	| IOT077 |	And I remember training Maya camera
+EDL	00:40:42,240	00:40:43,520	| IOT077 |	When I first tried this thing
+EDL	00:40:44,032	00:40:46,848	| IOT077 |	For like weeks I was like that's my dog that's my dog
+EDL	00:40:46,848	00:40:47,872	| IOT077 |	That's my dawg
+EDL	00:40:47,872	00:40:50,688	| IOT077 |	I'm in the night I realized that wasn't it
+EDL	00:40:51,456	00:40:52,992	| IOT077 |	Be at it for a while but now it's out
+EDL	00:40:53,504	00:40:54,784	| IOT077 |	Side hurts your face
+EDL	00:40:57,600	00:40:58,624	| IOT077 |	How does it how is
+EDL	00:40:59,136	00:41:00,928	| IOT077 |	That playing out for your users
+EDL	00:41:00,928	00:41:01,952	| IOT077 |	Something there is
+EDL	00:41:01,952	00:41:02,464	| IOT077 |	Excited about
+EDL	00:41:02,976	00:41:08,608	| IOT077 |	Yeah and what school actually what you were doing Stacy and and you were one of the thousands of people that were doing that
+EDL	00:41:08,608	00:41:14,240	| IOT077 |	It wasn't just training your device that was actually training are back in system to recognize things that were
+EDL	00:41:14,240	00:41:17,568	| IOT077 |	Caribbean clustered on the back end and needed labels but that's them
+EDL	00:41:18,080	00:41:21,152	| IOT077 |	So what we've been doing from the beginning is
+EDL	00:41:21,152	00:41:22,432	| IOT077 |	From when it first launched it is
+EDL	00:41:22,944	00:41:27,040	| IOT077 |	Trying to have the system I learned identify and recognize patterns
+EDL	00:41:27,040	00:41:29,088	| IOT077 |	In home environments that could then be
+EDL	00:41:29,088	00:41:30,368	| IOT077 |	Filter out if they're not import
+EDL	00:41:31,136	00:41:32,672	| IOT077 |	And so over the past few months
+EDL	00:41:32,672	00:41:33,696	| IOT077 |	We watching a movie
+EDL	00:41:33,696	00:41:38,560	| IOT077 |	Speakers some of them are user-facing and some of them just happened in the background to make the product better for our users
+EDL	00:41:39,072	00:41:40,864	| IOT077 |	In a sentence
+EDL	00:41:40,864	00:41:42,656	| IOT077 |	Has been really great as far as
+EDL	00:41:42,656	00:41:44,448	| IOT077 |	Users noticing a difference getting
+EDL	00:41:44,448	00:41:46,752	| IOT077 |	Fewer and fewer false alerts things that they're not in
+EDL	00:41:47,776	00:41:51,104	| IOT077 |	And more attention to the things that they actually want to be notified about
+EDL	00:41:55,199	00:42:00,319	| IOT077 |	Spider dog or for some people it cuz we haven't we actually built sensitivity slider that's in the app
+EDL	00:42:00,831	00:42:04,415	| IOT077 |	I'm so some people actually took a slider over to where they get
+EDL	00:42:04,415	00:42:06,463	| IOT077 |	Fewer alerts Madrid actually filter out
+EDL	00:42:06,463	00:42:06,975	| IOT077 |	Pets
+EDL	00:42:07,487	00:42:09,535	| IOT077 |	The canary actually caught my dogs
+EDL	00:42:10,047	00:42:10,559	| IOT077 |	On my bed
+EDL	00:42:13,631	00:42:14,911	| IOT077 |	That's good for you yet
+EDL	00:42:14,911	00:42:16,703	| IOT077 |	Awesome okay
+EDL	00:42:16,703	00:42:18,751	| IOT077 |	Thank you so much for coming on the show today
+EDL	00:42:20,287	00:42:22,079	| IOT077 |	It's my pleasure thank you so much for having me
+EDL	00:42:22,591	00:42:28,991	| IOT077 |	Well that's it for this week's show thank you so much for listening and we'll see you again next week
+EDL	00:42:28,991	00:42:35,391	| IOT077 |	On the Internet of Things podcast and if you don't get enough iot news for this show feel free to sign up
+EDL	00:42:35,391	00:42:37,439	| IOT077 |	For my newsletter Stacy knows things
+EDL	00:42:37,439	00:42:41,023	| IOT077 |	Stacey on iot. Com 

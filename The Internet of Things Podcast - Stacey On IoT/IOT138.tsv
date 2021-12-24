@@ -1,0 +1,1432 @@
+EDL	Record In	Record Out	Clipname	Subtitle
+EDL	00:00:06,656	00:00:12,288	| IOT138 |	Hey everyone welcome to the Internet of Things podcast
+EDL	00:00:12,288	00:00:13,824	| IOT138 |	I am your host Stacey Higginbotham
+EDL	00:00:15,616	00:00:16,640	| IOT138 |	Kevin tofel
+EDL	00:00:16,640	00:00:18,944	| IOT138 |	And we have an awesome show.
+EDL	00:00:19,456	00:00:21,248	| IOT138 |	Addendums on Google Assistant support
+EDL	00:00:21,248	00:00:25,600	| IOT138 |	Amazon Echo says we're going to talk about tensorflow Lite
+EDL	00:00:25,600	00:00:26,624	| IOT138 |	For those AI folks
+EDL	00:00:27,136	00:00:28,672	| IOT138 |	We've got wink
+EDL	00:00:28,672	00:00:29,440	| IOT138 |	Lookout
+EDL	00:00:29,440	00:00:29,952	| IOT138 |	Impression
+EDL	00:00:30,464	00:00:33,280	| IOT138 |	Plus I bought a $20 camera
+EDL	00:00:33,280	00:00:34,816	| IOT138 |	And we got some news about
+EDL	00:00:34,816	00:00:35,584	| IOT138 |	Blocks
+EDL	00:00:35,584	00:00:36,096	| IOT138 |	SmartThings
+EDL	00:00:37,120	00:00:40,448	| IOT138 |	Or we'll have a message from our sponsor sparkcognition.
+EDL	00:00:40,448	00:00:42,496	| IOT138 |	Talking about how people can interact
+EDL	00:00:42,496	00:00:43,008	| IOT138 |	With a i
+EDL	00:00:44,032	00:00:44,800	| IOT138 |	Aunt
+EDL	00:00:44,800	00:00:48,896	| IOT138 |	We've got our guest this week Michael Sherwood Who is the
+EDL	00:00:48,896	00:00:52,480	| IOT138 |	Technology and Innovation director for the city of Las Vegas
+EDL	00:00:52,992	00:00:56,064	| IOT138 |	We're talking about something really cool projects
+EDL	00:00:57,088	00:00:57,856	| IOT138 |	So
+EDL	00:00:57,856	00:00:58,624	| IOT138 |	All this
+EDL	00:00:58,624	00:00:59,136	| IOT138 |	And more
+EDL	00:00:59,648	00:01:00,416	| IOT138 |	After message
+EDL	00:01:00,416	00:01:02,208	| IOT138 |	From our sponsor
+EDL	00:01:02,208	00:01:04,512	| IOT138 |	Home isn't just a place it's a Feeling
+EDL	00:01:04,512	00:01:10,912	| IOT138 |	The feeling that you're safe to enjoy the things that matter most weather for your home or business ATT helps keep you safe
+EDL	00:01:10,912	00:01:16,032	| IOT138 |	So you can feel protected where ever you are introducing the ADT Security starter kit
+EDL	00:01:16,032	00:01:19,872	| IOT138 |	Everything you need to get started with ADT Pulse including a camera
+EDL	00:01:19,872	00:01:26,272	| IOT138 |	Professionally installed for only $49 visit att.com today to learn more
+EDL	00:01:26,272	00:01:32,672	| IOT138 |	Requires a 36-month monitoring contract installation and activation fees apply in Rogan and qsp and easy pay require
+EDL	00:01:32,672	00:01:39,072	| IOT138 |	Certain markets are excluded licenses available at att.com Florida E300
+EDL	00:01:39,072	00:01:42,912	| IOT138 |	01121 Louisiana f163 9
+EDL	00:01:43,936	00:01:44,960	| IOT138 |	Okay
+EDL	00:01:44,960	00:01:48,800	| IOT138 |	Kevin let's just get started with some quick news bits because there's lots of
+EDL	00:01:48,800	00:01:49,568	| IOT138 |	Quick news bits to Happy
+EDL	00:01:50,080	00:01:50,592	| IOT138 |	To go around
+EDL	00:01:51,360	00:01:52,896	| IOT138 |	So Google Assistant
+EDL	00:01:52,896	00:01:54,432	| IOT138 |	It finally got support
+EDL	00:01:54,944	00:01:55,456	| IOT138 |	Ecobee
+EDL	00:01:57,760	00:01:59,040	| IOT138 |	Speaking of Google Assistant
+EDL	00:01:59,808	00:02:03,392	| IOT138 |	I got an email the other day from the desk crew I imagined many of you guys got
+EDL	00:02:03,904	00:02:05,184	| IOT138 |	Jane basically that
+EDL	00:02:05,184	00:02:06,464	| IOT138 |	Before the end of this month
+EDL	00:02:06,464	00:02:07,744	| IOT138 |	I'm going to have to reconnect
+EDL	00:02:08,256	00:02:09,024	| IOT138 |	My
+EDL	00:02:09,024	00:02:10,304	| IOT138 |	Nest gear
+EDL	00:02:10,304	00:02:12,352	| IOT138 |	To my Google Assistant
+EDL	00:02:12,352	00:02:12,864	| IOT138 |	And
+EDL	00:02:13,376	00:02:16,192	| IOT138 |	The reason for this is a little unclear but we have our suspicions
+EDL	00:02:16,960	00:02:23,360	| IOT138 |	Yeah what message saying is that Google search voice actions and Google Now are essentially part of Google assist
+EDL	00:02:23,360	00:02:25,664	| IOT138 |	Which therefore also Google home
+EDL	00:02:25,664	00:02:32,064	| IOT138 |	So I guess this is a Google thing that's being changed innocence which is affecting us which is there for fighting all the nests
+EDL	00:02:32,064	00:02:32,576	| IOT138 |	Customers
+EDL	00:02:33,344	00:02:34,368	| IOT138 |	They're just pulling this
+EDL	00:02:34,368	00:02:36,672	| IOT138 |	Part out of Google Now which
+EDL	00:02:36,672	00:02:40,768	| IOT138 |	Seems very strange to me because you've always been able to tap the microphone icon on Google noun
+EDL	00:02:41,280	00:02:42,304	| IOT138 |	Essentially like a sister
+EDL	00:02:42,816	00:02:44,608	| IOT138 |	I guess you're kind of going away from that
+EDL	00:02:47,168	00:02:47,680	| IOT138 |	Google Now
+EDL	00:02:48,192	00:02:48,960	| IOT138 |	Cards
+EDL	00:02:48,960	00:02:49,472	| IOT138 |	Yes
+EDL	00:02:52,288	00:02:56,640	| IOT138 |	So it sounds to me like Google Now is becoming more of just a contextual card-based
+EDL	00:02:57,152	00:02:58,432	| IOT138 |	Information-based system
+EDL	00:02:58,944	00:02:59,712	| IOT138 |	And
+EDL	00:02:59,712	00:03:00,736	| IOT138 |	Assistant
+EDL	00:03:00,736	00:03:02,272	| IOT138 |	Will take the place of the
+EDL	00:03:02,272	00:03:06,624	| IOT138 |	Voice searches and controls and things like that
+EDL	00:03:06,624	00:03:07,392	| IOT138 |	I'm seeing this happen
+EDL	00:03:08,160	00:03:10,464	| IOT138 |	It's like they want to separate them
+EDL	00:03:11,488	00:03:13,536	| IOT138 |	Make a very specific for different use cases
+EDL	00:03:14,560	00:03:15,328	| IOT138 |	Also
+EDL	00:03:15,328	00:03:17,632	| IOT138 |	While we're on this topic we should also mention
+EDL	00:03:17,632	00:03:19,168	| IOT138 |	And I put this in my newsletter last week
+EDL	00:03:19,936	00:03:20,704	| IOT138 |	And I
+EDL	00:03:21,216	00:03:21,984	| IOT138 |	Kevin
+EDL	00:03:21,984	00:03:25,312	| IOT138 |	Because it's my friend Michael Wolff over at the spoon
+EDL	00:03:25,312	00:03:27,872	| IOT138 |	Notice that Google had applied for a patent
+EDL	00:03:28,384	00:03:30,432	| IOT138 |	Four chimes
+EDL	00:03:30,432	00:03:32,736	| IOT138 |	Unique Chimes that were specific to
+EDL	00:03:32,736	00:03:34,528	| IOT138 |	People locations and events
+EDL	00:03:35,040	00:03:37,856	| IOT138 |	And this seems right on par with the idea of using
+EDL	00:03:38,368	00:03:39,136	| IOT138 |	Your home to notify
+EDL	00:03:40,928	00:03:42,720	| IOT138 |	I might have my own purse
+EDL	00:03:42,720	00:03:43,232	| IOT138 |	Personal chimes
+EDL	00:03:43,744	00:03:44,512	| IOT138 |	Stacy
+EDL	00:03:44,512	00:03:46,304	| IOT138 |	Oh my God get out the door right now
+EDL	00:03:46,816	00:03:50,144	| IOT138 |	And that would sound like something where is my daughter might have a different time that says
+EDL	00:03:50,912	00:03:51,680	| IOT138 |	I don't know
+EDL	00:03:51,680	00:03:52,192	| IOT138 |	You should get up
+EDL	00:03:54,752	00:03:57,056	| IOT138 |	I thought that was actually really interesting
+EDL	00:03:57,568	00:03:58,080	| IOT138 |	And
+EDL	00:03:58,592	00:04:01,408	| IOT138 |	Very on-point with actually getting rid of
+EDL	00:04:01,408	00:04:03,456	| IOT138 |	The smartphone in your home
+EDL	00:04:03,456	00:04:04,224	| IOT138 |	Which
+EDL	00:04:04,992	00:04:06,272	| IOT138 |	Designer Carrie mine
+EDL	00:04:06,272	00:04:07,040	| IOT138 |	India
+EDL	00:04:07,040	00:04:13,440	| IOT138 |	No I agree it's actually ironically it's actually taking a feature from smartphones and moving it to the home because you
+EDL	00:04:13,440	00:04:13,952	| IOT138 |	You can customize
+EDL	00:04:14,464	00:04:17,791	| IOT138 |	Notifications and ringtones for different people are different types of alerts
+EDL	00:04:17,791	00:04:22,399	| IOT138 |	But if you don't have your phone with you it doesn't really matter but if those kind of alerts come from a smart home
+EDL	00:04:22,399	00:04:24,447	| IOT138 |	What are your in the home you have to carry the phone
+EDL	00:04:24,447	00:04:24,959	| IOT138 |	That makes sense
+EDL	00:04:25,471	00:04:26,239	| IOT138 |	Yeah
+EDL	00:04:26,239	00:04:27,519	| IOT138 |	So I think that's
+EDL	00:04:27,519	00:04:28,287	| IOT138 |	Really
+EDL	00:04:28,287	00:04:29,055	| IOT138 |	Really cool
+EDL	00:04:29,055	00:04:32,639	| IOT138 |	And it's worth talking about in the show because
+EDL	00:04:33,151	00:04:34,943	| IOT138 |	How many of us have two Google assistants
+EDL	00:04:35,455	00:04:38,527	| IOT138 |	Google homes are Google other devices in I like it
+EDL	00:04:39,039	00:04:42,367	| IOT138 |	Yay it's just they filed for the patent they don't have the patent
+EDL	00:04:44,159	00:04:45,183	| IOT138 |	Pet disclaimers
+EDL	00:04:46,207	00:04:47,487	| IOT138 |	Check it out if you want
+EDL	00:04:50,047	00:04:52,351	| IOT138 |	My little tiny Google mini it's actually smaller than I thought
+EDL	00:04:52,863	00:04:55,679	| IOT138 |	So that's the first thing it's probably maybe
+EDL	00:04:55,679	00:04:57,471	| IOT138 |	3 1/2 across
+EDL	00:04:57,471	00:04:59,775	| IOT138 |	If that and it doesn't sound great
+EDL	00:04:59,775	00:05:00,543	| IOT138 |	And
+EDL	00:05:00,543	00:05:03,103	| IOT138 |	I find it very difficult to control using the Taps be
+EDL	00:05:04,127	00:05:05,663	| IOT138 |	It's hard to orient on the device
+EDL	00:05:06,431	00:05:07,199	| IOT138 |	My daughter is fascinate
+EDL	00:05:09,503	00:05:11,039	| IOT138 |	The lights George that makes sense
+EDL	00:05:12,063	00:05:15,903	| IOT138 |	So I think a question a lot of people would have I don't know if you can answer or not book
+EDL	00:05:15,903	00:05:17,695	| IOT138 |	Sound quality and microphone
+EDL	00:05:18,207	00:05:21,535	| IOT138 |	Pick up of your voice any better or worse than the echo Dot
+EDL	00:05:22,047	00:05:22,815	| IOT138 |	I think it's
+EDL	00:05:22,815	00:05:24,351	| IOT138 |	Probably the Mikes are better
+EDL	00:05:26,143	00:05:27,167	| IOT138 |	The sound quality
+EDL	00:05:27,167	00:05:27,935	| IOT138 |	Probably on
+EDL	00:05:29,215	00:05:30,495	| IOT138 |	It's really
+EDL	00:05:30,495	00:05:31,007	| IOT138 |	Quiet
+EDL	00:05:33,311	00:05:33,823	| IOT138 |	I mean
+EDL	00:05:34,335	00:05:38,687	| IOT138 |	That might do it I could I was listening actually the podcast in the kitchen on that thing
+EDL	00:05:40,735	00:05:44,319	| IOT138 |	Write this is just me personally everybody has their own way of approaching us
+EDL	00:05:44,831	00:05:51,231	| IOT138 |	When I think about what devices I want in my house from a voice assistance perspective I think about what do I do
+EDL	00:05:51,231	00:05:52,767	| IOT138 |	I do in that room Dua
+EDL	00:05:52,767	00:05:58,911	| IOT138 |	Need an input device with better Mike's or do I want a consumption device with better speakers and that's why I put the.
+EDL	00:05:59,423	00:06:05,311	| IOT138 |	In places where they don't listen to music like on the nightstand for examples perfect and it's fine for listening to light music when you're
+EDL	00:06:05,311	00:06:05,823	| IOT138 |	Fall asleep
+EDL	00:06:06,335	00:06:12,223	| IOT138 |	But I. Where many would make sense in that use case for me so that's my Approach input sources that puts
+EDL	00:06:12,735	00:06:15,551	| IOT138 |	I agree and I like it we put it down in the kitchen
+EDL	00:06:15,551	00:06:18,367	| IOT138 |	Mostly because it is now our backup
+EDL	00:06:18,367	00:06:20,159	| IOT138 |	Amazon so when
+EDL	00:06:20,159	00:06:22,719	| IOT138 |	Meta Mages pumps on a question which happen
+EDL	00:06:23,743	00:06:25,535	| IOT138 |	Where are you ever dinner now I can just be like
+EDL	00:06:27,071	00:06:27,583	| IOT138 |	Sorry you guys
+EDL	00:06:28,607	00:06:29,375	| IOT138 |	Haji
+EDL	00:06:29,375	00:06:30,911	| IOT138 |	Okay done with Google
+EDL	00:06:31,423	00:06:32,703	| IOT138 |	Not really we're going to come back to it
+EDL	00:06:33,215	00:06:34,495	| IOT138 |	Other news
+EDL	00:06:34,495	00:06:35,263	| IOT138 |	This works
+EDL	00:06:35,263	00:06:38,335	| IOT138 |	About the Amazon Echo is now available in Canada
+EDL	00:06:38,335	00:06:39,615	| IOT138 |	Yay
+EDL	00:06:39,615	00:06:40,895	| IOT138 |	And India
+EDL	00:06:44,223	00:06:44,991	| IOT138 |	It is exciting
+EDL	00:06:44,991	00:06:46,271	| IOT138 |	This year in Canada radio
+EDL	00:06:47,295	00:06:47,807	| IOT138 |	Well yes
+EDL	00:06:48,319	00:06:49,855	| IOT138 |	And it reminds me
+EDL	00:06:49,855	00:06:51,391	| IOT138 |	Report neighbors to the north
+EDL	00:06:51,391	00:06:51,903	| IOT138 |	They get nothing
+EDL	00:06:52,415	00:06:54,207	| IOT138 |	I feel really bad for them.
+EDL	00:06:54,207	00:06:54,719	| IOT138 |	But they don't get
+EDL	00:06:57,023	00:06:58,559	| IOT138 |	I hear you they speak English
+EDL	00:06:59,071	00:06:59,583	| IOT138 |	Something speak
+EDL	00:07:02,143	00:07:04,447	| IOT138 |	Alright let's get back to Google see I lied to
+EDL	00:07:04,447	00:07:08,543	| IOT138 |	I told you the truth cuz I think I said we're going to come back to it
+EDL	00:07:09,055	00:07:09,823	| IOT138 |	Not
+EDL	00:07:09,823	00:07:10,591	| IOT138 |	Associated with smart
+EDL	00:07:11,359	00:07:13,151	| IOT138 |	They have their tensorflow
+EDL	00:07:14,687	00:07:15,455	| IOT138 |	Will have chips they have
+EDL	00:07:18,527	00:07:21,855	| IOT138 |	And they now have machine learning for embedded devices
+EDL	00:07:22,623	00:07:23,391	| IOT138 |	Big trend
+EDL	00:07:23,903	00:07:24,927	| IOT138 |	For next year so
+EDL	00:07:24,927	00:07:25,439	| IOT138 |	Oak Avenue
+EDL	00:07:26,207	00:07:29,791	| IOT138 |	Yasso tensorflow Lite is what they announced this week
+EDL	00:07:29,791	00:07:36,191	| IOT138 |	It is a developer preview basically the lightweight version of tensorflow do they use for their Ai and machine learning
+EDL	00:07:36,191	00:07:40,543	| IOT138 |	This is specifically geared as you said Stacy towards embedded devices also mobile devices
+EDL	00:07:40,543	00:07:42,591	| IOT138 |	So your Android phones in particular
+EDL	00:07:42,591	00:07:47,199	| IOT138 |	I'm more interested in the iot type devices embedded devices because
+EDL	00:07:47,199	00:07:50,271	| IOT138 |	We think about adding machine learning to these things now instead of
+EDL	00:07:50,271	00:07:54,367	| IOT138 |	Theoretically you automating things based on potential trigger events and so on
+EDL	00:07:54,879	00:07:56,927	| IOT138 |	Things can happen based on an event
+EDL	00:07:56,927	00:07:58,975	| IOT138 |	That machine has learned
+EDL	00:07:58,975	00:07:59,487	| IOT138 |	Essentially
+EDL	00:07:59,999	00:08:04,095	| IOT138 |	Perfect example I think is I forget the name of it
+EDL	00:08:04,095	00:08:07,423	| IOT138 |	There's not a platform built on tensorflow that does image
+EDL	00:08:07,423	00:08:08,703	| IOT138 |	Enhancement for example
+EDL	00:08:08,703	00:08:11,007	| IOT138 |	And it starts to
+EDL	00:08:11,007	00:08:15,103	| IOT138 |	Take an image that's kind of muddied and it will apply the machine learning to a tank
+EDL	00:08:15,103	00:08:15,871	| IOT138 |	Clear it up
+EDL	00:08:15,871	00:08:19,455	| IOT138 |	So basically what looks like a fuzzy picture becomes a crystal clear picture of
+EDL	00:08:19,455	00:08:20,735	| IOT138 |	Exactly what it should be
+EDL	00:08:21,247	00:08:23,551	| IOT138 |	Sewing machine has learned what something is supposed to look
+EDL	00:08:23,551	00:08:26,879	| IOT138 |	So I'm thinking for image recognition maybe in the Smart Home
+EDL	00:08:26,879	00:08:27,903	| IOT138 |	This could be
+EDL	00:08:27,903	00:08:32,511	| IOT138 |	A tremendous tremendous value but that's just one of many possible avenues for this
+EDL	00:08:34,047	00:08:35,327	| IOT138 |	You don't have in your Roomba have
+EDL	00:08:36,095	00:08:36,863	| IOT138 |	Processing
+EDL	00:08:36,863	00:08:37,887	| IOT138 |	Actually recognized
+EDL	00:08:37,887	00:08:38,655	| IOT138 |	Furniture
+EDL	00:08:38,655	00:08:40,959	| IOT138 |	I know it's Pat but I can tell you that
+EDL	00:08:41,471	00:08:43,775	| IOT138 |	My cabinets definitely have little Roomba
+EDL	00:08:43,775	00:08:44,287	| IOT138 |	Ruffles
+EDL	00:08:44,799	00:08:46,335	| IOT138 |	Bam Bam
+EDL	00:08:48,383	00:08:49,663	| IOT138 |	So that kind of stuff
+EDL	00:08:49,663	00:08:55,807	| IOT138 |	Would be helpful also things like learning who people are in their emotions around the house that's definitely something that you
+EDL	00:08:55,807	00:08:57,599	| IOT138 |	What companies are investing in
+EDL	00:08:57,599	00:08:58,111	| IOT138 |	All kinds of
+EDL	00:08:58,879	00:09:00,415	| IOT138 |	So I'm excited about this
+EDL	00:09:00,927	00:09:02,975	| IOT138 |	I would tie it to
+EDL	00:09:02,975	00:09:04,511	| IOT138 |	A couple things one
+EDL	00:09:04,511	00:09:06,815	| IOT138 |	Intel bought a company called movidius
+EDL	00:09:06,815	00:09:08,607	| IOT138 |	And status
+EDL	00:09:08,607	00:09:11,423	| IOT138 |	Computer vision on the device which is really in
+EDL	00:09:12,447	00:09:17,055	| IOT138 |	So they have an effort and play here and they actually launched a dongle it's a little
+EDL	00:09:17,055	00:09:18,335	| IOT138 |	Basically neural network stick
+EDL	00:09:18,847	00:09:20,895	| IOT138 |	They can train things at the edge
+EDL	00:09:20,895	00:09:23,711	| IOT138 |	And then Qualcomm also has a very
+EDL	00:09:23,711	00:09:25,247	| IOT138 |	Big effort income
+EDL	00:09:25,247	00:09:26,015	| IOT138 |	Computer vision at
+EDL	00:09:26,015	00:09:26,783	| IOT138 |	The edge
+EDL	00:09:26,783	00:09:27,551	| IOT138 |	So
+EDL	00:09:27,551	00:09:28,575	| IOT138 |	What we're seeing
+EDL	00:09:28,575	00:09:29,087	| IOT138 |	When is
+EDL	00:09:29,599	00:09:33,183	| IOT138 |	Trend in kind of a shift in thinking so we used to think
+EDL	00:09:33,695	00:09:37,023	| IOT138 |	With machine learning there's two elements Thursday
+EDL	00:09:37,023	00:09:41,375	| IOT138 |	Learning part where you're training a computer model and that's done on gpus and in the cloud
+EDL	00:09:41,375	00:09:42,911	| IOT138 |	And then there's the execution site
+EDL	00:09:43,423	00:09:44,703	| IOT138 |	Which has been done
+EDL	00:09:45,215	00:09:46,239	| IOT138 |	At the edge
+EDL	00:09:46,239	00:09:46,751	| IOT138 |	Andon
+EDL	00:09:47,775	00:09:49,055	| IOT138 |	What we're seeing
+EDL	00:09:49,567	00:09:52,639	| IOT138 |	Is this idea that maybe we can do some basic training
+EDL	00:09:53,151	00:09:57,759	| IOT138 |	Even so build models on the device that's where the industry is trying to
+EDL	00:09:58,783	00:10:00,063	| IOT138 |	I don't know if we're ever go
+EDL	00:10:00,063	00:10:00,831	| IOT138 |	Can I get there but
+EDL	00:10:01,599	00:10:04,415	| IOT138 |	I think if we're going to get there they're going to need this type of
+EDL	00:10:04,415	00:10:10,559	| IOT138 |	Technology where that comes from Google or somebody else is irrelevant that's what's needed for sure and just to set that one second
+EDL	00:10:11,071	00:10:14,399	| IOT138 |	Deep dream that's the computer vision program I was thinking about you look it up
+EDL	00:10:14,399	00:10:20,799	| IOT138 |	But if you take a look online at Deep dream you can see visually what I was talking about Google uses the tensorflow for the smart reply
+EDL	00:10:20,799	00:10:23,103	| IOT138 |	I seen lot of its messaging applications
+EDL	00:10:23,103	00:10:27,199	| IOT138 |	And that reason context of a message and provide you with your three possible
+EDL	00:10:27,199	00:10:30,271	| IOT138 |	Are multiple possible responses that actually make sense contextually
+EDL	00:10:34,111	00:10:37,439	| IOT138 |	This is true this this is true but think about this
+EDL	00:10:37,439	00:10:38,207	| IOT138 |	Instead of just getting
+EDL	00:10:38,719	00:10:41,023	| IOT138 |	Smart home notifications for example that are just
+EDL	00:10:41,023	00:10:41,791	| IOT138 |	Pretty cans
+EDL	00:10:42,303	00:10:43,583	| IOT138 |	And are always the same
+EDL	00:10:43,583	00:10:45,119	| IOT138 |	How about something with more context
+EDL	00:10:45,119	00:10:46,143	| IOT138 |	Casino such as
+EDL	00:10:46,143	00:10:46,911	| IOT138 |	Well I just
+EDL	00:10:46,911	00:10:49,983	| IOT138 |	I get tired of the door has opened or disclosed kind of things
+EDL	00:10:49,983	00:10:52,287	| IOT138 |	Maybe it should say so and so just step through the door
+EDL	00:10:53,055	00:10:54,079	| IOT138 |	What is home
+EDL	00:10:54,079	00:10:55,103	| IOT138 |	I said that's where we're going
+EDL	00:10:55,615	00:10:56,127	| IOT138 |	I think I agree with you
+EDL	00:10:57,151	00:10:58,687	| IOT138 |	Superfund super inter
+EDL	00:10:58,687	00:10:59,455	| IOT138 |	Christine
+EDL	00:10:59,455	00:10:59,967	| IOT138 |	Supra eKEY
+EDL	00:11:02,015	00:11:03,295	| IOT138 |	All right
+EDL	00:11:05,855	00:11:06,623	| IOT138 |	There's some
+EDL	00:11:06,623	00:11:07,391	| IOT138 |	SmartThings
+EDL	00:11:08,415	00:11:10,207	| IOT138 |	SmartThings is getting an update later
+EDL	00:11:10,207	00:11:10,975	| IOT138 |	This week
+EDL	00:11:10,975	00:11:12,255	| IOT138 |	Actually
+EDL	00:11:12,255	00:11:12,767	| IOT138 |	Local
+EDL	00:11:19,423	00:11:19,935	| IOT138 |	Because it has
+EDL	00:11:23,263	00:11:25,567	| IOT138 |	Spell but even if you don't have cellular backup
+EDL	00:11:25,567	00:11:31,711	| IOT138 |	What's going to happen is for your lights and some alarms they're going to be able to run locally on the Hub
+EDL	00:11:31,711	00:11:33,247	| IOT138 |	Which means if your internet goes out
+EDL	00:11:33,759	00:11:36,063	| IOT138 |	You will still have your lights turn on and off
+EDL	00:11:36,063	00:11:37,599	| IOT138 |	But this will only happen
+EDL	00:11:38,111	00:11:38,879	| IOT138 |	If you have it on a schedule
+EDL	00:11:39,391	00:11:42,463	| IOT138 |	If you're like me and you have a lot of stuff to set to sunrise and sunset
+EDL	00:11:42,463	00:11:43,231	| IOT138 |	It's not going to
+EDL	00:11:43,231	00:11:43,999	| IOT138 |	Is that actually
+EDL	00:11:43,999	00:11:44,511	| IOT138 |	The cloud
+EDL	00:11:45,535	00:11:48,095	| IOT138 |	Sprite well that's kind of a shame because
+EDL	00:11:48,095	00:11:51,167	| IOT138 |	If a device is still on even though it doesn't have a connection is not like the
+EDL	00:11:51,167	00:11:54,495	| IOT138 |	The time has gone down the time just continues on the on the Hub
+EDL	00:11:54,495	00:11:55,519	| IOT138 |	That's really weird
+EDL	00:11:55,519	00:11:57,311	| IOT138 |	Well it's because they have to pull out
+EDL	00:11:57,823	00:12:00,639	| IOT138 |	Get the different the different time every day I get that
+EDL	00:12:01,151	00:12:02,687	| IOT138 |	Awesome
+EDL	00:12:03,199	00:12:04,223	| IOT138 |	Here's where we should be going
+EDL	00:12:04,991	00:12:06,271	| IOT138 |	Pull that time down
+EDL	00:12:06,271	00:12:07,551	| IOT138 |	Store it locally
+EDL	00:12:08,063	00:12:09,343	| IOT138 |	And then keep it for a day
+EDL	00:12:10,623	00:12:11,391	| IOT138 |	24 hours
+EDL	00:12:11,391	00:12:12,671	| IOT138 |	That would be
+EDL	00:12:13,183	00:12:14,207	| IOT138 |	A fun way to go
+EDL	00:12:14,207	00:12:15,743	| IOT138 |	Maybe someone
+EDL	00:12:18,047	00:12:19,839	| IOT138 |	And it's kind of complicated
+EDL	00:12:20,351	00:12:21,887	| IOT138 |	They've got child apps
+EDL	00:12:21,887	00:12:23,423	| IOT138 |	The SmartThings app
+EDL	00:12:23,423	00:12:24,191	| IOT138 |	This is really
+EDL	00:12:24,703	00:12:25,983	| IOT138 |	I'm getting back into smart
+EDL	00:12:27,263	00:12:28,031	| IOT138 |	Set of a hiatus
+EDL	00:12:28,543	00:12:30,847	| IOT138 |	Maybe we'll do a special segment just that
+EDL	00:12:32,127	00:12:34,687	| IOT138 |	It's a good idea so that's actually a hub update
+EDL	00:12:35,199	00:12:35,711	| IOT138 |	Yes
+EDL	00:12:36,223	00:12:36,991	| IOT138 |	Your house
+EDL	00:12:38,271	00:12:42,367	| IOT138 |	That's a later this week there's actually been an app update this week as well
+EDL	00:12:42,879	00:12:47,487	| IOT138 |	Which hopefully people happy about interviews and getting back into smart thing so maybe you can give it a try
+EDL	00:12:47,999	00:12:49,535	| IOT138 |	They've added scenes
+EDL	00:12:49,535	00:12:50,815	| IOT138 |	Which is nice to have
+EDL	00:12:50,815	00:12:53,119	| IOT138 |	As well as visitor lock
+EDL	00:12:53,119	00:12:55,423	| IOT138 |	Code-switch I love the idea that
+EDL	00:12:55,423	00:12:56,447	| IOT138 |	I don't think I have that
+EDL	00:12:56,447	00:12:59,007	| IOT138 |	Today on my system so I would like that
+EDL	00:12:59,007	00:13:01,055	| IOT138 |	And also a fingerprint authentication for the app
+EDL	00:13:01,055	00:13:01,823	| IOT138 |	Which
+EDL	00:13:01,823	00:13:03,359	| IOT138 |	Alicia already have that anyway but
+EDL	00:13:03,359	00:13:04,639	| IOT138 |	The scenes in a lock code
+EDL	00:13:04,639	00:13:07,455	| IOT138 |	The two big he's here so you can go update your SmartThings app
+EDL	00:13:08,479	00:13:09,759	| IOT138 |	Codes are
+EDL	00:13:09,759	00:13:10,527	| IOT138 |	I can issue lock
+EDL	00:13:11,551	00:13:17,951	| IOT138 |	That's correct you can because in the developer notes of release notes it says create unique lock code for visitors to a
+EDL	00:13:17,951	00:13:18,719	| IOT138 |	Access your home
+EDL	00:13:19,999	00:13:20,767	| IOT138 |	Very funny
+EDL	00:13:20,767	00:13:21,791	| IOT138 |	Speaking of locks
+EDL	00:13:22,303	00:13:23,583	| IOT138 |	I should let anyone know
+EDL	00:13:23,583	00:13:26,911	| IOT138 |	If you're using the Comcast Xfinity home
+EDL	00:13:26,911	00:13:27,423	| IOT138 |	Set up
+EDL	00:13:27,935	00:13:29,215	| IOT138 |	And services
+EDL	00:13:29,727	00:13:31,519	| IOT138 |	They actually just added for different
+EDL	00:13:31,519	00:13:32,543	| IOT138 |	Kwikset locks
+EDL	00:13:32,543	00:13:33,567	| IOT138 |	To their plot
+EDL	00:13:34,079	00:13:34,847	| IOT138 |	So
+EDL	00:13:34,847	00:13:35,615	| IOT138 |	Yay
+EDL	00:13:36,383	00:13:39,711	| IOT138 |	Stacey's happy
+EDL	00:13:39,711	00:13:41,503	| IOT138 |	Kwikset locks on my game
+EDL	00:13:42,015	00:13:45,855	| IOT138 |	If you're going that route in the August locks but
+EDL	00:13:46,367	00:13:47,135	| IOT138 |	This way
+EDL	00:13:47,135	00:13:48,671	| IOT138 |	It's all in the same place
+EDL	00:13:48,671	00:13:51,231	| IOT138 |	It's fine we should actually maybe we should
+EDL	00:13:51,231	00:13:51,999	| IOT138 |	You talk a little bit about
+EDL	00:13:52,511	00:13:53,279	| IOT138 |	Lox B
+EDL	00:13:53,279	00:13:56,095	| IOT138 |	Because one of the other stories that I saw this week
+EDL	00:13:56,607	00:13:57,631	| IOT138 |	Was
+EDL	00:13:57,631	00:13:58,399	| IOT138 |	John Cena
+EDL	00:13:58,911	00:14:02,495	| IOT138 |	Which two thing up coverage there is latches teaming up with
+EDL	00:14:02,495	00:14:03,263	| IOT138 |	The company called
+EDL	00:14:03,263	00:14:04,031	| IOT138 |	Comelit
+EDL	00:14:04,031	00:14:05,567	| IOT138 |	4 Apartments
+EDL	00:14:05,567	00:14:07,103	| IOT138 |	And latches a lock
+EDL	00:14:07,871	00:14:09,919	| IOT138 |	How late is a intercom
+EDL	00:14:10,431	00:14:14,271	| IOT138 |	Picture and I actually get a lot of questions for people who live in
+EDL	00:14:14,271	00:14:15,807	| IOT138 |	Apartments about how they
+EDL	00:14:15,807	00:14:18,879	| IOT138 |	Can integrate their smart locks with control of the internet
+EDL	00:14:19,391	00:14:20,927	| IOT138 |	Any answer right now is
+EDL	00:14:20,927	00:14:21,439	| IOT138 |	You really can't
+EDL	00:14:22,207	00:14:23,231	| IOT138 |	But
+EDL	00:14:23,231	00:14:27,071	| IOT138 |	What this does is there saying that this intercom
+EDL	00:14:27,071	00:14:28,095	| IOT138 |	Company is going to work
+EDL	00:14:28,095	00:14:29,119	| IOT138 |	With these smart
+EDL	00:14:29,119	00:14:30,399	| IOT138 |	Lakme curso comelit
+EDL	00:14:30,911	00:14:32,191	| IOT138 |	It's another intercom
+EDL	00:14:32,191	00:14:32,959	| IOT138 |	Company is nelo
+EDL	00:14:33,471	00:14:37,311	| IOT138 |	They have said in the past that they're going to do something like this but
+EDL	00:14:37,311	00:14:37,823	| IOT138 |	They haven't
+EDL	00:14:38,335	00:14:39,103	| IOT138 |	So
+EDL	00:14:39,103	00:14:41,919	| IOT138 |	I thought this was interesting cuz I get so many questions from
+EDL	00:14:41,919	00:14:42,687	| IOT138 |	People saying
+EDL	00:14:43,199	00:14:44,223	| IOT138 |	Hey
+EDL	00:14:44,223	00:14:49,343	| IOT138 |	I want to be able to Grant entry to someone and not just into my apartment but all the way up to
+EDL	00:14:50,111	00:14:50,879	| IOT138 |	My door
+EDL	00:14:50,879	00:14:51,903	| IOT138 |	Wish I could be
+EDL	00:14:51,903	00:14:55,231	| IOT138 |	Kind of it feels like where we're going if you think about
+EDL	00:14:55,231	00:14:57,791	| IOT138 |	Amazon key
+EDL	00:14:57,791	00:14:58,559	| IOT138 |	August in the
+EDL	00:14:58,559	00:14:59,583	| IOT138 |	Their access program
+EDL	00:15:00,095	00:15:00,863	| IOT138 |	Image taken
+EDL	00:15:02,143	00:15:03,167	| IOT138 |	Talk about this
+EDL	00:15:03,167	00:15:03,935	| IOT138 |	Dislike
+EDL	00:15:03,935	00:15:05,471	| IOT138 |	What you need to let people in
+EDL	00:15:05,983	00:15:07,519	| IOT138 |	You know Amazon needs a camera
+EDL	00:15:08,031	00:15:08,799	| IOT138 |	As somebody point
+EDL	00:15:08,799	00:15:10,079	| IOT138 |	In and out
+EDL	00:15:10,079	00:15:10,847	| IOT138 |	Fraud detection
+EDL	00:15:12,383	00:15:14,431	| IOT138 |	And for you to know who's coming and going
+EDL	00:15:14,431	00:15:16,735	| IOT138 |	August is the same thing they use their doorbell
+EDL	00:15:17,503	00:15:18,015	| IOT138 |	They also I think
+EDL	00:15:18,783	00:15:19,551	| IOT138 |	With Nest on that
+EDL	00:15:19,551	00:15:20,319	| IOT138 |	Do we really want
+EDL	00:15:21,087	00:15:21,855	| IOT138 |	I mean
+EDL	00:15:21,855	00:15:24,927	| IOT138 |	In general or I mean if I lived in an apartment complex
+EDL	00:15:24,927	00:15:26,719	| IOT138 |	Sexy I think I would want this
+EDL	00:15:26,719	00:15:28,767	| IOT138 |	You know I'm not home somebody buzzes
+EDL	00:15:28,767	00:15:29,535	| IOT138 |	The intercom
+EDL	00:15:30,047	00:15:31,327	| IOT138 |	Person that the
+EDL	00:15:31,327	00:15:32,095	| IOT138 |	Front desk
+EDL	00:15:32,095	00:15:35,679	| IOT138 |	Says they're not home and sends me an alert and I can decide to let them in my
+EDL	00:15:35,679	00:15:36,447	| IOT138 |	Apartment or not
+EDL	00:15:36,447	00:15:36,959	| IOT138 |	I kind of like that
+EDL	00:15:37,471	00:15:38,495	| IOT138 |	As for my house
+EDL	00:15:39,007	00:15:40,031	| IOT138 |	I don't know I mean
+EDL	00:15:40,031	00:15:42,335	| IOT138 |	I just mentioned before the show that I'm thinking about getting out
+EDL	00:15:42,335	00:15:44,383	| IOT138 |	Ring doorbell for the front door
+EDL	00:15:45,151	00:15:48,223	| IOT138 |	And I may have to figure out how to make it work to
+EDL	00:15:48,223	00:15:53,855	| IOT138 |	Unlock my door if I want the door unlocked like maybe I want the UPS guy to put something in my house cuz I'm not home
+EDL	00:15:53,855	00:15:54,879	| IOT138 |	I can just unlock the door for me
+EDL	00:15:55,391	00:15:56,159	| IOT138 |	I know it's him
+EDL	00:15:56,159	00:15:57,951	| IOT138 |	Die, I like it
+EDL	00:15:57,951	00:15:59,231	| IOT138 |	But I managed case
+EDL	00:15:59,231	00:16:01,023	| IOT138 |	Yeah and I'm still like
+EDL	00:16:01,023	00:16:07,423	| IOT138 |	I think about the number of people who don't want like an Amazon Echo in their home because it's always listening and I'm thinking those people are probably not going to let
+EDL	00:16:07,423	00:16:08,191	| IOT138 |	UPS guy in
+EDL	00:16:08,703	00:16:09,727	| IOT138 |	Warehouse
+EDL	00:16:09,727	00:16:10,495	| IOT138 |	No
+EDL	00:16:10,495	00:16:12,287	| IOT138 |	So we definitely wouldn't I mean it's
+EDL	00:16:12,287	00:16:16,127	| IOT138 |	To me it's if you bought into the whole smart home especially with cameras
+EDL	00:16:16,127	00:16:17,407	| IOT138 |	Lifestyle so to speak
+EDL	00:16:17,919	00:16:18,687	| IOT138 |	Then
+EDL	00:16:18,687	00:16:19,967	| IOT138 |	Yeah you would want this
+EDL	00:16:19,967	00:16:20,991	| IOT138 |	Otherwise probably not
+EDL	00:16:22,015	00:16:24,575	| IOT138 |	Well here we have it yes I'm still puzzling over this
+EDL	00:16:26,367	00:16:26,879	| IOT138 |	I'm still
+EDL	00:16:27,903	00:16:28,927	| IOT138 |	That's okay
+EDL	00:16:28,927	00:16:30,207	| IOT138 |	Let's talk about
+EDL	00:16:30,207	00:16:31,999	| IOT138 |	Your review of
+EDL	00:16:31,999	00:16:32,511	| IOT138 |	The wing
+EDL	00:16:34,303	00:16:35,071	| IOT138 |	Cuz we both got
+EDL	00:16:35,071	00:16:35,583	| IOT138 |	Toys
+EDL	00:16:36,351	00:16:39,679	| IOT138 |	Okay I'm scratching my head a little bit over the wink Lookout
+EDL	00:16:39,679	00:16:41,471	| IOT138 |	So let me start off by saying that
+EDL	00:16:42,239	00:16:46,591	| IOT138 |	And the reason scratching my head is not because it doesn't do what
+EDL	00:16:46,591	00:16:47,615	| IOT138 |	It advertises
+EDL	00:16:47,615	00:16:49,919	| IOT138 |	To do because it does basically
+EDL	00:16:49,919	00:16:52,735	| IOT138 |	In the lookout can't you get a Wink 2 hub
+EDL	00:16:53,247	00:16:57,087	| IOT138 |	You get two door window sensors magnetic sensors that are Z-Wave
+EDL	00:16:57,599	00:17:00,159	| IOT138 |	You get a motion sensor again
+EDL	00:17:00,159	00:17:00,927	| IOT138 |	Aussie wave
+EDL	00:17:01,695	00:17:03,743	| IOT138 |	And you get a siren
+EDL	00:17:03,743	00:17:04,255	| IOT138 |	Also see
+EDL	00:17:04,767	00:17:06,303	| IOT138 |	Pairing everything
+EDL	00:17:06,303	00:17:11,935	| IOT138 |	I did struggle a little bit and I find this a lot with Z-Wave devices I have to be really close to the hub
+EDL	00:17:11,935	00:17:13,727	| IOT138 |	And I don't know if that's your experience Stacey but
+EDL	00:17:14,239	00:17:16,031	| IOT138 |	I really loved when the wing
+EDL	00:17:16,031	00:17:17,055	| IOT138 |	Cub went Wi-Fi
+EDL	00:17:17,567	00:17:18,847	| IOT138 |	Special
+EDL	00:17:19,359	00:17:23,455	| IOT138 |	I liked that about the wink Hub cuz I would just bring it with me to wherever I was trying to
+EDL	00:17:25,247	00:17:26,015	| IOT138 |	Yes
+EDL	00:17:26,015	00:17:29,343	| IOT138 |	And that I did that exactly that when I did my zwave door lock
+EDL	00:17:29,343	00:17:30,111	| IOT138 |	So that's
+EDL	00:17:30,111	00:17:30,879	| IOT138 |	You're right
+EDL	00:17:30,879	00:17:32,159	| IOT138 |	In this case these
+EDL	00:17:32,159	00:17:33,695	| IOT138 |	Little devices are all
+EDL	00:17:33,695	00:17:37,535	| IOT138 |	Small enough for me to just walk up stairs and go next to the wink Hub while I'm in the
+EDL	00:17:37,535	00:17:38,559	| IOT138 |	Setup program
+EDL	00:17:38,559	00:17:39,839	| IOT138 |	Once I did that cuz I
+EDL	00:17:39,839	00:17:41,631	| IOT138 |	I was trying to do it from a couple runs away was not working
+EDL	00:17:42,399	00:17:43,423	| IOT138 |	Once I got close
+EDL	00:17:43,423	00:17:44,191	| IOT138 |	Everything paired fine
+EDL	00:17:44,703	00:17:46,239	| IOT138 |	The motion sensors
+EDL	00:17:46,239	00:17:47,775	| IOT138 |	Are super
+EDL	00:17:47,775	00:17:51,871	| IOT138 |	Super super good my opinion there are at least five different sensitivity settings so you can
+EDL	00:17:52,383	00:17:54,943	| IOT138 |	You know if you got pets and things you can reduce the settings
+EDL	00:17:54,943	00:17:55,711	| IOT138 |	You can
+EDL	00:17:55,711	00:17:59,295	| IOT138 |	Say don't send me alerts unless there's motion for more than
+EDL	00:17:59,295	00:18:02,623	| IOT138 |	1 2 5 10 minutes whatever you like that I like
+EDL	00:18:02,623	00:18:05,951	| IOT138 |	The door window sensors also work well no problems there
+EDL	00:18:05,951	00:18:08,255	| IOT138 |	I will say in this is not specific to wink
+EDL	00:18:08,255	00:18:14,655	| IOT138 |	I have like traditional molding around my door so the molding is not flat which makes it very difficult to attach
+EDL	00:18:14,655	00:18:16,703	| IOT138 |	A door window sensor of any kind
+EDL	00:18:16,703	00:18:17,471	| IOT138 |	To it
+EDL	00:18:17,471	00:18:19,775	| IOT138 |	So just say that for people who have
+EDL	00:18:19,775	00:18:20,543	| IOT138 |	Similar molding
+EDL	00:18:21,055	00:18:21,823	| IOT138 |	Have some issues there
+EDL	00:18:21,823	00:18:23,103	| IOT138 |	But again that's industry-wide is not a
+EDL	00:18:23,615	00:18:24,383	| IOT138 |	Knock on wink at all
+EDL	00:18:24,895	00:18:25,919	| IOT138 |	The siren
+EDL	00:18:25,919	00:18:28,735	| IOT138 |	As a chime feature which I like or you can have it now
+EDL	00:18:29,247	00:18:31,807	| IOT138 |	Blaring really loud alert alert you know
+EDL	00:18:31,807	00:18:33,599	| IOT138 |	Three different volume settings on that which is
+EDL	00:18:33,599	00:18:36,927	| IOT138 |	Just good sided forgot my dog is everything connected really well
+EDL	00:18:37,439	00:18:41,791	| IOT138 |	And there is I think everybody should have this now in the Wing Cap there's a new look out Prada
+EDL	00:18:42,303	00:18:46,143	| IOT138 |	But it's not a product per se because it's more of a
+EDL	00:18:46,143	00:18:48,959	| IOT138 |	I'll call a platform or a way to get into the
+EDL	00:18:48,959	00:18:49,983	| IOT138 |	Lookout settings
+EDL	00:18:50,495	00:18:51,263	| IOT138 |	So
+EDL	00:18:51,263	00:18:57,407	| IOT138 |	When you go in there you can actually see what you can connect and even though they didn't send me this I was able to connect my nest camera
+EDL	00:18:57,407	00:18:58,175	| IOT138 |	2
+EDL	00:18:58,175	00:18:59,967	| IOT138 |	The lookout settings
+EDL	00:18:59,967	00:19:02,527	| IOT138 |	What Lookout actually does it's an alert system
+EDL	00:19:03,039	00:19:05,087	| IOT138 |	And that sounds like will shortz a security system
+EDL	00:19:05,087	00:19:07,903	| IOT138 |	What I mean by that is anytime any of these things
+EDL	00:19:07,903	00:19:09,951	| IOT138 |	Text motion or a like that
+EDL	00:19:10,463	00:19:11,743	| IOT138 |	You will get an alert
+EDL	00:19:11,743	00:19:14,303	| IOT138 |	When you get the alert on your phone in the app
+EDL	00:19:14,815	00:19:16,607	| IOT138 |	You can choose to sound the siren
+EDL	00:19:17,119	00:19:18,399	| IOT138 |	You can choose to call 911
+EDL	00:19:18,911	00:19:19,935	| IOT138 |	Choose to
+EDL	00:19:19,935	00:19:20,703	| IOT138 |	Call a friend
+EDL	00:19:20,703	00:19:21,471	| IOT138 |	So it's
+EDL	00:19:21,471	00:19:26,847	| IOT138 |	Taken all of the security aspects and giving them to you and you decide what you want to happen
+EDL	00:19:26,847	00:19:28,127	| IOT138 |	That works
+EDL	00:19:28,127	00:19:29,407	| IOT138 |	But it also introduces some
+EDL	00:19:29,919	00:19:36,319	| IOT138 |	Challenges and if you have a traditional security system obviously you got a keypad or way to disarm the system by a
+EDL	00:19:36,319	00:19:39,391	| IOT138 |	Maybe with a new nest for example you can use an RFID tag
+EDL	00:19:39,903	00:19:41,695	| IOT138 |	Swiper NFC tags
+EDL	00:19:41,695	00:19:42,719	| IOT138 |	Parmer Dessau
+EDL	00:19:42,719	00:19:47,327	| IOT138 |	There's no way to do that here and that I think is going to be a challenge because it's all at base
+EDL	00:19:47,839	00:19:50,143	| IOT138 |	And one of the particular challenges in
+EDL	00:19:50,143	00:19:52,191	| IOT138 |	I've set this up to automatically
+EDL	00:19:52,191	00:19:53,983	| IOT138 |	Go on and alert for things
+EDL	00:19:53,983	00:19:55,263	| IOT138 |	From 11 at night
+EDL	00:19:55,263	00:19:57,311	| IOT138 |	Until 5:30 in the morning so overnight
+EDL	00:19:57,311	00:19:59,103	| IOT138 |	Somebody walks in the house through my front door
+EDL	00:19:59,615	00:20:01,919	| IOT138 |	Or the door window sensor or motion sensor
+EDL	00:20:01,919	00:20:04,735	| IOT138 |	Text the siren will go off cuz that's what I want to happen
+EDL	00:20:04,735	00:20:06,271	| IOT138 |	What is my son
+EDL	00:20:06,271	00:20:09,343	| IOT138 |	Works late comes in at 1 in the morning doesn't know
+EDL	00:20:09,343	00:20:10,879	| IOT138 |	If it systems on or not
+EDL	00:20:10,879	00:20:11,647	| IOT138 |	Doesn't even have the app
+EDL	00:20:13,183	00:20:15,231	| IOT138 |	I got to sign him in as me
+EDL	00:20:15,743	00:20:18,559	| IOT138 |	And he's got it basically turn off the alerts before he walks in
+EDL	00:20:18,559	00:20:19,839	| IOT138 |	And my family is not going to do that
+EDL	00:20:20,351	00:20:21,887	| IOT138 |	So that's going to be a challenge
+EDL	00:20:21,887	00:20:22,399	| IOT138 |	Yeah you're coming
+EDL	00:20:24,191	00:20:27,519	| IOT138 |	You're starting to know that they're actually starting to now and that's
+EDL	00:20:27,519	00:20:31,103	| IOT138 |	Actually why they don't have the Wink app installed because they don't need the app
+EDL	00:20:31,103	00:20:32,127	| IOT138 |	Because I just tell
+EDL	00:20:32,127	00:20:33,919	| IOT138 |	The lights to go on and off as they need you now
+EDL	00:20:33,919	00:20:35,967	| IOT138 |	So that's crate at Amazon
+EDL	00:20:36,735	00:20:40,319	| IOT138 |	Yeah which is great but now as they're engaging in that which is awesome
+EDL	00:20:40,319	00:20:42,367	| IOT138 |	Now how do I get them to use the security system
+EDL	00:20:42,879	00:20:43,903	| IOT138 |	Oh
+EDL	00:20:43,903	00:20:45,439	| IOT138 |	I would say maybe voice recognition
+EDL	00:20:45,951	00:20:48,511	| IOT138 |	Analog one day and then you could be like it's just me
+EDL	00:20:49,023	00:20:50,303	| IOT138 |	And that would work but that's not going to happen
+EDL	00:20:51,327	00:20:52,095	| IOT138 |	Cuz the false positives
+EDL	00:20:52,607	00:20:53,631	| IOT138 |	Non-recognition
+EDL	00:20:54,143	00:20:54,655	| IOT138 |	It's still pretty
+EDL	00:20:55,423	00:20:56,447	| IOT138 |	Yeah
+EDL	00:20:56,447	00:20:57,215	| IOT138 |	Speaking of
+EDL	00:20:57,215	00:20:58,751	| IOT138 |	Amazon still doesn't know
+EDL	00:20:58,751	00:20:59,263	| IOT138 |	Who I am
+EDL	00:20:59,775	00:21:00,543	| IOT138 |	Really
+EDL	00:21:00,543	00:21:02,335	| IOT138 |	Really it is the saddest
+EDL	00:21:02,335	00:21:02,847	| IOT138 |	Satisfy
+EDL	00:21:03,871	00:21:05,151	| IOT138 |	No personalization for Stacy
+EDL	00:21:05,919	00:21:08,735	| IOT138 |	I haven't tried it in my house because again they just use the
+EDL	00:21:08,735	00:21:10,271	| IOT138 |	Lights on lights off kind of stuff
+EDL	00:21:10,271	00:21:13,087	| IOT138 |	What are the challenges is everyone has to have the
+EDL	00:21:13,087	00:21:13,855	| IOT138 |	Their own
+EDL	00:21:13,855	00:21:14,623	| IOT138 |	Mattimeo
+EDL	00:21:15,135	00:21:17,952	| IOT138 |	Each of them on their own app
+EDL	00:21:17,952	00:21:18,464	| IOT138 |	2
+EDL	00:21:19,232	00:21:20,512	| IOT138 |	You have to log out of you
+EDL	00:21:21,280	00:21:22,048	| IOT138 |	Re-login is that
+EDL	00:21:22,560	00:21:23,328	| IOT138 |	For each one
+EDL	00:21:24,096	00:21:25,376	| IOT138 |	It's a little convoluted
+EDL	00:21:25,376	00:21:26,144	| IOT138 |	Identity management
+EDL	00:21:28,192	00:21:30,752	| IOT138 |	This sounds
+EDL	00:21:30,752	00:21:33,568	| IOT138 |	And I was looking for a presence detection.
+EDL	00:21:33,568	00:21:34,080	| IOT138 |	Tobias Forge
+EDL	00:21:34,592	00:21:40,992	| IOT138 |	Disarm
+EDL	00:21:40,992	00:21:42,016	| IOT138 |	You're right
+EDL	00:21:43,296	00:21:45,600	| IOT138 |	I kind of feel like that's the missing piece here
+EDL	00:21:45,600	00:21:50,464	| IOT138 |	And I understand why wink went this way because their feedback they've got
+EDL	00:21:50,464	00:21:54,048	| IOT138 |	What they tell me they want people to be in control of their security systems
+EDL	00:21:54,048	00:21:54,816	| IOT138 |	A total control
+EDL	00:21:54,816	00:21:57,120	| IOT138 |	And you do if there's no question them succeeded in this
+EDL	00:21:57,632	00:21:59,680	| IOT138 |	This is perfect for somebody who lives alone
+EDL	00:22:00,192	00:22:01,472	| IOT138 |	If you have to worry about those
+EDL	00:22:01,472	00:22:02,752	| IOT138 |	Scenarios that I was talking about
+EDL	00:22:02,752	00:22:05,312	| IOT138 |	Not right and you have total control but
+EDL	00:22:05,312	00:22:06,592	| IOT138 |	It just feels like there's a
+EDL	00:22:06,592	00:22:07,360	| IOT138 |	Piece missing
+EDL	00:22:07,872	00:22:08,640	| IOT138 |	2
+EDL	00:22:08,640	00:22:10,176	| IOT138 |	Truly arm disarm
+EDL	00:22:10,176	00:22:10,688	| IOT138 |	And
+EDL	00:22:11,200	00:22:13,760	| IOT138 |	You can do some automation bits and I've done some butt
+EDL	00:22:13,760	00:22:19,392	| IOT138 |	It almost feels like they don't want you to in a sense cuz I don't really tell you how to set up robots
+EDL	00:22:19,392	00:22:20,928	| IOT138 |	Their schedules or anyting
+EDL	00:22:20,928	00:22:27,328	| IOT138 |	With this kit and I mentioned this to that man like I get who this kid is game four because as a hub you're talkin about first-time smart
+EDL	00:22:27,328	00:22:28,096	| IOT138 |	Home buyers
+EDL	00:22:28,096	00:22:29,376	| IOT138 |	But if you're talking about the buyers
+EDL	00:22:29,376	00:22:31,424	| IOT138 |	You got to tell them how to do the automation bit
+EDL	00:22:31,424	00:22:37,824	| IOT138 |	We've had to figure it out along the way we got good at it but connecting everything is fine but then how do you make it all work together
+EDL	00:22:37,824	00:22:40,128	| IOT138 |	That's kind of missing for a new person I think
+EDL	00:22:40,640	00:22:45,760	| IOT138 |	And again I just maybe some stuck in a traditional security mindset of this arm / disarm
+EDL	00:22:45,760	00:22:47,552	| IOT138 |	But I think that's a lot of you think
+EDL	00:22:47,552	00:22:48,320	| IOT138 |	Stihl.
+EDL	00:22:48,320	00:22:50,624	| IOT138 |	Well and I would say that in some ways that's
+EDL	00:22:51,904	00:22:56,256	| IOT138 |	Because like when I was a kid growing up my parents had an alarm and they kept it
+EDL	00:22:56,256	00:22:57,024	| IOT138 |	On
+EDL	00:22:57,024	00:22:58,560	| IOT138 |	So they'd hear the beep beep beep
+EDL	00:22:58,560	00:22:59,584	| IOT138 |	When I open the door
+EDL	00:23:01,376	00:23:06,752	| IOT138 |	Same here that you could hear it beep beep beep with the siren and the chime sure they're also potentially going to get
+EDL	00:23:06,752	00:23:09,312	| IOT138 |	Notification after notification after notification on a smartphone
+EDL	00:23:09,312	00:23:12,640	| IOT138 |	Like every time somebody walks past a motion sensor
+EDL	00:23:16,480	00:23:17,504	| IOT138 |	200
+EDL	00:23:17,504	00:23:21,088	| IOT138 |	Which is a good price and there's no monthly fee or anything because again
+EDL	00:23:21,088	00:23:21,856	| IOT138 |	It's not
+EDL	00:23:21,856	00:23:23,392	| IOT138 |	Professionally monitored it's
+EDL	00:23:23,392	00:23:29,024	| IOT138 |	Immaturely monitored by you I don't think it's a bad product I just think it's probably for a very specific
+EDL	00:23:29,024	00:23:29,792	| IOT138 |	Type of user
+EDL	00:23:30,304	00:23:31,072	| IOT138 |	That makes sense
+EDL	00:23:31,584	00:23:35,936	| IOT138 |	All right well if you're that kind of user you like hearing your smartphone you like notifications
+EDL	00:23:36,448	00:23:39,008	| IOT138 |	You want to really know what's going on in your house this
+EDL	00:23:39,520	00:23:40,032	| IOT138 |	Happy for you
+EDL	00:23:40,544	00:23:41,312	| IOT138 |	All right
+EDL	00:23:41,312	00:23:42,848	| IOT138 |	Before I get to my toy
+EDL	00:23:42,848	00:23:44,384	| IOT138 |	We're actually going to take
+EDL	00:23:44,896	00:23:45,664	| IOT138 |	AR
+EDL	00:23:45,664	00:23:46,432	| IOT138 |	Voicemail
+EDL	00:23:46,944	00:23:48,224	| IOT138 |	From the
+EDL	00:23:48,224	00:23:51,296	| IOT138 |	Internet of Things podcast listener hotline
+EDL	00:23:51,296	00:23:53,600	| IOT138 |	Which is brought to you by Schlage
+EDL	00:23:53,600	00:23:54,624	| IOT138 |	Maker of electronic lock
+EDL	00:23:55,392	00:24:01,792	| IOT138 |	Schlage smart locks work with most home and security system so you can get the most out of your lock whether you're an Apple homekit user
+EDL	00:24:01,792	00:24:02,560	| IOT138 |	You love Amazon
+EDL	00:24:03,328	00:24:05,376	| IOT138 |	To see what's possible visit schlage.com
+EDL	00:24:06,656	00:24:07,936	| IOT138 |	Alright this week
+EDL	00:24:07,936	00:24:09,216	| IOT138 |	On the iot
+EDL	00:24:13,568	00:24:19,200	| IOT138 |	Iccl Kevin my name is Hugo and my calling from Montreal I sent
+EDL	00:24:19,968	00:24:20,480	| IOT138 |	Tuesday
+EDL	00:24:20,992	00:24:22,784	| IOT138 |	Asking her what she thought about
+EDL	00:24:22,784	00:24:23,296	| IOT138 |	The wife
+EDL	00:24:24,320	00:24:28,672	| IOT138 |	$20 1080p full HD night vision two-way audio camera
+EDL	00:24:29,696	00:24:30,464	| IOT138 |	$20
+EDL	00:24:30,464	00:24:34,048	| IOT138 |	Reviews from cdnuts last year
+EDL	00:24:34,048	00:24:38,144	| IOT138 |	Call tmw my question is fairly simple is it safe to use
+EDL	00:24:38,912	00:24:43,520	| IOT138 |	Secure where are those image going and more generally what should I look for
+EDL	00:24:43,520	00:24:45,568	| IOT138 |	Or if I want to get any type of camera
+EDL	00:24:45,568	00:24:49,408	| IOT138 |	The outside can is a little bit less worrisome for me but inside cam
+EDL	00:24:49,408	00:24:51,456	| IOT138 |	Could be something that they don't hold it
+EDL	00:24:51,456	00:24:54,016	| IOT138 |	More something I would think more about to wear
+EDL	00:24:54,528	00:24:57,856	| IOT138 |	Data is going obviously there is an account be saved
+EDL	00:24:57,856	00:24:58,624	| IOT138 |	For 7 days
+EDL	00:24:58,624	00:25:00,160	| IOT138 |	The things that are recorded
+EDL	00:25:00,160	00:25:01,696	| IOT138 |	So it's all good and it's very cheap
+EDL	00:25:03,488	00:25:05,024	| IOT138 |	However I don't know if it's a
+EDL	00:25:05,536	00:25:09,120	| IOT138 |	Thank you so much guys I will be looking out for an answer
+EDL	00:25:09,120	00:25:10,144	| IOT138 |	However you wished
+EDL	00:25:10,144	00:25:11,168	| IOT138 |	I will about you
+EDL	00:25:12,448	00:25:14,496	| IOT138 |	Okay good news for you Hugo
+EDL	00:25:14,496	00:25:15,520	| IOT138 |	I just
+EDL	00:25:15,520	00:25:18,080	| IOT138 |	Bought and received my wyze camera
+EDL	00:25:18,080	00:25:21,152	| IOT138 |	My $20 tiny cute camera oh my gosh
+EDL	00:25:21,152	00:25:22,432	| IOT138 |	It is adorable
+EDL	00:25:22,944	00:25:23,712	| IOT138 |	And it works
+EDL	00:25:24,224	00:25:25,504	| IOT138 |	And for your accused
+EDL	00:25:26,528	00:25:29,088	| IOT138 |	It has a slot for an SD card
+EDL	00:25:29,088	00:25:30,624	| IOT138 |	Which means it doesn't have to
+EDL	00:25:31,904	00:25:32,416	| IOT138 |	So
+EDL	00:25:32,928	00:25:38,048	| IOT138 |	If you are interested in where the stuff goes and I think it's smart of you to ask these questions
+EDL	00:25:40,096	00:25:41,376	| IOT138 |	There are security breaches
+EDL	00:25:42,656	00:25:43,936	| IOT138 |	Time so
+EDL	00:25:43,936	00:25:44,704	| IOT138 |	With this
+EDL	00:25:45,728	00:25:49,568	| IOT138 |	Can set up motion detection I set that up it seems pretty responsive so
+EDL	00:25:50,080	00:25:52,128	| IOT138 |	And then when I open the app
+EDL	00:25:52,128	00:25:53,408	| IOT138 |	I can see the live stream
+EDL	00:25:53,408	00:25:54,944	| IOT138 |	I can record
+EDL	00:25:54,944	00:25:57,248	| IOT138 |	My voice and talk to people
+EDL	00:25:57,248	00:25:58,016	| IOT138 |	Over the cap
+EDL	00:25:58,016	00:25:58,784	| IOT138 |	Camera so that
+EDL	00:25:58,784	00:26:00,320	| IOT138 |	That's good I can hear stuff
+EDL	00:26:00,832	00:26:01,344	| IOT138 |	My sound off
+EDL	00:26:01,856	00:26:03,136	| IOT138 |	I can hear stuff if I want
+EDL	00:26:03,904	00:26:05,440	| IOT138 |	There is night vision
+EDL	00:26:05,952	00:26:08,000	| IOT138 |	That seems to be pretty good although I haven't
+EDL	00:26:08,000	00:26:09,024	| IOT138 |	Play with it in the app
+EDL	00:26:10,304	00:26:11,328	| IOT138 |	End
+EDL	00:26:11,328	00:26:12,608	| IOT138 |	If you go under settings
+EDL	00:26:13,120	00:26:13,888	| IOT138 |	You can send
+EDL	00:26:14,400	00:26:16,192	| IOT138 |	Vocal recording to a MicroSD card
+EDL	00:26:17,216	00:26:19,264	| IOT138 |	So for twenty bucks
+EDL	00:26:19,264	00:26:22,080	| IOT138 |	Sounds great Scott the SD card slot if you
+EDL	00:26:22,080	00:26:25,920	| IOT138 |	Don't want to send the data to the storage card
+EDL	00:26:25,920	00:26:28,736	| IOT138 |	Where can you save it or does it get sent to
+EDL	00:26:28,736	00:26:30,528	| IOT138 |	It seems it on the app
+EDL	00:26:30,528	00:26:31,040	| IOT138 |	And then it shows
+EDL	00:26:32,320	00:26:32,832	| IOT138 |	Photos on
+EDL	00:26:33,856	00:26:36,160	| IOT138 |	Okay so it's not going to the cloud
+EDL	00:26:36,160	00:26:36,672	| IOT138 |	Does not appear
+EDL	00:26:38,720	00:26:40,768	| IOT138 |	Okay then there's a reason I ask this
+EDL	00:26:40,768	00:26:41,536	| IOT138 |	That's because
+EDL	00:26:41,536	00:26:43,328	| IOT138 |	I don't think we've yet figured out what the
+EDL	00:26:43,840	00:26:50,240	| IOT138 |	Portico best and safest practices here for webcams because why don't we send the data to the cloud
+EDL	00:26:50,240	00:26:51,264	| IOT138 |	Well cuz we don't want
+EDL	00:26:51,264	00:26:53,056	| IOT138 |	The companies to
+EDL	00:26:53,056	00:26:53,824	| IOT138 |	Have it
+EDL	00:26:53,824	00:26:54,848	| IOT138 |	Can hack and so on and so forth
+EDL	00:26:55,360	00:26:58,432	| IOT138 |	So you want an SD card slot okay that makes sense to
+EDL	00:26:58,432	00:26:59,712	| IOT138 |	Which this. Is which is awesome
+EDL	00:27:00,224	00:27:03,040	| IOT138 |	But if I'm breaking through the house and I see this thing
+EDL	00:27:03,040	00:27:05,088	| IOT138 |	And I noticed there's a little
+EDL	00:27:05,088	00:27:06,112	| IOT138 |	I'm making that card out
+EDL	00:27:08,160	00:27:08,672	| IOT138 |	Rob my house
+EDL	00:27:09,184	00:27:12,000	| IOT138 |	I mean I know it's an extreme example and I know what most people
+EDL	00:27:12,000	00:27:14,560	| IOT138 |	Breaking into a house that probably aren't going to notice this but
+EDL	00:27:14,560	00:27:17,632	| IOT138 |	I just there's like no guarantee you'd have the date at that point
+EDL	00:27:18,144	00:27:19,936	| IOT138 |	This is the same debate I had
+EDL	00:27:19,936	00:27:22,752	| IOT138 |	Like 10 years ago when I started uploading all my CDs
+EDL	00:27:22,752	00:27:23,520	| IOT138 |	Is 2
+EDL	00:27:23,520	00:27:24,288	| IOT138 |	My
+EDL	00:27:24,288	00:27:25,312	| IOT138 |	Terabyte drive
+EDL	00:27:25,312	00:27:29,408	| IOT138 |	I was like I have converted all my CDs to you know
+EDL	00:27:29,408	00:27:30,432	| IOT138 |	Flac files
+EDL	00:27:30,432	00:27:32,480	| IOT138 |	And it took a long time it was a lot of work
+EDL	00:27:32,480	00:27:33,248	| IOT138 |	Working then
+EDL	00:27:33,248	00:27:34,528	| IOT138 |	I put them on my
+EDL	00:27:34,528	00:27:37,344	| IOT138 |	Local hardware but then I was like what happens if this fails
+EDL	00:27:37,856	00:27:39,904	| IOT138 |	So then I was like okay I'll buy Carbonite backup
+EDL	00:27:40,928	00:27:41,696	| IOT138 |	This is
+EDL	00:27:41,696	00:27:43,232	| IOT138 |	It's the same kind of situation
+EDL	00:27:45,024	00:27:49,632	| IOT138 |	Yeah but it's a dilemma that I think is it's more personal here because now it's pictures inside your house
+EDL	00:27:50,656	00:27:52,704	| IOT138 |	So I think people need to decide
+EDL	00:27:52,704	00:27:53,728	| IOT138 |	Am I going to trust
+EDL	00:27:53,728	00:27:55,264	| IOT138 |	Any company with this
+EDL	00:27:55,264	00:27:58,848	| IOT138 |	And if so pick that company and get a camera that works with that company
+EDL	00:27:58,848	00:28:00,384	| IOT138 |	Or no I'm not going to
+EDL	00:28:00,384	00:28:06,784	| IOT138 |	Trusted company have an SD card slot and manage it myself and hope that nobody takes the card slot or just walks away with a camera
+EDL	00:28:06,784	00:28:11,136	| IOT138 |	And I'm in if they walk away the camera then they walk away with the SD card
+EDL	00:28:11,136	00:28:12,160	| IOT138 |	Portable
+EDL	00:28:12,160	00:28:13,440	| IOT138 |	It's exactly
+EDL	00:28:14,720	00:28:17,024	| IOT138 |	Yes I mean it's it looks like a camera
+EDL	00:28:19,840	00:28:24,704	| IOT138 |	You can tell it would have signs you can tell it's a camera I mean ultimately what I guess what we really want is
+EDL	00:28:24,704	00:28:26,496	| IOT138 |	Hidden camera so to speak to that way
+EDL	00:28:27,008	00:28:28,544	| IOT138 |	You wouldn't have to worry about somebody walk
+EDL	00:28:28,544	00:28:30,080	| IOT138 |	And or the data on it
+EDL	00:28:30,592	00:28:32,640	| IOT138 |	Well then you can turn the indicator light on or off
+EDL	00:28:33,152	00:28:34,944	| IOT138 |	So I could put this in and out of
+EDL	00:28:36,480	00:28:40,064	| IOT138 |	See I returned that indicator off if I'm going to store to an SD card together
+EDL	00:28:41,856	00:28:43,136	| IOT138 |	I will also tell you guys
+EDL	00:28:43,648	00:28:44,672	| IOT138 |	I rather you go I will tell
+EDL	00:28:45,440	00:28:46,976	| IOT138 |	Netatmo
+EDL	00:28:46,976	00:28:49,792	| IOT138 |	Welcome camera also stores data to
+EDL	00:28:49,792	00:28:51,584	| IOT138 |	Either an SD card or your own
+EDL	00:28:52,096	00:28:52,608	| IOT138 |	To be server
+EDL	00:28:53,120	00:28:54,912	| IOT138 |	Which might be an interesting
+EDL	00:28:54,912	00:28:55,424	| IOT138 |	Way to
+EDL	00:28:55,936	00:28:57,728	| IOT138 |	If you set it up to the store to your server
+EDL	00:28:59,008	00:28:59,776	| IOT138 |	Someone
+EDL	00:28:59,776	00:29:00,544	| IOT138 |	You have to take your server
+EDL	00:29:02,848	00:29:04,896	| IOT138 |	Yep I'm making that again
+EDL	00:29:04,896	00:29:06,176	| IOT138 |	So
+EDL	00:29:06,176	00:29:09,248	| IOT138 |	It's a nice camera I like it alot I like it actually more than the
+EDL	00:29:09,248	00:29:10,272	| IOT138 |	Best camps
+EDL	00:29:10,272	00:29:10,784	| IOT138 |	So
+EDL	00:29:12,064	00:29:16,160	| IOT138 |	Although some people complain about that Atmos customer service and they are not wrong to
+EDL	00:29:16,160	00:29:18,208	| IOT138 |	Is there a French company and they tend to be
+EDL	00:29:18,208	00:29:19,488	| IOT138 |	Less responsive
+EDL	00:29:19,488	00:29:20,768	| IOT138 |	They are eventually respond
+EDL	00:29:21,792	00:29:22,304	| IOT138 |	They're not
+EDL	00:29:23,840	00:29:25,376	| IOT138 |	That is
+EDL	00:29:25,376	00:29:26,400	| IOT138 |	Really all the news
+EDL	00:29:26,400	00:29:27,168	| IOT138 |	To print this week
+EDL	00:29:29,984	00:29:32,544	| IOT138 |	Cabinet
+EDL	00:29:35,360	00:29:36,128	| IOT138 |	You can say hi to us
+EDL	00:29:36,128	00:29:36,640	| IOT138 |	PCS around
+EDL	00:29:37,152	00:29:40,480	| IOT138 |	Too at the end of November November 30th I will be
+EDL	00:29:40,992	00:29:44,064	| IOT138 |	Hosting an event at the Target open house
+EDL	00:29:44,064	00:29:46,112	| IOT138 |	Talk about iot business models with
+EDL	00:29:46,624	00:29:47,392	| IOT138 |	Schlage
+EDL	00:29:47,392	00:29:48,160	| IOT138 |	Canary
+EDL	00:29:48,160	00:29:48,928	| IOT138 |	And
+EDL	00:29:48,928	00:29:49,440	| IOT138 |	Hi
+EDL	00:29:49,952	00:29:52,768	| IOT138 |	So we'll be talking about how to establish trust between
+EDL	00:29:52,768	00:29:53,280	| IOT138 |	Can users
+EDL	00:29:53,792	00:29:57,120	| IOT138 |	Why companies may need to charge for things and I'll come
+EDL	00:29:57,120	00:30:00,960	| IOT138 |	So if you are in San Francisco November 30th
+EDL	00:30:00,960	00:30:02,240	| IOT138 |	You should come to that event
+EDL	00:30:02,752	00:30:04,032	| IOT138 |	Will leave a link in the show notes
+EDL	00:30:04,544	00:30:05,568	| IOT138 |	I think
+EDL	00:30:05,568	00:30:07,104	| IOT138 |	That is it for
+EDL	00:30:07,104	00:30:09,664	| IOT138 |	Are section that stay tuned for a message
+EDL	00:30:10,176	00:30:11,456	| IOT138 |	Our sponsor and
+EDL	00:30:11,968	00:30:17,344	| IOT138 |	An interview with Michael Sherwood who is the director of technology and Innovation for the city of Las Vegas
+EDL	00:30:17,344	00:30:20,160	| IOT138 |	He talks about some really cool stuff
+EDL	00:30:20,160	00:30:26,560	| IOT138 |	And if you're going to say yes you'll be able to see it in person
+EDL	00:30:26,560	00:30:31,936	| IOT138 |	From The Internet of Things podcast from our sponsor
+EDL	00:30:31,936	00:30:36,032	| IOT138 |	Cognition and I've got Stewart killing here to talk to us about
+EDL	00:30:36,544	00:30:39,104	| IOT138 |	Promise is critical infrastructure
+EDL	00:30:39,616	00:30:40,384	| IOT138 |	The powers
+EDL	00:30:40,384	00:30:41,152	| IOT138 |	Just about
+EDL	00:30:41,920	00:30:43,456	| IOT138 |	Alright Stewart
+EDL	00:30:43,456	00:30:48,320	| IOT138 |	Sparkcognition is using a improve safety and reliability
+EDL	00:30:48,832	00:30:51,648	| IOT138 |	Can you give me some real examples of ways that utilities
+EDL	00:30:52,160	00:30:53,440	| IOT138 |	Are using
+EDL	00:30:53,440	00:30:55,744	| IOT138 |	To offer more advanced
+EDL	00:30:56,512	00:30:57,280	| IOT138 |	Capabilities
+EDL	00:30:57,280	00:30:59,840	| IOT138 |	Absolutely for example we're working with
+EDL	00:30:59,840	00:31:01,120	| IOT138 |	One of the largest
+EDL	00:31:01,120	00:31:03,680	| IOT138 |	Producers of wind energy in the country invenergy
+EDL	00:31:03,680	00:31:05,216	| IOT138 |	And we're working with them
+EDL	00:31:05,216	00:31:05,984	| IOT138 |	To be able to
+EDL	00:31:05,984	00:31:06,752	| IOT138 |	To help.
+EDL	00:31:07,520	00:31:08,288	| IOT138 |	Specific
+EDL	00:31:08,288	00:31:10,080	| IOT138 |	Donuts on their wind turbines
+EDL	00:31:10,080	00:31:12,128	| IOT138 |	Very specifically on there
+EDL	00:31:12,128	00:31:12,640	| IOT138 |	Gearbox
+EDL	00:31:13,152	00:31:15,968	| IOT138 |	On turbine and what we're doing is we're taking the same techniques
+EDL	00:31:16,992	00:31:17,760	| IOT138 |	Facial intelligence
+EDL	00:31:17,760	00:31:19,552	| IOT138 |	Machine learning algorithms
+EDL	00:31:19,552	00:31:21,344	| IOT138 |	Using our Technologies in art
+EDL	00:31:21,344	00:31:23,648	| IOT138 |	Tools and what we're providing them is
+EDL	00:31:23,648	00:31:24,672	| IOT138 |	Lead time
+EDL	00:31:24,672	00:31:26,464	| IOT138 |	In terms of failure
+EDL	00:31:26,464	00:31:26,976	| IOT138 |	Prediction
+EDL	00:31:27,488	00:31:28,256	| IOT138 |	For the
+EDL	00:31:28,256	00:31:29,024	| IOT138 |	Gearbox
+EDL	00:31:29,024	00:31:30,048	| IOT138 |	Does AKA
+EDL	00:31:30,048	00:31:31,072	| IOT138 |	Opponents of the
+EDL	00:31:31,584	00:31:33,120	| IOT138 |	Turbine are about to sail
+EDL	00:31:33,632	00:31:37,728	| IOT138 |	I love it so how can machine learning improve equipment reliability and
+EDL	00:31:37,728	00:31:39,520	| IOT138 |	Performance
+EDL	00:31:40,032	00:31:42,592	| IOT138 |	We're working with some of the leading utilities
+EDL	00:31:42,592	00:31:44,640	| IOT138 |	We're looking at operations on their gas
+EDL	00:31:45,664	00:31:48,736	| IOT138 |	Part of that what we're able to do is we're able to identify
+EDL	00:31:48,736	00:31:49,504	| IOT138 |	Operation
+EDL	00:31:49,504	00:31:50,528	| IOT138 |	Conditions that
+EDL	00:31:50,528	00:31:51,552	| IOT138 |	Their subject matter expert
+EDL	00:31:52,064	00:31:52,832	| IOT138 |	Want to wear a
+EDL	00:31:52,832	00:31:54,624	| IOT138 |	Before implementing an AI tool
+EDL	00:31:55,392	00:31:56,416	| IOT138 |	What this allows them to
+EDL	00:31:56,416	00:31:57,184	| IOT138 |	To do is run
+EDL	00:31:57,184	00:31:58,464	| IOT138 |	Machinery more efficient
+EDL	00:31:58,464	00:32:00,000	| IOT138 |	Understand better
+EDL	00:32:00,000	00:32:01,792	| IOT138 |	When it needs to be taken offline
+EDL	00:32:01,792	00:32:02,560	| IOT138 |	Scheduled
+EDL	00:32:02,560	00:32:04,352	| IOT138 |	Maintenance and really this helps
+EDL	00:32:04,352	00:32:06,400	| IOT138 |	Improve their bottom line both from
+EDL	00:32:06,400	00:32:07,936	| IOT138 |	Keeping the machine running
+EDL	00:32:07,936	00:32:09,472	| IOT138 |	As well as reducing maintenance
+EDL	00:32:09,472	00:32:11,520	| IOT138 |	Cost from unexpected breakdown
+EDL	00:32:11,520	00:32:12,288	| IOT138 |	Failures
+EDL	00:32:12,288	00:32:14,080	| IOT138 |	Okay so you mentioned humans
+EDL	00:32:14,080	00:32:16,128	| IOT138 |	What is the role of human subject matter
+EDL	00:32:17,664	00:32:18,176	| IOT138 |	Machine learning
+EDL	00:32:18,944	00:32:21,760	| IOT138 |	We still find that there's a tremendous value in the
+EDL	00:32:21,760	00:32:22,528	| IOT138 |	The subject matter expert
+EDL	00:32:23,040	00:32:24,320	| IOT138 |	As you mentioned them humans
+EDL	00:32:24,320	00:32:25,600	| IOT138 |	May I at least in
+EDL	00:32:25,600	00:32:28,416	| IOT138 |	Some of the industrial world where it can be sort of Celsius
+EDL	00:32:28,416	00:32:29,184	| IOT138 |	Sustaining
+EDL	00:32:29,184	00:32:31,744	| IOT138 |	There's still a lot of information about
+EDL	00:32:31,744	00:32:32,768	| IOT138 |	We might come up with
+EDL	00:32:32,768	00:32:33,280	| IOT138 |	The result
+EDL	00:32:33,792	00:32:35,584	| IOT138 |	And we really need the humans
+EDL	00:32:35,584	00:32:37,120	| IOT138 |	To help us understand
+EDL	00:32:37,120	00:32:38,144	| IOT138 |	What does
+EDL	00:32:38,144	00:32:38,912	| IOT138 |	Results are telling
+EDL	00:32:39,424	00:32:40,960	| IOT138 |	So our goal isn't necessarily.
+EDL	00:32:41,472	00:32:42,240	| IOT138 |	Replace the humor
+EDL	00:32:42,240	00:32:44,288	| IOT138 |	Can we augment their capability
+EDL	00:32:44,800	00:32:47,104	| IOT138 |	Instead of them taking a shotgun approach
+EDL	00:32:47,104	00:32:48,128	| IOT138 |	Looking at every
+EDL	00:32:48,128	00:32:50,944	| IOT138 |	Machine all the time because they really don't understand
+EDL	00:32:50,944	00:32:52,480	| IOT138 |	If we can help them with a i
+EDL	00:32:52,992	00:32:54,784	| IOT138 |	Focus their information Focus
+EDL	00:32:54,784	00:32:55,296	| IOT138 |	Is there knowledge
+EDL	00:32:55,808	00:32:57,088	| IOT138 |	Specific use cases
+EDL	00:32:57,088	00:32:57,856	| IOT138 |	Pacific problem
+EDL	00:32:58,880	00:33:00,160	| IOT138 |	Seen and then allow them to
+EDL	00:33:00,672	00:33:01,184	| IOT138 |	Is there expert
+EDL	00:33:01,696	00:33:02,720	| IOT138 |	They can augment
+EDL	00:33:03,232	00:33:03,744	| IOT138 |	The outcomes
+EDL	00:33:04,512	00:33:05,536	| IOT138 |	Lisa thinking about
+EDL	00:33:05,536	00:33:06,304	| IOT138 |	Facebook
+EDL	00:33:06,304	00:33:08,352	| IOT138 |	If we can start showing examples
+EDL	00:33:08,352	00:33:09,376	| IOT138 |	Mudding to humans
+EDL	00:33:09,376	00:33:10,656	| IOT138 |	Hit the like button
+EDL	00:33:10,656	00:33:11,424	| IOT138 |	On
+EDL	00:33:11,424	00:33:13,216	| IOT138 |	Titan Machinery to weather a
+EDL	00:33:13,216	00:33:14,240	| IOT138 |	Results was good
+EDL	00:33:14,240	00:33:15,520	| IOT138 |	More bad then
+EDL	00:33:15,520	00:33:16,800	| IOT138 |	The machine can start learning
+EDL	00:33:16,800	00:33:20,384	| IOT138 |	And eventually it can improve its results that the humans are
+EDL	00:33:20,384	00:33:23,200	| IOT138 |	Where can I go to find out
+EDL	00:33:23,200	00:33:24,480	| IOT138 |	Tsac your listeners
+EDL	00:33:24,480	00:33:27,808	| IOT138 |	Can go to www. Smart cognition. Com
+EDL	00:33:34,976	00:33:37,792	| IOT138 |	Hey everyone welcome back to the Internet of Things podcast
+EDL	00:33:38,304	00:33:44,704	| IOT138 |	Stacey Higginbotham and today's guest is Michael Sherwood who is director of technology and
+EDL	00:33:44,704	00:33:47,520	| IOT138 |	An innovation for the city of Las Vegas
+EDL	00:33:47,520	00:33:48,544	| IOT138 |	Hi Michael how are you doing today
+EDL	00:33:49,056	00:33:50,592	| IOT138 |	I'm doing well thank you for having me
+EDL	00:33:51,104	00:33:52,896	| IOT138 |	Excited because
+EDL	00:33:52,896	00:33:54,944	| IOT138 |	Cuz I went to Vegas a couple weeks ago
+EDL	00:33:55,456	00:33:58,016	| IOT138 |	And Michael took me on this wonderful tour
+EDL	00:33:58,016	00:34:00,320	| IOT138 |	Around central or Vegas downtown Las Vegas
+EDL	00:34:00,832	00:34:02,624	| IOT138 |	Downtown is correct
+EDL	00:34:03,136	00:34:08,768	| IOT138 |	And I got to see all kinds of crazy street lights and things that most normal people would not be excited about
+EDL	00:34:10,048	00:34:12,096	| IOT138 |	The thing that most impressed me though
+EDL	00:34:12,608	00:34:13,376	| IOT138 |	Was
+EDL	00:34:13,376	00:34:14,144	| IOT138 |	Is it you
+EDL	00:34:14,144	00:34:17,984	| IOT138 |	You're the coolest job in the world so you are thinking about how to make cities smarter
+EDL	00:34:17,984	00:34:19,264	| IOT138 |	Not just any
+EDL	00:34:19,264	00:34:22,592	| IOT138 |	Stereotypical hey let's put a lot of sensors and cameras on lamp posts
+EDL	00:34:22,592	00:34:23,104	| IOT138 |	Switch we will talk
+EDL	00:34:23,616	00:34:26,432	| IOT138 |	But you seem to have a broader vision of how to make the city
+EDL	00:34:26,944	00:34:27,968	| IOT138 |	So let's
+EDL	00:34:27,968	00:34:30,528	| IOT138 |	Heart with your overall what's your pervy
+EDL	00:34:30,528	00:34:31,296	| IOT138 |	What is it
+EDL	00:34:31,296	00:34:32,320	| IOT138 |	That you're there to do in
+EDL	00:34:33,344	00:34:34,112	| IOT138 |	Willis
+EDL	00:34:34,112	00:34:35,648	| IOT138 |	To connect the community
+EDL	00:34:35,648	00:34:38,208	| IOT138 |	And provide new avenues of a fish
+EDL	00:34:38,208	00:34:42,304	| IOT138 |	C4 citizens and I like to call people that come to the city consumers
+EDL	00:34:42,304	00:34:43,328	| IOT138 |	Whether you live here
+EDL	00:34:43,840	00:34:45,376	| IOT138 |	Or you're visiting your
+EDL	00:34:45,376	00:34:46,656	| IOT138 |	Assuming our product
+EDL	00:34:46,656	00:34:48,704	| IOT138 |	We want to do is really have
+EDL	00:34:48,704	00:34:49,984	| IOT138 |	Your experience
+EDL	00:34:49,984	00:34:52,800	| IOT138 |	In Las Vegas be one-of-a-kind and if we can do that
+EDL	00:34:52,800	00:34:54,080	| IOT138 |	Through iot
+EDL	00:34:54,080	00:34:56,128	| IOT138 |	Technology to LP transversal
+EDL	00:34:56,128	00:34:59,968	| IOT138 |	City a little bit more efficiently provide you with locations
+EDL	00:34:59,968	00:35:00,736	| IOT138 |	Parking
+EDL	00:35:00,736	00:35:04,576	| IOT138 |	Make the air around you more enjoyable or healthy
+EDL	00:35:04,576	00:35:07,904	| IOT138 |	I just provide you a level of safety that you have while you're here
+EDL	00:35:08,416	00:35:09,952	| IOT138 |	What is extremely important in
+EDL	00:35:09,952	00:35:11,232	| IOT138 |	We really believe
+EDL	00:35:11,232	00:35:14,560	| IOT138 |	The iot and The Internet of Things in general
+EDL	00:35:14,560	00:35:16,864	| IOT138 |	Play a major role in that experience
+EDL	00:35:17,376	00:35:19,680	| IOT138 |	All right in a lot of people are really
+EDL	00:35:19,680	00:35:20,192	| IOT138 |	Stoat
+EDL	00:35:20,704	00:35:21,216	| IOT138 |	About smarts
+EDL	00:35:21,728	00:35:24,032	| IOT138 |	But it's also a huge
+EDL	00:35:24,032	00:35:26,848	| IOT138 |	It's a huge project you can't just wave a magic wand
+EDL	00:35:26,848	00:35:29,664	| IOT138 |	Or if your Google I guess you can buy 800 acres
+EDL	00:35:29,664	00:35:31,456	| IOT138 |	In Toronto and just rebuild
+EDL	00:35:31,456	00:35:32,224	| IOT138 |	But
+EDL	00:35:32,224	00:35:35,296	| IOT138 |	As someone who's working with an existing infrastructure
+EDL	00:35:35,296	00:35:37,856	| IOT138 |	What do you think are the first things a city should
+EDL	00:35:37,856	00:35:38,624	| IOT138 |	Maybe
+EDL	00:35:38,624	00:35:41,184	| IOT138 |	Connect or maybe it's just the first things they should consider
+EDL	00:35:41,184	00:35:44,512	| IOT138 |	I think the first thing to consider is starting something have a plan
+EDL	00:35:44,512	00:35:46,816	| IOT138 |	Understand what your priorities are we have
+EDL	00:35:46,816	00:35:47,584	| IOT138 |	5 priority
+EDL	00:35:48,096	00:35:50,144	| IOT138 |	But I understand what those priorities are
+EDL	00:35:50,656	00:35:56,544	| IOT138 |	Have a plan but I think a lot of my peers the thing is they don't start anything they talk a lot they have a lot of plans
+EDL	00:35:56,544	00:35:57,568	| IOT138 |	He never actually X
+EDL	00:35:57,568	00:36:00,384	| IOT138 |	Anything I think what we do uniquely here
+EDL	00:36:00,384	00:36:02,432	| IOT138 |	Is we do lots of pilot project
+EDL	00:36:02,432	00:36:03,968	| IOT138 |	And try a lots of
+EDL	00:36:03,968	00:36:04,480	| IOT138 |	For technology
+EDL	00:36:04,992	00:36:06,016	| IOT138 |	Find out
+EDL	00:36:06,016	00:36:07,808	| IOT138 |	Nothing like in a real lab environment
+EDL	00:36:08,320	00:36:09,088	| IOT138 |	Knowing
+EDL	00:36:09,088	00:36:11,392	| IOT138 |	If something works or doesn't you really don't know
+EDL	00:36:11,904	00:36:15,744	| IOT138 |	You put it out into the field the downtown Las Vegas area we really set up as a
+EDL	00:36:15,744	00:36:18,048	| IOT138 |	Technology we caught the Innovation District
+EDL	00:36:18,048	00:36:20,096	| IOT138 |	Are we set up this area we can really
+EDL	00:36:20,096	00:36:20,864	| IOT138 |	Test
+EDL	00:36:20,864	00:36:21,888	| IOT138 |	Improve out things
+EDL	00:36:22,400	00:36:23,936	| IOT138 |	Before we make large investment
+EDL	00:36:24,448	00:36:26,240	| IOT138 |	In any one particular technology
+EDL	00:36:28,288	00:36:29,568	| IOT138 |	People tracking in The Innovation disc
+EDL	00:36:30,080	00:36:31,616	| IOT138 |	To count things like hay
+EDL	00:36:31,616	00:36:33,920	| IOT138 |	There are x number of people who walked by this place
+EDL	00:36:33,920	00:36:37,760	| IOT138 |	In a given time. And that's great for the economic
+EDL	00:36:38,784	00:36:39,808	| IOT138 |	Chotu
+EDL	00:36:39,808	00:36:40,576	| IOT138 |	Like Starbucks
+EDL	00:36:40,576	00:36:42,880	| IOT138 |	Yeah that's that mean we've had really good
+EDL	00:36:42,880	00:36:43,648	| IOT138 |	Exceso
+EDL	00:36:43,648	00:36:47,488	| IOT138 |	We have now 50 of Those sensors throughout the downtown area
+EDL	00:36:47,488	00:36:49,536	| IOT138 |	And we're counting not just people but
+EDL	00:36:50,048	00:36:52,096	| IOT138 |	The difference between Motor Vehicles
+EDL	00:36:52,096	00:36:53,120	| IOT138 |	Pedestrian
+EDL	00:36:53,120	00:36:53,888	| IOT138 |	And cycle
+EDL	00:36:54,912	00:36:55,936	| IOT138 |	So now we're able to
+EDL	00:36:55,936	00:36:57,984	| IOT138 |	Take that data and show Developers
+EDL	00:36:58,496	00:37:00,288	| IOT138 |	And local business owners
+EDL	00:37:00,288	00:37:02,848	| IOT138 |	Here's the amount of people that foot traffic that comes
+EDL	00:37:02,848	00:37:03,616	| IOT138 |	By weather
+EDL	00:37:03,616	00:37:09,248	| IOT138 |	Vehicle and it's important to know if it's in a vehicle or walking by your location and in the past
+EDL	00:37:09,248	00:37:13,600	| IOT138 |	The city would only send a surveyor out maybe once a year and it was sitting in a lawn chair in
+EDL	00:37:13,600	00:37:18,464	| IOT138 |	Everything manually now we have these sensors that are constantly on 24 hours a day
+EDL	00:37:18,464	00:37:19,744	| IOT138 |	7 days a week
+EDL	00:37:19,744	00:37:21,536	| IOT138 |	And now we'll start we have these traffic
+EDL	00:37:21,536	00:37:27,680	| IOT138 |	Patterns now that we can actually see the number of people and then if they're in a vehicle versus pedestrian versus a cyclist
+EDL	00:37:28,448	00:37:30,496	| IOT138 |	And we really think economic wise
+EDL	00:37:30,496	00:37:31,520	| IOT138 |	That's going to be so
+EDL	00:37:31,520	00:37:33,824	| IOT138 |	Great data that are Developers
+EDL	00:37:33,824	00:37:36,384	| IOT138 |	And other business people will be excited about as well
+EDL	00:37:36,896	00:37:39,200	| IOT138 |	So let's go back to the Innovation District
+EDL	00:37:39,200	00:37:40,992	| IOT138 |	Because this is what we toured
+EDL	00:37:40,992	00:37:41,760	| IOT138 |	Part of
+EDL	00:37:41,760	00:37:44,064	| IOT138 |	And just talk to me a little bit about
+EDL	00:37:44,064	00:37:45,344	| IOT138 |	How that came to be
+EDL	00:37:46,368	00:37:46,880	| IOT138 |	What you're doing
+EDL	00:37:47,904	00:37:49,952	| IOT138 |	Sure so in March of twenty
+EDL	00:37:49,952	00:37:52,000	| IOT138 |	16 to the city council designated
+EDL	00:37:52,000	00:37:56,096	| IOT138 |	A large area in the downtown Las Vegas area so for those of you that
+EDL	00:37:56,096	00:37:57,120	| IOT138 |	Are familiar with
+EDL	00:37:57,120	00:37:58,912	| IOT138 |	Las Vegas to Fremont Street
+EDL	00:37:58,912	00:37:59,936	| IOT138 |	Experienced witches
+EDL	00:37:59,936	00:38:00,704	| IOT138 |	Original
+EDL	00:38:00,704	00:38:02,240	| IOT138 |	Las Vegas and
+EDL	00:38:02,240	00:38:04,288	| IOT138 |	Incorporates several different
+EDL	00:38:04,288	00:38:05,824	| IOT138 |	Areas around it
+EDL	00:38:05,824	00:38:12,224	| IOT138 |	So when the city council built this Innovation District obviously we've included the Fremont Street which is all the casinos and hotels
+EDL	00:38:12,224	00:38:13,248	| IOT138 |	That everybody knows and loves
+EDL	00:38:13,760	00:38:15,040	| IOT138 |	About Las Vegas
+EDL	00:38:15,040	00:38:19,392	| IOT138 |	But it also includes our Medical Center where we have our County Hospital A Private Hospital
+EDL	00:38:19,392	00:38:20,928	| IOT138 |	Throw in a bunch of medical
+EDL	00:38:20,928	00:38:22,464	| IOT138 |	Support facilities around it
+EDL	00:38:22,464	00:38:24,000	| IOT138 |	Which we consider that our Medical
+EDL	00:38:24,000	00:38:25,792	| IOT138 |	Subdistrict within the innovation
+EDL	00:38:25,792	00:38:27,584	| IOT138 |	District we have some
+EDL	00:38:27,584	00:38:29,376	| IOT138 |	Business districts as well
+EDL	00:38:29,376	00:38:31,680	| IOT138 |	Business supporting the city as a whole
+EDL	00:38:31,680	00:38:33,984	| IOT138 |	We have an area of social economic
+EDL	00:38:33,984	00:38:35,520	| IOT138 |	Do we want to improve
+EDL	00:38:35,520	00:38:37,056	| IOT138 |	We have all these little mini districts
+EDL	00:38:37,568	00:38:39,360	| IOT138 |	What's in this Innovation District
+EDL	00:38:39,360	00:38:39,872	| IOT138 |	And
+EDL	00:38:40,384	00:38:42,944	| IOT138 |	Stay purpose of the Innovation District was to
+EDL	00:38:43,456	00:38:44,992	| IOT138 |	Use it as a living lab
+EDL	00:38:44,992	00:38:47,808	| IOT138 |	Truly test technology to test iot based
+EDL	00:38:47,808	00:38:51,904	| IOT138 |	Tools and services to see how they work in a real environment
+EDL	00:38:51,904	00:38:52,672	| IOT138 |	And if they would be
+EDL	00:38:52,672	00:38:53,696	| IOT138 |	Scalable
+EDL	00:38:53,696	00:38:55,232	| IOT138 |	To be able to move across
+EDL	00:38:55,232	00:38:57,280	| IOT138 |	Or the pool across the entire city
+EDL	00:38:57,792	00:39:01,120	| IOT138 |	Some of the things we are doing in the downtown area as we have
+EDL	00:39:01,120	00:39:02,144	| IOT138 |	Cameras at intersection
+EDL	00:39:02,656	00:39:04,704	| IOT138 |	That are actually analyzing
+EDL	00:39:04,704	00:39:10,592	| IOT138 |	People will believe a bag behind for security purposes was more of a security functionality we're using
+EDL	00:39:10,592	00:39:11,616	| IOT138 |	Video Analytics
+EDL	00:39:11,616	00:39:12,896	| IOT138 |	To look at parking spaces.
+EDL	00:39:14,176	00:39:15,456	| IOT138 |	Occupied or unoccupied
+EDL	00:39:15,456	00:39:18,272	| IOT138 |	Hide we're doing air quality to imagine
+EDL	00:39:18,272	00:39:22,368	| IOT138 |	89 cars at a light and it's red we're looking at sampling the air quality
+EDL	00:39:22,880	00:39:24,928	| IOT138 |	And then based on the carbon emissions
+EDL	00:39:24,928	00:39:26,976	| IOT138 |	Does Vehicles changing the light to Green
+EDL	00:39:27,488	00:39:31,072	| IOT138 |	So that we don't have carbon buildup in the downtown area
+EDL	00:39:31,072	00:39:33,376	| IOT138 |	Where people are obviously outside walking
+EDL	00:39:33,376	00:39:34,400	| IOT138 |	From venue to venue
+EDL	00:39:34,912	00:39:36,704	| IOT138 |	So we try to manage all these different
+EDL	00:39:36,704	00:39:37,472	| IOT138 |	Aspects
+EDL	00:39:37,472	00:39:38,752	| IOT138 |	We're doing other things with
+EDL	00:39:38,752	00:39:40,544	| IOT138 |	Radar now and lidar
+EDL	00:39:40,544	00:39:41,312	| IOT138 |	Where
+EDL	00:39:41,312	00:39:42,848	| IOT138 |	We are scanning intersection
+EDL	00:39:43,360	00:39:45,664	| IOT138 |	Looking for people walking into the
+EDL	00:39:45,664	00:39:46,944	| IOT138 |	The street that they do
+EDL	00:39:46,944	00:39:48,480	| IOT138 |	Then we can turn the light red
+EDL	00:39:48,480	00:39:50,528	| IOT138 |	Lots of Pilots around that
+EDL	00:39:50,528	00:39:52,064	| IOT138 |	But the data that we collect
+EDL	00:39:52,064	00:39:53,088	| IOT138 |	We make available to the
+EDL	00:39:53,088	00:39:57,184	| IOT138 |	The public as well and hoping they find ways one of their businesses or citizens
+EDL	00:39:57,184	00:40:02,048	| IOT138 |	Those are all really good in fact I learned several things just talking to you
+EDL	00:40:02,048	00:40:03,072	| IOT138 |	One was
+EDL	00:40:03,072	00:40:05,376	| IOT138 |	That you can't have one camera that does it all
+EDL	00:40:05,376	00:40:06,144	| IOT138 |	You've got
+EDL	00:40:06,144	00:40:10,240	| IOT138 |	I think I saw three cameras on a light post each one of them had a different job in your very
+EDL	00:40:10,240	00:40:12,800	| IOT138 |	Helpful in explaining why that was so
+EDL	00:40:12,800	00:40:15,104	| IOT138 |	Let's talk about some of the concrete things that you
+EDL	00:40:15,104	00:40:16,640	| IOT138 |	Learned so far
+EDL	00:40:16,640	00:40:19,712	| IOT138 |	Because I feel like when we talked about iot
+EDL	00:40:19,712	00:40:21,504	| IOT138 |	We tend to get excited about
+EDL	00:40:21,504	00:40:26,624	| IOT138 |	Really cool things that can happen but we neglect to think about all the Practical learning
+EDL	00:40:26,624	00:40:27,392	| IOT138 |	Going to place
+EDL	00:40:28,672	00:40:30,976	| IOT138 |	So things like oh yeah you need three cameras
+EDL	00:40:30,976	00:40:33,280	| IOT138 |	So I don't know if you want to pick a project that
+EDL	00:40:34,048	00:40:35,840	| IOT138 |	Changing the light for
+EDL	00:40:35,840	00:40:37,120	| IOT138 |	Cars that are idling the
+EDL	00:40:37,120	00:40:38,400	| IOT138 |	That might be an interesting thing
+EDL	00:40:38,912	00:40:39,424	| IOT138 |	Everything she learned
+EDL	00:40:39,936	00:40:41,216	| IOT138 |	Shirt woot
+EDL	00:40:41,728	00:40:44,288	| IOT138 |	Probably the most fascinating one and I get the most
+EDL	00:40:44,288	00:40:45,056	| IOT138 |	Questions on
+EDL	00:40:45,056	00:40:48,640	| IOT138 |	Stuff the most complex one in the one we probably learned the most
+EDL	00:40:48,640	00:40:50,944	| IOT138 |	As we've gone through this journey and continue our journey
+EDL	00:40:51,456	00:40:53,760	| IOT138 |	But you would think the very simplest sounds
+EDL	00:40:53,760	00:40:54,784	| IOT138 |	Sensor reaches
+EDL	00:40:54,784	00:40:55,808	| IOT138 |	Is a certain level
+EDL	00:40:55,808	00:40:56,832	| IOT138 |	Sends a signal
+EDL	00:40:56,832	00:40:57,856	| IOT138 |	That signal turns
+EDL	00:40:57,856	00:40:59,136	| IOT138 |	It changes a light green
+EDL	00:40:59,648	00:41:00,672	| IOT138 |	It sounds simple
+EDL	00:41:00,672	00:41:02,720	| IOT138 |	I penciled it out we worked on it at
+EDL	00:41:02,720	00:41:08,096	| IOT138 |	It seems very easy but no we started learning quickly was obviously there's lots of little things that we weren't even
+EDL	00:41:08,608	00:41:09,632	| IOT138 |	Paired for
+EDL	00:41:09,632	00:41:14,240	| IOT138 |	One just getting the buy-in of everybody around you think it sounds really good and
+EDL	00:41:14,240	00:41:15,008	| IOT138 |	People would want
+EDL	00:41:15,008	00:41:16,288	| IOT138 |	Partaken nut
+EDL	00:41:16,288	00:41:18,848	| IOT138 |	But as soon as you start talking about it there's a lot of
+EDL	00:41:18,848	00:41:21,152	| IOT138 |	Well do we want to do this why are we doing this
+EDL	00:41:21,152	00:41:22,944	| IOT138 |	So we had to break through Jess
+EDL	00:41:22,944	00:41:24,736	| IOT138 |	The internal politics
+EDL	00:41:24,736	00:41:25,504	| IOT138 |	Around Prague
+EDL	00:41:25,504	00:41:26,272	| IOT138 |	Just like that
+EDL	00:41:26,272	00:41:27,040	| IOT138 |	Tacitly
+EDL	00:41:27,040	00:41:27,808	| IOT138 |	Is
+EDL	00:41:27,808	00:41:29,600	| IOT138 |	Who's going to be the installer
+EDL	00:41:29,600	00:41:30,880	| IOT138 |	Obviously the city hits
+EDL	00:41:30,880	00:41:32,160	| IOT138 |	City traffic lights
+EDL	00:41:32,160	00:41:34,208	| IOT138 |	We don't want a 3rd party installer doing it so you
+EDL	00:41:34,720	00:41:35,488	| IOT138 |	You try to accommodate
+EDL	00:41:36,000	00:41:42,400	| IOT138 |	That component of who's going to be responsible who's installing who's touching what when and then when you start getting into
+EDL	00:41:42,400	00:41:43,936	| IOT138 |	Just more of
+EDL	00:41:43,936	00:41:44,960	| IOT138 |	The actual interface
+EDL	00:41:45,728	00:41:46,496	| IOT138 |	So
+EDL	00:41:46,496	00:41:48,288	| IOT138 |	The air sensor Caesars we have
+EDL	00:41:48,288	00:41:49,824	| IOT138 |	How to send it to a legacy
+EDL	00:41:49,824	00:41:50,848	| IOT138 |	Traffic system
+EDL	00:41:50,848	00:41:53,663	| IOT138 |	That's not current with what we could say current
+EDL	00:41:53,663	00:41:54,943	| IOT138 |	Software standards
+EDL	00:41:54,943	00:41:56,991	| IOT138 |	So we have to write an interface
+EDL	00:41:56,991	00:41:59,807	| IOT138 |	In order to for it to do that and then add fail-safes
+EDL	00:41:59,807	00:42:01,087	| IOT138 |	Into that interfaces
+EDL	00:42:01,087	00:42:05,695	| IOT138 |	As well and so before you know it's something that I figured would be a 3245 damp
+EDL	00:42:05,695	00:42:08,255	| IOT138 |	Implementation is now we're at 5 months
+EDL	00:42:08,255	00:42:10,047	| IOT138 |	And we're close now to actually
+EDL	00:42:10,047	00:42:10,559	| IOT138 |	Having it
+EDL	00:42:11,071	00:42:13,119	| IOT138 |	Fully work the way we intended it
+EDL	00:42:13,631	00:42:14,399	| IOT138 |	But the
+EDL	00:42:14,399	00:42:15,935	| IOT138 |	Amount of time in the
+EDL	00:42:15,935	00:42:16,703	| IOT138 |	Enforce
+EDL	00:42:16,703	00:42:17,727	| IOT138 |	Seeing things
+EDL	00:42:17,727	00:42:18,495	| IOT138 |	That came up
+EDL	00:42:19,007	00:42:21,311	| IOT138 |	Constantly required us to go back
+EDL	00:42:21,311	00:42:23,615	| IOT138 |	And evolve the project revolve to specify
+EDL	00:42:23,615	00:42:24,383	| IOT138 |	Applications
+EDL	00:42:24,383	00:42:26,431	| IOT138 |	To get to the point where we are now or we ask
+EDL	00:42:26,431	00:42:27,199	| IOT138 |	You have
+EDL	00:42:27,199	00:42:28,735	| IOT138 |	We consider a functioning
+EDL	00:42:28,735	00:42:31,039	| IOT138 |	Project same thing very similar with
+EDL	00:42:31,039	00:42:33,087	| IOT138 |	Hazard light are intersect
+EDL	00:42:33,087	00:42:36,671	| IOT138 |	Project you can use the lidar radar for two things one seeing a
+EDL	00:42:37,183	00:42:37,695	| IOT138 |	Pedestrian
+EDL	00:42:38,207	00:42:38,975	| IOT138 |	Walk across the
+EDL	00:42:38,975	00:42:41,279	| IOT138 |	Street on a green when they should be waiting
+EDL	00:42:41,279	00:42:43,071	| IOT138 |	The other thing would be for wrong way driver 210
+EDL	00:42:43,583	00:42:44,607	| IOT138 |	It's on a one-way Street if
+EDL	00:42:44,607	00:42:45,631	| IOT138 |	Cars going the wrong way
+EDL	00:42:46,143	00:42:49,727	| IOT138 |	This radar lidar system would be able to
+EDL	00:42:49,727	00:42:50,751	| IOT138 |	Have signage
+EDL	00:42:51,263	00:42:51,775	| IOT138 |	On the street
+EDL	00:42:52,287	00:42:53,567	| IOT138 |	Saying hey wrong way
+EDL	00:42:53,567	00:42:54,847	| IOT138 |	Flash of the driver host
+EDL	00:42:54,847	00:42:55,871	| IOT138 |	Reseda and stop
+EDL	00:42:55,871	00:42:56,895	| IOT138 |	And realize you're on the wrong Street
+EDL	00:42:57,407	00:42:59,199	| IOT138 |	Again sounds very simple
+EDL	00:42:59,199	00:42:59,967	| IOT138 |	In concept
+EDL	00:43:00,479	00:43:01,759	| IOT138 |	But it's actually taken
+EDL	00:43:01,759	00:43:02,527	| IOT138 |	From concept
+EDL	00:43:02,527	00:43:03,295	| IOT138 |	I'm putting it into the
+EDL	00:43:03,295	00:43:07,647	| IOT138 |	Street itself and then seeing how it operates in making all the connection
+EDL	00:43:07,647	00:43:08,415	| IOT138 |	Is a lot of it
+EDL	00:43:08,415	00:43:09,695	| IOT138 |	Just the ticking this
+EDL	00:43:09,695	00:43:11,999	| IOT138 |	Newer iot technology and have it work
+EDL	00:43:11,999	00:43:13,023	| IOT138 |	With more Legacy taipei
+EDL	00:43:13,535	00:43:14,815	| IOT138 |	Systems that just weren't designed
+EDL	00:43:15,327	00:43:17,631	| IOT138 |	To accept the input that were trying to give
+EDL	00:43:18,143	00:43:20,959	| IOT138 |	I'm working through that it's just takes a lot longer than in
+EDL	00:43:21,983	00:43:24,799	| IOT138 |	What about so that's fair I deal with that whatever
+EDL	00:43:26,335	00:43:27,103	| IOT138 |	Can imagine
+EDL	00:43:27,103	00:43:28,895	| IOT138 |	When Public Safety is on the line
+EDL	00:43:29,919	00:43:31,967	| IOT138 |	How much time do you spend thinking about
+EDL	00:43:31,967	00:43:33,247	| IOT138 |	The rules of
+EDL	00:43:33,247	00:43:33,759	| IOT138 |	This kind of
+EDL	00:43:34,783	00:43:36,575	| IOT138 |	So I thought it was kind of funny
+EDL	00:43:36,575	00:43:38,879	| IOT138 |	Just thinking about oh my gosh
+EDL	00:43:38,879	00:43:40,415	| IOT138 |	There's too much traffic building up
+EDL	00:43:40,415	00:43:41,439	| IOT138 |	The air quality suffering
+EDL	00:43:41,951	00:43:42,975	| IOT138 |	Turn the light green
+EDL	00:43:42,975	00:43:47,071	| IOT138 |	Oh my gosh there's a pedestrian in the middle of the intersection don't do that
+EDL	00:43:47,071	00:43:50,143	| IOT138 |	I just got to start thinking about how complicated that kind of
+EDL	00:43:50,143	00:43:50,655	| IOT138 |	Rule setting
+EDL	00:43:51,423	00:43:52,191	| IOT138 |	Might
+EDL	00:43:52,191	00:43:57,055	| IOT138 |	B-but we discuss internal I mean so and then some of the fun things about the discussion is
+EDL	00:43:57,055	00:43:59,359	| IOT138 |	Where tacotaco at the light or in the fishing industry
+EDL	00:43:59,871	00:44:01,151	| IOT138 |	The kid was
+EDL	00:44:01,151	00:44:02,175	| IOT138 |	It's kind of a troublemaker
+EDL	00:44:02,175	00:44:03,199	| IOT138 |	Probably still in Canada
+EDL	00:44:03,199	00:44:04,991	| IOT138 |	Troublemaker you were discussing
+EDL	00:44:05,503	00:44:06,271	| IOT138 |	We actually had to come
+EDL	00:44:06,783	00:44:07,551	| IOT138 |	What ifs
+EDL	00:44:07,551	00:44:09,343	| IOT138 |	Kid on the sidewalk find out about the
+EDL	00:44:09,343	00:44:10,111	| IOT138 |	What is lidar system
+EDL	00:44:10,623	00:44:12,415	| IOT138 |	And jumps into the street and then jumps back over
+EDL	00:44:12,927	00:44:14,463	| IOT138 |	How do we
+EDL	00:44:14,463	00:44:16,767	| IOT138 |	How to prevent a bunch of people from jumping into this
+EDL	00:44:16,767	00:44:17,535	| IOT138 |	Rihanna Jump
+EDL	00:44:17,535	00:44:18,559	| IOT138 |	Back over
+EDL	00:44:18,559	00:44:20,095	| IOT138 |	And not having all the lights on
+EDL	00:44:20,095	00:44:20,607	| IOT138 |	The city turn
+EDL	00:44:21,119	00:44:21,887	| IOT138 |	Red
+EDL	00:44:21,887	00:44:23,167	| IOT138 |	Could I be a safety
+EDL	00:44:23,167	00:44:24,191	| IOT138 |	Concern
+EDL	00:44:24,191	00:44:25,215	| IOT138 |	Some kind of prom suits
+EDL	00:44:25,215	00:44:29,567	| IOT138 |	We actually do have some deep inside discussion and again we try to go towards
+EDL	00:44:29,567	00:44:33,663	| IOT138 |	You're the reason we're doing a pedestrian goes back to one of our five principles which is
+EDL	00:44:33,663	00:44:34,431	| IOT138 |	Public Safety
+EDL	00:44:34,943	00:44:35,711	| IOT138 |	And so
+EDL	00:44:35,711	00:44:38,015	| IOT138 |	We design around us but there's a lot of
+EDL	00:44:38,015	00:44:39,807	| IOT138 |	People who know is there a problem
+EDL	00:44:40,319	00:44:46,207	| IOT138 |	Accessories getting hit why are you doing this and answer is no we have a pretty low pedestrian fatality rate
+EDL	00:44:46,207	00:44:47,487	| IOT138 |	But the same time
+EDL	00:44:47,487	00:44:49,023	| IOT138 |	One fatality is one
+EDL	00:44:49,023	00:44:49,791	| IOT138 |	Too many
+EDL	00:44:49,791	00:44:51,583	| IOT138 |	So let's talk about dealing with citizens
+EDL	00:44:51,583	00:44:52,351	| IOT138 |	Because
+EDL	00:44:52,351	00:44:53,375	| IOT138 |	That is a
+EDL	00:44:53,375	00:44:54,399	| IOT138 |	Challenge
+EDL	00:44:54,399	00:44:58,751	| IOT138 |	To say the least there is concern about their concerns about privacy
+EDL	00:44:58,751	00:45:00,031	| IOT138 |	Surveillance
+EDL	00:45:00,031	00:45:01,055	| IOT138 |	They're also
+EDL	00:45:01,055	00:45:06,431	| IOT138 |	You know concerns about your taxpayer dollars and where those go so someone once told me in smart cities
+EDL	00:45:06,943	00:45:09,247	| IOT138 |	If you can't provide a citizen use case
+EDL	00:45:09,247	00:45:10,527	| IOT138 |	The city council will not
+EDL	00:45:10,527	00:45:11,039	| IOT138 |	Even listen to
+EDL	00:45:11,551	00:45:12,319	| IOT138 |	Which is probably true
+EDL	00:45:13,087	00:45:14,879	| IOT138 |	So how do you think about
+EDL	00:45:14,879	00:45:16,415	| IOT138 |	Selling this and educated
+EDL	00:45:17,183	00:45:17,695	| IOT138 |	The citizenry
+EDL	00:45:18,207	00:45:20,767	| IOT138 |	But you brought up a lot of me a lot of great points so
+EDL	00:45:22,815	00:45:25,631	| IOT138 |	Obviously privacy is a big deal a lot of people
+EDL	00:45:25,631	00:45:26,655	| IOT138 |	Have no trouble
+EDL	00:45:26,655	00:45:29,215	| IOT138 |	Going on to Facebook other social media application
+EDL	00:45:29,215	00:45:31,519	| IOT138 |	Tell everybody I'm out of town
+EDL	00:45:31,519	00:45:32,799	| IOT138 |	Having a great dinner
+EDL	00:45:32,799	00:45:34,335	| IOT138 |	And don't think anything about
+EDL	00:45:34,335	00:45:35,103	| IOT138 |	Privacy
+EDL	00:45:35,103	00:45:37,407	| IOT138 |	In that regard yet in the government space
+EDL	00:45:37,407	00:45:38,175	| IOT138 |	If I
+EDL	00:45:38,175	00:45:39,455	| IOT138 |	Put out information
+EDL	00:45:39,455	00:45:43,551	| IOT138 |	Before immediately suspect of that we already have a huge barrier
+EDL	00:45:43,551	00:45:44,575	| IOT138 |	To overcome
+EDL	00:45:44,575	00:45:46,623	| IOT138 |	I think a lot of what we're doing is
+EDL	00:45:46,623	00:45:49,439	| IOT138 |	Around education right now and letting the
+EDL	00:45:49,439	00:45:51,999	| IOT138 |	Actual population know what we're doing so
+EDL	00:45:52,511	00:45:54,303	| IOT138 |	A lot of what we're doing is not
+EDL	00:45:54,303	00:45:55,071	| IOT138 |	Users
+EDL	00:45:55,071	00:45:57,119	| IOT138 |	Pacific yet we're working on some identity manager
+EDL	00:45:57,631	00:45:58,399	| IOT138 |	Programs
+EDL	00:45:58,399	00:46:00,959	| IOT138 |	The lot of what we're doing right now in the iot space
+EDL	00:46:00,959	00:46:06,591	| IOT138 |	Is aligning what we believe our citizens needs with city council priorities
+EDL	00:46:06,591	00:46:09,663	| IOT138 |	So when we talk about providing the temperature
+EDL	00:46:09,663	00:46:10,943	| IOT138 |	And weather condition
+EDL	00:46:10,943	00:46:16,319	| IOT138 |	Google say at a city park it's not just about providing that the citizens will see that part of it and will
+EDL	00:46:16,319	00:46:18,879	| IOT138 |	Purdue sat on a website and on her mobile app so that people
+EDL	00:46:18,879	00:46:21,183	| IOT138 |	Can get that data but we're also using that data
+EDL	00:46:21,695	00:46:23,487	| IOT138 |	To find out when we need the water
+EDL	00:46:23,487	00:46:24,255	| IOT138 |	The fields
+EDL	00:46:24,255	00:46:24,767	| IOT138 |	And
+EDL	00:46:25,279	00:46:27,583	| IOT138 |	What makes sense based on
+EDL	00:46:27,583	00:46:28,351	| IOT138 |	Actual
+EDL	00:46:28,351	00:46:29,375	| IOT138 |	Conditions at
+EDL	00:46:29,375	00:46:31,679	| IOT138 |	The facility rather than just using the sprinkler timer
+EDL	00:46:32,191	00:46:33,471	| IOT138 |	And timing it daily
+EDL	00:46:33,471	00:46:34,495	| IOT138 |	So what are you saying
+EDL	00:46:34,495	00:46:35,519	| IOT138 |	Different sensors
+EDL	00:46:36,031	00:46:37,311	| IOT138 |	To achieve
+EDL	00:46:37,311	00:46:39,615	| IOT138 |	What we consider multiple successes
+EDL	00:46:39,615	00:46:43,711	| IOT138 |	But then the other piece on that is how do we use that data that were collecting
+EDL	00:46:43,711	00:46:44,735	| IOT138 |	To help better the
+EDL	00:46:44,735	00:46:46,015	| IOT138 |	The city internally
+EDL	00:46:46,015	00:46:47,551	| IOT138 |	So how do we take that
+EDL	00:46:47,551	00:46:50,367	| IOT138 |	Weather information and use it in our maintenance
+EDL	00:46:51,391	00:46:52,159	| IOT138 |	2
+EDL	00:46:52,159	00:46:55,743	| IOT138 |	Find better patterns on when the water knowing how many people are coming to
+EDL	00:46:55,743	00:46:57,023	| IOT138 |	Parking at what time
+EDL	00:46:57,023	00:46:58,559	| IOT138 |	So we can schedule maintenance
+EDL	00:46:58,559	00:46:59,839	| IOT138 |	Mission operations around
+EDL	00:46:59,839	00:47:01,631	| IOT138 |	When there's the least amount of people
+EDL	00:47:01,631	00:47:02,399	| IOT138 |	At the
+EDL	00:47:02,399	00:47:05,983	| IOT138 |	Facility a lot of data at a high level
+EDL	00:47:05,983	00:47:08,031	| IOT138 |	And then looking at how
+EDL	00:47:08,031	00:47:09,311	| IOT138 |	We can make it
+EDL	00:47:09,311	00:47:10,335	| IOT138 |	A better experience
+EDL	00:47:10,335	00:47:11,359	| IOT138 |	For all that are there
+EDL	00:47:11,359	00:47:14,175	| IOT138 |	Now we are working on other products
+EDL	00:47:14,175	00:47:16,479	| IOT138 |	And programs that use your specific
+EDL	00:47:16,991	00:47:18,015	| IOT138 |	Identity inhabit
+EDL	00:47:18,783	00:47:20,831	| IOT138 |	To build a better experience
+EDL	00:47:20,831	00:47:21,855	| IOT138 |	But on those type of
+EDL	00:47:22,367	00:47:23,135	| IOT138 |	Ideas
+EDL	00:47:23,135	00:47:26,463	| IOT138 |	One you have to opt-in for it to privacy is a very big
+EDL	00:47:26,975	00:47:29,279	| IOT138 |	Certain the laws here in our state
+EDL	00:47:29,279	00:47:31,071	| IOT138 |	Still haven't caught up to the touch
+EDL	00:47:31,071	00:47:31,839	| IOT138 |	Technology
+EDL	00:47:31,839	00:47:35,935	| IOT138 |	So that's going to be a major challenge hopefully next legislative session
+EDL	00:47:35,935	00:47:37,727	| IOT138 |	Will be able to have some additional protect
+EDL	00:47:38,239	00:47:42,591	| IOT138 |	For the consumer as far as how we can use their data or not release it
+EDL	00:47:42,591	00:47:43,615	| IOT138 |	So that there is
+EDL	00:47:43,615	00:47:44,383	| IOT138 |	Privacy
+EDL	00:47:44,383	00:47:47,455	| IOT138 |	For the individual at the same time that they have privacy
+EDL	00:47:47,455	00:47:48,735	| IOT138 |	They get the benefits
+EDL	00:47:48,735	00:47:49,759	| IOT138 |	What does technology
+EDL	00:47:49,759	00:47:50,527	| IOT138 |	You can do for them
+EDL	00:47:51,039	00:47:53,855	| IOT138 |	Let's go to your vision of the city of
+EDL	00:47:53,855	00:47:56,159	| IOT138 |	The future cuz you're putting together some crazy stuff there
+EDL	00:47:56,671	00:47:58,207	| IOT138 |	Let's visit Las Vegas in 10 years
+EDL	00:47:59,231	00:48:03,839	| IOT138 |	There's a lot I mean so we'll pick some of the bigger things off I think that I'm going to say that
+EDL	00:48:03,839	00:48:09,471	| IOT138 |	Do we really want that Amazon experience and what I mean by that I would say Amazon experience with a little touch of
+EDL	00:48:09,983	00:48:11,519	| IOT138 |	Nordstrom's in there
+EDL	00:48:11,519	00:48:13,311	| IOT138 |	Look at delivering City service
+EDL	00:48:13,311	00:48:14,591	| IOT138 |	In that same way
+EDL	00:48:14,591	00:48:16,127	| IOT138 |	Meaning when you login
+EDL	00:48:16,127	00:48:18,431	| IOT138 |	My mobile app lets you use
+EDL	00:48:18,431	00:48:23,551	| IOT138 |	Parking lot 12 downtown every week and we know that we're going to resurface that lot
+EDL	00:48:23,551	00:48:29,951	| IOT138 |	So now that we know that you use that lot we're going to now send you a push notification automatically this is hip the next two weeks you
+EDL	00:48:29,951	00:48:32,255	| IOT138 |	Use lot 13 because 12 is going to be research
+EDL	00:48:32,767	00:48:35,327	| IOT138 |	Another idea would be we noticed that you
+EDL	00:48:35,327	00:48:38,655	| IOT138 |	Sign up your son for daughter for baseball or softball
+EDL	00:48:38,655	00:48:39,679	| IOT138 |	Every year
+EDL	00:48:39,679	00:48:40,959	| IOT138 |	And bring it to you
+EDL	00:48:40,959	00:48:41,727	| IOT138 |	Additional
+EDL	00:48:41,727	00:48:42,495	| IOT138 |	Sports programs
+EDL	00:48:42,495	00:48:43,775	| IOT138 |	During the off-season
+EDL	00:48:44,287	00:48:45,055	| IOT138 |	Automatic
+EDL	00:48:45,055	00:48:47,615	| IOT138 |	If you have any go research and find out we would send you
+EDL	00:48:47,615	00:48:49,407	| IOT138 |	Apus notification saying hey
+EDL	00:48:49,407	00:48:50,687	| IOT138 |	This is for you
+EDL	00:48:50,687	00:48:51,711	| IOT138 |	This will help you
+EDL	00:48:51,711	00:48:53,503	| IOT138 |	Get additional classes at maybe
+EDL	00:48:53,503	00:48:54,271	| IOT138 |	You weren't aware of
+EDL	00:48:54,783	00:48:56,575	| IOT138 |	I'm look at that is helping Drive our Revenue
+EDL	00:48:57,087	00:48:58,879	| IOT138 |	As well as providing the end
+EDL	00:48:58,879	00:49:01,695	| IOT138 |	Consumer additional information that they wouldn't have had
+EDL	00:49:02,207	00:49:03,743	| IOT138 |	How many goes on from
+EDL	00:49:03,743	00:49:07,327	| IOT138 |	Using your phone to pay for your parking to pay your sewer bill
+EDL	00:49:07,327	00:49:08,095	| IOT138 |	Weave
+EDL	00:49:08,095	00:49:12,703	| IOT138 |	Used and started to build applications for the Amazon Echo platform
+EDL	00:49:12,703	00:49:13,983	| IOT138 |	As well as
+EDL	00:49:13,983	00:49:15,263	| IOT138 |	For Google home
+EDL	00:49:15,263	00:49:17,311	| IOT138 |	And now the Amazon show
+EDL	00:49:17,311	00:49:19,359	| IOT138 |	Which is an upgraded Amazon
+EDL	00:49:19,359	00:49:20,639	| IOT138 |	Product with a screen built
+EDL	00:49:20,639	00:49:21,407	| IOT138 |	Intuit
+EDL	00:49:21,407	00:49:22,431	| IOT138 |	So now you can ask
+EDL	00:49:22,943	00:49:23,711	| IOT138 |	AC
+EDL	00:49:23,711	00:49:24,735	| IOT138 |	As well as here
+EDL	00:49:24,735	00:49:26,527	| IOT138 |	And so really is making
+EDL	00:49:27,039	00:49:30,111	| IOT138 |	Government as transparent as possible but very
+EDL	00:49:30,111	00:49:30,623	| IOT138 |	Hi touch
+EDL	00:49:31,135	00:49:32,927	| IOT138 |	High service oriented
+EDL	00:49:32,927	00:49:35,231	| IOT138 |	Where you really feel connected
+EDL	00:49:35,231	00:49:36,511	| IOT138 |	And if you're able to get the
+EDL	00:49:36,511	00:49:39,071	| IOT138 |	Information that you need in the most timely manner
+EDL	00:49:39,071	00:49:40,095	| IOT138 |	Vanessa from everything
+EDL	00:49:40,095	00:49:42,399	| IOT138 |	From a safer environment your street light goes out on your
+EDL	00:49:42,399	00:49:42,911	| IOT138 |	Street
+EDL	00:49:43,423	00:49:44,191	| IOT138 |	As soon as it goes out
+EDL	00:49:44,703	00:49:45,983	| IOT138 |	It's not about you having
+EDL	00:49:45,983	00:49:48,799	| IOT138 |	You call us we already know what's out and hopefully
+EDL	00:49:48,799	00:49:53,919	| IOT138 |	We replace it before you even know that the lights burnt out of those a type of things that were looking at
+EDL	00:49:53,919	00:49:54,943	| IOT138 |	Do you really
+EDL	00:49:54,943	00:49:55,967	| IOT138 |	Going Beyond
+EDL	00:49:56,479	00:49:57,247	| IOT138 |	What
+EDL	00:49:57,247	00:50:00,575	| IOT138 |	Traditional government that I call up and I never get a response to
+EDL	00:50:01,087	00:50:02,367	| IOT138 |	Hey I didn't even have
+EDL	00:50:02,367	00:50:05,439	| IOT138 |	Call they called me and help me or they message
+EDL	00:50:05,439	00:50:06,975	| IOT138 |	Instant messenger
+EDL	00:50:06,975	00:50:07,487	| IOT138 |	Give me your day
+EDL	00:50:07,999	00:50:10,815	| IOT138 |	Send me an email or automatically alerted me on the app
+EDL	00:50:11,327	00:50:12,607	| IOT138 |	So it's really about that service
+EDL	00:50:12,607	00:50:14,399	| IOT138 |	Level
+EDL	00:50:14,399	00:50:16,703	| IOT138 |	I mean we're looking at doing fiber optics
+EDL	00:50:16,703	00:50:17,471	| IOT138 |	Downtown
+EDL	00:50:17,471	00:50:20,287	| IOT138 |	Where we would look at providing internet Based Services
+EDL	00:50:20,287	00:50:21,823	| IOT138 |	Everybody not just
+EDL	00:50:21,823	00:50:24,639	| IOT138 |	Two selected area stole a lot
+EDL	00:50:24,639	00:50:25,407	| IOT138 |	2
+EDL	00:50:25,407	00:50:29,759	| IOT138 |	Really give our city a competitive advantage through either education
+EDL	00:50:29,759	00:50:30,527	| IOT138 |	And Technology
+EDL	00:50:31,039	00:50:33,855	| IOT138 |	I don't see any limit the sky's kind of the limit
+EDL	00:50:33,855	00:50:35,903	| IOT138 |	As far as what we're looking at implementing and
+EDL	00:50:35,903	00:50:37,695	| IOT138 |	The technology just we will
+EDL	00:50:37,695	00:50:38,463	| IOT138 |	Yo testing
+EDL	00:50:38,975	00:50:39,743	| IOT138 |	Actually
+EDL	00:50:39,743	00:50:41,023	| IOT138 |	Deploy at one point in the future
+EDL	00:50:41,791	00:50:43,839	| IOT138 |	Alright I kind of look forward to that
+EDL	00:50:44,607	00:50:49,215	| IOT138 |	Nature vision and let me ask you one final question where does the money for all of this
+EDL	00:50:49,983	00:50:51,007	| IOT138 |	So right now
+EDL	00:50:51,007	00:50:54,591	| IOT138 |	Majority of it comes from companies that want to be here and obviously
+EDL	00:50:54,591	00:51:00,991	| IOT138 |	We have a huge technology show called CES every year so we kind of have that as an advantage more companies will put their technology and down
+EDL	00:51:00,991	00:51:02,015	| IOT138 |	Downtown at no cost
+EDL	00:51:02,527	00:51:04,831	| IOT138 |	Sublime we can test it to they can show customers
+EDL	00:51:05,343	00:51:06,367	| IOT138 |	That come to
+EDL	00:51:06,367	00:51:07,647	| IOT138 |	CES in January
+EDL	00:51:07,647	00:51:08,415	| IOT138 |	This one
+EDL	00:51:08,415	00:51:10,975	| IOT138 |	Obviously we do have a budget set aside for innovation
+EDL	00:51:11,487	00:51:13,535	| IOT138 |	This past year was $1000000
+EDL	00:51:13,535	00:51:14,815	| IOT138 |	And we've been
+EDL	00:51:14,815	00:51:17,119	| IOT138 |	Leveraging that as we do these Pilots
+EDL	00:51:17,119	00:51:17,887	| IOT138 |	And
+EDL	00:51:17,887	00:51:18,911	| IOT138 |	Additional testing
+EDL	00:51:19,423	00:51:21,727	| IOT138 |	But really down the road we kind of see
+EDL	00:51:21,727	00:51:23,007	| IOT138 |	The ability of
+EDL	00:51:23,007	00:51:23,519	| IOT138 |	Proving
+EDL	00:51:24,031	00:51:25,823	| IOT138 |	If we're able to put a technology out there
+EDL	00:51:26,335	00:51:31,711	| IOT138 |	That actually saves money so we're looking at trash can sensors right now people we have
+EDL	00:51:31,711	00:51:34,015	| IOT138 |	Physical laborers that go up and down the street
+EDL	00:51:34,015	00:51:36,575	| IOT138 |	And look at all the trash can if they're empty or full
+EDL	00:51:36,575	00:51:39,647	| IOT138 |	And no matter what right now they drive up and down and they checked
+EDL	00:51:39,647	00:51:43,487	| IOT138 |	Well if we were able to put a sensor in the trash can to say if it was empty or full
+EDL	00:51:43,999	00:51:46,047	| IOT138 |	And we didn't have to go to Every trash can ever
+EDL	00:51:46,047	00:51:46,815	| IOT138 |	Everyday
+EDL	00:51:46,815	00:51:48,095	| IOT138 |	That would be a savings
+EDL	00:51:48,095	00:51:50,399	| IOT138 |	We're looking at that those savings mechanism
+EDL	00:51:50,911	00:51:53,215	| IOT138 |	2 then be funded redirected
+EDL	00:51:53,215	00:51:58,591	| IOT138 |	Back into the Innovation fund and it would be a fun that would eventually pay for itself
+EDL	00:51:58,591	00:51:59,103	| IOT138 |	Through efficient
+EDL	00:51:59,615	00:52:01,151	| IOT138 |	And we think that is one
+EDL	00:52:01,663	00:52:03,711	| IOT138 |	Great way of long-term
+EDL	00:52:03,711	00:52:04,735	| IOT138 |	Sustainability
+EDL	00:52:04,735	00:52:07,039	| IOT138 |	A lot of what we work on with all the technology
+EDL	00:52:07,039	00:52:07,807	| IOT138 |	We're talking about
+EDL	00:52:07,807	00:52:10,111	| IOT138 |	Is sustainability how do you keep these
+EDL	00:52:10,111	00:52:10,879	| IOT138 |	It's going to just
+EDL	00:52:10,879	00:52:12,671	| IOT138 |	Can't put in 10000 sensors
+EDL	00:52:13,183	00:52:13,951	| IOT138 |	And then
+EDL	00:52:13,951	00:52:17,535	| IOT138 |	How do you keep from going after 3 years when the batteries die or you need to replace
+EDL	00:52:18,047	00:52:19,583	| IOT138 |	And what are you get the money to do that
+EDL	00:52:20,095	00:52:21,119	| IOT138 |	Exactly all right
+EDL	00:52:21,631	00:52:22,399	| IOT138 |	Michael
+EDL	00:52:22,399	00:52:23,679	| IOT138 |	You have been a Funt
+EDL	00:52:23,679	00:52:24,703	| IOT138 |	Information
+EDL	00:52:24,703	00:52:25,471	| IOT138 |	I love it
+EDL	00:52:25,471	00:52:26,751	| IOT138 |	Thank you so much for
+EDL	00:52:26,751	00:52:28,543	| IOT138 |	For coming on the show this week
+EDL	00:52:28,543	00:52:31,871	| IOT138 |	Thank you but I'd love to come back again it's been a real pleasure in
+EDL	00:52:31,871	00:52:35,967	| IOT138 |	Obviously Vegas is open to everybody so can we hope to get everybody out here and
+EDL	00:52:35,967	00:52:36,735	| IOT138 |	Enjoy it and see
+EDL	00:52:36,735	00:52:37,503	| IOT138 |	The technology we have
+EDL	00:52:38,015	00:52:39,295	| IOT138 |	Yeah if you're a CES
+EDL	00:52:39,295	00:52:39,807	| IOT138 |	This year guys
+EDL	00:52:40,319	00:52:40,831	| IOT138 |	You should actually go
+EDL	00:52:41,599	00:52:47,999	| IOT138 |	Stop out that's all for this week's Internet of Things podcast remember if you want more iot news
+EDL	00:52:47,999	00:52:54,399	| IOT138 |	Is please sign up for my newsletter at Stacey on iot. Com thanks for listening at
+EDL	00:52:54,399	00:52:55,423	| IOT138 |	I will see you next week 

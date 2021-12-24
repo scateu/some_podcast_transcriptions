@@ -1,0 +1,4603 @@
+1
+00:00:06,656 --> 00:00:11,264
+Everyone welcome to the internet
+
+2
+00:00:11,520 --> 00:00:12,032
+Things podcast
+
+3
+00:00:12,800 --> 00:00:14,080
+Does your host Stacey Higginbotham
+
+4
+00:00:14,336 --> 00:00:18,176
+And your co-host
+
+5
+00:00:18,432 --> 00:00:21,248
+Are you today about Microsoft's
+
+6
+00:00:21,504 --> 00:00:22,528
+Azure sphere
+
+7
+00:00:22,784 --> 00:00:23,808
+A new security product
+
+8
+00:00:25,088 --> 00:00:26,624
+Ross can we talk about you secure
+
+9
+00:00:26,880 --> 00:00:30,208
+Purity standards for the Enterprise for the online trust Alliance
+
+10
+00:00:30,720 --> 00:00:32,000
+We're also going to talk about
+
+11
+00:00:32,256 --> 00:00:33,280
+Apple acquisitions
+
+12
+00:00:34,048 --> 00:00:35,072
+Possible acquisition
+
+13
+00:00:35,328 --> 00:00:37,120
+New details on
+
+14
+00:00:37,376 --> 00:00:38,656
+What your August locks
+
+15
+00:00:38,912 --> 00:00:39,424
+Can talk to
+
+16
+00:00:39,680 --> 00:00:41,216
+Twilio has introduced a new
+
+17
+00:00:41,472 --> 00:00:42,240
+Iot product
+
+18
+00:00:42,752 --> 00:00:46,336
+We've got a crazy idea in transporting small pets
+
+19
+00:00:46,592 --> 00:00:49,920
+Kevin's going to review and talk about the fibaro homekit sensors
+
+20
+00:00:50,176 --> 00:00:51,200
+And our guest this week
+
+21
+00:00:51,456 --> 00:00:51,968
+Zeke is gay
+
+22
+00:00:52,224 --> 00:00:52,736
+The hunt
+
+23
+00:00:52,992 --> 00:00:54,016
+Was actually
+
+24
+00:00:54,528 --> 00:00:55,808
+The Mastermind behind
+
+25
+00:00:56,064 --> 00:00:57,088
+Azure sphere
+
+26
+00:00:57,344 --> 00:00:58,880
+So we're getting a lot of detail on
+
+27
+00:00:59,648 --> 00:01:00,160
+Plus we got him
+
+28
+00:01:00,672 --> 00:01:01,696
+From our sponsor for sure
+
+29
+00:01:01,952 --> 00:01:02,720
+And now
+
+30
+00:01:02,976 --> 00:01:05,024
+Will hear a message from one of our other sponsors
+
+31
+00:01:06,304 --> 00:01:12,448
+Is you know me so you know me platform from the makers of the free you know me after you know me
+
+32
+00:01:12,704 --> 00:01:17,824
+Is a cloud-based platform-as-a-service for companies Building Solutions for the connected home
+
+33
+00:01:18,080 --> 00:01:24,224
+You know these offerings include a cloud a server list iot platform for device manufacturers
+
+34
+00:01:24,480 --> 00:01:30,624
+Get their products to Market quickly and securely and also you know me what a powerful integration engine that connects
+
+35
+00:01:30,880 --> 00:01:37,024
+It's more than a hundred top smart home devices this week on the Stacey on iot podcast
+
+36
+00:01:37,280 --> 00:01:40,864
+Hang up their five-part series what the next billion dollar smart
+
+37
+00:01:41,120 --> 00:01:44,704
+Home startup will look like you can find part for it part 5 today
+
+38
+00:01:44,960 --> 00:01:50,848
+By visiting platform. You know me. Oh Stacey on iot
+
+39
+00:01:51,616 --> 00:01:52,640
+Okay
+
+40
+00:01:52,896 --> 00:01:53,664
+Heaven
+
+41
+00:01:54,432 --> 00:01:55,456
+This party started
+
+42
+00:01:56,480 --> 00:01:57,760
+Microsoft
+
+43
+00:01:59,808 --> 00:02:02,112
+Yeah it's going to be fun to talk about Microsoft and not
+
+44
+00:02:02,368 --> 00:02:03,648
+Talk about Windows
+
+45
+00:02:04,160 --> 00:02:06,976
+Yes so everyone was very excited about this
+
+46
+00:02:07,232 --> 00:02:09,280
+Probably the most common headline I saw was
+
+47
+00:02:09,792 --> 00:02:10,816
+Microsoft
+
+48
+00:02:15,680 --> 00:02:17,728
+Yeah I doubt they did that pizza
+
+49
+00:02:18,496 --> 00:02:21,312
+Yeah they've actually done a good chunk of
+
+50
+00:02:21,568 --> 00:02:26,432
+Work on bringing Linux to Windows desktops recently which is great to see
+
+51
+00:02:26,688 --> 00:02:30,272
+Obviously this has to do with iot devices and seizure
+
+52
+00:02:30,528 --> 00:02:31,808
+Would you say that there
+
+53
+00:02:32,064 --> 00:02:35,648
+Using a you're creating a Linux embedded OS
+
+54
+00:02:36,160 --> 00:02:36,928
+Not exactly
+
+55
+00:02:37,184 --> 00:02:41,280
+This is only for the address fear is only for security
+
+56
+00:02:41,536 --> 00:02:43,328
+So I think that's a really important
+
+57
+00:02:43,584 --> 00:02:44,608
+To note so this is
+
+58
+00:02:45,120 --> 00:02:46,656
+Obviously going to talk about it later
+
+59
+00:02:47,936 --> 00:02:48,704
+Gary Bradley
+
+60
+00:02:48,960 --> 00:02:50,752
+Is a secured microcontroller
+
+61
+00:02:51,264 --> 00:02:53,312
+It is secured OS layer
+
+62
+00:02:54,592 --> 00:02:55,104
+On top of that my
+
+63
+00:02:55,360 --> 00:02:55,872
+Microcontroller
+
+64
+00:02:56,128 --> 00:02:58,176
+It handles the back and forth between that
+
+65
+00:02:58,432 --> 00:02:59,712
+The MCU and
+
+66
+00:02:59,968 --> 00:03:00,480
+What is a
+
+67
+00:03:00,992 --> 00:03:01,760
+Secure
+
+68
+00:03:02,016 --> 00:03:02,784
+Cloud Elliman
+
+69
+00:03:03,296 --> 00:03:06,112
+So the OS is really just handling the back
+
+70
+00:03:06,368 --> 00:03:07,136
+And forth between
+
+71
+00:03:07,648 --> 00:03:08,416
+The hardware
+
+72
+00:03:08,672 --> 00:03:09,184
+And kind of
+
+73
+00:03:09,696 --> 00:03:10,208
+Brains and
+
+74
+00:03:10,464 --> 00:03:11,488
+The cloud seoul
+
+75
+00:03:12,000 --> 00:03:12,768
+What's Happening Here
+
+76
+00:03:13,536 --> 00:03:14,560
+Is the MCU
+
+77
+00:03:14,816 --> 00:03:16,352
+Who has a lot of the elements that you would
+
+78
+00:03:16,608 --> 00:03:17,120
+Expect
+
+79
+00:03:17,632 --> 00:03:18,144
+From
+
+80
+00:03:18,656 --> 00:03:19,168
+Trusted
+
+81
+00:03:19,680 --> 00:03:20,960
+Cute environment secure boot Olive
+
+82
+00:03:21,472 --> 00:03:22,496
+What is also
+
+83
+00:03:22,752 --> 00:03:23,776
+Has is
+
+84
+00:03:24,032 --> 00:03:25,824
+It also has the certificate based on the
+
+85
+00:03:26,080 --> 00:03:26,592
+Sanitation
+
+86
+00:03:27,616 --> 00:03:28,384
+He's going to
+
+87
+00:03:28,896 --> 00:03:30,432
+Communicate with the certificate granting
+
+88
+00:03:30,944 --> 00:03:31,456
+In the cloud
+
+89
+00:03:31,712 --> 00:03:32,224
+End
+
+90
+00:03:32,480 --> 00:03:34,528
+Also in the cloud
+
+91
+00:03:34,784 --> 00:03:36,832
+His threat detection so when new
+
+92
+00:03:37,088 --> 00:03:37,856
+Viruses
+
+93
+00:03:38,368 --> 00:03:39,392
+Abilities are detected
+
+94
+00:03:39,904 --> 00:03:41,184
+It's going to be able to
+
+95
+00:03:41,696 --> 00:03:42,208
+Basically
+
+96
+00:03:42,464 --> 00:03:43,488
+The check goes in
+
+97
+00:03:44,000 --> 00:03:47,328
+Tell the chip and get having a secure patching ability
+
+98
+00:03:47,840 --> 00:03:48,608
+Back down to the ship
+
+99
+00:03:49,120 --> 00:03:49,632
+If that makes sense
+
+100
+00:03:50,144 --> 00:03:51,168
+Yasso
+
+101
+00:03:51,424 --> 00:03:57,568
+Product self is the Azure sphere and then the cloud service that you mention that the security piece that's the address.
+
+102
+00:03:57,824 --> 00:04:01,152
+Security service in the cloud so this song
+
+103
+00:04:01,408 --> 00:04:07,552
+Which would not always understanding is there secure at all times
+
+104
+00:04:07,808 --> 00:04:08,832
+When they're not secure
+
+105
+00:04:09,088 --> 00:04:11,136
+And how to update the security on them
+
+106
+00:04:11,392 --> 00:04:13,952
+It has been a challenge so this should help with that
+
+107
+00:04:14,464 --> 00:04:15,232
+Yes this gives you 2
+
+108
+00:04:15,488 --> 00:04:16,512
+Detection audit
+
+109
+00:04:18,303 --> 00:04:18,815
+Zation
+
+110
+00:04:19,071 --> 00:04:20,351
+There's a lot of things that gives you
+
+111
+00:04:20,607 --> 00:04:21,119
+Now
+
+112
+00:04:21,375 --> 00:04:24,959
+The issue here is Microsoft is doing this for
+
+113
+00:04:25,215 --> 00:04:26,495
+It's open sourcing
+
+114
+00:04:26,751 --> 00:04:27,775
+That's so it's open
+
+115
+00:04:28,287 --> 00:04:30,591
+It's trying to work with all the chip vendors to get this on
+
+116
+00:04:30,847 --> 00:04:31,615
+I'm bored and
+
+117
+00:04:32,127 --> 00:04:35,711
+Will people take it that's really the question there's plenty of
+
+118
+00:04:35,967 --> 00:04:39,551
+Chip companies that have their own security standards in them anyways that's part of the problem
+
+119
+00:04:40,063 --> 00:04:40,831
+Is it
+
+120
+00:04:41,087 --> 00:04:41,855
+Fragmented Market
+
+121
+00:04:42,111 --> 00:04:45,439
+You'll never hear someone say
+
+122
+00:04:46,207 --> 00:04:46,719
+It's not
+
+123
+00:04:49,023 --> 00:04:51,839
+This feels more in line with something like Samsung
+
+124
+00:04:52,095 --> 00:04:54,911
+Arctic which has they have their secure module
+
+125
+00:04:56,703 --> 00:05:00,287
+I'm curious with Amazon could probably do something like this
+
+126
+00:05:00,543 --> 00:05:03,103
+The free artist if it wanted to Overlay security
+
+127
+00:05:03,359 --> 00:05:03,871
+Some of those
+
+128
+00:05:04,127 --> 00:05:05,151
+Thanks right so
+
+129
+00:05:05,663 --> 00:05:07,711
+They would have to do a deal also with
+
+130
+00:05:08,479 --> 00:05:08,991
+What the Chip n
+
+131
+00:05:09,247 --> 00:05:10,015
+Letters to have the hardware
+
+132
+00:05:10,527 --> 00:05:11,039
+Comment sold
+
+133
+00:05:11,295 --> 00:05:11,807
+That's a little
+
+134
+00:05:12,575 --> 00:05:13,599
+But
+
+135
+00:05:13,855 --> 00:05:14,879
+This is a good
+
+136
+00:05:15,391 --> 00:05:15,903
+Model
+
+137
+00:05:16,415 --> 00:05:17,695
+It feels like a good model
+
+138
+00:05:17,951 --> 00:05:18,463
+And
+
+139
+00:05:18,719 --> 00:05:22,303
+I am excited to see if it works it's not retroactive though so
+
+140
+00:05:22,815 --> 00:05:23,583
+Right right
+
+141
+00:05:23,839 --> 00:05:28,959
+You mentioned chip makers and trying to get them and Microsoft already has mediatek is one of the first
+
+142
+00:05:29,215 --> 00:05:35,359
+Companies to make peace microcontroller units you mentioned Arctic and that's the one challenge that Samsung doesn't have
+
+143
+00:05:35,615 --> 00:05:39,199
+Samsung does made chips are these designs chips and have some produce
+
+144
+00:05:39,711 --> 00:05:40,479
+So
+
+145
+00:05:40,991 --> 00:05:43,039
+If they wanted to do something similar
+
+146
+00:05:43,295 --> 00:05:44,575
+They could without
+
+147
+00:05:44,831 --> 00:05:45,343
+Bering
+
+148
+00:05:45,599 --> 00:05:46,879
+Chip makers are going to come on board
+
+149
+00:05:52,511 --> 00:05:53,023
+Secure
+
+150
+00:05:54,047 --> 00:05:54,559
+So
+
+151
+00:05:55,071 --> 00:05:56,607
+I don't have the block diagram
+
+152
+00:05:57,887 --> 00:05:58,399
+What
+
+153
+00:06:03,519 --> 00:06:05,055
+I can't get this
+
+154
+00:06:06,335 --> 00:06:06,847
+Come back to you on that
+
+155
+00:06:08,639 --> 00:06:09,919
+We'll see ya
+
+156
+00:06:13,759 --> 00:06:16,575
+Problem
+
+157
+00:06:16,831 --> 00:06:22,975
+I'm sure that our guess is going to get into the details even further boat in one thing is worth stressing Riverfront is Microsoft
+
+158
+00:06:23,231 --> 00:06:29,375
+On the security aspect of this through address fear but the date
+
+159
+00:06:29,631 --> 00:06:30,911
+Sent to Microsoft azure
+
+160
+00:06:31,423 --> 00:06:34,495
+Yes and we talked about all of that and we even talked about
+
+161
+00:06:34,751 --> 00:06:36,031
+When you see this
+
+162
+00:06:36,287 --> 00:06:36,799
+And
+
+163
+00:06:37,055 --> 00:06:37,823
+How
+
+164
+00:06:38,335 --> 00:06:39,615
+Little bit about how the trip is made so
+
+165
+00:06:39,871 --> 00:06:40,639
+Stay tuned for Galen
+
+166
+00:06:40,895 --> 00:06:41,663
+Because he is worth it
+
+167
+00:06:41,919 --> 00:06:42,687
+Also
+
+168
+00:06:42,943 --> 00:06:44,223
+On the security front
+
+169
+00:06:44,735 --> 00:06:46,271
+We have the online trust Alliance
+
+170
+00:06:46,527 --> 00:06:47,039
+Switch
+
+171
+00:06:48,319 --> 00:06:49,087
+Cool stuff
+
+172
+00:06:49,343 --> 00:06:52,415
+James a ringing endorsement
+
+173
+00:06:54,207 --> 00:06:55,231
+They actually created
+
+174
+00:06:55,487 --> 00:06:56,255
+Several years ago
+
+175
+00:06:56,511 --> 00:06:58,815
+They created a checklist for what to do when
+
+176
+00:06:59,071 --> 00:07:00,095
+When you move from your smartphone
+
+177
+00:07:00,351 --> 00:07:03,423
+So how did I remember
+
+178
+00:07:04,703 --> 00:07:06,751
+They've created an Enterprise iot
+
+179
+00:07:07,007 --> 00:07:07,519
+Security check
+
+180
+00:07:07,775 --> 00:07:10,847
+Quest best practices for
+
+181
+00:07:11,359 --> 00:07:12,639
+Things if you're going to have an iot Network
+
+182
+00:07:13,151 --> 00:07:15,455
+Your office and I won't call them to it
+
+183
+00:07:15,711 --> 00:07:16,479
+I won't go into all
+
+184
+00:07:16,991 --> 00:07:17,503
+There's about
+
+185
+00:07:17,759 --> 00:07:18,527
+11 or 12
+
+186
+00:07:22,111 --> 00:07:24,927
+You probably should have a guest Network or separate iot
+
+187
+00:07:25,695 --> 00:07:26,207
+Yay
+
+188
+00:07:26,463 --> 00:07:29,535
+You should update all your passwords and don't use products with hard-coded password
+
+189
+00:07:30,559 --> 00:07:31,327
+Yay
+
+190
+00:07:31,583 --> 00:07:32,863
+Some of the more interesting
+
+191
+00:07:33,119 --> 00:07:34,143
+Is
+
+192
+00:07:34,399 --> 00:07:38,495
+Don't allow or severely restrict automatic connections via Wi-Fi or other be
+
+193
+00:07:38,751 --> 00:07:41,055
+This will restrict the ability of other devices to
+
+194
+00:07:41,567 --> 00:07:42,079
+Infiltrate
+
+195
+00:07:43,103 --> 00:07:44,639
+I don't know why
+
+196
+00:07:45,663 --> 00:07:46,687
+I feel like
+
+197
+00:07:46,943 --> 00:07:47,711
+That kind of defeats the
+
+198
+00:07:47,967 --> 00:07:48,479
+The purpose of
+
+199
+00:07:48,735 --> 00:07:50,527
+Some of these iot devices I don't know what
+
+200
+00:07:51,551 --> 00:07:52,063
+Well
+
+201
+00:07:52,319 --> 00:07:58,463
+I mean deployment of a society devices is always a challenge
+
+202
+00:07:58,719 --> 00:08:00,255
+It's simpler to Adam but
+
+203
+00:08:00,767 --> 00:08:03,839
+Obviously that's not a good security practice so I get what they're saying there
+
+204
+00:08:04,095 --> 00:08:08,703
+Enterprise as opposed to home so I can understand
+
+205
+00:08:10,239 --> 00:08:10,751
+Cover up all my
+
+206
+00:08:12,799 --> 00:08:15,615
+Disabled
+
+207
+00:08:16,639 --> 00:08:19,199
+So in my favorite one which we should all do
+
+208
+00:08:19,455 --> 00:08:21,247
+Although this puts the burden on the consumer
+
+209
+00:08:21,503 --> 00:08:22,783
+Enterprise or
+
+210
+00:08:23,039 --> 00:08:23,807
+Consumer consumer
+
+211
+00:08:24,063 --> 00:08:27,135
+Is closely
+
+212
+00:08:27,391 --> 00:08:29,183
+From service when they are no longer updatable
+
+213
+00:08:29,439 --> 00:08:29,951
+More secure
+
+214
+00:08:31,487 --> 00:08:35,839
+So in this actually you I'll bring back the Microsoft thing cuz in my conversation
+
+215
+00:08:36,095 --> 00:08:36,607
+Michaela
+
+216
+00:08:36,863 --> 00:08:37,631
+He mentioned that
+
+217
+00:08:37,887 --> 00:08:38,399
+The
+
+218
+00:08:38,655 --> 00:08:40,703
+MC user supporter for a 10-year
+
+219
+00:08:41,215 --> 00:08:41,727
+Cycle
+
+220
+00:08:41,983 --> 00:08:42,751
+So
+
+221
+00:08:43,007 --> 00:08:43,519
+I was think
+
+222
+00:08:43,775 --> 00:08:47,871
+Supremes my washing machine stops being secure a sphere
+
+223
+00:08:48,383 --> 00:08:49,151
+10 years
+
+224
+00:08:49,919 --> 00:08:50,943
+But this
+
+225
+00:08:51,199 --> 00:08:52,223
+In the Enterprise
+
+226
+00:08:52,479 --> 00:08:53,759
+You've got similar sort of
+
+227
+00:08:54,527 --> 00:08:56,319
+You got some Thor gear this could be running around
+
+228
+00:08:56,575 --> 00:08:57,087
+4
+
+229
+00:08:57,343 --> 00:08:59,903
+7 to 10 years is usually the longest I've seen
+
+230
+00:09:00,671 --> 00:09:02,207
+These connected devices in their support
+
+231
+00:09:02,463 --> 00:09:03,231
+Contracts
+
+232
+00:09:03,743 --> 00:09:04,767
+Chilling at reasonable
+
+233
+00:09:05,023 --> 00:09:06,047
+It's reasonable but check
+
+234
+00:09:07,839 --> 00:09:08,863
+That's a challenge
+
+235
+00:09:11,423 --> 00:09:12,447
+If you'd like to see what you should be
+
+236
+00:09:13,215 --> 00:09:13,983
+Skipping riddle
+
+237
+00:09:14,239 --> 00:09:16,031
+Home security news
+
+238
+00:09:17,823 --> 00:09:19,615
+Called nice out of Italy
+
+239
+00:09:19,871 --> 00:09:22,175
+Is buying a 75% stake in
+
+240
+00:09:22,431 --> 00:09:22,943
+Abode
+
+241
+00:09:23,199 --> 00:09:25,759
+Which is a home security system
+
+242
+00:09:26,271 --> 00:09:26,783
+Lots of pee
+
+243
+00:09:27,039 --> 00:09:27,551
+Love
+
+244
+00:09:27,807 --> 00:09:31,903
+The value of the 75% stake is 18.75
+
+245
+00:09:32,159 --> 00:09:32,671
+Million
+
+246
+00:09:33,439 --> 00:09:33,951
+And
+
+247
+00:09:34,207 --> 00:09:34,975
+De stijl
+
+248
+00:09:35,487 --> 00:09:35,999
+Is
+
+249
+00:09:36,255 --> 00:09:37,023
+It's a good one
+
+250
+00:09:37,279 --> 00:09:38,815
+Fits with what
+
+251
+00:09:39,327 --> 00:09:39,839
+Aldi
+
+252
+00:09:40,095 --> 00:09:42,911
+Smart home security companies getting purchased by
+
+253
+00:09:43,167 --> 00:09:43,935
+Barter companies
+
+254
+00:09:44,191 --> 00:09:44,959
+Such as
+
+255
+00:09:45,471 --> 00:09:46,751
+Ring
+
+256
+00:09:50,591 --> 00:09:51,359
+Who else has not been
+
+257
+00:09:52,895 --> 00:09:54,943
+Where she did see the iota
+
+258
+00:09:55,199 --> 00:09:55,711
+Gateway
+
+259
+00:09:55,967 --> 00:09:57,759
+Fromm adult at CES
+
+260
+00:09:59,039 --> 00:10:03,903
+We did we did and then plan to sell that for $329 and would ship
+
+261
+00:10:04,159 --> 00:10:05,695
+In late q1 well
+
+262
+00:10:06,207 --> 00:10:09,023
+It's now early cute to and
+
+263
+00:10:09,279 --> 00:10:11,839
+This acquisition but no updates
+
+264
+00:10:16,191 --> 00:10:18,495
+Right it turns your Bose system into something compatible with
+
+265
+00:10:18,751 --> 00:10:20,799
+And if you don't have an existing
+
+266
+00:10:21,055 --> 00:10:21,823
+About system
+
+267
+00:10:22,335 --> 00:10:23,103
+You can buy that at
+
+268
+00:10:23,359 --> 00:10:24,639
+Add about pieces on
+
+269
+00:10:25,407 --> 00:10:26,175
+Security system
+
+270
+00:10:28,479 --> 00:10:34,623
+Supposed to work with nasty Kirby Philips Hue and lifx right out of the box I will see what happens if and when that shows up
+
+271
+00:10:35,391 --> 00:10:37,183
+Alright also in a position
+
+272
+00:10:37,439 --> 00:10:38,463
+Lucci
+
+273
+00:10:38,719 --> 00:10:39,231
+The maker of
+
+274
+00:10:39,743 --> 00:10:41,279
+Favorite light switches
+
+275
+00:10:41,535 --> 00:10:44,607
+Tetra which is actually an austin-based company that makes
+
+276
+00:10:44,863 --> 00:10:46,143
+Really fancy high-end
+
+277
+00:10:46,399 --> 00:10:46,911
+Commercial lighting
+
+278
+00:10:47,423 --> 00:10:49,983
+Tetra is a company that was actually
+
+279
+00:10:50,239 --> 00:10:51,263
+Created by no suits
+
+280
+00:10:51,519 --> 00:10:52,031
+Who was one of
+
+281
+00:10:52,287 --> 00:10:55,615
+Founders of silicon Labs so school Austin
+
+282
+00:10:56,127 --> 00:10:56,639
+Guy here
+
+283
+00:10:56,895 --> 00:10:57,663
+Are the chip world
+
+284
+00:10:58,175 --> 00:11:00,223
+The cool thing about technology
+
+285
+00:11:00,479 --> 00:11:00,991
+They make
+
+286
+00:11:01,503 --> 00:11:02,015
+LED
+
+287
+00:11:02,527 --> 00:11:03,807
+Chips that
+
+288
+00:11:04,063 --> 00:11:04,575
+Are in there
+
+289
+00:11:04,831 --> 00:11:06,879
+False so this actually give us
+
+290
+00:11:09,439 --> 00:11:09,951
+How to do it
+
+291
+00:11:10,207 --> 00:11:11,231
+I'll say it
+
+292
+00:11:12,511 --> 00:11:13,023
+Lighting
+
+293
+00:11:13,535 --> 00:11:14,559
+So they can make the
+
+294
+00:11:15,327 --> 00:11:15,839
+The chips that
+
+295
+00:11:16,095 --> 00:11:17,119
+Make LEDs
+
+296
+00:11:17,375 --> 00:11:17,887
+The bulbs
+
+297
+00:11:18,143 --> 00:11:18,911
+And then the
+
+298
+00:11:19,167 --> 00:11:21,471
+Radio protocols that allow them all to talk to each other
+
+299
+00:11:21,983 --> 00:11:23,007
+And catchers
+
+300
+00:11:23,263 --> 00:11:24,031
+Unique because
+
+301
+00:11:25,055 --> 00:11:26,079
+The chips actually
+
+302
+00:11:26,591 --> 00:11:27,871
+Controlling themselves so
+
+303
+00:11:28,383 --> 00:11:30,687
+To the right color that
+
+304
+00:11:30,943 --> 00:11:31,967
+The company or the
+
+305
+00:11:32,223 --> 00:11:33,503
+Resident wants
+
+306
+00:11:34,527 --> 00:11:35,039
+They walk
+
+307
+00:11:35,295 --> 00:11:36,575
+Always stay that color
+
+308
+00:11:37,087 --> 00:11:38,623
+So apparently LEDs can pop
+
+309
+00:11:38,879 --> 00:11:39,391
+In-N-Out us
+
+310
+00:11:39,647 --> 00:11:40,159
+2
+
+311
+00:11:42,207 --> 00:11:43,743
+Dismiss apparently
+
+312
+00:11:44,767 --> 00:11:45,279
+So
+
+313
+00:11:45,535 --> 00:11:50,399
+Do you think we promised to actually get into the business cuz this is a very unique
+
+314
+00:11:50,655 --> 00:11:51,935
+Technology in LED
+
+315
+00:11:52,191 --> 00:11:52,703
+I
+
+316
+00:11:52,959 --> 00:11:53,471
+Sync
+
+317
+00:11:53,983 --> 00:11:55,775
+So I've been to catchers demo
+
+318
+00:11:56,031 --> 00:11:57,823
+Maroon and Kesha's lights are in like
+
+319
+00:11:58,079 --> 00:11:59,871
+The Museum of Modern Art in Chicago
+
+320
+00:12:00,895 --> 00:12:02,175
+Some very fancy high-end
+
+321
+00:12:02,431 --> 00:12:02,943
+Fun places
+
+322
+00:12:03,455 --> 00:12:04,735
+Lot of nice retail stores
+
+323
+00:12:04,991 --> 00:12:05,759
+I think this gets
+
+324
+00:12:06,015 --> 00:12:06,783
+Flu shot into the
+
+325
+00:12:07,039 --> 00:12:08,319
+Commercial Lighting space
+
+326
+00:12:08,575 --> 00:12:09,599
+More so than
+
+327
+00:12:10,879 --> 00:12:11,391
+D
+
+328
+00:12:11,647 --> 00:12:13,183
+Cherry Crest Market
+
+329
+00:12:13,439 --> 00:12:14,207
+Yeah so
+
+330
+00:12:14,463 --> 00:12:17,535
+I think this is a smart move for them
+
+331
+00:12:18,047 --> 00:12:18,815
+They know what they're doing
+
+332
+00:12:19,071 --> 00:12:19,839
+In terms of like
+
+333
+00:12:20,607 --> 00:12:21,631
+And I think
+
+334
+00:12:22,143 --> 00:12:23,679
+Bringing their expertise from the
+
+335
+00:12:23,935 --> 00:12:24,703
+Consumer world
+
+336
+00:12:25,215 --> 00:12:27,007
+In the high-end home in dealer
+
+337
+00:12:27,263 --> 00:12:28,031
+Which is why they started
+
+338
+00:12:28,799 --> 00:12:29,311
+I think this is really
+
+339
+00:12:30,335 --> 00:12:32,127
+Esprit Market
+
+340
+00:12:32,383 --> 00:12:32,895
+Competition
+
+341
+00:12:33,151 --> 00:12:33,663
+I guess
+
+342
+00:12:34,175 --> 00:12:34,687
+Phillips
+
+343
+00:12:35,199 --> 00:12:36,479
+Other big
+
+344
+00:12:38,015 --> 00:12:38,783
+I think it's a smart
+
+345
+00:12:43,391 --> 00:12:44,415
+Trap mix
+
+346
+00:12:45,439 --> 00:12:47,999
+No word on how much this cost
+
+347
+00:12:48,255 --> 00:12:49,279
+So sad
+
+348
+00:12:49,791 --> 00:12:53,631
+To hear that and I don't know if actually Lutron will suddenly have an outpost in Austin
+
+349
+00:12:53,887 --> 00:12:55,167
+We should be super cold for me
+
+350
+00:12:55,423 --> 00:12:56,447
+Granny backyard
+
+351
+00:13:00,031 --> 00:13:00,799
+This is true
+
+352
+00:13:02,079 --> 00:13:02,591
+All right
+
+353
+00:13:02,847 --> 00:13:03,871
+That is
+
+354
+00:13:07,455 --> 00:13:07,967
+We have
+
+355
+00:13:10,015 --> 00:13:11,039
+Touted as someone who
+
+356
+00:13:11,295 --> 00:13:12,319
+Might acquire
+
+357
+00:13:13,087 --> 00:13:13,855
+Nokia's
+
+358
+00:13:14,111 --> 00:13:14,623
+Health division
+
+359
+00:13:14,879 --> 00:13:15,903
+Which we all know and love
+
+360
+00:13:16,415 --> 00:13:18,719
+Are used to know and love is why things
+
+361
+00:13:18,975 --> 00:13:21,535
+A little convoluted but
+
+362
+00:13:22,047 --> 00:13:23,327
+Leukemia
+
+363
+00:13:23,583 --> 00:13:26,143
+Now in February of this year they were like yeah
+
+364
+00:13:26,655 --> 00:13:27,679
+This isn't for us
+
+365
+00:13:31,007 --> 00:13:37,151
+Yes the internal memo explained the digital Health business did not look like it was going to be profitable for the
+
+366
+00:13:37,407 --> 00:13:40,991
+The company and they were evaluating what to do in February
+
+367
+00:13:41,247 --> 00:13:46,879
+I forget the quote something about failing fast isn't failure to accelerated learning what they said
+
+368
+00:13:47,391 --> 00:13:53,535
+Terminator was failing fast because things for $100
+
+369
+00:13:53,791 --> 00:13:56,607
+In 2016 and I suspect whoever guess
+
+370
+00:13:57,119 --> 00:13:59,167
+This part of their business it's coming
+
+371
+00:13:59,423 --> 00:14:00,959
+Be a lot less bright
+
+372
+00:14:01,215 --> 00:14:01,727
+A lot
+
+373
+00:14:01,983 --> 00:14:03,519
+Google makes sense to me
+
+374
+00:14:03,775 --> 00:14:07,103
+Only because
+
+375
+00:14:07,615 --> 00:14:10,943
+It could tie into their nest in the hardware teams
+
+376
+00:14:11,199 --> 00:14:16,831
+Also because and this is just my experience I try this several times
+
+377
+00:14:17,087 --> 00:14:21,183
+Google is not that great with Health Data Google fit in particular has just been
+
+378
+00:14:21,439 --> 00:14:27,583
+Wonky for me does not work and not synced with other services so maybe
+
+379
+00:14:27,839 --> 00:14:33,983
+Why things I peking come in there I don't know
+
+380
+00:14:34,239 --> 00:14:36,799
+That perspective to me I don't know what's going to happen obviously
+
+381
+00:14:37,055 --> 00:14:40,639
+Write another I think they also floated Amazon as a possible acquire
+
+382
+00:14:40,895 --> 00:14:43,967
+Which would be interesting because Amazon is launched that health initiative
+
+383
+00:14:44,223 --> 00:14:45,503
+Southwest JP Morgan
+
+384
+00:14:47,039 --> 00:14:47,551
+I believe
+
+385
+00:14:47,807 --> 00:14:51,391
+That we don't actually know what the heck that is but you know
+
+386
+00:14:51,903 --> 00:14:53,695
+Sew-ins
+
+387
+00:14:53,951 --> 00:14:55,487
+We have
+
+388
+00:14:55,743 --> 00:14:57,023
+Watch Dora
+
+389
+00:14:58,303 --> 00:15:03,679
+Yeah if you have an Apple Watch like I do I don't have an August lock you can update
+
+390
+00:15:03,935 --> 00:15:10,079
+And now just tap on your watch to unlock the door keep in mind I know the August has
+
+391
+00:15:10,591 --> 00:15:13,407
+Walk up to your door and have it unlock when you have your phone with you
+
+392
+00:15:13,663 --> 00:15:15,967
+This does not do that if he has cold smart unlock
+
+393
+00:15:16,479 --> 00:15:18,527
+This is not that this is actually just
+
+394
+00:15:18,783 --> 00:15:23,135
+Tapping on the watch to in the app to unlock your door so it's going to be clear about that
+
+395
+00:15:23,391 --> 00:15:24,671
+So you have to tap
+
+396
+00:15:24,927 --> 00:15:27,999
+The Watch
+
+397
+00:15:28,767 --> 00:15:34,911
+Yeah but keep in mind you can set to complications on Apple watch to be shortcuts to apps
+
+398
+00:15:35,423 --> 00:15:36,191
+R show data
+
+399
+00:15:36,447 --> 00:15:42,591
+So 1 tap to open up an app or two types of is pretty quick
+
+400
+00:15:42,847 --> 00:15:44,127
+Waiting for 5 seconds
+
+401
+00:15:44,639 --> 00:15:45,151
+Also
+
+402
+00:15:47,455 --> 00:15:47,967
+Twilio
+
+403
+00:15:48,223 --> 00:15:51,807
+It's now generally available
+
+404
+00:15:53,087 --> 00:15:54,367
+Programmable Wireless
+
+405
+00:15:54,623 --> 00:15:57,183
+Basically this is the ability to have a
+
+406
+00:15:59,743 --> 00:16:00,255
+Connected to
+
+407
+00:16:00,511 --> 00:16:06,655
+Places with a SIM card the last you provide SIM cards and service and they have pricing plans that are
+
+408
+00:16:06,911 --> 00:16:08,447
+Pretty reasonable
+
+409
+00:16:08,703 --> 00:16:12,287
+Maybe you want to create your own little iot sensor that connects to the
+
+410
+00:16:12,543 --> 00:16:18,687
+Weber something for whatever reason and it's remote he can pop a Sim in there and you know I have text messages sent to your phone
+
+411
+00:16:21,247 --> 00:16:27,391
+People who are do-it-yourselfers number one but there have been some companies that are using this they mention in their blog post
+
+412
+00:16:27,647 --> 00:16:29,439
+I did eat a bit and
+
+413
+00:16:29,695 --> 00:16:31,743
+Not a bit snow just kidding dwelo
+
+414
+00:16:32,255 --> 00:16:38,399
+Which is a cellular connected Smart Hub for apartment buildings but even the folks are just
+
+415
+00:16:38,655 --> 00:16:40,191
+Connected dashboard camera
+
+416
+00:16:40,447 --> 00:16:46,591
+They talked about using trulia's programmable wireless cellular
+
+417
+00:16:46,847 --> 00:16:47,871
+Iot devices
+
+418
+00:16:48,895 --> 00:16:50,687
+And Kevin has a brilliant idea
+
+419
+00:16:50,943 --> 00:16:51,711
+Maybe we'll send him
+
+420
+00:16:59,647 --> 00:17:05,791
+Bunch of mailboxes all together the front
+
+421
+00:17:06,047 --> 00:17:10,143
+Ascensor in there and then have it send me a text message saying your else here we could all do it
+
+422
+00:17:10,399 --> 00:17:12,959
+People
+
+423
+00:17:15,775 --> 00:17:16,287
+I'm sure Kevin
+
+424
+00:17:16,543 --> 00:17:17,055
+I'll tell you about it
+
+425
+00:17:18,079 --> 00:17:20,639
+I'm going to patent and sell it to the post office
+
+426
+00:17:20,895 --> 00:17:21,407
+Hugo
+
+427
+00:17:21,663 --> 00:17:23,199
+All right oh also
+
+428
+00:17:23,455 --> 00:17:23,967
+Now you can
+
+429
+00:17:24,479 --> 00:17:27,039
+Astra products
+
+430
+00:17:27,295 --> 00:17:32,415
+Yeah this is interesting I haven't taken it for a test drive but this is their VMware pulse iot Center
+
+431
+00:17:32,671 --> 00:17:38,815
+State of couple of Hands-On Labs where you can actually remote so you can explore
+
+432
+00:17:39,071 --> 00:17:44,703
+For the polarity center consoles dashboards you can manage simulated IRT
+
+433
+00:17:44,959 --> 00:17:49,055
+So this is a way for them to educate people on their product to manage devices
+
+434
+00:17:49,311 --> 00:17:51,871
+Latex free to access the lab zombie run through
+
+435
+00:17:52,127 --> 00:17:53,663
+These things
+
+436
+00:17:53,919 --> 00:17:55,455
+I thought it was kind of cool looking Kurama
+
+437
+00:17:56,735 --> 00:17:57,247
+And
+
+438
+00:17:57,759 --> 00:17:59,039
+Prayer since summer is coming
+
+439
+00:17:59,295 --> 00:18:00,063
+Kevin also found
+
+440
+00:18:01,599 --> 00:18:02,367
+The video is cheesy
+
+441
+00:18:07,743 --> 00:18:10,047
+Peta safe so this is how to transport your pet
+
+442
+00:18:10,559 --> 00:18:11,071
+Safely
+
+443
+00:18:11,327 --> 00:18:17,471
+Yeah safely right it'll actually help you if you have not said you're moving across the country and you were going to take your pet on the plane
+
+444
+00:18:17,727 --> 00:18:22,079
+Unfortunately
+
+445
+00:18:22,335 --> 00:18:28,479
+Or you're going to have a transportation service take your pet will digipak for example has a company that uses this
+
+446
+00:18:28,735 --> 00:18:33,343
+Technology and use RFID tag tracking
+
+447
+00:18:33,599 --> 00:18:36,159
+To basically monitor where your pet is
+
+448
+00:18:37,439 --> 00:18:43,583
+Temperature yeah they can even help you
+
+449
+00:18:43,839 --> 00:18:47,679
+No smoke
+
+450
+00:18:48,703 --> 00:18:54,847
+Not everybody transports their past but I just thought it was a cool Easter Vallarta to the summer sometimes
+
+451
+00:18:55,103 --> 00:18:55,615
+That's nice
+
+452
+00:18:55,871 --> 00:18:56,895
+Bring your dog with you
+
+453
+00:18:58,431 --> 00:18:58,943
+So
+
+454
+00:19:00,479 --> 00:19:02,271
+If I use it I'll let you guys know how I found
+
+455
+00:19:02,527 --> 00:19:03,807
+All right and
+
+456
+00:19:04,063 --> 00:19:05,343
+Kevin this week you reviewed
+
+457
+00:19:05,599 --> 00:19:07,647
+Homekit sensors from fibaro
+
+458
+00:19:09,439 --> 00:19:15,583
+It was time to look at home kit stuff since I just moved everything over to SmartThings so I have the $60
+
+459
+00:19:15,839 --> 00:19:21,983
+Sbarro door window sensor and the $70 fibaro motion sensor the eyeball
+
+460
+00:19:22,239 --> 00:19:25,567
+They're pricey but they're very well-designed
+
+461
+00:19:25,823 --> 00:19:28,895
+They are very responsive easy to set up in home app
+
+462
+00:19:29,151 --> 00:19:35,295
+For iOS for automations I have the door window sensor literally from 7 p.m. to 11 p.m.
+
+463
+00:19:35,551 --> 00:19:37,855
+In the office and shut the door the light just comes on
+
+464
+00:19:38,111 --> 00:19:39,903
+Can you open the door to leave the light goes off
+
+465
+00:19:40,159 --> 00:19:43,487
+Obviously you can use that for security as well very configurable
+
+466
+00:19:43,743 --> 00:19:46,047
+I'm a little concerned about the batteries only because the
+
+467
+00:19:46,303 --> 00:19:50,143
+The knot standard like double a triple a kind of batteries that sort of unique
+
+468
+00:19:50,399 --> 00:19:52,959
+Tomorrow said they should last two years so
+
+469
+00:19:53,215 --> 00:19:59,359
+If that's the case then it's less of an issue I mean you pay a premium for good design while working
+
+470
+00:19:59,615 --> 00:20:03,967
+Cancers that don't just do what they claim to do the motion sensor and the door window sensor
+
+471
+00:20:04,223 --> 00:20:10,367
+Also report temperature which is Handy and the motion sensor can tell you the brightness
+
+472
+00:20:10,623 --> 00:20:15,487
+Set a room in terms of Lux so you might be able to make some custom automations based on room brightness
+
+473
+00:20:17,023 --> 00:20:17,791
+Open my shades
+
+474
+00:20:19,327 --> 00:20:21,119
+Mapleshade's and I believe you actually
+
+475
+00:20:21,375 --> 00:20:22,655
+If you want to do something like that
+
+476
+00:20:23,167 --> 00:20:25,471
+And you can see the Lex on the home app
+
+477
+00:20:26,495 --> 00:20:29,823
+Yeah then you could do that with Lutron Serena shades
+
+478
+00:20:30,335 --> 00:20:32,383
+Hunter Douglas also has a shade that works with
+
+479
+00:20:33,407 --> 00:20:34,175
+So if you're
+
+480
+00:20:34,431 --> 00:20:35,967
+Eager to try something like that out
+
+481
+00:20:36,223 --> 00:20:36,735
+Which
+
+482
+00:20:36,991 --> 00:20:37,503
+I would be
+
+483
+00:20:37,759 --> 00:20:38,271
+That's actually kind of
+
+484
+00:20:38,783 --> 00:20:39,551
+I think so too
+
+485
+00:20:40,831 --> 00:20:42,879
+Allright basal temperature actually
+
+486
+00:20:44,415 --> 00:20:45,951
+Bring the sheets.
+
+487
+00:20:46,975 --> 00:20:49,023
+All right well now it is time
+
+488
+00:20:49,279 --> 00:20:51,071
+Are iot podcast
+
+489
+00:20:51,327 --> 00:20:52,351
+Listener hotline
+
+490
+00:20:54,399 --> 00:20:57,983
+We would like to thank Schlage for sponsoring our hotline for the last five
+
+491
+00:20:58,239 --> 00:21:00,287
+That sponsorship is now.
+
+492
+00:21:00,543 --> 00:21:02,591
+Becoming available so if any of you out there
+
+493
+00:21:02,847 --> 00:21:04,639
+Would like to sponsor The Listener hotline
+
+494
+00:21:04,895 --> 00:21:06,431
+Please reach out to Andrew
+
+495
+00:21:08,991 --> 00:21:12,831
+But for the time this week's
+
+496
+00:21:13,087 --> 00:21:13,855
+Ashley
+
+497
+00:21:14,367 --> 00:21:15,903
+Maker of electronic locks
+
+498
+00:21:16,159 --> 00:21:20,000
+Schlage smart locks work with most Smart Home & security systems
+
+499
+00:21:20,256 --> 00:21:24,352
+You can get the most out of your life whether you're an Apple homekit user or you just love Amazon
+
+500
+00:21:25,376 --> 00:21:27,680
+To see what's possible visit schlage.com
+
+501
+00:21:27,936 --> 00:21:28,448
+To learn
+
+502
+00:21:29,472 --> 00:21:30,240
+All right this way
+
+503
+00:21:30,496 --> 00:21:31,520
+Hotline
+
+504
+00:21:31,776 --> 00:21:32,288
+Question
+
+505
+00:21:32,544 --> 00:21:33,312
+Comes to us
+
+506
+00:21:34,848 --> 00:21:40,992
+Hello my name is. I live in Louisville Kentucky and I've only been listening to yourself a couple weeks now
+
+507
+00:21:42,272 --> 00:21:44,064
+Into the home automation
+
+508
+00:21:44,320 --> 00:21:45,344
+I love you so
+
+509
+00:21:45,600 --> 00:21:46,880
+But what I'm wondering is
+
+510
+00:21:47,392 --> 00:21:48,928
+Is there a
+
+511
+00:21:49,184 --> 00:21:51,488
+Video doorbell system that work
+
+512
+00:21:52,000 --> 00:21:54,304
+Being good for someone in an apartment building
+
+513
+00:21:54,560 --> 00:21:56,608
+Who does not have the ability
+
+514
+00:21:57,632 --> 00:22:01,472
+A wired system because there is no existing wire
+
+515
+00:22:02,496 --> 00:22:03,264
+Thank you for your time
+
+516
+00:22:03,776 --> 00:22:06,592
+Okay Scott I wish this were longer answer
+
+517
+00:22:06,848 --> 00:22:07,360
+Because
+
+518
+00:22:08,128 --> 00:22:09,152
+Then you have a lot of choice but
+
+519
+00:22:09,664 --> 00:22:12,736
+There's really only one choice out there for battery powered doorbells today
+
+520
+00:22:13,248 --> 00:22:15,296
+I'm going to recommend you don't go and buy
+
+521
+00:22:15,552 --> 00:22:16,832
+What are some of the no name brands on
+
+522
+00:22:17,088 --> 00:22:18,112
+On Amazon which
+
+523
+00:22:18,368 --> 00:22:20,160
+Are out there but don't do it
+
+524
+00:22:20,416 --> 00:22:21,440
+A Lot of Things Fall Apart
+
+525
+00:22:21,696 --> 00:22:23,232
+Genki to have terrible apps
+
+526
+00:22:23,488 --> 00:22:24,512
+So your options
+
+527
+00:22:25,280 --> 00:22:25,792
+I really rich
+
+528
+00:22:26,304 --> 00:22:30,912
+Ring the original for $100 or the ring video doorbell
+
+529
+00:22:31,424 --> 00:22:31,936
+For 200
+
+530
+00:22:32,704 --> 00:22:37,824
+And the video so what that price difference will get you as a slightly different camera
+
+531
+00:22:38,080 --> 00:22:39,872
+On the video doorbell 2
+
+532
+00:22:40,128 --> 00:22:41,408
+It doesn't have his wider field-of-view
+
+533
+00:22:41,664 --> 00:22:43,456
+But it is high resolution
+
+534
+00:22:43,968 --> 00:22:44,992
+The other thing is
+
+535
+00:22:45,248 --> 00:22:46,016
+The battery pack
+
+536
+00:22:46,272 --> 00:22:47,296
+For that one is
+
+537
+00:22:47,552 --> 00:22:48,064
+Rechargeable
+
+538
+00:22:48,320 --> 00:22:48,832
+So
+
+539
+00:22:49,344 --> 00:22:50,368
+You just take it out
+
+540
+00:22:50,880 --> 00:22:52,416
+And you can actually buy an extra battery pack
+
+541
+00:22:52,928 --> 00:22:53,952
+I want just like alternative
+
+542
+00:22:54,208 --> 00:22:55,488
+So some people find that way more
+
+543
+00:22:55,744 --> 00:22:56,256
+Convenient
+
+544
+00:22:56,512 --> 00:22:57,792
+Lie by Rihanna
+
+545
+00:22:58,304 --> 00:23:01,888
+Original video doorbell is also rechargeable but you have to
+
+546
+00:23:02,144 --> 00:23:03,424
+Take the whole thing off
+
+547
+00:23:03,680 --> 00:23:04,448
+Retarded
+
+548
+00:23:04,960 --> 00:23:05,728
+It's a little less can be
+
+549
+00:23:06,496 --> 00:23:12,640
+Yeah if you're not in a rush Scott I would consider waiting to see when the
+
+550
+00:23:12,896 --> 00:23:19,040
+Blink video doorbell arrived it was coming out in 2018 we last heard still says coming soon on their site
+
+551
+00:23:19,296 --> 00:23:22,368
+Blank was purchased by Amazon so I don't know if there's any changes
+
+552
+00:23:23,392 --> 00:23:27,232
+That will also be a battery-powered option I know they announce the price
+
+553
+00:23:27,488 --> 00:23:32,864
+Previously but now there's no price listed on the site so I'm not going to Hazard a guess that may change
+
+554
+00:23:33,120 --> 00:23:33,888
+So there you go
+
+555
+00:23:34,144 --> 00:23:34,656
+You can wait
+
+556
+00:23:37,472 --> 00:23:40,032
+And you don't mind a little inconvenience
+
+557
+00:23:41,056 --> 00:23:42,080
+You can always swap it out later
+
+558
+00:23:42,336 --> 00:23:43,872
+So there you go also
+
+559
+00:23:46,432 --> 00:23:46,944
+Nest
+
+560
+00:23:47,200 --> 00:23:48,736
+Hello doorbell speaking of doorbells
+
+561
+00:23:48,992 --> 00:23:50,016
+I found
+
+562
+00:23:50,272 --> 00:23:50,784
+It difficult
+
+563
+00:23:51,040 --> 00:23:51,552
+Because
+
+564
+00:23:51,808 --> 00:23:52,832
+It just was not connect
+
+565
+00:23:53,088 --> 00:23:53,600
+I have the
+
+566
+00:23:53,856 --> 00:23:54,624
+Darkness time
+
+567
+00:23:54,880 --> 00:23:55,648
+Connecting my Android phone
+
+568
+00:23:56,160 --> 00:23:56,672
+To this thing
+
+569
+00:23:57,184 --> 00:23:57,696
+Which
+
+570
+00:23:58,208 --> 00:23:59,232
+We did get someone who
+
+571
+00:23:59,744 --> 00:24:01,024
+Call Dustin said hey
+
+572
+00:24:01,280 --> 00:24:02,816
+I get that problem sometimes too
+
+573
+00:24:03,072 --> 00:24:03,584
+Doing what I do is like
+
+574
+00:24:05,120 --> 00:24:05,632
+End
+
+575
+00:24:05,888 --> 00:24:08,448
+That person I say you are so right that is it
+
+576
+00:24:08,704 --> 00:24:09,216
+Exactly what you
+
+577
+00:24:09,728 --> 00:24:11,264
+When you have an Android phone
+
+578
+00:24:11,520 --> 00:24:12,288
+That is not
+
+579
+00:24:13,056 --> 00:24:13,568
+2
+
+580
+00:24:14,336 --> 00:24:14,848
+Turn off
+
+581
+00:24:15,104 --> 00:24:15,872
+Mobile data
+
+582
+00:24:16,640 --> 00:24:17,152
+Usually
+
+583
+00:24:18,176 --> 00:24:18,944
+Horses things to go
+
+584
+00:24:21,504 --> 00:24:27,136
+But I would also say eating with iOS because when I had problems with my ring that's what they had suggested originally
+
+585
+00:24:29,440 --> 00:24:30,976
+In the case of the nest
+
+586
+00:24:31,232 --> 00:24:31,744
+Do that
+
+587
+00:24:32,256 --> 00:24:32,768
+It did not help
+
+588
+00:24:33,024 --> 00:24:35,840
+But other people have said that they installed on an Android phone
+
+589
+00:24:36,096 --> 00:24:38,144
+No problem so I am just a special special
+
+590
+00:24:39,936 --> 00:24:41,216
+Which does not surprise me
+
+591
+00:24:42,240 --> 00:24:43,008
+Okay
+
+592
+00:24:44,288 --> 00:24:45,824
+Do you want to call
+
+593
+00:24:46,080 --> 00:24:47,872
+To The Internet of Things
+
+594
+00:24:48,128 --> 00:24:48,640
+Hotline
+
+595
+00:24:49,152 --> 00:24:50,944
+Please dial 5 1 2
+
+596
+00:24:51,200 --> 00:24:51,712
+63
+
+597
+00:24:51,968 --> 00:24:54,528
+37424 and leave us your question
+
+598
+00:24:55,296 --> 00:24:56,064
+And now
+
+599
+00:24:56,576 --> 00:24:57,856
+Because I'm feeling like I'm
+
+600
+00:24:58,112 --> 00:25:00,672
+Cleaning Out My Closet
+
+601
+00:25:00,928 --> 00:25:01,952
+If you guys
+
+602
+00:25:02,208 --> 00:25:03,488
+Call and leave a message
+
+603
+00:25:03,744 --> 00:25:04,512
+You'll be registered to
+
+604
+00:25:05,280 --> 00:25:07,840
+My old camera
+
+605
+00:25:10,912 --> 00:25:14,496
+Got an SD card for those of you guys who don't want to send your stuff to the cloud
+
+606
+00:25:14,752 --> 00:25:15,264
+Thursday
+
+607
+00:25:15,520 --> 00:25:17,824
+And some sensors that you can actually connect to it
+
+608
+00:25:18,080 --> 00:25:18,592
+And
+
+609
+00:25:19,360 --> 00:25:21,152
+Have the camera go on when the sensors go
+
+610
+00:25:21,920 --> 00:25:22,944
+Or off or however you
+
+611
+00:25:23,200 --> 00:25:23,712
+You want to set it up
+
+612
+00:25:23,968 --> 00:25:24,992
+So that is
+
+613
+00:25:27,296 --> 00:25:27,808
+Yay
+
+614
+00:25:28,576 --> 00:25:29,088
+And now
+
+615
+00:25:29,344 --> 00:25:30,112
+Stay tuned
+
+616
+00:25:30,368 --> 00:25:36,512
+For our guest
+
+617
+00:25:36,768 --> 00:25:40,608
+Break from this week's Internet of Things podcast for a message from our sponsor
+
+618
+00:25:40,864 --> 00:25:47,008
+This week we have been Goodman Innovation at 4
+
+619
+00:25:47,520 --> 00:25:48,032
+What is 4
+
+620
+00:25:50,336 --> 00:25:53,664
+Our scale flexibility lets our customers move Beyond
+
+621
+00:25:53,920 --> 00:25:55,456
+Traditional Enterprise I-10
+
+622
+00:25:56,224 --> 00:26:01,088
+Typically people use identity management tools for things like provisioning employees
+
+623
+00:26:01,344 --> 00:26:02,624
+Is access to corporate applique
+
+624
+00:26:03,392 --> 00:26:08,256
+We like to do a lot more but we also do things like the authentication security for your bang
+
+625
+00:26:08,512 --> 00:26:12,864
+Cellular network or for connected cars or even things like connected
+
+626
+00:26:13,376 --> 00:26:14,912
+People doing really cool things
+
+627
+00:26:15,168 --> 00:26:19,008
+When it comes to digital transformation by leveraging for trucks technology
+
+628
+00:26:19,520 --> 00:26:23,872
+Okay and what are the challenges with identity management today is that it's applied
+
+629
+00:26:24,128 --> 00:26:27,968
+To so many things or maybe it should be applied to so many things
+
+630
+00:26:28,480 --> 00:26:29,760
+How are you guys looking at that more
+
+631
+00:26:30,272 --> 00:26:33,088
+It's a great Point there's this Rush right now
+
+632
+00:26:33,344 --> 00:26:34,624
+How to get technology to mark
+
+633
+00:26:34,880 --> 00:26:38,464
+And I think as technology just keeps moving faster and faster
+
+634
+00:26:38,720 --> 00:26:44,864
+The reality is that securing identity is Austin after I thought you know you hear these stories about
+
+635
+00:26:45,120 --> 00:26:45,888
+It has thousands
+
+636
+00:26:46,144 --> 00:26:46,656
+Sensors on
+
+637
+00:26:47,168 --> 00:26:48,704
+Collect all this data
+
+638
+00:26:48,960 --> 00:26:50,496
+Enjoy your day start with
+
+639
+00:26:50,752 --> 00:26:51,776
+Something like that
+
+640
+00:26:52,032 --> 00:26:56,384
+And they don't think about okay how am I going to secure that day. How am I going to secure that
+
+641
+00:26:56,896 --> 00:27:00,480
+And we're also seeing is that you know the government and the regulatory
+
+642
+00:27:00,736 --> 00:27:03,808
+Climate can't really keep up as well and so you see things like
+
+643
+00:27:04,064 --> 00:27:05,856
+In Europe they have gdpr which is
+
+644
+00:27:06,368 --> 00:27:07,136
+Privacy regulation
+
+645
+00:27:07,392 --> 00:27:09,952
+In there and it was probably yours too late
+
+646
+00:27:10,208 --> 00:27:11,488
+Yet it's ahead of
+
+647
+00:27:11,744 --> 00:27:13,536
+Pretty much where anyone else in the world is
+
+648
+00:27:13,792 --> 00:27:15,328
+So how does identity manager
+
+649
+00:27:15,840 --> 00:27:16,352
+Actually
+
+650
+00:27:17,632 --> 00:27:20,448
+Identity if used properly is like magic
+
+651
+00:27:20,704 --> 00:27:24,544
+It's one of the few technologies that can actually improve customer experience
+
+652
+00:27:24,800 --> 00:27:27,872
+Why actually making their interaction more secure
+
+653
+00:27:28,128 --> 00:27:32,224
+So I didn't he is also one of the few technologies that is future proof
+
+654
+00:27:32,480 --> 00:27:33,504
+The reality is
+
+655
+00:27:33,760 --> 00:27:34,272
+In order to
+
+656
+00:27:34,528 --> 00:27:36,576
+Secure something you must identify it first
+
+657
+00:27:36,832 --> 00:27:40,672
+And if you think about it no matter what the device is identity persist
+
+658
+00:27:41,184 --> 00:27:42,208
+You always are who
+
+659
+00:27:42,464 --> 00:27:44,768
+Who you are and your thing always is who it is
+
+660
+00:27:45,024 --> 00:27:48,096
+And so are people realizing this and building their products
+
+661
+00:27:48,352 --> 00:27:49,120
+With that in mind
+
+662
+00:27:49,632 --> 00:27:52,192
+I think this whole concept of identity in
+
+663
+00:27:52,448 --> 00:27:53,984
+Security being an afterthought
+
+664
+00:27:54,240 --> 00:27:54,752
+Is starting to
+
+665
+00:27:55,264 --> 00:27:56,288
+And quite frankly
+
+666
+00:27:56,544 --> 00:27:57,312
+We're working with
+
+667
+00:27:57,568 --> 00:27:59,360
+Consumer electronics companies who
+
+668
+00:27:59,616 --> 00:28:00,640
+Are now thinking about
+
+669
+00:28:00,896 --> 00:28:07,040
+How they create an end-to-end identity driven customer experience so from when you order it when you put it on the first
+
+670
+00:28:07,552 --> 00:28:11,904
+They provide a better customer experience but they also make the device more
+
+671
+00:28:12,416 --> 00:28:14,976
+We're working with large Industrials that are building
+
+672
+00:28:15,232 --> 00:28:17,280
+Command-and-control iot Networks
+
+673
+00:28:17,536 --> 00:28:18,816
+Stutter making sure that
+
+674
+00:28:19,072 --> 00:28:23,424
+Since Inception that they ensure that everything is secured all the way from the chip
+
+675
+00:28:23,680 --> 00:28:24,192
+The Clown
+
+676
+00:28:24,704 --> 00:28:26,496
+Sounds good so where can we go to find out more
+
+677
+00:28:26,752 --> 00:28:29,056
+To learn more about what you can do it
+
+678
+00:28:29,312 --> 00:28:31,872
+What our customers are doing with identity
+
+679
+00:28:32,128 --> 00:28:33,920
+Visit www
+
+680
+00:28:34,176 --> 00:28:35,968
+Dartford rock.com
+
+681
+00:28:36,480 --> 00:28:36,992
+Flash
+
+682
+00:28:37,248 --> 00:28:37,760
+Digital
+
+683
+00:28:38,272 --> 00:28:44,416
+- identity
+
+684
+00:28:44,672 --> 00:28:50,816
+Hey everyone welcome back to the Internet of Things podcast this is your house
+
+685
+00:28:51,072 --> 00:28:53,120
+And today's guest
+
+686
+00:28:53,376 --> 00:28:54,144
+Is Galen hunt
+
+687
+00:28:54,400 --> 00:28:55,424
+Who is with Microsoft
+
+688
+00:28:55,936 --> 00:28:56,960
+Hey David how are you
+
+689
+00:28:57,216 --> 00:28:57,728
+Good
+
+690
+00:28:58,240 --> 00:28:58,752
+It's great to be here
+
+691
+00:28:59,008 --> 00:29:02,080
+All right you guys are at RSA where Microsoft just announced
+
+692
+00:29:02,336 --> 00:29:03,104
+A pretty big product
+
+693
+00:29:03,360 --> 00:29:06,432
+Azure sphere
+
+694
+00:29:06,688 --> 00:29:08,224
+Coming for a while cuz we talked
+
+695
+00:29:08,480 --> 00:29:11,808
+Last April about some of the core ingredients
+
+696
+00:29:14,624 --> 00:29:15,648
+What is azure sphere
+
+697
+00:29:16,160 --> 00:29:17,440
+Azure sphere
+
+698
+00:29:17,696 --> 00:29:21,024
+Is an Ambien solution for device manufacturers
+
+699
+00:29:21,280 --> 00:29:21,792
+Who built
+
+700
+00:29:22,048 --> 00:29:23,072
+MCU micro
+
+701
+00:29:23,328 --> 00:29:24,608
+Controller based devices
+
+702
+00:29:24,864 --> 00:29:25,632
+Allows them
+
+703
+00:29:26,144 --> 00:29:27,680
+Build devices that are
+
+704
+00:29:27,936 --> 00:29:28,448
+Connected
+
+705
+00:29:28,704 --> 00:29:29,216
+The internet
+
+706
+00:29:29,472 --> 00:29:30,240
+Highly secure
+
+707
+00:29:30,752 --> 00:29:36,128
+You might ask you what's an MCU or what kind of devices use those are museums to use our
+
+708
+00:29:36,640 --> 00:29:37,664
+They're in everything from
+
+709
+00:29:37,920 --> 00:29:40,736
+Toys to Home Appliances Industrial
+
+710
+00:29:41,248 --> 00:29:44,576
+Factoring equipment and basically none of them are connect Jets
+
+711
+00:29:45,088 --> 00:29:47,136
+Huge transition
+
+712
+00:29:47,392 --> 00:29:50,208
+Over the next couple years of all these devices
+
+713
+00:29:51,488 --> 00:29:52,000
+All right
+
+714
+00:29:52,256 --> 00:29:54,816
+So yes Galen as you might imagine is correct
+
+715
+00:29:55,072 --> 00:29:59,680
+Guys out there we talked about computer usually talking about processors
+
+716
+00:29:59,936 --> 00:30:00,448
+Your phone
+
+717
+00:30:01,216 --> 00:30:07,360
+What we're talking about with microcontrollers are all the as the arm m-class devices although there are plenty of
+
+718
+00:30:09,664 --> 00:30:15,552
+Things in your washing machine and and yes they are getting connected to the internet so you guys are created a secure
+
+719
+00:30:16,064 --> 00:30:16,576
+MCU
+
+720
+00:30:16,832 --> 00:30:18,624
+There is also a secure OS
+
+721
+00:30:18,880 --> 00:30:20,416
+In a secure cloud
+
+722
+00:30:20,672 --> 00:30:24,000
+Opponents of the idea is that this microcontroller
+
+723
+00:30:24,512 --> 00:30:25,536
+Who actually used to explain
+
+724
+00:30:26,816 --> 00:30:27,584
+What is happening
+
+725
+00:30:28,096 --> 00:30:28,864
+If I do we need all these
+
+726
+00:30:30,144 --> 00:30:31,936
+Well if you remember but when we talk back
+
+727
+00:30:32,960 --> 00:30:34,496
+We talked about the seven properties
+
+728
+00:30:34,752 --> 00:30:35,776
+Highly secure device
+
+729
+00:30:36,288 --> 00:30:39,360
+That was a paper that we wrote released
+
+730
+00:30:39,616 --> 00:30:40,384
+The year-ago
+
+731
+00:30:40,896 --> 00:30:44,736
+Basically we looked at from our experience at Microsoft building devices
+
+732
+00:30:44,992 --> 00:30:45,504
+What is NASA
+
+733
+00:30:45,760 --> 00:30:47,552
+Build an iot device
+
+734
+00:30:47,808 --> 00:30:48,832
+Stanolone
+
+735
+00:30:49,088 --> 00:30:50,624
+Internet device that is highly
+
+736
+00:30:51,648 --> 00:30:53,696
+To address those seven properties
+
+737
+00:30:53,952 --> 00:30:57,024
+You need three pieces you need Hardware support
+
+738
+00:30:57,280 --> 00:30:58,560
+Software support on this device
+
+739
+00:30:58,816 --> 00:30:59,328
+And you need
+
+740
+00:30:59,584 --> 00:31:00,352
+Collaboration with
+
+741
+00:31:00,608 --> 00:31:01,632
+Cloudtail Pecos
+
+742
+00:31:02,912 --> 00:31:04,192
+And that's what we've built
+
+743
+00:31:04,704 --> 00:31:05,216
+We built azure
+
+744
+00:31:05,472 --> 00:31:06,240
+Sphere are these
+
+745
+00:31:06,496 --> 00:31:07,008
+3 LM
+
+746
+00:31:07,264 --> 00:31:09,056
+So there's a new class
+
+747
+00:31:09,312 --> 00:31:15,456
+MCU sphere certified MCU these will be built by our silicon partners
+
+748
+00:31:15,712 --> 00:31:17,248
+Is not getting the business of building
+
+749
+00:31:17,504 --> 00:31:19,552
+Sailing ships we do however have
+
+750
+00:31:20,064 --> 00:31:23,136
+Pablo Acosta silicon IP blocks we have Microsoft
+
+751
+00:31:23,392 --> 00:31:24,672
+Security technology
+
+752
+00:31:24,928 --> 00:31:25,440
+Developed
+
+753
+00:31:25,696 --> 00:31:29,792
+That we put into every single one of these Azure sphere certified ship
+
+754
+00:31:30,048 --> 00:31:31,584
+And that gives a hardware rooted Trust
+
+755
+00:31:31,840 --> 00:31:33,888
+And the second element is the
+
+756
+00:31:34,144 --> 00:31:34,912
+Spear operating
+
+757
+00:31:35,168 --> 00:31:35,936
+System
+
+758
+00:31:36,192 --> 00:31:38,496
+Defense-in-depth multi-layer properties
+
+759
+00:31:38,752 --> 00:31:39,264
+System that
+
+760
+00:31:39,520 --> 00:31:42,080
+Create a very secure environment on the hardware
+
+761
+00:31:42,336 --> 00:31:42,848
+For the song
+
+762
+00:31:43,104 --> 00:31:46,176
+Temdan the third aspect is the
+
+763
+00:31:46,432 --> 00:31:47,968
+Azure sphere security service
+
+764
+00:31:48,480 --> 00:31:49,504
+Security service
+
+765
+00:31:50,016 --> 00:31:51,296
+A broken trust
+
+766
+00:31:51,808 --> 00:31:54,368
+Between hydrosphere devices and other devices
+
+767
+00:31:54,880 --> 00:32:00,512
+Cloud it monitors for emerging then to text emerging security threats against the devices
+
+768
+00:32:00,768 --> 00:32:03,584
+Across the entire ecosystem and it renews this
+
+769
+00:32:03,840 --> 00:32:05,888
+Security on the devices through software update
+
+770
+00:32:06,144 --> 00:32:07,680
+It's new security challenges come out
+
+771
+00:32:08,192 --> 00:32:11,008
+Okay threat detection and then
+
+772
+00:32:11,520 --> 00:32:13,824
+Renewing Security on the chip what's happening
+
+773
+00:32:14,336 --> 00:32:15,872
+Well okay so we'll talk about
+
+774
+00:32:17,664 --> 00:32:18,176
+Software update
+
+775
+00:32:18,688 --> 00:32:20,480
+When a device is out there
+
+776
+00:32:20,736 --> 00:32:25,600
+And it's some music 33 it emerges or maybe even someone finds a bug in some peace
+
+777
+00:32:25,856 --> 00:32:26,880
+Coats on the device
+
+778
+00:32:27,136 --> 00:32:28,416
+You want to be able to
+
+779
+00:32:28,672 --> 00:32:29,952
+Create a patch for that and
+
+780
+00:32:30,208 --> 00:32:30,976
+And get it out on the coast
+
+781
+00:32:31,232 --> 00:32:31,744
+Devices
+
+782
+00:32:32,000 --> 00:32:33,536
+Do it reliably do
+
+783
+00:32:33,792 --> 00:32:36,864
+Attentively another every device you build it out in a field
+
+784
+00:32:37,120 --> 00:32:38,144
+Is now running the latest
+
+785
+00:32:38,400 --> 00:32:38,912
+Software
+
+786
+00:32:40,704 --> 00:32:42,752
+Security service
+
+787
+00:32:43,008 --> 00:32:43,520
+Provide the
+
+788
+00:32:45,568 --> 00:32:49,152
+Does it also do things like signed update sign patches does it
+
+789
+00:32:49,408 --> 00:32:50,176
+Check for that
+
+790
+00:32:50,432 --> 00:32:51,200
+It's all apps
+
+791
+00:32:52,224 --> 00:32:55,552
+Yes so it
+
+792
+00:32:55,808 --> 00:32:56,832
+I'll just talk about one of those
+
+793
+00:32:57,088 --> 00:32:58,368
+Vulnerabilities in which town
+
+794
+00:32:58,624 --> 00:32:59,648
+In Microsoft experiences
+
+795
+00:33:01,184 --> 00:33:02,720
+Version one of your software is out running on
+
+796
+00:33:02,976 --> 00:33:04,000
+Sounds like you figure out
+
+797
+00:33:04,256 --> 00:33:06,816
+Security vulnerability
+
+798
+00:33:07,072 --> 00:33:08,096
+Guitar version 2
+
+799
+00:33:08,608 --> 00:33:09,632
+Well Packers will
+
+800
+00:33:09,888 --> 00:33:14,240
+Try to trick the device into instead of running person to the rollback version 1
+
+801
+00:33:16,288 --> 00:33:17,568
+Bill Clinton
+
+802
+00:33:18,592 --> 00:33:19,104
+Is rollback
+
+803
+00:33:19,360 --> 00:33:21,408
+Protection in a way that we can
+
+804
+00:33:21,664 --> 00:33:23,968
+Physically Modified by blowing some fuses
+
+805
+00:33:24,224 --> 00:33:24,736
+And the chip
+
+806
+00:33:24,992 --> 00:33:25,504
+Say hey
+
+807
+00:33:25,760 --> 00:33:28,320
+Don't ever run version 1 ever again
+
+808
+00:33:28,576 --> 00:33:29,600
+Vulnerability
+
+809
+00:33:30,112 --> 00:33:32,160
+Wow so it's kind of stone self-destruct button
+
+810
+00:33:33,952 --> 00:33:35,744
+For a particular version software you
+
+811
+00:33:36,000 --> 00:33:38,304
+You guys originally worked with mediatek
+
+812
+00:33:38,560 --> 00:33:39,072
+On this hard
+
+813
+00:33:39,584 --> 00:33:43,424
+How can other companies become Hardware Partners or is that
+
+814
+00:33:44,960 --> 00:33:46,496
+We have a program
+
+815
+00:33:46,752 --> 00:33:47,264
+Working
+
+816
+00:33:47,520 --> 00:33:48,032
+With
+
+817
+00:33:48,288 --> 00:33:49,312
+As many silicon partners
+
+818
+00:33:51,360 --> 00:33:54,432
+Over a dozen companies were working with right now
+
+819
+00:33:54,688 --> 00:33:55,968
+Detecting the first partner
+
+820
+00:33:56,224 --> 00:33:56,992
+You're the first one that's coming
+
+821
+00:33:57,248 --> 00:33:57,760
+Market
+
+822
+00:33:58,016 --> 00:33:59,296
+And what we do is we go out and
+
+823
+00:33:59,552 --> 00:34:01,856
+We are licensing royalty free
+
+824
+00:34:02,112 --> 00:34:02,624
+AR
+
+825
+00:34:02,880 --> 00:34:04,416
+Security technology for the chip
+
+826
+00:34:04,928 --> 00:34:05,696
+And that's so that
+
+827
+00:34:05,952 --> 00:34:06,976
+The Spinners can use it
+
+828
+00:34:07,232 --> 00:34:13,376
+MCU Market very different from like the PC market in the regard of
+
+829
+00:34:13,632 --> 00:34:17,984
+Maybe you can I come at 3 silicon providers for the processors in the MCU
+
+830
+00:34:18,240 --> 00:34:18,752
+Market 32
+
+831
+00:34:19,008 --> 00:34:19,520
+Jasmine
+
+832
+00:34:21,312 --> 00:34:23,360
+And so in order to provide app and
+
+833
+00:34:23,616 --> 00:34:25,408
+Breath and get a solution outfits
+
+834
+00:34:25,664 --> 00:34:26,944
+It will be an everyday
+
+835
+00:34:27,456 --> 00:34:28,736
+We realized we were going to have to life
+
+836
+00:34:31,040 --> 00:34:33,600
+Give them
+
+837
+00:34:33,856 --> 00:34:36,416
+What's called an IP block that goes into their device
+
+838
+00:34:36,672 --> 00:34:37,184
+We get them
+
+839
+00:34:37,440 --> 00:34:38,976
+Sports teach them how to use that
+
+840
+00:34:39,232 --> 00:34:40,256
+Appropriately
+
+841
+00:34:40,512 --> 00:34:42,048
+And we also work with them.
+
+842
+00:34:42,304 --> 00:34:43,072
+Validate to take
+
+843
+00:34:43,328 --> 00:34:45,632
+Put it in writing put the rest of the architecture
+
+844
+00:34:45,888 --> 00:34:47,168
+Ship correctly together
+
+845
+00:34:47,424 --> 00:34:48,448
+It really is
+
+846
+00:34:48,704 --> 00:34:50,752
+Secured and then we certified
+
+847
+00:34:51,264 --> 00:34:52,288
+We let them put the address
+
+848
+00:34:52,544 --> 00:34:54,336
+Sphere brand on that ship
+
+849
+00:34:54,592 --> 00:34:59,712
+How does this compare with something like arm has their trust Zone that they recently extended to MCU
+
+850
+00:34:59,968 --> 00:35:02,016
+There's nxp has I can
+
+851
+00:35:02,272 --> 00:35:03,040
+Remember what they're
+
+852
+00:35:03,296 --> 00:35:06,368
+Secure module stuff is called for their kinetis lines
+
+853
+00:35:06,624 --> 00:35:07,904
+In the MCU world
+
+854
+00:35:08,416 --> 00:35:10,976
+Everybody right now has as you said roll their own
+
+855
+00:35:12,000 --> 00:35:12,512
+Compare
+
+856
+00:35:12,768 --> 00:35:13,536
+Coexist with
+
+857
+00:35:14,048 --> 00:35:16,608
+Ours is a solution that we have
+
+858
+00:35:16,864 --> 00:35:18,400
+Built based on the Learning Zone
+
+859
+00:35:18,656 --> 00:35:19,680
+15 years of
+
+860
+00:35:19,936 --> 00:35:20,960
+Security
+
+861
+00:35:21,472 --> 00:35:21,984
+Game console
+
+862
+00:35:22,240 --> 00:35:24,800
+And in that game console business Microsoft concert
+
+863
+00:35:25,056 --> 00:35:26,080
+Three generations ago
+
+864
+00:35:26,336 --> 00:35:26,848
+Consul
+
+865
+00:35:27,104 --> 00:35:27,616
+Justice
+
+866
+00:35:27,872 --> 00:35:28,640
+Significant
+
+867
+00:35:28,896 --> 00:35:29,664
+Amounts of money
+
+868
+00:35:30,432 --> 00:35:31,200
+Security
+
+869
+00:35:31,456 --> 00:35:31,968
+Console
+
+870
+00:35:32,224 --> 00:35:33,760
+Clear Lake to prevent piracy
+
+871
+00:35:34,272 --> 00:35:35,296
+But in the process
+
+872
+00:35:35,552 --> 00:35:37,344
+Doing that we learned a lot
+
+873
+00:35:37,856 --> 00:35:38,368
+About
+
+874
+00:35:38,880 --> 00:35:42,208
+What determine hackers will do how far they will go
+
+875
+00:35:42,464 --> 00:35:44,512
+And what kind of defense mechanism
+
+876
+00:35:44,768 --> 00:35:45,536
+Eaton Place
+
+877
+00:35:45,792 --> 00:35:51,936
+And then we took that learnings and created this it block that we are using I think one of the things that stands out
+
+878
+00:35:52,192 --> 00:35:54,752
+Compared to some other Solutions is that
+
+879
+00:35:55,008 --> 00:35:56,800
+It really has based on this
+
+880
+00:35:57,312 --> 00:35:58,080
+Many many years
+
+881
+00:35:58,592 --> 00:36:01,664
+Experience dealing with very persistent very determined
+
+882
+00:36:02,688 --> 00:36:04,224
+I guess another way to describe it is
+
+883
+00:36:04,480 --> 00:36:05,248
+It is built
+
+884
+00:36:06,016 --> 00:36:08,832
+Shoe function with the address Pier operating system
+
+885
+00:36:09,088 --> 00:36:10,368
+And the Azure sphere
+
+886
+00:36:11,136 --> 00:36:12,416
+Security service
+
+887
+00:36:12,672 --> 00:36:13,440
+Optimizing
+
+888
+00:36:13,696 --> 00:36:15,744
+Fire system in the end
+
+889
+00:36:16,000 --> 00:36:18,816
+So the all the pieces work together perfectly
+
+890
+00:36:19,584 --> 00:36:25,728
+So if I'm a customer and I'm like hey this sounds awesome I totally want to go and get these devices
+
+891
+00:36:25,984 --> 00:36:28,288
+Never worried about security does that mean that I
+
+892
+00:36:28,544 --> 00:36:29,568
+If I buy
+
+893
+00:36:29,824 --> 00:36:33,920
+This does that mean all of my date that these chips are generating get sent to
+
+894
+00:36:34,176 --> 00:36:36,992
+The Azure iot Cloud eventually or could I use
+
+895
+00:36:37,248 --> 00:36:37,760
+Another
+
+896
+00:36:38,016 --> 00:36:39,040
+Or keep it on premise
+
+897
+00:36:39,552 --> 00:36:43,648
+That's a great question as I mentioned before you were really committed to open this
+
+898
+00:36:48,000 --> 00:36:49,280
+But we don't actually
+
+899
+00:36:49,536 --> 00:36:50,304
+Hold your data
+
+900
+00:36:51,840 --> 00:36:53,632
+Connect to whatever cloud service
+
+901
+00:36:54,656 --> 00:36:57,216
+So if you that you're running proprietary servers
+
+902
+00:36:57,472 --> 00:36:59,008
+On-premises Enterprise
+
+903
+00:36:59,264 --> 00:37:00,544
+Will you connect to them
+
+904
+00:37:00,800 --> 00:37:03,104
+Are you connect AWS or Google
+
+905
+00:37:03,616 --> 00:37:06,432
+Or I am or Azure iot hub
+
+906
+00:37:07,456 --> 00:37:07,968
+Shroud
+
+907
+00:37:08,736 --> 00:37:11,808
+Obviously you want to make it as easy as possible
+
+908
+00:37:12,064 --> 00:37:12,576
+Thatcher
+
+909
+00:37:12,832 --> 00:37:16,928
+Created a fantastic very easy to use while buried and freeway
+
+910
+00:37:17,184 --> 00:37:21,024
+For people to use Azure cloud services for their date if they want to but we don't
+
+911
+00:37:21,792 --> 00:37:23,840
+Let's talk about Azure sphere
+
+912
+00:37:24,096 --> 00:37:24,864
+But I buy it
+
+913
+00:37:25,120 --> 00:37:26,400
+Have you guys would I buy
+
+914
+00:37:26,656 --> 00:37:27,168
+The chip Inn
+
+915
+00:37:28,704 --> 00:37:29,472
+Can force from the chips
+
+916
+00:37:31,776 --> 00:37:32,544
+The way you
+
+917
+00:37:32,800 --> 00:37:34,336
+We would purchase address
+
+918
+00:37:34,592 --> 00:37:36,384
+Fear is you would go to your
+
+919
+00:37:36,640 --> 00:37:38,176
+Distributor
+
+920
+00:37:38,432 --> 00:37:41,504
+Spirit certified ship and whip it would come bundled
+
+921
+00:37:41,760 --> 00:37:44,320
+The license for the Azure sphere operating
+
+922
+00:37:45,856 --> 00:37:47,904
+Come pre-installed on the ship and
+
+923
+00:37:48,160 --> 00:37:49,440
+The rights to use the azure
+
+924
+00:37:49,696 --> 00:37:50,976
+Security service
+
+925
+00:37:51,232 --> 00:37:52,512
+Or attend your lifetime
+
+926
+00:37:53,536 --> 00:37:54,816
+At the one-time transaction
+
+927
+00:37:55,072 --> 00:37:56,352
+One-time pay one cost
+
+928
+00:37:56,864 --> 00:37:58,912
+You get the operating system
+
+929
+00:37:59,168 --> 00:37:59,680
+Security service
+
+930
+00:37:59,936 --> 00:38:00,960
+An ongoing service
+
+931
+00:38:01,216 --> 00:38:01,728
+Prices for that
+
+932
+00:38:03,264 --> 00:38:04,800
+Okay so let's talk now about
+
+933
+00:38:05,824 --> 00:38:07,104
+Macro iot thing
+
+934
+00:38:08,896 --> 00:38:10,176
+One of the big things that we
+
+935
+00:38:10,432 --> 00:38:15,040
+We talked about a lot is this oh my gosh are we going to do everything in the cloud to do everything at the edge
+
+936
+00:38:15,552 --> 00:38:16,576
+It's probably going to be a bit of both
+
+937
+00:38:17,088 --> 00:38:18,112
+Depending on your use case
+
+938
+00:38:18,368 --> 00:38:20,672
+This feels like a very cloud-centric model
+
+939
+00:38:20,928 --> 00:38:21,440
+Because
+
+940
+00:38:22,208 --> 00:38:24,768
+Sending my data from the secure MCU up to
+
+941
+00:38:25,280 --> 00:38:26,304
+The cloud security
+
+942
+00:38:26,560 --> 00:38:27,072
+Development
+
+943
+00:38:27,328 --> 00:38:30,656
+How might I build this to work in borovan
+
+944
+00:38:30,912 --> 00:38:31,936
+Distributing in Bayern
+
+945
+00:38:32,192 --> 00:38:33,216
+It may not have
+
+946
+00:38:33,472 --> 00:38:36,800
+Always on or even reliable connectivity does that break this model
+
+947
+00:38:37,312 --> 00:38:39,616
+We have to see the clouds in a very important element
+
+948
+00:38:41,408 --> 00:38:42,688
+Microsoft message
+
+949
+00:38:42,944 --> 00:38:44,480
+Talk about the intelligent cloud
+
+950
+00:38:44,736 --> 00:38:45,248
+Intelligent
+
+951
+00:38:47,040 --> 00:38:48,576
+Azure iot
+
+952
+00:38:49,856 --> 00:38:55,232
+That allows you to take computation you normally run the clouds and bring it down locally in the environment
+
+953
+00:38:57,024 --> 00:38:57,536
+Stare
+
+954
+00:38:57,792 --> 00:39:00,864
+Container ship that's offline
+
+955
+00:39:01,632 --> 00:39:02,144
+The time
+
+956
+00:39:02,400 --> 00:39:05,984
+Factory you don't want to shut down your after shutdown your product line
+
+957
+00:39:06,240 --> 00:39:07,520
+Just because you have lost your internet can
+
+958
+00:39:09,568 --> 00:39:13,152
+And so have the capability bringing this coffee tastes very very vocal as well
+
+959
+00:39:13,664 --> 00:39:18,016
+Am I correct in understanding that this will work with Azure iot Edge
+
+960
+00:39:18,528 --> 00:39:19,808
+Yes absolutely
+
+961
+00:39:20,064 --> 00:39:20,576
+And
+
+962
+00:39:20,832 --> 00:39:21,856
+Would it work with some
+
+963
+00:39:22,112 --> 00:39:22,624
+Other
+
+964
+00:39:22,880 --> 00:39:24,160
+Edge Computing platform
+
+965
+00:39:24,416 --> 00:39:24,928
+I'm not using
+
+966
+00:39:25,184 --> 00:39:25,952
+Iot Edge
+
+967
+00:39:26,464 --> 00:39:27,744
+It could be made to work with enough
+
+968
+00:39:28,000 --> 00:39:30,048
+Platform
+
+969
+00:39:31,072 --> 00:39:31,584
+We got it
+
+970
+00:39:31,840 --> 00:39:33,376
+Chicken got an operating system
+
+971
+00:39:33,888 --> 00:39:35,168
+And we provide an API
+
+972
+00:39:35,424 --> 00:39:36,192
+Programming.
+
+973
+00:39:36,448 --> 00:39:37,216
+Chips and
+
+974
+00:39:37,472 --> 00:39:39,264
+Or giving you internet connection
+
+975
+00:39:39,776 --> 00:39:42,080
+TCP IP connection TLS connection
+
+976
+00:39:43,360 --> 00:39:44,384
+Programmer to program
+
+977
+00:39:44,896 --> 00:39:45,920
+The actual device
+
+978
+00:39:46,176 --> 00:39:47,200
+They're open today
+
+979
+00:39:47,712 --> 00:39:48,224
+Program
+
+980
+00:39:48,480 --> 00:39:49,760
+Execution
+
+981
+00:39:50,016 --> 00:39:51,552
+Local device they're open till
+
+982
+00:39:52,576 --> 00:39:55,648
+Whatever local devices are other things in the environment as well
+
+983
+00:39:56,672 --> 00:39:58,464
+In why is Microsoft doing
+
+984
+00:39:58,720 --> 00:39:59,232
+What is
+
+985
+00:39:59,744 --> 00:40:01,792
+Obviously we care a lot about iot security
+
+986
+00:40:02,048 --> 00:40:03,072
+White in Turkey
+
+987
+00:40:03,584 --> 00:40:07,168
+What is a hardware platform in a Linux distro which is kind of crazy for you
+
+988
+00:40:08,448 --> 00:40:11,520
+But you don't participate in the it
+
+989
+00:40:12,032 --> 00:40:14,848
+Think about I guess Jeff back and think about
+
+990
+00:40:15,104 --> 00:40:15,872
+Descendants you
+
+991
+00:40:17,152 --> 00:40:18,944
+Billions of these devices
+
+992
+00:40:19,200 --> 00:40:19,712
+Coming on
+
+993
+00:40:21,504 --> 00:40:25,600
+We look at it cuz they that the Technologies of people are using right now
+
+994
+00:40:25,856 --> 00:40:26,880
+Free azure
+
+995
+00:40:27,136 --> 00:40:28,928
+Those devices are not going to
+
+996
+00:40:30,464 --> 00:40:30,976
+Security nightmare
+
+997
+00:40:31,488 --> 00:40:32,512
+And we looked at it
+
+998
+00:40:33,280 --> 00:40:34,048
+Start this project
+
+999
+00:40:34,304 --> 00:40:34,816
+4 years ago
+
+1000
+00:40:35,328 --> 00:40:36,352
+Looking at that eclipse
+
+1001
+00:40:37,632 --> 00:40:40,448
+Future that looks like a very scary future and saying
+
+1002
+00:40:40,704 --> 00:40:42,496
+Yeah we have the technology
+
+1003
+00:40:42,752 --> 00:40:43,264
+We have
+
+1004
+00:40:43,520 --> 00:40:44,032
+A lot of
+
+1005
+00:40:44,288 --> 00:40:47,616
+Experience we could that kind of do almost started the research
+
+1006
+00:40:48,128 --> 00:40:49,664
+Could we take everything that we've
+
+1007
+00:40:49,920 --> 00:40:51,200
+Learned a Microsoft about
+
+1008
+00:40:51,456 --> 00:40:51,968
+Security
+
+1009
+00:40:52,224 --> 00:40:54,016
+And figure out how to package unit
+
+1010
+00:40:54,272 --> 00:40:57,856
+Such a way that it could be used on these very very small devices
+
+1011
+00:40:58,112 --> 00:40:59,648
+So that we lived in a secure where
+
+1012
+00:41:00,160 --> 00:41:01,440
+And that's what we create with that
+
+1013
+00:41:02,464 --> 00:41:04,512
+What year was kind of
+
+1014
+00:41:05,024 --> 00:41:08,608
+When I talk
+
+1015
+00:41:10,656 --> 00:41:12,448
+It was reason is Galen wants to live in
+
+1016
+00:41:15,008 --> 00:41:17,312
+The security is out there is out there for him to use
+
+1017
+00:41:17,568 --> 00:41:18,336
+I could not get it
+
+1018
+00:41:18,592 --> 00:41:20,896
+So we're bringing the Technologies to make those
+
+1019
+00:41:21,920 --> 00:41:23,200
+Microsoft
+
+1020
+00:41:23,712 --> 00:41:24,992
+Ultimately a corporation
+
+1021
+00:41:25,248 --> 00:41:26,528
+Responsibility
+
+1022
+00:41:26,784 --> 00:41:30,624
+But we see is if there are many of these devices and their
+
+1023
+00:41:30,880 --> 00:41:31,648
+Picture and people
+
+1024
+00:41:34,976 --> 00:41:36,512
+They will be part of Cloud solution
+
+1025
+00:41:36,768 --> 00:41:38,560
+So they will use cloud services
+
+1026
+00:41:42,144 --> 00:41:43,680
+Are all of the Azure service
+
+1027
+00:41:44,192 --> 00:41:46,752
+So we see tremendous economic benefits there
+
+1028
+00:41:47,264 --> 00:41:51,360
+Okay so what are the things that you cited several times in relation to the creation
+
+1029
+00:41:51,616 --> 00:41:55,199
+This is your seven properties of Highly secure device
+
+1030
+00:41:55,967 --> 00:41:57,247
+Just briefly letsrun
+
+1031
+00:41:58,783 --> 00:41:59,551
+Okay soda
+
+1032
+00:41:59,807 --> 00:42:00,575
+7 properties
+
+1033
+00:42:01,599 --> 00:42:02,623
+Margarita Trust
+
+1034
+00:42:03,135 --> 00:42:04,927
+Then defense-in-depth
+
+1035
+00:42:05,183 --> 00:42:06,207
+Small PCB
+
+1036
+00:42:06,463 --> 00:42:07,743
+A trusted Computing base
+
+1037
+00:42:07,999 --> 00:42:09,279
+Dynamic compartments
+
+1038
+00:42:09,535 --> 00:42:10,815
+Certificate-based Authentication
+
+1039
+00:42:11,071 --> 00:42:12,607
+Online are recording
+
+1040
+00:42:12,863 --> 00:42:14,655
+And renewable security
+
+1041
+00:42:15,423 --> 00:42:16,447
+Yes okay
+
+1042
+00:42:16,703 --> 00:42:17,215
+So
+
+1043
+00:42:17,471 --> 00:42:20,287
+Let's just dig into a couple of those that people might be like what
+
+1044
+00:42:20,543 --> 00:42:22,335
+Compartmentalization what does that mean
+
+1045
+00:42:23,103 --> 00:42:23,871
+Okay I love this
+
+1046
+00:42:24,383 --> 00:42:27,455
+The compartmentalization is actually probably almost one of the oldest
+
+1047
+00:42:27,711 --> 00:42:28,735
+Security Technologies
+
+1048
+00:42:28,991 --> 00:42:29,503
+Known to man
+
+1049
+00:42:29,759 --> 00:42:31,807
+And this is the idea of
+
+1050
+00:42:32,319 --> 00:42:34,111
+Having multiple layers of Defense
+
+1051
+00:42:34,367 --> 00:42:34,879
+Having
+
+1052
+00:42:35,391 --> 00:42:36,671
+Separation of concerns
+
+1053
+00:42:36,927 --> 00:42:38,719
+Example
+
+1054
+00:42:38,975 --> 00:42:42,559
+Compartmentalize with Floodgate one part of the ship
+
+1055
+00:42:42,815 --> 00:42:43,583
+Because there's a lake
+
+1056
+00:42:44,095 --> 00:42:45,887
+That doesn't just fill up the entire ship
+
+1057
+00:42:46,143 --> 00:42:51,263
+Buildings where we have firewalls inside a building if there's a fire
+
+1058
+00:42:51,519 --> 00:42:52,287
+Prevent it from property
+
+1059
+00:42:53,311 --> 00:42:55,103
+Lego Back to the Future cast
+
+1060
+00:42:55,871 --> 00:42:57,151
+If you think about all that s***
+
+1061
+00:42:57,663 --> 00:43:00,991
+One of the most important lessons we've learned at Microsoft about security or less
+
+1062
+00:43:01,247 --> 00:43:04,063
+20 years is that it isn't a matter of
+
+1063
+00:43:04,319 --> 00:43:05,343
+If I will get her
+
+1064
+00:43:05,855 --> 00:43:06,623
+You will get high
+
+1065
+00:43:06,879 --> 00:43:08,415
+Make sure to buy some version of your device
+
+1066
+00:43:09,951 --> 00:43:10,463
+Question
+
+1067
+00:43:10,719 --> 00:43:11,487
+When your device
+
+1068
+00:43:12,511 --> 00:43:15,327
+What are the medications and what how prepared are you
+
+1069
+00:43:15,839 --> 00:43:18,143
+It's a building compartment actually end of the chapter
+
+1070
+00:43:18,399 --> 00:43:19,935
+Self and the operating system
+
+1071
+00:43:20,447 --> 00:43:21,983
+Allows us to if
+
+1072
+00:43:22,239 --> 00:43:24,031
+Partnership becomes compromised in summer
+
+1073
+00:43:24,799 --> 00:43:25,823
+That compromise
+
+1074
+00:43:26,079 --> 00:43:28,127
+Compartmentalize they can't go any further
+
+1075
+00:43:28,383 --> 00:43:32,479
+And then we can use the rest of the ship and the rest of the operating system and software
+
+1076
+00:43:32,735 --> 00:43:33,759
+To build restore
+
+1077
+00:43:34,015 --> 00:43:34,527
+Security.
+
+1078
+00:43:35,039 --> 00:43:38,111
+I'll even go a little bit farther because one questions you might ask
+
+1079
+00:43:38,367 --> 00:43:39,647
+These chips are different
+
+1080
+00:43:39,903 --> 00:43:41,183
+The traditional MCU
+
+1081
+00:43:41,439 --> 00:43:43,231
+We brought in a cortex a class
+
+1082
+00:43:43,487 --> 00:43:45,791
+Processor in addition to the cortex M class
+
+1083
+00:43:46,303 --> 00:43:48,607
+Non-exempt to use for the very first time
+
+1084
+00:43:50,143 --> 00:43:50,911
+The reason why
+
+1085
+00:43:51,167 --> 00:43:53,471
+Because it gives us Dynamic compartments
+
+1086
+00:43:53,727 --> 00:43:55,519
+Traditional MCU
+
+1087
+00:43:55,775 --> 00:43:57,311
+Aesthetic Apartments I have like
+
+1088
+00:43:57,567 --> 00:44:00,383
+Maybe at TruStone and then one other Lakes
+
+1089
+00:44:00,639 --> 00:44:02,175
+Willie two compartments on the chair
+
+1090
+00:44:02,431 --> 00:44:02,943
+And so
+
+1091
+00:44:03,199 --> 00:44:06,783
+You can't change departments like after you've been out and employment if you figure out the
+
+1092
+00:44:07,039 --> 00:44:07,807
+You custom music
+
+1093
+00:44:08,063 --> 00:44:10,623
+Security vulnerability or some news form of attack
+
+1094
+00:44:10,879 --> 00:44:12,415
+Like with a device been out with you
+
+1095
+00:44:12,671 --> 00:44:13,439
+Light years
+
+1096
+00:44:13,951 --> 00:44:14,975
+And some new
+
+1097
+00:44:15,231 --> 00:44:16,511
+Security attack is
+
+1098
+00:44:16,767 --> 00:44:20,351
+Embedded we can actually change the compartmentalization
+
+1099
+00:44:20,863 --> 00:44:26,495
+In the device by years after it's out in the field and mitigate against and prevent that attacks will be you
+
+1100
+00:44:27,007 --> 00:44:27,519
+Wow
+
+1101
+00:44:27,775 --> 00:44:31,871
+That sounds awesome but it's also brings up these are not chips
+
+1102
+00:44:32,127 --> 00:44:34,431
+Battery-powered devices the song
+
+1103
+00:44:34,687 --> 00:44:35,199
+It's going to consume
+
+1104
+00:44:35,455 --> 00:44:35,967
+More power
+
+1105
+00:44:36,223 --> 00:44:36,735
+Glass chip
+
+1106
+00:44:36,991 --> 00:44:40,831
+Well one of the innovations that we get so we partnered very early with
+
+1107
+00:44:41,087 --> 00:44:41,599
+Arm
+
+1108
+00:44:41,855 --> 00:44:42,367
+Building
+
+1109
+00:44:45,183 --> 00:44:45,951
+Figured out
+
+1110
+00:44:46,207 --> 00:44:49,023
+Scout II with their help to construct an a class
+
+1111
+00:44:49,279 --> 00:44:50,047
+Processor
+
+1112
+00:44:50,303 --> 00:44:52,351
+It is much lower power and
+
+1113
+00:44:53,119 --> 00:44:53,887
+Smaller area
+
+1114
+00:44:54,143 --> 00:44:56,447
+10 people traditionally associated with the cortex 8
+
+1115
+00:44:57,727 --> 00:45:00,031
+And so we will see battery power
+
+1116
+00:45:00,287 --> 00:45:01,055
+Address to chips
+
+1117
+00:45:01,311 --> 00:45:02,591
+All of this sounds
+
+1118
+00:45:02,847 --> 00:45:03,871
+Really intriguing
+
+1119
+00:45:04,383 --> 00:45:05,663
+My biggest question
+
+1120
+00:45:06,175 --> 00:45:07,199
+With this is forever
+
+1121
+00:45:07,455 --> 00:45:08,223
+Going for
+
+1122
+00:45:08,735 --> 00:45:10,527
+Is there a way to retrofit some
+
+1123
+00:45:10,783 --> 00:45:11,295
+Space force
+
+1124
+00:45:11,551 --> 00:45:12,063
+Are all healthy
+
+1125
+00:45:12,319 --> 00:45:13,087
+Millions
+
+1126
+00:45:13,599 --> 00:45:16,159
+Hundreds of millions of connected devices that are already
+
+1127
+00:45:17,439 --> 00:45:18,719
+Well it turns out
+
+1128
+00:45:18,975 --> 00:45:21,535
+In the empty space there aren't that many device
+
+1129
+00:45:23,327 --> 00:45:25,119
+And so we're really kind of worth it
+
+1130
+00:45:25,375 --> 00:45:27,167
+Perfect timing rainout address
+
+1131
+00:45:28,959 --> 00:45:34,079
+The problems before they can become problems or all of the new devices as they
+
+1132
+00:45:34,335 --> 00:45:35,615
+Can created become
+
+1133
+00:45:36,383 --> 00:45:37,919
+You know it's like right now
+
+1134
+00:45:38,175 --> 00:45:39,711
+Every Appliance in your kitchen is
+
+1135
+00:45:42,271 --> 00:45:43,295
+You have not been to my house
+
+1136
+00:45:45,599 --> 00:45:46,111
+Is your kitten
+
+1137
+00:45:46,879 --> 00:45:47,391
+Oh yeah
+
+1138
+00:45:48,159 --> 00:45:50,207
+Okay
+
+1139
+00:45:50,463 --> 00:45:51,743
+And these will be on the market
+
+1140
+00:45:51,999 --> 00:45:53,023
+Like physical devices
+
+1141
+00:45:55,327 --> 00:45:56,095
+The first
+
+1142
+00:45:56,607 --> 00:46:01,471
+Azure sphere certified ships will be available in volume this summer and we expect
+
+1143
+00:46:01,727 --> 00:46:02,495
+See the very first
+
+1144
+00:46:03,007 --> 00:46:04,031
+Azure sphere base
+
+1145
+00:46:04,287 --> 00:46:05,567
+Products on shelves
+
+1146
+00:46:05,823 --> 00:46:07,103
+Devices on shelf
+
+1147
+00:46:08,639 --> 00:46:10,943
+Alright everyone for Christmas this is what I'm getting
+
+1148
+00:46:11,199 --> 00:46:13,759
+Alright Caitlin thank you so much for coming on the show
+
+1149
+00:46:14,527 --> 00:46:15,295
+Oh thank you
+
+1150
+00:46:16,831 --> 00:46:22,975
+That's it for this week thanks so much for listening and remember if you'd like more iot news
+
+1151
+00:46:23,231 --> 00:46:28,095
+Sign up for my newsletter at Stacey on iot. Cam will see you next week

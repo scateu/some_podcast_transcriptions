@@ -1,0 +1,1284 @@
+EDL	Record In	Record Out	Clipname	Subtitle
+EDL	00:00:06,656	00:00:12,800	| IOT124 |	Hey everyone welcome to the Internet of Things podcast this is your host
+EDL	00:00:15,616	00:00:16,384	| IOT124 |	Kevin tofel
+EDL	00:00:16,384	00:00:20,224	| IOT124 |	Going to talk about
+EDL	00:00:20,224	00:00:22,272	| IOT124 |	Automated Factory
+EDL	00:00:22,784	00:00:24,064	| IOT124 |	Energy harvesting Tech
+EDL	00:00:24,832	00:00:26,112	| IOT124 |	Details on homekit
+EDL	00:00:26,624	00:00:28,160	| IOT124 |	Some Google home preview stuff
+EDL	00:00:28,160	00:00:28,928	| IOT124 |	And
+EDL	00:00:29,440	00:00:32,768	| IOT124 |	A review of a new device I purchased
+EDL	00:00:33,536	00:00:34,048	| IOT124 |	Is it a small
+EDL	00:00:34,560	00:00:35,584	| IOT124 |	It is not the small
+EDL	00:00:36,352	00:00:37,120	| IOT124 |	But it's never
+EDL	00:00:40,192	00:00:41,472	| IOT124 |	But first
+EDL	00:00:41,472	00:00:44,032	| IOT124 |	Before we do anything we must cover this
+EDL	00:00:44,032	00:00:45,056	| IOT124 |	Most important
+EDL	00:00:45,056	00:00:46,336	| IOT124 |	Moment of the show
+EDL	00:00:46,336	00:00:47,104	| IOT124 |	Which is
+EDL	00:00:47,616	00:00:49,408	| IOT124 |	Last week we talked about wink
+EDL	00:00:49,920	00:00:51,968	| IOT124 |	Being purchased by William
+EDL	00:00:52,992	00:00:54,784	| IOT124 |	And I said William after
+EDL	00:00:54,784	00:00:56,064	| IOT124 |	How much struggle was a member of Alec
+EDL	00:00:56,576	00:00:57,344	| IOT124 |	Fast and I was wrong
+EDL	00:00:58,624	00:01:01,696	| IOT124 |	Wish everyone was very quick to point out which I am
+EDL	00:01:01,696	00:01:03,744	| IOT124 |	I love that your dedication to William
+EDL	00:01:03,744	00:01:05,024	| IOT124 |	So strong
+EDL	00:01:05,536	00:01:08,096	| IOT124 |	I have a good thing that wasn't the Daily Double on Today Show
+EDL	00:01:08,096	00:01:11,680	| IOT124 |	Exactly so William is actually he was a member of The Black Eyed Pea
+EDL	00:01:12,704	00:01:13,728	| IOT124 |	Which is why Fergie kept
+EDL	00:01:15,520	00:01:16,288	| IOT124 |	I feel better about that
+EDL	00:01:17,056	00:01:19,616	| IOT124 |	But moving along to this week's
+EDL	00:01:19,616	00:01:20,384	| IOT124 |	Coverage
+EDL	00:01:20,384	00:01:22,432	| IOT124 |	We have no updates on William a twink
+EDL	00:01:22,432	00:01:23,200	| IOT124 |	Unfortunately
+EDL	00:01:23,712	00:01:24,992	| IOT124 |	I am waiting
+EDL	00:01:24,992	00:01:25,760	| IOT124 |	For that
+EDL	00:01:25,760	00:01:26,528	| IOT124 |	Hey
+EDL	00:01:28,576	00:01:31,136	| IOT124 |	This week sponsor who is Hico Solutions
+EDL	00:01:31,136	00:01:37,536	| IOT124 |	And a preview of our guests Michael Spears who is the head of infrastructure cyber
+EDL	00:01:37,536	00:01:38,304	| IOT124 |	Security at
+EDL	00:01:38,816	00:01:39,584	| IOT124 |	Honeywell
+EDL	00:01:39,584	00:01:43,168	| IOT124 |	And he is going to be really fascinating you guys were talking about
+EDL	00:01:43,168	00:01:44,960	| IOT124 |	How to secure
+EDL	00:01:44,960	00:01:49,312	| IOT124 |	Physical plants they have totally different threat Landscapes but some of the things they do
+EDL	00:01:49,824	00:01:50,848	| IOT124 |	The rest of the world probably
+EDL	00:01:51,360	00:01:52,128	| IOT124 |	I'm as well
+EDL	00:01:52,128	00:01:52,896	| IOT124 |	So
+EDL	00:01:52,896	00:01:53,920	| IOT124 |	Stay tuned for that
+EDL	00:01:53,920	00:01:54,432	| IOT124 |	And now
+EDL	00:01:54,944	00:01:55,968	| IOT124 |	Message from another
+EDL	00:01:56,992	00:02:03,392	| IOT124 |	This week sponsor is Eero and let me tell you guys Eros
+EDL	00:02:03,392	00:02:09,792	| IOT124 |	These are wireless mesh routers there are brand new 2nd generation Eero routers out there
+EDL	00:02:09,792	00:02:16,192	| IOT124 |	Or and I can tell you that I have them currently installed in my house and they are fast
+EDL	00:02:16,192	00:02:20,032	| IOT124 |	Eero router said I had installed at my house for the last year-and-a-half
+EDL	00:02:20,032	00:02:26,432	| IOT124 |	These contain what major Eero a square that looks like kind of the other Eros and then it has
+EDL	00:02:26,432	00:02:32,832	| IOT124 |	Beacons bees are mesh access points are not Wi-Fi extenders but these mesh access
+EDL	00:02:32,832	00:02:39,232	| IOT124 |	Test points are smaller you can plug them in and they also act as a night light and the cool thing is
+EDL	00:02:39,232	00:02:45,632	| IOT124 |	These are backwards compatible with your old Eero so you can upgrade your Eros
+EDL	00:02:45,632	00:02:52,032	| IOT124 |	By buying a couple new beacons if you want $449 or if you don't have
+EDL	00:02:52,032	00:02:58,432	| IOT124 |	Mesh wi-fi system yet you can buy the Eero in its original 3-pack configuration of one major
+EDL	00:02:58,432	00:02:59,712	| IOT124 |	Beacon Sports
+EDL	00:02:59,712	00:03:03,552	| IOT124 |	Free 99
+EDL	00:03:03,552	00:03:09,952	| IOT124 |	If you want to buy these zero routers you should go to the Eero ero.com
+EDL	00:03:09,952	00:03:16,352	| IOT124 |	And when you buy it you should put the code Stacey Stacey
+EDL	00:03:16,352	00:03:22,752	| IOT124 |	And you'll get free shipping you also tell Eero that you listen podcast will keep getting advertisers
+EDL	00:03:22,752	00:03:27,104	| IOT124 |	Yay okay so now onto the show
+EDL	00:03:28,128	00:03:28,896	| IOT124 |	Talk about Adidas
+EDL	00:03:29,920	00:03:30,432	| IOT124 |	Shadow
+EDL	00:03:31,200	00:03:32,224	| IOT124 |	We shall
+EDL	00:03:32,224	00:03:32,736	| IOT124 |	We shall
+EDL	00:03:33,248	00:03:37,856	| IOT124 |	This I thought was a wicked cool story and I can't believe no one else has
+EDL	00:03:37,856	00:03:39,648	| IOT124 |	Tell me about this sew in
+EDL	00:03:40,160	00:03:43,488	| IOT124 |	Little Rock Arkansas there is a Chinese company
+EDL	00:03:43,488	00:03:44,768	| IOT124 |	Tiana Von Karman
+EDL	00:03:44,768	00:03:46,048	| IOT124 |	Company of Suzhou
+EDL	00:03:46,816	00:03:47,584	| IOT124 |	Yes
+EDL	00:03:47,584	00:03:50,144	| IOT124 |	So they signed an agreement with software automation of
+EDL	00:03:50,656	00:03:51,680	| IOT124 |	Atlanta
+EDL	00:03:51,680	00:03:54,496	| IOT124 |	Hey to a partnership with the Georgia Tech advanced technology
+EDL	00:03:54,496	00:03:55,008	| IOT124 |	Development Center
+EDL	00:03:55,520	00:03:57,568	| IOT124 |	And all of this means that
+EDL	00:03:57,568	00:04:01,408	| IOT124 |	Jian-yang is going to be producing shirts for Adidas
+EDL	00:04:01,920	00:04:03,968	| IOT124 |	In a fully automated Factory
+EDL	00:04:03,968	00:04:05,248	| IOT124 |	Invite fully automated
+EDL	00:04:05,760	00:04:07,808	| IOT124 |	Basically this thing uses cameras to me
+EDL	00:04:07,808	00:04:11,136	| IOT124 |	Fabric is using robots to steer the fabric to the sewing needles
+EDL	00:04:11,648	00:04:12,416	| IOT124 |	And
+EDL	00:04:12,416	00:04:14,208	| IOT124 |	They're going to make t-shirts for Adidas
+EDL	00:04:14,720	00:04:16,512	| IOT124 |	A whole lot of t-shirts
+EDL	00:04:16,512	00:04:17,280	| IOT124 |	Adidas
+EDL	00:04:17,280	00:04:19,583	| IOT124 |	Because the numbers are mind-blowing to Miyagi
+EDL	00:04:19,583	00:04:21,631	| IOT124 |	I'm not familiar with Industrial
+EDL	00:04:21,631	00:04:24,447	| IOT124 |	Production of such things but when I saw
+EDL	00:04:24,447	00:04:26,751	| IOT124 |	How many T-shirts they can produce I was blown away
+EDL	00:04:26,751	00:04:28,287	| IOT124 |	Me too I don't know how they're going to sell out
+EDL	00:04:28,799	00:04:34,175	| IOT124 |	So they will produce 800,000 t-shirts a day for Adidas in this Factory
+EDL	00:04:34,687	00:04:36,991	| IOT124 |	On 21 production lines
+EDL	00:04:36,991	00:04:38,015	| IOT124 |	And the crazy part
+EDL	00:04:38,527	00:04:43,391	| IOT124 |	Is it the Personnel cost for each t-shirt is roughly $0.33
+EDL	00:04:43,903	00:04:46,207	| IOT124 |	That is like the cheapest labor
+EDL	00:04:46,207	00:04:46,975	| IOT124 |	One can
+EDL	00:04:46,975	00:04:47,487	| IOT124 |	Find
+EDL	00:04:47,999	00:04:49,535	| IOT124 |	Which is good in bed
+EDL	00:04:49,535	00:04:50,303	| IOT124 |	Yes
+EDL	00:04:50,303	00:04:55,167	| IOT124 |	I think right because on the green side it's certainly good for Adidas because it
+EDL	00:04:55,167	00:04:56,703	| IOT124 |	Certainly lower their costs
+EDL	00:04:57,215	00:05:01,055	| IOT124 |	I wish I could pass on the consumers or they can just take him or process etcetera
+EDL	00:05:01,567	00:05:04,127	| IOT124 |	But if you're a worker in this industry
+EDL	00:05:04,127	00:05:05,919	| IOT124 |	It's probably a bad thing
+EDL	00:05:06,431	00:05:10,271	| IOT124 |	Yeah so this is going to bring 400 new jobs to Arkansas
+EDL	00:05:11,039	00:05:11,807	| IOT124 |	But
+EDL	00:05:11,807	00:05:14,111	| IOT124 |	If you imagined 400 jobs
+EDL	00:05:14,111	00:05:14,879	| IOT124 |	Producing
+EDL	00:05:15,903	00:05:16,927	| IOT124 |	800
+EDL	00:05:16,927	00:05:18,719	| IOT124 |	Thousand t-shirts a day
+EDL	00:05:20,767	00:05:22,559	| IOT124 |	One every 22 seconds
+EDL	00:05:22,559	00:05:25,375	| IOT124 |	That is a huge productivity bump that is not being handled
+EDL	00:05:26,655	00:05:27,935	| IOT124 |	So then the question is
+EDL	00:05:27,935	00:05:28,959	| IOT124 |	What do people do
+EDL	00:05:29,471	00:05:29,983	| IOT124 |	And
+EDL	00:05:30,495	00:05:31,519	| IOT124 |	That is a
+EDL	00:05:31,519	00:05:34,079	| IOT124 |	Big question that were trying to figure out
+EDL	00:05:34,079	00:05:36,639	| IOT124 |	Across all Industries I personally think
+EDL	00:05:36,639	00:05:38,175	| IOT124 |	It frees people up to do
+EDL	00:05:38,687	00:05:39,711	| IOT124 |	Are creative and fun things
+EDL	00:05:40,479	00:05:41,247	| IOT124 |	Kwik podcast
+EDL	00:05:41,247	00:05:42,527	| IOT124 |	Slate podcast
+EDL	00:05:43,807	00:05:47,135	| IOT124 |	But it also thinks you can think about designing and
+EDL	00:05:47,903	00:05:50,463	| IOT124 |	Where new cosmic coming from and
+EDL	00:05:51,231	00:05:51,999	| IOT124 |	I guess
+EDL	00:05:51,999	00:05:52,511	| IOT124 |	The lower
+EDL	00:05:53,023	00:05:54,815	| IOT124 |	I don't know what that lower cost of t-shirt
+EDL	00:05:56,095	00:05:58,399	| IOT124 |	Yeah I mean there's other stuff with positive us
+EDL	00:05:58,399	00:06:00,959	| IOT124 |	Pics of it and this is really I think
+EDL	00:06:00,959	00:06:02,751	| IOT124 |	Tip of the iceberg Salt Lake is the first
+EDL	00:06:02,751	00:06:04,799	| IOT124 |	Production line that is fully automated
+EDL	00:06:04,799	00:06:05,567	| IOT124 |	Obviously
+EDL	00:06:05,567	00:06:06,079	| IOT124 |	But
+EDL	00:06:06,591	00:06:07,871	| IOT124 |	It's a very tangible
+EDL	00:06:08,383	00:06:10,175	| IOT124 |	Example of what's going on
+EDL	00:06:10,175	00:06:11,199	| IOT124 |	In manufacturing
+EDL	00:06:11,711	00:06:14,527	| IOT124 |	Around the world and it's inevitable unfortunately
+EDL	00:06:15,039	00:06:16,319	| IOT124 |	What is disturbing
+EDL	00:06:16,319	00:06:19,903	| IOT124 |	Is it feels like this manufacturer the automated Manufacturing
+EDL	00:06:20,415	00:06:21,951	| IOT124 |	A lot of Chinese companies are in
+EDL	00:06:21,951	00:06:22,463	| IOT124 |	Investing in this
+EDL	00:06:22,975	00:06:24,255	| IOT124 |	I would like to in
+EDL	00:06:24,767	00:06:26,815	| IOT124 |	With much manufacturing is
+EDL	00:06:26,815	00:06:27,583	| IOT124 |	Already happening
+EDL	00:06:27,583	00:06:28,863	| IOT124 |	Can China fit Foxconn
+EDL	00:06:29,375	00:06:31,679	| IOT124 |	Is investing in fully automated
+EDL	00:06:31,679	00:06:32,703	| IOT124 |	I believe iPhone play
+EDL	00:06:33,727	00:06:37,567	| IOT124 |	So Foxconn already has 40000 robots on it
+EDL	00:06:38,079	00:06:41,407	| IOT124 |	Production lines Foxconn is Apple's main iPhone assembler
+EDL	00:06:41,919	00:06:47,039	| IOT124 |	And basically it is replaced more than half of its Workforce with robots
+EDL	00:06:47,039	00:06:47,807	| IOT124 |	Since
+EDL	00:06:47,807	00:06:49,343	| IOT124 |	The launch of the iPhone 6
+EDL	00:06:49,855	00:06:50,367	| IOT124 |	That is
+EDL	00:06:50,879	00:06:51,391	| IOT124 |	A lot
+EDL	00:06:52,159	00:06:53,439	| IOT124 |	And they have men
+EDL	00:06:53,439	00:06:54,463	| IOT124 |	Lights out
+EDL	00:06:54,463	00:06:56,767	| IOT124 |	Which are fully automated production lines at some of the
+EDL	00:06:56,767	00:06:57,279	| IOT124 |	Their factories
+EDL	00:06:58,047	00:07:00,095	| IOT124 |	And the whole idea is
+EDL	00:07:00,095	00:07:02,143	| IOT124 |	Tire factories not just production line
+EDL	00:07:02,143	00:07:02,911	| IOT124 |	Mine's operate
+EDL	00:07:04,191	00:07:07,007	| IOT124 |	This is a crazy this actually it's not crazy
+EDL	00:07:07,007	00:07:09,311	| IOT124 |	This is a big deal because
+EDL	00:07:09,311	00:07:11,871	| IOT124 |	If the future of automation
+EDL	00:07:11,871	00:07:13,151	| IOT124 |	And Manufacturing
+EDL	00:07:13,151	00:07:13,663	| IOT124 |	Is
+EDL	00:07:14,175	00:07:14,687	| IOT124 |	Robots
+EDL	00:07:15,967	00:07:17,247	| IOT124 |	China is really
+EDL	00:07:17,759	00:07:18,527	| IOT124 |	Pushing hard on
+EDL	00:07:19,039	00:07:20,575	| IOT124 |	Leaving ahead here
+EDL	00:07:21,087	00:07:24,415	| IOT124 |	And that means we can have manufacturing anywhere
+EDL	00:07:24,927	00:07:26,463	| IOT124 |	Because we've got
+EDL	00:07:26,463	00:07:27,231	| IOT124 |	It'll be automated
+EDL	00:07:27,743	00:07:29,535	| IOT124 |	And we'll be looking for things you know
+EDL	00:07:30,047	00:07:35,679	| IOT124 |	Setting up these industrial cluster so you don't have to ship things as far it's a really interesting kind of
+EDL	00:07:35,679	00:07:37,727	| IOT124 |	Manufacturing and Industry
+EDL	00:07:37,727	00:07:38,751	| IOT124 |	You shouldn't kind of vision
+EDL	00:07:40,031	00:07:40,543	| IOT124 |	But
+EDL	00:07:41,055	00:07:42,591	| IOT124 |	I am concerned that we are
+EDL	00:07:42,591	00:07:43,615	| IOT124 |	In the US are not at the
+EDL	00:07:44,639	00:07:45,407	| IOT124 |	And yeah
+EDL	00:07:46,687	00:07:50,783	| IOT124 |	It's funny that you mention Foxconn and Apple only because
+EDL	00:07:51,551	00:07:57,951	| IOT124 |	When you crack your iPhone screen and take it in to get repaired at an Apple store or some third part
+EDL	00:07:57,951	00:07:58,719	| IOT124 |	Party such as Best Buy
+EDL	00:07:59,231	00:08:01,023	| IOT124 |	It's not a person who repairs it anymore
+EDL	00:08:02,047	00:08:03,327	| IOT124 |	It is it is not
+EDL	00:08:03,327	00:08:04,607	| IOT124 |	And that is why
+EDL	00:08:04,607	00:08:07,935	| IOT124 |	When you go there and I've had a couple of the kids have crackers screens
+EDL	00:08:07,935	00:08:09,215	| IOT124 |	It's almost always
+EDL	00:08:09,215	00:08:09,983	| IOT124 |	Should be done in an hour
+EDL	00:08:10,751	00:08:15,359	| IOT124 |	I know it's an hour because not because there's a person sitting there saying it's going to take me an hour to do this
+EDL	00:08:15,359	00:08:16,127	| IOT124 |	Apple has
+EDL	00:08:16,127	00:08:18,431	| IOT124 |	Created automated machines that do it
+EDL	00:08:18,431	00:08:18,943	| IOT124 |	For them
+EDL	00:08:20,991	00:08:21,759	| IOT124 |	Is a comet
+EDL	00:08:23,551	00:08:24,063	| IOT124 |	Redis
+EDL	00:08:25,599	00:08:26,623	| IOT124 |	Yikes alright
+EDL	00:08:27,391	00:08:27,903	| IOT124 |	Yikes
+EDL	00:08:30,719	00:08:34,047	| IOT124 |	Because there's not a lot we can adhere
+EDL	00:08:34,559	00:08:37,119	| IOT124 |	It's it's something that I'm constantly thinking about
+EDL	00:08:37,119	00:08:38,399	| IOT124 |	In reading about
+EDL	00:08:38,399	00:08:40,191	| IOT124 |	I have no great conclusions like
+EDL	00:08:41,215	00:08:43,007	| IOT124 |	So let's talk about energy Harvest
+EDL	00:08:44,543	00:08:45,055	| IOT124 |	Cuz
+EDL	00:08:45,823	00:08:48,383	| IOT124 |	This was really cool I am a big fan
+EDL	00:08:49,151	00:08:49,663	| IOT124 |	Of
+EDL	00:08:50,175	00:08:51,199	| IOT124 |	Energy harvesting
+EDL	00:08:51,199	00:08:52,479	| IOT124 |	And I've been
+EDL	00:08:52,479	00:08:56,575	| IOT124 |	Caring about this for so long because I have so many devices that
+EDL	00:08:56,575	00:08:57,855	| IOT124 |	Batteries in my home
+EDL	00:08:57,855	00:09:01,951	| IOT124 |	But I'm also thinking about things like hey if we put a bunch of sensors on Bridges
+EDL	00:09:01,951	00:09:05,535	| IOT124 |	Or sensors under parking spaces are those kind of things
+EDL	00:09:06,559	00:09:09,631	| IOT124 |	How do we change the batteries in this it's
+EDL	00:09:10,399	00:09:12,191	| IOT124 |	It's not possible today so
+EDL	00:09:12,959	00:09:13,727	| IOT124 |	That's why
+EDL	00:09:14,495	00:09:17,055	| IOT124 |	Anything that harvests its own energy is really cool
+EDL	00:09:17,567	00:09:21,663	| IOT124 |	We have to look at this I think because Battery Technology really has not
+EDL	00:09:21,663	00:09:23,967	| IOT124 |	Drastically changed over
+EDL	00:09:23,967	00:09:26,271	| IOT124 |	Pastor K Square Dallas ISO
+EDL	00:09:26,271	00:09:32,159	| IOT124 |	And we have more mobile devices they all have batteries of course so how do we recharge them how do we
+EDL	00:09:32,671	00:09:34,975	| IOT124 |	Get energy back into them quicker without
+EDL	00:09:34,975	00:09:37,023	| IOT124 |	Using the traditional plug it in method
+EDL	00:09:37,023	00:09:39,071	| IOT124 |	So this is very big
+EDL	00:09:39,071	00:09:43,679	| IOT124 |	So this article in a link to in the story is from CNN
+EDL	00:09:43,679	00:09:44,447	| IOT124 |	Engineering
+EDL	00:09:44,447	00:09:45,727	| IOT124 |	News not CNN
+EDL	00:09:45,727	00:09:47,007	| IOT124 |	Betsy and
+EDL	00:09:47,007	00:09:47,519	| IOT124 |	Eaton
+EDL	00:09:49,567	00:09:50,335	| IOT124 |	Worth noticing
+EDL	00:09:50,847	00:09:52,383	| IOT124 |	In the cupboard
+EDL	00:09:52,383	00:09:56,223	| IOT124 |	Some things I knew so the main forms of energy harvesting
+EDL	00:09:56,223	00:09:56,735	| IOT124 |	AR
+EDL	00:09:57,247	00:09:58,015	| IOT124 |	Solar
+EDL	00:09:58,015	00:10:01,599	| IOT124 |	Solar power things there's pie co which takes
+EDL	00:10:01,599	00:10:02,623	| IOT124 |	Like motion energy
+EDL	00:10:03,391	00:10:04,927	| IOT124 |	And converts it into
+EDL	00:10:05,951	00:10:07,231	| IOT124 |	There's also
+EDL	00:10:07,231	00:10:10,047	| IOT124 |	Temperature differentials can be used as well
+EDL	00:10:10,047	00:10:11,071	| IOT124 |	In certain sensors
+EDL	00:10:11,583	00:10:14,143	| IOT124 |	This article talked about something I hadn't dealt
+EDL	00:10:14,655	00:10:15,423	| IOT124 |	Before
+EDL	00:10:15,423	00:10:21,055	| IOT124 |	It's a rare earth magnet the moves on Springs alongside a wire coil and generates electricity
+EDL	00:10:21,055	00:10:25,151	| IOT124 |	It produces between 50 and 90 million watts of power that's milliwatts you
+EDL	00:10:25,151	00:10:26,943	| IOT124 |	Guys not a lot right much
+EDL	00:10:27,455	00:10:30,527	| IOT124 |	But that's enough to energy like to power temperature sensor
+EDL	00:10:31,039	00:10:34,623	| IOT124 |	A mems device like a mems accelerometer and a wireless transmitter
+EDL	00:10:35,391	00:10:38,207	| IOT124 |	So this is from a company called perpetuum
+EDL	00:10:38,975	00:10:39,743	| IOT124 |	I do like its name
+EDL	00:10:40,511	00:10:46,655	| IOT124 |	This could work under they filter rail system so it goes under a passenger or Freight cars in rails and
+EDL	00:10:47,679	00:10:50,495	| IOT124 |	Grabs information send it to a Gateway and then it goes to the
+EDL	00:10:51,263	00:10:52,543	| IOT124 |	To the cloud
+EDL	00:10:52,543	00:10:55,359	| IOT124 |	Real workers can act on any of the data
+EDL	00:10:55,359	00:10:56,127	| IOT124 |	Like
+EDL	00:10:56,639	00:11:01,247	| IOT124 |	It's a little extra bumpy here I could see something like this working for detecting potholes
+EDL	00:11:01,247	00:11:03,551	| IOT124 |	In a city using like a Laura
+EDL	00:11:03,551	00:11:04,319	| IOT124 |	Radio
+EDL	00:11:04,319	00:11:05,087	| IOT124 |	Maybe
+EDL	00:11:05,087	00:11:05,855	| IOT124 |	Which
+EDL	00:11:05,855	00:11:06,879	| IOT124 |	We talked about it the show
+EDL	00:11:06,879	00:11:07,391	| IOT124 |	4
+EDL	00:11:07,903	00:11:08,415	| IOT124 |	So
+EDL	00:11:09,183	00:11:14,559	| IOT124 |	I thought the magnets kind of thing was cool but basically I just wanted to draw y'all's attention to this because
+EDL	00:11:15,327	00:11:16,863	| IOT124 |	I don't think we talked about it enough
+EDL	00:11:17,631	00:11:20,959	| IOT124 |	I don't think there's a lot of research happening here that
+EDL	00:11:20,959	00:11:21,471	| IOT124 |	Sleek
+EDL	00:11:22,751	00:11:26,591	| IOT124 |	I mean I talk to an ocean which is the big name in this field and they've been around for
+EDL	00:11:27,103	00:11:28,127	| IOT124 |	17 years
+EDL	00:11:29,407	00:11:30,943	| IOT124 |	They do great things but
+EDL	00:11:30,943	00:11:31,711	| IOT124 |	I'm kind of like
+EDL	00:11:31,711	00:11:32,479	| IOT124 |	What else is there
+EDL	00:11:32,991	00:11:35,807	| IOT124 |	Yeah I mean this is a field that I think is right for
+EDL	00:11:36,319	00:11:37,087	| IOT124 |	Further
+EDL	00:11:37,087	00:11:39,135	| IOT124 |	Rationed probably further investment
+EDL	00:11:39,903	00:11:41,951	| IOT124 |	We need to rethink how we
+EDL	00:11:42,463	00:11:43,231	| IOT124 |	How are things
+EDL	00:11:43,231	00:11:47,071	| IOT124 |	Because the things themselves have gotten so small and don't use as much energy
+EDL	00:11:48,351	00:11:50,143	| IOT124 |	Required for a hardwired power saw
+EDL	00:11:50,143	00:11:54,239	| IOT124 |	Source or a battery you know what I mean the batteries are larger than the sensors at this point
+EDL	00:11:55,007	00:11:56,287	| IOT124 |	And we should also note
+EDL	00:11:56,799	00:12:01,151	| IOT124 |	When I talk to people in like the industrial World about
+EDL	00:12:01,151	00:12:02,943	| IOT124 |	Sensing and battery-powered
+EDL	00:12:03,711	00:12:07,039	| IOT124 |	Sensors they talk about it being a psychological choice
+EDL	00:12:07,551	00:12:09,087	| IOT124 |	I was like what are you talking about
+EDL	00:12:09,599	00:12:10,623	| IOT124 |	Psychology element
+EDL	00:12:11,135	00:12:12,415	| IOT124 |	And basically what they're talking about
+EDL	00:12:12,927	00:12:14,207	| IOT124 |	Is this idea
+EDL	00:12:14,207	00:12:17,279	| IOT124 |	A mighty world we want to know everything that's happening
+EDL	00:12:17,279	00:12:18,303	| IOT124 |	All the time
+EDL	00:12:18,303	00:12:18,815	| IOT124 |	Breakdown
+EDL	00:12:19,327	00:12:21,631	| IOT124 |	And in some of the industrial world
+EDL	00:12:21,631	00:12:22,911	| IOT124 |	They're like hey
+EDL	00:12:22,911	00:12:24,447	| IOT124 |	How often really do I need the
+EDL	00:12:25,215	00:12:25,983	| IOT124 |	This
+EDL	00:12:25,983	00:12:28,799	| IOT124 |	And it's a very simple fact that if you have your
+EDL	00:12:28,799	00:12:30,079	| IOT124 |	Item only update
+EDL	00:12:30,847	00:12:32,127	| IOT124 |	Three times a day
+EDL	00:12:32,127	00:12:35,199	| IOT124 |	Uses less power than going to waking up every 20 seconds to send it
+EDL	00:12:37,247	00:12:40,063	| IOT124 |	These guys actually think about that as part of their design
+EDL	00:12:40,063	00:12:41,343	| IOT124 |	Their overall systems
+EDL	00:12:42,367	00:12:45,439	| IOT124 |	They're from a worldview which is very
+EDL	00:12:45,439	00:12:48,511	| IOT124 |	Power constrained in very sensitive just this sort of
+EDL	00:12:48,511	00:12:50,047	| IOT124 |	Think so I thought that was kind of an interesting way
+EDL	00:12:50,559	00:12:51,327	| IOT124 |	Think about
+EDL	00:12:51,327	00:12:52,863	| IOT124 |	How often do I need my
+EDL	00:12:53,375	00:12:54,911	| IOT124 |	Water sensor if it's
+EDL	00:12:54,911	00:12:55,679	| IOT124 |	Not
+EDL	00:12:55,679	00:12:56,703	| IOT124 |	Reporting a leak
+EDL	00:12:56,703	00:12:57,215	| IOT124 |	To wake up
+EDL	00:12:59,007	00:13:01,823	| IOT124 |	You know maybe once a day just to tell me the temperature is fine
+EDL	00:13:02,847	00:13:05,663	| IOT124 |	And then when something goes wrong it could be like
+EDL	00:13:06,943	00:13:12,831	| IOT124 |	So that's really all I have to say about this I recommend you check out the article and you know if you guys have some great ideas or
+EDL	00:13:12,831	00:13:14,367	| IOT124 |	Cool energy harvesting
+EDL	00:13:14,879	00:13:16,415	| IOT124 |	God send it to me I am like
+EDL	00:13:16,927	00:13:17,439	| IOT124 |	Really
+EDL	00:13:18,207	00:13:19,231	| IOT124 |	Really want to nerd out Deep
+EDL	00:13:19,999	00:13:20,767	| IOT124 |	Cell
+EDL	00:13:20,767	00:13:22,815	| IOT124 |	Moving right along to slightly less
+EDL	00:13:26,399	00:13:28,191	| IOT124 |	Pistol dirty but in a good way
+EDL	00:13:28,191	00:13:30,751	| IOT124 |	It's more accessible because it's Apple by golly
+EDL	00:13:31,263	00:13:33,567	| IOT124 |	So I have been the biggest doubter
+EDL	00:13:34,591	00:13:35,871	| IOT124 |	I really had next to me next
+EDL	00:13:38,943	00:13:39,967	| IOT124 |	To see whose outcome Campmor
+EDL	00:13:40,479	00:13:41,759	| IOT124 |	We might have less doubts now
+EDL	00:13:42,271	00:13:43,295	| IOT124 |	Fewer doubts
+EDL	00:13:43,295	00:13:44,831	| IOT124 |	I'm in a few workouts you can have left
+EDL	00:13:45,343	00:13:47,135	| IOT124 |	And thicker Marian's listening to the shokan
+EDL	00:13:48,671	00:13:49,183	| IOT124 |	So
+EDL	00:13:52,255	00:13:53,279	| IOT124 |	Apple
+EDL	00:13:53,279	00:13:54,559	| IOT124 |	Said cryptically
+EDL	00:13:55,071	00:13:58,655	| IOT124 |	It was going to make homekit available to a wider
+EDL	00:13:58,655	00:13:59,423	| IOT124 |	Number of
+EDL	00:13:59,423	00:13:59,935	| IOT124 |	Partners
+EDL	00:14:00,447	00:14:06,079	| IOT124 |	And I had Adam Justice on the show then and he pointed that out to me
+EDL	00:14:06,591	00:14:07,615	| IOT124 |	And he's like I don't know
+EDL	00:14:08,127	00:14:09,663	| IOT124 |	And then we saw the release of
+EDL	00:14:10,431	00:14:11,455	| IOT124 |	Products like
+EDL	00:14:11,455	00:14:13,759	| IOT124 |	Ikea's tradfri
+EDL	00:14:13,759	00:14:17,087	| IOT124 |	Lamps and actually announced that it would work with Apple
+EDL	00:14:18,367	00:14:20,159	| IOT124 |	In the future
+EDL	00:14:21,951	00:14:22,975	| IOT124 |	His travel
+EDL	00:14:22,975	00:14:26,303	| IOT124 |	Apple has required you to have a certification ship
+EDL	00:14:26,303	00:14:27,583	| IOT124 |	It's all part of it security
+EDL	00:14:28,351	00:14:30,143	| IOT124 |	And so that's why you got all these like
+EDL	00:14:30,143	00:14:32,447	| IOT124 |	You got to buy a new hub
+EDL	00:14:32,959	00:14:34,751	| IOT124 |	Which kind of sucked if you were a consumer
+EDL	00:14:35,519	00:14:36,799	| IOT124 |	Which is why I did not like it
+EDL	00:14:37,567	00:14:38,335	| IOT124 |	But now
+EDL	00:14:40,127	00:14:41,663	| IOT124 |	Box it looks
+EDL	00:14:42,431	00:14:44,479	| IOT124 |	Black people are actually implementing
+EDL	00:14:44,991	00:14:45,503	| IOT124 |	The
+EDL	00:14:46,015	00:14:47,551	| IOT124 |	Mfi certification chip
+EDL	00:14:47,551	00:14:49,855	| IOT124 |	Less version of home gym
+EDL	00:14:50,367	00:14:51,391	| IOT124 |	And that's exciting
+EDL	00:14:51,391	00:14:53,439	| IOT124 |	And then there's one other piece of this that
+EDL	00:14:53,439	00:14:55,231	| IOT124 |	Seems kind of exciting that
+EDL	00:14:55,231	00:14:56,255	| IOT124 |	The Verge
+EDL	00:14:56,767	00:14:59,071	| IOT124 |	They had a column from the internet of
+EDL	00:14:59,071	00:15:01,375	| IOT124 |	I can't say it on this show and keep my
+EDL	00:15:02,143	00:15:02,911	| IOT124 |	Berating soda
+EDL	00:15:02,911	00:15:03,679	| IOT124 |	The internet
+EDL	00:15:10,591	00:15:11,871	| IOT124 |	But he was a write-up
+EDL	00:15:11,871	00:15:12,895	| IOT124 |	The point or she
+EDL	00:15:12,895	00:15:13,407	| IOT124 |	With no nose
+EDL	00:15:13,919	00:15:14,431	| IOT124 |	Sonos
+EDL	00:15:15,455	00:15:16,479	| IOT124 |	Homekit
+EDL	00:15:16,479	00:15:18,271	| IOT124 |	With the homepod in December
+EDL	00:15:19,295	00:15:23,647	| IOT124 |	To make it accessible to Android and Apple homes the mixed homes as it
+EDL	00:15:27,999	00:15:32,351	| IOT124 |	And I think that would be a smart move if that's the case said it was already seen one major
+EDL	00:15:32,863	00:15:33,887	| IOT124 |	Apple service
+EDL	00:15:34,911	00:15:36,959	| IOT124 |	Compatible with Android and that was
+EDL	00:15:36,959	00:15:37,471	| IOT124 |	Apple music
+EDL	00:15:38,239	00:15:44,639	| IOT124 |	That's actually one of the reasons I think that Apple music subscriptions are going up because there's a wider group of potential
+EDL	00:15:44,639	00:15:45,663	| IOT124 |	Customer ser
+EDL	00:15:45,663	00:15:47,455	| IOT124 |	And partly that's because
+EDL	00:15:47,455	00:15:51,039	| IOT124 |	That what music is really came from Beats Music which was already
+EDL	00:15:51,039	00:15:53,343	| IOT124 |	Android-compatible so that just made sense to continue it
+EDL	00:15:53,855	00:15:55,903	| IOT124 |	But yeah I mean if you could get the
+EDL	00:15:55,903	00:15:56,671	| IOT124 |	Homepod
+EDL	00:15:57,183	00:15:58,207	| IOT124 |	Working with Android
+EDL	00:15:59,231	00:16:01,791	| IOT124 |	Again you broaden your potential audience at smart
+EDL	00:16:01,791	00:16:04,351	| IOT124 |	Well and I look at this from a business perspective
+EDL	00:16:05,119	00:16:11,263	| IOT124 |	Apple has historically made everything work with their phone their phone was the flagship of the business of that lie
+EDL	00:16:12,543	00:16:13,823	| IOT124 |	Talk about computers later
+EDL	00:16:13,823	00:16:14,591	| IOT124 |	But
+EDL	00:16:14,591	00:16:15,871	| IOT124 |	Mobile
+EDL	00:16:15,871	00:16:16,895	| IOT124 |	Hadoop operating system
+EDL	00:16:17,407	00:16:18,943	| IOT124 |	The phone was it and that was the key
+EDL	00:16:18,943	00:16:19,967	| IOT124 |	Computer for everything
+EDL	00:16:20,479	00:16:21,503	| IOT124 |	With his signals
+EDL	00:16:22,015	00:16:22,527	| IOT124 |	Possibly
+EDL	00:16:23,039	00:16:24,063	| IOT124 |	Is a realization
+EDL	00:16:24,831	00:16:25,343	| IOT124 |	That
+EDL	00:16:26,111	00:16:28,415	| IOT124 |	You can still own the consumer
+EDL	00:16:28,415	00:16:30,463	| IOT124 |	Without owning the home
+EDL	00:16:30,463	00:16:31,487	| IOT124 |	And still provide
+EDL	00:16:31,999	00:16:33,279	| IOT124 |	A viable ecosystem
+EDL	00:16:34,047	00:16:39,935	| IOT124 |	And I don't know how apples going to make money off of this with homekit I don't know if you have to pay
+EDL	00:16:39,935	00:16:41,215	| IOT124 |	I mean you have to pay
+EDL	00:16:41,215	00:16:45,823	| IOT124 |	An mfi fee for the certification chips you have to be of mfi certified
+EDL	00:16:47,103	00:16:47,615	| IOT124 |	Developer
+EDL	00:16:49,407	00:16:49,919	| IOT124 |	Etcetera
+EDL	00:16:50,687	00:16:51,199	| IOT124 |	But
+EDL	00:16:51,711	00:16:53,759	| IOT124 |	I like this because Apple
+EDL	00:16:53,759	00:16:55,551	| IOT124 |	Has come a long way with the design
+EDL	00:16:56,575	00:16:57,855	| IOT124 |	There's still some things I don't
+EDL	00:16:59,135	00:16:59,647	| IOT124 |	But
+EDL	00:17:00,671	00:17:02,463	| IOT124 |	It is user-friendly and
+EDL	00:17:02,975	00:17:05,279	| IOT124 |	This is where things get a little weird and
+EDL	00:17:05,279	00:17:06,047	| IOT124 |	Developers are
+EDL	00:17:06,559	00:17:09,375	| IOT124 |	Like apple what you doing and apples like
+EDL	00:17:10,143	00:17:12,447	| IOT124 |	So you can actually set up a device
+EDL	00:17:12,959	00:17:17,311	| IOT124 |	Using homekit and use it only in the whole map you don't have to actually set up the
+EDL	00:17:18,079	00:17:19,103	| IOT124 |	App for the
+EDL	00:17:19,103	00:17:19,871	| IOT124 |	Device
+EDL	00:17:20,383	00:17:25,759	| IOT124 |	Right you can say you're reducing the number of apps required to manage your devices number one
+EDL	00:17:25,759	00:17:27,295	| IOT124 |	That's a simpler
+EDL	00:17:27,295	00:17:30,367	| IOT124 |	Sign up in end pairing type of process
+EDL	00:17:30,879	00:17:33,695	| IOT124 |	Ben Franklin my ecobee it just showed up
+EDL	00:17:33,695	00:17:35,487	| IOT124 |	Installment that's it I mean
+EDL	00:17:35,999	00:17:37,023	| IOT124 |	It was there
+EDL	00:17:39,071	00:17:42,655	| IOT124 |	The developers on the other hand are doing everything they can
+EDL	00:17:43,679	00:17:44,191	| IOT124 |	2
+EDL	00:17:44,703	00:17:48,799	| IOT124 |	Play as much as I can with apple but also get you to download the app so they have your
+EDL	00:17:49,311	00:17:50,591	| IOT124 |	Formation your email
+EDL	00:17:50,591	00:17:52,639	| IOT124 |	So someone like a lot
+EDL	00:17:53,919	00:17:56,991	| IOT124 |	Might make you calibrate the lock in their own app
+EDL	00:17:57,503	00:17:59,295	| IOT124 |	Where is after that point
+EDL	00:17:59,295	00:18:00,575	| IOT124 |	You can move to
+EDL	00:18:01,343	00:18:02,111	| IOT124 |	You know
+EDL	00:18:02,111	00:18:02,623	| IOT124 |	The Apple
+EDL	00:18:04,415	00:18:05,439	| IOT124 |	Experience
+EDL	00:18:05,951	00:18:08,511	| IOT124 |	So this is producing a lot of tension so we'll see what happens
+EDL	00:18:09,535	00:18:13,375	| IOT124 |	As part of this I'll just tell you that there's a brand-new homekit enabled
+EDL	00:18:13,375	00:18:15,423	| IOT124 |	Light bulb from Sylvania
+EDL	00:18:15,935	00:18:16,447	| IOT124 |	Name brand
+EDL	00:18:17,471	00:18:21,311	| IOT124 |	A colorful light bulb it is $45 no hub
+EDL	00:18:21,311	00:18:23,871	| IOT124 |	So if you're like looking at the Hue Lights and you're like
+EDL	00:18:23,871	00:18:25,151	| IOT124 |	Oh that should be home
+EDL	00:18:25,663	00:18:26,431	| IOT124 |	Love it
+EDL	00:18:26,431	00:18:27,711	| IOT124 |	This is a Sylvania
+EDL	00:18:29,759	00:18:30,527	| IOT124 |	Sylvania
+EDL	00:18:36,159	00:18:37,951	| IOT124 |	And it works
+EDL	00:18:38,463	00:18:39,743	| IOT124 |	Use
+EDL	00:18:39,743	00:18:40,767	| IOT124 |	Bluetooth
+EDL	00:18:42,559	00:18:43,327	| IOT124 |	Yeah
+EDL	00:18:43,327	00:18:45,119	| IOT124 |	Bluetooth
+EDL	00:18:45,119	00:18:45,887	| IOT124 |	Homekit
+EDL	00:18:47,679	00:18:48,191	| IOT124 |	Friendly friendly
+EDL	00:18:49,471	00:18:50,495	| IOT124 |	You wouldn't want this
+EDL	00:18:52,287	00:18:53,311	| IOT124 |	If you're an apple house
+EDL	00:18:53,823	00:18:58,943	| IOT124 |	And eventually after we test the homepod maybe we'll tell you what it's like to live in a mixed house and have these
+EDL	00:18:59,455	00:18:59,967	| IOT124 |	Vices
+EDL	00:19:01,247	00:19:02,527	| IOT124 |	This is good and
+EDL	00:19:02,527	00:19:04,831	| IOT124 |	I imagine that eventually this will use Bluetooth
+EDL	00:19:04,831	00:19:05,343	| IOT124 |	If it does
+EDL	00:19:06,879	00:19:09,183	| IOT124 |	It's a double for pre-order for
+EDL	00:19:09,183	00:19:13,023	| IOT124 |	For $45 so it's not an expensive but it's not too bad either
+EDL	00:19:14,559	00:19:15,583	| IOT124 |	Well actually the beer
+EDL	00:19:18,399	00:19:20,191	| IOT124 |	39 teens in the BR30 that's it
+EDL	00:19:20,959	00:19:22,495	| IOT124 |	I feel like the 19th
+EDL	00:19:24,031	00:19:25,567	| IOT124 |	You land this year have a hub
+EDL	00:19:28,127	00:19:30,175	| IOT124 |	So I'll get a test version of that
+EDL	00:19:30,175	00:19:30,943	| IOT124 |	And I'll tell you how the
+EDL	00:19:30,943	00:19:31,455	| IOT124 |	The lights work
+EDL	00:19:31,967	00:19:32,735	| IOT124 |	And you can
+EDL	00:19:32,735	00:19:34,527	| IOT124 |	Look forward to that they will not ship until
+EDL	00:19:35,295	00:19:35,807	| IOT124 |	Just so you know
+EDL	00:19:36,831	00:19:37,343	| IOT124 |	Okay
+EDL	00:19:37,855	00:19:41,695	| IOT124 |	Movie from the homekit news let's go to the Google
+EDL	00:19:44,511	00:19:50,911	| IOT124 |	This is interesting and I will say right up front that I have not signed up for this yet but there is a preview
+EDL	00:19:50,911	00:19:52,703	| IOT124 |	Program if you had a Google home
+EDL	00:19:52,703	00:19:56,031	| IOT124 |	You may sign up for the preview program and will happen is
+EDL	00:19:56,543	00:19:59,615	| IOT124 |	Kind of like what they do with the Chromecast where they sent you
+EDL	00:20:00,383	00:20:03,455	| IOT124 |	Advanced features sooner 4 beta testing essentially
+EDL	00:20:03,455	00:20:06,783	| IOT124 |	MC make it new firmware on your Google home before everybody else
+EDL	00:20:06,783	00:20:08,575	| IOT124 |	New features and so on
+EDL	00:20:08,575	00:20:10,111	| IOT124 |	I generally
+EDL	00:20:10,111	00:20:15,231	| IOT124 |	Can't pass up a beta program so once I put my Google home back in my home office which is
+EDL	00:20:15,231	00:20:16,767	| IOT124 |	Undergoing renovation right now
+EDL	00:20:17,279	00:20:21,119	| IOT124 |	I will sign up for this so I don't know what they might bring to us
+EDL	00:20:21,631	00:20:25,215	| IOT124 |	We want to see but you can sign up maybe we can click the link in the show notes
+EDL	00:20:25,727	00:20:26,495	| IOT124 |	We will
+EDL	00:20:26,495	00:20:27,775	| IOT124 |	I will also sign up
+EDL	00:20:27,775	00:20:30,335	| IOT124 |	Even though my Google home does not get the usage
+EDL	00:20:32,127	00:20:34,943	| IOT124 |	Voice control Amazon Echo
+EDL	00:20:36,223	00:20:36,735	| IOT124 |	Control TVs
+EDL	00:20:37,759	00:20:39,807	| IOT124 |	Certain TVs
+EDL	00:20:40,319	00:20:41,343	| IOT124 |	Yeah and
+EDL	00:20:41,343	00:20:43,903	| IOT124 |	For me my TV is not supported
+EDL	00:20:43,903	00:20:45,183	| IOT124 |	Officially but
+EDL	00:20:45,695	00:20:51,839	| IOT124 |	If you have an Amazon Fire TV box which I do connected to my TV you can then pair your Echo with the Fire TV box
+EDL	00:20:52,607	00:20:53,887	| IOT124 |	Cowboys control the TV that way
+EDL	00:20:55,167	00:20:57,727	| IOT124 |	And in a speculative new story
+EDL	00:20:58,751	00:21:02,079	| IOT124 |	Amazon echos make it multi-room audio
+EDL	00:21:02,591	00:21:04,127	| IOT124 |	I thought you would like that
+EDL	00:21:05,151	00:21:05,919	| IOT124 |	I'm just going to get
+EDL	00:21:06,431	00:21:07,199	| IOT124 |	Ricky forum
+EDL	00:21:07,199	00:21:08,479	| IOT124 |	Where the heck is my Sonos
+EDL	00:21:08,991	00:21:11,807	| IOT124 |	Where the hell is my Sonos I have
+EDL	00:21:11,807	00:21:15,135	| IOT124 |	I've been buying Echoes and I don't want to buy the full Echoes because
+EDL	00:21:15,135	00:21:19,232	| IOT124 |	I have all these lovely Sonos isn't in my room and talk card
+EDL	00:21:19,232	00:21:19,744	| IOT124 |	Frustrated
+EDL	00:21:20,512	00:21:26,912	| IOT124 |	Well if multi-room audio comes to Echo devices I don't know that
+EDL	00:21:26,912	00:21:29,472	| IOT124 |	There's a ton of incentive for Amazon to
+EDL	00:21:29,984	00:21:31,520	| IOT124 |	Bring it to something
+EDL	00:21:34,080	00:21:36,384	| IOT124 |	That's I'm not saying that's what they do
+EDL	00:21:36,384	00:21:37,152	| IOT124 |	I'm just saying
+EDL	00:21:37,664	00:21:41,760	| IOT124 |	I wouldn't be surprised if you never see that person
+EDL	00:21:42,272	00:21:45,344	| IOT124 |	I don't think they promised they said they were going to do it
+EDL	00:21:45,344	00:21:46,112	| IOT124 |	They did say that
+EDL	00:21:46,880	00:21:47,648	| IOT124 |	Did not text
+EDL	00:21:47,648	00:21:48,416	| IOT124 |	I promise you
+EDL	00:21:48,416	00:21:49,952	| IOT124 |	Right
+EDL	00:21:50,720	00:21:55,072	| IOT124 |	I actually reached out to Sonos about two weeks ago maybe three weeks
+EDL	00:21:55,584	00:21:57,120	| IOT124 |	And ask for an update
+EDL	00:21:57,120	00:21:58,912	| IOT124 |	And then I will get that to you and then no one
+EDL	00:21:59,680	00:22:00,192	| IOT124 |	That to me
+EDL	00:22:00,704	00:22:03,264	| IOT124 |	I'm going to have to reach out again I guess
+EDL	00:22:05,312	00:22:06,848	| IOT124 |	Moving on
+EDL	00:22:06,848	00:22:09,408	| IOT124 |	Because it feels negative to complain all the time
+EDL	00:22:09,408	00:22:10,176	| IOT124 |	On the show
+EDL	00:22:10,176	00:22:12,224	| IOT124 |	Let's talk about
+EDL	00:22:12,224	00:22:14,784	| IOT124 |	Cool story before we get our little review
+EDL	00:22:14,784	00:22:16,320	| IOT124 |	Future of Home Building
+EDL	00:22:16,320	00:22:19,392	| IOT124 |	I thought this was really interesting this is from Cee Pro
+EDL	00:22:19,392	00:22:20,160	| IOT124 |	And
+EDL	00:22:20,160	00:22:21,184	| IOT124 |	Basically
+EDL	00:22:21,184	00:22:24,000	| IOT124 |	Ideas and Linares home Linares home builder
+EDL	00:22:24,512	00:22:25,792	| IOT124 |	They have stopped
+EDL	00:22:25,792	00:22:31,424	| IOT124 |	Putting low-voltage wiring this is the wiring for your speakers for doorbells for all kinds of things
+EDL	00:22:32,192	00:22:35,008	| IOT124 |	They built the first Wi-Fi certified smart
+EDL	00:22:35,008	00:22:39,104	| IOT124 |	Holmes and this is something the Wi-Fi alliance-certified earlier this summer
+EDL	00:22:39,872	00:22:43,968	| IOT124 |	Yeah we remember we talked about and I was kind of scratching my head over
+EDL	00:22:44,480	00:22:48,576	| IOT124 |	What Linares doing is they're going to pull CAT5 or 6 cable
+EDL	00:22:49,088	00:22:52,672	| IOT124 |	2 WiFi access points as well as the doorbell look
+EDL	00:22:52,672	00:22:53,440	| IOT124 |	Location
+EDL	00:22:53,440	00:22:57,792	| IOT124 |	But they're not going to pull it to home office locations or entertainment center
+EDL	00:22:58,560	00:23:00,864	| IOT124 |	So no speaker wire
+EDL	00:23:00,864	00:23:04,448	| IOT124 |	Coax is only going to go to two TV locations in the majority of their new
+EDL	00:23:04,960	00:23:07,264	| IOT124 |	This is a big freaking deal
+EDL	00:23:07,776	00:23:08,544	| IOT124 |	Yes
+EDL	00:23:08,544	00:23:14,688	| IOT124 |	This is a big freaking deal because it means another step closer towards Wireless whether you want it or not
+EDL	00:23:15,200	00:23:18,528	| IOT124 |	And I don't want it I'm going to say I built my home in 2012
+EDL	00:23:19,040	00:23:25,184	| IOT124 |	And I put Cat6 not CAT5 because it's Cat6 gigabit proof and I'm still hoping to get gigabit internet but it's not happening
+EDL	00:23:26,720	00:23:28,256	| IOT124 |	Side note little bitterness
+EDL	00:23:29,024	00:23:32,608	| IOT124 |	I tell people when they ask about future-proofing their home
+EDL	00:23:32,608	00:23:33,632	| IOT124 |	To stick
+EDL	00:23:33,632	00:23:34,400	| IOT124 |	Cable
+EDL	00:23:34,400	00:23:36,192	| IOT124 |	Running into an Ethernet Jack
+EDL	00:23:36,192	00:23:37,984	| IOT124 |	Every room
+EDL	00:23:37,984	00:23:40,544	| IOT124 |	I would agree and I know people hate hugs
+EDL	00:23:42,080	00:23:43,872	| IOT124 |	By god it feels
+EDL	00:23:43,872	00:23:44,896	| IOT124 |	And maybe
+EDL	00:23:44,896	00:23:46,432	| IOT124 |	You know I'm thinking about
+EDL	00:23:46,432	00:23:49,248	| IOT124 |	My original Eros actually I had them
+EDL	00:23:49,248	00:23:50,016	| IOT124 |	I wired them
+EDL	00:23:50,016	00:23:51,296	| IOT124 |	I meant so they weren't actually at 10
+EDL	00:23:52,320	00:23:54,112	| IOT124 |	Because they were wired in
+EDL	00:23:57,696	00:23:58,208	| IOT124 |	Wi-Fi assist
+EDL	00:24:00,000	00:24:01,280	| IOT124 |	With the beacons
+EDL	00:24:01,280	00:24:02,048	| IOT124 |	There is
+EDL	00:24:02,560	00:24:03,072	| IOT124 |	There is no
+EDL	00:24:04,352	00:24:06,912	| IOT124 |	That is fully Wireless so maybe I'm right behind the
+EDL	00:24:06,912	00:24:07,424	| IOT124 |	X
+EDL	00:24:08,192	00:24:08,960	| IOT124 |	Well
+EDL	00:24:08,960	00:24:11,520	| IOT124 |	I mean the benefits of wired
+EDL	00:24:11,520	00:24:16,896	| IOT124 |	Is it's pretty much guaranteed consistency right whereas wireless networks will fluctuate
+EDL	00:24:17,920	00:24:19,456	| IOT124 |	Based on signal strength
+EDL	00:24:19,968	00:24:21,504	| IOT124 |	And other things so
+EDL	00:24:21,504	00:24:23,040	| IOT124 |	I agree with your concerns
+EDL	00:24:23,552	00:24:24,576	| IOT124 |	On the flip side
+EDL	00:24:25,344	00:24:28,416	| IOT124 |	I literally just bought a small 4K set
+EDL	00:24:28,416	00:24:29,184	| IOT124 |	TV set
+EDL	00:24:29,184	00:24:30,976	| IOT124 |	And I put it in our bedroom is wall-mounted
+EDL	00:24:32,000	00:24:34,560	| IOT124 |	Enemies in Wi-Fi to watch 4K TV on it
+EDL	00:24:34,560	00:24:36,352	| IOT124 |	Just like I do in the 4K set
+EDL	00:24:36,352	00:24:38,656	| IOT124 |	In my office and we have a
+EDL	00:24:38,656	00:24:39,936	| IOT124 |	1080p sets
+EDL	00:24:39,936	00:24:41,984	| IOT124 |	Downstairs that was actually hardwired
+EDL	00:24:41,984	00:24:43,008	| IOT124 |	But everything else is
+EDL	00:24:43,008	00:24:45,312	| IOT124 |	Wireless mouse, don't have the Jacks in a cat stick
+EDL	00:24:46,592	00:24:47,872	| IOT124 |	With the right
+EDL	00:24:47,872	00:24:50,432	| IOT124 |	Wireless network you know it can work
+EDL	00:24:50,944	00:24:52,480	| IOT124 |	Minutes working for me
+EDL	00:24:52,480	00:24:55,552	| IOT124 |	What I could say to me multiple 4K streams and so on
+EDL	00:24:55,552	00:24:57,088	| IOT124 |	So I guess even though I'm concerned
+EDL	00:24:58,112	00:25:01,184	| IOT124 |	Hypocritical here because it is working for me all Wireless
+EDL	00:25:01,952	00:25:02,976	| IOT124 |	That's a question
+EDL	00:25:02,976	00:25:03,744	| IOT124 |	Are we
+EDL	00:25:03,744	00:25:04,512	| IOT124 |	Ready for this
+EDL	00:25:04,512	00:25:05,280	| IOT124 |	In
+EDL	00:25:05,280	00:25:06,816	| IOT124 |	Maybe we are I think about
+EDL	00:25:07,328	00:25:09,632	| IOT124 |	You know Eero which is managing your connectivity
+EDL	00:25:10,400	00:25:12,192	| IOT124 |	Are managing your signal strength in
+EDL	00:25:12,704	00:25:13,728	| IOT124 |	Doing all of that
+EDL	00:25:14,496	00:25:16,032	| IOT124 |	Prioritizing
+EDL	00:25:16,032	00:25:18,080	| IOT124 |	Amazing
+EDL	00:25:18,848	00:25:23,712	| IOT124 |	I'm in their services like plume that do similar things but only in the cloud
+EDL	00:25:23,712	00:25:28,064	| IOT124 |	And Comcast is better than Samsung
+EDL	00:25:28,064	00:25:28,832	| IOT124 |	Plume
+EDL	00:25:28,832	00:25:30,112	| IOT124 |	So it's possible
+EDL	00:25:30,624	00:25:33,184	| IOT124 |	It is which of the point now where Wireless
+EDL	00:25:33,184	00:25:35,488	| IOT124 |	Speeds from routers and such
+EDL	00:25:35,488	00:25:37,536	| IOT124 |	Are far faster than the
+EDL	00:25:37,536	00:25:41,632	| IOT124 |	Piper the Broadband the wire Broadband of people get to the houses being with so
+EDL	00:25:41,632	00:25:43,424	| IOT124 |	Maybe maybe this time
+EDL	00:25:44,192	00:25:48,288	| IOT124 |	Maybe it's certainly lowers the cost of building a house and if your home builder you know
+EDL	00:25:48,288	00:25:50,080	| IOT124 |	Ages copper
+EDL	00:25:50,592	00:25:52,384	| IOT124 |	It's copper wiring so if you can
+EDL	00:25:52,384	00:25:53,152	| IOT124 |	Stop
+EDL	00:25:53,152	00:25:55,200	| IOT124 |	Wiring things to speakers that's that's
+EDL	00:25:55,712	00:25:56,736	| IOT124 |	Very economical
+EDL	00:25:58,016	00:25:58,784	| IOT124 |	I don't know y'all
+EDL	00:26:00,320	00:26:01,600	| IOT124 |	Sacher listener test
+EDL	00:26:01,600	00:26:02,880	| IOT124 |	Some thoughts I'd be curious to hear that
+EDL	00:26:04,160	00:26:04,672	| IOT124 |	Cynosure
+EDL	00:26:05,440	00:26:06,208	| IOT124 |	I should say
+EDL	00:26:06,720	00:26:09,024	| IOT124 |	Because I got a question I actually got two questions about the
+EDL	00:26:09,024	00:26:11,072	| IOT124 |	That's so quick note I always tell people
+EDL	00:26:11,072	00:26:12,352	| IOT124 |	How much I like netatmo stuff
+EDL	00:26:13,120	00:26:16,960	| IOT124 |	And then I got an email from an frustrated user because netatmo went down this weekend
+EDL	00:26:18,496	00:26:22,592	| IOT124 |	Did a terrible job communicating to their customers about what happened
+EDL	00:26:23,104	00:26:23,616	| IOT124 |	So
+EDL	00:26:24,128	00:26:26,944	| IOT124 |	I heard back from that app they said the issues
+EDL	00:26:26,944	00:26:27,968	| IOT124 |	Has been solved
+EDL	00:26:27,968	00:26:32,064	| IOT124 |	Both issues have been thought they had two issues one as people cannot install their net out
+EDL	00:26:32,064	00:26:32,576	| IOT124 |	Cameras
+EDL	00:26:33,088	00:26:34,624	| IOT124 |	So please try again if
+EDL	00:26:34,624	00:26:35,136	| IOT124 |	If you can install it
+EDL	00:26:35,648	00:26:40,768	| IOT124 |	In two notifications were delayed in the camera missed events and that issue has also been solved
+EDL	00:26:41,280	00:26:42,816	| IOT124 |	They didn't explain what happened
+EDL	00:26:44,352	00:26:46,912	| IOT124 |	Hopefully if you had a netatmo camera that wasn't work
+EDL	00:26:46,912	00:26:47,424	| IOT124 |	Working this weekend
+EDL	00:26:47,936	00:26:49,216	| IOT124 |	Try everything again
+EDL	00:26:49,216	00:26:49,728	| IOT124 |	Restart it
+EDL	00:26:50,240	00:26:51,008	| IOT124 |	And see what happens
+EDL	00:26:51,520	00:26:53,056	| IOT124 |	It still doesn't work let me know and I will
+EDL	00:26:53,056	00:26:53,824	| IOT124 |	Come back to them and be
+EDL	00:26:54,336	00:26:55,360	| IOT124 |	All right guys
+EDL	00:26:57,152	00:26:59,200	| IOT124 |	That's up to you there
+EDL	00:26:59,200	00:26:59,968	| IOT124 |	And then finally
+EDL	00:26:59,968	00:27:01,760	| IOT124 |	A tiny little review
+EDL	00:27:01,760	00:27:05,344	| IOT124 |	A tiny little review of a tiny little device that I was so excited to have
+EDL	00:27:05,856	00:27:07,904	| IOT124 |	Okay you guys probably remember
+EDL	00:27:07,904	00:27:10,464	| IOT124 |	That I wanted a standalone Spotify
+EDL	00:27:10,464	00:27:12,000	| IOT124 |	Player to take on walks with
+EDL	00:27:12,000	00:27:12,512	| IOT124 |	My dog
+EDL	00:27:13,024	00:27:14,816	| IOT124 |	And I bought the mighty
+EDL	00:27:14,816	00:27:18,144	| IOT124 |	It's the mighty player in this is the be mighty
+EDL	00:27:18,144	00:27:19,168	| IOT124 |	Dotcom is so
+EDL	00:27:19,168	00:27:19,936	| IOT124 |	Website
+EDL	00:27:19,936	00:27:21,728	| IOT124 |	This is a $95
+EDL	00:27:22,496	00:27:23,776	| IOT124 |	It looks like an iPod Shuffle
+EDL	00:27:23,776	00:27:25,568	| IOT124 |	Yes the tiny little ones you can't control
+EDL	00:27:27,104	00:27:27,872	| IOT124 |	It works
+EDL	00:27:28,640	00:27:29,152	| IOT124 |	So well
+EDL	00:27:29,920	00:27:30,432	| IOT124 |	So
+EDL	00:27:30,944	00:27:32,736	| IOT124 |	They promised me five hours of battery life
+EDL	00:27:34,016	00:27:39,136	| IOT124 |	Pushed it to four and a half and then I was like if I don't charge now I won't have access to my music tomorrow morning
+EDL	00:27:39,904	00:27:41,440	| IOT124 |	Fullback is a
+EDL	00:27:42,976	00:27:44,256	| IOT124 |	It's a fit like it's a
+EDL	00:27:44,768	00:27:48,096	| IOT124 |	Probably 1 and 1/2 inch by 1 and 1/2 inch I'm not looking directly at the specs
+EDL	00:27:48,608	00:27:49,632	| IOT124 |	Device
+EDL	00:27:49,632	00:27:54,240	| IOT124 |	But the whole back is the clip so it's not like there's a smaller clip so it's a little awkward
+EDL	00:27:54,752	00:27:56,800	| IOT124 |	Sometimes to put on my
+EDL	00:27:56,800	00:27:57,312	| IOT124 |	My outfit
+EDL	00:27:58,080	00:27:59,360	| IOT124 |	Going out to walk the dog
+EDL	00:27:59,872	00:28:01,408	| IOT124 |	Works with both
+EDL	00:28:01,408	00:28:04,480	| IOT124 |	Bluetooth headphones and wired headphones so gay
+EDL	00:28:04,992	00:28:06,016	| IOT124 |	And
+EDL	00:28:06,016	00:28:08,064	| IOT124 |	Actually has made me want to get wired
+EDL	00:28:08,064	00:28:09,088	| IOT124 |	Are wireless headphones now
+EDL	00:28:10,624	00:28:11,136	| IOT124 |	It
+EDL	00:28:11,648	00:28:16,256	| IOT124 |	It's user interface is really simple it does take kind of a long time to
+EDL	00:28:16,768	00:28:19,072	| IOT124 |	Move up play move your playlist over
+EDL	00:28:19,840	00:28:23,168	| IOT124 |	Alright alright playlist over via WiFi
+EDL	00:28:23,168	00:28:26,752	| IOT124 |	Your home Wi-Fi and that's I'm assuming we're it's also doing the DRM
+EDL	00:28:26,752	00:28:27,264	| IOT124 |	Play Spotify
+EDL	00:28:28,800	00:28:31,360	| IOT124 |	Checking in but it also will do things like
+EDL	00:28:32,640	00:28:33,920	| IOT124 |	There's an option to
+EDL	00:28:34,432	00:28:37,248	| IOT124 |	Succumbing option I didn't see it yet on my thing
+EDL	00:28:37,248	00:28:37,760	| IOT124 |	2
+EDL	00:28:38,272	00:28:41,856	| IOT124 |	But keep it fresh which means some of their playlist that you might have Daya
+EDL	00:28:41,856	00:28:42,624	| IOT124 |	Update
+EDL	00:28:42,624	00:28:43,648	| IOT124 |	Pretty lady
+EDL	00:28:43,648	00:28:46,720	| IOT124 |	And that'll automatically update it when it's on your Wi-Fi network
+EDL	00:28:46,720	00:28:47,232	| IOT124 |	In the house
+EDL	00:28:47,744	00:28:50,304	| IOT124 |	I looked at it works exactly like I thought it was going to work
+EDL	00:28:52,608	00:28:53,632	| IOT124 |	3 weeks and
+EDL	00:28:54,144	00:28:54,656	| IOT124 |	By God
+EDL	00:28:56,192	00:28:59,264	| IOT124 |	I suspect that you have to sink that
+EDL	00:29:00,032	00:29:01,056	| IOT124 |	To Spotify
+EDL	00:29:01,568	00:29:03,872	| IOT124 |	Once at least every month or so
+EDL	00:29:04,640	00:29:05,664	| IOT124 |	Possibly
+EDL	00:29:05,664	00:29:06,688	| IOT124 |	MX
+EDL	00:29:07,200	00:29:09,504	| IOT124 |	And the reason I say that is because
+EDL	00:29:09,504	00:29:13,088	| IOT124 |	Gosh this is going way back I think the Microsoft Zune
+EDL	00:29:14,112	00:29:14,624	| IOT124 |	Wood
+EDL	00:29:15,136	00:29:16,160	| IOT124 |	Do that you could
+EDL	00:29:16,160	00:29:19,232	| IOT124 |	Download stuff from your music apps for Microsoft
+EDL	00:29:19,744	00:29:22,816	| IOT124 |	As long as you had your subscription pay the zoompass I think it was called
+EDL	00:29:23,328	00:29:24,608	| IOT124 |	10 bucks a month or something
+EDL	00:29:24,608	00:29:30,240	| IOT124 |	But you had to exert a check in from a different perspective at least once every 30 days or would not just
+EDL	00:29:30,240	00:29:31,520	| IOT124 |	Cease working for you
+EDL	00:29:32,288	00:29:36,640	| IOT124 |	And that was just to make sure your Pandora subscription witches and Spotify as a subscription service
+EDL	00:29:36,640	00:29:37,408	| IOT124 |	Makes sense
+EDL	00:29:37,408	00:29:38,944	| IOT124 |	Write this does only work
+EDL	00:29:39,456	00:29:39,968	| IOT124 |	You pay for the
+EDL	00:29:40,480	00:29:40,992	| IOT124 |	Spotify premium
+EDL	00:29:41,760	00:29:42,272	| IOT124 |	Right
+EDL	00:29:43,040	00:29:45,600	| IOT124 |	But if this need is something you guys have
+EDL	00:29:46,112	00:29:47,904	| IOT124 |	I really recommend this product it's great
+EDL	00:29:49,440	00:29:50,208	| IOT124 |	It's not really a coyote
+EDL	00:29:52,256	00:29:53,280	| IOT124 |	But it's still connected
+EDL	00:29:54,816	00:29:57,376	| IOT124 |	That's about it for us this week we shall
+EDL	00:29:57,888	00:30:02,240	| IOT124 |	Take a moment for a message from our sponsor and after that we will have
+EDL	00:30:02,240	00:30:03,264	| IOT124 |	Mike's Beer
+EDL	00:30:03,264	00:30:05,312	| IOT124 |	From Honeywell talk to you about
+EDL	00:30:05,312	00:30:09,664	| IOT124 |	Cybersecurity and how they think about it on the industrial iot
+EDL	00:30:10,176	00:30:10,688	| IOT124 |	Plantside
+EDL	00:30:11,200	00:30:13,760	| IOT124 |	Which is very different from how we think about it
+EDL	00:30:13,760	00:30:14,528	| IOT124 |	In
+EDL	00:30:14,528	00:30:16,320	| IOT124 |	I don't know the IT world or even the whole bar
+EDL	00:30:17,088	00:30:17,856	| IOT124 |	But you can learn from it
+EDL	00:30:18,624	00:30:19,136	| IOT124 |	Yes you can
+EDL	00:30:20,160	00:30:20,672	| IOT124 |	All right
+EDL	00:30:21,440	00:30:27,840	| IOT124 |	Stay tuned for that and now a message from our sponsor everyone we are breaking into the
+EDL	00:30:27,840	00:30:34,240	| IOT124 |	The Internet of Things podcast
+EDL	00:30:34,240	00:30:35,776	| IOT124 |	From haikou
+EDL	00:30:35,776	00:30:37,568	| IOT124 |	Hey Marcus how are you doing today
+EDL	00:30:37,568	00:30:39,872	| IOT124 |	I'm doing great Stacy thanks so much for having me
+EDL	00:30:40,384	00:30:41,152	| IOT124 |	Excellent
+EDL	00:30:41,152	00:30:42,688	| IOT124 |	Glad you're here so
+EDL	00:30:42,688	00:30:46,016	| IOT124 |	Remind us all again what it is that high cosolutions
+EDL	00:30:46,784	00:30:48,064	| IOT124 |	We are in advance
+EDL	00:30:48,064	00:30:52,416	| IOT124 |	Iot engineering Solutions provider with Development Centers based in Eastern Europe
+EDL	00:30:52,928	00:30:55,744	| IOT124 |	Recall primarily US based clients
+EDL	00:30:55,744	00:30:58,816	| IOT124 |	By providing engineering teams that included numbers
+EDL	00:30:58,816	00:31:00,864	| IOT124 |	Allowing us to help
+EDL	00:31:00,864	00:31:01,632	| IOT124 |	Our partners
+EDL	00:31:02,144	00:31:03,424	| IOT124 |	Design and build
+EDL	00:31:03,424	00:31:05,984	| IOT124 |	End and custom iot Solutions
+EDL	00:31:07,264	00:31:11,104	| IOT124 |	All right so you mentioned that you guys come by the number of skills to build these teams
+EDL	00:31:11,104	00:31:11,872	| IOT124 |	Can you talk about those
+EDL	00:31:12,384	00:31:16,224	| IOT124 |	We really combined skill and what we describe is Three core areas
+EDL	00:31:16,224	00:31:19,552	| IOT124 |	Number one embedded firmware in electrical engineering
+EDL	00:31:20,064	00:31:20,832	| IOT124 |	So thank you
+EDL	00:31:20,832	00:31:22,880	| IOT124 |	PCB design Electronics
+EDL	00:31:22,880	00:31:24,416	| IOT124 |	Component selection
+EDL	00:31:24,416	00:31:28,000	| IOT124 |	Knowledge of the different Wireless protocols
+EDL	00:31:28,000	00:31:30,048	| IOT124 |	Are there more standard or
+EDL	00:31:30,048	00:31:32,096	| IOT124 |	Zigbee Z-Wave Lora
+EDL	00:31:32,096	00:31:33,120	| IOT124 |	Amongst many others
+EDL	00:31:33,632	00:31:35,936	| IOT124 |	Number to mathematical data processing
+EDL	00:31:36,448	00:31:39,008	| IOT124 |	Do we have a team of phds focus
+EDL	00:31:39,008	00:31:40,800	| IOT124 |	In discrete mathematics
+EDL	00:31:40,800	00:31:43,872	| IOT124 |	Computational geometry statistical analysis
+EDL	00:31:43,872	00:31:46,944	| IOT124 |	Really work on building custom algorithmics
+EDL	00:31:46,944	00:31:49,760	| IOT124 |	Solutions using Advanced machine-learning Techniques
+EDL	00:31:50,784	00:31:53,600	| IOT124 |	And the number 3 digital experience
+EDL	00:31:53,600	00:31:54,880	| IOT124 |	Were suffering
+EDL	00:31:54,880	00:31:57,696	| IOT124 |	Engineering we employed several hundred software engineers
+EDL	00:31:57,696	00:31:58,976	| IOT124 |	Mosto
+EDL	00:31:58,976	00:32:01,280	| IOT124 |	An educational background in mathematics
+EDL	00:32:01,792	00:32:04,864	| IOT124 |	You working a plethora of different programming languages
+EDL	00:32:04,864	00:32:07,168	| IOT124 |	For both mobile and web applications
+EDL	00:32:07,168	00:32:10,752	| IOT124 |	Play end-to-end Solutions what we really mean is that
+EDL	00:32:11,264	00:32:12,800	| IOT124 |	We combine all of these
+EDL	00:32:12,800	00:32:16,640	| IOT124 |	Skills to build teams that help our clients with everything from
+EDL	00:32:16,640	00:32:18,176	| IOT124 |	Designing the electronic
+EDL	00:32:18,176	00:32:19,968	| IOT124 |	Components within a connected device
+EDL	00:32:19,968	00:32:25,600	| IOT124 |	Using mathematicians to drive value out of a date of this coming from the sensors within those devices
+EDL	00:32:26,112	00:32:30,208	| IOT124 |	Software engineering teams to build interfaces for those applications
+EDL	00:32:30,976	00:32:31,744	| IOT124 |	I like it
+EDL	00:32:31,744	00:32:33,024	| IOT124 |	So what is the typical client
+EDL	00:32:34,048	00:32:36,096	| IOT124 |	Our clients come in all shapes and sizes
+EDL	00:32:36,096	00:32:36,864	| IOT124 |	Pittsburgh
+EDL	00:32:36,864	00:32:38,656	| IOT124 |	Early industry agnostic
+EDL	00:32:38,656	00:32:39,680	| IOT124 |	But we work with
+EDL	00:32:39,680	00:32:41,728	| IOT124 |	Funded startups to the Fortune 50
+EDL	00:32:41,728	00:32:47,616	| IOT124 |	What they generally have in common is that they're looking for highly Advanced engineering skill that is both difficult
+EDL	00:32:47,616	00:32:49,920	| IOT124 |	And expensive to Source locally
+EDL	00:32:49,920	00:32:54,528	| IOT124 |	They're generally looking for a partner who can ramp up teams within a few weeks at a very reasonable cost
+EDL	00:32:55,040	00:32:57,088	| IOT124 |	I believe they find
+EDL	00:32:57,088	00:33:01,696	| IOT124 |	The combination of skills in the number of things they can accomplish with one partner
+EDL	00:33:01,696	00:33:02,976	| IOT124 |	Hard to find anywhere else
+EDL	00:33:03,744	00:33:06,048	| IOT124 |	Excellent so where can we get more information
+EDL	00:33:06,816	00:33:07,840	| IOT124 |	Website
+EDL	00:33:07,840	00:33:12,192	| IOT124 |	Can get white papers case studies technology roadmaps project
+EDL	00:33:12,192	00:33:12,704	| IOT124 |	Description
+EDL	00:33:13,216	00:33:19,616	| IOT124 |	All available at www.schluter.com hiq oh
+EDL	00:33:19,616	00:33:21,408	| IOT124 |	Dash solutions.com
+EDL	00:33:21,920	00:33:23,712	| IOT124 |	Excellent thank you Marcus
+EDL	00:33:23,712	00:33:24,992	| IOT124 |	Thank you Stacey
+EDL	00:33:30,880	00:33:37,024	| IOT124 |	Hey everyone welcome back to the Internet of Things podcast this is your host Stacey Higginbotham and today's guest is Mike
+EDL	00:33:37,536	00:33:40,864	| IOT124 |	Speaker who is a global operations manager for a
+EDL	00:33:40,864	00:33:42,656	| IOT124 |	Industrial cybersecurity
+EDL	00:33:43,168	00:33:43,936	| IOT124 |	Add Honeywell
+EDL	00:33:45,984	00:33:47,520	| IOT124 |	Hi Stacy doing well thanks
+EDL	00:33:48,032	00:33:50,848	| IOT124 |	Man I'm super excited to have you on the show because
+EDL	00:33:51,616	00:33:52,640	| IOT124 |	I went to this
+EDL	00:33:52,640	00:33:55,968	| IOT124 |	User group meeting and I saw you speak about
+EDL	00:33:55,968	00:33:57,760	| IOT124 |	Cybersecurity and securing
+EDL	00:33:57,760	00:33:58,784	| IOT124 |	Manufacturing
+EDL	00:34:00,320	00:34:01,600	| IOT124 |	I was kind of Blown Away I was like
+EDL	00:34:02,112	00:34:03,904	| IOT124 |	Wow they have a totally different
+EDL	00:34:03,904	00:34:04,672	| IOT124 |	Threat landscape
+EDL	00:34:05,184	00:34:10,048	| IOT124 |	And they're thinking about it in kind of a way that maybe it organization should also start
+EDL	00:34:10,560	00:34:12,608	| IOT124 |	Matador other businesses who are dealing
+EDL	00:34:12,608	00:34:13,120	| IOT124 |	Coyote
+EDL	00:34:13,632	00:34:15,424	| IOT124 |	So let's kick it off with
+EDL	00:34:15,424	00:34:17,216	| IOT124 |	What year did charge of sick
+EDL	00:34:17,216	00:34:17,984	| IOT124 |	What you doing
+EDL	00:34:18,752	00:34:23,104	| IOT124 |	Okay well I'm responsible for the on-site delivery
+EDL	00:34:23,104	00:34:26,688	| IOT124 |	Cyber Solutions for the industrial Market
+EDL	00:34:26,688	00:34:28,736	| IOT124 |	Industrial Market as Define
+EDL	00:34:28,736	00:34:32,576	| IOT124 |	Bios SB oil and gas refining
+EDL	00:34:32,576	00:34:35,136	| IOT124 |	Petrochemical paper the processing
+EDL	00:34:36,672	00:34:43,072	| IOT124 |	And we try to help is as you mentioned the operations technology is often referred to as the OT environment
+EDL	00:34:43,072	00:34:44,864	| IOT124 |	Secure their systems
+EDL	00:34:44,864	00:34:47,168	| IOT124 |	Balancing the need of
+EDL	00:34:47,168	00:34:48,448	| IOT124 |	Conduction which is
+EDL	00:34:48,960	00:34:51,520	| IOT124 |	Their Paramount importance and safety
+EDL	00:34:51,520	00:34:53,056	| IOT124 |	With that of
+EDL	00:34:53,568	00:34:54,592	| IOT124 |	Security tolerance
+EDL	00:34:55,104	00:34:58,432	| IOT124 |	So I lead the team around the globe
+EDL	00:34:58,432	00:35:00,480	| IOT124 |	That I'll go to the sides and
+EDL	00:35:00,480	00:35:03,296	| IOT124 |	Meet with the customers understand
+EDL	00:35:03,296	00:35:06,112	| IOT124 |	Risk tolerance risk appetite
+EDL	00:35:06,112	00:35:12,512	| IOT124 |	And then we come up with the solutions that help them mitigate the levels of risk that they feel that Dane
+EDL	00:35:12,512	00:35:13,280	| IOT124 |	I need to
+EDL	00:35:13,280	00:35:13,792	| IOT124 |	Mitigate
+EDL	00:35:14,304	00:35:15,328	| IOT124 |	Okay we're going to talk about
+EDL	00:35:16,352	00:35:17,632	| IOT124 |	But good
+EDL	00:35:18,400	00:35:20,448	| IOT124 |	Good that's why I signed up to come on the show
+EDL	00:35:21,216	00:35:23,008	| IOT124 |	But first we're going to talk about
+EDL	00:35:23,776	00:35:26,592	| IOT124 |	Process manufacturing vs. discrete manufacturing
+EDL	00:35:26,592	00:35:28,896	| IOT124 |	Cuz it's possibly worth it to
+EDL	00:35:28,896	00:35:31,456	| IOT124 |	Break this up because Manufacturing
+EDL	00:35:31,968	00:35:32,736	| IOT124 |	Is the same
+EDL	00:35:32,736	00:35:33,504	| IOT124 |	Can you
+EDL	00:35:33,504	00:35:34,272	| IOT124 |	Kaplan
+EDL	00:35:35,552	00:35:38,368	| IOT124 |	For me process Industries is that take something
+EDL	00:35:38,880	00:35:41,696	| IOT124 |	L on the input side and I turn it into something
+EDL	00:35:41,696	00:35:42,720	| IOT124 |	Altonio
+EDL	00:35:42,720	00:35:44,512	| IOT124 |	Passat so I take off
+EDL	00:35:44,512	00:35:50,912	| IOT124 |	A wood chips in on a paper I take wall in and I make gas I take chemicals in and I made
+EDL	00:35:50,912	00:35:51,424	| IOT124 |	Pills
+EDL	00:35:51,936	00:35:54,240	| IOT124 |	Where is discrete manufacturing
+EDL	00:35:54,240	00:35:56,032	| IOT124 |	For me is more of an assembly
+EDL	00:35:56,800	00:35:58,336	| IOT124 |	I'm putting a car together
+EDL	00:35:58,336	00:35:59,616	| IOT124 |	I'm making an iPhone
+EDL	00:36:00,384	00:36:01,920	| IOT124 |	The process Industries
+EDL	00:36:01,920	00:36:04,992	| IOT124 |	Again more processing raw input
+EDL	00:36:04,992	00:36:08,064	| IOT124 |	Into a usable while slightly different app
+EDL	00:36:08,832	00:36:12,160	| IOT124 |	Okay in the process industry has had sensors
+EDL	00:36:12,160	00:36:16,768	| IOT124 |	For a long time this is not new to start throwing sensors in in measuring
+EDL	00:36:17,280	00:36:19,072	| IOT124 |	The stuff where is in other Industries
+EDL	00:36:19,072	00:36:19,840	| IOT124 |	It might be
+EDL	00:36:19,840	00:36:23,680	| IOT124 |	So what is actually changed with quote-unquote
+EDL	00:36:23,680	00:36:24,448	| IOT124 |	The internet
+EDL	00:36:24,960	00:36:25,472	| IOT124 |	Things
+EDL	00:36:26,496	00:36:28,800	| IOT124 |	I think the Internet of Things is a hole
+EDL	00:36:28,800	00:36:30,336	| IOT124 |	New future Direction
+EDL	00:36:30,336	00:36:31,104	| IOT124 |	For the process
+EDL	00:36:31,616	00:36:32,896	| IOT124 |	Streets again up until
+EDL	00:36:33,408	00:36:35,456	| IOT124 |	We would say in the short history
+EDL	00:36:35,456	00:36:39,040	| IOT124 |	The process Industries where or very proprietary environment
+EDL	00:36:39,040	00:36:43,648	| IOT124 |	Meaning the communication between the sensors all the way up to the controls
+EDL	00:36:43,648	00:36:45,184	| IOT124 |	Was a proprietary boss
+EDL	00:36:45,184	00:36:48,256	| IOT124 |	Riesling and say the last 10 years or so
+EDL	00:36:48,256	00:36:53,120	| IOT124 |	Cost and other factors in in in the need for additional information has driven
+EDL	00:36:53,120	00:36:56,192	| IOT124 |	The industry to what they call the open architecture
+EDL	00:36:56,192	00:36:57,472	| IOT124 |	Therein lies
+EDL	00:36:57,984	00:36:59,008	| IOT124 |	The openness
+EDL	00:36:59,008	00:36:59,776	| IOT124 |	Of the structure
+EDL	00:36:59,776	00:37:02,336	| IOT124 |	So so now everything once we brought the
+EDL	00:37:02,336	00:37:04,384	| IOT124 |	Ethernet cable shall we say
+EDL	00:37:04,384	00:37:08,992	| IOT124 |	To the plant for that opens up the capabilities in the flexibility
+EDL	00:37:08,992	00:37:12,576	| IOT124 |	To do more get more information to optimize
+EDL	00:37:12,576	00:37:16,672	| IOT124 |	Improve the security and safety of the overall environment
+EDL	00:37:17,184	00:37:20,000	| IOT124 |	At what that also becomes the need then more
+EDL	00:37:20,000	00:37:26,144	| IOT124 |	To get more of that information up to the business level so that businesses can make real-time decisions based
+EDL	00:37:26,656	00:37:28,448	| IOT124 |	Directly down the what's going on
+EDL	00:37:28,448	00:37:29,472	| IOT124 |	At the process
+EDL	00:37:29,984	00:37:31,520	| IOT124 |	Level at the sensor level chart
+EDL	00:37:32,544	00:37:33,312	| IOT124 |	All right
+EDL	00:37:33,312	00:37:35,360	| IOT124 |	So you guys have been starting to
+EDL	00:37:35,360	00:37:38,176	| IOT124 |	The old-school proprietary
+EDL	00:37:38,176	00:37:39,200	| IOT124 |	Communications
+EDL	00:37:39,712	00:37:41,248	| IOT124 |	Ran in factories for a while
+EDL	00:37:42,016	00:37:42,784	| IOT124 |	With now
+EDL	00:37:43,296	00:37:45,344	| IOT124 |	New school it
+EDL	00:37:45,344	00:37:45,856	| IOT124 |	Ethernet
+EDL	00:37:48,160	00:37:49,440	| IOT124 |	Specific word like stuff
+EDL	00:37:49,952	00:37:53,024	| IOT124 |	Let's talk about how you thought about security
+EDL	00:37:53,024	00:37:55,840	| IOT124 |	When you started this and what you're thinking about secure
+EDL	00:37:55,840	00:37:57,632	| IOT124 |	Security now so how that perspective is change
+EDL	00:37:58,656	00:37:59,936	| IOT124 |	Call gimatic Lychee
+EDL	00:37:59,936	00:38:05,056	| IOT124 |	In the beginning with a proprietary system of the communication protocols
+EDL	00:38:05,056	00:38:09,664	| IOT124 |	The access within the environment was the limited to those who understood the protocol
+EDL	00:38:10,176	00:38:12,480	| IOT124 |	A noun with an open protocol or nope
+EDL	00:38:12,480	00:38:15,808	| IOT124 |	Open system as we say where I be quote-unquote Centric
+EDL	00:38:15,808	00:38:19,392	| IOT124 |	Now it's the same common language at the entire world
+EDL	00:38:19,392	00:38:21,696	| IOT124 |	Uses weather as your bank or your
+EDL	00:38:21,696	00:38:24,256	| IOT124 |	Financial systems use your Walmart
+EDL	00:38:24,256	00:38:25,280	| IOT124 |	Shell gas station
+EDL	00:38:25,792	00:38:30,400	| IOT124 |	All that technology it is very similar now most businesses
+EDL	00:38:30,400	00:38:32,448	| IOT124 |	People I've been dealing with this for
+EDL	00:38:32,448	00:38:35,520	| IOT124 |	For 20 years you know it's just now recently
+EDL	00:38:35,520	00:38:37,312	| IOT124 |	The. Same technology has
+EDL	00:38:37,824	00:38:39,616	| IOT124 |	Becoming dated into the plant
+EDL	00:38:39,616	00:38:41,408	| IOT124 |	Floor now I'll be at
+EDL	00:38:41,408	00:38:43,456	| IOT124 |	It's not a direct one to one
+EDL	00:38:43,456	00:38:46,272	| IOT124 |	You can't do a lot of the things that the plant level
+EDL	00:38:46,272	00:38:49,344	| IOT124 |	That you could for example on your business ID
+EDL	00:38:49,856	00:38:56,256	| IOT124 |	One of the things that we use as an example for example if your it group want you to reboot your
+EDL	00:38:56,256	00:38:57,024	| IOT124 |	Workstation
+EDL	00:38:57,024	00:39:01,120	| IOT124 |	That's a pretty non-invasive activity whereas that
+EDL	00:39:01,120	00:39:02,656	| IOT124 |	Can a plant floor
+EDL	00:39:02,656	00:39:06,240	| IOT124 |	Automatically rebooting A system can have very catastrophic country
+EDL	00:39:07,008	00:39:08,032	| IOT124 |	So it has to be done with care
+EDL	00:39:08,544	00:39:12,640	| IOT124 |	Same with God communication protocols in the interruptions of a
+EDL	00:39:12,640	00:39:14,688	| IOT124 |	Of communication that the plant level
+EDL	00:39:14,688	00:39:15,456	| IOT124 |	It can be
+EDL	00:39:15,968	00:39:17,504	| IOT124 |	Much more
+EDL	00:39:17,504	00:39:18,528	| IOT124 |	I'm a safety standpoint
+EDL	00:39:19,296	00:39:21,088	| IOT124 |	Severe impacts then it would
+EDL	00:39:21,088	00:39:21,856	| IOT124 |	If you lose
+EDL	00:39:21,856	00:39:22,880	| IOT124 |	For example your email
+EDL	00:39:23,392	00:39:26,464	| IOT124 |	Show me big big change at the at the plant level
+EDL	00:39:26,464	00:39:28,256	| IOT124 |	Okay so now that you've brought this in
+EDL	00:39:29,280	00:39:31,072	| IOT124 |	How do you educate
+EDL	00:39:31,072	00:39:34,144	| IOT124 |	People in the it security world and then
+EDL	00:39:34,144	00:39:37,216	| IOT124 |	How do you educate your existing security or
+EDL	00:39:37,216	00:39:39,008	| IOT124 |	Even Personnel on the floor
+EDL	00:39:39,008	00:39:40,032	| IOT124 |	How to behave cuz
+EDL	00:39:40,544	00:39:41,312	| IOT124 |	The feels like
+EDL	00:39:41,824	00:39:43,872	| IOT124 |	Your workers are probably really well-trained
+EDL	00:39:44,384	00:39:46,176	| IOT124 |	Comes to safety issues like
+EDL	00:39:46,176	00:39:48,224	| IOT124 |	Hey that's a bad hydrochloric acid
+EDL	00:39:48,224	00:39:49,248	| IOT124 |	You probably shouldn't touch that
+EDL	00:39:49,760	00:39:50,528	| IOT124 |	Maybe you should wear certain
+EDL	00:39:51,040	00:39:53,600	| IOT124 |	Gear around it but when it comes to the IT world
+EDL	00:39:54,112	00:39:56,160	| IOT124 |	Maybe they don't get the same things like hay
+EDL	00:39:56,672	00:39:59,232	| IOT124 |	You should not send your bank account over email
+EDL	00:39:59,232	00:40:00,768	| IOT124 |	Hopefully everyone knows that but
+EDL	00:40:00,768	00:40:01,280	| IOT124 |	Just in case
+EDL	00:40:01,792	00:40:02,816	| IOT124 |	You'd be surprised
+EDL	00:40:03,328	00:40:04,864	| IOT124 |	But absolutely I think
+EDL	00:40:04,864	00:40:05,888	| IOT124 |	About definition
+EDL	00:40:05,888	00:40:07,168	| IOT124 |	That they're different
+EDL	00:40:07,168	00:40:11,264	| IOT124 |	Resources or are the people running the plants or are different mindset
+EDL	00:40:11,776	00:40:15,104	| IOT124 |	Almost a process Focus chemical Engineers again
+EDL	00:40:15,616	00:40:18,688	| IOT124 |	They're interested in making whatever it is they're making
+EDL	00:40:18,688	00:40:19,200	| IOT124 |	They're not
+EDL	00:40:19,712	00:40:23,808	| IOT124 |	Focus so much on on the it side because that's not something that deal with
+EDL	00:40:24,320	00:40:27,648	| IOT124 |	Again the very leery of having the it
+EDL	00:40:27,648	00:40:31,744	| IOT124 |	Their it group actually come in and do stuff at the plant level
+EDL	00:40:31,744	00:40:38,144	| IOT124 |	That's one of the biggest things I think in the in the Takata I kind of gave that example of a anybody
+EDL	00:40:38,144	00:40:39,168	| IOT124 |	Anaplan
+EDL	00:40:39,168	00:40:42,496	| IOT124 |	It's a song of rickety old ladder leaned against the
+EDL	00:40:43,008	00:40:44,544	| IOT124 |	A wall and somebody climbing up
+EDL	00:40:45,824	00:40:47,360	| IOT124 |	50 lb bag
+EDL	00:40:47,360	00:40:48,384	| IOT124 |	What's a haze
+EDL	00:40:48,384	00:40:49,920	| IOT124 |	Call OSHA that's a safety has
+EDL	00:40:50,432	00:40:54,784	| IOT124 |	But if they were walking in the parking lot and said the CEO salary
+EDL	00:40:54,784	00:40:56,320	| IOT124 |	On a USB stick
+EDL	00:40:56,320	00:40:59,136	| IOT124 |	999 would go in and plug it into the
+EDL	00:40:59,136	00:41:01,952	| IOT124 |	Computer they don't have that same level of
+EDL	00:41:01,952	00:41:02,976	| IOT124 |	Diligence
+EDL	00:41:02,976	00:41:03,744	| IOT124 |	Governance
+EDL	00:41:03,744	00:41:06,304	| IOT124 |	I at the plant level around these type
+EDL	00:41:06,304	00:41:07,584	| IOT124 |	Security program
+EDL	00:41:07,584	00:41:10,400	| IOT124 |	And that's one of the messages were trying to get out there
+EDL	00:41:10,400	00:41:11,936	| IOT124 |	It's more than just
+EDL	00:41:11,936	00:41:14,240	| IOT124 |	Putting in a firewall or or
+EDL	00:41:14,240	00:41:17,568	| IOT124 |	Segmenting a network it's the people process technology
+EDL	00:41:18,080	00:41:19,616	| IOT124 |	People are your biggest
+EDL	00:41:19,616	00:41:21,408	| IOT124 |	Is one of your biggest risk factor
+EDL	00:41:21,920	00:41:24,480	| IOT124 |	I am so this whole awareness
+EDL	00:41:24,480	00:41:25,504	| IOT124 |	Educating
+EDL	00:41:25,504	00:41:26,528	| IOT124 |	The plant people
+EDL	00:41:26,528	00:41:29,088	| IOT124 |	On what to look for in what to do
+EDL	00:41:29,088	00:41:32,416	| IOT124 |	And so that when events do happen they know exactly
+EDL	00:41:32,416	00:41:33,952	| IOT124 |	The right reaction they say
+EDL	00:41:33,952	00:41:34,720	| IOT124 |	She takes
+EDL	00:41:34,720	00:41:39,328	| IOT124 |	To an event that may potentially cause severe damage to the to the plant and production inbox
+EDL	00:41:39,840	00:41:41,888	| IOT124 |	In extreme circumstances safety
+EDL	00:41:42,400	00:41:48,800	| IOT124 |	So how do you train people in what are the things you're trying to train your workers on when it comes to
+EDL	00:41:48,800	00:41:49,568	| IOT124 |	Thai tea
+EDL	00:41:50,848	00:41:53,151	| IOT124 |	It's two different training aspects that
+EDL	00:41:53,151	00:41:54,431	| IOT124 |	When you refer to workers
+EDL	00:41:54,943	00:41:56,735	| IOT124 |	19rr very
+EDL	00:41:56,735	00:41:57,247	| IOT124 |	Specialized
+EDL	00:41:58,015	00:41:58,783	| IOT124 |	They are
+EDL	00:41:58,783	00:42:02,367	| IOT124 |	Typically this is very new in this space
+EDL	00:42:02,367	00:42:04,671	| IOT124 |	There's not a lot of people with 20 years ago
+EDL	00:42:04,671	00:42:07,231	| IOT124 |	Experience and in doing industrial it
+EDL	00:42:07,231	00:42:09,791	| IOT124 |	So we typically recruit from
+EDL	00:42:09,791	00:42:14,911	| IOT124 |	How did the industry and get the senior the set call an IT expert
+EDL	00:42:15,423	00:42:21,823	| IOT124 |	We bring them into our organization and and weedy to them and it take somewhere between 3 to 6
+EDL	00:42:21,823	00:42:24,127	| IOT124 |	Sometimes 9 months daddy totem
+EDL	00:42:24,127	00:42:25,919	| IOT124 |	Anybody to know Mommy
+EDL	00:42:25,919	00:42:27,455	| IOT124 |	Taking all that technology
+EDL	00:42:27,967	00:42:33,343	| IOT124 |	Experience and knowledge and certifications that you had any idea what all can modify them
+EDL	00:42:33,855	00:42:34,879	| IOT124 |	To apply them
+EDL	00:42:35,391	00:42:39,487	| IOT124 |	To the industrial world and it's only after they've gained the whole
+EDL	00:42:39,487	00:42:41,535	| IOT124 |	Knowledge of all those things
+EDL	00:42:41,535	00:42:44,607	| IOT124 |	Do we actually let him go out and actually service our customer
+EDL	00:42:45,119	00:42:45,887	| IOT124 |	Only
+EDL	00:42:45,887	00:42:46,911	| IOT124 |	Other side
+EDL	00:42:46,911	00:42:47,679	| IOT124 |	For our customers
+EDL	00:42:48,191	00:42:50,239	| IOT124 |	We're offering a variety of a
+EDL	00:42:50,239	00:42:52,287	| IOT124 |	We start with awareness training
+EDL	00:42:52,287	00:42:55,103	| IOT124 |	Again it goes to the whole concept of
+EDL	00:42:55,103	00:42:59,967	| IOT124 |	Your what should you do when what should you look for what are some of the basics around cyber
+EDL	00:42:59,967	00:43:02,015	| IOT124 |	You should be thinking about when you're
+EDL	00:43:02,015	00:43:03,551	| IOT124 |	Designing implementing
+EDL	00:43:03,551	00:43:06,623	| IOT124 |	Will purchasing a new control system
+EDL	00:43:06,623	00:43:08,415	| IOT124 |	. all the way up to
+EDL	00:43:08,415	00:43:09,183	| IOT124 |	For some of my mom
+EDL	00:43:09,183	00:43:10,207	| IOT124 |	Amateur customers
+EDL	00:43:10,207	00:43:16,607	| IOT124 |	You know I'm going to put in a Sim what does that look like lettuce train you on the advantages of us M LeSabre
+EDL	00:43:16,607	00:43:17,119	| IOT124 |	Versus
+EDL	00:43:17,631	00:43:19,167	| IOT124 |	You know another security control
+EDL	00:43:19,679	00:43:23,007	| IOT124 |	It ranges the whole gamut on the list, customer side
+EDL	00:43:23,519	00:43:26,079	| IOT124 |	Okay what are the biggest things you have to
+EDL	00:43:26,079	00:43:26,847	| IOT124 |	Your it
+EDL	00:43:26,847	00:43:29,151	| IOT124 |	Folks honor what are what are the things that they need
+EDL	00:43:29,151	00:43:29,663	| IOT124 |	The most help
+EDL	00:43:30,687	00:43:36,063	| IOT124 |	That's a lot of stuff I mean I got I want to get too technical lovey landing and some of the
+EDL	00:43:36,063	00:43:38,111	| IOT124 |	The technical things that you
+EDL	00:43:38,111	00:43:39,135	| IOT124 |	You can do
+EDL	00:43:39,135	00:43:41,439	| IOT124 |	An AIT environment
+EDL	00:43:41,439	00:43:42,463	| IOT124 |	You just cannot
+EDL	00:43:42,463	00:43:43,231	| IOT124 |	Do
+EDL	00:43:43,231	00:43:45,023	| IOT124 |	In a process environment
+EDL	00:43:45,023	00:43:47,583	| IOT124 |	Duda responsiveness this required
+EDL	00:43:47,583	00:43:51,679	| IOT124 |	Loss of view in a control system for a minute is a big deal
+EDL	00:43:51,679	00:43:53,727	| IOT124 |	You know where house if you're
+EDL	00:43:53,727	00:43:56,799	| IOT124 |	Screen at your laptop goes out for a minute it's
+EDL	00:43:56,799	00:43:58,591	| IOT124 |	Kinosaki end of the world
+EDL	00:43:58,591	00:44:01,663	| IOT124 |	In a plant it could cause catastrophic results
+EDL	00:44:02,175	00:44:05,759	| IOT124 |	So it's really training him around that it's awesome
+EDL	00:44:06,271	00:44:08,319	| IOT124 |	Walking into a plant that mean you going
+EDL	00:44:08,319	00:44:09,599	| IOT124 |	I'm very
+EDL	00:44:09,599	00:44:13,439	| IOT124 |	Hazardous areas you know how do you operate in these hazardous areas
+EDL	00:44:13,439	00:44:14,975	| IOT124 |	Think about it if I plug
+EDL	00:44:14,975	00:44:15,743	| IOT124 |	The cable
+EDL	00:44:15,743	00:44:17,023	| IOT124 |	In the wrong places
+EDL	00:44:17,023	00:44:19,583	| IOT124 |	Create a control Loop you know the impact of a
+EDL	00:44:19,583	00:44:22,143	| IOT124 |	Cover Refinery doing that versus
+EDL	00:44:22,655	00:44:24,703	| IOT124 |	Let's say seven eleven
+EDL	00:44:24,703	00:44:25,983	| IOT124 |	Is significantly different
+EDL	00:44:26,495	00:44:28,287	| IOT124 |	Okay that's kind of Awesome
+EDL	00:44:28,799	00:44:32,383	| IOT124 |	Let's talk about risk mitigation because
+EDL	00:44:32,383	00:44:34,687	| IOT124 |	Couple people I talk to you at this time
+EDL	00:44:35,199	00:44:36,479	| IOT124 |	You know I was asking him
+EDL	00:44:36,479	00:44:38,527	| IOT124 |	Very security questions and they were like
+EDL	00:44:38,527	00:44:40,831	| IOT124 |	Really Stacy this is a psychological issue
+EDL	00:44:41,599	00:44:44,671	| IOT124 |	It's basically how secure do you really feel like you need to be
+EDL	00:44:45,439	00:44:47,999	| IOT124 |	And once you get past that then you can say
+EDL	00:44:47,999	00:44:48,511	| IOT124 |	Your printer
+EDL	00:44:49,791	00:44:50,815	| IOT124 |	That's even an option
+EDL	00:44:51,327	00:44:52,863	| IOT124 |	To think about how secure you need to be
+EDL	00:44:53,375	00:44:55,167	| IOT124 |	That's crazy I just want to be secure
+EDL	00:44:57,215	00:45:00,799	| IOT124 |	Help me with the the industrial security mindset
+EDL	00:45:00,799	00:45:02,591	| IOT124 |	In terms of figuring out
+EDL	00:45:02,591	00:45:03,615	| IOT124 |	How to think about risk
+EDL	00:45:04,127	00:45:05,407	| IOT124 |	Risk is to as
+EDL	00:45:05,919	00:45:07,967	| IOT124 |	That's right you got risk tolerance which is
+EDL	00:45:07,967	00:45:10,783	| IOT124 |	You know how much can the business actually tolerate
+EDL	00:45:10,783	00:45:14,879	| IOT124 |	And in Risk appetite which is how much can you really afford to do
+EDL	00:45:14,879	00:45:16,415	| IOT124 |	Put it in comparison to your house
+EDL	00:45:16,927	00:45:18,207	| IOT124 |	You can lock your front door
+EDL	00:45:19,231	00:45:20,255	| IOT124 |	That may be a good real
+EDL	00:45:20,767	00:45:22,303	| IOT124 |	You can put bars on your windows
+EDL	00:45:23,327	00:45:24,607	| IOT124 |	You can put an alarm
+EDL	00:45:25,375	00:45:29,471	| IOT124 |	If you're trying to mitigate the risk against an assassin trying to shoot you
+EDL	00:45:29,471	00:45:31,519	| IOT124 |	They may be good things but you may want to wear
+EDL	00:45:31,519	00:45:32,287	| IOT124 |	Kevlar vest
+EDL	00:45:33,055	00:45:34,591	| IOT124 |	There's all these different Soul levels
+EDL	00:45:35,103	00:45:38,175	| IOT124 |	Depending on what it is you're trying to protect yourself against
+EDL	00:45:38,175	00:45:40,223	| IOT124 |	And in only the business
+EDL	00:45:40,223	00:45:41,247	| IOT124 |	Meaning the customer
+EDL	00:45:42,015	00:45:43,039	| IOT124 |	Can I answer that question
+EDL	00:45:43,551	00:45:48,159	| IOT124 |	My version of protection may be different than your version of protection
+EDL	00:45:48,671	00:45:51,999	| IOT124 |	So it is somewhat psychological shall we say but
+EDL	00:45:51,999	00:45:55,839	| IOT124 |	But more in terms of appetite versus watching the business take
+EDL	00:45:55,839	00:45:59,167	| IOT124 |	Can you afford to have this process line down for six weeks
+EDL	00:45:59,935	00:46:02,239	| IOT124 |	That type of and you have to do these type of a
+EDL	00:46:02,239	00:46:05,567	| IOT124 |	Mitigation Of valuations of risk calculation
+EDL	00:46:05,567	00:46:07,871	| IOT124 |	To determine what level of security
+EDL	00:46:07,871	00:46:09,919	| IOT124 |	That you need to implement in your sister
+EDL	00:46:09,919	00:46:14,527	| IOT124 |	Fciac 62443 which is kind of the guidelines for
+EDL	00:46:14,527	00:46:15,807	| IOT124 |	Control systems
+EDL	00:46:15,807	00:46:18,111	| IOT124 |	You know eat lays it out in terms of
+EDL	00:46:18,879	00:46:20,927	| IOT124 |	Who you trying to protect yourself against
+EDL	00:46:21,439	00:46:25,023	| IOT124 |	Are you trying to protect yourself against Stacy who may come in and
+EDL	00:46:25,023	00:46:28,607	| IOT124 |	Accidentally plug your laptop into the control system
+EDL	00:46:28,607	00:46:32,959	| IOT124 |	And her husband was playing Star Wars or some game on the
+EDL	00:46:33,727	00:46:37,055	| IOT124 |	I dated myself there with with their laptop and infection
+EDL	00:46:37,055	00:46:37,823	| IOT124 |	The system
+EDL	00:46:37,823	00:46:38,847	| IOT124 |	Or are you trying to
+EDL	00:46:39,359	00:46:41,919	| IOT124 |	Protect yourself against node in there somebody that's
+EDL	00:46:41,919	00:46:47,039	| IOT124 |	You're trying to do harmful within the walls or are you trying to protect yourself from a nation
+EDL	00:46:47,039	00:46:50,879	| IOT124 |	State each of these once you determine what you're trying to protect yourself again
+EDL	00:46:50,879	00:46:53,183	| IOT124 |	Then there's a set of mitigating controls
+EDL	00:46:53,183	00:46:54,463	| IOT124 |	Did you can implement
+EDL	00:46:54,463	00:46:55,231	| IOT124 |	Good rest
+EDL	00:46:55,999	00:47:00,607	| IOT124 |	One of the interesting things that we tried to tell everybody because they get hung up in this hole
+EDL	00:47:00,607	00:47:02,911	| IOT124 |	Conversation around you know
+EDL	00:47:02,911	00:47:04,191	| IOT124 |	Do I bake a
+EDL	00:47:04,191	00:47:06,239	| IOT124 |	Bull the world world or do I just
+EDL	00:47:06,751	00:47:07,263	| IOT124 |	Take a drink
+EDL	00:47:07,775	00:47:08,543	| IOT124 |	38
+EDL	00:47:08,543	00:47:10,591	| IOT124 |	Percent what we found 3835
+EDL	00:47:11,103	00:47:15,711	| IOT124 |	Of the attacks or or issues that we find or we called involved in
+EDL	00:47:15,711	00:47:18,271	| IOT124 |	Originate within the four walls of the plant
+EDL	00:47:18,271	00:47:20,575	| IOT124 |	Know what does that mean that means
+EDL	00:47:20,575	00:47:26,207	| IOT124 |	It's either an innocent employee doing something of vendor coming in doing something which by the way
+EDL	00:47:26,207	00:47:30,303	| IOT124 |	In these plants vendors are in there every day and then he's Control Systems they need access to
+EDL	00:47:31,071	00:47:33,119	| IOT124 |	Control system did you updates to do
+EDL	00:47:33,119	00:47:37,727	| IOT124 |	Repairs things like that or disgruntled employee so there's a set of controls
+EDL	00:47:37,727	00:47:40,543	| IOT124 |	And procedures in in governance around
+EDL	00:47:40,543	00:47:42,335	| IOT124 |	Protecting yourself at that level
+EDL	00:47:42,335	00:47:47,199	| IOT124 |	Some parts of the world and then our customers that we deal with are really targeted by Nation
+EDL	00:47:47,199	00:47:49,247	| IOT124 |	The states so therefore we have to do
+EDL	00:47:49,247	00:47:51,039	| IOT124 |	Significantly more
+EDL	00:47:51,039	00:47:54,111	| IOT124 |	Protective type of litigation strategy for those
+EDL	00:47:54,111	00:47:55,903	| IOT124 |	So it's not a one-size-fit-all
+EDL	00:47:56,415	00:47:57,183	| IOT124 |	Speaking of Nations
+EDL	00:47:57,695	00:47:59,743	| IOT124 |	There's a lot of attention right now.
+EDL	00:47:59,743	00:48:01,023	| IOT124 |	Hacks
+EDL	00:48:01,023	00:48:05,375	| IOT124 |	Nation states and different types of attacks may be using tools from
+EDL	00:48:05,887	00:48:09,727	| IOT124 |	DSA perhaps so things like wannacry notpetya
+EDL	00:48:11,519	00:48:12,543	| IOT124 |	All of that feels
+EDL	00:48:13,055	00:48:14,335	| IOT124 |	Like everyone's more aware of
+EDL	00:48:14,847	00:48:17,663	| IOT124 |	So how does that change the environment you guys operate
+EDL	00:48:18,687	00:48:20,735	| IOT124 |	I think the positive from our side is
+EDL	00:48:21,247	00:48:22,271	| IOT124 |	You know we've been
+EDL	00:48:22,271	00:48:24,319	| IOT124 |	We've been seeing this as you mentioned for years
+EDL	00:48:24,319	00:48:26,111	| IOT124 |	But now that's brought it to a
+EDL	00:48:26,111	00:48:27,391	| IOT124 |	Different level of awareness
+EDL	00:48:28,415	00:48:29,951	| IOT124 |	Now we're seeing that the
+EDL	00:48:29,951	00:48:32,767	| IOT124 |	Plants in the people that are involved in this
+EDL	00:48:32,767	00:48:35,327	| IOT124 |	Are now looking and saying hey wait a second
+EDL	00:48:35,327	00:48:38,911	| IOT124 |	This is happening in the industrial space this could happen to me
+EDL	00:48:39,423	00:48:40,959	| IOT124 |	What are we doing
+EDL	00:48:40,959	00:48:42,751	| IOT124 |	We get called in Austin
+EDL	00:48:42,751	00:48:45,567	| IOT124 |	How the cause of an executive is asked
+EDL	00:48:45,567	00:48:46,079	| IOT124 |	The plant
+EDL	00:48:46,847	00:48:50,175	| IOT124 |	What are we doing are we protected against the wannacry
+EDL	00:48:50,175	00:48:51,455	| IOT124 |	In the plant goes
+EDL	00:48:51,455	00:48:53,503	| IOT124 |	I'm not sure but that's the wrong answer
+EDL	00:48:53,503	00:48:57,599	| IOT124 |	The right so the awareness level has increased dramatically I would say
+EDL	00:48:57,599	00:48:58,879	| IOT124 |	In the last six
+EDL	00:48:58,879	00:48:59,647	| IOT124 |	The 12 months
+EDL	00:48:59,647	00:49:01,695	| IOT124 |	I am by that they're coming to
+EDL	00:49:01,695	00:49:05,023	| IOT124 |	Companies like Honeywell going very been doing this for a while
+EDL	00:49:05,023	00:49:06,815	| IOT124 |	And saying hey where do we start
+EDL	00:49:06,815	00:49:08,351	| IOT124 |	I think that's the biggest
+EDL	00:49:08,351	00:49:10,655	| IOT124 |	Challenge for most of the people we talked to
+EDL	00:49:11,167	00:49:12,191	| IOT124 |	I want cyber
+EDL	00:49:12,191	00:49:12,703	| IOT124 |	Security
+EDL	00:49:13,215	00:49:18,079	| IOT124 |	To your point earlier do I want the $5,000 Scott cybersecurity other $5000000
+EDL	00:49:18,847	00:49:21,151	| IOT124 |	Which do I need a don't know where to start
+EDL	00:49:21,151	00:49:27,295	| IOT124 |	In companies like Honeywell we can come in and say okay let's talk about this look at your risk mitigation watch
+EDL	00:49:29,087	00:49:32,159	| IOT124 |	I didn't come up with a solution that's that helps him get started
+EDL	00:49:32,159	00:49:33,439	| IOT124 |	But the bottom line
+EDL	00:49:33,439	00:49:34,719	| IOT124 |	Is the awareness is a
+EDL	00:49:34,719	00:49:36,511	| IOT124 |	Increased significantly
+EDL	00:49:36,511	00:49:38,047	| IOT124 |	And that has helped everybody
+EDL	00:49:38,047	00:49:39,839	| IOT124 |	To actually put in the action
+EDL	00:49:39,839	00:49:41,375	| IOT124 |	Could start getting their system secure
+EDL	00:49:41,887	00:49:43,423	| IOT124 |	This is kind of an interesting
+EDL	00:49:43,423	00:49:45,215	| IOT124 |	Idea but let's say you've got
+EDL	00:49:45,215	00:49:47,263	| IOT124 |	An oil refinery and maybe it's it's
+EDL	00:49:47,775	00:49:49,055	| IOT124 |	Crucial oil refinery
+EDL	00:49:49,567	00:49:50,847	| IOT124 |	Of supplying
+EDL	00:49:50,847	00:49:52,383	| IOT124 |	I don't know part of the United States
+EDL	00:49:53,151	00:49:57,247	| IOT124 |	And they pick a risk mitigation plan that feels maybe like
+EDL	00:49:58,271	00:49:58,783	| IOT124 |	Not enough
+EDL	00:49:59,551	00:50:02,367	| IOT124 |	So what is your role as someone who consults with these guys
+EDL	00:50:02,367	00:50:03,647	| IOT124 |	In that case and then
+EDL	00:50:04,415	00:50:05,951	| IOT124 |	Where should the funding
+EDL	00:50:09,279	00:50:11,327	| IOT124 |	Our role is that of
+EDL	00:50:11,327	00:50:12,351	| IOT124 |	Alyssa is a
+EDL	00:50:12,351	00:50:13,375	| IOT124 |	Trusted advisor
+EDL	00:50:13,887	00:50:15,679	| IOT124 |	I mean we're going to tell them
+EDL	00:50:15,679	00:50:16,447	| IOT124 |	What we think
+EDL	00:50:16,959	00:50:20,031	| IOT124 |	Is there right mitigation strategy
+EDL	00:50:20,031	00:50:22,591	| IOT124 |	And it will be based on the standards
+EDL	00:50:22,591	00:50:23,615	| IOT124 |	On these
+EDL	00:50:23,615	00:50:27,967	| IOT124 |	Market levels that we seen with other customers so kind of gives them a point of reference
+EDL	00:50:28,735	00:50:30,527	| IOT124 |	We see the funding coming from
+EDL	00:50:31,039	00:50:34,623	| IOT124 |	A couple different sources sometimes corporate funds it
+EDL	00:50:34,623	00:50:37,439	| IOT124 |	Sometimes the actual plants are left to find it
+EDL	00:50:37,439	00:50:38,207	| IOT124 |	Because at the end
+EDL	00:50:38,719	00:50:40,511	| IOT124 |	If the direct correlation
+EDL	00:50:40,511	00:50:41,279	| IOT124 |	Who is two products
+EDL	00:50:41,791	00:50:43,583	| IOT124 |	Self is more of a
+EDL	00:50:43,583	00:50:45,887	| IOT124 |	Protection cost on on production
+EDL	00:50:45,887	00:50:50,495	| IOT124 |	State funded on objects at times other times depending on what it is you're doing
+EDL	00:50:50,495	00:50:53,567	| IOT124 |	They may have to come out of capex or some multiple sources
+EDL	00:50:53,567	00:50:54,335	| IOT124 |	On the funding
+EDL	00:50:55,615	00:50:56,383	| IOT124 |	If I was your question
+EDL	00:50:56,895	00:50:59,711	| IOT124 |	Yeah I know that part of me wonders
+EDL	00:51:00,479	00:51:04,831	| IOT124 |	If you have a process that baby doesn't feel essential but
+EDL	00:51:04,831	00:51:06,879	| IOT124 |	To be polluting or something if it were
+EDL	00:51:06,879	00:51:09,695	| IOT124 |	Or preached and then have a severe detrimental effect
+EDL	00:51:10,463	00:51:15,839	| IOT124 |	And nuclear power is kind of something everyone's worried about right but it could even be you know
+EDL	00:51:15,839	00:51:16,863	| IOT124 |	Paper mill
+EDL	00:51:17,375	00:51:18,399	| IOT124 |	Killing a river I don't know
+EDL	00:51:19,679	00:51:22,751	| IOT124 |	It may not become a financial priority for
+EDL	00:51:22,751	00:51:24,031	| IOT124 |	Plant operators
+EDL	00:51:24,543	00:51:25,055	| IOT124 |	End
+EDL	00:51:25,567	00:51:26,335	| IOT124 |	That feels like
+EDL	00:51:26,847	00:51:29,151	| IOT124 |	A question we should all be thinking about as we
+EDL	00:51:29,919	00:51:30,431	| IOT124 |	Things online
+EDL	00:51:31,967	00:51:35,807	| IOT124 |	Absolutely in you and you see around the globe many countries now
+EDL	00:51:36,319	00:51:38,111	| IOT124 |	Are passing regulatory
+EDL	00:51:38,111	00:51:39,135	| IOT124 |	Tissues that
+EDL	00:51:39,135	00:51:41,951	| IOT124 |	If you have a Cyber attack in a critical in
+EDL	00:51:41,951	00:51:42,719	| IOT124 |	The structure
+EDL	00:51:42,719	00:51:43,743	| IOT124 |	Impact
+EDL	00:51:44,255	00:51:46,047	| IOT124 |	The economy or whatever then
+EDL	00:51:46,047	00:51:47,839	| IOT124 |	The plants are being liable
+EDL	00:51:47,839	00:51:50,399	| IOT124 |	I'll see you at we're seeing a growing increase
+EDL	00:51:50,399	00:51:52,959	| IOT124 |	Round the global of regulatory
+EDL	00:51:53,471	00:51:56,031	| IOT124 |	Compliancy type of a requirement Chalisa
+EDL	00:51:57,055	00:52:00,127	| IOT124 |	And I think you're going to see that increase increase to your point
+EDL	00:52:00,127	00:52:01,919	| IOT124 |	That makes it
+EDL	00:52:01,919	00:52:02,943	| IOT124 |	Skin in the game show
+EDL	00:52:04,479	00:52:06,271	| IOT124 |	Where do you see these regulations happening
+EDL	00:52:06,783	00:52:08,575	| IOT124 |	Fastest or where do you look at
+EDL	00:52:08,575	00:52:11,903	| IOT124 |	Could you like hey these guys are actually building a really good model for reggae
+EDL	00:52:12,671	00:52:13,183	| IOT124 |	This sort of thing
+EDL	00:52:14,463	00:52:19,583	| IOT124 |	By far the deleters are some of the countries in the Middle East again they're in a different
+EDL	00:52:20,095	00:52:22,399	| IOT124 |	Meaning of environment
+EDL	00:52:22,399	00:52:23,423	| IOT124 |	Did that maybe
+EDL	00:52:23,423	00:52:25,727	| IOT124 |	Some of the other parts of the world
+EDL	00:52:25,727	00:52:27,263	| IOT124 |	I know of France
+EDL	00:52:27,263	00:52:28,799	| IOT124 |	In Europe there also
+EDL	00:52:29,311	00:52:31,871	| IOT124 |	I'll coming on board pretty rapidly
+EDL	00:52:31,871	00:52:36,479	| IOT124 |	I'm in the u.s. is doing some things nurx Elf on the power side
+EDL	00:52:36,479	00:52:40,063	| IOT124 |	Canada on S pasta are pushing some of their
+EDL	00:52:40,063	00:52:41,087	| IOT124 |	About Alberta
+EDL	00:52:41,599	00:52:43,391	| IOT124 |	Compliance nurx F-Type
+EDL	00:52:43,391	00:52:47,487	| IOT124 |	So it's it's running the glow but but if you had to say you know who was the
+EDL	00:52:47,487	00:52:48,511	| IOT124 |	The ones that
+EDL	00:52:48,511	00:52:50,303	| IOT124 |	I would have to
+EDL	00:52:50,303	00:52:51,071	| IOT124 |	To say the middle of Base
+EDL	00:52:51,839	00:52:52,351	| IOT124 |	All right
+EDL	00:52:52,863	00:52:54,655	| IOT124 |	And words of wisdom
+EDL	00:52:54,655	00:52:57,727	| IOT124 |	4 people in the it side we're looking at the
+EDL	00:52:58,239	00:53:00,543	| IOT124 |	Plant as a source of Revenue
+EDL	00:53:01,567	00:53:03,359	| IOT124 |	Wow we should just get in there
+EDL	00:53:03,359	00:53:07,199	| IOT124 |	These guys are so old school and we could make this awesome for them
+EDL	00:53:07,711	00:53:08,735	| IOT124 |	What would you say to her
+EDL	00:53:10,527	00:53:14,879	| IOT124 |	Look before you leap again I as I mentioned earlier in the end of discussion
+EDL	00:53:14,879	00:53:16,927	| IOT124 |	The Technologies of the same
+EDL	00:53:16,927	00:53:18,207	| IOT124 |	The applications are
+EDL	00:53:18,207	00:53:19,743	| IOT124 |	Significantly different
+EDL	00:53:19,743	00:53:22,303	| IOT124 |	And the consequences are significantly differ
+EDL	00:53:23,839	00:53:27,167	| IOT124 |	Part of what we bring to the party is is we
+EDL	00:53:27,167	00:53:28,959	| IOT124 |	Bring both git knowledge
+EDL	00:53:28,959	00:53:31,263	| IOT124 |	And what we call the process knowledge
+EDL	00:53:31,263	00:53:35,359	| IOT124 |	And the two combined is what you need to actually
+EDL	00:53:35,359	00:53:37,407	| IOT124 |	Work in this thing called the OT environment
+EDL	00:53:39,455	00:53:40,735	| IOT124 |	All right
+EDL	00:53:41,503	00:53:44,319	| IOT124 |	Mike thank you so much for coming on the show.
+EDL	00:53:45,087	00:53:45,855	| IOT124 |	Haha you're welcome
+EDL	00:53:46,879	00:53:48,671	| IOT124 |	That's it for this week's show
+EDL	00:53:48,671	00:53:55,071	| IOT124 |	Thank you so much for listening and if you want more iot news you can sign up for my newsletter Stacy nose
+EDL	00:53:55,071	00:53:57,887	| IOT124 |	At Stacey on iot
+EDL	00:53:57,887	00:53:59,167	| IOT124 |	Dot-com
+EDL	00:53:59,167	00:54:00,447	| IOT124 |	Will see you next week 

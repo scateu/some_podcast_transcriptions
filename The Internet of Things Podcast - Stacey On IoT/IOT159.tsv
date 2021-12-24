@@ -1,0 +1,1244 @@
+EDL	Record In	Record Out	Clipname	Subtitle
+EDL	00:00:09,472	00:00:13,056	| IOT159 |	Hey everyone welcome to the Internet of Things podcast this is your host
+EDL	00:00:13,056	00:00:15,104	| IOT159 |	Stacey Higginbotham and your co-host
+EDL	00:00:15,104	00:00:16,128	| IOT159 |	Kevin tofel
+EDL	00:00:16,128	00:00:17,408	| IOT159 |	And we've got a
+EDL	00:00:17,408	00:00:19,200	| IOT159 |	Rip roarin show for you
+EDL	00:00:19,200	00:00:25,600	| IOT159 |	You today we're going to be talking about Microsoft in their 5 billion dollar investment in iot qualcomm's brand new
+EDL	00:00:25,600	00:00:27,136	| IOT159 |	Vision intelligence chips
+EDL	00:00:27,136	00:00:27,904	| IOT159 |	Kevin
+EDL	00:00:27,904	00:00:29,696	| IOT159 |	Has some insights about
+EDL	00:00:29,696	00:00:30,720	| IOT159 |	Voice assistant
+EDL	00:00:30,720	00:00:31,488	| IOT159 |	What's that you should hear
+EDL	00:00:32,000	00:00:34,816	| IOT159 |	Plus is the Apple watch losing its apps
+EDL	00:00:34,816	00:00:35,840	| IOT159 |	It doesn't matter
+EDL	00:00:35,840	00:00:37,376	| IOT159 |	Comcast is adding stringify
+EDL	00:00:37,888	00:00:39,424	| IOT159 |	We've got some exploits again
+EDL	00:00:39,936	00:00:40,960	| IOT159 |	With iot
+EDL	00:00:40,960	00:00:41,728	| IOT159 |	It devices
+EDL	00:00:41,728	00:00:47,616	| IOT159 |	And some news plus we're going to talk about me installing the nest hello doorbell and what I think
+EDL	00:00:48,128	00:00:50,688	| IOT159 |	And I dumped a device for my home
+EDL	00:00:50,688	00:00:51,456	| IOT159 |	Because by golly it
+EDL	00:00:52,992	00:00:54,528	| IOT159 |	Find out what that is
+EDL	00:00:54,528	00:00:57,856	| IOT159 |	And hear from our Advertiser this week for a truck
+EDL	00:00:57,856	00:01:01,184	| IOT159 |	And learn about the future of hearing
+EDL	00:01:01,184	00:01:05,536	| IOT159 |	From poppy Crum who is a chief scientist at Dolby labs
+EDL	00:01:05,536	00:01:07,840	| IOT159 |	It is a jam-packed show
+EDL	00:01:08,608	00:01:11,424	| IOT159 |	So let's get it started with a message from our sponsor
+EDL	00:01:11,936	00:01:18,336	| IOT159 |	This week sponsor is the yonomi platform for the makers of the free you know me after you know me platform is a
+EDL	00:01:18,336	00:01:24,736	| IOT159 |	I'm faced platform-as-a-service for companies Building Solutions for the connected home you know he's offering
+EDL	00:01:24,736	00:01:31,136	| IOT159 |	Include hidden Cloud the server list iot platform for device manufacturers looking to get their products to Market
+EDL	00:01:31,136	00:01:37,536	| IOT159 |	Quickly and securely there's also you know me one a powerful integration engine that connects more than a hundred
+EDL	00:01:37,536	00:01:43,936	| IOT159 |	Top smart home devices this week on the Stacey on iot podcast
+EDL	00:01:43,936	00:01:50,336	| IOT159 |	Part three of their five-part series on what the next billion-dollar smart home startup will look like
+EDL	00:01:50,336	00:01:56,736	| IOT159 |	You can find that today by visiting platform. You know me. Co / Stacy
+EDL	00:01:56,736	00:02:01,600	| IOT159 |	Xeon iot yonomi is spelled y o n o m
+EDL	00:02:01,600	00:02:02,112	| IOT159 |	I
+EDL	00:02:03,136	00:02:04,416	| IOT159 |	Cake
+EDL	00:02:05,184	00:02:05,696	| IOT159 |	Man
+EDL	00:02:06,720	00:02:07,488	| IOT159 |	Great episode
+EDL	00:02:08,000	00:02:10,560	| IOT159 |	I realize that I say super all the time
+EDL	00:02:11,328	00:02:14,656	| IOT159 |	We can start a drinking game with me being super excited or super happy
+EDL	00:02:15,168	00:02:15,936	| IOT159 |	Or
+EDL	00:02:15,936	00:02:16,704	| IOT159 |	I don't know
+EDL	00:02:16,704	00:02:18,752	| IOT159 |	So I'm trying to stop that let's see how well I do
+EDL	00:02:19,264	00:02:19,776	| IOT159 |	Yucaipa
+EDL	00:02:20,800	00:02:23,360	| IOT159 |	Crap a beverage and see what happens
+EDL	00:02:23,360	00:02:23,872	| IOT159 |	All right
+EDL	00:02:24,384	00:02:25,152	| IOT159 |	To get started
+EDL	00:02:25,920	00:02:26,432	| IOT159 |	Microsoft
+EDL	00:02:26,944	00:02:33,344	| IOT159 |	They announced last week that they were going to spend 5 billion dollars over the next 4 years
+EDL	00:02:33,344	00:02:34,624	| IOT159 |	Where's on the internet
+EDL	00:02:34,624	00:02:35,136	| IOT159 |	Thanks
+EDL	00:02:36,160	00:02:36,672	| IOT159 |	What do you think about
+EDL	00:02:37,440	00:02:42,304	| IOT159 |	Well maybe they're there a big player we probably don't talk about them as much as we should
+EDL	00:02:42,304	00:02:47,936	| IOT159 |	But cuz they're behind the scenes of a lot of things and what I liked about their news announcement witch
+EDL	00:02:48,704	00:02:51,776	| IOT159 |	I would say the light on details on how they're going to invest
+EDL	00:02:51,776	00:02:52,800	| IOT159 |	Even see anything
+EDL	00:02:52,800	00:02:55,616	| IOT159 |	Earth shattering in there was a continuation of their efforts
+EDL	00:02:55,616	00:02:58,176	| IOT159 |	What I like in there something that I've noted
+EDL	00:02:58,688	00:03:00,480	| IOT159 |	With Google's IRT
+EDL	00:03:00,992	00:03:01,760	| IOT159 |	Press announcements
+EDL	00:03:02,528	00:03:04,320	| IOT159 |	Is often missing there was some
+EDL	00:03:04,320	00:03:06,368	| IOT159 |	Real actual customers in here
+EDL	00:03:06,880	00:03:09,952	| IOT159 |	And discussions of how these customers
+EDL	00:03:09,952	00:03:10,976	| IOT159 |	Use
+EDL	00:03:10,976	00:03:12,512	| IOT159 |	Microsoft platform
+EDL	00:03:12,512	00:03:13,536	| IOT159 |	4 IRT
+EDL	00:03:13,536	00:03:14,816	| IOT159 |	When I say customers I mean
+EDL	00:03:15,328	00:03:19,680	| IOT159 |	Steelcase color Chevron Johnson Controls United Technologies
+EDL	00:03:19,680	00:03:21,984	| IOT159 |	The Alaska Department of Transportation which
+EDL	00:03:21,984	00:03:25,312	| IOT159 |	That was kind of cool cuz they're building smart roadways to monitor weather conditions
+EDL	00:03:25,824	00:03:26,336	| IOT159 |	So
+EDL	00:03:27,104	00:03:28,640	| IOT159 |	They actually Microsoft
+EDL	00:03:28,640	00:03:30,688	| IOT159 |	Their iot stuff and azure
+EDL	00:03:31,200	00:03:31,968	| IOT159 |	Are you spy
+EDL	00:03:31,968	00:03:32,480	| IOT159 |	Buy Hershey's
+EDL	00:03:32,992	00:03:33,760	| IOT159 |	To make
+EDL	00:03:33,760	00:03:34,784	| IOT159 |	Twizzler packets
+EDL	00:03:35,296	00:03:38,112	| IOT159 |	Twizzlers candy
+EDL	00:03:38,112	00:03:39,648	| IOT159 |	That's my backyard Hershey
+EDL	00:03:39,648	00:03:40,416	| IOT159 |	So
+EDL	00:03:40,416	00:03:44,000	| IOT159 |	They use it to make sure every Twizzlers package is packed with
+EDL	00:03:44,000	00:03:44,512	| IOT159 |	The right amount
+EDL	00:03:45,024	00:03:45,792	| IOT159 |	Whistlers
+EDL	00:03:45,792	00:03:49,632	| IOT159 |	Because before they added sensors and analytics to this
+EDL	00:03:49,632	00:03:50,144	| IOT159 |	Process
+EDL	00:03:50,656	00:03:51,680	| IOT159 |	They actually were like
+EDL	00:03:52,192	00:03:54,240	| IOT159 |	You had too many Twizzlers in a bag
+EDL	00:03:54,240	00:03:57,056	| IOT159 |	That was fine but if you didn't have enough to meet the weight requirement
+EDL	00:03:57,824	00:03:59,360	| IOT159 |	You had to just Jam more in
+EDL	00:03:59,872	00:04:00,384	| IOT159 |	So they were
+EDL	00:04:00,896	00:04:02,944	| IOT159 |	Are Twizzlers were not uniform enough
+EDL	00:04:03,456	00:04:04,224	| IOT159 |	And so
+EDL	00:04:04,224	00:04:07,296	| IOT159 |	They managed to save money by making them more uniform so they could
+EDL	00:04:08,832	00:04:11,136	| IOT159 |	Dirty Woods of licorice production
+EDL	00:04:13,184	00:04:14,720	| IOT159 |	Microsoft has some really good
+EDL	00:04:15,232	00:04:17,024	| IOT159 |	Smurfs here and
+EDL	00:04:17,024	00:04:19,327	| IOT159 |	I actually emailed them to get a little bit more in
+EDL	00:04:19,327	00:04:20,863	| IOT159 |	Information did I get a lot more
+EDL	00:04:22,399	00:04:22,911	| IOT159 |	But
+EDL	00:04:23,935	00:04:25,983	| IOT159 |	Put this in context
+EDL	00:04:25,983	00:04:27,007	| IOT159 |	Microsoft has spent
+EDL	00:04:27,007	00:04:27,775	| IOT159 |	One point
+EDL	00:04:27,775	00:04:33,151	| IOT159 |	5 billion over the last 4 years so this is a huge increase in their spending
+EDL	00:04:33,663	00:04:34,175	| IOT159 |	In
+EDL	00:04:34,687	00:04:36,223	| IOT159 |	They really talk about it
+EDL	00:04:36,223	00:04:37,247	| IOT159 |	They're going to add
+EDL	00:04:37,759	00:04:38,527	| IOT159 |	More people
+EDL	00:04:38,527	00:04:40,319	| IOT159 |	They're going to do more in R&D
+EDL	00:04:40,319	00:04:43,135	| IOT159 |	They're going to work more with
+EDL	00:04:43,135	00:04:45,183	| IOT159 |	Their partner so a lot of this is going to be training
+EDL	00:04:45,695	00:04:46,719	| IOT159 |	People and partners
+EDL	00:04:47,231	00:04:47,999	| IOT159 |	Some hiring
+EDL	00:04:48,511	00:04:49,279	| IOT159 |	And some cool stuff
+EDL	00:04:50,047	00:04:53,631	| IOT159 |	And apparently this is a really important sentence to Microsoft because they sent it to me
+EDL	00:04:53,631	00:04:55,423	| IOT159 |	Me twice in the same two paragraph email
+EDL	00:04:55,935	00:04:56,703	| IOT159 |	But according to them
+EDL	00:04:57,215	00:05:03,103	| IOT159 |	Quote by investing even more in iot we are committing the resources and Innovation to empower companies to
+EDL	00:05:03,103	00:05:03,871	| IOT159 |	To take advantage
+EDL	00:05:03,871	00:05:05,663	| IOT159 |	Iot and intelligent Edge
+EDL	00:05:06,687	00:05:07,199	| IOT159 |	What does that mean
+EDL	00:05:08,223	00:05:09,503	| IOT159 |	But
+EDL	00:05:09,503	00:05:11,039	| IOT159 |	It does mean that Microsoft is a
+EDL	00:05:11,039	00:05:12,319	| IOT159 |	Excited about iot
+EDL	00:05:12,319	00:05:14,367	| IOT159 |	They actually also this week
+EDL	00:05:14,367	00:05:16,159	| IOT159 |	Partnered with Tom siebel scump
+EDL	00:05:16,159	00:05:16,927	| IOT159 |	Nac3
+EDL	00:05:17,439	00:05:21,535	| IOT159 |	C3 is a platform-as-a-service that does alot of data analytics
+EDL	00:05:22,303	00:05:25,375	| IOT159 |	And they got started in the energy space Benadryl and monitoring
+EDL	00:05:25,375	00:05:26,143	| IOT159 |	Data for
+EDL	00:05:26,655	00:05:28,703	| IOT159 |	Mini mini smart grid devices
+EDL	00:05:28,703	00:05:31,263	| IOT159 |	And they really branched out into iot
+EDL	00:05:31,263	00:05:32,799	| IOT159 |	I actually just last week did a deal with
+EDL	00:05:34,847	00:05:37,663	| IOT159 |	Is it all in the industrial Enterprise side but
+EDL	00:05:37,663	00:05:39,711	| IOT159 |	This is where the big money is so we were
+EDL	00:05:41,247	00:05:42,271	| IOT159 |	Moving right along
+EDL	00:05:42,271	00:05:43,295	| IOT159 |	Qualcomm
+EDL	00:05:43,295	00:05:45,855	| IOT159 |	Has New Vision intelligence chip
+EDL	00:05:45,855	00:05:47,135	| IOT159 |	These are a new line of chips
+EDL	00:05:47,135	00:05:47,647	| IOT159 |	They made
+EDL	00:05:48,159	00:05:49,695	| IOT159 |	Television intelligence
+EDL	00:05:50,463	00:05:51,999	| IOT159 |	It is basically
+EDL	00:05:51,999	00:05:53,023	| IOT159 |	It's kind of like what
+EDL	00:05:53,023	00:05:54,303	| IOT159 |	Nvidia switch Intel bios
+EDL	00:05:56,095	00:05:59,423	| IOT159 |	And a couple weeks ago we actually announced it arm is going to have
+EDL	00:06:00,959	00:06:05,311	| IOT159 |	Machine learning platform for the edge and Invidia is actually using its vision
+EDL	00:06:05,823	00:06:06,591	| IOT159 |	Processing
+EDL	00:06:06,591	00:06:08,383	| IOT159 |	Engine on those
+EDL	00:06:08,383	00:06:09,151	| IOT159 |	On the arm design
+EDL	00:06:09,663	00:06:12,735	| IOT159 |	So everybody is really excited about computer vision at the edge
+EDL	00:06:13,247	00:06:14,271	| IOT159 |	We can talk about it here
+EDL	00:06:14,271	00:06:15,039	| IOT159 |	4 years
+EDL	00:06:15,039	00:06:16,319	| IOT159 |	And so it's finally coming
+EDL	00:06:16,831	00:06:17,599	| IOT159 |	To fruition
+EDL	00:06:17,599	00:06:19,135	| IOT159 |	With cheap low-power silicon
+EDL	00:06:20,671	00:06:22,207	| IOT159 |	These are the
+EDL	00:06:22,207	00:06:28,351	| IOT159 |	IQs 603 and 605 chips and I actually got really excited when I read about where they
+EDL	00:06:29,119	00:06:33,215	| IOT159 |	Are looking to apply the technology to where they expect people or companies to apply at
+EDL	00:06:33,215	00:06:34,495	| IOT159 |	You'll see why in a second
+EDL	00:06:34,495	00:06:38,591	| IOT159 |	Obvious example of security cameras Sports cameras wearable cameras
+EDL	00:06:39,103	00:06:41,407	| IOT159 |	Virtual reality cameras here we go
+EDL	00:06:41,407	00:06:42,943	| IOT159 |	Robotics
+EDL	00:06:42,943	00:06:43,967	| IOT159 |	And smart displays
+EDL	00:06:44,479	00:06:45,503	| IOT159 |	I just got excited with robot
+EDL	00:06:46,527	00:06:47,039	| IOT159 |	Yes
+EDL	00:06:47,807	00:06:49,855	| IOT159 |	The ones with arms are the ones that you're
+EDL	00:06:51,391	00:06:51,903	| IOT159 |	Speaker on and have fun
+EDL	00:06:52,671	00:06:56,511	| IOT159 |	The smart speaker on the Roomba I think I'll just wait and get one with arms now
+EDL	00:06:57,023	00:06:58,815	| IOT159 |	There you go smart speakers
+EDL	00:06:58,815	00:06:59,583	| IOT159 |	Smart speakers
+EDL	00:06:59,583	00:07:00,607	| IOT159 |	Arbs and
+EDL	00:07:01,631	00:07:02,399	| IOT159 |	That's what we need
+EDL	00:07:03,423	00:07:04,959	| IOT159 |	Okay these are wifi-only
+EDL	00:07:04,959	00:07:05,727	| IOT159 |	Only chips
+EDL	00:07:05,727	00:07:06,751	| IOT159 |	Just so you guys know
+EDL	00:07:06,751	00:07:07,519	| IOT159 |	Oh and
+EDL	00:07:07,519	00:07:10,591	| IOT159 |	Qualcomm has been doing computer vision but they have been doing it on there
+EDL	00:07:11,103	00:07:11,871	| IOT159 |	Snapdragon
+EDL	00:07:11,871	00:07:13,663	| IOT159 |	Processor switcher actually design person
+EDL	00:07:14,687	00:07:16,479	| IOT159 |	So having something specifically designed
+EDL	00:07:16,479	00:07:17,247	| IOT159 |	The edge
+EDL	00:07:17,247	00:07:17,759	| IOT159 |	A lot of sense
+EDL	00:07:18,271	00:07:19,295	| IOT159 |	I'd actually
+EDL	00:07:19,295	00:07:20,831	| IOT159 |	Because it's Wi-Fi you're not going to see the sun
+EDL	00:07:22,111	00:07:24,159	| IOT159 |	So I guess the Snapdragon stuff will still be on
+EDL	00:07:26,463	00:07:29,279	| IOT159 |	Oh I don't know about that cuz like a lot of the drums
+EDL	00:07:29,279	00:07:33,119	| IOT159 |	To use like a peer-to-peer Wi-Fi to a connected tablet or phone for
+EDL	00:07:33,119	00:07:33,887	| IOT159 |	Connectivity
+EDL	00:07:33,887	00:07:34,655	| IOT159 |	Favorite
+EDL	00:07:36,959	00:07:38,239	| IOT159 |	Okay well maybe I will see this
+EDL	00:07:39,263	00:07:41,055	| IOT159 |	You. We sure might I think
+EDL	00:07:41,055	00:07:43,871	| IOT159 |	Black people use drones for the vision aspect obviously
+EDL	00:07:43,871	00:07:49,503	| IOT159 |	The 605 chip that the more capable of that you can handle simultaneous 4K
+EDL	00:07:49,503	00:07:52,831	| IOT159 |	And 1080p feeds at 60 frames a second
+EDL	00:07:53,599	00:07:54,111	| IOT159 |	Suck your battery
+EDL	00:07:55,647	00:07:57,183	| IOT159 |	Small drones generally do
+EDL	00:08:00,511	00:08:01,279	| IOT159 |	Sure
+EDL	00:08:01,279	00:08:03,583	| IOT159 |	And I guess you know if you're thinking about staying in a room that's not
+EDL	00:08:05,887	00:08:07,679	| IOT159 |	Okay so that's qualcomm's
+EDL	00:08:08,191	00:08:09,471	| IOT159 |	Let's talk about
+EDL	00:08:09,471	00:08:14,079	| IOT159 |	Kevin's story this week yesterday Kevin posted a story that was on Wednesday
+EDL	00:08:14,591	00:08:15,359	| IOT159 |	About
+EDL	00:08:15,359	00:08:16,639	| IOT159 |	Adding context
+EDL	00:08:18,687	00:08:20,223	| IOT159 |	That's the big thing that's what we're always
+EDL	00:08:20,735	00:08:21,503	| IOT159 |	About
+EDL	00:08:21,503	00:08:22,015	| IOT159 |	Is really
+EDL	00:08:23,039	00:08:29,183	| IOT159 |	I think there's an opportunity for home assistance and I don't know if people have thought about this weird people really want
+EDL	00:08:29,695	00:08:33,279	| IOT159 |	Yes I know I do but I know I'm weird so that's okay if you don't want this
+EDL	00:08:34,559	00:08:36,863	| IOT159 |	Are voice assistants are good at providing
+EDL	00:08:36,863	00:08:38,399	| IOT159 |	Contextual information
+EDL	00:08:38,399	00:08:40,191	| IOT159 |	When we asked for it but
+EDL	00:08:40,703	00:08:42,751	| IOT159 |	Context means right place right time
+EDL	00:08:43,519	00:08:44,799	| IOT159 |	So why it aren't
+EDL	00:08:44,799	00:08:45,823	| IOT159 |	Our assistance
+EDL	00:08:45,823	00:08:47,871	| IOT159 |	Feeding a set of formation at the right time
+EDL	00:08:48,383	00:08:49,407	| IOT159 |	Meaning
+EDL	00:08:49,407	00:08:53,503	| IOT159 |	An extension of their existing notification capability right now on your Echo
+EDL	00:08:53,503	00:08:55,295	| IOT159 |	There are notifications
+EDL	00:08:55,295	00:08:56,319	| IOT159 |	Damn you make it your little
+EDL	00:08:56,831	00:09:02,463	| IOT159 |	Make it a sound when somebody calls you you may see the light ring change a different color when your notifications
+EDL	00:09:02,463	00:09:05,535	| IOT159 |	Then you have to ask and say met him a tell me my notifications
+EDL	00:09:06,047	00:09:07,583	| IOT159 |	I thought just seems like an unnecessary step
+EDL	00:09:08,095	00:09:12,191	| IOT159 |	Google home has limited notification support and again if you're not looking at the lights
+EDL	00:09:12,703	00:09:17,823	| IOT159 |	You're going to miss a notification it supposed to like on your phone you'll get a buzz a beep and all that you pull out of your pond
+EDL	00:09:17,823	00:09:18,335	| IOT159 |	Mocking someone
+EDL	00:09:18,847	00:09:21,151	| IOT159 |	That works on a phone notifications
+EDL	00:09:21,151	00:09:22,175	| IOT159 |	Such as
+EDL	00:09:22,175	00:09:24,223	| IOT159 |	Buzzing and beeping and all that
+EDL	00:09:24,223	00:09:30,623	| IOT159 |	Our assistance have voice capabilities that seems to be a much better medium for me to get that information from the
+EDL	00:09:30,623	00:09:31,391	| IOT159 |	Those devices
+EDL	00:09:31,391	00:09:33,439	| IOT159 |	That's what I'd like to see is eventually
+EDL	00:09:33,951	00:09:35,231	| IOT159 |	These devices
+EDL	00:09:35,231	00:09:41,375	| IOT159 |	Speak out loud say hey it's time to leave based on the traffic in the fact that you're going to work right now I saw that on your account
+EDL	00:09:42,143	00:09:44,959	| IOT159 |	So that's one example I can come up with a hundred different examples but
+EDL	00:09:45,471	00:09:47,263	| IOT159 |	The question is do people want
+EDL	00:09:47,775	00:09:48,543	| IOT159 |	Proactive
+EDL	00:09:49,055	00:09:51,615	| IOT159 |	Voice notifications should are smart
+EDL	00:09:51,615	00:09:54,687	| IOT159 |	Speakers speak before being spoken to is the question
+EDL	00:09:54,687	00:09:55,967	| IOT159 |	You know what it can
+EDL	00:09:55,967	00:09:58,271	| IOT159 |	I was just out of it so we'll get into this but
+EDL	00:09:59,039	00:10:00,831	| IOT159 |	The Nest doorbell
+EDL	00:10:00,831	00:10:01,855	| IOT159 |	Which I installed
+EDL	00:10:01,855	00:10:03,135	| IOT159 |	Actually gives you an option
+EDL	00:10:03,903	00:10:04,415	| IOT159 |	You're going to love this
+EDL	00:10:05,439	00:10:06,463	| IOT159 |	If I'm using
+EDL	00:10:06,975	00:10:07,999	| IOT159 |	The face detect
+EDL	00:10:09,279	00:10:10,559	| IOT159 |	Is my doorbell rings
+EDL	00:10:10,559	00:10:13,631	| IOT159 |	I have the option of turning on a setting that says notify me
+EDL	00:10:14,143	00:10:14,911	| IOT159 |	The nautical
+EDL	00:10:14,911	00:10:15,679	| IOT159 |	All devices
+EDL	00:10:15,679	00:10:16,703	| IOT159 |	So it will notify me on my
+EDL	00:10:17,471	00:10:19,775	| IOT159 |	Home that somebody that my doorbell is ringing
+EDL	00:10:19,775	00:10:20,799	| IOT159 |	In addition to the chine
+EDL	00:10:20,799	00:10:22,591	| IOT159 |	Right what's even cooler is
+EDL	00:10:23,103	00:10:24,383	| IOT159 |	Is it recognizes
+EDL	00:10:24,383	00:10:25,407	| IOT159 |	The person's face
+EDL	00:10:25,407	00:10:26,175	| IOT159 |	It will just say
+EDL	00:10:26,687	00:10:27,199	| IOT159 |	Stacy's home
+EDL	00:10:27,711	00:10:30,527	| IOT159 |	Exactly I knew they had that feature and
+EDL	00:10:30,527	00:10:34,111	| IOT159 |	I think it's awesome that's a perfect example of the value right there
+EDL	00:10:35,903	00:10:38,719	| IOT159 |	Okay yes and I see this too and so
+EDL	00:10:38,719	00:10:40,511	| IOT159 |	This brings me to
+EDL	00:10:40,511	00:10:41,791	| IOT159 |	Epicenter recommended listening
+EDL	00:10:42,303	00:10:43,327	| IOT159 |	Is sleet
+EDL	00:10:43,327	00:10:45,631	| IOT159 |	Future tense so will oremus did a podcast
+EDL	00:10:45,631	00:10:48,703	| IOT159 |	Cast without Lindsey who's the chief of Amazon's
+EDL	00:10:48,703	00:10:49,471	| IOT159 |	Voice assistant
+EDL	00:10:50,239	00:10:52,799	| IOT159 |	And they talked about what Madame a here's a took
+EDL	00:10:52,799	00:10:53,567	| IOT159 |	Laughing
+EDL	00:10:54,079	00:10:56,127	| IOT159 |	It was really interesting is
+EDL	00:10:56,127	00:11:00,223	| IOT159 |	Will like Kevin and I really wants more context because that's going to make
+EDL	00:11:00,223	00:11:02,271	| IOT159 |	Madame is life a little bit easier
+EDL	00:11:02,271	00:11:03,807	| IOT159 |	But we're in in
+EDL	00:11:03,807	00:11:05,343	| IOT159 |	Allen's he's all for it
+EDL	00:11:05,343	00:11:05,855	| IOT159 |	He says that
+EDL	00:11:06,367	00:11:08,159	| IOT159 |	The big challenge is how do we make
+EDL	00:11:08,927	00:11:10,207	| IOT159 |	Madam
+EDL	00:11:10,207	00:11:10,719	| IOT159 |	Contextually
+EDL	00:11:11,743	00:11:13,535	| IOT159 |	They say they're doing this initially
+EDL	00:11:14,047	00:11:14,559	| IOT159 |	Bye
+EDL	00:11:15,071	00:11:18,143	| IOT159 |	Having devices listen so it can determine who's closest
+EDL	00:11:18,143	00:11:19,167	| IOT159 |	Figuring out if
+EDL	00:11:19,167	00:11:20,703	| IOT159 |	When you ask her to stop
+EDL	00:11:20,703	00:11:22,239	| IOT159 |	Do they want you to stop music or the
+EDL	00:11:22,239	00:11:23,007	| IOT159 |	The video that's on your fire
+EDL	00:11:23,775	00:11:25,567	| IOT159 |	So they've worked on those and saw that
+EDL	00:11:26,591	00:11:30,431	| IOT159 |	The idea of kind of gathering ambient information about your environment
+EDL	00:11:31,199	00:11:33,247	| IOT159 |	Willing that back to the echo that's not have
+EDL	00:11:34,015	00:11:34,527	| IOT159 |	But he does think
+EDL	00:11:35,039	00:11:35,551	| IOT159 |	That's how we're
+EDL	00:11:37,599	00:11:41,439	| IOT159 |	And if for people who don't want that I hope it it's configurable
+EDL	00:11:41,439	00:11:42,463	| IOT159 |	So that way you can
+EDL	00:11:42,463	00:11:46,559	| IOT159 |	Yeah you can disable those type of notifications I realize that not everybody wants that
+EDL	00:11:46,559	00:11:50,143	| IOT159 |	And there are other pieces of the puzzle that need to be in place such as presence detection
+EDL	00:11:50,655	00:11:52,447	| IOT159 |	Like if it's time for me to leave for work
+EDL	00:11:52,447	00:11:58,847	| IOT159 |	The echo next to my wife downstairs in the living room while she's watching TV shouldn't say hey it's time to leave
+EDL	00:11:58,847	00:11:59,615	| IOT159 |	For work
+EDL	00:11:59,615	00:12:00,383	| IOT159 |	Yes
+EDL	00:12:00,383	00:12:03,455	| IOT159 |	That is NC in those are the kind of features people will give up
+EDL	00:12:03,967	00:12:04,735	| IOT159 |	Privacy for
+EDL	00:12:04,735	00:12:05,247	| IOT159 |	Think about
+EDL	00:12:06,271	00:12:09,599	| IOT159 |	Think about how freaked out we worry about Gmail and it reading our email soon
+EDL	00:12:10,111	00:12:10,623	| IOT159 |	Serving ads
+EDL	00:12:12,671	00:12:15,487	| IOT159 |	That went away so fast because we have free email
+EDL	00:12:15,487	00:12:17,023	| IOT159 |	And it's not just things like
+EDL	00:12:17,023	00:12:18,559	| IOT159 |	Free it's things like
+EDL	00:12:18,559	00:12:22,911	| IOT159 |	How many people get over the worries about Amazon listening to your conversations
+EDL	00:12:22,911	00:12:24,447	| IOT159 |	Because the echo is such a
+EDL	00:12:24,447	00:12:25,215	| IOT159 |	Valuable device to them
+EDL	00:12:25,727	00:12:27,007	| IOT159 |	By the way the
+EDL	00:12:27,007	00:12:28,543	| IOT159 |	Podcast has talked about
+EDL	00:12:28,543	00:12:30,079	| IOT159 |	How the echo works so you can
+EDL	00:12:30,591	00:12:32,127	| IOT159 |	Get a refresher course on
+EDL	00:12:32,127	00:12:34,687	| IOT159 |	How it listens and triggers the Wayward and your privacy set
+EDL	00:12:35,455	00:12:36,479	| IOT159 |	They are still the same
+EDL	00:12:36,479	00:12:38,015	| IOT159 |	They changed I would have led with that
+EDL	00:12:38,527	00:12:39,295	| IOT159 |	So yeah
+EDL	00:12:39,295	00:12:42,111	| IOT159 |	I recommend you listen to this if you're a huge Echo user
+EDL	00:12:42,111	00:12:42,879	| IOT159 |	Will
+EDL	00:12:42,879	00:12:44,415	| IOT159 |	Drop a note in the
+EDL	00:12:44,415	00:12:45,439	| IOT159 |	Show notes for y'all
+EDL	00:12:46,207	00:12:48,255	| IOT159 |	Let's talk about o
+EDL	00:12:48,767	00:12:49,791	| IOT159 |	One of my favorite
+EDL	00:12:50,303	00:12:51,071	| IOT159 |	I guess apps
+EDL	00:12:51,839	00:12:54,399	| IOT159 |	From a while back stringify was bought by
+EDL	00:12:54,399	00:12:55,167	| IOT159 |	Comcast
+EDL	00:12:55,167	00:12:57,471	| IOT159 |	In Comcast just this week said
+EDL	00:12:57,983	00:13:00,287	| IOT159 |	Did they basically relaunch stringify
+EDL	00:13:00,287	00:13:01,567	| IOT159 |	Are there users of their expected
+EDL	00:13:02,847	00:13:03,615	| IOT159 |	And
+EDL	00:13:03,615	00:13:04,895	| IOT159 |	Twitter Kevin Durant
+EDL	00:13:04,895	00:13:05,919	| IOT159 |	Comcast subscribers
+EDL	00:13:05,919	00:13:07,199	| IOT159 |	I used to be a stringify user
+EDL	00:13:07,967	00:13:11,807	| IOT159 |	And Comcast is basically created all of these they call them flows
+EDL	00:13:11,807	00:13:14,111	| IOT159 |	What is a recipe on automation
+EDL	00:13:14,111	00:13:16,927	| IOT159 |	Comcast is gone in and created all these flows for
+EDL	00:13:16,927	00:13:17,439	| IOT159 |	People so they don't
+EDL	00:13:18,207	00:13:18,975	| IOT159 |	In themselves
+EDL	00:13:18,975	00:13:19,743	| IOT159 |	It's awesome
+EDL	00:13:20,255	00:13:21,791	| IOT159 |	So there's a movie night float
+EDL	00:13:21,791	00:13:24,351	| IOT159 |	For example that says when I ask Madame age to rent movie night
+EDL	00:13:24,863	00:13:26,911	| IOT159 |	Set the brightness on my living room light.
+EDL	00:13:27,423	00:13:28,191	| IOT159 |	10%
+EDL	00:13:28,191	00:13:28,959	| IOT159 |	Pause my son's iPad
+EDL	00:13:29,471	00:13:31,519	| IOT159 |	Change the channel to Starz kids and family
+EDL	00:13:32,287	00:13:33,311	| IOT159 |	Do that for me would be family
+EDL	00:13:34,079	00:13:36,895	| IOT159 |	So none of the flows are is, they're usually about
+EDL	00:13:36,895	00:13:38,175	| IOT159 |	For devices
+EDL	00:13:38,175	00:13:39,455	| IOT159 |	They're not as complicated as
+EDL	00:13:39,455	00:13:40,991	| IOT159 |	I used to try to do
+EDL	00:13:40,991	00:13:45,343	| IOT159 |	But if I was a mess because making a flow with so hard
+EDL	00:13:45,343	00:13:47,903	| IOT159 |	And having all these pre-configured for you is actually real
+EDL	00:13:48,671	00:13:49,439	| IOT159 |	So yeah
+EDL	00:13:50,463	00:13:53,535	| IOT159 |	Totally agree and again neither you nor I have
+EDL	00:13:53,535	00:13:55,327	| IOT159 |	Comcast for
+EDL	00:13:55,327	00:13:58,911	| IOT159 |	Video provider a lot of what they're doing with stringify
+EDL	00:13:58,911	00:14:03,007	| IOT159 |	Tying into the Xfinity X1 video platform so
+EDL	00:14:03,007	00:14:04,799	| IOT159 |	Well you may be a stringify user
+EDL	00:14:05,311	00:14:11,199	| IOT159 |	You may not have access to everything it can offer if you're not a Comcast X1 subscriber so
+EDL	00:14:11,711	00:14:13,247	| IOT159 |	Yes now as a
+EDL	00:14:13,247	00:14:15,295	| IOT159 |	I recommend so stringify
+EDL	00:14:15,295	00:14:17,087	| IOT159 |	Competes most closely with yonomi
+EDL	00:14:17,855	00:14:18,367	| IOT159 |	Which is a
+EDL	00:14:19,391	00:14:22,463	| IOT159 |	You know he's a little bit easier to use and they're they're both going in the same
+EDL	00:14:22,463	00:14:23,743	| IOT159 |	Direction care so
+EDL	00:14:23,743	00:14:25,791	| IOT159 |	Load one or the other
+EDL	00:14:25,791	00:14:27,071	| IOT159 |	In start playing around with
+EDL	00:14:27,071	00:14:28,095	| IOT159 |	Famous the best way I
+EDL	00:14:28,095	00:14:28,607	| IOT159 |	I can tell you to
+EDL	00:14:29,119	00:14:29,631	| IOT159 |	Are both free
+EDL	00:14:30,143	00:14:33,471	| IOT159 |	Comcast still lets people who are not Comcast customers used
+EDL	00:14:34,495	00:14:35,775	| IOT159 |	By the way they also added
+EDL	00:14:36,287	00:14:40,383	| IOT159 |	Lutron support So now that got support for casetta lighting Serena shades
+EDL	00:14:40,895	00:14:42,175	| IOT159 |	And the carrier
+EDL	00:14:42,687	00:14:43,711	| IOT159 |	Cor thermostats
+EDL	00:14:44,991	00:14:45,759	| IOT159 |	Yeah there
+EDL	00:14:46,271	00:14:52,671	| IOT159 |	And folks who use Android where they have a Android Wear watch out for the first time as well so you can easily one tap or what
+EDL	00:14:52,671	00:14:54,207	| IOT159 |	Voice control your scenes inflows
+EDL	00:14:55,487	00:14:55,999	| IOT159 |	I will not be able to
+EDL	00:14:58,303	00:15:00,607	| IOT159 |	And you shouldn't be able to on that small screen so
+EDL	00:15:01,119	00:15:01,887	| IOT159 |	Those flows
+EDL	00:15:04,959	00:15:07,007	| IOT159 |	They're really powerful that's the
+EDL	00:15:07,519	00:15:08,799	| IOT159 |	It's kind of like the choice of
+EDL	00:15:08,799	00:15:10,847	| IOT159 |	Really simple user interface Limited
+EDL	00:15:11,359	00:15:11,871	| IOT159 |	Keto options
+EDL	00:15:12,383	00:15:14,687	| IOT159 |	Kind of more complicated you could do a lot more stuff
+EDL	00:15:16,223	00:15:18,271	| IOT159 |	Okay speaking of watches
+EDL	00:15:18,271	00:15:19,295	| IOT159 |	Let's talk
+EDL	00:15:19,295	00:15:21,343	| IOT159 |	About something that people have noticed
+EDL	00:15:22,111	00:15:23,135	| IOT159 |	The Apple watch
+EDL	00:15:23,135	00:15:24,159	| IOT159 |	Is losing apps
+EDL	00:15:24,671	00:15:28,767	| IOT159 |	Yeah and that's kind of why I said what I just said you shouldn't be able to set up
+EDL	00:15:29,279	00:15:33,375	| IOT159 |	Smart home flow is on a watch because it just doesn't make sense on that screen
+EDL	00:15:33,375	00:15:35,423	| IOT159 |	And yes people are getting a little
+EDL	00:15:35,423	00:15:36,959	| IOT159 |	Worried about the Apple watch
+EDL	00:15:36,959	00:15:39,775	| IOT159 |	A platform because now they saw Instagram
+EDL	00:15:39,775	00:15:41,823	| IOT159 |	Is going away from the Apple watch
+EDL	00:15:42,335	00:15:46,175	| IOT159 |	And other apps have gone away such as Twitter and slack and
+EDL	00:15:46,687	00:15:50,783	| IOT159 |	Couple of others even Amazon I don't think they're going to be upset about as far as the
+EDL	00:15:50,783	00:15:54,623	| IOT159 |	Because a lot of those apps really had no place on the small
+EDL	00:15:55,135	00:15:56,415	| IOT159 |	Screen on your wrist
+EDL	00:15:56,415	00:15:56,927	| IOT159 |	To begin with
+EDL	00:15:57,439	00:16:01,023	| IOT159 |	I mean I'm not going to go to an Instagram if you don't know you know 1 and 1/4 inch
+EDL	00:16:01,023	00:16:03,327	| IOT159 |	Screen Flip Flip Flip Flip and liking flipping foot
+EDL	00:16:03,327	00:16:04,863	| IOT159 |	It just doesn't make sense
+EDL	00:16:06,143	00:16:09,215	| IOT159 |	No not Twitter I mean anything with a long float
+EDL	00:16:09,215	00:16:12,031	| IOT159 |	Certainly doesn't make sense to no notifications for those things
+EDL	00:16:12,543	00:16:18,687	| IOT159 |	You can still do that without those apps because the way the Apple watch work says you can mirror the notifications from your phone
+EDL	00:16:18,687	00:16:19,967	| IOT159 |	To your watch so
+EDL	00:16:20,479	00:16:21,503	| IOT159 |	I don't have
+EDL	00:16:21,503	00:16:26,623	| IOT159 |	The Facebook Messenger app on my Apple watch but when somebody
+EDL	00:16:26,623	00:16:32,255	| IOT159 |	Messages me it creates a notification on my phone which is then creates a notification on my watch
+EDL	00:16:32,255	00:16:35,583	| IOT159 |	Can I get a reply from the watch as a result of that you don't need the app
+EDL	00:16:35,583	00:16:38,399	| IOT159 |	A lot of cases and notification still very actionable
+EDL	00:16:39,423	00:16:40,703	| IOT159 |	Again Instagram
+EDL	00:16:41,471	00:16:47,871	| IOT159 |	Do you want to get notified everytime somebody likes your photo on see that on your watch I can you could probably still do that but you don't need the answer
+EDL	00:16:47,871	00:16:49,151	| IOT159 |	Give me a map to do anything
+EDL	00:16:49,151	00:16:51,711	| IOT159 |	Now your rest if it just doesn't make sense
+EDL	00:16:51,711	00:16:52,479	| IOT159 |	I don't
+EDL	00:16:52,479	00:16:55,039	| IOT159 |	I don't think it's the right place for these apps to begin with
+EDL	00:16:55,551	00:16:56,063	| IOT159 |	And that makes a
+EDL	00:16:57,087	00:16:58,367	| IOT159 |	And so Kevin is not
+EDL	00:16:59,903	00:17:00,927	| IOT159 |	And I think
+EDL	00:17:00,927	00:17:02,975	| IOT159 |	Maybe if we get cool stuff like
+EDL	00:17:02,975	00:17:03,999	| IOT159 |	The watch today
+EDL	00:17:03,999	00:17:05,023	| IOT159 |	Airpods
+EDL	00:17:05,023	00:17:07,327	| IOT159 |	And having more voice cwise maybe that'll
+EDL	00:17:08,351	00:17:11,167	| IOT159 |	Compensate for the screen so maybe having your
+EDL	00:17:11,167	00:17:11,679	| IOT159 |	Smart
+EDL	00:17:12,191	00:17:13,471	| IOT159 |	Assistant be able to talk
+EDL	00:17:13,471	00:17:14,239	| IOT159 |	Talk to you and me
+EDL	00:17:14,239	00:17:16,799	| IOT159 |	More context oriented and notify maybe that make
+EDL	00:17:17,567	00:17:18,079	| IOT159 |	For now
+EDL	00:17:19,103	00:17:19,615	| IOT159 |	No
+EDL	00:17:20,127	00:17:21,407	| IOT159 |	And we moved so much to the vision
+EDL	00:17:22,687	00:17:23,199	| IOT159 |	Get on
+EDL	00:17:24,991	00:17:25,503	| IOT159 |	It's insane
+EDL	00:17:26,015	00:17:26,783	| IOT159 |	I feel
+EDL	00:17:26,783	00:17:27,551	| IOT159 |	When I surf
+EDL	00:17:27,551	00:17:28,063	| IOT159 |	The internet today
+EDL	00:17:29,343	00:17:29,855	| IOT159 |	Maybe I should
+EDL	00:17:30,623	00:17:32,415	| IOT159 |	I should tell you guys it's my birthday
+EDL	00:17:32,415	00:17:34,463	| IOT159 |	Yay I just turned 40
+EDL	00:17:34,975	00:17:35,487	| IOT159 |	So that might be
+EDL	00:17:36,511	00:17:37,279	| IOT159 |	All right
+EDL	00:17:37,279	00:17:38,559	| IOT159 |	Let's talk about
+EDL	00:17:39,071	00:17:39,583	| IOT159 |	News
+EDL	00:17:40,095	00:17:40,863	| IOT159 |	Okay
+EDL	00:17:40,863	00:17:41,375	| IOT159 |	Little bit
+EDL	00:17:41,887	00:17:43,423	| IOT159 |	Lifx has new controls in feet
+EDL	00:17:44,447	00:17:47,007	| IOT159 |	Yay August now works with SimpliSafe
+EDL	00:17:47,007	00:17:47,775	| IOT159 |	FB
+EDL	00:17:47,775	00:17:51,103	| IOT159 |	Smart home security company so your August lock integrates it now with that
+EDL	00:17:51,615	00:17:52,895	| IOT159 |	And then Kevin has in x
+EDL	00:17:54,431	00:17:56,479	| IOT159 |	Will stop my exploit but I'll report online
+EDL	00:17:56,479	00:18:01,343	| IOT159 |	The other was an interesting article over in Wireless
+EDL	00:18:01,343	00:18:02,623	| IOT159 |	We cry red
+EDL	00:18:02,623	00:18:08,767	| IOT159 |	It's not what I thought it was going to be because the title is a long-awaited iot crisis is here and many devices aren't ready
+EDL	00:18:08,767	00:18:11,327	| IOT159 |	So I assumed it was like IPv6 or something like that
+EDL	00:18:11,839	00:18:15,167	| IOT159 |	New itsallaboutyou P&P
+EDL	00:18:15,167	00:18:16,959	| IOT159 |	Which is universal
+EDL	00:18:16,959	00:18:17,727	| IOT159 |	Plug & Play
+EDL	00:18:18,495	00:18:19,263	| IOT159 |	That's
+EDL	00:18:19,263	00:18:24,127	| IOT159 |	I guess it's called a protocol that helps devices on a network find and
+EDL	00:18:24,127	00:18:25,407	| IOT159 |	Work with other devices
+EDL	00:18:25,919	00:18:28,735	| IOT159 |	Typically tan media streaming devices
+EDL	00:18:28,735	00:18:29,503	| IOT159 |	Like if you want to
+EDL	00:18:29,503	00:18:31,039	| IOT159 |	Use a Chromecast for example
+EDL	00:18:31,551	00:18:33,343	| IOT159 |	That uses UPnP
+EDL	00:18:33,343	00:18:34,879	| IOT159 |	To find
+EDL	00:18:34,879	00:18:36,927	| IOT159 |	Other devices working get content from
+EDL	00:18:37,439	00:18:39,487	| IOT159 |	So basically the exploit
+EDL	00:18:40,767	00:18:44,863	| IOT159 |	It's something that Akamai researchers found and they said that there are about
+EDL	00:18:44,863	00:18:46,911	| IOT159 |	4.8 million devices on the open internet
+EDL	00:18:47,423	00:18:51,775	| IOT159 |	That would improperly return a certain query related to UPnP
+EDL	00:18:52,287	00:18:55,103	| IOT159 |	And nearly a million of those
+EDL	00:18:55,103	00:18:57,407	| IOT159 |	Another issue that would create
+EDL	00:18:57,407	00:18:59,199	| IOT159 |	A network communication vulnerability
+EDL	00:18:59,711	00:19:03,039	| IOT159 |	And they have a number of exploits that they've seen out of that as well
+EDL	00:19:03,807	00:19:09,951	| IOT159 |	A lot of people turn UPnP off because it's not the most secure thing in the world is pretty open thing hey
+EDL	00:19:09,951	00:19:13,279	| IOT159 |	I'm looking for devices on the network who's out there who can find me
+EDL	00:19:14,047	00:19:16,607	| IOT159 |	So security standpoint it's not the best
+EDL	00:19:16,607	00:19:19,423	| IOT159 |	Problem is certain devices require it
+EDL	00:19:19,423	00:19:21,215	| IOT159 |	Such as a Google Chromecast
+EDL	00:19:21,215	00:19:24,287	| IOT159 |	Even a Google home because that's how Google home finds
+EDL	00:19:24,287	00:19:26,335	| IOT159 |	Devices such as other Chromecast so
+EDL	00:19:26,847	00:19:28,127	| IOT159 |	I'm not suggesting that
+EDL	00:19:28,127	00:19:30,943	| IOT159 |	Your Google home isn't secure or anything like that but
+EDL	00:19:30,943	00:19:34,527	| IOT159 |	It does kind of make me wonder I'm trying to get turn around my head around
+EDL	00:19:35,295	00:19:41,439	| IOT159 |	What the alternative is to UPnP for iot devices in home assistance in such so I don't know what that is yet
+EDL	00:19:42,207	00:19:43,231	| IOT159 |	I don't know what
+EDL	00:19:43,743	00:19:45,279	| IOT159 |	Everyone is using so
+EDL	00:19:45,279	00:19:47,583	| IOT159 |	Not panic mode but this is something to be aware of
+EDL	00:19:48,351	00:19:50,911	| IOT159 |	All right I know just who to call and ask so maybe I'll
+EDL	00:19:51,679	00:19:52,447	| IOT159 |	Later this week
+EDL	00:19:52,447	00:19:53,471	| IOT159 |	Video
+EDL	00:19:53,471	00:19:55,775	| IOT159 |	All right that's enough news for now
+EDL	00:19:56,287	00:19:56,799	| IOT159 |	Talk about
+EDL	00:19:57,311	00:19:59,103	| IOT159 |	Should I go with things I've added or things I've done
+EDL	00:19:59,871	00:20:00,639	| IOT159 |	Take
+EDL	00:20:01,151	00:20:04,479	| IOT159 |	Let's go with me dumb cuz I'm really curious as to why you dumped this
+EDL	00:20:04,479	00:20:06,015	| IOT159 |	Product plus I like to hear you say the product
+EDL	00:20:07,039	00:20:08,575	| IOT159 |	Oh okay so
+EDL	00:20:09,087	00:20:11,135	| IOT159 |	I was house cleaning I think I told you about myself
+EDL	00:20:11,135	00:20:11,903	| IOT159 |	Spring cleaning
+EDL	00:20:11,903	00:20:14,975	| IOT159 |	And basically I have dumped my Ikea
+EDL	00:20:14,975	00:20:16,511	| IOT159 |	Triad 3
+EDL	00:20:16,511	00:20:17,279	| IOT159 |	Tradfri
+EDL	00:20:17,279	00:20:18,047	| IOT159 |	How is it supposed to be
+EDL	00:20:18,559	00:20:19,839	| IOT159 |	I think you said it correctly
+EDL	00:20:19,839	00:20:21,631	| IOT159 |	Okay my Ikea tradfri
+EDL	00:20:22,911	00:20:25,215	| IOT159 |	And I'm sorry Ikea I'm sorry
+EDL	00:20:26,495	00:20:28,031	| IOT159 |	Worked really well
+EDL	00:20:28,543	00:20:30,335	| IOT159 |	In their own little ecosystem of
+EDL	00:20:31,103	00:20:32,639	| IOT159 |	Stuff to the hub
+EDL	00:20:32,639	00:20:33,919	| IOT159 |	Two bulbs that I had
+EDL	00:20:34,431	00:20:35,199	| IOT159 |	Incredibly well
+EDL	00:20:35,711	00:20:36,735	| IOT159 |	They did not play well
+EDL	00:20:37,503	00:20:38,271	| IOT159 |	Madam
+EDL	00:20:38,271	00:20:40,063	| IOT159 |	One I never actually got to
+EDL	00:20:40,831	00:20:41,855	| IOT159 |	One worked
+EDL	00:20:41,855	00:20:42,367	| IOT159 |	London
+EDL	00:20:42,879	00:20:44,927	| IOT159 |	And then the one billboard wood
+EDL	00:20:44,927	00:20:45,695	| IOT159 |	And one ball just
+EDL	00:20:46,207	00:20:50,815	| IOT159 |	It would be recognized by as a device on Madame a but it would never actually be
+EDL	00:20:50,815	00:20:51,839	| IOT159 |	Controlled BMI
+EDL	00:20:51,839	00:20:52,607	| IOT159 |	My voice
+EDL	00:20:52,607	00:20:53,375	| IOT159 |	Except
+EDL	00:20:54,143	00:20:54,911	| IOT159 |	What's so weird about it
+EDL	00:20:55,679	00:20:57,471	| IOT159 |	Except when it was included in a routine
+EDL	00:20:57,983	00:20:58,495	| IOT159 |	And that would work
+EDL	00:20:59,007	00:20:59,775	| IOT159 |	That's odd
+EDL	00:21:00,287	00:21:00,799	| IOT159 |	Isn't it crazy
+EDL	00:21:01,567	00:21:03,615	| IOT159 |	I assume this is done through a skill
+EDL	00:21:03,615	00:21:05,919	| IOT159 |	It is it's Ikea has a skill
+EDL	00:21:05,919	00:21:10,015	| IOT159 |	And I will tell you guys that I deleted it off the echo
+EDL	00:21:10,015	00:21:11,551	| IOT159 |	I deleted the skill
+EDL	00:21:11,551	00:21:12,831	| IOT159 |	Alright disabled the skill
+EDL	00:21:13,343	00:21:14,623	| IOT159 |	I uninstalled the app
+EDL	00:21:14,623	00:21:15,135	| IOT159 |	I reinstalled
+EDL	00:21:15,903	00:21:17,184	| IOT159 |	I redid the Gateway
+EDL	00:21:17,696	00:21:18,464	| IOT159 |	I re-added every
+EDL	00:21:19,488	00:21:20,000	| IOT159 |	Instilled
+EDL	00:21:21,024	00:21:22,816	| IOT159 |	And going through the
+EDL	00:21:22,816	00:21:24,096	| IOT159 |	Comments on the app
+EDL	00:21:24,096	00:21:25,888	| IOT159 |	Apparently this is not an isolated incident
+EDL	00:21:26,400	00:21:28,192	| IOT159 |	I found several things in Reddit about
+EDL	00:21:28,192	00:21:28,960	| IOT159 |	This being
+EDL	00:21:28,960	00:21:29,728	| IOT159 |	No problem
+EDL	00:21:29,728	00:21:30,496	| IOT159 |	So
+EDL	00:21:30,496	00:21:34,336	| IOT159 |	I just got sick of it it was my bedside table lamp in my husband's bedside table lamp
+EDL	00:21:34,848	00:21:36,128	| IOT159 |	I laugh at this but
+EDL	00:21:36,128	00:21:38,176	| IOT159 |	You know it was so nice to be able to say
+EDL	00:21:38,176	00:21:38,944	| IOT159 |	Turn on Stacy
+EDL	00:21:39,456	00:21:40,224	| IOT159 |	And poof
+EDL	00:21:40,224	00:21:40,736	| IOT159 |	The Lamplighter
+EDL	00:21:41,504	00:21:42,272	| IOT159 |	Turn off
+EDL	00:21:43,296	00:21:43,808	| IOT159 |	Turn off
+EDL	00:21:44,320	00:21:45,088	| IOT159 |	You know those are
+EDL	00:21:45,600	00:21:49,440	| IOT159 |	Really nice use cases in my husband was just his it was his that didn't
+EDL	00:21:50,208	00:21:52,512	| IOT159 |	Of course it was
+EDL	00:21:53,792	00:21:55,072	| IOT159 |	So basically
+EDL	00:21:55,072	00:21:56,864	| IOT159 |	I did it out of him it was like a mercy killing
+EDL	00:21:57,888	00:21:59,680	| IOT159 |	So these are no longer in my home
+EDL	00:22:00,448	00:22:01,472	| IOT159 |	No longer installed
+EDL	00:22:01,984	00:22:05,568	| IOT159 |	I may try to give them away so we'll see if that because I give away later on
+EDL	00:22:06,080	00:22:08,896	| IOT159 |	Take my broken iot devices
+EDL	00:22:08,896	00:22:09,664	| IOT159 |	Broken
+EDL	00:22:09,664	00:22:10,944	| IOT159 |	I know I
+EDL	00:22:10,944	00:22:12,736	| IOT159 |	But yeah they don't work with Madam a
+EDL	00:22:13,248	00:22:14,528	| IOT159 |	And I don't believe they work
+EDL	00:22:14,528	00:22:15,040	| IOT159 |	With Google home
+EDL	00:22:15,552	00:22:16,320	| IOT159 |	I don't believe so
+EDL	00:22:17,088	00:22:22,208	| IOT159 |	That is where those stand I'm leaving them maybe Ikea will get its act together in this work but
+EDL	00:22:22,208	00:22:23,488	| IOT159 |	Until then they're not installed
+EDL	00:22:25,024	00:22:25,792	| IOT159 |	That is dumped
+EDL	00:22:26,560	00:22:27,840	| IOT159 |	Alright well what did you ask
+EDL	00:22:28,352	00:22:29,632	| IOT159 |	Oh you guys
+EDL	00:22:29,632	00:22:31,424	| IOT159 |	You know that I love doorbells
+EDL	00:22:31,424	00:22:33,216	| IOT159 |	Or if I have a love-hate relationship
+EDL	00:22:33,216	00:22:36,288	| IOT159 |	So I had gotten a review unit of the nest
+EDL	00:22:36,288	00:22:37,056	| IOT159 |	Hello
+EDL	00:22:37,056	00:22:38,080	| IOT159 |	And this doorbell
+EDL	00:22:38,592	00:22:39,360	| IOT159 |	Is amazing
+EDL	00:22:39,360	00:22:40,384	| IOT159 |	It is a very good
+EDL	00:22:41,408	00:22:42,176	| IOT159 |	I don't know
+EDL	00:22:42,176	00:22:44,736	| IOT159 |	It is on par with the ring Pro
+EDL	00:22:44,736	00:22:46,784	| IOT159 |	In terms of the level of installation
+EDL	00:22:47,296	00:22:48,064	| IOT159 |	And
+EDL	00:22:48,832	00:22:50,368	| IOT159 |	The quality of the video
+EDL	00:22:50,880	00:22:52,928	| IOT159 |	I think it loads a little bit faster
+EDL	00:22:52,928	00:22:57,280	| IOT159 |	And then you have all these Integrations because I have a Google home and because I have a
+EDL	00:22:57,280	00:22:58,048	| IOT159 |	Pixel 2 phone
+EDL	00:22:58,560	00:23:01,632	| IOT159 |	This is definitely the doorbell I would choose for that type of setup
+EDL	00:23:02,144	00:23:03,936	| IOT159 |	I also have a Chromecast
+EDL	00:23:03,936	00:23:04,704	| IOT159 |	I have not
+EDL	00:23:04,704	00:23:05,216	| IOT159 |	Casted
+EDL	00:23:05,984	00:23:08,800	| IOT159 |	To the Chromecast yet I'm actually in the next week I'm at
+EDL	00:23:08,800	00:23:11,872	| IOT159 |	I'm going to come to you guys after having Google fi to my house
+EDL	00:23:12,896	00:23:13,920	| IOT159 |	It's going to be fun
+EDL	00:23:13,920	00:23:14,432	| IOT159 |	That's where we are right
+EDL	00:23:15,200	00:23:21,600	| IOT159 |	I will be very curious how that works with your Chromecast only because my Nvidia Shield which is also my SmartThings
+EDL	00:23:21,600	00:23:22,368	| IOT159 |	Tub
+EDL	00:23:22,368	00:23:24,416	| IOT159 |	Has Google assistant and
+EDL	00:23:24,416	00:23:25,952	| IOT159 |	When I'm watching TV
+EDL	00:23:26,464	00:23:28,256	| IOT159 |	I would love to actually
+EDL	00:23:28,256	00:23:29,536	| IOT159 |	Get a notification
+EDL	00:23:30,304	00:23:31,072	| IOT159 |	Of
+EDL	00:23:31,072	00:23:33,120	| IOT159 |	Somebody at the door and door
+EDL	00:23:33,120	00:23:33,632	| IOT159 |	The video
+EDL	00:23:34,144	00:23:35,168	| IOT159 |	Pop-up mode I don't think that's
+EDL	00:23:35,680	00:23:36,960	| IOT159 |	An option right now but
+EDL	00:23:36,960	00:23:40,288	| IOT159 |	I'm thinking ahead I would love to see that cuz all the tools are there just needs to be in
+EDL	00:23:41,824	00:23:45,664	| IOT159 |	So we're going to see what happens when I Google fi and I also have the Yale lock
+EDL	00:23:46,176	00:23:48,224	| IOT159 |	It's not installed on the same door
+EDL	00:23:48,224	00:23:49,248	| IOT159 |	Where is the
+EDL	00:23:49,248	00:23:49,760	| IOT159 |	Doorbell
+EDL	00:23:50,272	00:23:50,784	| IOT159 |	Because
+EDL	00:23:51,296	00:23:52,576	| IOT159 |	The doorbells on my front door
+EDL	00:23:52,576	00:23:53,344	| IOT159 |	Front door is weird
+EDL	00:23:53,344	00:23:57,184	| IOT159 |	So we're running some experiments to time how long it takes me to
+EDL	00:23:57,184	00:24:01,024	| IOT159 |	It'll be able to remotely unlock the door so we'll tell you more about that but
+EDL	00:24:01,024	00:24:01,792	| IOT159 |	The doorbell
+EDL	00:24:01,792	00:24:03,072	| IOT159 |	$239
+EDL	00:24:03,584	00:24:04,352	| IOT159 |	Install
+EDL	00:24:04,864	00:24:06,656	| IOT159 |	Like the physical install
+EDL	00:24:06,656	00:24:09,216	| IOT159 |	Pretty easy I think we talked about it last week
+EDL	00:24:09,216	00:24:09,984	| IOT159 |	I did
+EDL	00:24:09,984	00:24:11,776	| IOT159 |	Resolve the wiring issue
+EDL	00:24:12,288	00:24:15,360	| IOT159 |	And that was mostly a Stacy's got weird wires kind of thing
+EDL	00:24:15,872	00:24:16,896	| IOT159 |	In the end
+EDL	00:24:16,896	00:24:18,432	| IOT159 |	Getting it connected
+EDL	00:24:18,432	00:24:20,224	| IOT159 |	Was a challenge from my
+EDL	00:24:20,224	00:24:21,248	| IOT159 |	Pixel 2
+EDL	00:24:21,760	00:24:22,528	| IOT159 |	It was a snap
+EDL	00:24:23,296	00:24:23,808	| IOT159 |	On the iPhone
+EDL	00:24:24,320	00:24:25,088	| IOT159 |	That's weird
+EDL	00:24:25,600	00:24:26,368	| IOT159 |	Yeah that was how I feel
+EDL	00:24:27,136	00:24:30,208	| IOT159 |	It took me a couple customer support interactions and then
+EDL	00:24:30,976	00:24:32,256	| IOT159 |	A reset
+EDL	00:24:32,256	00:24:33,280	| IOT159 |	And it never connected
+EDL	00:24:34,560	00:24:37,376	| IOT159 |	So I'm a little frustrated by that I find at the
+EDL	00:24:37,376	00:24:40,448	| IOT159 |	Adding devices experiences always if your
+EDL	00:24:40,448	00:24:42,240	| IOT159 |	On an Android device so
+EDL	00:24:42,752	00:24:44,544	| IOT159 |	If you were able to connect your nest
+EDL	00:24:44,544	00:24:45,824	| IOT159 |	Hello with an Android
+EDL	00:24:46,848	00:24:47,616	| IOT159 |	Tell me how you did it
+EDL	00:24:48,896	00:24:49,664	| IOT159 |	I spent
+EDL	00:24:49,664	00:24:51,456	| IOT159 |	Probably three or four days trying to make that work
+EDL	00:24:54,784	00:24:55,552	| IOT159 |	It's kind of longer than I
+EDL	00:24:57,856	00:24:59,648	| IOT159 |	So those are my products
+EDL	00:25:00,160	00:25:00,928	| IOT159 |	And now
+EDL	00:25:00,928	00:25:02,208	| IOT159 |	What's answer somebody else's
+EDL	00:25:02,208	00:25:02,976	| IOT159 |	Question
+EDL	00:25:02,976	00:25:04,000	| IOT159 |	From the
+EDL	00:25:04,000	00:25:05,536	| IOT159 |	Internet of Things podcast
+EDL	00:25:05,536	00:25:06,048	| IOT159 |	Hotline
+EDL	00:25:08,352	00:25:09,888	| IOT159 |	Coyote podcast listener hotline
+EDL	00:25:10,400	00:25:12,960	| IOT159 |	Is brought to you by Schlage maker of electronic lock
+EDL	00:25:13,472	00:25:19,360	| IOT159 |	Which way you can just have a brand new electronic lock installed in minutes with just a screwdriver and your own two hands
+EDL	00:25:20,128	00:25:21,664	| IOT159 |	And they're easy to setup and use
+EDL	00:25:22,176	00:25:23,456	| IOT159 |	To see what's possible
+EDL	00:25:23,456	00:25:24,736	| IOT159 |	Schlage.com
+EDL	00:25:25,248	00:25:25,760	| IOT159 |	To learn more
+EDL	00:25:26,528	00:25:30,624	| IOT159 |	If you guys want to leave a voicemail for us and have us answer your iot questions
+EDL	00:25:31,392	00:25:33,184	| IOT159 |	Ring us at 5 1/2
+EDL	00:25:33,184	00:25:35,488	| IOT159 |	623-7424
+EDL	00:25:36,512	00:25:38,048	| IOT159 |	And Kevin actually has another ID
+EDL	00:25:38,560	00:25:40,608	| IOT159 |	Even if you don't have questions you can
+EDL	00:25:41,120	00:25:45,728	| IOT159 |	Call in with some of your favorite home automation routines I had written a post
+EDL	00:25:45,728	00:25:47,776	| IOT159 |	Earlier this week two
+EDL	00:25:47,776	00:25:53,408	| IOT159 |	Suggest some to my favorites and some of Stacey's favorites and we're getting some really good suggestions in the comments
+EDL	00:25:53,408	00:25:56,992	| IOT159 |	But I would love to have people call in and provide us some of your
+EDL	00:25:56,992	00:25:57,760	| IOT159 |	More unique
+EDL	00:25:57,760	00:25:58,784	| IOT159 |	Home automation routines
+EDL	00:25:59,296	00:26:02,112	| IOT159 |	Yes super actually to do an episode that is all
+EDL	00:26:02,112	00:26:02,624	| IOT159 |	You guys
+EDL	00:26:03,648	00:26:04,416	| IOT159 |	Your comments
+EDL	00:26:04,928	00:26:05,696	| IOT159 |	Your automation
+EDL	00:26:06,464	00:26:06,976	| IOT159 |	What's your question
+EDL	00:26:07,488	00:26:08,256	| IOT159 |	So
+EDL	00:26:08,256	00:26:09,792	| IOT159 |	Send them in
+EDL	00:26:09,792	00:26:11,840	| IOT159 |	512-262-3742
+EDL	00:26:13,120	00:26:13,632	| IOT159 |	Okay
+EDL	00:26:14,144	00:26:15,680	| IOT159 |	This week's question is from
+EDL	00:26:16,192	00:26:16,704	| IOT159 |	Derek
+EDL	00:26:17,216	00:26:20,288	| IOT159 |	Hey Stacy Hey Kevin this is Derrick from California
+EDL	00:26:20,288	00:26:26,688	| IOT159 |	My question is around smart home devices it appears that you know zigbee and Z-Wave are still kind of duking it out
+EDL	00:26:26,688	00:26:27,456	| IOT159 |	I'm wondering
+EDL	00:26:27,968	00:26:29,504	| IOT159 |	Is there a
+EDL	00:26:29,504	00:26:30,784	| IOT159 |	Stand-alone hub
+EDL	00:26:30,784	00:26:32,832	| IOT159 |	Or maybe a starter pack
+EDL	00:26:32,832	00:26:34,368	| IOT159 |	You might recommend
+EDL	00:26:34,368	00:26:36,672	| IOT159 |	Somebody to connect to their router
+EDL	00:26:36,672	00:26:43,072	| IOT159 |	So that you know I don't have to worry about which protocol eventually you know when's the game so again just look
+EDL	00:26:43,072	00:26:46,400	| IOT159 |	Looking for a way to break into it with maybe a
+EDL	00:26:46,400	00:26:50,240	| IOT159 |	Mandation on your part thank you guys great show love it by
+EDL	00:26:50,240	00:26:51,776	| IOT159 |	Oh Derek this is
+EDL	00:26:51,776	00:26:55,360	| IOT159 |	Like you could have asked this question 5 years ago and you know what the answer still probably
+EDL	00:26:55,360	00:26:56,384	| IOT159 |	The same
+EDL	00:26:56,384	00:26:58,944	| IOT159 |	Pretty much mostly mostly the same
+EDL	00:26:58,944	00:26:59,968	| IOT159 |	What's the Atari
+EDL	00:26:59,968	00:27:00,736	| IOT159 |	So yes this is
+EDL	00:27:01,504	00:27:02,528	| IOT159 |	Lady Eternal question
+EDL	00:27:03,040	00:27:03,552	| IOT159 |	And iot
+EDL	00:27:04,576	00:27:05,344	| IOT159 |	Your answer is
+EDL	00:27:05,856	00:27:06,368	| IOT159 |	Uniqlo
+EDL	00:27:07,648	00:27:10,208	| IOT159 |	The best hubs we find 3 Kevin
+EDL	00:27:10,208	00:27:12,000	| IOT159 |	I found we found
+EDL	00:27:12,000	00:27:16,096	| IOT159 |	3 SmartThings support zigbee and Z-Wave as does wink
+EDL	00:27:16,864	00:27:19,424	| IOT159 |	As does a router that you point it out to me
+EDL	00:27:21,984	00:27:22,752	| IOT159 |	3
+EDL	00:27:22,752	00:27:24,800	| IOT159 |	The almond 3 router by securifi
+EDL	00:27:25,312	00:27:26,336	| IOT159 |	That actually
+EDL	00:27:26,336	00:27:29,152	| IOT159 |	It's kind of an under-the-radar product but you can buy
+EDL	00:27:29,664	00:27:30,688	| IOT159 |	This is both a
+EDL	00:27:30,688	00:27:31,456	| IOT159 |	Smart home hub
+EDL	00:27:31,968	00:27:32,992	| IOT159 |	It is a router
+EDL	00:27:32,992	00:27:36,064	| IOT159 |	And it can actually act as a home security system with
+EDL	00:27:36,064	00:27:39,392	| IOT159 |	The proper it to have a home security system options so you can have sensors and stuff
+EDL	00:27:39,392	00:27:40,928	| IOT159 |	Talk to it
+EDL	00:27:41,440	00:27:44,000	| IOT159 |	One of the routers is $150
+EDL	00:27:44,512	00:27:45,792	| IOT159 |	3 cost
+EDL	00:27:45,792	00:27:46,560	| IOT159 |	$400
+EDL	00:27:47,072	00:27:47,840	| IOT159 |	And
+EDL	00:27:47,840	00:27:49,632	| IOT159 |	I tested these out actually there
+EDL	00:27:49,632	00:27:50,144	| IOT159 |	Quite good
+EDL	00:27:50,656	00:27:52,960	| IOT159 |	It's a good Hub it's a nice user interface
+EDL	00:27:52,960	00:27:55,264	| IOT159 |	I don't know why more people don't have them
+EDL	00:27:55,264	00:27:57,056	| IOT159 |	In all honesty because
+EDL	00:27:57,056	00:27:59,360	| IOT159 |	I don't think people know about them as much
+EDL	00:27:59,360	00:28:02,176	| IOT159 |	Yeah so that is out there and it's a mesh Wi-Fi router system
+EDL	00:28:03,968	00:28:04,480	| IOT159 |	I don't know
+EDL	00:28:04,992	00:28:05,760	| IOT159 |	So
+EDL	00:28:05,760	00:28:12,160	| IOT159 |	And Derek if you're wondering why we didn't include the new Amazon Echo Plus which is an echo
+EDL	00:28:12,160	00:28:13,696	| IOT159 |	A smart home hub in one
+EDL	00:28:13,696	00:28:15,744	| IOT159 |	Because it only supports
+EDL	00:28:15,744	00:28:17,280	| IOT159 |	WiFi Bluetooth n
+EDL	00:28:17,280	00:28:18,048	| IOT159 |	Zigbee
+EDL	00:28:18,048	00:28:18,816	| IOT159 |	Not Z-Wave
+EDL	00:28:19,840	00:28:20,352	| IOT159 |	Yes
+EDL	00:28:23,936	00:28:24,448	| IOT159 |	All right
+EDL	00:28:25,728	00:28:27,520	| IOT159 |	That is the answer to your question
+EDL	00:28:28,288	00:28:28,800	| IOT159 |	Hits by a hub
+EDL	00:28:29,312	00:28:30,848	| IOT159 |	I'm sorry that that is the answer to you
+EDL	00:28:30,848	00:28:31,360	| IOT159 |	Your question
+EDL	00:28:32,384	00:28:33,152	| IOT159 |	It is what it is
+EDL	00:28:33,920	00:28:36,736	| IOT159 |	Alright stay tuned you guys be
+EDL	00:28:36,736	00:28:40,320	| IOT159 |	Because our guest this week puppy Crum is Avicii scientist
+EDL	00:28:40,832	00:28:44,160	| IOT159 |	Dolby labs and she's going to talk about hearables
+EDL	00:28:44,160	00:28:50,560	| IOT159 |	How we perceive music and what it means to give computers hearing
+EDL	00:28:50,560	00:28:56,960	| IOT159 |	From The Internet of Things podcast for a message from our sponsor this week sponsor is for truck and I have
+EDL	00:28:56,960	00:28:57,984	| IOT159 |	Ben Goodman
+EDL	00:28:57,984	00:29:02,080	| IOT159 |	VP of strategy and Innovation here at Fort Rock to talk to us
+EDL	00:29:02,080	00:29:03,872	| IOT159 |	About ringing consent
+EDL	00:29:03,872	00:29:05,152	| IOT159 |	To the edge
+EDL	00:29:05,152	00:29:05,920	| IOT159 |	Superman
+EDL	00:29:05,920	00:29:07,712	| IOT159 |	Remind us first what it is
+EDL	00:29:09,248	00:29:10,784	| IOT159 |	Active digital identity
+EDL	00:29:11,552	00:29:13,088	| IOT159 |	We have a platform
+EDL	00:29:14,368	00:29:15,904	| IOT159 |	Tools that allow us to do things like
+EDL	00:29:16,416	00:29:17,952	| IOT159 |	Authentication and authorization
+EDL	00:29:18,976	00:29:22,816	| IOT159 |	Manage user data and one of the things that's really exciting about our platform is
+EDL	00:29:22,816	00:29:27,168	| IOT159 |	Is that we can take that platform and use it in ways that people didn't traditional music
+EDL	00:29:27,680	00:29:29,984	| IOT159 |	So outside the Enterprise to the edge
+EDL	00:29:29,984	00:29:32,032	| IOT159 |	And I think that's what we want to talk about here
+EDL	00:29:32,032	00:29:35,104	| IOT159 |	So last week we did talk about this idea bringing consent to the edge
+EDL	00:29:35,104	00:29:36,640	| IOT159 |	How do we do that
+EDL	00:29:36,640	00:29:43,040	| IOT159 |	Generally speaking has really been about things that you do inside of your computer or your mobile device so it's been about
+EDL	00:29:43,040	00:29:48,160	| IOT159 |	Authentication to a website or authentication to an application but more and more
+EDL	00:29:48,160	00:29:49,184	| IOT159 |	Especially as
+EDL	00:29:49,184	00:29:50,464	| IOT159 |	Taipei
+EDL	00:29:50,464	00:29:52,512	| IOT159 |	Organizations are trying to compete with
+EDL	00:29:52,512	00:29:54,304	| IOT159 |	Your native digital organization
+EDL	00:29:54,304	00:29:55,584	| IOT159 |	It really is about
+EDL	00:29:55,584	00:29:56,608	| IOT159 |	Instantiating all day
+EDL	00:29:57,632	00:30:00,704	| IOT159 |	Controlling capability that I have on the web in the real world
+EDL	00:30:00,704	00:30:04,544	| IOT159 |	And so what we believe is really important now is to take
+EDL	00:30:04,544	00:30:07,616	| IOT159 |	The concepts of digital identity Weatherby Authentication
+EDL	00:30:07,616	00:30:09,664	| IOT159 |	Or data protection or Access Control
+EDL	00:30:09,664	00:30:10,432	| IOT159 |	Elections
+EDL	00:30:10,432	00:30:11,456	| IOT159 |	Bring them down
+EDL	00:30:11,456	00:30:12,480	| IOT159 |	To the physical world
+EDL	00:30:12,480	00:30:15,296	| IOT159 |	What we've been doing is working with a lot of really interesting
+EDL	00:30:15,296	00:30:17,088	| IOT159 |	Vendors like Armin
+EDL	00:30:17,088	00:30:18,368	| IOT159 |	Samsung Intel
+EDL	00:30:18,368	00:30:20,160	| IOT159 |	And making sure that we can take
+EDL	00:30:20,160	00:30:21,184	| IOT159 |	All the capabilities
+EDL	00:30:21,184	00:30:22,208	| IOT159 |	We have in the web
+EDL	00:30:22,208	00:30:22,976	| IOT159 |	And bring it down
+EDL	00:30:22,976	00:30:26,048	| IOT159 |	Into the real world answer some of that may be as simple as
+EDL	00:30:26,048	00:30:31,680	| IOT159 |	Utilizing a trusted element or a trusted environment inside of a chipboard inside of the device at the edge
+EDL	00:30:31,680	00:30:33,472	| IOT159 |	And actually making sure that
+EDL	00:30:33,472	00:30:35,008	| IOT159 |	We can control the flow of
+EDL	00:30:35,520	00:30:36,800	| IOT159 |	Personal information
+EDL	00:30:36,800	00:30:38,336	| IOT159 |	As it goes to and from that device
+EDL	00:30:38,848	00:30:40,384	| IOT159 |	It may mean around how we
+EDL	00:30:40,384	00:30:41,920	| IOT159 |	Create secure channels and how would you ask
+EDL	00:30:42,688	00:30:44,480	| IOT159 |	So what you really the key thing here
+EDL	00:30:44,480	00:30:45,248	| IOT159 |	Is that
+EDL	00:30:45,248	00:30:46,784	| IOT159 |	More and more people want a bridge
+EDL	00:30:46,784	00:30:47,552	| IOT159 |	The physical world
+EDL	00:30:47,552	00:30:49,600	| IOT159 |	And in order to do that
+EDL	00:30:49,600	00:30:50,624	| IOT159 |	You need
+EDL	00:30:50,624	00:30:51,648	| IOT159 |	Addition identity
+EDL	00:30:51,648	00:30:58,048	| IOT159 |	And he destroyed any vendor that understands how to push that and that's something that has been focusing on really expensive
+EDL	00:30:58,048	00:31:00,096	| IOT159 |	So what does that look like for the End customer
+EDL	00:31:00,864	00:31:02,656	| IOT159 |	It's important that for the end
+EDL	00:31:02,656	00:31:05,216	| IOT159 |	Customer they don't see this kind of jarring
+EDL	00:31:05,216	00:31:05,984	| IOT159 |	Separation
+EDL	00:31:05,984	00:31:07,776	| IOT159 |	What happened to the physical world
+EDL	00:31:09,312	00:31:11,104	| IOT159 |	You seem very organic and so
+EDL	00:31:11,104	00:31:12,896	| IOT159 |	What that means is that behind the scene
+EDL	00:31:12,896	00:31:13,664	| IOT159 |	We have to
+EDL	00:31:13,664	00:31:15,200	| IOT159 |	Create an identity for a thing
+EDL	00:31:15,712	00:31:18,784	| IOT159 |	And manage relationships with it just like we would manage relationships
+EDL	00:31:18,784	00:31:19,808	| IOT159 |	Between two people and
+EDL	00:31:20,320	00:31:22,368	| IOT159 |	Give them the end-user levers
+EDL	00:31:22,880	00:31:26,464	| IOT159 |	That makes sense to them about how they share data just like they would share data with
+EDL	00:31:26,464	00:31:29,024	| IOT159 |	And so I think it's very easy if we say that I'm hey
+EDL	00:31:29,536	00:31:32,608	| IOT159 |	You know in order for me to personalize this hotel room for you
+EDL	00:31:32,608	00:31:33,888	| IOT159 |	You're going to have to share a certain
+EDL	00:31:35,424	00:31:38,240	| IOT159 |	And make those very clear concise and
+EDL	00:31:38,240	00:31:40,288	| IOT159 |	We provide the plumbing that allows that to happen
+EDL	00:31:40,800	00:31:42,592	| IOT159 |	But it's still the responsibility
+EDL	00:31:42,592	00:31:45,408	| IOT159 |	Of the vendor that wants to provide this personalized
+EDL	00:31:45,408	00:31:49,248	| IOT159 |	Make sure that they're surfacing that in a really user-friendly way
+EDL	00:31:49,760	00:31:51,552	| IOT159 |	Alright where can we go to learn more
+EDL	00:31:52,320	00:31:53,600	| IOT159 |	Please look at our website
+EDL	00:31:53,600	00:31:55,648	| IOT159 |	4j.com where we have
+EDL	00:31:55,648	00:31:59,232	| IOT159 |	A ton of information on privacy and really interesting things that are cost
+EDL	00:31:59,232	00:32:04,352	| IOT159 |	Dealing with it and specifically checkout.com privacy
+EDL	00:32:11,520	00:32:13,824	| IOT159 |	Hey everybody Welcome Back To The Internet of Things
+EDL	00:32:14,336	00:32:16,128	| IOT159 |	This is your house Stacey Higginbotham
+EDL	00:32:16,128	00:32:20,480	| IOT159 |	And today's guest is Poppy Crum who is the chief scientist at
+EDL	00:32:20,480	00:32:21,248	| IOT159 |	Toby
+EDL	00:32:21,248	00:32:23,296	| IOT159 |	She is talking to us at South by Southwest
+EDL	00:32:23,296	00:32:24,576	| IOT159 |	Just part of the IEEE.
+EDL	00:32:24,576	00:32:25,344	| IOT159 |	Hack for Humanity
+EDL	00:32:26,368	00:32:27,904	| IOT159 |	So hi Papi how are you
+EDL	00:32:27,904	00:32:28,416	| IOT159 |	Feisty
+EDL	00:32:29,952	00:32:34,816	| IOT159 |	I am super excited because you work on something that I am super passionate about which is curable
+EDL	00:32:34,816	00:32:36,096	| IOT159 |	Because I think this is
+EDL	00:32:36,096	00:32:37,376	| IOT159 |	Perfect example where like
+EDL	00:32:37,888	00:32:39,424	| IOT159 |	Technology advancement
+EDL	00:32:39,424	00:32:40,192	| IOT159 |	Meets actual
+EDL	00:32:40,704	00:32:41,472	| IOT159 |	Better
+EDL	00:32:41,472	00:32:44,288	| IOT159 |	So let's get right into the fact that
+EDL	00:32:44,288	00:32:47,360	| IOT159 |	I am super optimistic about hearing aids incurables
+EDL	00:32:47,360	00:32:48,128	| IOT159 |	How do you feel about this
+EDL	00:32:48,896	00:32:55,296	| IOT159 |	I really think that you're is going to be a transformational place with regard to both Ai and the
+EDL	00:32:55,296	00:33:01,696	| IOT159 |	When did reality Hub in the future there's so much information and learning about an individual that happens in your ear we can
+EDL	00:33:01,696	00:33:02,208	| IOT159 |	Talk about that
+EDL	00:33:02,720	00:33:04,256	| IOT159 |	But there's this also
+EDL	00:33:04,768	00:33:06,816	| IOT159 |	Lot of movement that's happening
+EDL	00:33:06,816	00:33:09,120	| IOT159 |	In this space right now
+EDL	00:33:09,120	00:33:10,400	| IOT159 |	We're seeing huge converge
+EDL	00:33:11,168	00:33:12,448	| IOT159 |	Between entertainment
+EDL	00:33:12,448	00:33:13,472	| IOT159 |	Lifestyle
+EDL	00:33:13,472	00:33:14,240	| IOT159 |	And
+EDL	00:33:14,240	00:33:15,008	| IOT159 |	Hearing health
+EDL	00:33:15,008	00:33:16,544	| IOT159 |	I'm a True Believer that
+EDL	00:33:16,544	00:33:19,360	| IOT159 |	Our Technologies are only going to be as good as we
+EDL	00:33:19,360	00:33:22,432	| IOT159 |	Can get them too if we have personalized devices
+EDL	00:33:22,432	00:33:24,736	| IOT159 |	Annie really becomes this amazing
+EDL	00:33:24,736	00:33:25,760	| IOT159 |	Hub at
+EDL	00:33:25,760	00:33:26,784	| IOT159 |	Information
+EDL	00:33:26,784	00:33:27,296	| IOT159 |	Between
+EDL	00:33:27,808	00:33:29,856	| IOT159 |	Individual and the external world
+EDL	00:33:30,368	00:33:36,768	| IOT159 |	To really think about how we optimize our experiences and make these devices and enabler iot devices to be
+EDL	00:33:36,768	00:33:39,328	| IOT159 |	What I would call an extension of our agency
+EDL	00:33:39,328	00:33:42,144	| IOT159 |	Wow that was super deep okay you brought up
+EDL	00:33:42,144	00:33:45,216	| IOT159 |	The whole bunch of stuff for me so we're going to break some of this down
+EDL	00:33:45,216	00:33:46,240	| IOT159 |	Cuz I was thinking
+EDL	00:33:46,240	00:33:52,384	| IOT159 |	Hey hearables their medical devices but then when you talk about AR and BR in like oh my gosh in at Dolby I'm like
+EDL	00:33:52,384	00:33:53,920	| IOT159 |	Peasant immersive experience
+EDL	00:33:54,432	00:33:57,760	| IOT159 |	Is false breakdowns for me should I be thinking of hearing just
+EDL	00:33:57,760	00:33:59,808	| IOT159 |	Bradley and we should apply it everywhere
+EDL	00:33:59,808	00:34:01,088	| IOT159 |	That's a great question
+EDL	00:34:01,088	00:34:01,856	| IOT159 |	I think there's a lot of waste
+EDL	00:34:02,624	00:34:03,392	| IOT159 |	I tried to break it down
+EDL	00:34:04,160	00:34:07,232	| IOT159 |	Where is a device in my ear might actually be able to enhance
+EDL	00:34:07,232	00:34:08,512	| IOT159 |	My life or ways we even use them
+EDL	00:34:09,280	00:34:10,560	| IOT159 |	You can separate and let's start
+EDL	00:34:10,560	00:34:15,680	| IOT159 |	With the way we're already people are already using hearables might be as assistants I think that's a pretty
+EDL	00:34:15,680	00:34:17,472	| IOT159 |	Ubiquitous use that showing up
+EDL	00:34:17,472	00:34:20,032	| IOT159 |	Are you can talk about hearable both as a static character
+EDL	00:34:20,032	00:34:20,800	| IOT159 |	What's the price of an Amazon Echo
+EDL	00:34:21,312	00:34:22,592	| IOT159 |	Go home or a wearable device
+EDL	00:34:23,104	00:34:28,480	| IOT159 |	We should listen we talked about the wearables right now as an assistant you've got something intersecting other app
+EDL	00:34:28,480	00:34:28,992	| IOT159 |	Applications
+EDL	00:34:29,504	00:34:30,272	| IOT159 |	Ways of
+EDL	00:34:30,272	00:34:32,832	| IOT159 |	Causing things to happen in my world that I'm actually
+EDL	00:34:32,832	00:34:33,856	| IOT159 |	Requesting
+EDL	00:34:33,856	00:34:35,904	| IOT159 |	In your ear you've also got information
+EDL	00:34:35,904	00:34:38,720	| IOT159 |	It can pick up on you've got within their system
+EDL	00:34:38,720	00:34:41,280	| IOT159 |	Really rich set of biological signals
+EDL	00:34:41,280	00:34:44,608	| IOT159 |	That having sensors and that one particular place in your body
+EDL	00:34:44,608	00:34:45,120	| IOT159 |	Tiny
+EDL	00:34:45,632	00:34:47,936	| IOT159 |	Certify call it will dime-sized patch you can pick up
+EDL	00:34:47,936	00:34:48,448	| IOT159 |	Up your heart rate
+EDL	00:34:48,960	00:34:52,288	| IOT159 |	You can pick up the electroencephalogram pick up EEG you can pick up
+EDL	00:34:52,288	00:34:53,312	| IOT159 |	Blood oxygenation
+EDL	00:34:53,824	00:34:57,920	| IOT159 |	Your galvanic skin response
+EDL	00:34:57,920	00:34:59,456	| IOT159 |	Internal information about
+EDL	00:34:59,456	00:35:00,224	| IOT159 |	Kathy is our state
+EDL	00:35:00,224	00:35:01,760	| IOT159 |	So how do we use that to sing
+EDL	00:35:02,784	00:35:04,576	| IOT159 |	But you've also got the devices
+EDL	00:35:04,576	00:35:05,856	| IOT159 |	It's listening to your environment
+EDL	00:35:05,856	00:35:06,624	| IOT159 |	So now you got it for
+EDL	00:35:07,136	00:35:11,232	| IOT159 |	Coming in and information about you whether it's for your voice or through
+EDL	00:35:11,232	00:35:13,536	| IOT159 |	Reading information about your state that's going out
+EDL	00:35:13,536	00:35:17,120	| IOT159 |	And that interplay is I think will really important part of the future
+EDL	00:35:17,888	00:35:21,472	| IOT159 |	Wow I didn't realize you could get all that for my ear so that's actually go bad
+EDL	00:35:21,472	00:35:23,008	| IOT159 |	And talk about yours for a second
+EDL	00:35:23,008	00:35:25,312	| IOT159 |	And hearing and all the information like
+EDL	00:35:25,312	00:35:30,944	| IOT159 |	Maybe it's not as simple as how it works but if I'm thinking about taking information what does information that's
+EDL	00:35:31,456	00:35:32,736	| IOT159 |	Good to get from
+EDL	00:35:33,248	00:35:37,088	| IOT159 |	My eardrum and what makes sense to
+EDL	00:35:37,088	00:35:37,856	| IOT159 |	Happen it
+EDL	00:35:38,368	00:35:39,136	| IOT159 |	In your device
+EDL	00:35:39,904	00:35:43,744	| IOT159 |	Great questions and if we look back five years things have really evolved
+EDL	00:35:44,512	00:35:49,376	| IOT159 |	That's why the way we might have described him Taken 2 years ago different than how I'm talking about them
+EDL	00:35:49,376	00:35:50,144	| IOT159 |	Today
+EDL	00:35:50,144	00:35:56,544	| IOT159 |	We are in the last few years people have been able to in a lab and you're just with your sensors capture
+EDL	00:35:56,544	00:35:58,080	| IOT159 |	Picking up and decoding
+EDL	00:35:58,080	00:35:58,848	| IOT159 |	My attention
+EDL	00:35:58,848	00:36:01,152	| IOT159 |	Attentional my cot where it's being directed
+EDL	00:36:01,664	00:36:02,688	| IOT159 |	The Who
+EDL	00:36:02,688	00:36:03,200	| IOT159 |	The what
+EDL	00:36:03,712	00:36:04,480	| IOT159 |	Aware
+EDL	00:36:04,480	00:36:08,320	| IOT159 |	And you end up with these inferences happening in a lab might be
+EDL	00:36:08,320	00:36:14,720	| IOT159 |	Somewhat noisy but suddenly you pair that with environmental intelligence and contacts I know I'm at a restaurant
+EDL	00:36:14,720	00:36:16,512	| IOT159 |	Because the device can tell or I know I'm
+EDL	00:36:16,512	00:36:22,400	| IOT159 |	I got certain stalkers I'm trying yo that are in my social network in my device knows that it knows who those people I care about are
+EDL	00:36:22,912	00:36:24,960	| IOT159 |	Answers and start painting this really rich
+EDL	00:36:24,960	00:36:25,984	| IOT159 |	Picture that's going to ask
+EDL	00:36:25,984	00:36:26,752	| IOT159 |	Actually
+EDL	00:36:26,752	00:36:32,896	| IOT159 |	Truly enhance my experience and not just be feeding me again that you have a text message to go check your email
+EDL	00:36:34,432	00:36:35,968	| IOT159 |	So I can literally mute people
+EDL	00:36:39,296	00:36:39,808	| IOT159 |	Don't we all
+EDL	00:36:42,368	00:36:44,416	| IOT159 |	Completely possible that your device in
+EDL	00:36:44,416	00:36:49,280	| IOT159 |	Getting out of the lab is one thing that we're really moving towards that your device would allow you to have
+EDL	00:36:49,280	00:36:51,072	| IOT159 |	One conversation listen to another
+EDL	00:36:51,072	00:36:51,584	| IOT159 |	Multitask
+EDL	00:36:52,608	00:36:56,704	| IOT159 |	Let's do that in a effective way but it's a can make you more social again it
+EDL	00:36:56,704	00:36:57,984	| IOT159 |	We already do that
+EDL	00:36:57,984	00:37:01,056	| IOT159 |	In our attention at the cocktail party solving that kind of
+EDL	00:37:01,056	00:37:01,568	| IOT159 |	Problem
+EDL	00:37:02,080	00:37:06,432	| IOT159 |	You're aware I'm in a noisy environment and how do I make sense of my
+EDL	00:37:06,944	00:37:08,224	| IOT159 |	Acoustic environment
+EDL	00:37:08,224	00:37:12,320	| IOT159 |	Someone who has hearing lots of fun of hardest problems in for someone that doesn't have her
+EDL	00:37:12,320	00:37:14,624	| IOT159 |	Hearing loss that's still a hard problem
+EDL	00:37:14,624	00:37:19,232	| IOT159 |	Let me go to a restaurant that's popular it's really noisy and it's something that
+EDL	00:37:19,232	00:37:20,512	| IOT159 |	Greatly impacts
+EDL	00:37:20,512	00:37:21,280	| IOT159 |	Our social club
+EDL	00:37:21,280	00:37:22,048	| IOT159 |	Communication
+EDL	00:37:22,048	00:37:24,864	| IOT159 |	So what we want our devices that enable us to
+EDL	00:37:25,632	00:37:26,912	| IOT159 |	Better communication with
+EDL	00:37:26,912	00:37:30,752	| IOT159 |	Each other without us having to break that conversation and go you know
+EDL	00:37:30,752	00:37:32,544	| IOT159 |	Turn up the cell phone or
+EDL	00:37:32,544	00:37:37,152	| IOT159 |	Intersected and police things that you want your device to know so what am I device that can pick up one on my cock.
+EDL	00:37:38,176	00:37:44,064	| IOT159 |	That's a fairly robust thing that we can track quite easily it can tell if my brains having to work harder and it responds
+EDL	00:37:44,064	00:37:46,624	| IOT159 |	How do we change that technological Lube
+EDL	00:37:46,624	00:37:47,136	| IOT159 |	Because you've got
+EDL	00:37:47,648	00:37:49,696	| IOT159 |	You've got these different devices you got
+EDL	00:37:49,696	00:37:51,488	| IOT159 |	Information about me
+EDL	00:37:51,488	00:37:56,608	| IOT159 |	These things that are happening in the world of AI and machine learning are we becoming much more intelligent
+EDL	00:37:56,608	00:37:57,376	| IOT159 |	2
+EDL	00:37:57,376	00:37:58,400	| IOT159 |	The environment
+EDL	00:37:58,400	00:38:01,728	| IOT159 |	You're in the military they call that situational awareness and
+EDL	00:38:01,728	00:38:03,008	| IOT159 |	When you think about what
+EDL	00:38:03,520	00:38:07,360	| IOT159 |	My situational awareness for my contacts that's really relevant
+EDL	00:38:07,360	00:38:08,128	| IOT159 |	To my devices
+EDL	00:38:08,128	00:38:08,640	| IOT159 |	Sing to me
+EDL	00:38:09,152	00:38:10,944	| IOT159 |	I want my devices optimizing
+EDL	00:38:11,456	00:38:12,992	| IOT159 |	Their signal processing
+EDL	00:38:12,992	00:38:18,112	| IOT159 |	And their capabilities to be intelligent to that without my having to intervene
+EDL	00:38:18,624	00:38:21,440	| IOT159 |	Type of intersection and so that's what we're really starting
+EDL	00:38:21,440	00:38:27,584	| IOT159 |	To see in especially in development especially in sort of what I would call bleeding edge Technologies for hearing aids as well
+EDL	00:38:28,352	00:38:34,240	| IOT159 |	Okay so you're actually talking about customization both to my hearing level and then also to whatever environment I'm in
+EDL	00:38:34,752	00:38:36,544	| IOT159 |	Has a lot of computational
+EDL	00:38:36,544	00:38:37,568	| IOT159 |	Power so
+EDL	00:38:37,568	00:38:39,360	| IOT159 |	Or it feels like it should be a lot of come
+EDL	00:38:39,360	00:38:41,408	| IOT159 |	Computational power so what is happening
+EDL	00:38:41,408	00:38:43,456	| IOT159 |	Justin the physical Hardware side
+EDL	00:38:43,456	00:38:44,992	| IOT159 |	It's making this pause
+EDL	00:38:44,992	00:38:45,760	| IOT159 |	Football today
+EDL	00:38:45,760	00:38:48,320	| IOT159 |	I think there's really a beautiful Resurgence in Seoul
+EDL	00:38:48,320	00:38:49,600	| IOT159 |	Working development that's happening
+EDL	00:38:49,600	00:38:51,904	| IOT159 |	If you look at the let's just talk
+EDL	00:38:51,904	00:38:52,416	| IOT159 |	Carrying out front
+EDL	00:38:52,928	00:38:55,488	| IOT159 |	Because the richness of what's going to happen
+EDL	00:38:55,488	00:38:58,560	| IOT159 |	Or needs to happen to truly make a hearable device
+EDL	00:38:58,560	00:39:00,864	| IOT159 |	A significant one that we all
+EDL	00:39:00,864	00:39:01,888	| IOT159 |	Benefit from
+EDL	00:39:01,888	00:39:06,752	| IOT159 |	Is Convergence of both entertainment and lifestyle and this hearing Health space
+EDL	00:39:06,752	00:39:08,288	| IOT159 |	Sharing Health space UCI
+EDL	00:39:08,288	00:39:09,312	| IOT159 |	A lot of
+EDL	00:39:09,312	00:39:10,080	| IOT159 |	Hearing aids in
+EDL	00:39:10,592	00:39:15,200	| IOT159 |	Make use of the same so I can make use of the same signal processing and it's really quite
+EDL	00:39:15,200	00:39:16,224	| IOT159 |	Constrained but
+EDL	00:39:16,224	00:39:17,504	| IOT159 |	In order to get
+EDL	00:39:17,504	00:39:18,528	| IOT159 |	A lot of this
+EDL	00:39:18,528	00:39:22,624	| IOT159 |	More advanced machine-learning nuts and things that are going
+EDL	00:39:22,624	00:39:25,440	| IOT159 |	To enable more intelligent experiences
+EDL	00:39:25,440	00:39:28,000	| IOT159 |	The Silicon development has really started
+EDL	00:39:28,000	00:39:31,840	| IOT159 |	There's been a big Resurgence in that development to be able to miniaturize computation
+EDL	00:39:31,840	00:39:32,608	| IOT159 |	In Tucson
+EDL	00:39:32,608	00:39:33,888	| IOT159 |	Into a small enough
+EDL	00:39:33,888	00:39:35,168	| IOT159 |	Form factor for hairball
+EDL	00:39:35,168	00:39:36,704	| IOT159 |	Now form factor is a huge
+EDL	00:39:37,216	00:39:38,240	| IOT159 |	Yeah you look at it
+EDL	00:39:38,240	00:39:40,288	| IOT159 |	Hearing aids they really haven't changed much at all
+EDL	00:39:40,288	00:39:41,824	| IOT159 |	And there's a big stigma
+EDL	00:39:41,824	00:39:43,360	| IOT159 |	Associated with some of the
+EDL	00:39:43,360	00:39:45,152	| IOT159 |	Four factors that currently exist Things Are
+EDL	00:39:45,152	00:39:46,176	| IOT159 |	Behind the ear
+EDL	00:39:46,688	00:39:50,272	| IOT159 |	Come with a medical branding on them they say you're old
+EDL	00:39:50,784	00:39:51,552	| IOT159 |	And people hate that
+EDL	00:39:51,552	00:39:55,136	| IOT159 |	What I see that's really wonderful about how things are going to transform music
+EDL	00:39:55,136	00:39:57,184	| IOT159 |	Everybody's wearing horrible to destigmatize is it
+EDL	00:39:57,184	00:39:57,952	| IOT159 |	For everyone because
+EDL	00:39:58,464	00:40:01,792	| IOT159 |	Unlike Vision where people might say not wearing glasses you
+EDL	00:40:01,792	00:40:04,352	| IOT159 |	You have a muscular a muscle benefit sometimes and
+EDL	00:40:04,352	00:40:06,912	| IOT159 |	And I would question that but there are reasons with the
+EDL	00:40:06,912	00:40:10,496	| IOT159 |	Case of hearing if you actually don't innovate your hearing
+EDL	00:40:10,496	00:40:16,128	| IOT159 |	If you have hearing loss and you aren't stimulating people wait to get here unless there's actually an increased deficit
+EDL	00:40:16,128	00:40:17,408	| IOT159 |	Neural deficit happens
+EDL	00:40:17,408	00:40:19,200	| IOT159 |	All through the pathway so there's this
+EDL	00:40:19,200	00:40:19,968	| IOT159 |	Very important
+EDL	00:40:20,480	00:40:23,040	| IOT159 |	Aspect of getting people to
+EDL	00:40:23,040	00:40:27,392	| IOT159 |	Not just preserve there. But actually intervene when you have hearing loss as soon as possible
+EDL	00:40:27,392	00:40:30,720	| IOT159 |	The reality is we all start having hearing loss when
+EDL	00:40:31,232	00:40:32,000	| IOT159 |	Dinner
+EDL	00:40:32,000	00:40:35,840	| IOT159 |	Early twenties and its mission
+EDL	00:40:35,840	00:40:40,448	| IOT159 |	Things from our environment exposure to noise ototoxicity aspirin soda toxic
+EDL	00:40:40,960	00:40:42,752	| IOT159 |	A lot of things we just
+EDL	00:40:42,752	00:40:43,520	| IOT159 |	Julian just
+EDL	00:40:43,520	00:40:44,032	| IOT159 |	Avatar
+EDL	00:40:45,056	00:40:47,104	| IOT159 |	Okay so my life is a rock critic
+EDL	00:40:47,872	00:40:49,664	| IOT159 |	In my college Years and
+EDL	00:40:49,664	00:40:52,992	| IOT159 |	My incredible ingestion of aspirin is causing me some eggs
+EDL	00:40:52,992	00:40:54,272	| IOT159 |	Now I'm like oh my gosh
+EDL	00:40:54,272	00:40:55,552	| IOT159 |	Okay but
+EDL	00:40:55,552	00:40:58,112	| IOT159 |	Let's go back to what it takes
+EDL	00:40:58,112	00:40:59,648	| IOT159 |	Before you freak me out more
+EDL	00:40:59,648	00:41:00,928	| IOT159 |	Too many tries this
+EDL	00:41:00,928	00:41:05,536	| IOT159 |	What is the ideal form factor do you think or what is a form factor we're working toward
+EDL	00:41:06,048	00:41:07,072	| IOT159 |	And then what
+EDL	00:41:07,072	00:41:11,936	| IOT159 |	Just be something we have everyday that we just wear and we listen to music and we
+EDL	00:41:11,936	00:41:12,960	| IOT159 |	Go talkin
+EDL	00:41:12,960	00:41:16,288	| IOT159 |	Pop it in when we're like of a certain age I mean what is this look like in the
+EDL	00:41:17,056	00:41:18,592	| IOT159 |	That's a great question.
+EDL	00:41:18,592	00:41:21,152	| IOT159 |	Because it's evolving and
+EDL	00:41:21,152	00:41:21,920	| IOT159 |	Think about it this way
+EDL	00:41:22,688	00:41:23,712	| IOT159 |	I don't like to
+EDL	00:41:23,712	00:41:27,296	| IOT159 |	To think that having hearing loss there was a statistic I came across 19% of
+EDL	00:41:27,296	00:41:28,576	| IOT159 |	12 to 17 year olds
+EDL	00:41:28,576	00:41:30,880	| IOT159 |	Already have some degree of noise-induced hearing
+EDL	00:41:32,160	00:41:34,464	| IOT159 |	And that's a pretty terrifying statistic but
+EDL	00:41:34,976	00:41:36,256	| IOT159 |	Movie think about hearables
+EDL	00:41:36,256	00:41:38,048	| IOT159 |	I really do feel
+EDL	00:41:38,048	00:41:39,840	| IOT159 |	We don't want to talk about it with regard to hearing
+EDL	00:41:40,608	00:41:42,400	| IOT159 |	We want to talk about it disregard
+EDL	00:41:42,912	00:41:43,680	| IOT159 |	Personalization
+EDL	00:41:43,680	00:41:47,264	| IOT159 |	And how do we we all have our physiological systems are all differ
+EDL	00:41:47,264	00:41:47,776	| IOT159 |	Environment
+EDL	00:41:49,056	00:41:53,151	| IOT159 |	Irrelevancies and sensitivities that are environments demand of us are differ
+EDL	00:41:53,151	00:41:59,551	| IOT159 |	So we went processing that is capable to adjust to that and learn those needs of us
+EDL	00:41:59,551	00:42:01,087	| IOT159 |	With regard to a form fact
+EDL	00:42:01,087	00:42:03,135	| IOT159 |	That's a really fun question because
+EDL	00:42:03,135	00:42:05,695	| IOT159 |	They're a lot different ways you can go and things you're seeing happening
+EDL	00:42:05,695	00:42:07,999	| IOT159 |	There's no question a small device is interest
+EDL	00:42:07,999	00:42:09,023	| IOT159 |	If you look at it
+EDL	00:42:09,023	00:42:12,351	| IOT159 |	Where are the Haribo company's are right now it really is it runs the gamut
+EDL	00:42:12,351	00:42:14,399	| IOT159 |	Let's it's a hugely heterogeneous in terms of form
+EDL	00:42:14,399	00:42:15,423	| IOT159 |	Talking about devices
+EDL	00:42:15,423	00:42:17,471	| IOT159 |	Like your go who are trying to be assertive
+EDL	00:42:17,471	00:42:21,567	| IOT159 |	Disruptive I love their form-factor they're sort of a disruptive they still considered
+EDL	00:42:21,567	00:42:27,967	| IOT159 |	Call themselves the hearing aid but therein are almost entirely hidden from the world there's nothing that goes off
+EDL	00:42:27,967	00:42:29,759	| IOT159 |	Warrior versus a company
+EDL	00:42:29,759	00:42:30,527	| IOT159 |	There's a Hero
+EDL	00:42:30,527	00:42:31,295	| IOT159 |	Human
+EDL	00:42:31,295	00:42:33,343	| IOT159 |	But has he started Elston
+EDL	00:42:33,343	00:42:34,367	| IOT159 |	Devices that fit
+EDL	00:42:34,367	00:42:37,695	| IOT159 |	Completely over here which I also think is beautiful you're trying to
+EDL	00:42:38,207	00:42:42,559	| IOT159 |	Create a very different in both cases a different landscape than what
+EDL	00:42:42,559	00:42:44,607	| IOT159 |	Historical hearing aid
+EDL	00:42:45,119	00:42:45,887	| IOT159 |	Fourth doctor
+EDL	00:42:45,887	00:42:46,655	| IOT159 |	Whip It
+EDL	00:42:46,655	00:42:48,191	| IOT159 |	You'll have a lot of devices like
+EDL	00:42:48,191	00:42:48,959	| IOT159 |	Like nuheara
+EDL	00:42:48,959	00:42:51,007	| IOT159 |	Former Doppler where you have
+EDL	00:42:51,007	00:42:52,799	| IOT159 |	A near device but it's
+EDL	00:42:52,799	00:42:55,103	| IOT159 |	Wanting to point out here is it's fully exclusive
+EDL	00:42:55,103	00:42:56,895	| IOT159 |	And everything you hear from the world
+EDL	00:42:56,895	00:42:58,431	| IOT159 |	Is Electro acoustic layer
+EDL	00:42:58,431	00:42:58,943	| IOT159 |	Representative
+EDL	00:42:59,455	00:43:04,063	| IOT159 |	Which is just some level of philosophical conundrum I'd like to think of it
+EDL	00:43:05,343	00:43:09,439	| IOT159 |	So instead of the analog signals we're getting the digital interpretation of the analog signals
+EDL	00:43:09,951	00:43:10,463	| IOT159 |	Precisely
+EDL	00:43:10,975	00:43:12,767	| IOT159 |	And we can do that pretty well
+EDL	00:43:12,767	00:43:17,119	| IOT159 |	But it's a funny thing so it to me and this is my personal belief that
+EDL	00:43:17,119	00:43:21,215	| IOT159 |	Ideal form factor something that leverages our natural physiological capabilities and then
+EDL	00:43:21,215	00:43:22,495	| IOT159 |	Gives us things on top of
+EDL	00:43:22,495	00:43:24,543	| IOT159 |	Rather than just recreate it so it because
+EDL	00:43:25,055	00:43:31,455	| IOT159 |	You think about going to wander the world if I would you wear a VR device if I tell you everything you're going to experience is
+EDL	00:43:31,455	00:43:33,759	| IOT159 |	Entirely an accurate representation of the world
+EDL	00:43:33,759	00:43:36,063	| IOT159 |	I will be able to give you more but you're still it's all going to be sent
+EDL	00:43:37,087	00:43:38,879	| IOT159 |	Did you go out for the rest of your life doing nothing
+EDL	00:43:39,391	00:43:40,415	| IOT159 |	No I would not
+EDL	00:43:40,415	00:43:44,511	| IOT159 |	Which gets to this idea of perception and you've done a lot of Standards work around the concept of
+EDL	00:43:45,791	00:43:47,327	| IOT159 |	So let's talk about
+EDL	00:43:47,327	00:43:49,119	| IOT159 |	Let's talk about your philosophy there actually that
+EDL	00:43:49,887	00:43:55,775	| IOT159 |	So in this case you're talking about letting someone else mediate how you experience the world but you also work
+EDL	00:43:55,775	00:43:59,871	| IOT159 |	And standards efforts to establish baselines for how people
+EDL	00:43:59,871	00:44:00,639	| IOT159 |	A different
+EDL	00:44:00,639	00:44:02,431	| IOT159 |	Levels experience the world correct
+EDL	00:44:02,943	00:44:08,063	| IOT159 |	So my background I'm a neurophysiologist by training but also I've been in the technology space for quite some time
+EDL	00:44:08,575	00:44:09,599	| IOT159 |	I really
+EDL	00:44:09,599	00:44:12,159	| IOT159 |	Like to think that I spend my time trying to identify
+EDL	00:44:12,159	00:44:12,927	| IOT159 |	Anafi
+EDL	00:44:12,927	00:44:15,487	| IOT159 |	Ways our technology is going to best intersex
+EDL	00:44:15,487	00:44:16,255	| IOT159 |	With
+EDL	00:44:16,255	00:44:20,863	| IOT159 |	Austin's depending on both an understanding of our biology but also a
+EDL	00:44:20,863	00:44:26,495	| IOT159 |	Are perceptual realities we each experience the world and very unique ways some of those we can track some of those
+EDL	00:44:26,495	00:44:28,287	| IOT159 |	We haven't been able to but
+EDL	00:44:28,287	00:44:32,127	| IOT159 |	And we're learning more about how we can actually objectify what someone's XP
+EDL	00:44:32,127	00:44:34,175	| IOT159 |	Prancing and use that to informed
+EDL	00:44:34,175	00:44:34,943	| IOT159 |	Technology
+EDL	00:44:35,455	00:44:37,247	| IOT159 |	No I'd like to say we're building
+EDL	00:44:37,247	00:44:38,527	| IOT159 |	Technologies that are
+EDL	00:44:39,039	00:44:42,879	| IOT159 |	The way they intersect with us it feels like a true extension of our agency
+EDL	00:44:43,391	00:44:46,463	| IOT159 |	And not the technology telling us what we have to expect
+EDL	00:44:46,463	00:44:47,999	| IOT159 |	Answer what we are going to do
+EDL	00:44:47,999	00:44:49,023	| IOT159 |	Anticipating
+EDL	00:44:49,023	00:44:49,791	| IOT159 |	How
+EDL	00:44:49,791	00:44:50,559	| IOT159 |	Yep we would naturally
+EDL	00:44:52,351	00:44:56,703	| IOT159 |	For me the world going at every moment is and this is I think
+EDL	00:44:58,239	00:44:59,519	| IOT159 |	We are thinking about
+EDL	00:44:59,519	00:45:01,311	| IOT159 |	Things now it's a probabilistic
+EDL	00:45:01,311	00:45:02,847	| IOT159 |	Experience
+EDL	00:45:02,847	00:45:05,407	| IOT159 |	And many features come together
+EDL	00:45:05,407	00:45:06,431	| IOT159 |	To determine
+EDL	00:45:06,431	00:45:10,527	| IOT159 |	How we experience how we each differentially experience perhaps the same
+EDL	00:45:10,527	00:45:11,295	| IOT159 |	Piece of
+EDL	00:45:11,295	00:45:12,831	| IOT159 |	Cremation your and UK
+EDL	00:45:12,831	00:45:14,879	| IOT159 |	Can probabilistically model those things weather
+EDL	00:45:15,391	00:45:16,159	| IOT159 |	I go back
+EDL	00:45:16,159	00:45:22,303	| IOT159 |	20 years I spent a lot of time thinking about probabilistic inference for how we experience auditory and visual information to four
+EDL	00:45:23,583	00:45:24,863	| IOT159 |	Where it is
+EDL	00:45:24,863	00:45:26,143	| IOT159 |	When it happens and
+EDL	00:45:26,143	00:45:29,215	| IOT159 |	You can develop very intelligent models at this
+EDL	00:45:29,983	00:45:31,519	| IOT159 |	But now you get into this
+EDL	00:45:32,031	00:45:33,055	| IOT159 |	Transition where
+EDL	00:45:33,567	00:45:34,591	| IOT159 |	The device
+EDL	00:45:34,591	00:45:35,615	| IOT159 |	Needs to
+EDL	00:45:35,615	00:45:36,639	| IOT159 |	Understand those
+EDL	00:45:36,639	00:45:40,223	| IOT159 |	Perceptual reality cuz if ice is going to have a lot more information then
+EDL	00:45:40,223	00:45:41,247	| IOT159 |	We ever experienced
+EDL	00:45:41,247	00:45:42,271	| IOT159 |	We don't Xperia
+EDL	00:45:43,551	00:45:48,415	| IOT159 |	And having a device tell us things in the wrong place or intersect Us in the wrong place that isn't consistent with that
+EDL	00:45:48,415	00:45:50,463	| IOT159 |	Is jarring and actually think will make us less if
+EDL	00:45:50,975	00:45:52,511	| IOT159 |	So it's how do we
+EDL	00:45:52,511	00:45:53,279	| IOT159 |	Bridge that Gap
+EDL	00:45:54,303	00:45:57,887	| IOT159 |	So it's like we've been doing a lot of work we read a lot about computer vision
+EDL	00:45:57,887	00:46:00,447	| IOT159 |	This is kind of computer hearing and understanding
+EDL	00:46:00,447	00:46:03,775	| IOT159 |	What different things mean to a person when we're actually perceiving
+EDL	00:46:04,799	00:46:07,103	| IOT159 |	So I always know that if I hear a car in my
+EDL	00:46:07,615	00:46:08,383	| IOT159 |	Like behind me
+EDL	00:46:08,383	00:46:11,199	| IOT159 |	I always look in check and I know exactly where that car is based
+EDL	00:46:12,223	00:46:14,527	| IOT159 |	A computer may not have that sense until we program it
+EDL	00:46:15,807	00:46:16,575	| IOT159 |	Is that kind of close
+EDL	00:46:16,575	00:46:19,135	| IOT159 |	Yes on some level
+EDL	00:46:19,135	00:46:20,159	| IOT159 |	Computer hearing
+EDL	00:46:20,159	00:46:20,927	| IOT159 |	Is very relevant
+EDL	00:46:21,439	00:46:22,463	| IOT159 |	But it's more than
+EDL	00:46:23,231	00:46:24,255	| IOT159 |	Write it needs
+EDL	00:46:24,255	00:46:25,279	| IOT159 |	There's information
+EDL	00:46:25,279	00:46:26,047	| IOT159 |	What it tells you
+EDL	00:46:26,559	00:46:27,583	| IOT159 |	How it informs
+EDL	00:46:28,351	00:46:31,423	| IOT159 |	How it makes use of that information so something as simple as I want to
+EDL	00:46:31,423	00:46:37,823	| IOT159 |	Inform you that their car right behind you there's other things I have to get right because now I've got to create binaural represent
+EDL	00:46:37,823	00:46:40,895	| IOT159 |	Tatian maybe I got an inner tube I so I didn't synthetically
+EDL	00:46:41,407	00:46:42,431	| IOT159 |	If I'm
+EDL	00:46:42,431	00:46:46,527	| IOT159 |	Trying to do this and it say an inclusive environment at the synthetically recreate
+EDL	00:46:46,527	00:46:48,831	| IOT159 |	Information that informs you in the right way
+EDL	00:46:48,831	00:46:50,111	| IOT159 |	To make sure that you reacted
+EDL	00:46:50,879	00:46:51,647	| IOT159 |	That's indicative of
+EDL	00:46:51,647	00:46:53,439	| IOT159 |	What would be the most successful for you
+EDL	00:46:53,951	00:46:55,487	| IOT159 |	In fact that's a pretty tough problem
+EDL	00:46:55,487	00:46:57,535	| IOT159 |	In that case because I got a saint if I didn't
+EDL	00:46:57,535	00:46:58,559	| IOT159 |	Patient meaning
+EDL	00:46:58,559	00:47:01,119	| IOT159 |	I need to identify what's the best Q I could give you
+EDL	00:47:01,119	00:47:04,703	| IOT159 |	How to make sure that every single time you experienced that
+EDL	00:47:04,703	00:47:05,471	| IOT159 |	Or someone else does
+EDL	00:47:05,983	00:47:07,519	| IOT159 |	It's in the accurate location
+EDL	00:47:07,519	00:47:10,591	| IOT159 |	And that's something that the industry has not been able to get
+EDL	00:47:10,591	00:47:11,359	| IOT159 |	Cracked
+EDL	00:47:12,383	00:47:13,663	| IOT159 |	In the variance is based on what
+EDL	00:47:14,175	00:47:15,711	| IOT159 |	Are hearing loss over time or just
+EDL	00:47:16,223	00:47:19,295	| IOT159 |	Totem multitude of Futures because it one thing we each have
+EDL	00:47:19,295	00:47:21,343	| IOT159 |	Unique what I like to call cookie cutters
+EDL	00:47:21,343	00:47:24,671	| IOT159 |	Our bodies are at anthropometry of our ears or head
+EDL	00:47:24,671	00:47:31,071	| IOT159 |	Create a very unique filter of continuations and excitations across amplification Center
+EDL	00:47:31,071	00:47:33,119	| IOT159 |	Continuations across every frequency in sound in
+EDL	00:47:33,631	00:47:35,167	| IOT159 |	World that is unique
+EDL	00:47:35,167	00:47:35,935	| IOT159 |	Chimichurri sauce
+EDL	00:47:35,935	00:47:37,471	| IOT159 |	But we also have very unique
+EDL	00:47:37,471	00:47:40,287	| IOT159 |	Hearing patterns and different physiological
+EDL	00:47:40,287	00:47:44,639	| IOT159 |	Call changes that happen to our bodies and we also have them the context of information of the environment
+EDL	00:47:45,151	00:47:47,455	| IOT159 |	Those three pieces come together and no
+EDL	00:47:47,455	00:47:48,223	| IOT159 |	You have a knack
+EDL	00:47:48,223	00:47:53,087	| IOT159 |	Accurate representation right now what most of the world does what most of
+EDL	00:47:53,087	00:47:54,623	| IOT159 |	The technological space and
+EDL	00:47:55,135	00:47:57,183	| IOT159 |	Offering to the market do is assume
+EDL	00:47:57,183	00:47:57,951	| IOT159 |	We're all the same
+EDL	00:47:57,951	00:47:58,719	| IOT159 |	Wow
+EDL	00:47:58,719	00:48:00,767	| IOT159 |	I just learned a lot and
+EDL	00:48:01,279	00:48:02,815	| IOT159 |	Now I have a sense of
+EDL	00:48:02,815	00:48:03,583	| IOT159 |	Both house
+EDL	00:48:03,583	00:48:04,351	| IOT159 |	How hard it is
+EDL	00:48:04,351	00:48:05,119	| IOT159 |	To develop
+EDL	00:48:05,119	00:48:08,191	| IOT159 |	Reactive responsive hearing aids responsive
+EDL	00:48:08,703	00:48:11,519	| IOT159 |	I don't even know what we should call this we probably shouldn't call it Heroes what do you think
+EDL	00:48:12,287	00:48:16,127	| IOT159 |	I am happier with hearables in hearing aids for sure I'd like to say
+EDL	00:48:16,127	00:48:16,639	| IOT159 |	It's all about him
+EDL	00:48:17,663	00:48:18,431	| IOT159 |	We can
+EDL	00:48:18,431	00:48:18,943	| IOT159 |	Have assistance
+EDL	00:48:19,455	00:48:20,223	| IOT159 |	Enhancement
+EDL	00:48:20,223	00:48:20,735	| IOT159 |	We can
+EDL	00:48:21,759	00:48:23,295	| IOT159 |	Delivery information out
+EDL	00:48:23,295	00:48:26,879	| IOT159 |	Meaning understand our bodies and have a device that helps us
+EDL	00:48:26,879	00:48:33,279	| IOT159 |	Connect to our environment to make us more effective but it's how we bring information into in an effective way that it actually helps us
+EDL	00:48:33,279	00:48:36,095	| IOT159 |	Make our lives more augmented and enhanced
+EDL	00:48:36,095	00:48:37,631	| IOT159 |	Awesome alright
+EDL	00:48:37,631	00:48:40,447	| IOT159 |	When can I expect to see things like that are this cool
+EDL	00:48:40,447	00:48:41,983	| IOT159 |	Some of them are already coming out there
+EDL	00:48:42,751	00:48:43,263	| IOT159 |	I think there's
+EDL	00:48:43,775	00:48:45,567	| IOT159 |	Awesome thank you so much Poppy
+EDL	00:48:45,567	00:48:51,967	| IOT159 |	Thank you Stacey that's it for this week thanks so much for listening to remember if you'd like more iot
+EDL	00:48:51,967	00:48:56,319	| IOT159 |	Sign up for my newsletter at Stacey on iot. Com
+EDL	00:48:56,319	00:49:02,463	| IOT159 |	Will see you next week 

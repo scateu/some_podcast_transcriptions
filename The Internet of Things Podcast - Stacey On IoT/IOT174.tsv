@@ -1,0 +1,1196 @@
+EDL	Record In	Record Out	Clipname	Subtitle
+EDL	00:00:08,704	00:00:11,776	| IOT174 |	Hey everyone welcome to the Internet of Things podcast this is your house
+EDL	00:00:12,288	00:00:13,568	| IOT174 |	Stacey Higginbotham
+EDL	00:00:13,568	00:00:15,104	| IOT174 |	Your co-host Kevin tofel
+EDL	00:00:15,104	00:00:16,128	| IOT174 |	And we have
+EDL	00:00:16,128	00:00:19,712	| IOT174 |	A stellar show for you today I am calling in from
+EDL	00:00:19,712	00:00:22,272	| IOT174 |	My hotel room at Google Cloud next
+EDL	00:00:22,272	00:00:24,576	| IOT174 |	Which we will talk about briefly and then we'll be
+EDL	00:00:25,856	00:00:29,696	| IOT174 |	And we will also cover some exciting things like a brand-new SmartThings tracker
+EDL	00:00:30,208	00:00:32,256	| IOT174 |	Didn't adding Google Assistant support
+EDL	00:00:32,256	00:00:35,584	| IOT174 |	Google Assistant also taking video calls for the
+EDL	00:00:35,584	00:00:37,632	| IOT174 |	Yet-to-be-released video screen
+EDL	00:00:37,632	00:00:38,400	| IOT174 |	Functionality
+EDL	00:00:38,400	00:00:39,680	| IOT174 |	There's I do
+EDL	00:00:39,680	00:00:41,216	| IOT174 |	Security flaw in the aisle
+EDL	00:00:41,216	00:00:43,520	| IOT174 |	Kevin's going to talk a little bit about
+EDL	00:00:43,520	00:00:45,568	| IOT174 |	Is cloud headache you guys are going to want to
+EDL	00:00:45,568	00:00:46,848	| IOT174 |	To stay for this
+EDL	00:00:46,848	00:00:47,616	| IOT174 |	And
+EDL	00:00:47,616	00:00:49,408	| IOT174 |	We are bringing back our
+EDL	00:00:49,408	00:00:50,688	| IOT174 |	Is this the worst
+EDL	00:00:50,688	00:00:52,224	| IOT174 |	Connected idea of the week
+EDL	00:00:52,992	00:00:53,760	| IOT174 |	Because
+EDL	00:00:53,760	00:00:54,784	| IOT174 |	Well we found something new
+EDL	00:00:54,784	00:00:55,552	| IOT174 |	Was pretty bad
+EDL	00:00:55,552	00:00:57,088	| IOT174 |	You can let us know what you think
+EDL	00:00:57,088	00:01:01,440	| IOT174 |	Who's there and our guest this week is Elana Fishman
+EDL	00:01:01,440	00:01:04,000	| IOT174 |	The CEO of wise
+EDL	00:01:04,000	00:01:08,352	| IOT174 |	Labs and you guys are probably familiar with this because we've talked about the wise cam
+EDL	00:01:09,376	00:01:12,192	| IOT174 |	She's going to explain how the heck they get those so
+EDL	00:01:12,704	00:01:13,728	| IOT174 |	So
+EDL	00:01:13,728	00:01:15,264	| IOT174 |	Before we get into all of this
+EDL	00:01:15,264	00:01:16,544	| IOT174 |	Let's hear a word from
+EDL	00:01:16,544	00:01:17,568	| IOT174 |	Our sponsor
+EDL	00:01:17,568	00:01:18,848	| IOT174 |	A pharaoh
+EDL	00:01:18,848	00:01:25,248	| IOT174 |	Looking for an iot platform find out why Kenmore and D-Link picked a pharaoh Pharaoh customers have Xperia
+EDL	00:01:25,248	00:01:31,648	| IOT174 |	As much as an 80% reduction in time-to-market 99% pure support calls antenna
+EDL	00:01:31,648	00:01:38,048	| IOT174 |	Text higher activation rates plus they can reuse 90% of their work from one project to the next to learn more
+EDL	00:01:38,048	00:01:41,632	| IOT174 |	Visita Ferro. IO that's a fer
+EDL	00:01:43,168	00:01:43,680	| IOT174 |	IO
+EDL	00:01:44,704	00:01:45,728	| IOT174 |	Hook head
+EDL	00:01:45,728	00:01:46,240	| IOT174 |	Heaven
+EDL	00:01:46,752	00:01:48,032	| IOT174 |	So I am at
+EDL	00:01:48,032	00:01:49,312	| IOT174 |	Google this week
+EDL	00:01:49,312	00:01:51,360	| IOT174 |	Probably just get to your Google
+EDL	00:01:51,360	00:01:52,384	| IOT174 |	Disclosure out-of-the-way
+EDL	00:01:52,384	00:01:54,688	| IOT174 |	I'm so glad you mentioned it because I forgot
+EDL	00:01:54,688	00:01:55,712	| IOT174 |	I am
+EDL	00:01:55,712	00:02:00,832	| IOT174 |	Freelancing for Google reading some blog posts for them is strictly in their
+EDL	00:02:00,832	00:02:03,392	| IOT174 |	Romeria has nothing to do with
+EDL	00:02:03,392	00:02:04,160	| IOT174 |	Ayote
+EDL	00:02:04,160	00:02:06,976	| IOT174 |	Tuyet also new influencer anything there
+EDL	00:02:07,488	00:02:11,328	| IOT174 |	And the other thing I want to say is I'm so excited that your Google Cloud next because
+EDL	00:02:11,328	00:02:16,192	| IOT174 |	Last year when I had it I was working for Google full-time and I had such a blast working at event
+EDL	00:02:16,192	00:02:22,336	| IOT174 |	I think it's a cool if I could just eat all cloud and let me know if your developer you are really into it I'm sure but it's still some neat stuff coming out
+EDL	00:02:22,336	00:02:24,384	| IOT174 |	Lots of really good custom
+EDL	00:02:24,384	00:02:29,504	| IOT174 |	Choosing Google Cloud
+EDL	00:02:29,504	00:02:30,272	| IOT174 |	3
+EDL	00:02:30,272	00:02:33,600	| IOT174 |	Consider worth mentioning for The Internet of Things
+EDL	00:02:34,112	00:02:37,696	| IOT174 |	For you actually by the way you guys
+EDL	00:02:37,696	00:02:40,512	| IOT174 |	Chromebooks
+EDL	00:02:43,840	00:02:44,608	| IOT174 |	Dot-com
+EDL	00:02:44,608	00:02:45,376	| IOT174 |	So
+EDL	00:02:47,936	00:02:51,776	| IOT174 |	If you have time for another hobby after IRT come visit
+EDL	00:02:51,776	00:02:52,800	| IOT174 |	Do you know I think they're easier
+EDL	00:02:53,824	00:02:55,872	| IOT174 |	Let's talk about Google's news
+EDL	00:02:55,872	00:02:57,408	| IOT174 |	This week they announced
+EDL	00:02:57,408	00:02:58,688	| IOT174 |	Kubernetes on
+EDL	00:02:58,688	00:03:01,248	| IOT174 |	Prim and for all
+EDL	00:03:01,248	00:03:03,808	| IOT174 |	This is an orchestration layer
+EDL	00:03:04,320	00:03:05,344	| IOT174 |	It's actually
+EDL	00:03:05,344	00:03:08,416	| IOT174 |	Turning out to be the orchestration therefore
+EDL	00:03:08,416	00:03:10,976	| IOT174 |	Iot to tie the Cloud 2
+EDL	00:03:10,976	00:03:13,536	| IOT174 |	What everyone calls the edge and we can defer
+EDL	00:03:13,536	00:03:14,304	| IOT174 |	A little bit
+EDL	00:03:14,304	00:03:16,864	| IOT174 |	The Edge actually is the point is
+EDL	00:03:16,864	00:03:18,144	| IOT174 |	If you're going to build something
+EDL	00:03:18,144	00:03:21,216	| IOT174 |	As a developer both places
+EDL	00:03:21,216	00:03:22,496	| IOT174 |	Today because I
+EDL	00:03:23,776	00:03:29,664	| IOT174 |	Internet places you mean in the cloud as well as maybe on-premises at your place of business
+EDL	00:03:29,664	00:03:34,784	| IOT174 |	Premises at your place of business and eventually you want to write things that run in the cloud and on like
+EDL	00:03:35,296	00:03:36,064	| IOT174 |	Cars
+EDL	00:03:36,064	00:03:40,416	| IOT174 |	And other computers that are running around like Gateway devices on premise
+EDL	00:03:40,416	00:03:41,696	| IOT174 |	So it's not just like
+EDL	00:03:41,696	00:03:42,464	| IOT174 |	Super
+EDL	00:03:42,464	00:03:43,232	| IOT174 |	Server computer
+EDL	00:03:44,000	00:03:46,560	| IOT174 |	So Microsoft announced something called cubelets
+EDL	00:03:47,072	00:03:48,352	| IOT174 |	They're actually virtual Cuba
+EDL	00:03:48,864	00:03:50,144	| IOT174 |	That allows
+EDL	00:03:50,144	00:03:51,424	| IOT174 |	2
+EDL	00:03:51,424	00:03:54,496	| IOT174 |	Have his orchestration there been both places unless you manage everything
+EDL	00:03:55,008	00:03:55,520	| IOT174 |	Incoherent
+EDL	00:03:56,288	00:03:56,800	| IOT174 |	It's a big thing
+EDL	00:03:57,312	00:03:59,872	| IOT174 |	I'm not going to get too technical with you guys because you're probably like
+EDL	00:04:00,640	00:04:01,408	| IOT174 |	Stop
+EDL	00:04:02,432	00:04:06,784	| IOT174 |	I don't know what it is anyway they have them at Thanksgiving we have giblets in
+EDL	00:04:10,368	00:04:11,648	| IOT174 |	Right I saw your joke
+EDL	00:04:11,648	00:04:14,464	| IOT174 |	I'm sorry
+EDL	00:04:14,976	00:04:15,488	| IOT174 |	Okay
+EDL	00:04:16,000	00:04:16,768	| IOT174 |	So
+EDL	00:04:16,768	00:04:18,047	| IOT174 |	Google announce kubernetes
+EDL	00:04:18,559	00:04:22,143	| IOT174 |	On premise which is a step closer to getting these things
+EDL	00:04:22,143	00:04:22,655	| IOT174 |	Working everywhere
+EDL	00:04:23,167	00:04:24,191	| IOT174 |	This is an important project
+EDL	00:04:24,703	00:04:25,215	| IOT174 |	Pay attention
+EDL	00:04:25,983	00:04:27,775	| IOT174 |	They also announced age TP
+EDL	00:04:27,775	00:04:28,543	| IOT174 |	To use
+EDL	00:04:28,543	00:04:32,639	| IOT174 |	Gpus are there tensorflow processors are tensor processors which is their machine
+EDL	00:04:33,407	00:04:35,967	| IOT174 |	Processors there specially designed ships just for
+EDL	00:04:35,967	00:04:36,735	| IOT174 |	Machine learning
+EDL	00:04:36,735	00:04:39,551	| IOT174 |	These are not
+EDL	00:04:42,367	00:04:44,671	| IOT174 |	Media camera things that run Linux
+EDL	00:04:44,671	00:04:47,487	| IOT174 |	I'm in the also announced Cloud iot Edge
+EDL	00:04:47,487	00:04:49,791	| IOT174 |	Which is pretty much the same thing Microsoft
+EDL	00:04:49,791	00:04:52,351	| IOT174 |	How's their iot Edge software in this is
+EDL	00:04:52,351	00:04:54,143	| IOT174 |	Again just a way to
+EDL	00:04:54,143	00:04:55,167	| IOT174 |	Annette
+EDL	00:04:55,167	00:04:55,935	| IOT174 |	Door
+EDL	00:04:55,935	00:04:58,239	| IOT174 |	Device with limited computing power
+EDL	00:04:58,239	00:04:59,519	| IOT174 |	Back to the cloud
+EDL	00:05:01,567	00:05:02,079	| IOT174 |	So that's what
+EDL	00:05:03,359	00:05:04,639	| IOT174 |	Now everybody has
+EDL	00:05:05,407	00:05:08,223	| IOT174 |	Everybody I really just want Google Amazon
+EDL	00:05:08,223	00:05:11,551	| IOT174 |	Microsoft Google has been a laggard in the iot space
+EDL	00:05:11,551	00:05:13,343	| IOT174 |	So these announcements really loud
+EDL	00:05:13,343	00:05:14,111	| IOT174 |	Catch up with things
+EDL	00:05:15,391	00:05:20,255	| IOT174 |	One more qualifier here in case people have not heard of kubernetes is a container
+EDL	00:05:20,255	00:05:21,023	| IOT174 |	Solution
+EDL	00:05:21,023	00:05:27,423	| IOT174 |	So you can not worry about the setting up virtual machines and servers and all that you literally just have a container without a plant
+EDL	00:05:27,423	00:05:28,959	| IOT174 |	Uninstall Dimmitt on demand
+EDL	00:05:28,959	00:05:35,359	| IOT174 |	Kubernetes is open source button is doing is they have their gke kubernetes engine
+EDL	00:05:35,359	00:05:36,895	| IOT174 |	The tie into all of their iot stuff
+EDL	00:05:37,919	00:05:38,943	| IOT174 |	End
+EDL	00:05:38,943	00:05:40,479	| IOT174 |	Letter
+EDL	00:05:40,479	00:05:41,503	| IOT174 |	So I'm not going to
+EDL	00:05:41,503	00:05:46,111	| IOT174 |	Picture story
+EDL	00:05:47,135	00:05:48,671	| IOT174 |	Microsoft and Amazon
+EDL	00:05:49,951	00:05:52,511	| IOT174 |	Go Google and actually last bit we talked
+EDL	00:05:52,511	00:05:58,911	| IOT174 |	Probably six months ago on this podcast is Google's IRT strategy and I think we've got a better answer that now
+EDL	00:05:58,911	00:06:00,191	| IOT174 |	You just talked about
+EDL	00:06:00,191	00:06:04,031	| IOT174 |	Next it's becoming a little more cohesive it's an easier story to tell
+EDL	00:06:04,031	00:06:04,543	| IOT174 |	Yes
+EDL	00:06:05,567	00:06:06,847	| IOT174 |	Yay
+EDL	00:06:06,847	00:06:07,615	| IOT174 |	Okay
+EDL	00:06:07,615	00:06:09,407	| IOT174 |	No moving on to
+EDL	00:06:09,407	00:06:10,431	| IOT174 |	Fun and exciting thing
+EDL	00:06:10,431	00:06:11,455	| IOT174 |	Kevin had a scoop this week
+EDL	00:06:11,967	00:06:12,479	| IOT174 |	And
+EDL	00:06:14,015	00:06:15,039	| IOT174 |	Yeah I had to scoop this week
+EDL	00:06:17,343	00:06:19,647	| IOT174 |	Oh you want to really talk about it sure
+EDL	00:06:20,927	00:06:27,327	| IOT174 |	I actually for my Chromebook stuff I actually scour the FCC database here in the US because any devices
+EDL	00:06:27,327	00:06:33,727	| IOT174 |	That emit wireless radio signals are tested by the SEC before they can go on sale and that's how I found about new Chromebooks another device
+EDL	00:06:33,727	00:06:36,543	| IOT174 |	And I found a new device
+EDL	00:06:36,543	00:06:39,359	| IOT174 |	Not only that I think is the
+EDL	00:06:39,359	00:06:40,127	| IOT174 |	First
+EDL	00:06:40,127	00:06:41,663	| IOT174 |	In the US anyway the first
+EDL	00:06:42,687	00:06:45,503	| IOT174 |	T consumer device that will use either
+EDL	00:06:45,503	00:06:48,319	| IOT174 |	Cat M1 or NB iot Networks
+EDL	00:06:48,319	00:06:49,855	| IOT174 |	Through either Verizon or
+EDL	00:06:49,855	00:06:50,879	| IOT174 |	AT&T
+EDL	00:06:50,879	00:06:57,279	| IOT174 |	The device is the Samsung SmartThings tracker it has not been announced during the US so that's where the
+EDL	00:06:57,279	00:06:59,583	| IOT174 |	Scoop part comes in however
+EDL	00:06:59,583	00:07:00,607	| IOT174 |	They launched
+EDL	00:07:00,607	00:07:01,375	| IOT174 |	A
+EDL	00:07:01,375	00:07:07,775	| IOT174 |	Product that looks exactly the same as the same functionality in Korea back in October and they called that the Samsung
+EDL	00:07:07,775	00:07:09,055	| IOT174 |	Connect tag
+EDL	00:07:09,055	00:07:11,359	| IOT174 |	And basically what this device is it
+EDL	00:07:11,359	00:07:17,759	| IOT174 |	I like a Bluetooth tracker that you might put on your car keys or a backpack or whatever is my pay whatever possession
+EDL	00:07:17,759	00:07:21,087	| IOT174 |	Have we might carry it around with you even I'll tell you why in a second it's got
+EDL	00:07:21,087	00:07:23,135	| IOT174 |	Bluetooth GPS
+EDL	00:07:23,135	00:07:24,159	| IOT174 |	But then it connects
+EDL	00:07:24,159	00:07:26,207	| IOT174 |	Next to the iot networks imagine
+EDL	00:07:26,207	00:07:27,743	| IOT174 |	And what that will do is
+EDL	00:07:27,743	00:07:31,583	| IOT174 |	It will allow you to remotely find these
+EDL	00:07:31,583	00:07:32,351	| IOT174 |	Devices
+EDL	00:07:32,351	00:07:38,751	| IOT174 |	Are your possessions with the devices attached you can't do that with say a Tracker or a tile unless you get crowdsource
+EDL	00:07:38,751	00:07:40,543	| IOT174 |	Information from other users and such
+EDL	00:07:40,543	00:07:43,103	| IOT174 |	This will be just like a Find My Phone type
+EDL	00:07:43,103	00:07:49,503	| IOT174 |	The function so I don't know the price yet don't know what the service cost will be a couple bucks a month for sure it also has a button
+EDL	00:07:49,503	00:07:55,903	| IOT174 |	On it so that you can press the button and send your location to anyone in your contacts and
+EDL	00:07:55,903	00:07:58,719	| IOT174 |	Smartphone component that many people may not realize
+EDL	00:07:58,719	00:07:59,743	| IOT174 |	You could use this
+EDL	00:07:59,743	00:08:02,303	| IOT174 |	Is a way to geofence your home
+EDL	00:08:02,303	00:08:08,703	| IOT174 |	Close your home your drive close to your home you could tie into SmartThings Hub because it is a SmartThings device have your garage door opener
+EDL	00:08:08,703	00:08:09,727	| IOT174 |	Turn lights go on soap
+EDL	00:08:09,727	00:08:15,359	| IOT174 |	Using your phone for the geofencing you could use the Samsung connect tracker based on what I believe is coming
+EDL	00:08:15,359	00:08:17,151	| IOT174 |	Got it yes and
+EDL	00:08:17,151	00:08:19,199	| IOT174 |	I actually wouldn't have my SmartThings
+EDL	00:08:19,199	00:08:24,575	| IOT174 |	The presence detector was one of my favorite items is part of like the little bundle because I put one in my
+EDL	00:08:24,575	00:08:26,623	| IOT174 |	Husband's car and I used to have him
+EDL	00:08:26,623	00:08:28,671	| IOT174 |	When she was getting closer
+EDL	00:08:29,439	00:08:31,487	| IOT174 |	DiGiorno you put that in
+EDL	00:08:31,487	00:08:34,559	| IOT174 |	Okay and I wasn't stalking him
+EDL	00:08:34,559	00:08:35,071	| IOT174 |	I just want
+EDL	00:08:37,375	00:08:41,727	| IOT174 |	I just wanted when he got close enough to get to my house I want to be able to add a light flash
+EDL	00:08:42,239	00:08:43,263	| IOT174 |	Run downstairs
+EDL	00:08:45,567	00:08:46,335	| IOT174 |	Who is my
+EDL	00:08:46,335	00:08:50,943	| IOT174 |	Yeah I never empty the dishwasher and when blood comes home I get yelled at so I like this I did okay
+EDL	00:08:52,223	00:08:52,991	| IOT174 |	It's B get out of jail
+EDL	00:08:55,551	00:08:56,063	| IOT174 |	I don't know how much
+EDL	00:08:56,575	00:08:57,343	| IOT174 |	Will find out
+EDL	00:08:57,343	00:08:58,111	| IOT174 |	All right
+EDL	00:08:58,111	00:08:58,879	| IOT174 |	Next
+EDL	00:08:58,879	00:09:00,159	| IOT174 |	We're going to talk about
+EDL	00:09:00,159	00:09:02,719	| IOT174 |	I don't know what to call this but I saw two stories this week
+EDL	00:09:04,767	00:09:09,631	| IOT174 |	When was from Slate and it was talking about it was a guy who would install the ring video doorbell
+EDL	00:09:09,631	00:09:11,935	| IOT174 |	And she loved it but he found himself
+EDL	00:09:11,935	00:09:13,727	| IOT174 |	Freaking out because of the notify
+EDL	00:09:13,727	00:09:14,495	| IOT174 |	Patience
+EDL	00:09:14,495	00:09:17,055	| IOT174 |	And there were two components to this one is
+EDL	00:09:17,055	00:09:19,615	| IOT174 |	He didn't realize that he could fine-tune as notifications
+EDL	00:09:20,639	00:09:21,919	| IOT174 |	II was
+EDL	00:09:21,919	00:09:22,687	| IOT174 |	He still
+EDL	00:09:22,687	00:09:23,967	| IOT174 |	After you done that
+EDL	00:09:23,967	00:09:28,063	| IOT174 |	Still kind of freaked out knowing all this stuff any kind of developed an unhealthy relationship with her
+EDL	00:09:28,063	00:09:29,087	| IOT174 |	Does ring video doorbell
+EDL	00:09:29,087	00:09:31,135	| IOT174 |	Maybe less safe in Disney World
+EDL	00:09:32,159	00:09:33,183	| IOT174 |	The other story
+EDL	00:09:33,183	00:09:34,463	| IOT174 |	Was
+EDL	00:09:34,463	00:09:35,231	| IOT174 |	And it talked about
+EDL	00:09:35,743	00:09:37,023	| IOT174 |	It basically talked about
+EDL	00:09:37,023	00:09:38,559	| IOT174 |	Trying to piggyback on
+EDL	00:09:39,839	00:09:43,167	| IOT174 |	This President moved into a house with smart gadgets and had a lot of trouble
+EDL	00:09:43,167	00:09:44,959	| IOT174 |	Cutting them up and installing them
+EDL	00:09:44,959	00:09:48,031	| IOT174 |	And then they also had an issue with the nest because
+EDL	00:09:48,031	00:09:50,335	| IOT174 |	They were trying to program The Nest Thermostat
+EDL	00:09:51,103	00:09:54,687	| IOT174 |	I don't know how cold do you want to be what time do you want to change
+EDL	00:09:54,687	00:10:01,087	| IOT174 |	That's a little ironic because the nest actually if you just reset it and live with it for a week it'll figure that out so but
+EDL	00:10:01,087	00:10:02,623	| IOT174 |	2 things I thought were
+EDL	00:10:02,623	00:10:04,671	| IOT174 |	We're talking about from the stories one
+EDL	00:10:04,671	00:10:07,487	| IOT174 |	Smart home devices are still really difficult
+EDL	00:10:07,487	00:10:10,815	| IOT174 |	There's a lot of questions and information with the setup process
+EDL	00:10:10,815	00:10:12,607	| IOT174 |	People kind of take for granted
+EDL	00:10:14,143	00:10:18,751	| IOT174 |	First aid for granite I don't think they should because it is hard when you put these things into try to figure out
+EDL	00:10:19,263	00:10:22,847	| IOT174 |	I know how many zones does my sprinkler have what type of dirt do I have
+EDL	00:10:24,127	00:10:24,639	| IOT174 |	No
+EDL	00:10:25,151	00:10:29,247	| IOT174 |	I mean part as I read that article this late one in particular I thought he was over react
+EDL	00:10:29,759	00:10:33,087	| IOT174 |	However I get it and I still think he was to a point but less
+EDL	00:10:33,087	00:10:38,719	| IOT174 |	So now as I think about your average consumer who just says over
+EDL	00:10:38,719	00:10:45,119	| IOT174 |	The features that are touted are great you can see who's coming up your walkway before you can get there you can have it to a voice conversation
+EDL	00:10:45,119	00:10:49,471	| IOT174 |	There is benefit there but what comes with that isn't talked about
+EDL	00:10:49,471	00:10:50,239	| IOT174 |	And
+EDL	00:10:50,239	00:10:52,799	| IOT174 |	So I sort of get his point that you know he's like this
+EDL	00:10:52,799	00:10:53,567	| IOT174 |	Too much information
+EDL	00:10:53,567	00:10:54,591	| IOT174 |	Information overload
+EDL	00:10:54,591	00:10:56,895	| IOT174 |	I feel like the house is wearing Google Glass he said
+EDL	00:10:56,895	00:10:57,663	| IOT174 |	I sorta
+EDL	00:10:57,663	00:10:58,431	| IOT174 |	Get that now
+EDL	00:10:58,431	00:11:02,015	| IOT174 |	It comes back to planning what you want you can just go out and buy a product
+EDL	00:11:02,527	00:11:03,551	| IOT174 |	Without planning
+EDL	00:11:03,551	00:11:05,855	| IOT174 |	Because you need to understand what it's going to do when it's
+EDL	00:11:05,855	00:11:07,135	| IOT174 |	Going to do that you like
+EDL	00:11:07,135	00:11:09,183	| IOT174 |	What's going to do it you don't like what kind of information is going to capture
+EDL	00:11:09,951	00:11:14,815	| IOT174 |	And you need to fine-tune your settings I think a lot of his beefs could have been handled better in terms of
+EDL	00:11:14,815	00:11:16,095	| IOT174 |	The notification center
+EDL	00:11:16,095	00:11:18,655	| IOT174 |	So you're right though it is still complicated
+EDL	00:11:18,655	00:11:19,423	| IOT174 |	It's a long way of saying
+EDL	00:11:19,935	00:11:20,703	| IOT174 |	And there are
+EDL	00:11:21,215	00:11:22,239	| IOT174 |	Like my husband
+EDL	00:11:22,239	00:11:28,383	| IOT174 |	How to Fitbit and he took it off because it's dead into like certain the rosies he had he was like I don't like it it's not making me healthier
+EDL	00:11:29,151	00:11:30,175	| IOT174 |	More focused on this thing
+EDL	00:11:31,199	00:11:37,087	| IOT174 |	I understand that I think also as he gets older he's going to find his child has a baby
+EDL	00:11:37,087	00:11:43,487	| IOT174 |	Gets older he's going to have an unintended side-effect of when I'm traveling I actually love check it out by video doorbell because
+EDL	00:11:43,487	00:11:44,255	| IOT174 |	My daughter Whitney
+EDL	00:11:44,767	00:11:46,047	| IOT174 |	See her everyday when she left
+EDL	00:11:48,351	00:11:50,655	| IOT174 |	So that was just a nice thing that
+EDL	00:11:51,423	00:11:52,447	| IOT174 |	And then also
+EDL	00:11:52,447	00:11:54,495	| IOT174 |	When she leaves stuff at school
+EDL	00:11:54,495	00:11:56,287	| IOT174 |	We can always check the video doorbell evidence
+EDL	00:11:56,799	00:11:58,847	| IOT174 |	Wearing a jacket when you came home
+EDL	00:12:00,383	00:12:01,407	| IOT174 |	So
+EDL	00:12:01,407	00:12:03,199	| IOT174 |	Yeah I think if your
+EDL	00:12:03,199	00:12:05,503	| IOT174 |	Type of person who wants that
+EDL	00:12:05,503	00:12:09,855	| IOT174 |	Connection to your property in your family and your pets in Saint Beast
+EDL	00:12:09,855	00:12:11,903	| IOT174 |	Obviously there's a lot of great devices that can do that
+EDL	00:12:11,903	00:12:18,303	| IOT174 |	If you're the type of person who says I get too many notifications on my phone today and I don't even have Smart Home devices if you suffer from it
+EDL	00:12:18,303	00:12:19,327	| IOT174 |	Information overload
+EDL	00:12:19,327	00:12:20,863	| IOT174 |	You may want to think twice about
+EDL	00:12:20,863	00:12:22,911	| IOT174 |	Really invested in some of these products
+EDL	00:12:23,423	00:12:24,191	| IOT174 |	Yes
+EDL	00:12:24,191	00:12:25,727	| IOT174 |	Speaking of doorbells
+EDL	00:12:26,751	00:12:31,103	| IOT174 |	Which is best for you guys when is Kevin swapped out his doorbell
+EDL	00:12:31,103	00:12:32,127	| IOT174 |	You swapped out your ring
+EDL	00:12:33,663	00:12:34,943	| IOT174 |	I did
+EDL	00:12:34,943	00:12:38,015	| IOT174 |	I did I have been having some issues with the ring doorbell and turn
+EDL	00:12:38,015	00:12:44,415	| IOT174 |	Is connectivity and I couldn't even do a hard reset for some reason the kids would never get me through to the setup process to
+EDL	00:12:44,415	00:12:45,439	| IOT174 |	Find my wireless network
+EDL	00:12:45,951	00:12:46,719	| IOT174 |	And
+EDL	00:12:46,719	00:12:47,743	| IOT174 |	I suspected
+EDL	00:12:47,743	00:12:48,767	| IOT174 |	Probably
+EDL	00:12:48,767	00:12:52,351	| IOT174 |	Firmware or Hardware issue at this point in the reason I say that is
+EDL	00:12:52,351	00:12:54,911	| IOT174 |	Because I recently purchased a nest by Yale lock
+EDL	00:12:54,911	00:12:59,519	| IOT174 |	Lock so I decided to let's go with a nest doorbell to replace the ring
+EDL	00:12:59,519	00:13:05,919	| IOT174 |	Bring a buddy who's installed and it is video doorbells if you have a regular old chime you know you have like little jumper cables
+EDL	00:13:05,919	00:13:08,223	| IOT174 |	To install in the chime itself
+EDL	00:13:08,223	00:13:12,319	| IOT174 |	And I did that with the ring and everything was working for a while then it stopped working
+EDL	00:13:12,319	00:13:14,367	| IOT174 |	Hello comes with the same type of
+EDL	00:13:14,367	00:13:16,159	| IOT174 |	Connections and let you know what
+EDL	00:13:16,159	00:13:17,183	| IOT174 |	I bet you
+EDL	00:13:17,183	00:13:19,487	| IOT174 |	It's pretty much the same from an electric
+EDL	00:13:19,487	00:13:22,815	| IOT174 |	Circuit standpoint
+EDL	00:13:22,815	00:13:26,911	| IOT174 |	Pulling out the doorbell itself the ring doorbell putting in the nest hello
+EDL	00:13:26,911	00:13:30,751	| IOT174 |	I went through the setup process and it does work so I didn't have to go into the time so
+EDL	00:13:30,751	00:13:33,055	| IOT174 |	Text a good thing people want to swap doorbells
+EDL	00:13:33,055	00:13:35,103	| IOT174 |	Probably don't have to get into your old chime again
+EDL	00:13:36,127	00:13:36,895	| IOT174 |	Yeah
+EDL	00:13:36,895	00:13:37,407	| IOT174 |	The other thing is
+EDL	00:13:37,919	00:13:43,551	| IOT174 |	It went right like I said through the setup process flawlessly ATS working 100% like no issues whatsoever so
+EDL	00:13:43,551	00:13:44,575	| IOT174 |	Again I think I probably have
+EDL	00:13:45,087	00:13:46,111	| IOT174 |	Battering units
+EDL	00:13:46,623	00:13:47,647	| IOT174 |	Probably should have
+EDL	00:13:48,159	00:13:49,439	| IOT174 |	Complain about it
+EDL	00:13:49,439	00:13:50,975	| IOT174 |	Send it back but
+EDL	00:13:50,975	00:13:51,743	| IOT174 |	I don't know either
+EDL	00:13:51,743	00:13:53,535	| IOT174 |	Starting to go all nest in that regard
+EDL	00:13:53,535	00:13:54,303	| IOT174 |	Hey
+EDL	00:13:55,327	00:13:56,863	| IOT174 |	So final bit of doorbell
+EDL	00:13:56,863	00:13:57,631	| IOT174 |	This is
+EDL	00:13:57,631	00:14:00,703	| IOT174 |	Arlo is going to add a doorbell to it
+EDL	00:14:00,703	00:14:01,983	| IOT174 |	Lineup of products
+EDL	00:14:01,983	00:14:05,311	| IOT174 |	The timing on that is certain but
+EDL	00:14:05,311	00:14:06,079	| IOT174 |	It's not a video.
+EDL	00:14:06,591	00:14:08,895	| IOT174 |	Fedora Wireless
+EDL	00:14:08,895	00:14:10,687	| IOT174 |	You just push it and it notifies you
+EDL	00:14:10,687	00:14:11,967	| IOT174 |	Your phone
+EDL	00:14:12,479	00:14:14,783	| IOT174 |	Talk to the person
+EDL	00:14:14,783	00:14:15,807	| IOT174 |	Are you on your
+EDL	00:14:21,183	00:14:23,487	| IOT174 |	Ankle tie it into the existing Arlo video products
+EDL	00:14:23,999	00:14:27,327	| IOT174 |	That's why it can be battery powered off a two-way batteries for
+EDL	00:14:27,327	00:14:28,863	| IOT174 |	Two double a batteries for
+EDL	00:14:31,423	00:14:36,287	| IOT174 |	Yeah I remember we had a call or question about video doorbells that were battery-powered and
+EDL	00:14:36,287	00:14:38,079	| IOT174 |	The issue is the video component
+EDL	00:14:38,079	00:14:43,455	| IOT174 |	And that's what's gone from this particular device in that way they can run on those you said to batteries
+EDL	00:14:43,455	00:14:48,319	| IOT174 |	Spray year you can't do that with video we just can't and that's why they're typically wired so
+EDL	00:14:48,319	00:14:51,391	| IOT174 |	I see why this might appeal to a
+EDL	00:14:52,159	00:14:52,927	| IOT174 |	Swap
+EDL	00:14:52,927	00:14:53,695	| IOT174 |	People but
+EDL	00:14:53,695	00:14:55,743	| IOT174 |	Not a very large swath not homeowners
+EDL	00:14:56,255	00:14:57,023	| IOT174 |	I mean
+EDL	00:14:57,023	00:14:57,791	| IOT174 |	A lot of people
+EDL	00:14:58,815	00:14:59,583	| IOT174 |	Videos
+EDL	00:14:59,583	00:15:01,631	| IOT174 |	So I don't know but there's like the guide
+EDL	00:15:03,679	00:15:04,447	| IOT174 |	So
+EDL	00:15:04,447	00:15:05,215	| IOT174 |	Okay
+EDL	00:15:05,215	00:15:07,007	| IOT174 |	Speaking of getting uncomfortable
+EDL	00:15:07,519	00:15:10,079	| IOT174 |	Let's talk about the latest security flaw
+EDL	00:15:11,871	00:15:18,271	| IOT174 |	Yeah yeah and the Bluetooth Sig is already spoken up about it most of the coverage that I read about
+EDL	00:15:18,271	00:15:19,807	| IOT174 |	Thought this was really about
+EDL	00:15:19,807	00:15:22,111	| IOT174 |	Bluetooth devices such as your phones and things
+EDL	00:15:22,111	00:15:28,511	| IOT174 |	I think there's actually IRT component because there are blue toothpaste iot devices so that's the only reason I bring this
+EDL	00:15:28,511	00:15:30,303	| IOT174 |	Because it has to do with the
+EDL	00:15:30,303	00:15:35,423	| IOT174 |	Bluetooth standard simple secure pairing process and Bluetooth LE secure connections pairing process
+EDL	00:15:35,935	00:15:38,495	| IOT174 |	Entirety devices can use those
+EDL	00:15:39,007	00:15:40,287	| IOT174 |	It basically
+EDL	00:15:40,287	00:15:42,591	| IOT174 |	Has to do with the key pairs in the security
+EDL	00:15:42,591	00:15:44,127	| IOT174 |	Part of the pairing process
+EDL	00:15:44,639	00:15:46,175	| IOT174 |	And the only way if
+EDL	00:15:46,175	00:15:47,711	| IOT174 |	This was an iot device repair
+EDL	00:15:47,711	00:15:48,991	| IOT174 |	The only way somebody could
+EDL	00:15:48,991	00:15:51,551	| IOT174 |	Possibly intercept and inject malicious code
+EDL	00:15:51,551	00:15:53,087	| IOT174 |	They have to be in range
+EDL	00:15:53,087	00:15:55,391	| IOT174 |	Your devices as you are Perry
+EDL	00:15:55,903	00:16:01,535	| IOT174 |	So you know any time you're going to pair Bluetooth devices just make sure Nobody's around for 350 I guess at the other the best I can say
+EDL	00:16:02,047	00:16:03,071	| IOT174 |	Try to avoid that guy walking
+EDL	00:16:04,095	00:16:04,863	| IOT174 |	It's always
+EDL	00:16:05,631	00:16:08,447	| IOT174 |	And see if you had a video doorbell you know where it was but that's a whole nother issue
+EDL	00:16:09,471	00:16:15,871	| IOT174 |	Basically Microsoft said their devices are not affected Google hasn't said any about Android based devices not Center
+EDL	00:16:15,871	00:16:22,271	| IOT174 |	Because there are a few I have two devices that are android-based but Apple broadcom Intel have all deployed fixes for the bugs
+EDL	00:16:22,271	00:16:23,551	| IOT174 |	And Qualcomm has as well
+EDL	00:16:23,551	00:16:28,927	| IOT174 |	I don't have a list of devices on the IRT side that have been affected because nobody has put that together but I just thought I'd throw it out there
+EDL	00:16:34,559	00:16:35,071	| IOT174 |	All right
+EDL	00:16:36,863	00:16:37,631	| IOT174 |	About
+EDL	00:16:38,399	00:16:40,191	| IOT174 |	One didn't his attitude
+EDL	00:16:40,191	00:16:46,591	| IOT174 |	Google Assistant support
+EDL	00:16:46,591	00:16:48,127	| IOT174 |	Smart Home Products
+EDL	00:16:48,127	00:16:48,639	| IOT174 |	So
+EDL	00:16:51,711	00:16:54,015	| IOT174 |	Sign up with Vivint are giving every new customer
+EDL	00:16:54,015	00:16:55,807	| IOT174 |	Two Google home mini devices now
+EDL	00:16:55,807	00:16:57,855	| IOT174 |	And also they are adding support
+EDL	00:16:57,855	00:16:59,647	| IOT174 |	For The Nest Thermostat
+EDL	00:16:59,647	00:17:01,183	| IOT174 |	E and Google Wi-Fi
+EDL	00:17:02,463	00:17:03,231	| IOT174 |	Yeah okay
+EDL	00:17:04,511	00:17:06,815	| IOT174 |	Google Assistant can now start video calls
+EDL	00:17:06,815	00:17:07,839	| IOT174 |	Duo
+EDL	00:17:09,119	00:17:09,631	| IOT174 |	Duo
+EDL	00:17:10,655	00:17:12,447	| IOT174 |	Weather
+EDL	00:17:12,447	00:17:13,983	| IOT174 |	I could really get it
+EDL	00:17:13,983	00:17:14,751	| IOT174 |	6
+EDL	00:17:14,751	00:17:16,287	| IOT174 |	Of my hundreds of contacts I think
+EDL	00:17:16,287	00:17:17,567	| IOT174 |	Six or seven of them
+EDL	00:17:17,567	00:17:18,847	| IOT174 |	Wow
+EDL	00:17:18,847	00:17:19,615	| IOT174 |	Wow that's pretty good
+EDL	00:17:20,127	00:17:21,919	| IOT174 |	You know cuz I'm used to help with
+EDL	00:17:21,919	00:17:24,223	| IOT174 |	I did dog food when I'm sick Google but haven't used it since
+EDL	00:17:25,503	00:17:28,319	| IOT174 |	This is phone Centric right now it's
+EDL	00:17:28,319	00:17:31,647	| IOT174 |	You can then use your phone with Google Assistant simulator Android phone
+EDL	00:17:31,647	00:17:32,927	| IOT174 |	USAA
+EDL	00:17:32,927	00:17:34,463	| IOT174 |	When I can say it but hey G
+EDL	00:17:34,463	00:17:36,511	| IOT174 |	No call so-and-so on Duo
+EDL	00:17:36,511	00:17:41,119	| IOT174 |	And hopefully won't say on who I place the call
+EDL	00:17:43,167	00:17:43,679	| IOT174 |	Okay
+EDL	00:17:44,703	00:17:47,007	| IOT174 |	Did you go I think we have expanded now yes I'm sorry
+EDL	00:17:47,519	00:17:49,311	| IOT174 |	Maybe that's why people top music hits
+EDL	00:17:49,823	00:17:51,359	| IOT174 |	What it is
+EDL	00:17:51,359	00:17:54,431	| IOT174 |	Regardless so for video calling you can use Duo yet
+EDL	00:17:54,431	00:17:56,479	| IOT174 |	It's only for phones right now
+EDL	00:17:56,479	00:18:02,367	| IOT174 |	I think of this could be a precursor to Google home devices with screens maybe that
+EDL	00:18:02,879	00:18:03,391	| IOT174 |	Smart
+EDL	00:18:03,903	00:18:06,207	| IOT174 |	Display that we saw at CES for example
+EDL	00:18:06,719	00:18:07,487	| IOT174 |	601 from Lenovo
+EDL	00:18:08,511	00:18:10,815	| IOT174 |	Is take my money
+EDL	00:18:10,815	00:18:17,215	| IOT174 |	But even like my Nvidia Shield has Google Assistant built-in and is obviously connected to a TV because it's an Android TV
+EDL	00:18:17,215	00:18:17,727	| IOT174 |	Set up box
+EDL	00:18:18,239	00:18:24,639	| IOT174 |	So if there was a video camera that I could be adding to the Nvidia boom I can do it that way as well there's lots of possibilities
+EDL	00:18:24,639	00:18:27,199	| IOT174 |	Don't get too excited yet cuz it's really just for phones at the MoMA
+EDL	00:18:27,711	00:18:28,223	| IOT174 |	And it's doing
+EDL	00:18:28,735	00:18:29,503	| IOT174 |	Something got to
+EDL	00:18:31,039	00:18:32,063	| IOT174 |	Moving right along
+EDL	00:18:32,575	00:18:33,855	| IOT174 |	Let's talk about
+EDL	00:18:33,855	00:18:35,135	| IOT174 |	Your cloud
+EDL	00:18:35,135	00:18:35,647	| IOT174 |	Xperia
+EDL	00:18:36,927	00:18:37,695	| IOT174 |	I'm very curious
+EDL	00:18:38,463	00:18:40,255	| IOT174 |	About acting
+EDL	00:18:40,255	00:18:41,023	| IOT174 |	Voicemail
+EDL	00:18:42,815	00:18:49,215	| IOT174 |	Which we already did once we originally started on a Raspberry Pi and we've had some issues because
+EDL	00:18:49,215	00:18:52,799	| IOT174 |	Is the dog likes to yank on the power cord and when I happens there is no iron
+EDL	00:18:52,799	00:18:53,567	| IOT174 |	Voicemail
+EDL	00:18:53,567	00:18:57,663	| IOT174 |	So I moved everything up to Google Cloud
+EDL	00:18:57,663	00:18:58,431	| IOT174 |	It was
+EDL	00:18:58,431	00:18:59,199	| IOT174 |	Pretty easy
+EDL	00:18:59,711	00:19:04,063	| IOT174 |	And I didn't under the free tier but unfortunately one of the services it's using is not free
+EDL	00:19:04,063	00:19:05,599	| IOT174 |	So we look
+EDL	00:19:05,599	00:19:06,623	| IOT174 |	At AWS
+EDL	00:19:07,135	00:19:07,903	| IOT174 |	And I spent
+EDL	00:19:08,415	00:19:09,183	| IOT174 |	At least
+EDL	00:19:09,183	00:19:10,975	| IOT174 |	Four times as much time
+EDL	00:19:11,487	00:19:13,279	| IOT174 |	Getting it to run on AWS
+EDL	00:19:13,791	00:19:15,839	| IOT174 |	The whole user experience was
+EDL	00:19:16,351	00:19:18,143	| IOT174 |	So much more challenging to me
+EDL	00:19:18,143	00:19:24,543	| IOT174 |	And you know I'm not a developer by trade I don't have any formal training this is me hacking way tinkering and figuring things out soon
+EDL	00:19:24,543	00:19:25,823	| IOT174 |	Maybe it's me I will say that
+EDL	00:19:25,823	00:19:32,223	| IOT174 |	But at least with Google I could actually write code in the cloud I want to hear through their Cloud9 editor but here I had to do it
+EDL	00:19:32,223	00:19:35,551	| IOT174 |	Locally and put it all up and I had to even send it all up through
+EDL	00:19:35,551	00:19:36,575	| IOT174 |	A terminal
+EDL	00:19:36,575	00:19:37,855	| IOT174 |	Command line interface
+EDL	00:19:37,855	00:19:41,951	| IOT174 |	Any before can use that I had to install the command line interface to a Linux
+EDL	00:19:42,463	00:19:44,511	| IOT174 |	Turn it all on my Chrome but it was just
+EDL	00:19:45,023	00:19:46,047	| IOT174 |	So many steps
+EDL	00:19:46,047	00:19:49,887	| IOT174 |	And in the end even though I got it working it failed after a day
+EDL	00:19:49,887	00:19:54,495	| IOT174 |	Now that could be the way I implemented I will say that I'm not cutting AWS on this one
+EDL	00:19:54,495	00:20:00,895	| IOT174 |	And the weird thing is like with Google you sign out of your terminal at your service still runs here through the command line terminal when I killed
+EDL	00:20:00,895	00:20:01,663	| IOT174 |	My connection
+EDL	00:20:01,663	00:20:03,455	| IOT174 |	The service just stop so I need
+EDL	00:20:03,455	00:20:05,247	| IOT174 |	To figure out how to make a keep running and all that but
+EDL	00:20:05,247	00:20:06,527	| IOT174 |	I'm so fed up with it
+EDL	00:20:06,527	00:20:08,575	| IOT174 |	That it's like I almost don't want to figure it out
+EDL	00:20:09,087	00:20:12,415	| IOT174 |	Cloud headache doesn't describe a time I spent so many hours and
+EDL	00:20:12,415	00:20:13,183	| IOT174 |	Just got
+EDL	00:20:13,183	00:20:13,951	| IOT174 |	So
+EDL	00:20:13,951	00:20:14,719	| IOT174 |	Frustrated
+EDL	00:20:15,231	00:20:17,279	| IOT174 |	So if you have help for Kevin
+EDL	00:20:17,279	00:20:18,559	| IOT174 |	I'm sure he would welcome to us
+EDL	00:20:20,095	00:20:21,375	| IOT174 |	Send Advil
+EDL	00:20:22,911	00:20:23,423	| IOT174 |	This is just
+EDL	00:20:25,471	00:20:31,871	| IOT174 |	I thought it was an experience guy's perspective
+EDL	00:20:31,871	00:20:33,407	| IOT174 |	The stuff
+EDL	00:20:33,407	00:20:35,455	| IOT174 |	You know you may be an expert in AWS
+EDL	00:20:35,455	00:20:36,991	| IOT174 |	I'm trying to convert over to Google
+EDL	00:20:36,991	00:20:38,015	| IOT174 |	Everything speaks to how
+EDL	00:20:38,527	00:20:39,295	| IOT174 |	Easier it is to
+EDL	00:20:40,063	00:20:44,415	| IOT174 |	From one to the other so we're not taking a lot
+EDL	00:20:44,415	00:20:46,463	| IOT174 |	People especially since our audience likes to
+EDL	00:20:46,463	00:20:46,975	| IOT174 |	Do this word
+EDL	00:20:47,999	00:20:49,279	| IOT174 |	Alright hey
+EDL	00:20:49,279	00:20:50,559	| IOT174 |	You want to talk about
+EDL	00:20:50,559	00:20:51,327	| IOT174 |	Worst iot
+EDL	00:20:51,327	00:20:52,351	| IOT174 |	The idea of the week
+EDL	00:20:52,351	00:20:54,655	| IOT174 |	I almost don't have to reading what it was
+EDL	00:20:55,423	00:21:01,823	| IOT174 |	But yes we should because everyone should share in our misery unless there's a few people who want Bluetooth LE
+EDL	00:21:01,823	00:21:03,359	| IOT174 |	Jeans from Tommy Hilfiger
+EDL	00:21:03,871	00:21:04,639	| IOT174 |	Yes
+EDL	00:21:04,639	00:21:05,663	| IOT174 |	This week
+EDL	00:21:06,431	00:21:07,199	| IOT174 |	Today
+EDL	00:21:07,199	00:21:07,967	| IOT174 |	Wednesday Tommy
+EDL	00:21:10,527	00:21:11,295	| IOT174 |	I don't even know
+EDL	00:21:11,295	00:21:11,807	| IOT174 |	Pink slacks
+EDL	00:21:12,319	00:21:14,111	| IOT174 |	They actually announced the
+EDL	00:21:14,111	00:21:15,135	| IOT174 |	Tommy jeans
+EDL	00:21:15,135	00:21:15,903	| IOT174 |	Explorer
+EDL	00:21:16,416	00:21:18,208	| IOT174 |	Which are jeans with a Bluetooth
+EDL	00:21:18,208	00:21:19,744	| IOT174 |	Low-energy chip in them
+EDL	00:21:19,744	00:21:21,280	| IOT174 |	And they are
+EDL	00:21:21,792	00:21:22,560	| IOT174 |	I don't know how to explain
+EDL	00:21:24,096	00:21:24,864	| IOT174 |	You activated
+EDL	00:21:25,632	00:21:27,168	| IOT174 |	And the app
+EDL	00:21:27,168	00:21:27,680	| IOT174 |	Basically
+EDL	00:21:28,192	00:21:29,728	| IOT174 |	Talk to your jeans in your phone
+EDL	00:21:30,240	00:21:32,032	| IOT174 |	You don't have to wear your pear
+EDL	00:21:33,568	00:21:36,640	| IOT174 |	You get points based on how often
+EDL	00:21:38,176	00:21:40,736	| IOT174 |	One-of-a-kind rewards and experiences this basically
+EDL	00:21:41,760	00:21:44,576	| IOT174 |	Buy some jeans with a chip in it so we can
+EDL	00:21:47,904	00:21:51,744	| IOT174 |	That's exactly what it is because at the tail end of this they try and sell it
+EDL	00:21:51,744	00:21:54,048	| IOT174 |	Take me to tell you what is marketing plan
+EDL	00:21:54,560	00:21:59,936	| IOT174 |	If they say the integrated technology in the product allows for brand engagement and interaction Beyond tradition
+EDL	00:22:00,448	00:22:04,032	| IOT174 |	Because I got to finish this one this one made me laugh
+EDL	00:22:04,032	00:22:10,176	| IOT174 |	True Rewards experiences an interactive hotspots located across the country so you got to go certain places
+EDL	00:22:11,200	00:22:17,088	| IOT174 |	The app brings users together creating a community of high engaged micro brand ambassador
+EDL	00:22:18,624	00:22:19,648	| IOT174 |	Yeah so this is
+EDL	00:22:21,952	00:22:23,744	| IOT174 |	Rebecca Minkoff who makes
+EDL	00:22:23,744	00:22:24,512	| IOT174 |	Accessories
+EDL	00:22:24,512	00:22:26,816	| IOT174 |	She actually herbrand actually did one of these
+EDL	00:22:27,840	00:22:31,424	| IOT174 |	And I thought it was stupid when you suck these on purses although there was I think
+EDL	00:22:31,424	00:22:31,936	| IOT174 |	Tracking
+EDL	00:22:34,240	00:22:35,008	| IOT174 |	Yeah this
+EDL	00:22:35,008	00:22:36,288	| IOT174 |	This is not what you
+EDL	00:22:37,824	00:22:39,872	| IOT174 |	However if you are out there to do
+EDL	00:22:40,384	00:22:41,152	| IOT174 |	You want this
+EDL	00:22:41,152	00:22:42,432	| IOT174 |	Please share with us
+EDL	00:22:42,944	00:22:43,456	| IOT174 |	Why
+EDL	00:22:44,736	00:22:46,784	| IOT174 |	Interconnected hoodies as well
+EDL	00:22:46,784	00:22:47,808	| IOT174 |	Those cost a hundred bucks
+EDL	00:22:48,320	00:22:49,344	| IOT174 |	Inogen cost
+EDL	00:22:49,856	00:22:50,368	| IOT174 |	120
+EDL	00:22:51,136	00:22:51,648	| IOT174 |	So
+EDL	00:22:52,672	00:22:56,256	| IOT174 |	You'd have to pay me a hundred twenty bucks and is his key
+EDL	00:22:56,256	00:22:58,560	| IOT174 |	You have to create a VR apps like
+EDL	00:22:58,560	00:23:02,144	| IOT174 |	Pokemon go where I can walk around New York City with my jeans and look
+EDL	00:23:02,144	00:23:04,448	| IOT174 |	VR to see who else is wearing Tommy jeans
+EDL	00:23:04,448	00:23:05,216	| IOT174 |	And
+EDL	00:23:05,216	00:23:06,240	| IOT174 |	Tagging to get points
+EDL	00:23:06,240	00:23:08,288	| IOT174 |	Cuz that would be fun but other than that now
+EDL	00:23:08,288	00:23:09,824	| IOT174 |	Yeah they do have a Tommy
+EDL	00:23:09,824	00:23:10,592	| IOT174 |	Sport duffel bag
+EDL	00:23:12,640	00:23:13,152	| IOT174 |	Still no
+EDL	00:23:14,432	00:23:16,480	| IOT174 |	It doesn't mention in the duffle bag
+EDL	00:23:16,480	00:23:17,248	| IOT174 |	Bluetooth
+EDL	00:23:18,784	00:23:20,320	| IOT174 |	Which I think is actually kind of a waste
+EDL	00:23:21,344	00:23:26,208	| IOT174 |	Yeah maybe have it right there somebody steals your duffle bag gets 30 feet away your tummy app should tell you
+EDL	00:23:26,208	00:23:26,976	| IOT174 |	Right
+EDL	00:23:26,976	00:23:27,488	| IOT174 |	You should integrate with
+EDL	00:23:28,512	00:23:29,024	| IOT174 |	Something else where
+EDL	00:23:30,048	00:23:30,816	| IOT174 |	Tatami tile
+EDL	00:23:31,840	00:23:32,864	| IOT174 |	This is
+EDL	00:23:33,376	00:23:34,400	| IOT174 |	In our opinion
+EDL	00:23:34,400	00:23:35,680	| IOT174 |	A silly stupid idea
+EDL	00:23:35,680	00:23:36,704	| IOT174 |	Like I buy a lot of
+EDL	00:23:36,704	00:23:37,216	| IOT174 |	Connected things in
+EDL	00:23:38,496	00:23:40,032	| IOT174 |	But if you do let us know
+EDL	00:23:41,056	00:23:43,104	| IOT174 |	You can actually
+EDL	00:23:43,104	00:23:44,640	| IOT174 |	Watch this which is
+EDL	00:23:45,152	00:23:45,664	| IOT174 |	Conical
+EDL	00:23:47,712	00:23:52,064	| IOT174 |	Waterproof protection in there any smart clothing would have that I mean I've learned some more
+EDL	00:23:52,064	00:23:54,624	| IOT174 |	Vests and socks and things and just throw up
+EDL	00:23:55,648	00:23:56,672	| IOT174 |	There's usually up
+EDL	00:23:59,744	00:24:04,096	| IOT174 |	Yeah but there's a maybe maybe Tommy didn't think about that part too well we don't know
+EDL	00:24:12,288	00:24:12,800	| IOT174 |	Okay
+EDL	00:24:13,824	00:24:14,592	| IOT174 |	Silly ideas
+EDL	00:24:15,104	00:24:15,616	| IOT174 |	Of the week
+EDL	00:24:17,152	00:24:20,992	| IOT174 |	Let's now go to our voicemail for this week for the iot podcast listener hotline
+EDL	00:24:21,760	00:24:23,296	| IOT174 |	Hotline is brought to you by Schlage
+EDL	00:24:24,064	00:24:24,832	| IOT174 |	And
+EDL	00:24:24,832	00:24:25,856	| IOT174 |	For our listeners
+EDL	00:24:26,624	00:24:30,464	| IOT174 |	People who leave messages you can have a chance to win a Schlage sense
+EDL	00:24:30,464	00:24:31,488	| IOT174 |	Smart deadbolt
+EDL	00:24:31,488	00:24:32,256	| IOT174 |	And Wi-Fi
+EDL	00:24:33,024	00:24:34,304	| IOT174 |	Soda enter to win
+EDL	00:24:34,304	00:24:36,096	| IOT174 |	You just need to give us a call at 5 1/2
+EDL	00:24:36,608	00:24:37,120	| IOT174 |	63
+EDL	00:24:37,632	00:24:38,912	| IOT174 |	744
+EDL	00:24:39,936	00:24:40,704	| IOT174 |	Leave us a question
+EDL	00:24:41,472	00:24:43,008	| IOT174 |	At the end of this month
+EDL	00:24:43,008	00:24:43,520	| IOT174 |	Draw winner
+EDL	00:24:49,152	00:24:49,664	| IOT174 |	Midnight
+EDL	00:24:50,176	00:24:50,688	| IOT174 |	YouTube
+EDL	00:24:54,784	00:24:55,552	| IOT174 |	Here this week
+EDL	00:24:59,136	00:25:00,672	| IOT174 |	Actually listen to your podcast recent
+EDL	00:25:01,184	00:25:02,208	| IOT174 |	Stumbled upon
+EDL	00:25:02,976	00:25:04,256	| IOT174 |	My question is
+EDL	00:25:04,256	00:25:05,024	| IOT174 |	Why doesn't
+EDL	00:25:05,024	00:25:05,536	| IOT174 |	Every
+EDL	00:25:06,048	00:25:06,816	| IOT174 |	Sparkle
+EDL	00:25:06,816	00:25:08,864	| IOT174 |	Accessory manufacturer looks like
+EDL	00:25:08,864	00:25:10,144	| IOT174 |	Or any other brain
+EDL	00:25:10,144	00:25:11,680	| IOT174 |	Why don't y'all just work with Alexa
+EDL	00:25:12,192	00:25:13,216	| IOT174 |	Why is there
+EDL	00:25:17,056	00:25:17,824	| IOT174 |	Is it more than just
+EDL	00:25:18,336	00:25:20,128	| IOT174 |	Hello Google vs Alexa
+EDL	00:25:21,408	00:25:22,176	| IOT174 |	Like I said
+EDL	00:25:22,176	00:25:22,944	| IOT174 |	Extension
+EDL	00:25:22,944	00:25:23,968	| IOT174 |	Why are there different
+EDL	00:25:23,968	00:25:24,992	| IOT174 |	Protocols
+EDL	00:25:24,992	00:25:25,760	| IOT174 |	Lexi way
+EDL	00:25:25,760	00:25:26,784	| IOT174 |	Why wouldn't everything
+EDL	00:25:26,784	00:25:28,832	| IOT174 |	Can you work with Alexa right out the box
+EDL	00:25:28,832	00:25:31,904	| IOT174 |	Or maybe just work with Google
+EDL	00:25:33,696	00:25:34,720	| IOT174 |	Mark good good question
+EDL	00:25:35,232	00:25:36,768	| IOT174 |	Yes excellent question
+EDL	00:25:36,768	00:25:39,328	| IOT174 |	And we tend to take it for granted the people know about this but
+EDL	00:25:39,840	00:25:42,144	| IOT174 |	That's a dumb thing on our behalf because
+EDL	00:25:42,144	00:25:43,936	| IOT174 |	Why would you want to know this much about the intern
+EDL	00:25:44,704	00:25:45,472	| IOT174 |	Show Kevin
+EDL	00:25:45,472	00:25:46,240	| IOT174 |	Bricktown
+EDL	00:25:46,240	00:25:47,520	| IOT174 |	The issues here
+EDL	00:25:47,520	00:25:52,640	| IOT174 |	Yeah there's a couple of questions and this one is more opinion than anything and you can chime in if you disagree with
+EDL	00:25:52,640	00:25:54,944	| IOT174 |	So why doesn't every smart home device makers
+EDL	00:25:54,944	00:25:56,736	| IOT174 |	Work with matinee or
+EDL	00:25:56,736	00:25:58,016	| IOT174 |	Google
+EDL	00:25:58,016	00:25:59,296	| IOT174 |	Dothan salon
+EDL	00:25:59,296	00:26:00,832	| IOT174 |	I do think there is
+EDL	00:26:01,344	00:26:04,672	| IOT174 |	I will look at your device maker at market share who's got
+EDL	00:26:04,672	00:26:07,232	| IOT174 |	More speakers out there who do you want to partner with
+EDL	00:26:08,000	00:26:09,024	| IOT174 |	I don't think
+EDL	00:26:09,024	00:26:13,632	| IOT174 |	I believe that most of the device makers want to work with everything as much as possible
+EDL	00:26:13,632	00:26:15,424	| IOT174 |	Apple certainly limits that
+EDL	00:26:15,424	00:26:17,472	| IOT174 |	Because device makers have to make
+EDL	00:26:17,472	00:26:21,568	| IOT174 |	A homekit version of a device as well as I don't get version it would work with
+EDL	00:26:22,080	00:26:24,128	| IOT174 |	Mad at me or Google home etcetera so
+EDL	00:26:24,128	00:26:26,944	| IOT174 |	I think that's part of it I don't think there's anything nefarious about
+EDL	00:26:26,944	00:26:30,784	| IOT174 |	Choosing one over the other if your device maker but that's just my take on the first part I
+EDL	00:26:31,296	00:26:33,600	| IOT174 |	I don't know if you agree
+EDL	00:26:33,600	00:26:36,160	| IOT174 |	You're right Madam is the most popular but it's not the only one
+EDL	00:26:36,160	00:26:40,256	| IOT174 |	I'm so later when we do our interview with the
+EDL	00:26:40,256	00:26:41,792	| IOT174 |	That one first because
+EDL	00:26:41,792	00:26:42,560	| IOT174 |	By golly
+EDL	00:26:42,560	00:26:43,072	| IOT174 |	That's whatever
+EDL	00:26:44,096	00:26:46,144	| IOT174 |	Get into the fair question
+EDL	00:26:46,656	00:26:47,424	| IOT174 |	Which is what is
+EDL	00:26:47,936	00:26:50,240	| IOT174 |	It sounds almost like what is Z-Wave why is he wave
+EDL	00:26:51,776	00:26:53,824	| IOT174 |	That is a function of
+EDL	00:26:53,824	00:26:55,104	| IOT174 |	Those are older Sanders
+EDL	00:26:55,104	00:26:56,128	| IOT174 |	They've been around
+EDL	00:26:56,128	00:26:58,176	| IOT174 |	Everyone wants to be the standard in the
+EDL	00:26:58,176	00:26:59,456	| IOT174 |	We haven't actually come
+EDL	00:26:59,456	00:27:01,504	| IOT174 |	With one that's going to stick so far
+EDL	00:27:01,504	00:27:05,088	| IOT174 |	And so you still need those and it's partially because
+EDL	00:27:05,600	00:27:07,392	| IOT174 |	The smart digital assistants
+EDL	00:27:07,392	00:27:08,160	| IOT174 |	For the most part
+EDL	00:27:09,952	00:27:11,744	| IOT174 |	They don't have the radios needed
+EDL	00:27:11,744	00:27:13,280	| IOT174 |	They're just actually a voice in Her
+EDL	00:27:14,048	00:27:16,096	| IOT174 |	And it actually takes a lot
+EDL	00:27:16,096	00:27:17,120	| IOT174 |	To get new device
+EDL	00:27:17,888	00:27:20,448	| IOT174 |	So both Google and Amazon have
+EDL	00:27:20,448	00:27:21,472	| IOT174 |	Established
+EDL	00:27:21,472	00:27:22,240	| IOT174 |	Frameworks
+EDL	00:27:22,240	00:27:25,312	| IOT174 |	Now for things like thermostats and lights that say
+EDL	00:27:25,312	00:27:26,080	| IOT174 |	Hey
+EDL	00:27:26,080	00:27:28,640	| IOT174 |	If you make a light bulb you just use that framework in
+EDL	00:27:28,640	00:27:34,272	| IOT174 |	Everything's very easy but if you make something like an oven or kitchen faucet you actually have to develop that framework
+EDL	00:27:34,272	00:27:36,320	| IOT174 |	With Google in Amazon
+EDL	00:27:36,320	00:27:37,088	| IOT174 |	To start
+EDL	00:27:37,088	00:27:38,112	| IOT174 |	Mykonos things easy
+EDL	00:27:38,112	00:27:40,416	| IOT174 |	That I should gets back to homekit
+EDL	00:27:40,416	00:27:43,232	| IOT174 |	It is actually easier and requires less
+EDL	00:27:43,744	00:27:49,888	| IOT174 |	Hardware on the Hub side because Apple chose not to use any of those other particles they only use what's
+EDL	00:27:49,888	00:27:50,912	| IOT174 |	Readily available
+EDL	00:27:50,912	00:27:52,448	| IOT174 |	Heating WiFi and Bluetooth
+EDL	00:27:52,960	00:27:54,240	| IOT174 |	In which case
+EDL	00:27:54,240	00:27:55,520	| IOT174 |	Apple iOS devices
+EDL	00:27:55,520	00:27:59,104	| IOT174 |	Does radios by default phones tablets the Apple TV
+EDL	00:27:59,616	00:28:00,384	| IOT174 |	Homepod
+EDL	00:28:00,384	00:28:02,432	| IOT174 |	That's why they can be Apple's homekit hub
+EDL	00:28:02,944	00:28:05,504	| IOT174 |	When you start introducing Z-Wave products
+EDL	00:28:05,504	00:28:07,296	| IOT174 |	Zigbee products
+EDL	00:28:07,296	00:28:13,696	| IOT174 |	Get away from Wi-Fi and Bluetooth are good reasons to use those radio protocols they might be one of them had Mesh networking
+EDL	00:28:13,696	00:28:16,000	| IOT174 |	Extend the range of your devices
+EDL	00:28:16,768	00:28:18,816	| IOT174 |	You need a hub to manage that
+EDL	00:28:18,816	00:28:23,936	| IOT174 |	Radio chatter because the Google home doesn't have that radio inside so it doesn't understand anything
+EDL	00:28:23,936	00:28:30,080	| IOT174 |	Take me to go back to a hub and get that information now there is Amazon does have a hub it's the Echo Plus I believe
+EDL	00:28:30,080	00:28:31,616	| IOT174 |	It is and it has zigbee
+EDL	00:28:33,664	00:28:34,944	| IOT174 |	Seaway band
+EDL	00:28:34,944	00:28:36,480	| IOT174 |	Not all zigbee devices actually work
+EDL	00:28:37,248	00:28:38,016	| IOT174 |	So
+EDL	00:28:38,016	00:28:39,040	| IOT174 |	And that gets into a d
+EDL	00:28:41,600	00:28:42,624	| IOT174 |	You are right
+EDL	00:28:42,624	00:28:44,672	| IOT174 |	Don't want this to be simple and easy
+EDL	00:28:44,672	00:28:46,208	| IOT174 |	And you shouldn't have to learn all this
+EDL	00:28:48,000	00:28:48,512	| IOT174 |	And
+EDL	00:28:49,792	00:28:50,304	| IOT174 |	Great answer
+EDL	00:28:50,816	00:28:51,328	| IOT174 |	But it is
+EDL	00:28:52,096	00:28:53,120	| IOT174 |	Hey
+EDL	00:28:53,120	00:28:54,656	| IOT174 |	I think we've done a pretty good job.
+EDL	00:28:54,656	00:28:55,936	| IOT174 |	Accepting the news of the week
+EDL	00:28:55,936	00:28:56,960	| IOT174 |	Kevin
+EDL	00:28:56,960	00:28:57,728	| IOT174 |	Now
+EDL	00:28:57,728	00:29:00,288	| IOT174 |	Hear word from our sponsor but all of you guys
+EDL	00:29:00,288	00:29:01,056	| IOT174 |	Stay tuned
+EDL	00:29:01,056	00:29:01,824	| IOT174 |	To hear
+EDL	00:29:01,824	00:29:05,920	| IOT174 |	An interview with Elana Fishman who's the CEO of wyze labs
+EDL	00:29:05,920	00:29:07,200	| IOT174 |	You talk to us about
+EDL	00:29:07,200	00:29:08,480	| IOT174 |	Wyze cameras
+EDL	00:29:08,480	00:29:14,624	| IOT174 |	A bunch of questions about security and privacy you guys have been asking for quite some time
+EDL	00:29:14,624	00:29:18,720	| IOT174 |	Before we come to Atlanta let's take a word from our sponsor
+EDL	00:29:18,720	00:29:25,120	| IOT174 |	Switch sponsor is the Smart Kitchen Summit Global event series and Community Focus
+EDL	00:29:25,120	00:29:26,656	| IOT174 |	The future of food
+EDL	00:29:26,656	00:29:28,448	| IOT174 |	Cooking in the kitchen
+EDL	00:29:28,448	00:29:29,472	| IOT174 |	It's announcing its
+EDL	00:29:29,472	00:29:31,264	| IOT174 |	Spore thaniel North America
+EDL	00:29:31,264	00:29:32,032	| IOT174 |	The flagship event
+EDL	00:29:32,544	00:29:33,056	| IOT174 |	Seattle washing
+EDL	00:29:33,568	00:29:34,848	| IOT174 |	On October 8th and 9th
+EDL	00:29:35,360	00:29:37,664	| IOT174 |	At the world-renowned Benaroya
+EDL	00:29:37,664	00:29:40,736	| IOT174 |	This year the smart Kitchen Summit is going to explore
+EDL	00:29:40,736	00:29:44,064	| IOT174 |	Technology is transforming the meal Journey from food growing
+EDL	00:29:44,064	00:29:45,600	| IOT174 |	And production all the way to the
+EDL	00:29:45,600	00:29:46,368	| IOT174 |	Consumer plate
+EDL	00:29:46,880	00:29:48,928	| IOT174 |	2 days of speaking sessions Fireside
+EDL	00:29:48,928	00:29:49,696	| IOT174 |	Conversations
+EDL	00:29:49,696	00:29:54,560	| IOT174 |	Product demonstrations and more if you are interested you can take 25%
+EDL	00:29:54,560	00:29:56,096	| IOT174 |	Off of your tickets with the
+EDL	00:29:56,096	00:29:56,864	| IOT174 |	Code
+EDL	00:29:56,864	00:29:57,632	| IOT174 |	Stacy
+EDL	00:29:57,632	00:29:59,680	| IOT174 |	At smart Kitchen Summit.
+EDL	00:29:59,680	00:30:00,192	| IOT174 |	Tom
+EDL	00:30:00,960	00:30:02,752	| IOT174 |	Stacey Stacey
+EDL	00:30:02,752	00:30:03,520	| IOT174 |	I know
+EDL	00:30:03,520	00:30:04,032	| IOT174 |	I don't know why it's
+EDL	00:30:04,544	00:30:08,128	| IOT174 |	If you are at all interested in the future of food or anything like that
+EDL	00:30:08,128	00:30:09,920	| IOT174 |	You should definitely come to this
+EDL	00:30:09,920	00:30:10,944	| IOT174 |	I will be
+EDL	00:30:10,944	00:30:12,992	| IOT174 |	There and
+EDL	00:30:14,272	00:30:16,064	| IOT174 |	Now on to our guest
+EDL	00:30:16,064	00:30:22,208	| IOT174 |	Elana Fishman
+EDL	00:30:26,048	00:30:30,912	| IOT174 |	Hey everyone welcome back to the Internet of Things podcast this is your host Stacey Higginbotham
+EDL	00:30:30,912	00:30:31,936	| IOT174 |	And today's guest
+EDL	00:30:31,936	00:30:33,472	| IOT174 |	Is a lot of fishmen
+EDL	00:30:33,472	00:30:36,544	| IOT174 |	Who is the CEO and co-founder at Weis
+EDL	00:30:36,544	00:30:38,848	| IOT174 |	Labs which as you guys probably ask
+EDL	00:30:38,848	00:30:41,920	| IOT174 |	They're the makers of the wyze camera and the wyze pan Cam that we
+EDL	00:30:42,688	00:30:43,712	| IOT174 |	I so excited about it
+EDL	00:30:44,480	00:30:46,016	| IOT174 |	So high a lot of how you doing
+EDL	00:30:46,016	00:30:48,320	| IOT174 |	Awesome alright
+EDL	00:30:48,832	00:30:51,392	| IOT174 |	We're just going to go right into the big question
+EDL	00:30:51,392	00:30:52,160	| IOT174 |	Which is
+EDL	00:30:52,160	00:30:54,976	| IOT174 |	You guys are selling a really highly capable camera
+EDL	00:30:54,976	00:30:56,512	| IOT174 |	For not a lot
+EDL	00:30:56,512	00:30:58,304	| IOT174 |	Of money it feels like
+EDL	00:30:58,304	00:30:59,584	| IOT174 |	Someone's got to throw away
+EDL	00:30:59,584	00:31:02,400	| IOT174 |	Pull the rug right out from under us and do something crazy with this
+EDL	00:31:02,912	00:31:04,960	| IOT174 |	How are you managing to sell a
+EDL	00:31:04,960	00:31:05,728	| IOT174 |	$20
+EDL	00:31:05,728	00:31:07,520	| IOT174 |	HD camera or a $30
+EDL	00:31:07,520	00:31:08,032	| IOT174 |	Can camera
+EDL	00:31:08,544	00:31:10,336	| IOT174 |	Yes so that is a topic
+EDL	00:31:10,336	00:31:10,848	| IOT174 |	Question that we
+EDL	00:31:11,360	00:31:12,896	| IOT174 |	Ultimately comes from
+EDL	00:31:12,896	00:31:14,432	| IOT174 |	Core belief in what way
+EDL	00:31:14,432	00:31:15,968	| IOT174 |	Starting this
+EDL	00:31:15,968	00:31:18,272	| IOT174 |	High quality
+EDL	00:31:18,272	00:31:20,064	| IOT174 |	Awesome technology products
+EDL	00:31:23,136	00:31:26,976	| IOT174 |	Radar products
+EDL	00:31:26,976	00:31:28,000	| IOT174 |	Things from
+EDL	00:31:28,000	00:31:29,280	| IOT174 |	Efficiencies on a supply chain
+EDL	00:31:30,816	00:31:34,144	| IOT174 |	To our sales channels
+EDL	00:31:35,680	00:31:39,264	| IOT174 |	Customer
+EDL	00:31:39,264	00:31:41,568	| IOT174 |	The porch and word-of-mouth
+EDL	00:31:41,568	00:31:43,616	| IOT174 |	People telling people about our product
+EDL	00:31:43,616	00:31:44,896	| IOT174 |	Parkour proponents of RC
+EDL	00:31:48,736	00:31:50,528	| IOT174 |	Esl at the very lowest pop
+EDL	00:31:50,528	00:31:51,296	| IOT174 |	Apple price
+EDL	00:31:51,296	00:31:52,832	| IOT174 |	Because we believe that certain powers
+EDL	00:31:53,600	00:31:55,648	| IOT174 |	You can do so much more when it camera cost
+EDL	00:31:55,648	00:31:56,928	| IOT174 |	22 $30
+EDL	00:31:56,928	00:31:59,744	| IOT174 |	You can buy five of them and play with them and do a lot of really
+EDL	00:31:59,744	00:32:00,768	| IOT174 |	Creative things in
+EDL	00:32:00,768	00:32:01,792	| IOT174 |	Court of what we're trying to do
+EDL	00:32:02,560	00:32:03,584	| IOT174 |	So I have to ask
+EDL	00:32:03,584	00:32:06,656	| IOT174 |	Do you actually make money on these things are you just
+EDL	00:32:06,656	00:32:07,936	| IOT174 |	Venture-backed startup that's like
+EDL	00:32:12,032	00:32:13,056	| IOT174 |	Seed round last year
+EDL	00:32:14,592	00:32:15,360	| IOT174 |	Break even
+EDL	00:32:16,128	00:32:17,664	| IOT174 |	So we are not this is not
+EDL	00:32:17,664	00:32:20,480	| IOT174 |	Sword
+EDL	00:32:20,480	00:32:22,784	| IOT174 |	Future on subscription
+EDL	00:32:22,784	00:32:26,112	| IOT174 |	Are cameras come with free cloud storage and we are committed to doing that
+EDL	00:32:26,112	00:32:28,416	| IOT174 |	We're not looking for other revenue streams
+EDL	00:32:28,416	00:32:30,208	| IOT174 |	Okay so how do you achieve
+EDL	00:32:30,208	00:32:31,232	| IOT174 |	Break even
+EDL	00:32:31,232	00:32:32,256	| IOT174 |	Such
+EDL	00:32:32,256	00:32:34,048	| IOT174 |	Incredibly low prices let's talk about
+EDL	00:32:34,048	00:32:35,072	| IOT174 |	Manufacturing
+EDL	00:32:35,072	00:32:35,840	| IOT174 |	How you came across
+EDL	00:32:36,608	00:32:37,376	| IOT174 |	I hear building a business
+EDL	00:32:37,888	00:32:39,680	| IOT174 |	Sure so we have an amazing man
+EDL	00:32:40,448	00:32:41,984	| IOT174 |	Partner that we partner with end
+EDL	00:32:42,496	00:32:45,568	| IOT174 |	One of the things we will look for as the ability to produce
+EDL	00:32:45,568	00:32:47,616	| IOT174 |	So when we can
+EDL	00:32:47,616	00:32:49,152	| IOT174 |	Scale
+EDL	00:32:49,152	00:32:50,688	| IOT174 |	Recognized as cost efficiencies
+EDL	00:32:53,760	00:32:57,856	| IOT174 |	You sold over 500000
+EDL	00:32:58,368	00:32:59,648	| IOT174 |	Bring the pricing down
+EDL	00:33:01,440	00:33:02,208	| IOT174 |	Consumers
+EDL	00:33:02,208	00:33:04,512	| IOT174 |	Holy cow 500000 of these things
+EDL	00:33:05,024	00:33:06,560	| IOT174 |	That is
+EDL	00:33:06,560	00:33:07,072	| IOT174 |	Amazing
+EDL	00:33:07,584	00:33:08,608	| IOT174 |	Are people buying
+EDL	00:33:08,608	00:33:10,912	| IOT174 |	Five or six or they bite
+EDL	00:33:10,912	00:33:11,424	| IOT174 |	It's a lot of them
+EDL	00:33:12,704	00:33:15,008	| IOT174 |	Sure so a lot of people buy one too
+EDL	00:33:15,008	00:33:16,288	| IOT174 |	To start we see a lot of
+EDL	00:33:16,288	00:33:20,896	| IOT174 |	People that don't really believe 4:20
+EDL	00:33:20,896	00:33:22,944	| IOT174 |	$30 in
+EDL	00:33:22,944	00:33:23,968	| IOT174 |	And then they come back
+EDL	00:33:24,480	00:33:29,088	| IOT174 |	So are our average user has more than one camera a lot of people start with
+EDL	00:33:30,624	00:33:34,208	| IOT174 |	Video is so expensive to host in the cloud I've seen a lot of
+EDL	00:33:34,208	00:33:35,744	| IOT174 |	Startups offer
+EDL	00:33:35,744	00:33:37,024	| IOT174 |	7 days or 14 days
+EDL	00:33:37,536	00:33:39,840	| IOT174 |	Storage but then they're like holy cow
+EDL	00:33:39,840	00:33:41,632	| IOT174 |	This is way too much money we have to charge
+EDL	00:33:42,144	00:33:43,936	| IOT174 |	So how are you guys
+EDL	00:33:43,936	00:33:45,216	| IOT174 |	Making that work
+EDL	00:33:45,216	00:33:46,752	| IOT174 |	Because that is an ongoing cost
+EDL	00:33:46,752	00:33:47,520	| IOT174 |	Associated with
+EDL	00:33:47,520	00:33:48,288	| IOT174 |	Every camera
+EDL	00:33:48,288	00:33:50,592	| IOT174 |	Yeah and that's something that we price into r
+EDL	00:33:50,592	00:33:54,944	| IOT174 |	Pricing so it was something that we forecasted in and accounted for from the beginning
+EDL	00:33:54,944	00:33:56,224	| IOT174 |	How did you get the
+EDL	00:33:56,224	00:33:57,760	| IOT174 |	Experience or how do you know
+EDL	00:33:58,528	00:34:00,064	| IOT174 |	How accurate were your forecast
+EDL	00:34:00,064	00:34:01,088	| IOT174 |	Cast I guess is what I'm wondering
+EDL	00:34:03,392	00:34:04,928	| IOT174 |	Perspective
+EDL	00:34:04,928	00:34:05,696	| IOT174 |	People
+EDL	00:34:05,696	00:34:06,464	| IOT174 |	Obviously
+EDL	00:34:06,464	00:34:06,976	| IOT174 |	I try to think about
+EDL	00:34:07,744	00:34:11,328	| IOT174 |	Then give me the reality and they're like in Ark
+EDL	00:34:11,328	00:34:11,840	| IOT174 |	Text well for a
+EDL	00:34:14,144	00:34:14,656	| IOT174 |	Any number
+EDL	00:34:15,424	00:34:16,192	| IOT174 |	Yeah
+EDL	00:34:16,192	00:34:16,960	| IOT174 |	Sure
+EDL	00:34:16,960	00:34:18,496	| IOT174 |	It's the one piece of it is
+EDL	00:34:18,496	00:34:19,520	| IOT174 |	Cher
+EDL	00:34:19,520	00:34:21,312	| IOT174 |	Local storage options with
+EDL	00:34:21,312	00:34:21,824	| IOT174 |	The Cloud app
+EDL	00:34:22,336	00:34:24,128	| IOT174 |	Adoption wolver
+EDL	00:34:24,128	00:34:25,664	| IOT174 |	Record a 12-second clip
+EDL	00:34:25,664	00:34:28,992	| IOT174 |	When the camera detects motion or sound
+EDL	00:34:29,760	00:34:34,624	| IOT174 |	Search for local storage to be able to get continuous recording or longer Clips when there is
+EDL	00:34:37,184	00:34:38,464	| IOT174 |	People
+EDL	00:34:38,464	00:34:41,792	| IOT174 |	SD card for local storage if they want more that longer
+EDL	00:34:41,792	00:34:42,560	| IOT174 |	More storage time
+EDL	00:34:43,584	00:34:44,352	| IOT174 |	Cloud storage
+EDL	00:34:44,352	00:34:44,864	| IOT174 |	To those 12
+EDL	00:34:46,400	00:34:47,936	| IOT174 |	Continuous
+EDL	00:34:47,936	00:34:50,240	| IOT174 |	Recording all the way to an SD card
+EDL	00:34:50,240	00:34:54,848	| IOT174 |	Yeah so you insert a microSD card in any of our cameras and there's two options
+EDL	00:34:54,848	00:34:59,200	| IOT174 |	You can either send it to continuous record so it'll record 24/7
+EDL	00:34:59,200	00:35:02,784	| IOT174 |	With a 32 gig card can get about two to three days
+EDL	00:35:03,552	00:35:05,856	| IOT174 |	Footage automatically replace
+EDL	00:35:05,856	00:35:06,624	| IOT174 |	What's the oldest
+EDL	00:35:09,184	00:35:10,464	| IOT174 |	Only record when there's an event
+EDL	00:35:10,976	00:35:13,280	| IOT174 |	So the camera work words in 1 minute increments
+EDL	00:35:13,280	00:35:15,328	| IOT174 |	Reviews about 1 minute increment and if there is
+EDL	00:35:18,144	00:35:18,912	| IOT174 |	It saves it
+EDL	00:35:18,912	00:35:19,680	| IOT174 |	If there isn't
+EDL	00:35:19,680	00:35:21,216	| IOT174 |	It doesn't for your customers
+EDL	00:35:21,216	00:35:22,496	| IOT174 |	What percentage error using S
+EDL	00:35:23,520	00:35:26,592	| IOT174 |	So we see about half of our customers will a democracy
+EDL	00:35:26,592	00:35:27,360	| IOT174 |	SD card
+EDL	00:35:27,360	00:35:32,480	| IOT174 |	What are your customers doing with this is it mostly security or they watching their dogs
+EDL	00:35:32,480	00:35:33,760	| IOT174 |	Do you have a sense of that
+EDL	00:35:33,760	00:35:35,296	| IOT174 |	Yeah we engaged
+EDL	00:35:35,296	00:35:38,112	| IOT174 |	Customers pretty regularly and we have a very robust
+EDL	00:35:38,112	00:35:39,136	| IOT174 |	Community vet
+EDL	00:35:39,136	00:35:40,160	| IOT174 |	Just in case
+EDL	00:35:43,488	00:35:46,560	| IOT174 |	Are firmware or are at
+EDL	00:35:47,072	00:35:48,096	| IOT174 |	Also Alpha test
+EDL	00:35:48,096	00:35:48,864	| IOT174 |	Testing new products
+EDL	00:35:48,864	00:35:49,888	| IOT174 |	That we're working on
+EDL	00:35:49,888	00:35:52,192	| IOT174 |	We get a lot of visibility and I would say
+EDL	00:35:52,192	00:35:55,008	| IOT174 |	There's a fair number of people that are looking for that traditional stuff
+EDL	00:35:55,008	00:35:57,312	| IOT174 |	Security or keeping an eye on their house
+EDL	00:35:58,592	00:35:59,104	| IOT174 |	Create
+EDL	00:36:00,640	00:36:02,688	| IOT174 |	Size of the price point brats
+EDL	00:36:02,688	00:36:05,504	| IOT174 |	People will set them up to watch there
+EDL	00:36:05,504	00:36:07,552	| IOT174 |	3D printer and watch the progress Theron
+EDL	00:36:08,064	00:36:11,648	| IOT174 |	For errors during printing
+EDL	00:36:11,648	00:36:13,184	| IOT174 |	Or put it in the crawl space
+EDL	00:36:13,952	00:36:15,744	| IOT174 |	Maybe just stick it in their garage to be able to
+EDL	00:36:16,256	00:36:17,280	| IOT174 |	Please check if I remembered
+EDL	00:36:17,280	00:36:17,792	| IOT174 |	Close the garage
+EDL	00:36:18,560	00:36:20,608	| IOT174 |	Morning people using in a lot of
+EDL	00:36:20,608	00:36:21,376	| IOT174 |	Creative ways
+EDL	00:36:21,376	00:36:22,144	| IOT174 |	We had one user
+EDL	00:36:22,656	00:36:25,984	| IOT174 |	Actually set it up in the nursery
+EDL	00:36:27,008	00:36:29,568	| IOT174 |	Actually brought them to
+EDL	00:36:29,568	00:36:30,848	| IOT174 |	Monitor the breathing
+EDL	00:36:30,848	00:36:32,384	| IOT174 |	His infant child
+EDL	00:36:32,384	00:36:32,896	| IOT174 |	Based on the
+EDL	00:36:33,408	00:36:35,456	| IOT174 |	Feed from our camera
+EDL	00:36:35,456	00:36:36,224	| IOT174 |	That's a lot of
+EDL	00:36:37,248	00:36:39,552	| IOT174 |	People like to Tinker we have a very
+EDL	00:36:41,600	00:36:43,648	| IOT174 |	And I find that interesting because I mean yes
+EDL	00:36:43,648	00:36:44,416	| IOT174 |	The price point
+EDL	00:36:44,416	00:36:45,184	| IOT174 |	I'm totally like
+EDL	00:36:45,184	00:36:45,952	| IOT174 |	Why wouldn't you just buy
+EDL	00:36:46,976	00:36:47,744	| IOT174 |	$30
+EDL	00:36:47,744	00:36:49,280	| IOT174 |	But it also seems like
+EDL	00:36:49,280	00:36:50,304	| IOT174 |	A very mainstream
+EDL	00:36:50,304	00:36:52,096	| IOT174 |	Thanks for someone who looks at a nest cam inside
+EDL	00:36:52,096	00:36:55,424	| IOT174 |	Like that's $200 and I'm not really sure I need a camera
+EDL	00:36:55,424	00:36:56,960	| IOT174 |	So what is your audience
+EDL	00:36:56,960	00:36:57,984	| IOT174 |	What is the makeup
+EDL	00:36:57,984	00:36:58,752	| IOT174 |	What percentage is
+EDL	00:36:58,752	00:37:00,288	| IOT174 |	Like more mainstream purses
+EDL	00:37:01,056	00:37:01,824	| IOT174 |	People who are crazy
+EDL	00:37:02,592	00:37:04,896	| IOT174 |	Bret whissel mix
+EDL	00:37:05,408	00:37:06,176	| IOT174 |	It's a challenge for us
+EDL	00:37:06,688	00:37:08,224	| IOT174 |	To be able to make a product that Appeals
+EDL	00:37:09,760	00:37:11,808	| IOT174 |	I think at lunch it was very much
+EDL	00:37:12,832	00:37:14,368	| IOT174 |	Tinkerer community
+EDL	00:37:14,880	00:37:15,648	| IOT174 |	We saw this is
+EDL	00:37:15,648	00:37:18,208	| IOT174 |	Really cool products
+EDL	00:37:18,208	00:37:19,488	| IOT174 |	How hard it was for us
+EDL	00:37:21,792	00:37:23,072	| IOT174 |	To deliver a product
+EDL	00:37:23,072	00:37:23,584	| IOT174 |	With the specs
+EDL	00:37:24,096	00:37:25,632	| IOT174 |	Teachers are cameras have
+EDL	00:37:25,632	00:37:26,656	| IOT174 |	At the price that we are
+EDL	00:37:27,936	00:37:29,472	| IOT174 |	People were very much I think in that
+EDL	00:37:30,496	00:37:32,544	| IOT174 |	Continue to engage
+EDL	00:37:32,544	00:37:35,104	| IOT174 |	Like I was saying on the beta in the product development
+EDL	00:37:35,616	00:37:36,384	| IOT174 |	But as the product
+EDL	00:37:37,152	00:37:42,272	| IOT174 |	Places like Amazon and website
+EDL	00:37:42,272	00:37:44,832	| IOT174 |	We started to get more people that worries
+EDL	00:37:44,832	00:37:45,344	| IOT174 |	Sisterly
+EDL	00:37:46,624	00:37:48,416	| IOT174 |	Community are just a more mainstream
+EDL	00:37:48,416	00:37:50,720	| IOT174 |	Person looking for a baby monitor
+EDL	00:37:50,720	00:37:52,000	| IOT174 |	Or a way to check
+EDL	00:37:53,024	00:37:55,072	| IOT174 |	And so making sure that
+EDL	00:37:56,608	00:37:57,632	| IOT174 |	Easy and the US
+EDL	00:37:57,632	00:38:01,728	| IOT174 |	The simple for people that have never used before
+EDL	00:38:01,728	00:38:03,008	| IOT174 |	Is a big part of what we
+EDL	00:38:03,008	00:38:04,288	| IOT174 |	We do we think about
+EDL	00:38:04,288	00:38:05,056	| IOT174 |	Got it
+EDL	00:38:05,568	00:38:06,592	| IOT174 |	Really easy
+EDL	00:38:06,592	00:38:07,104	| IOT174 |	I did appreciate
+EDL	00:38:07,616	00:38:10,944	| IOT174 |	So let's go back to the
+EDL	00:38:10,944	00:38:11,712	| IOT174 |	$20
+EDL	00:38:11,712	00:38:13,248	| IOT174 |	When we talked
+EDL	00:38:13,248	00:38:14,016	| IOT174 |	Probably
+EDL	00:38:14,016	00:38:14,784	| IOT174 |	Not a year ago maybe
+EDL	00:38:15,808	00:38:16,576	| IOT174 |	I don't remember when this
+EDL	00:38:17,088	00:38:19,136	| IOT174 |	But after it initially launched
+EDL	00:38:19,136	00:38:21,440	| IOT174 |	You talked about you guys are from Amazon
+EDL	00:38:21,952	00:38:24,000	| IOT174 |	And kind of the founding ethos
+EDL	00:38:24,512	00:38:25,280	| IOT174 |	And how
+EDL	00:38:25,280	00:38:26,560	| IOT174 |	You guys envisioned
+EDL	00:38:26,560	00:38:28,096	| IOT174 |	The future of the smartphone
+EDL	00:38:28,096	00:38:29,120	| IOT174 |	Can you talk a little bit about that
+EDL	00:38:29,632	00:38:30,912	| IOT174 |	Sure yes of the
+EDL	00:38:30,912	00:38:34,752	| IOT174 |	Four of us who founded wise Matt while we're working at Amazon
+EDL	00:38:34,752	00:38:35,776	| IOT174 |	Very close ties
+EDL	00:38:37,568	00:38:39,360	| IOT174 |	Believe in that same ethos of
+EDL	00:38:39,360	00:38:40,896	| IOT174 |	Customer-centric
+EDL	00:38:40,896	00:38:41,664	| IOT174 |	Experience
+EDL	00:38:41,664	00:38:42,688	| IOT174 |	Everything that we
+EDL	00:38:43,712	00:38:45,504	| IOT174 |	Is centered around feedback from
+EDL	00:38:45,504	00:38:47,552	| IOT174 |	Are users and continuing to improve
+EDL	00:38:47,552	00:38:49,088	| IOT174 |	Experience and so
+EDL	00:38:49,088	00:38:50,368	| IOT174 |	You're at lunch we had a
+EDL	00:38:50,368	00:38:51,392	| IOT174 |	Pretty simple
+EDL	00:38:51,392	00:38:53,696	| IOT174 |	Camera with focus on a camera
+EDL	00:38:53,696	00:38:54,464	| IOT174 |	And worked
+EDL	00:39:01,376	00:39:02,912	| IOT174 |	Cameron more and more valuable
+EDL	00:39:02,912	00:39:03,680	| IOT174 |	Overtime
+EDL	00:39:03,680	00:39:05,984	| IOT174 |	The listening to our user as finding out what
+EDL	00:39:05,984	00:39:06,752	| IOT174 |	Features they want
+EDL	00:39:09,056	00:39:09,824	| IOT174 |	Find firmware updates
+EDL	00:39:10,336	00:39:11,616	| IOT174 |	Our biggest announcement was last week
+EDL	00:39:12,896	00:39:15,456	| IOT174 |	Set Alexa certification
+EDL	00:39:16,992	00:39:19,040	| IOT174 |	Camera
+EDL	00:39:19,040	00:39:21,088	| IOT174 |	It was especially challenging for us
+EDL	00:39:21,088	00:39:23,648	| IOT174 |	Because we did have limitations from a hardware
+EDL	00:39:23,648	00:39:26,464	| IOT174 |	Because of the price we don't have
+EDL	00:39:26,464	00:39:27,488	| IOT174 |	Robust internal
+EDL	00:39:27,488	00:39:28,512	| IOT174 |	Components
+EDL	00:39:28,512	00:39:30,048	| IOT174 |	Extra hard to get that
+EDL	00:39:30,048	00:39:32,096	| IOT174 |	Certification and make it work with our Hardware
+EDL	00:39:32,096	00:39:34,144	| IOT174 |	Okay and then the first one to Jen when it does
+EDL	00:39:40,288	00:39:43,872	| IOT174 |	Upgraded some of the internal components between
+EDL	00:39:43,872	00:39:44,896	| IOT174 |	2 Gentoo
+EDL	00:39:44,896	00:39:46,432	| IOT174 |	Or that planet
+EDL	00:39:46,432	00:39:47,712	| IOT174 |	Features like Alexa
+EDL	00:39:47,712	00:39:49,248	| IOT174 |	Because gen 1 components
+EDL	00:39:49,248	00:39:50,272	| IOT174 |	Didn't support it
+EDL	00:39:52,064	00:39:54,112	| IOT174 |	So we did not increase the price for a customer is it
+EDL	00:39:55,392	00:39:57,696	| IOT174 |	Price for our cameras even though we moved
+EDL	00:39:57,696	00:39:59,232	| IOT174 |	Json better internal components to
+EDL	00:39:59,232	00:40:00,000	| IOT174 |	Plan for the future
+EDL	00:40:00,512	00:40:02,560	| IOT174 |	And yet you're still break-even how did that happen
+EDL	00:40:03,328	00:40:09,472	| IOT174 |	Supply chain side and given the volume that we were able to secure a component
+EDL	00:40:10,240	00:40:11,008	| IOT174 |	Price that worked for us
+EDL	00:40:11,520	00:40:16,384	| IOT174 |	And do you guys design the camera or did you find someone who made a really good camera
+EDL	00:40:16,896	00:40:17,920	| IOT174 |	Opponents at a low cost
+EDL	00:40:17,920	00:40:18,432	| IOT174 |	How did that work
+EDL	00:40:19,200	00:40:22,528	| IOT174 |	Yes at the manufacturing partner that we work with sdp
+EDL	00:40:22,528	00:40:25,344	| IOT174 |	Experience making cameras and so you will actually
+EDL	00:40:26,368	00:40:29,440	| IOT174 |	Other cameras that have a similar industrial design to ferment
+EDL	00:40:29,440	00:40:30,208	| IOT174 |	External pressure
+EDL	00:40:30,208	00:40:32,000	| IOT174 |	Respective look the same as ours
+EDL	00:40:32,000	00:40:34,304	| IOT174 |	So we license the industrial design the overall
+EDL	00:40:34,816	00:40:35,328	| IOT174 |	Outside
+EDL	00:40:37,376	00:40:38,912	| IOT174 |	Customize the internal components
+EDL	00:40:39,424	00:40:41,472	| IOT174 |	Android our own firmware and software
+EDL	00:40:41,472	00:40:42,496	| IOT174 |	To customize
+EDL	00:40:42,496	00:40:44,544	| IOT174 |	Cameras for ru sinforoso
+EDL	00:40:44,544	00:40:46,592	| IOT174 |	While the camera may look the same as
+EDL	00:40:46,592	00:40:48,384	| IOT174 |	Border cameras out there
+EDL	00:40:48,384	00:40:50,432	| IOT174 |	It's not compatible and it's a completely different
+EDL	00:40:50,432	00:40:51,200	| IOT174 |	My camera
+EDL	00:40:51,200	00:40:51,968	| IOT174 |	From an internal
+EDL	00:40:53,760	00:40:55,808	| IOT174 |	And this is a Chinese manufacturer
+EDL	00:40:55,808	00:40:56,576	| IOT174 |	Piss
+EDL	00:40:56,576	00:40:59,136	| IOT174 |	Okay cuz a lot of people in there
+EDL	00:40:59,136	00:41:04,768	| IOT174 |	Can't believe it's so cheap effort have looked at like their packets and where those go and they noticed that some of them go to
+EDL	00:41:05,280	00:41:07,584	| IOT174 |	China and they were a little concerned about that
+EDL	00:41:07,584	00:41:08,608	| IOT174 |	Do you want to talk about
+EDL	00:41:08,608	00:41:09,376	| IOT174 |	Why that might be
+EDL	00:41:09,888	00:41:12,960	| IOT174 |	We did see some comments from customers of this is early feedback.
+EDL	00:41:15,008	00:41:18,336	| IOT174 |	I just are two pieces of this so one piece
+EDL	00:41:18,336	00:41:22,944	| IOT174 |	Peer-to-peer connection that's made between the phone and the camera
+EDL	00:41:22,944	00:41:24,480	| IOT174 |	And we using
+EDL	00:41:24,480	00:41:26,016	| IOT174 |	Actual service from that it was
+EDL	00:41:26,016	00:41:27,552	| IOT174 |	The commercial service from a
+EDL	00:41:27,552	00:41:29,088	| IOT174 |	Pretty standard company that does that
+EDL	00:41:30,880	00:41:31,648	| IOT174 |	Rivers all over the world
+EDL	00:41:31,648	00:41:34,720	| IOT174 |	So we were just using never server happened
+EDL	00:41:35,488	00:41:36,256	| IOT174 |	At the time
+EDL	00:41:36,256	00:41:37,280	| IOT174 |	Customer was calling up
+EDL	00:41:42,656	00:41:43,424	| IOT174 |	So we
+EDL	00:41:43,424	00:41:45,216	| IOT174 |	Went back to that service provider
+EDL	00:41:45,216	00:41:47,776	| IOT174 |	She worked with them to restrict
+EDL	00:41:47,776	00:41:48,800	| IOT174 |	Our traffic
+EDL	00:41:48,800	00:41:49,568	| IOT174 |	To us server
+EDL	00:41:50,336	00:41:52,640	| IOT174 |	So far cameras
+EDL	00:41:54,943	00:41:57,759	| IOT174 |	And then you guys do all the software here and there hosted here
+EDL	00:41:57,759	00:41:58,527	| IOT174 |	Correct
+EDL	00:41:58,527	00:41:59,295	| IOT174 |	Yes it's all
+EDL	00:41:59,807	00:42:00,575	| IOT174 |	Nawsa
+EDL	00:42:01,599	00:42:02,111	| IOT174 |	Weird
+EDL	00:42:02,623	00:42:05,183	| IOT174 |	Let's go back to the integration with
+EDL	00:42:05,183	00:42:05,695	| IOT174 |	Anime
+EDL	00:42:06,207	00:42:08,255	| IOT174 |	I know that a lot of your customers were asked
+EDL	00:42:08,767	00:42:09,535	| IOT174 |	That's so
+EDL	00:42:09,535	00:42:14,655	| IOT174 |	I'm assuming that's why you went first but are you looking for new partners or you going to do this with other
+EDL	00:42:14,655	00:42:15,679	| IOT174 |	Vendors as well
+EDL	00:42:15,679	00:42:16,703	| IOT174 |	This was
+EDL	00:42:16,703	00:42:17,727	| IOT174 |	Based on customer
+EDL	00:42:17,727	00:42:23,103	| IOT174 |	D-backs we put out a surveys on a number of different areas asking customers what kind of integration
+EDL	00:42:23,103	00:42:24,127	| IOT174 |	State wanted
+EDL	00:42:24,127	00:42:26,175	| IOT174 |	And so
+EDL	00:42:26,175	00:42:27,967	| IOT174 |	Madam
+EDL	00:42:27,967	00:42:32,575	| IOT174 |	Top requested that was the first one we started working on
+EDL	00:42:32,575	00:42:34,367	| IOT174 |	We did actually integrate with if
+EDL	00:42:34,879	00:42:35,647	| IOT174 |	TT first
+EDL	00:42:36,159	00:42:38,207	| IOT174 |	That was our first integration that we announce
+EDL	00:42:38,207	00:42:39,487	| IOT174 |	About a month ago
+EDL	00:42:39,487	00:42:42,303	| IOT174 |	And we will continue to look at other options again
+EDL	00:42:42,303	00:42:43,327	| IOT174 |	It'll be based on what
+EDL	00:42:43,327	00:42:44,095	| IOT174 |	Customers are off
+EDL	00:42:44,095	00:42:44,607	| IOT174 |	Asking for
+EDL	00:42:45,119	00:42:46,143	| IOT174 |	And how does that affect
+EDL	00:42:46,143	00:42:48,703	| IOT174 |	Your cost as you start thinking about going for it
+EDL	00:42:49,983	00:42:50,751	| IOT174 |	Madam
+EDL	00:42:50,751	00:42:51,775	| IOT174 |	Is there a limit
+EDL	00:42:51,775	00:42:53,567	| IOT174 |	There definitely are cost associated with
+EDL	00:42:53,567	00:42:54,335	| IOT174 |	With those
+EDL	00:42:54,335	00:42:56,383	| IOT174 |	Cost benefit analysis
+EDL	00:42:56,383	00:42:57,151	| IOT174 |	So
+EDL	00:42:57,151	00:42:59,711	| IOT174 |	There's a cost associated with it but it also
+EDL	00:42:59,711	00:43:00,735	| IOT174 |	Opens us up to
+EDL	00:43:00,735	00:43:03,039	| IOT174 |	Just so many more users and makes our products
+EDL	00:43:03,039	00:43:04,063	| IOT174 |	So much more you
+EDL	00:43:04,063	00:43:04,831	| IOT174 |	Useful to Arco
+EDL	00:43:06,879	00:43:09,439	| IOT174 |	Sides of that and we make a business decision
+EDL	00:43:09,439	00:43:12,255	| IOT174 |	Ultimately were looking to provide the best
+EDL	00:43:12,255	00:43:13,535	| IOT174 |	Restaurants to our users because
+EDL	00:43:14,047	00:43:15,327	| IOT174 |	Ultimately
+EDL	00:43:15,327	00:43:16,863	| IOT174 |	Bring more people into the Paw
+EDL	00:43:16,863	00:43:19,167	| IOT174 |	As we scale we can sense
+EDL	00:43:19,167	00:43:20,703	| IOT174 |	Poor tire cost with other
+EDL	00:43:20,703	00:43:21,727	| IOT174 |	Integrations
+EDL	00:43:21,727	00:43:28,127	| IOT174 |	It is the cool to be talked about providing low-cost products and doing a really awesome job at the software and
+EDL	00:43:28,127	00:43:32,735	| IOT174 |	Cervicide is the coldest just be a camera company or you going to add more stuff more features
+EDL	00:43:33,759	00:43:36,319	| IOT174 |	Yeah sure and I do want to be clear that
+EDL	00:43:36,319	00:43:37,087	| IOT174 |	Why we offer
+EDL	00:43:37,087	00:43:39,135	| IOT174 |	You're awesome prices are goals not to
+EDL	00:43:39,135	00:43:39,903	| IOT174 |	To be the low cost
+EDL	00:43:39,903	00:43:41,951	| IOT174 |	Option and that's not we hope that's not white
+EDL	00:43:42,975	00:43:45,279	| IOT174 |	Camera is our goal is always to make an awesome
+EDL	00:43:45,279	00:43:46,047	| IOT174 |	Camera
+EDL	00:43:46,047	00:43:47,839	| IOT174 |	The fact that only cost $20
+EDL	00:43:47,839	00:43:48,351	| IOT174 |	Is an added
+EDL	00:43:48,863	00:43:49,887	| IOT174 |	Are cameras
+EDL	00:43:49,887	00:43:51,423	| IOT174 |	Perform peer-to-peer spot
+EDL	00:43:52,447	00:43:54,239	| IOT174 |	I would say all of the mainstream camera
+EDL	00:43:54,239	00:43:54,751	| IOT174 |	Lights out there
+EDL	00:43:55,263	00:43:56,799	| IOT174 |	So why is the nest
+EDL	00:43:57,311	00:43:58,079	| IOT174 |	10 times more expensive
+EDL	00:43:58,591	00:44:00,383	| IOT174 |	Good question for NASA
+EDL	00:44:00,383	00:44:01,663	| IOT174 |	I would look at
+EDL	00:44:01,663	00:44:07,039	| IOT174 |	They have a very different distribution model so when you're in large retail stores there's a
+EDL	00:44:07,807	00:44:11,135	| IOT174 |	Chrysler profit that goes to that retail Channel there is
+EDL	00:44:11,135	00:44:12,927	| IOT174 |	Profitability of the company itself
+EDL	00:44:12,927	00:44:14,975	| IOT174 |	There's marketing branding
+EDL	00:44:14,975	00:44:15,743	| IOT174 |	Sea lard
+EDL	00:44:15,743	00:44:17,535	| IOT174 |	Corporate sponsorships
+EDL	00:44:17,535	00:44:19,583	| IOT174 |	Large celebrity sponsorship
+EDL	00:44:19,583	00:44:20,607	| IOT174 |	Those are things
+EDL	00:44:20,607	00:44:23,679	| IOT174 |	We pay for his customers and we don't think our
+EDL	00:44:23,679	00:44:28,287	| IOT174 |	Customers want to pay for all of that out really just focus on what is the cost
+EDL	00:44:28,287	00:44:29,567	| IOT174 |	Making an awesome product
+EDL	00:44:29,567	00:44:30,335	| IOT174 |	And so
+EDL	00:44:31,871	00:44:32,639	| IOT174 |	Okay sorry
+EDL	00:44:32,639	00:44:33,663	| IOT174 |	Now you can go back to
+EDL	00:44:33,663	00:44:34,175	| IOT174 |	To telling me
+EDL	00:44:34,687	00:44:35,199	| IOT174 |	What you guys
+EDL	00:44:39,039	00:44:40,831	| IOT174 |	Teachers and continue to improve our
+EDL	00:44:40,831	00:44:41,599	| IOT174 |	Testing products
+EDL	00:44:41,599	00:44:43,135	| IOT174 |	It support them overtime
+EDL	00:44:43,135	00:44:47,231	| IOT174 |	We are looking at other cameras as well so
+EDL	00:44:47,231	00:44:49,791	| IOT174 |	I don't think the secret that a lot of our customers ask for
+EDL	00:44:49,791	00:44:51,071	| IOT174 |	For an outdoor camera
+EDL	00:44:51,071	00:44:52,351	| IOT174 |	So that is something that
+EDL	00:44:52,351	00:44:53,631	| IOT174 |	We have on our radar it's
+EDL	00:44:54,143	00:44:56,191	| IOT174 |	Yeah that's a challenging thing to do so it will take a
+EDL	00:44:56,191	00:44:57,983	| IOT174 |	That is something we have
+EDL	00:45:00,031	00:45:00,543	| IOT174 |	Topper
+EDL	00:45:01,567	00:45:05,151	| IOT174 |	Concrete
+EDL	00:45:05,919	00:45:07,199	| IOT174 |	Share or announce
+EDL	00:45:07,711	00:45:08,991	| IOT174 |	We do hope to go beyond cameras
+EDL	00:45:09,759	00:45:12,063	| IOT174 |	Awesome in final question for you
+EDL	00:45:12,063	00:45:12,831	| IOT174 |	Let's talk about
+EDL	00:45:12,831	00:45:13,855	| IOT174 |	Security and privacy
+EDL	00:45:13,855	00:45:14,879	| IOT174 |	Because he's our big issues
+EDL	00:45:14,879	00:45:15,391	| IOT174 |	With cameras
+EDL	00:45:15,903	00:45:18,463	| IOT174 |	So what kind of security steps are you guys
+EDL	00:45:18,463	00:45:22,815	| IOT174 |	Is taking both to encourage users to behave better and then also on your end
+EDL	00:45:22,815	00:45:23,327	| IOT174 |	And to make sure
+EDL	00:45:24,607	00:45:27,167	| IOT174 |	Yes definitely
+EDL	00:45:27,167	00:45:28,447	| IOT174 |	Security and safety is
+EDL	00:45:28,959	00:45:30,495	| IOT174 |	Top priority for us incredibly in
+EDL	00:45:33,311	00:45:34,847	| IOT174 |	The huge responsibility for us
+EDL	00:45:35,359	00:45:38,431	| IOT174 |	When customers bring a camera of ours into their home and
+EDL	00:45:38,431	00:45:39,455	| IOT174 |	Take that
+EDL	00:45:39,455	00:45:39,967	| IOT174 |	Paramount
+EDL	00:45:40,735	00:45:42,527	| IOT174 |	So we
+EDL	00:45:43,039	00:45:44,575	| IOT174 |	Stuck on the security side
+EDL	00:45:45,599	00:45:47,647	| IOT174 |	The AWS servers all of this
+EDL	00:45:47,647	00:45:49,183	| IOT174 |	Connections are made
+EDL	00:45:49,183	00:45:49,951	| IOT174 |	Bhcc
+EDL	00:45:49,951	00:45:50,463	| IOT174 |	GPS
+EDL	00:45:50,975	00:45:51,999	| IOT174 |	For the alert videos
+EDL	00:45:52,511	00:45:54,303	| IOT174 |	We use symmetric and asymmetric
+EDL	00:45:54,303	00:45:56,351	| IOT174 |	Consistent hashing and some other
+EDL	00:45:56,351	00:45:57,119	| IOT174 |	Things on the back end
+EDL	00:45:57,887	00:46:00,191	| IOT174 |	Make sure that our user information is to
+EDL	00:46:00,191	00:46:01,471	| IOT174 |	Secure and can't be
+EDL	00:46:01,471	00:46:02,239	| IOT174 |	Stolen
+EDL	00:46:02,239	00:46:03,263	| IOT174 |	And then what about privacy
+EDL	00:46:03,775	00:46:04,799	| IOT174 |	What is your philosophy
+EDL	00:46:04,799	00:46:05,311	| IOT174 |	Sofia round
+EDL	00:46:05,823	00:46:06,335	| IOT174 |	Customer data
+EDL	00:46:06,847	00:46:07,615	| IOT174 |	Yeah
+EDL	00:46:07,615	00:46:08,383	| IOT174 |	Of course
+EDL	00:46:09,663	00:46:10,175	| IOT174 |	Thinking about that as
+EDL	00:46:11,455	00:46:12,479	| IOT174 |	Oliver
+EDL	00:46:12,479	00:46:14,527	| IOT174 |	LifeStream connections are done via UPS
+EDL	00:46:14,527	00:46:16,575	| IOT174 |	Peer-to-peer connection between the
+EDL	00:46:16,575	00:46:18,367	| IOT174 |	Users phone and the camera so
+EDL	00:46:19,391	00:46:21,695	| IOT174 |	Has no visibility into that
+EDL	00:46:21,695	00:46:23,231	| IOT174 |	For all of the
+EDL	00:46:23,231	00:46:25,535	| IOT174 |	Alert videos that are stored in the cloud
+EDL	00:46:25,535	00:46:28,351	| IOT174 |	Those are directly from the cloud to
+EDL	00:46:28,351	00:46:29,631	| IOT174 |	Users and wise
+EDL	00:46:30,911	00:46:32,191	| IOT174 |	The individual videos of r
+EDL	00:46:32,959	00:46:35,519	| IOT174 |	And also to give our users more control over their private
+EDL	00:46:35,519	00:46:36,799	| IOT174 |	Jesse we really focus on
+EDL	00:46:36,799	00:46:37,823	| IOT174 |	Features within the app
+EDL	00:46:37,823	00:46:39,103	| IOT174 |	To be able to turn off
+EDL	00:46:39,103	00:46:42,943	| IOT174 |	The camera for for example turn off sound in the recording of videos
+EDL	00:46:42,943	00:46:43,967	| IOT174 |	So
+EDL	00:46:43,967	00:46:44,991	| IOT174 |	Our recent app
+EDL	00:46:44,991	00:46:46,527	| IOT174 |	Update we actually added
+EDL	00:46:46,527	00:46:48,063	| IOT174 |	Turn on and off the camera
+EDL	00:46:48,063	00:46:49,599	| IOT174 |	And with Integrations with
+EDL	00:46:50,111	00:46:53,695	| IOT174 |	You can actually use geolocation I use the location of your phone
+EDL	00:46:53,695	00:46:54,719	| IOT174 |	To control the on-off
+EDL	00:46:55,231	00:46:57,535	| IOT174 |	Your camera so that you can turn it off when you're at home
+EDL	00:46:58,559	00:47:00,095	| IOT174 |	According that's awesome
+EDL	00:47:01,119	00:47:04,447	| IOT174 |	Wow you're listening
+EDL	00:47:06,239	00:47:07,775	| IOT174 |	China corporate. As much as
+EDL	00:47:10,591	00:47:12,383	| IOT174 |	Excellent alright well a lot of thanks so much for
+EDL	00:47:12,383	00:47:12,895	| IOT174 |	For coming on the show
+EDL	00:47:13,663	00:47:16,735	| IOT174 |	Thanks so much for having me that's it for this week
+EDL	00:47:16,735	00:47:23,135	| IOT174 |	Thanks so much for listening and remember if you'd like more iot news sign up for my newsletter at Stacy on
+EDL	00:47:23,135	00:47:24,415	| IOT174 |	Coyote
+EDL	00:47:24,415	00:47:27,999	| IOT174 |	Will see you next week 

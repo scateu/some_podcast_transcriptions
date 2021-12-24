@@ -1,0 +1,1362 @@
+EDL	Record In	Record Out	Clipname	Subtitle
+EDL	00:00:09,216	00:00:09,984	| IOT183 |	Welcome to the internet
+EDL	00:00:11,776	00:00:13,056	| IOT183 |	Stacey Higginbotham
+EDL	00:00:13,056	00:00:14,336	| IOT183 |	Co-host
+EDL	00:00:14,336	00:00:15,360	| IOT183 |	Kevin tofel
+EDL	00:00:15,360	00:00:18,688	| IOT183 |	And this is episode 183 of the podcast
+EDL	00:00:18,688	00:00:25,088	| IOT183 |	And welcome all we're going to be talking about Amazon Amazon Amazon so much Amazon based on all the news
+EDL	00:00:25,088	00:00:26,368	| IOT183 |	It was out last week
+EDL	00:00:26,368	00:00:32,256	| IOT183 |	Microsoft ignite is happening so we can be talking about some updates with Microsoft including Cortana and
+EDL	00:00:32,256	00:00:33,024	| IOT183 |	Azure
+EDL	00:00:33,024	00:00:33,792	| IOT183 |	Plus
+EDL	00:00:33,792	00:00:37,120	| IOT183 |	We got a new whiting's watch we're going to see if Kevin wants it
+EDL	00:00:37,120	00:00:37,888	| IOT183 |	Plus
+EDL	00:00:37,888	00:00:40,192	| IOT183 |	Dulux a new sprinkler and
+EDL	00:00:40,192	00:00:40,704	| IOT183 |	Maybe
+EDL	00:00:41,216	00:00:43,776	| IOT183 |	A quick update on my brilliant lights
+EDL	00:00:43,776	00:00:47,360	| IOT183 |	Plus this week we've got a guest Rayford Smith of
+EDL	00:00:47,360	00:00:48,128	| IOT183 |	Entergy
+EDL	00:00:48,128	00:00:50,688	| IOT183 |	Do I talk to at the SAS Analytics
+EDL	00:00:50,688	00:00:51,456	| IOT183 |	Summit
+EDL	00:00:51,456	00:00:54,784	| IOT183 |	We're going to talk about all about how to manage a digital transformation
+EDL	00:00:54,784	00:01:00,928	| IOT183 |	And speaking of SAS they are a sponsor of this week's podcast although I did pay my own way for the summer
+EDL	00:01:01,440	00:01:04,512	| IOT183 |	So all of that and more awaits you
+EDL	00:01:04,512	00:01:05,536	| IOT183 |	But first
+EDL	00:01:05,536	00:01:07,584	| IOT183 |	Let's get a message from our sponsor
+EDL	00:01:07,584	00:01:13,984	| IOT183 |	This week sponsor is aqua keep your iot Fleet growing and trade in the days of remoting into your car
+EDL	00:01:13,984	00:01:20,384	| IOT183 |	Customers devices to identify and resolve bugs upgrade to Aqua 10 minutes unless it's Edge verse
+EDL	00:01:20,384	00:01:26,784	| IOT183 |	Problem solving software do the heavy lifting for you chocolate automatically finds performance issues and then tracks
+EDL	00:01:26,784	00:01:33,184	| IOT183 |	Stem from released release collecting all the Intel you need to rapidly identify root causes for the errors play
+EDL	00:01:33,184	00:01:39,584	| IOT183 |	Waking you and your customers register for free today chocolate. IO that's a you
+EDL	00:01:39,584	00:01:41,120	| IOT183 |	K letv
+EDL	00:01:41,120	00:01:41,888	| IOT183 |	Dot IO
+EDL	00:01:42,656	00:01:44,704	| IOT183 |	Okay Kevin last week
+EDL	00:01:44,704	00:01:46,496	| IOT183 |	I was at the Amazon announcement
+EDL	00:01:47,264	00:01:50,848	| IOT183 |	Which word actually 70 pieces of news released in about an hour and a half
+EDL	00:01:51,360	00:01:52,896	| IOT183 |	Was like getting shot in the head with
+EDL	00:01:52,896	00:01:55,200	| IOT183 |	It's about a hundred water balloons was very exciting
+EDL	00:01:55,200	00:01:57,248	| IOT183 |	And we're going to cover all 70 in-depth today
+EDL	00:01:58,784	00:02:05,184	| IOT183 |	What is with Amazon in their timing they know we do this podcast so certain day the weekend yet they had their event right
+EDL	00:02:05,184	00:02:07,232	| IOT183 |	After we did our podcast
+EDL	00:02:07,232	00:02:10,816	| IOT183 |	I know I can't believe they're not appreciating us
+EDL	00:02:10,816	00:02:11,840	| IOT183 |	Subscribers list
+EDL	00:02:13,632	00:02:15,680	| IOT183 |	It's on our calendars Amazon you can see it
+EDL	00:02:16,192	00:02:18,496	| IOT183 |	School on them okay so
+EDL	00:02:18,496	00:02:20,288	| IOT183 |	We've already written a couple things about it
+EDL	00:02:21,824	00:02:27,968	| IOT183 |	So if you want to discover the 11:00 new Echo devices from clocks to microwaves
+EDL	00:02:28,480	00:02:29,760	| IOT183 |	All kinds of crazy stuff
+EDL	00:02:29,760	00:02:31,040	| IOT183 |	That's on the website
+EDL	00:02:31,040	00:02:33,088	| IOT183 |	I also talked about the strategy
+EDL	00:02:33,088	00:02:34,880	| IOT183 |	There's a couple things we didn't cover
+EDL	00:02:34,880	00:02:40,768	| IOT183 |	In that news that we can talk about and there's actually a couple questions that you guys sent to us the first one
+EDL	00:02:41,536	00:02:44,864	| IOT183 |	And will cover this at the very end so stay tuned for that but that is
+EDL	00:02:44,864	00:02:46,656	| IOT183 |	Based on all of this news
+EDL	00:02:46,656	00:02:49,984	| IOT183 |	Would we go to being a straight Google or straight Amazon
+EDL	00:02:50,752	00:02:51,776	| IOT183 |	Does this mean that
+EDL	00:02:51,776	00:02:54,080	| IOT183 |	What should somebody
+EDL	00:02:54,080	00:02:54,592	| IOT183 |	So
+EDL	00:02:55,104	00:02:56,384	| IOT183 |	You got in mind as we talked about some
+EDL	00:02:56,896	00:02:58,176	| IOT183 |	Pictures so
+EDL	00:02:58,176	00:03:00,480	| IOT183 |	In addition to all of these devices
+EDL	00:03:00,480	00:03:02,016	| IOT183 |	Amazon
+EDL	00:03:02,016	00:03:03,552	| IOT183 |	A really cool thing
+EDL	00:03:03,552	00:03:06,368	| IOT183 |	Is basically now turned all of your echos
+EDL	00:03:06,368	00:03:07,392	| IOT183 |	An echo Dot
+EDL	00:03:08,672	00:03:09,440	| IOT183 |	Security alarm
+EDL	00:03:09,440	00:03:13,792	| IOT183 |	Watch the service called guard and this is something
+EDL	00:03:13,792	00:03:15,584	| IOT183 |	You can say is you're walking out of the house
+EDL	00:03:16,096	00:03:18,400	| IOT183 |	And it will
+EDL	00:03:18,400	00:03:19,936	| IOT183 |	All of your echos turn into
+EDL	00:03:20,448	00:03:26,080	| IOT183 |	Glass break sensors so they're listening for the sound of glass breaking the sound
+EDL	00:03:26,080	00:03:28,896	| IOT183 |	Smoke detectors or carbon monoxide alarms going
+EDL	00:03:29,664	00:03:32,480	| IOT183 |	And if they hear these I'll actually send you a notice
+EDL	00:03:32,480	00:03:32,992	| IOT183 |	Vacation
+EDL	00:03:33,504	00:03:38,112	| IOT183 |	If it's monitored security you can actually send it to your monitored security system
+EDL	00:03:38,112	00:03:38,880	| IOT183 |	Intel
+EDL	00:03:38,880	00:03:39,392	| IOT183 |	Do whatever they do
+EDL	00:03:39,904	00:03:41,440	| IOT183 |	I thought this was really cool
+EDL	00:03:41,952	00:03:44,000	| IOT183 |	Waste not just cool it's brilliant
+EDL	00:03:44,000	00:03:50,400	| IOT183 |	Because it doesn't require people to buy any new hardware basically the microphones are all
+EDL	00:03:50,400	00:03:51,424	| IOT183 |	Very very good in the
+EDL	00:03:51,424	00:03:52,448	| IOT183 |	Echo products
+EDL	00:03:52,448	00:03:55,520	| IOT183 |	And noticed repurposing them for a very useful service
+EDL	00:03:56,032	00:03:57,824	| IOT183 |	Yeah and it's free so
+EDL	00:04:00,384	00:04:02,944	| IOT183 |	Is that now in addition to your wake word
+EDL	00:04:03,456	00:04:06,528	| IOT183 |	That you have selected Amazon is going to always be listening
+EDL	00:04:06,528	00:04:09,088	| IOT183 |	For glass breaking and the sound of your smoke alarm
+EDL	00:04:09,856	00:04:12,928	| IOT183 |	So in some ways they're using security as a way to
+EDL	00:04:12,928	00:04:14,464	| IOT183 |	Encroach on privacy
+EDL	00:04:15,744	00:04:17,536	| IOT183 |	Look at that way which some people will
+EDL	00:04:17,536	00:04:20,351	| IOT183 |	I don't necessarily think so they're always listening anyway
+EDL	00:04:20,863	00:04:22,655	| IOT183 |	Well yes but now you've got
+EDL	00:04:22,655	00:04:24,703	| IOT183 |	A greater number of triggers that will
+EDL	00:04:24,703	00:04:25,727	| IOT183 |	Trigger something happen
+EDL	00:04:26,239	00:04:27,519	| IOT183 |	And take an action in store that
+EDL	00:04:28,031	00:04:28,799	| IOT183 |	Snip it to the cloud
+EDL	00:04:29,567	00:04:32,383	| IOT183 |	If that's fine they want to listen to the sound of breaking glass all day that's
+EDL	00:04:33,663	00:04:35,199	| IOT183 |	I need the it is a valuable service
+EDL	00:04:35,199	00:04:36,223	| IOT183 |	Your privacy
+EDL	00:04:39,551	00:04:41,855	| IOT183 |	Skytran if you're discussing a murder
+EDL	00:04:42,367	00:04:43,135	| IOT183 |	Baby don't break glass
+EDL	00:04:43,903	00:04:45,439	| IOT183 |	They just in Corgi
+EDL	00:04:45,951	00:04:50,303	| IOT183 |	Funny hangout let me add that to my rules of when I'm discussing these things
+EDL	00:04:50,303	00:04:51,839	| IOT183 |	Tuck near broken flask
+EDL	00:04:52,351	00:04:54,399	| IOT183 |	Got it or if you are in the midst of murdering
+EDL	00:04:55,167	00:04:55,679	| IOT183 |	TriNet
+EDL	00:04:56,959	00:04:59,775	| IOT183 |	Could you step away from the window for psych thank you okay
+EDL	00:05:00,799	00:05:01,823	| IOT183 |	So
+EDL	00:05:01,823	00:05:03,615	| IOT183 |	The other thing to think about here is
+EDL	00:05:04,127	00:05:05,663	| IOT183 |	They're adding a lot of
+EDL	00:05:05,663	00:05:08,479	| IOT183 |	Intelligence at the edge so now
+EDL	00:05:08,479	00:05:12,575	| IOT183 |	I talked to their
+EDL	00:05:12,575	00:05:14,367	| IOT183 |	When you're always listening this is happy
+EDL	00:05:14,367	00:05:15,647	| IOT183 |	This doesn't get sent to the
+EDL	00:05:15,647	00:05:18,719	| IOT183 |	Alright so now they've got three compressed model sitting at
+EDL	00:05:18,719	00:05:19,487	| IOT183 |	The edge
+EDL	00:05:19,487	00:05:21,023	| IOT183 |	What's the Wake word one for class 1
+EDL	00:05:21,023	00:05:24,863	| IOT183 |	Smoke detection you know if you're in the AI world or the edge processor
+EDL	00:05:26,143	00:05:27,167	| IOT183 |	That's kind of an interesting
+EDL	00:05:27,935	00:05:28,959	| IOT183 |	And also
+EDL	00:05:28,959	00:05:30,751	| IOT183 |	Also speaking of the edge
+EDL	00:05:31,263	00:05:32,543	| IOT183 |	Amazon announced
+EDL	00:05:32,543	00:05:33,823	| IOT183 |	Local support
+EDL	00:05:33,823	00:05:35,359	| IOT183 |	4 commands at this event
+EDL	00:05:35,871	00:05:36,895	| IOT183 |	Animalistic
+EDL	00:05:38,175	00:05:39,967	| IOT183 |	Don't know when it is coming they said in a cup
+EDL	00:05:41,247	00:05:42,015	| IOT183 |	Who knows
+EDL	00:05:42,015	00:05:42,527	| IOT183 |	But
+EDL	00:05:43,039	00:05:45,087	| IOT183 |	This is. This means if your
+EDL	00:05:45,087	00:05:46,111	| IOT183 |	Internet goes out
+EDL	00:05:46,623	00:05:51,231	| IOT183 |	You could actually still say things like turn on the lights and the lights will go out
+EDL	00:05:52,255	00:05:56,095	| IOT183 |	This was a huge reason I've actually done with Wink in the past
+EDL	00:05:57,119	00:06:00,959	| IOT183 |	I don't want to see the first but they were among the first to have localized commands in a hub
+EDL	00:06:00,959	00:06:03,007	| IOT183 |	So that was key for me
+EDL	00:06:03,007	00:06:09,407	| IOT183 |	Not that we losing a lot
+EDL	00:06:09,407	00:06:11,199	| IOT183 |	Take a trip over themselves if they had to use them
+EDL	00:06:11,711	00:06:12,223	| IOT183 |	I'm pretty sure they
+EDL	00:06:14,527	00:06:15,807	| IOT183 |	In the dark I don't know
+EDL	00:06:17,087	00:06:18,367	| IOT183 |	I thought that was
+EDL	00:06:18,367	00:06:19,135	| IOT183 |	Really noteworthy
+EDL	00:06:21,183	00:06:23,487	| IOT183 |	I got two questions though
+EDL	00:06:23,487	00:06:26,559	| IOT183 |	What about the guard service not a question why should I comment
+EDL	00:06:26,559	00:06:30,655	| IOT183 |	Did I understand correctly you're also going to automate your smart lights when you're not at home
+EDL	00:06:31,167	00:06:32,703	| IOT183 |	Yes they are so you
+EDL	00:06:32,703	00:06:36,031	| IOT183 |	You can actually set that up so when you turn on guard it will automate
+EDL	00:06:36,031	00:06:36,799	| IOT183 |	Your smart lights
+EDL	00:06:36,799	00:06:38,335	| IOT183 |	Which by the way is a fee
+EDL	00:06:38,335	00:06:39,359	| IOT183 |	Feature that I had with
+EDL	00:06:40,639	00:06:41,151	| IOT183 |	Nasty
+EDL	00:06:43,199	00:06:43,967	| IOT183 |	15
+EDL	00:06:43,967	00:06:45,503	| IOT183 |	But it didn't work super well
+EDL	00:06:45,503	00:06:49,343	| IOT183 |	And I think wink also offers this feature as part of their hubs
+EDL	00:06:50,367	00:06:51,135	| IOT183 |	An automation
+EDL	00:06:52,159	00:06:53,183	| IOT183 |	Controls your lights when
+EDL	00:06:53,951	00:06:54,719	| IOT183 |	But
+EDL	00:06:54,719	00:06:56,255	| IOT183 |	This is still super awesome.
+EDL	00:06:56,255	00:06:57,023	| IOT183 |	Because a lot of people don't have a
+EDL	00:06:58,047	00:07:00,095	| IOT183 |	Exactly the other thing
+EDL	00:07:00,095	00:07:06,495	| IOT183 |	You're talking about the machine learning models now they've got a couple of them now in these devices
+EDL	00:07:06,495	00:07:08,799	| IOT183 |	And this is just a general question as
+EDL	00:07:08,799	00:07:10,079	| IOT183 |	We seem more
+EDL	00:07:10,079	00:07:13,663	| IOT183 |	AI machine learning push to Edge devices in the homes
+EDL	00:07:14,175	00:07:14,943	| IOT183 |	Wilda
+EDL	00:07:14,943	00:07:21,343	| IOT183 |	Current Hardware be able to keep up I mean I'm thinking about it from a memory standpoint from a CPU standpoint Sonora
+EDL	00:07:21,343	00:07:25,439	| IOT183 |	As our devices get more complex through these algorithmic learning models
+EDL	00:07:25,439	00:07:27,999	| IOT183 |	We actually need to upgrade in a couple years
+EDL	00:07:27,999	00:07:29,535	| IOT183 |	I think we probably will
+EDL	00:07:29,535	00:07:32,351	| IOT183 |	If I took one thing away from this event is
+EDL	00:07:32,351	00:07:35,935	| IOT183 |	You know your four-year-old at those they actually are getting a lot of
+EDL	00:07:37,215	00:07:39,775	| IOT183 |	The big difference right now is that
+EDL	00:07:39,775	00:07:41,311	| IOT183 |	Speakers sound better in the
+EDL	00:07:42,847	00:07:46,175	| IOT183 |	I'm wondering if maybe we'll get this product iteration and then we'll get
+EDL	00:07:46,687	00:07:47,711	| IOT183 |	The next one is when
+EDL	00:07:47,711	00:07:51,039	| IOT183 |	Can you swap so maybe we're looking at a smart speaker lifespan of me
+EDL	00:07:51,551	00:07:52,319	| IOT183 |	It yours
+EDL	00:07:52,319	00:07:53,087	| IOT183 |	With enough
+EDL	00:07:53,087	00:07:54,879	| IOT183 |	Overhead in memory for these
+EDL	00:07:54,879	00:07:55,647	| IOT183 |	Things I don't know
+EDL	00:07:55,647	00:08:02,047	| IOT183 |	Considering the prices at the thing that's not crazy I would agree and also you won't have to upgrade you just maybe
+EDL	00:08:02,047	00:08:03,839	| IOT183 |	Some of the newest features
+EDL	00:08:06,143	00:08:08,959	| IOT183 |	What was really interesting is how they talked about
+EDL	00:08:08,959	00:08:11,007	| IOT183 |	What they did on the AI back into shrink
+EDL	00:08:11,007	00:08:12,031	| IOT183 |	These models
+EDL	00:08:12,031	00:08:13,055	| IOT183 |	It's not
+EDL	00:08:13,055	00:08:14,591	| IOT183 |	Worth diving into here
+EDL	00:08:15,103	00:08:17,919	| IOT183 |	They have given a lot of thought
+EDL	00:08:17,919	00:08:19,455	| IOT183 |	I'm trying to make sure every
+EDL	00:08:19,967	00:08:23,039	| IOT183 |	Is close to the edge as possible so you get lots for Stuff
+EDL	00:08:23,551	00:08:25,599	| IOT183 |	The other thing they have and we didn't talk about this
+EDL	00:08:26,111	00:08:27,391	| IOT183 |	Is whisper mode
+EDL	00:08:27,903	00:08:29,183	| IOT183 |	So I love it
+EDL	00:08:30,719	00:08:33,023	| IOT183 |	If you whisper to your Echo
+EDL	00:08:33,023	00:08:34,303	| IOT183 |	In the coming weeks
+EDL	00:08:34,303	00:08:35,583	| IOT183 |	Eco Whisper back
+EDL	00:08:38,911	00:08:40,703	| IOT183 |	Because you're whispering
+EDL	00:08:41,215	00:08:46,847	| IOT183 |	I love love love this because I never said this on multiple servers I stay up late everybody to sleep
+EDL	00:08:46,847	00:08:53,247	| IOT183 |	And when I leave my room my office I will tell one of my assistants shut the light and whoever assistant it is whichever is
+EDL	00:08:53,247	00:08:54,527	| IOT183 |	It's really loud
+EDL	00:08:55,295	00:08:55,807	| IOT183 |	Super
+EDL	00:08:57,087	00:08:59,903	| IOT183 |	Google has actually something similar with the Google home
+EDL	00:09:00,415	00:09:01,439	| IOT183 |	You have
+EDL	00:09:01,439	00:09:02,463	| IOT183 |	You can turn it on
+EDL	00:09:02,463	00:09:03,487	| IOT183 |	In the Google home app
+EDL	00:09:03,999	00:09:05,279	| IOT183 |	Under devices
+EDL	00:09:05,279	00:09:06,559	| IOT183 |	You can do a setting called night mode
+EDL	00:09:07,327	00:09:08,095	| IOT183 |	And then
+EDL	00:09:08,095	00:09:10,399	| IOT183 |	You choose it from one time to another time
+EDL	00:09:10,911	00:09:12,703	| IOT183 |	And when you have that
+EDL	00:09:12,703	00:09:15,775	| IOT183 |	Mute notifications in any boot up sound switch
+EDL	00:09:15,775	00:09:17,055	| IOT183 |	I don't know if the powers ever gone out
+EDL	00:09:17,567	00:09:18,847	| IOT183 |	Overnight with your Amazon Echo
+EDL	00:09:19,359	00:09:20,639	| IOT183 |	She comes and she's like
+EDL	00:09:20,639	00:09:21,663	| IOT183 |	Hello
+EDL	00:09:21,663	00:09:24,479	| IOT183 |	Searching for Wi-Fi at everyone said what what just happened
+EDL	00:09:24,991	00:09:27,295	| IOT183 |	Burglar in the house searching for Wi-Fi
+EDL	00:09:27,295	00:09:28,063	| IOT183 |	Exactly
+EDL	00:09:28,575	00:09:30,111	| IOT183 |	So it didn't your LED lights
+EDL	00:09:30,623	00:09:31,391	| IOT183 |	And it
+EDL	00:09:35,231	00:09:37,279	| IOT183 |	So those are all really nice things
+EDL	00:09:37,791	00:09:41,119	| IOT183 |	This is a little more intuitive because it just automatically does it when
+EDL	00:09:41,119	00:09:43,935	| IOT183 |	Can you whisper as opposed to having to set a setting
+EDL	00:09:43,935	00:09:46,495	| IOT183 |	But just so you know if you're in the Google verse
+EDL	00:09:46,495	00:09:47,263	| IOT183 |	This is still
+EDL	00:09:47,263	00:09:47,775	| IOT183 |	Something that you
+EDL	00:09:49,567	00:09:50,335	| IOT183 |	So
+EDL	00:09:50,335	00:09:50,847	| IOT183 |	That was
+EDL	00:09:51,359	00:09:53,663	| IOT183 |	The Amazon stock
+EDL	00:09:53,663	00:09:55,455	| IOT183 |	Was so exciting because they
+EDL	00:09:55,455	00:09:57,503	| IOT183 |	Came out with not just a bunch of devices
+EDL	00:09:57,503	00:09:59,807	| IOT183 |	But actually an entire way of
+EDL	00:09:59,807	00:10:01,087	| IOT183 |	Thinking about the Smart Home
+EDL	00:10:01,087	00:10:04,415	| IOT183 |	Ecosystem that gets us closer to this contextual
+EDL	00:10:04,415	00:10:07,231	| IOT183 |	Easy world that Kevin and I think we should already be in
+EDL	00:10:07,999	00:10:09,023	| IOT183 |	So they announced
+EDL	00:10:09,023	00:10:11,327	| IOT183 |	Some things to make it easier to set up Wi-Fi
+EDL	00:10:11,839	00:10:13,887	| IOT183 |	They talked about creating
+EDL	00:10:13,887	00:10:15,167	| IOT183 |	Module called
+EDL	00:10:15,679	00:10:16,959	| IOT183 |	Mute your Echoes for this
+EDL	00:10:16,959	00:10:17,727	| IOT183 |	The Alexa
+EDL	00:10:18,239	00:10:20,543	| IOT183 |	Connecticut which is a development
+EDL	00:10:20,543	00:10:23,103	| IOT183 |	Ford
+EDL	00:10:25,151	00:10:26,431	| IOT183 |	Bluetooth and WiFi module
+EDL	00:10:26,943	00:10:29,759	| IOT183 |	That connects to Amazon
+EDL	00:10:29,759	00:10:31,039	| IOT183 |	What's interesting there
+EDL	00:10:31,551	00:10:32,319	| IOT183 |	Is that you
+EDL	00:10:32,319	00:10:33,599	| IOT183 |	You can actually buy that
+EDL	00:10:34,111	00:10:34,879	| IOT183 |	Ian
+EDL	00:10:34,879	00:10:36,927	| IOT183 |	Your cost will be covered
+EDL	00:10:36,927	00:10:38,975	| IOT183 |	Without initial fee for that module
+EDL	00:10:38,975	00:10:40,511	| IOT183 |	I just made all your clothes
+EDL	00:10:41,023	00:10:43,839	| IOT183 |	A bird like you're going to send it video that's probably not going to
+EDL	00:10:44,607	00:10:51,007	| IOT183 |	Before a lot of like sensors or one-off devices this is a great thing cuz you no longer have to worry about
+EDL	00:10:51,007	00:10:53,311	| IOT183 |	He's crazy cost every single year with the
+EDL	00:10:53,311	00:10:54,079	| IOT183 |	Set device
+EDL	00:10:54,079	00:10:55,359	| IOT183 |	It solves a lot of the business
+EDL	00:10:56,383	00:11:00,991	| IOT183 |	Problems and what that's going to like even more if you can imagine
+EDL	00:11:00,991	00:11:03,295	| IOT183 |	More matinee devices
+EDL	00:11:03,295	00:11:04,063	| IOT183 |	Yes
+EDL	00:11:04,063	00:11:05,343	| IOT183 |	So this is great
+EDL	00:11:05,343	00:11:08,415	| IOT183 |	The Amazon ecosystem
+EDL	00:11:08,415	00:11:10,463	| IOT183 |	Devices
+EDL	00:11:11,487	00:11:13,279	| IOT183 |	Especially since their support for sensors
+EDL	00:11:13,791	00:11:15,071	| IOT183 |	So they're really pushing
+EDL	00:11:15,071	00:11:15,839	| IOT183 |	Forward with
+EDL	00:11:15,839	00:11:19,679	| IOT183 |	A vision for the smart home and I said this before and I'll say it again that really rivals
+EDL	00:11:19,679	00:11:20,959	| IOT183 |	Apple did with the smart
+EDL	00:11:21,727	00:11:24,287	| IOT183 |	I just came out of this feeling like God
+EDL	00:11:24,799	00:11:25,311	| IOT183 |	Apple
+EDL	00:11:25,823	00:11:30,175	| IOT183 |	What are you doing man this is the sort of thing that you guys used to be so good at
+EDL	00:11:30,687	00:11:31,455	| IOT183 |	In
+EDL	00:11:31,455	00:11:33,247	| IOT183 |	Amazon's really doing so
+EDL	00:11:34,271	00:11:40,671	| IOT183 |	It gets back to something you said a show or two ago that pretty much they're setting the standard and I just mean the standard for
+EDL	00:11:40,671	00:11:42,719	| IOT183 |	The products but standards
+EDL	00:11:42,719	00:11:44,255	| IOT183 |	For how these products work
+EDL	00:11:45,023	00:11:45,791	| IOT183 |	Yes
+EDL	00:11:45,791	00:11:47,071	| IOT183 |	And it's going to be awesome
+EDL	00:11:47,071	00:11:47,839	| IOT183 |	So
+EDL	00:11:47,839	00:11:49,375	| IOT183 |	Knowing all of this
+EDL	00:11:50,143	00:11:54,495	| IOT183 |	More devices cheaper devices Whimsical devices like $60 microwave for $30
+EDL	00:11:56,543	00:11:57,823	| IOT183 |	Would I
+EDL	00:11:57,823	00:11:58,591	| IOT183 |	Invest still
+EDL	00:11:59,871	00:12:00,639	| IOT183 |	Ecosystem
+EDL	00:12:00,639	00:12:01,407	| IOT183 |	So
+EDL	00:12:01,407	00:12:02,431	| IOT183 |	That was the question
+EDL	00:12:02,431	00:12:02,943	| IOT183 |	That someone
+EDL	00:12:03,967	00:12:05,503	| IOT183 |	Is it good question
+EDL	00:12:05,503	00:12:08,575	| IOT183 |	I am all in on the Google ecosystem for my
+EDL	00:12:08,575	00:12:10,111	| IOT183 |	Web services soap
+EDL	00:12:10,111	00:12:11,135	| IOT183 |	Email and all that even
+EDL	00:12:11,135	00:12:11,647	| IOT183 |	You know sometimes it's
+EDL	00:12:12,159	00:12:12,671	| IOT183 |	Came to get my
+EDL	00:12:13,183	00:12:14,463	| IOT183 |	Google Apps account
+EDL	00:12:14,463	00:12:15,231	| IOT183 |	To do anything with me
+EDL	00:12:15,999	00:12:19,071	| IOT183 |	I think I'm going to connect all of my devices
+EDL	00:12:19,071	00:12:20,095	| IOT183 |	Tomato mayonnaise
+EDL	00:12:20,095	00:12:20,607	| IOT183 |	For the time being
+EDL	00:12:21,119	00:12:22,911	| IOT183 |	I'd Focus there for the smart
+EDL	00:12:22,911	00:12:24,703	| IOT183 |	Hamster but I probably key
+EDL	00:12:24,703	00:12:27,519	| IOT183 |	Cheap T I have the Lenovo smart display finally
+EDL	00:12:27,519	00:12:29,823	| IOT183 |	I would keep one of those in my house
+EDL	00:12:29,823	00:12:31,359	| IOT183 |	As a way to Lake
+EDL	00:12:31,359	00:12:32,895	| IOT183 |	Interact with my
+EDL	00:12:32,895	00:12:34,175	| IOT183 |	I guess my professional Inc
+EDL	00:12:34,175	00:12:34,943	| IOT183 |	Computer-based life
+EDL	00:12:35,455	00:12:36,479	| IOT183 |	If that makes sense
+EDL	00:12:36,479	00:12:37,759	| IOT183 |	And just have Amazon
+EDL	00:12:37,759	00:12:38,783	| IOT183 |	Show me my smart home base life
+EDL	00:12:39,551	00:12:42,623	| IOT183 |	That makes sense that makes sense 710 G7
+EDL	00:12:42,623	00:12:45,183	| IOT183 |	Siri in my life 503
+EDL	00:12:45,183	00:12:45,951	| IOT183 |	And it's
+EDL	00:12:45,951	00:12:50,559	| IOT183 |	It's confusing as all get-out to be talking at three different things in the same room for one thing but it's
+EDL	00:12:50,559	00:12:52,607	| IOT183 |	This is what we do and there's a reason we do it
+EDL	00:12:52,607	00:12:55,423	| IOT183 |	I don't think I would commit to any one of them just because of what I
+EDL	00:12:56,447	00:12:59,263	| IOT183 |	Here with you and so on but if I had to
+EDL	00:12:59,263	00:13:01,567	| IOT183 |	I'm probably would be leaning to go back
+EDL	00:13:02,079	00:13:04,127	| IOT183 |	To Madame a
+EDL	00:13:04,127	00:13:05,919	| IOT183 |	Because I just
+EDL	00:13:05,919	00:13:09,247	| IOT183 |	The Integrations are into so many more types of products
+EDL	00:13:10,527	00:13:11,551	| IOT183 |	Yeso
+EDL	00:13:11,551	00:13:13,087	| IOT183 |	Speaking of Integrations this is a big one
+EDL	00:13:13,599	00:13:14,367	| IOT183 |	The smart
+EDL	00:13:14,879	00:13:16,927	| IOT183 |	Home skills API
+EDL	00:13:16,927	00:13:19,743	| IOT183 |	They update
+EDL	00:13:19,743	00:13:23,071	| IOT183 |	Play the updated in a way that makes me feel like they are coming after
+EDL	00:13:23,071	00:13:23,839	| IOT183 |	Device
+EDL	00:13:24,351	00:13:25,375	| IOT183 |	Data schema
+EDL	00:13:25,375	00:13:26,911	| IOT183 |	We talked about a lot of show
+EDL	00:13:26,911	00:13:28,191	| IOT183 |	And that's basically
+EDL	00:13:28,191	00:13:31,519	| IOT183 |	A universal way for device to say hey this is what I am
+EDL	00:13:31,519	00:13:32,031	| IOT183 |	This is what I meant
+EDL	00:13:33,823	00:13:35,871	| IOT183 |	Right now we don't have that we have company
+EDL	00:13:36,895	00:13:38,175	| IOT183 |	Ocf
+EDL	00:13:38,175	00:13:39,711	| IOT183 |	Create standards around this
+EDL	00:13:39,711	00:13:42,783	| IOT183 |	And what we have with Amazon is this smart home skills API
+EDL	00:13:43,295	00:13:44,575	| IOT183 |	Set allows for
+EDL	00:13:44,575	00:13:45,343	| IOT183 |	Three different settings
+EDL	00:13:45,855	00:13:48,671	| IOT183 |	So it has a toggle setting that turns things on or off
+EDL	00:13:50,207	00:13:54,303	| IOT183 |	Has a range of options that let you set a range that could be a temperature it could be
+EDL	00:13:54,303	00:13:56,095	| IOT183 |	Oven thermostat temperature
+EDL	00:13:56,863	00:13:57,631	| IOT183 |	Sound
+EDL	00:13:57,631	00:13:58,143	| IOT183 |	Sound
+EDL	00:13:59,423	00:14:00,703	| IOT183 |	It has a range
+EDL	00:14:00,703	00:14:04,287	| IOT183 |	It has a mode option that lets a device maker program a
+EDL	00:14:04,287	00:14:05,055	| IOT183 |	Text function
+EDL	00:14:05,055	00:14:06,847	| IOT183 |	So this is where you're going to get like in an oven
+EDL	00:14:07,359	00:14:08,383	| IOT183 |	Is a baker is it real
+EDL	00:14:08,895	00:14:09,663	| IOT183 |	In a washing machine
+EDL	00:14:10,687	00:14:11,967	| IOT183 |	Permanent press
+EDL	00:14:11,967	00:14:12,735	| IOT183 |	Cotton
+EDL	00:14:12,735	00:14:13,247	| IOT183 |	Owls
+EDL	00:14:13,759	00:14:15,039	| IOT183 |	Those kind of specific
+EDL	00:14:15,551	00:14:16,063	| IOT183 |	And
+EDL	00:14:16,575	00:14:18,879	| IOT183 |	That actually covers quite a wide range
+EDL	00:14:19,391	00:14:20,927	| IOT183 |	Things that devices can do
+EDL	00:14:21,695	00:14:25,535	| IOT183 |	And it's going to be really powerful for developers to have this be
+EDL	00:14:25,535	00:14:26,303	| IOT183 |	Because
+EDL	00:14:26,303	00:14:27,071	| IOT183 |	Then you can
+EDL	00:14:27,583	00:14:28,863	| IOT183 |	Basic reading skill
+EDL	00:14:29,887	00:14:30,399	| IOT183 |	Easily
+EDL	00:14:30,911	00:14:33,471	| IOT183 |	And then they also talked about
+EDL	00:14:33,471	00:14:35,007	| IOT183 |	Natural invocation
+EDL	00:14:35,519	00:14:36,799	| IOT183 |	And this is very powerful
+EDL	00:14:36,799	00:14:37,823	| IOT183 |	As well
+EDL	00:14:37,823	00:14:41,407	| IOT183 |	This is where you're going to be able to ask Madame just do some
+EDL	00:14:41,407	00:14:42,687	| IOT183 |	Turn on the vacuum
+EDL	00:14:42,687	00:14:44,735	| IOT183 |	And it's going to understand what the back
+EDL	00:14:44,735	00:14:46,015	| IOT183 |	Team is based on patterns of
+EDL	00:14:46,015	00:14:47,039	| IOT183 |	Usage that it seemed
+EDL	00:14:47,551	00:14:48,063	| IOT183 |	Mystify senior
+EDL	00:14:48,831	00:14:52,927	| IOT183 |	So this is some of this where it's always going to be learning based on your information
+EDL	00:14:52,927	00:14:54,975	| IOT183 |	Formation that's happening in your specific home
+EDL	00:14:55,743	00:14:57,279	| IOT183 |	And it's going to be tied back to that hoe
+EDL	00:14:58,047	00:15:00,607	| IOT183 |	It's smart contacts its Blossom once we get there
+EDL	00:15:01,119	00:15:02,399	| IOT183 |	Yeah so
+EDL	00:15:02,399	00:15:04,191	| IOT183 |	Very exciting stuff
+EDL	00:15:04,191	00:15:04,959	| IOT183 |	And now
+EDL	00:15:04,959	00:15:06,495	| IOT183 |	We talked a lot about it
+EDL	00:15:06,495	00:15:07,775	| IOT183 |	How to cut a donut hole show on
+EDL	00:15:08,799	00:15:10,591	| IOT183 |	Zip through to another seattle-based company
+EDL	00:15:11,359	00:15:12,127	| IOT183 |	Microsoft
+EDL	00:15:12,639	00:15:13,663	| IOT183 |	Because they
+EDL	00:15:13,663	00:15:15,199	| IOT183 |	Are doing their big event
+EDL	00:15:15,199	00:15:16,479	| IOT183 |	This week Microsoft
+EDL	00:15:17,247	00:15:21,343	| IOT183 |	And they have shown off actually things for Cortana that make it seem like
+EDL	00:15:21,343	00:15:23,903	| IOT183 |	It's just like Amazon's doing the Smart Home
+EDL	00:15:23,903	00:15:24,415	| IOT183 |	Cortana
+EDL	00:15:25,951	00:15:29,279	| IOT183 |	And then a lot of industrial support for things like digital twin
+EDL	00:15:31,839	00:15:33,887	| IOT183 |	Let's talk about how Microsoft is
+EDL	00:15:33,887	00:15:34,655	| IOT183 |	Making Cortana
+EDL	00:15:36,191	00:15:36,703	| IOT183 |	I don't know
+EDL	00:15:39,775	00:15:45,663	| IOT183 |	Turn up from a Halo from Halo perspective which is where they got the name Cortana school but other than that I'm not really
+EDL	00:15:46,175	00:15:46,943	| IOT183 |	Jazz
+EDL	00:15:46,943	00:15:50,783	| IOT183 |	But then again I don't work in an Enterprise anymore if I still did
+EDL	00:15:50,783	00:15:55,647	| IOT183 |	Sure I'd be super psyched over this you know show me our sales figures for last month or even
+EDL	00:15:55,647	00:16:02,047	| IOT183 |	You know what's the trend of help desk calls over the last six months and Y or whatever what's the big mean root cause
+EDL	00:16:02,047	00:16:05,631	| IOT183 |	It's just another user interface didn't get it Analytics
+EDL	00:16:06,399	00:16:09,471	| IOT183 |	Yes and it's called Cortana skills for Enterprise
+EDL	00:16:09,471	00:16:12,031	| IOT183 |	And this is the first major update to
+EDL	00:16:12,031	00:16:14,079	| IOT183 |	Improve the way Cortana works
+EDL	00:16:14,079	00:16:14,847	| IOT183 |	Web Developers
+EDL	00:16:15,359	00:16:16,383	| IOT183 |	So
+EDL	00:16:16,895	00:16:17,663	| IOT183 |	Really exciting
+EDL	00:16:18,175	00:16:18,687	| IOT183 |	And
+EDL	00:16:19,199	00:16:20,479	| IOT183 |	We'll see how this
+EDL	00:16:20,991	00:16:22,015	| IOT183 |	Works out
+EDL	00:16:22,015	00:16:27,135	| IOT183 |	Is a proof-of-concept Microsoft did an IT Help Desk kill for Cortana to help people file tickets
+EDL	00:16:27,647	00:16:28,159	| IOT183 |	Which
+EDL	00:16:28,671	00:16:30,207	| IOT183 |	Back in the day when I was in a large cup
+EDL	00:16:31,487	00:16:32,511	| IOT183 |	Pain in the butt so
+EDL	00:16:32,511	00:16:33,023	| IOT183 |	Jay
+EDL	00:16:33,535	00:16:35,071	| IOT183 |	Is it also this will tie into
+EDL	00:16:35,839	00:16:36,863	| IOT183 |	Microsoft
+EDL	00:16:36,863	00:16:38,143	| IOT183 |	But they should have to build
+EDL	00:16:38,655	00:16:41,471	| IOT183 |	Earlier this year where they had like the super intelligent
+EDL	00:16:41,471	00:16:43,007	| IOT183 |	Cortana powered conference room
+EDL	00:16:44,031	00:16:45,823	| IOT183 |	Maps physical spaces
+EDL	00:16:45,823	00:16:47,359	| IOT183 |	Recognize people
+EDL	00:16:47,359	00:16:48,895	| IOT183 |	Tok notes for you
+EDL	00:16:48,895	00:16:49,407	| IOT183 |	Ridiculous
+EDL	00:16:50,175	00:16:51,455	| IOT183 |	Microsoft at
+EDL	00:16:51,455	00:16:53,247	| IOT183 |	Ignite did talk about
+EDL	00:16:53,247	00:16:54,527	| IOT183 |	Rodney gets aif
+EDL	00:16:55,295	00:16:56,063	| IOT183 |	They also
+EDL	00:16:56,831	00:16:59,135	| IOT183 |	On the industrial iot side
+EDL	00:16:59,135	00:17:01,439	| IOT183 |	Agri services
+EDL	00:17:01,439	00:17:01,951	| IOT183 |	So
+EDL	00:17:04,255	00:17:05,791	| IOT183 |	Azure data box
+EDL	00:17:05,791	00:17:07,071	| IOT183 |	Set of products
+EDL	00:17:07,071	00:17:08,095	| IOT183 |	That's going to
+EDL	00:17:08,607	00:17:09,119	| IOT183 |	Enable
+EDL	00:17:09,631	00:17:10,655	| IOT183 |	Russian restaurant
+EDL	00:17:10,655	00:17:12,191	| IOT183 |	Brunetti's which is an orchestration
+EDL	00:17:12,959	00:17:14,239	| IOT183 |	Orchestrate
+EDL	00:17:14,239	00:17:16,543	| IOT183 |	Services that run at the edge
+EDL	00:17:16,543	00:17:17,311	| IOT183 |	And the cloud
+EDL	00:17:17,311	00:17:18,847	| IOT183 |	So they're going to
+EDL	00:17:18,847	00:17:19,615	| IOT183 |	Bring two birdies
+EDL	00:17:22,175	00:17:22,943	| IOT183 |	As well
+EDL	00:17:22,943	00:17:24,223	| IOT183 |	They're going to
+EDL	00:17:24,223	00:17:24,991	| IOT183 |	Update
+EDL	00:17:24,991	00:17:26,271	| IOT183 |	Windows server
+EDL	00:17:26,271	00:17:29,343	| IOT183 |	And it's going to support some Azure services this is a big
+EDL	00:17:30,879	00:17:32,159	| IOT183 |	There are some
+EDL	00:17:32,159	00:17:34,975	| IOT183 |	Devices out there running Windows server
+EDL	00:17:34,975	00:17:36,255	| IOT183 |	Need to be able to talk
+EDL	00:17:39,583	00:17:42,399	| IOT183 |	Computing model with gateways and sensors and
+EDL	00:17:42,399	00:17:43,423	| IOT183 |	Clouds at all
+EDL	00:17:43,423	00:17:44,703	| IOT183 |	Talk to each other
+EDL	00:17:46,495	00:17:47,263	| IOT183 |	Microsoft
+EDL	00:17:47,775	00:17:48,287	| IOT183 |	Is adding
+EDL	00:17:48,799	00:17:50,079	| IOT183 |	Digital twins
+EDL	00:17:54,175	00:17:57,503	| IOT183 |	One of the brand new cloud services that Microsoft is going
+EDL	00:17:57,503	00:17:58,271	| IOT183 |	Offer
+EDL	00:17:58,271	00:18:00,575	| IOT183 |	On Asher in this is a big deal
+EDL	00:18:00,575	00:18:01,343	| IOT183 |	Because
+EDL	00:18:01,343	00:18:02,879	| IOT183 |	The industrial world
+EDL	00:18:02,879	00:18:03,647	| IOT183 |	Love's
+EDL	00:18:03,647	00:18:04,159	| IOT183 |	Some digital
+EDL	00:18:04,927	00:18:06,975	| IOT183 |	ABC has been one of the big
+EDL	00:18:06,975	00:18:07,999	| IOT183 |	Companies pushing this
+EDL	00:18:07,999	00:18:09,279	| IOT183 |	Concept but basically
+EDL	00:18:09,791	00:18:11,839	| IOT183 |	It's a virtual version of any machine
+EDL	00:18:14,911	00:18:15,679	| IOT183 |	Run it
+EDL	00:18:15,679	00:18:17,215	| IOT183 |	Sensor data from the physical
+EDL	00:18:17,215	00:18:17,727	| IOT183 |	Device
+EDL	00:18:18,495	00:18:24,639	| IOT183 |	You run it against your virtual version of that device and you can use it for predictive maintenance to understand things
+EDL	00:18:24,639	00:18:25,919	| IOT183 |	Things that are going wrong
+EDL	00:18:25,919	00:18:29,247	| IOT183 |	It's both a big validation at PTC
+EDL	00:18:29,247	00:18:30,271	| IOT183 |	Which has been touting this
+EDL	00:18:30,783	00:18:31,295	| IOT183 |	Yours
+EDL	00:18:31,807	00:18:35,903	| IOT183 |	And also a necessary component for a lot of Microsoft azure
+EDL	00:18:35,903	00:18:36,927	| IOT183 |	Industrial
+EDL	00:18:37,695	00:18:42,815	| IOT183 |	And you can even use this as like make a digital copy of your workspace maybe fit a large office or
+EDL	00:18:42,815	00:18:46,143	| IOT183 |	Datacenter whatever might be created digital version of it
+EDL	00:18:46,143	00:18:48,703	| IOT183 |	Duplicated essentially and again
+EDL	00:18:48,703	00:18:55,103	| IOT183 |	Titan sensor data you could have just things maybe when I just temperatures and see if that affects traffic patterns or
+EDL	00:18:55,103	00:18:56,895	| IOT183 |	Machinery whatever my paper
+EDL	00:18:56,895	00:18:59,199	| IOT183 |	Cons of opportunity sir this is a really cool stuff
+EDL	00:18:59,711	00:19:02,015	| IOT183 |	It is and I actually like the fact that Microsoft is
+EDL	00:19:02,527	00:19:04,319	| IOT183 |	It's aiming this more at the
+EDL	00:19:05,087	00:19:10,207	| IOT183 |	Do you say says it's showing off Hair Design War for Enterprise office space which I thought was interesting
+EDL	00:19:10,207	00:19:11,743	| IOT183 |	Because PTC is all about like
+EDL	00:19:12,255	00:19:16,607	| IOT183 |	I will borrow your steam trap or your flow meter or is all these crazy
+EDL	00:19:17,375	00:19:19,167	| IOT183 |	Crazy devices that are very
+EDL	00:19:19,679	00:19:20,959	| IOT183 |	Where is Microsoft
+EDL	00:19:20,959	00:19:23,263	| IOT183 |	Hey what's create a virtual version of your office
+EDL	00:19:23,263	00:19:23,775	| IOT183 |	See what you can do
+EDL	00:19:24,543	00:19:30,687	| IOT183 |	Can I see why they did that to be honest right at first hand I cannot tell you how much time I would waste
+EDL	00:19:30,687	00:19:37,087	| IOT183 |	This was a Google anywhere city which was a city block in 15 stories going USA conference room
+EDL	00:19:37,087	00:19:40,159	| IOT183 |	Wasn't supposed to be occupied but still
+EDL	00:19:40,159	00:19:40,927	| IOT183 |	Or
+EDL	00:19:40,927	00:19:42,207	| IOT183 |	Decided to go to the
+EDL	00:19:42,207	00:19:44,767	| IOT183 |	11th floor cafeteria for burritos
+EDL	00:19:44,767	00:19:47,071	| IOT183 |	When the line on the fourth floor was like
+EDL	00:19:47,071	00:19:53,471	| IOT183 |	Nothing it was nobody there right now so I can go up to 11 tonight
+EDL	00:19:53,471	00:19:57,823	| IOT183 |	Waste for your resources on so many environmental things
+EDL	00:19:59,615	00:20:02,687	| IOT183 |	So this is really exciting and we are going to find out
+EDL	00:20:03,199	00:20:06,783	| IOT183 |	More maybe we'll get something from Microsoft to come on the show to talk about what this makes pasta
+EDL	00:20:07,295	00:20:07,807	| IOT183 |	Because
+EDL	00:20:09,599	00:20:11,647	| IOT183 |	Okay it's like I'm from Boston all of a sudden
+EDL	00:20:11,647	00:20:13,183	| IOT183 |	Let's talk about
+EDL	00:20:13,183	00:20:14,975	| IOT183 |	Some quickness bit Sunday
+EDL	00:20:16,767	00:20:17,535	| IOT183 |	Whiting's
+EDL	00:20:17,535	00:20:23,935	| IOT183 |	Switch
+EDL	00:20:23,935	00:20:25,983	| IOT183 |	They came out with their newest
+EDL	00:20:25,983	00:20:29,823	| IOT183 |	Hybrid Smartwatch I called a hybrid because it looks like a traditional watch
+EDL	00:20:29,823	00:20:31,103	| IOT183 |	Perry mechanical
+EDL	00:20:31,103	00:20:32,127	| IOT183 |	Looking
+EDL	00:20:32,127	00:20:38,527	| IOT183 |	Regular watch but has a small OLED display in it for your heart rate because there's a heart rate sensor in there you can check
+EDL	00:20:38,527	00:20:41,855	| IOT183 |	Are sleep patterns in their through a Connected app
+EDL	00:20:41,855	00:20:43,903	| IOT183 |	It will track your workouts
+EDL	00:20:43,903	00:20:45,439	| IOT183 |	Just got sensors for all that
+EDL	00:20:45,439	00:20:50,815	| IOT183 |	GPS you have to have it connected GPS you have to have a phone with you if you going to go running with this thing but
+EDL	00:20:50,815	00:20:54,655	| IOT183 |	Some people still do that that's fine two hundred bucks killer battery life
+EDL	00:20:54,655	00:21:01,055	| IOT183 |	Because it's a very small OLED display like a circular display that just had a limited amount of space in art
+EDL	00:21:01,055	00:21:04,895	| IOT183 |	Backlight on
+EDL	00:21:04,895	00:21:07,711	| IOT183 |	25 day battery life which is amazing
+EDL	00:21:07,711	00:21:08,991	| IOT183 |	$200
+EDL	00:21:08,991	00:21:13,855	| IOT183 |	It's not for me because I want a GPS in a heart rate and everything standalone
+EDL	00:21:13,855	00:21:16,672	| IOT183 |	Which is why I wear an Apple watch
+EDL	00:21:17,184	00:21:20,000	| IOT183 |	Tonight full fledge Smartwatch not take calls on it
+EDL	00:21:20,000	00:21:23,840	| IOT183 |	But for a large number of people this is a perfect
+EDL	00:21:23,840	00:21:26,912	| IOT183 |	Hybrid device it gives you what you want without
+EDL	00:21:26,912	00:21:33,312	| IOT183 |	Too many constraints such as you know charging every day and so on or looking like a smartwatch so I like it if you get enough for me
+EDL	00:21:33,312	00:21:34,336	| IOT183 |	I like what why things is doing
+EDL	00:21:34,848	00:21:35,616	| IOT183 |	Okay
+EDL	00:21:35,616	00:21:39,200	| IOT183 |	And I like that you're like it's not full-featured I mean you can't make phone calls on
+EDL	00:21:39,200	00:21:42,016	| IOT183 |	This is not a feature that I have demanded
+EDL	00:21:42,528	00:21:47,136	| IOT183 |	I was messing with my walkie-talkie feature yesterday on the Apple watch with my daughter so I'm into that stuff
+EDL	00:21:47,136	00:21:47,904	| IOT183 |	No III
+EDL	00:21:50,208	00:21:50,976	| IOT183 |	If I wanted
+EDL	00:21:50,976	00:21:54,304	| IOT183 |	The stuff they showed off at the Apple event a couple weeks back with fall detection
+EDL	00:21:54,816	00:21:56,864	| IOT183 |	Play something that I've been trying to
+EDL	00:21:56,864	00:21:57,888	| IOT183 |	Program into my life
+EDL	00:21:58,400	00:21:59,424	| IOT183 |	Forever
+EDL	00:21:59,424	00:21:59,936	| IOT183 |	Using
+EDL	00:22:00,960	00:22:02,496	| IOT183 |	Amalgamated sensors
+EDL	00:22:02,496	00:22:03,776	| IOT183 |	East recipes
+EDL	00:22:03,776	00:22:07,616	| IOT183 |	It pull it all into one and I was very excited but not excited enough to go buy an iPhone
+EDL	00:22:09,920	00:22:11,712	| IOT183 |	So I understand
+EDL	00:22:11,712	00:22:12,224	| IOT183 |	Please
+EDL	00:22:12,736	00:22:13,760	| IOT183 |	Please rest of the world
+EDL	00:22:14,272	00:22:15,808	| IOT183 |	Get on that okay
+EDL	00:22:15,808	00:22:17,088	| IOT183 |	Let's talk about
+EDL	00:22:18,112	00:22:20,160	| IOT183 |	Okay last year
+EDL	00:22:20,160	00:22:21,952	| IOT183 |	Was purchased by Assa abloy
+EDL	00:22:23,488	00:22:25,024	| IOT183 |	Maker of
+EDL	00:22:26,304	00:22:27,584	| IOT183 |	Now it's Yale locks
+EDL	00:22:28,352	00:22:30,400	| IOT183 |	A credit to work with your August
+EDL	00:22:30,912	00:22:31,680	| IOT183 |	App
+EDL	00:22:31,680	00:22:33,984	| IOT183 |	So the August lock is not
+EDL	00:22:33,984	00:22:34,752	| IOT183 |	Deadbolt
+EDL	00:22:34,752	00:22:35,520	| IOT183 |	Replacement
+EDL	00:22:35,520	00:22:36,288	| IOT183 |	It is
+EDL	00:22:36,288	00:22:37,312	| IOT183 |	Replace it over
+EDL	00:22:37,824	00:22:38,592	| IOT183 |	And this is
+EDL	00:22:39,360	00:22:41,408	| IOT183 |	This is great for some people they like it it's less
+EDL	00:22:42,432	00:22:43,200	| IOT183 |	Install
+EDL	00:22:43,200	00:22:43,712	| IOT183 |	But
+EDL	00:22:44,224	00:22:47,040	| IOT183 |	If you're one of those people who feel like way more secure with
+EDL	00:22:48,576	00:22:49,344	| IOT183 |	Replacement
+EDL	00:22:49,344	00:22:50,624	| IOT183 |	But you like the August app
+EDL	00:22:51,136	00:22:52,160	| IOT183 |	Because it works with
+EDL	00:22:52,160	00:22:53,696	| IOT183 |	Martinson is kind of interesting
+EDL	00:22:54,720	00:22:55,232	| IOT183 |	You could actually
+EDL	00:22:57,792	00:22:59,328	| IOT183 |	This feels kind of niche
+EDL	00:22:59,328	00:23:01,376	| IOT183 |	There's like a homekit module
+EDL	00:23:01,376	00:23:02,656	| IOT183 |	You could update your
+EDL	00:23:03,168	00:23:03,680	| IOT183 |	Yale lock
+EDL	00:23:04,448	00:23:06,240	| IOT183 |	Homekit module that you plug into
+EDL	00:23:07,264	00:23:08,288	| IOT183 |	With that battery case
+EDL	00:23:10,592	00:23:12,640	| IOT183 |	And it's going to work
+EDL	00:23:13,152	00:23:13,920	| IOT183 |	With the August app and
+EDL	00:23:15,200	00:23:17,504	| IOT183 |	That's kind of nice for a certain segment of the body
+EDL	00:23:17,504	00:23:18,272	| IOT183 |	Chelation
+EDL	00:23:18,272	00:23:19,552	| IOT183 |	No doubt about it I mean
+EDL	00:23:19,552	00:23:25,696	| IOT183 |	Kathy August features like door sensor don't know if the door is locked or unlocked if it's open or closed you know it's
+EDL	00:23:26,208	00:23:28,000	| IOT183 |	You know dog has to make sense
+EDL	00:23:28,000	00:23:28,768	| IOT183 |	This
+EDL	00:23:28,768	00:23:34,656	| IOT183 |	Also desert Choir in very small Wi-Fi Bridge just to get the information from the lock to your network
+EDL	00:23:34,656	00:23:35,680	| IOT183 |	It's not a
+EDL	00:23:35,680	00:23:37,984	| IOT183 |	Like a big box of a bridge is more of a gesture
+EDL	00:23:37,984	00:23:40,032	| IOT183 |	It sits on your outlet somewhere nearby
+EDL	00:23:41,568	00:23:45,152	| IOT183 |	That exists now for those of you guys who are interested in that
+EDL	00:23:45,152	00:23:46,176	| IOT183 |	Speaking of homekit
+EDL	00:23:46,176	00:23:47,968	| IOT183 |	There is a new rachio sprinkler
+EDL	00:23:47,968	00:23:49,760	| IOT183 |	It is getting homekit support
+EDL	00:23:49,760	00:23:50,528	| IOT183 |	So
+EDL	00:23:50,528	00:23:53,600	| IOT183 |	Yay yashow this is
+EDL	00:23:53,600	00:23:55,136	| IOT183 |	Free if you have the one or two
+EDL	00:23:55,136	00:23:55,904	| IOT183 |	You're not going to get it
+EDL	00:23:56,672	00:24:00,512	| IOT183 |	You can tell Stacy doesn't use an iPhone
+EDL	00:24:02,304	00:24:08,448	| IOT183 |	Population says I'm going home kit for good reason and that's fine
+EDL	00:24:08,960	00:24:11,008	| IOT183 |	So this is good news
+EDL	00:24:11,520	00:24:12,800	| IOT183 |	If you're that population
+EDL	00:24:12,800	00:24:13,568	| IOT183 |	Here's a
+EDL	00:24:13,568	00:24:14,592	| IOT183 |	Rachio which is
+EDL	00:24:15,872	00:24:20,480	| IOT183 |	They're Gen 2 I tested their Gen 2 sprinkler and bought it actually for my father-in-law
+EDL	00:24:20,480	00:24:21,504	| IOT183 |	And it's great he loves it
+EDL	00:24:22,016	00:24:23,040	| IOT183 |	It's helped him quite a bit
+EDL	00:24:23,040	00:24:23,808	| IOT183 |	So
+EDL	00:24:23,808	00:24:25,600	| IOT183 |	Now you can ask Siri
+EDL	00:24:25,600	00:24:26,112	| IOT183 |	Hey
+EDL	00:24:26,624	00:24:27,392	| IOT183 |	Turn on my sprinklers
+EDL	00:24:27,904	00:24:29,696	| IOT183 |	Or stop watering the vegetable garden
+EDL	00:24:30,976	00:24:33,792	| IOT183 |	And this is $230 the Retro 3s
+EDL	00:24:33,792	00:24:35,328	| IOT183 |	Expensive newer model
+EDL	00:24:36,864	00:24:41,216	| IOT183 |	Okay this is just an update because I had written about this and talked about
+EDL	00:24:41,216	00:24:43,008	| IOT183 |	Twitter
+EDL	00:24:43,008	00:24:44,544	| IOT183 |	So I have these brilliant
+EDL	00:24:44,544	00:24:45,312	| IOT183 |	Light switches
+EDL	00:24:45,312	00:24:46,336	| IOT183 |	I just had someone
+EDL	00:24:46,848	00:24:48,128	| IOT183 |	Come out and
+EDL	00:24:48,128	00:24:50,432	| IOT183 |	Replace them for me cuz I had a pre-production unit.
+EDL	00:24:50,944	00:24:51,968	| IOT183 |	They felt was not
+EDL	00:24:51,968	00:24:52,992	| IOT183 |	Behaving as well
+EDL	00:24:52,992	00:24:56,576	| IOT183 |	So we're going back to the drawing board
+EDL	00:24:57,344	00:24:59,392	| IOT183 |	Mini the things about
+EDL	00:24:59,392	00:25:00,672	| IOT183 |	I stand by
+EDL	00:25:00,672	00:25:02,976	| IOT183 |	And they would happen regardless of the hardware it's just the
+EDL	00:25:03,744	00:25:05,024	| IOT183 |	The criminal light into this thing
+EDL	00:25:05,536	00:25:06,304	| IOT183 |	So
+EDL	00:25:06,304	00:25:07,840	| IOT183 |	I'm going to try that out again
+EDL	00:25:07,840	00:25:10,912	| IOT183 |	And hopefully it will be a better experience
+EDL	00:25:10,912	00:25:12,960	| IOT183 |	So stay tuned for that probably in another
+EDL	00:25:13,984	00:25:14,752	| IOT183 |	And now
+EDL	00:25:14,752	00:25:16,288	| IOT183 |	Let us go to a
+EDL	00:25:16,800	00:25:17,568	| IOT183 |	Question
+EDL	00:25:17,568	00:25:18,848	| IOT183 |	From our
+EDL	00:25:18,848	00:25:19,616	| IOT183 |	Audience
+EDL	00:25:20,128	00:25:23,456	| IOT183 |	This is a question on the iot podcast hotline which is brought to you
+EDL	00:25:24,992	00:25:26,528	| IOT183 |	Do not miss you guys
+EDL	00:25:26,528	00:25:27,552	| IOT183 |	Your chance
+EDL	00:25:27,552	00:25:29,344	| IOT183 |	Schlage sense smart deadbolt
+EDL	00:25:31,136	00:25:34,208	| IOT183 |	You can enter to win by calling us at 5 1/2
+EDL	00:25:34,208	00:25:34,976	| IOT183 |	6 to 3
+EDL	00:25:35,488	00:25:37,024	| IOT183 |	742
+EDL	00:25:37,024	00:25:38,048	| IOT183 |	I'm leaving us a question
+EDL	00:25:38,560	00:25:42,144	| IOT183 |	You must do this before September 30th at midnight Eastern
+EDL	00:25:42,656	00:25:43,424	| IOT183 |	To be entered to win
+EDL	00:25:43,936	00:25:44,960	| IOT183 |	This particular law
+EDL	00:25:45,472	00:25:47,264	| IOT183 |	And remember starter homes
+EDL	00:25:47,264	00:25:48,288	| IOT183 |	Start
+EDL	00:25:49,056	00:25:50,848	| IOT183 |	Show this week's voicemail is from
+EDL	00:25:50,848	00:25:51,360	| IOT183 |	Brent
+EDL	00:25:52,896	00:25:56,224	| IOT183 |	Hello this is Brent mehr I'm calling from Utah
+EDL	00:25:56,224	00:25:57,248	| IOT183 |	I have
+EDL	00:25:57,248	00:25:58,784	| IOT183 |	A problem with my
+EDL	00:25:58,784	00:25:59,552	| IOT183 |	Freezer have I
+EDL	00:26:00,064	00:26:00,832	| IOT183 |	Stand up
+EDL	00:26:00,832	00:26:01,600	| IOT183 |	Vertical
+EDL	00:26:01,600	00:26:02,880	| IOT183 |	Freezer that
+EDL	00:26:02,880	00:26:03,904	| IOT183 |	Kids
+EDL	00:26:03,904	00:26:05,696	| IOT183 |	Well sometimes leave open
+EDL	00:26:05,696	00:26:07,744	| IOT183 |	Circus last 10 years I've lost
+EDL	00:26:07,744	00:26:09,024	| IOT183 |	The contents of it
+EDL	00:26:09,024	00:26:15,424	| IOT183 |	Three times and we've tried locks but sometimes they get in the way I'd really love something that would alert
+EDL	00:26:15,424	00:26:16,192	| IOT183 |	Me when
+EDL	00:26:16,704	00:26:17,728	| IOT183 |	The
+EDL	00:26:17,728	00:26:20,800	| IOT183 |	Freezer is left open or even perhaps if
+EDL	00:26:20,800	00:26:22,592	| IOT183 |	Temperature changes within the freezer
+EDL	00:26:23,104	00:26:23,872	| IOT183 |	Thanks
+EDL	00:26:23,872	00:26:24,640	| IOT183 |	Okay Brent
+EDL	00:26:25,152	00:26:26,176	| IOT183 |	This is one of those
+EDL	00:26:26,176	00:26:29,760	| IOT183 |	This is so easy I can't believe we have to answer question about this
+EDL	00:26:29,760	00:26:33,344	| IOT183 |	Start at the gate
+EDL	00:26:33,344	00:26:34,368	| IOT183 |	So
+EDL	00:26:34,368	00:26:35,136	| IOT183 |	Kevin
+EDL	00:26:35,136	00:26:35,904	| IOT183 |	You get started
+EDL	00:26:35,904	00:26:36,416	| IOT183 |	With your solution
+EDL	00:26:37,184	00:26:38,208	| IOT183 |	All right book
+EDL	00:26:38,208	00:26:43,328	| IOT183 |	Probably the least expensive solution I can think of is to buy a
+EDL	00:26:43,328	00:26:47,680	| IOT183 |	Door / window sensor Brands because their battery powered there
+EDL	00:26:47,680	00:26:48,704	| IOT183 |	Inexpensive
+EDL	00:26:48,704	00:26:50,752	| IOT183 |	One part goes on the
+EDL	00:26:50,752	00:26:54,848	| IOT183 |	Frame of the freezer and one goes on the door and basically when the doors open
+EDL	00:26:55,360	00:27:01,760	| IOT183 |	The center says hey I'm open and you can be notified that the doors open however you don't want to know exactly
+EDL	00:27:01,760	00:27:02,528	| IOT183 |	Open
+EDL	00:27:02,528	00:27:04,320	| IOT183 |	Left open
+EDL	00:27:04,320	00:27:06,624	| IOT183 |	So in order to do that
+EDL	00:27:06,624	00:27:07,904	| IOT183 |	It's a little more expensive
+EDL	00:27:07,904	00:27:08,672	| IOT183 |	Traps
+EDL	00:27:08,672	00:27:11,744	| IOT183 |	What we don't know is if you have a smart home hub
+EDL	00:27:12,256	00:27:14,560	| IOT183 |	You can easily set
+EDL	00:27:14,560	00:27:20,448	| IOT183 |	I will alert that says have the sensors been part or the door's been open for more than say 2 or 3 minutes
+EDL	00:27:20,448	00:27:21,472	| IOT183 |	Send me a notification
+EDL	00:27:21,472	00:27:25,056	| IOT183 |	So we don't know if you have a hub if you do is pretty easy
+EDL	00:27:25,056	00:27:27,104	| IOT183 |	If you don't I don't
+EDL	00:27:27,104	00:27:30,432	| IOT183 |	You know that this is going to work because you're only get me notified that the door open
+EDL	00:27:30,432	00:27:32,224	| IOT183 |	What clothes you're not going to know
+EDL	00:27:32,224	00:27:36,576	| IOT183 |	If it left open unless you physically go back and check after you were notified it was open
+EDL	00:27:37,088	00:27:37,856	| IOT183 |	Yes
+EDL	00:27:37,856	00:27:39,904	| IOT183 |	Okay so that was one option
+EDL	00:27:39,904	00:27:41,696	| IOT183 |	And I have some other options
+EDL	00:27:42,208	00:27:42,976	| IOT183 |	None of them are
+EDL	00:27:43,744	00:27:45,536	| IOT183 |	But we found lots of
+EDL	00:27:45,536	00:27:46,304	| IOT183 |	Bluetooth
+EDL	00:27:46,304	00:27:48,096	| IOT183 |	Sensors that measure
+EDL	00:27:48,096	00:27:50,144	| IOT183 |	Temperature and a lot of them have
+EDL	00:27:50,144	00:27:53,472	| IOT183 |	Why are based temperature probe so what you would do is you take
+EDL	00:27:53,472	00:27:54,496	| IOT183 |	The temperature probe
+EDL	00:27:54,496	00:27:56,032	| IOT183 |	Plug it into the sensor
+EDL	00:27:56,032	00:27:58,592	| IOT183 |	You stick the temperature probe inside
+EDL	00:27:58,592	00:27:59,104	| IOT183 |	The freezer
+EDL	00:27:59,616	00:28:00,384	| IOT183 |	Can you leave
+EDL	00:28:00,384	00:28:01,152	| IOT183 |	Temperature
+EDL	00:28:01,152	00:28:02,432	| IOT183 |	Nothing on the outside
+EDL	00:28:02,432	00:28:08,832	| IOT183 |	Because you eat the freezer is kind of like it's going to block all signals so he part of this the part with the radio has to be outside
+EDL	00:28:08,832	00:28:09,344	| IOT183 |	The freezer
+EDL	00:28:09,856	00:28:10,368	| IOT183 |	Is a giant ferret
+EDL	00:28:11,136	00:28:12,928	| IOT183 |	How do I have left open
+EDL	00:28:12,928	00:28:14,464	| IOT183 |	Signal
+EDL	00:28:14,464	00:28:15,232	| IOT183 |	Then you know
+EDL	00:28:15,232	00:28:17,792	| IOT183 |	Temperature
+EDL	00:28:17,792	00:28:20,352	| IOT183 |	This is a $40
+EDL	00:28:20,352	00:28:22,144	| IOT183 |	Inkbird smart sensor
+EDL	00:28:22,144	00:28:22,912	| IOT183 |	This is $40
+EDL	00:28:23,424	00:28:23,936	| IOT183 |	And
+EDL	00:28:25,728	00:28:26,496	| IOT183 |	Use case
+EDL	00:28:27,008	00:28:30,848	| IOT183 |	The exception of this is blue toothpaste so you have to be within
+EDL	00:28:30,848	00:28:31,360	| IOT183 |	1040
+EDL	00:28:31,872	00:28:32,896	| IOT183 |	Feet are so
+EDL	00:28:32,896	00:28:33,664	| IOT183 |	So I don't
+EDL	00:28:33,664	00:28:35,968	| IOT183 |	Love it for this because it's not going to
+EDL	00:28:35,968	00:28:37,760	| IOT183 |	It can send you alerts
+EDL	00:28:37,760	00:28:39,296	| IOT183 |	But it's only going to send you alerts when
+EDL	00:28:39,296	00:28:39,808	| IOT183 |	When you walk with him
+EDL	00:28:40,832	00:28:47,232	| IOT183 |	You're not going to be able to remotely be away from home and know that the door has been left open for example either
+EDL	00:28:47,232	00:28:48,512	| IOT183 |	Let you sit pretty
+EDL	00:28:48,512	00:28:51,072	| IOT183 |	Why is sampling intervals so Lake
+EDL	00:28:51,072	00:28:52,864	| IOT183 |	Between 10 seconds
+EDL	00:28:53,632	00:28:57,216	| IOT183 |	I would say for your freezer a 10 minute intervals probably good and will save
+EDL	00:28:57,216	00:28:58,240	| IOT183 |	Battery life
+EDL	00:28:58,240	00:28:59,520	| IOT183 |	So that's just
+EDL	00:28:59,520	00:29:00,800	| IOT183 |	Book If you're looking for sampling
+EDL	00:29:03,616	00:29:05,408	| IOT183 |	And so that's one option
+EDL	00:29:05,408	00:29:06,688	| IOT183 |	We did find
+EDL	00:29:07,200	00:29:07,968	| IOT183 |	And
+EDL	00:29:07,968	00:29:09,248	| IOT183 |	We don't love this for another reason
+EDL	00:29:09,760	00:29:13,088	| IOT183 |	We found it lacrosse Mobile Wireless monitoring system
+EDL	00:29:13,600	00:29:16,416	| IOT183 |	This one comes with a dry probe that should work just 4 in
+EDL	00:29:16,416	00:29:17,184	| IOT183 |	Inside your freezer
+EDL	00:29:17,184	00:29:20,256	| IOT183 |	It has its own little Gateway this is a $30 device
+EDL	00:29:20,768	00:29:22,560	| IOT183 |	Gateway gives you the Wi-Fi
+EDL	00:29:23,328	00:29:24,352	| IOT183 |	Please and that you need to plug in
+EDL	00:29:24,864	00:29:25,632	| IOT183 |	But
+EDL	00:29:25,632	00:29:30,496	| IOT183 |	To get data to your phone after the first 3 months is going to cost you
+EDL	00:29:30,496	00:29:31,776	| IOT183 |	99 Cent Store
+EDL	00:29:32,288	00:29:34,848	| IOT183 |	So that's a subscription fee associated with this
+EDL	00:29:34,848	00:29:35,872	| IOT183 |	Device that space
+EDL	00:29:35,872	00:29:36,640	| IOT183 |	12 bucks
+EDL	00:29:36,640	00:29:41,504	| IOT183 |	Which is a lot cheaper than hundreds of dollars of frozen food defrosted
+EDL	00:29:41,504	00:29:42,272	| IOT183 |	Yes
+EDL	00:29:42,272	00:29:43,040	| IOT183 |	So
+EDL	00:29:43,040	00:29:49,440	| IOT183 |	That is an option I have had lacrosse sensors in the past they tended to work for me for about 2 years before dying
+EDL	00:29:49,440	00:29:50,720	| IOT183 |	So keep that in mind
+EDL	00:29:50,720	00:29:51,744	| IOT183 |	This is
+EDL	00:29:51,744	00:29:52,768	| IOT183 |	Particular
+EDL	00:29:52,768	00:29:54,304	| IOT183 |	Is only 30 bucks
+EDL	00:29:57,120	00:29:57,888	| IOT183 |	And then we found
+EDL	00:29:58,400	00:30:01,216	| IOT183 |	The temp stick wireless temperature sensor
+EDL	00:30:01,216	00:30:03,520	| IOT183 |	$449
+EDL	00:30:04,800	00:30:06,336	| IOT183 |	Which is pricey as heck
+EDL	00:30:06,336	00:30:07,616	| IOT183 |	But it's Wi-Fi
+EDL	00:30:07,616	00:30:08,640	| IOT183 |	Connect to a gateway
+EDL	00:30:08,640	00:30:09,152	| IOT183 |	You're going to have to be
+EDL	00:30:09,664	00:30:10,688	| IOT183 |	Changing the batteries on
+EDL	00:30:11,456	00:30:11,968	| IOT183 |	Quite a bit
+EDL	00:30:12,480	00:30:13,760	| IOT183 |	But this gives you everything all in
+EDL	00:30:14,528	00:30:20,928	| IOT183 |	So you can be anywhere at the notified for example the freezer is open so
+EDL	00:30:20,928	00:30:21,952	| IOT183 |	Option fee on that one right
+EDL	00:30:24,000	00:30:25,792	| IOT183 |	But it's a big upfront cost
+EDL	00:30:27,072	00:30:28,096	| IOT183 |	More than this
+EDL	00:30:28,096	00:30:29,120	| IOT183 |	$30 +
+EDL	00:30:29,120	00:30:29,632	| IOT183 |	$12
+EDL	00:30:32,704	00:30:38,848	| IOT183 |	I think it's worth pointing out also that when we went down a big rabbit hole looking for all kinds of different solutions here
+EDL	00:30:39,360	00:30:41,408	| IOT183 |	I noticed that a lot of the
+EDL	00:30:41,408	00:30:42,688	| IOT183 |	Manufacturers of
+EDL	00:30:42,688	00:30:49,088	| IOT183 |	Fridges and freezers are now starting to include sensors for this type of thing such a Samsung NGE for example
+EDL	00:30:49,088	00:30:50,880	| IOT183 |	So they're in the future
+EDL	00:30:50,880	00:30:56,000	| IOT183 |	When you do replace the freezer cuz he said it was 10 years old Can I some point it's going to have to get replaced
+EDL	00:30:56,000	00:30:59,072	| IOT183 |	I would consider looking at one that has a sensor built-in
+EDL	00:30:59,584	00:31:00,352	| IOT183 |	Yes
+EDL	00:31:00,352	00:31:00,864	| IOT183 |	Yes
+EDL	00:31:01,376	00:31:02,144	| IOT183 |	What's the magic
+EDL	00:31:03,424	00:31:03,936	| IOT183 |	All right
+EDL	00:31:04,448	00:31:05,728	| IOT183 |	So hopefully bread
+EDL	00:31:05,728	00:31:06,752	| IOT183 |	This helps you
+EDL	00:31:06,752	00:31:07,776	| IOT183 |	Otherwise
+EDL	00:31:07,776	00:31:08,288	| IOT183 |	I think you should get rid
+EDL	00:31:12,128	00:31:14,944	| IOT183 |	We don't really know how did they get past the locks
+EDL	00:31:16,736	00:31:17,504	| IOT183 |	All right
+EDL	00:31:17,504	00:31:18,272	| IOT183 |	So
+EDL	00:31:18,272	00:31:20,320	| IOT183 |	That is a lot we discussed this week
+EDL	00:31:20,320	00:31:21,344	| IOT183 |	We hope you guys
+EDL	00:31:21,344	00:31:22,880	| IOT183 |	Enjoy this segment of the show
+EDL	00:31:22,880	00:31:23,392	| IOT183 |	Please stay tuned
+EDL	00:31:24,672	00:31:25,952	| IOT183 |	A conversation with
+EDL	00:31:25,952	00:31:26,976	| IOT183 |	Rayford Smith
+EDL	00:31:26,976	00:31:27,744	| IOT183 |	Who is with Entergy
+EDL	00:31:28,256	00:31:31,328	| IOT183 |	A utility that serves 3 million customers as he explains
+EDL	00:31:31,840	00:31:32,864	| IOT183 |	Holy cow
+EDL	00:31:32,864	00:31:33,888	| IOT183 |	How they're bringing
+EDL	00:31:33,888	00:31:35,168	| IOT183 |	That company
+EDL	00:31:35,168	00:31:37,216	| IOT183 |	2 current digital standard
+EDL	00:31:37,216	00:31:39,264	| IOT183 |	It's a pretty involved process in
+EDL	00:31:39,776	00:31:46,176	| IOT183 |	I think it's an interesting interview so stay tuned for that and for a message from our sponsor hey everyone.
+EDL	00:31:46,176	00:31:52,576	| IOT183 |	Taking a break from The Internet of Things podcast for a message from our sponsor this week sponsor is SAS
+EDL	00:31:52,576	00:31:57,184	| IOT183 |	And I have json man who is the VP of iot at SAS
+EDL	00:31:57,184	00:31:57,952	| IOT183 |	Here to talk to us
+EDL	00:31:58,464	00:32:00,512	| IOT183 |	We talked about SAS at the edge
+EDL	00:32:00,512	00:32:02,048	| IOT183 |	A new iot division
+EDL	00:32:02,048	00:32:03,328	| IOT183 |	And his partner ecosystem
+EDL	00:32:03,840	00:32:05,632	| IOT183 |	Let's talk about
+EDL	00:32:05,632	00:32:06,912	| IOT183 |	Hey I and II.
+EDL	00:32:07,680	00:32:08,704	| IOT183 |	So which comes first
+EDL	00:32:09,216	00:32:09,984	| IOT183 |	Iot data
+EDL	00:32:10,752	00:32:11,264	| IOT183 |	Rai
+EDL	00:32:11,776	00:32:12,544	| IOT183 |	That's a good question
+EDL	00:32:12,544	00:32:14,080	| IOT183 |	You seen a lot of ink
+EDL	00:32:14,592	00:32:15,872	| IOT183 |	Towards both topics
+EDL	00:32:15,872	00:32:17,152	| IOT183 |	Am I singing though it's
+EDL	00:32:17,152	00:32:17,920	| IOT183 |	Iot data
+EDL	00:32:18,432	00:32:20,224	| IOT183 |	Certainly a I in
+EDL	00:32:20,992	00:32:22,016	| IOT183 |	Capabilities
+EDL	00:32:22,016	00:32:23,296	| IOT183 |	Analytic evaluation
+EDL	00:32:23,296	00:32:24,064	| IOT183 |	Associated
+EDL	00:32:24,064	00:32:26,112	| IOT183 |	With that is critical but the fact is
+EDL	00:32:26,112	00:32:26,880	| IOT183 |	AI
+EDL	00:32:26,880	00:32:27,648	| IOT183 |	Routines Alberta
+EDL	00:32:28,160	00:32:28,928	| IOT183 |	R train
+EDL	00:32:28,928	00:32:29,696	| IOT183 |	Against data
+EDL	00:32:29,696	00:32:30,464	| IOT183 |	Anorexic cute
+EDL	00:32:31,488	00:32:33,024	| IOT183 |	In my opinion
+EDL	00:32:33,024	00:32:36,096	| IOT183 |	Okidata is required it comes first before you can achieve value
+EDL	00:32:36,864	00:32:37,632	| IOT183 |	Applied artificial
+EDL	00:32:38,656	00:32:41,216	| IOT183 |	How does AI in iot
+EDL	00:32:41,216	00:32:41,728	| IOT183 |	Work together
+EDL	00:32:42,240	00:32:44,288	| IOT183 |	AI is certainly a path
+EDL	00:32:44,288	00:32:45,312	| IOT183 |	To incite
+EDL	00:32:45,312	00:32:46,336	| IOT183 |	Passive value
+EDL	00:32:46,336	00:32:48,640	| IOT183 |	Decisioning iot infrastructure
+EDL	00:32:48,640	00:32:49,664	| IOT183 |	On the other hand
+EDL	00:32:49,664	00:32:50,432	| IOT183 |	Provides
+EDL	00:32:50,432	00:32:51,712	| IOT183 |	The foundational element
+EDL	00:32:51,712	00:32:52,480	| IOT183 |	4X
+EDL	00:32:52,480	00:32:53,760	| IOT183 |	Execution of Iowa
+EDL	00:32:53,760	00:32:54,272	| IOT183 |	Key principles
+EDL	00:32:54,784	00:32:55,296	| IOT183 |	What you think about
+EDL	00:32:55,808	00:32:56,832	| IOT183 |	To first question
+EDL	00:32:56,832	00:32:58,368	| IOT183 |	The data is critical
+EDL	00:32:58,368	00:33:02,208	| IOT183 |	But also as you look to the distributed environment in many cases
+EDL	00:33:02,208	00:33:03,488	| IOT183 |	Just pushing to the edge
+EDL	00:33:03,488	00:33:06,816	| IOT183 |	The models may be trained in a persistent environment AI models
+EDL	00:33:06,816	00:33:08,096	| IOT183 |	In there but the execution
+EDL	00:33:08,864	00:33:09,632	| IOT183 |	The volume
+EDL	00:33:09,632	00:33:10,656	| IOT183 |	This generator from EX
+EDL	00:33:10,656	00:33:11,168	| IOT183 |	Execution
+EDL	00:33:11,936	00:33:12,960	| IOT183 |	Scoring of the models
+EDL	00:33:12,960	00:33:15,776	| IOT183 |	Self can only be achieved when you have that infrastructure
+EDL	00:33:16,288	00:33:17,312	| IOT183 |	Ford appointment
+EDL	00:33:17,312	00:33:18,848	| IOT183 |	We talked about reduce latency
+EDL	00:33:18,848	00:33:20,128	| IOT183 |	Can be a primary driver
+EDL	00:33:20,128	00:33:24,224	| IOT183 |	Latency is reduced by pushing his decision and closer to the source
+EDL	00:33:24,224	00:33:26,016	| IOT183 |	Updated so you can have the best
+EDL	00:33:26,016	00:33:27,296	| IOT183 |	AI model in the world
+EDL	00:33:27,296	00:33:28,320	| IOT183 |	But if you don't have the
+EDL	00:33:28,320	00:33:29,600	| IOT183 |	The ability to apply at
+EDL	00:33:29,600	00:33:30,368	| IOT183 |	At the right time
+EDL	00:33:30,368	00:33:31,136	| IOT183 |	Right place
+EDL	00:33:31,136	00:33:31,904	| IOT183 |	The value
+EDL	00:33:31,904	00:33:32,416	| IOT183 |	Is quickly
+EDL	00:33:33,184	00:33:36,512	| IOT183 |	Power companies applying AI to their iot data today
+EDL	00:33:37,024	00:33:38,816	| IOT183 |	Switching examples across multiple annies
+EDL	00:33:38,816	00:33:41,120	| IOT183 |	Mysteries usually in cases where the
+EDL	00:33:41,120	00:33:41,632	| IOT183 |	Requirement is to
+EDL	00:33:42,400	00:33:43,424	| IOT183 |	SF state of volume
+EDL	00:33:43,424	00:33:44,448	| IOT183 |	Games that are just outside
+EDL	00:33:45,472	00:33:47,008	| IOT183 |	One example is in Hi-Tech
+EDL	00:33:47,520	00:33:49,312	| IOT183 |	Manufacturing what are using video.
+EDL	00:33:49,824	00:33:50,848	| IOT183 |	Detect effect
+EDL	00:33:50,848	00:33:53,408	| IOT183 |	At the most granular level all the way down
+EDL	00:33:53,408	00:33:54,432	| IOT183 |	Pixel levels
+EDL	00:33:54,432	00:33:55,968	| IOT183 |	Within high definition picture
+EDL	00:33:56,736	00:33:58,272	| IOT183 |	And it provides the ability to
+EDL	00:33:58,272	00:34:01,344	| IOT183 |	To do this at scale and generate inside into Gildan
+EDL	00:34:01,344	00:34:02,624	| IOT183 |	Improve throughput that
+EDL	00:34:02,624	00:34:03,904	| IOT183 |	You just couldn't do
+EDL	00:34:03,904	00:34:04,928	| IOT183 |	Human interaction
+EDL	00:34:04,928	00:34:05,440	| IOT183 |	More required
+EDL	00:34:05,952	00:34:07,488	| IOT183 |	Awesome json so
+EDL	00:34:07,488	00:34:10,560	| IOT183 |	Where can we go to find out more about how fast
+EDL	00:34:10,560	00:34:12,352	| IOT183 |	Just helping customers use AI
+EDL	00:34:12,864	00:34:13,376	| IOT183 |	In iot
+EDL	00:34:13,888	00:34:14,912	| IOT183 |	So we have a landing page
+EDL	00:34:15,424	00:34:18,752	| IOT183 |	Sas.com coyote it's a great starting point
+EDL	00:34:18,752	00:34:23,616	| IOT183 |	For both industry use cases in horizontal messaging around on their feet
+EDL	00:34:30,272	00:34:35,392	| IOT183 |	Everyone welcome back to the Internet of Things podcast this is your host Stacey Higginbotham
+EDL	00:34:35,392	00:34:41,280	| IOT183 |	Today's guest is Reaper Smith with VP of energy technology and Analytics
+EDL	00:34:41,280	00:34:42,560	| IOT183 |	Entergy
+EDL	00:34:42,560	00:34:45,120	| IOT183 |	Which is an electricity and gas provider
+EDL	00:34:45,120	00:34:46,912	| IOT183 |	Million customers
+EDL	00:34:47,936	00:34:48,704	| IOT183 |	So
+EDL	00:34:48,704	00:34:49,216	| IOT183 |	Raeford
+EDL	00:34:49,728	00:34:53,056	| IOT183 |	Let's talk about your journey because you came into this
+EDL	00:34:54,080	00:34:55,104	| IOT183 |	Two-and-a-half years ago
+EDL	00:34:56,384	00:34:57,152	| IOT183 |	You describe it is
+EDL	00:34:58,688	00:35:00,224	| IOT183 |	Right it feels like a monster
+EDL	00:35:00,224	00:35:04,064	| IOT183 |	Beginning of the Bible right in the beginning it was voided for Maleficent
+EDL	00:35:04,064	00:35:06,880	| IOT183 |	Overtime in a we had seven days
+EDL	00:35:06,880	00:35:09,440	| IOT183 |	More like two and a half years of trying to
+EDL	00:35:09,440	00:35:10,464	| IOT183 |	Come up with
+EDL	00:35:10,464	00:35:11,488	| IOT183 |	What defining analytic
+EDL	00:35:12,000	00:35:13,280	| IOT183 |	Coming up with a guiding Prince
+EDL	00:35:14,304	00:35:16,352	| IOT183 |	Coming up with our roadmap or strategy
+EDL	00:35:16,864	00:35:20,192	| IOT183 |	And then ultimately now shifting into development end
+EDL	00:35:20,192	00:35:21,216	| IOT183 |	Appointment of antelope
+EDL	00:35:22,752	00:35:24,544	| IOT183 |	Okay so he started
+EDL	00:35:24,544	00:35:25,568	| IOT183 |	You guys from the Dark Ages
+EDL	00:35:27,360	00:35:28,384	| IOT183 |	You started with nothing
+EDL	00:35:28,384	00:35:29,664	| IOT183 |	Now you are in a relation
+EDL	00:35:29,664	00:35:30,432	| IOT183 |	22 people
+EDL	00:35:30,944	00:35:32,224	| IOT183 |	You help a company
+EDL	00:35:32,224	00:35:33,504	| IOT183 |	Deliver a 12s
+EDL	00:35:34,528	00:35:35,296	| IOT183 |	Investment
+EDL	00:35:35,296	00:35:38,112	| IOT183 |	I'm assuming buying analytics software but maybe there's more to this
+EDL	00:35:38,624	00:35:39,392	| IOT183 |	So
+EDL	00:35:39,392	00:35:40,160	| IOT183 |	Let's start
+EDL	00:35:40,672	00:35:42,208	| IOT183 |	With some of the concrete
+EDL	00:35:44,000	00:35:44,768	| IOT183 |	Sure
+EDL	00:35:44,768	00:35:47,840	| IOT183 |	I was just coming up with a common definition of what
+EDL	00:35:47,840	00:35:48,352	| IOT183 |	Analytics
+EDL	00:35:49,632	00:35:52,704	| IOT183 |	It's amazing certain terms get used and people
+EDL	00:35:52,704	00:35:54,240	| IOT183 |	Variation of
+EDL	00:35:54,752	00:35:55,264	| IOT183 |	What they mean
+EDL	00:35:56,032	00:35:59,872	| IOT183 |	But we came up with it which is really that analytics are meant to help us
+EDL	00:36:00,384	00:36:01,920	| IOT183 |	Use data to predict
+EDL	00:36:01,920	00:36:03,712	| IOT183 |	Create some sort of valuable out
+EDL	00:36:05,760	00:36:07,808	| IOT183 |	That really been led to
+EDL	00:36:07,808	00:36:09,600	| IOT183 |	What that's what analytics is
+EDL	00:36:10,112	00:36:13,440	| IOT183 |	What are the rules of the road for how we should go about doing
+EDL	00:36:14,208	00:36:16,512	| IOT183 |	And we came up with a series
+EDL	00:36:16,512	00:36:19,328	| IOT183 |	Guiding principles that informed our development
+EDL	00:36:19,840	00:36:20,864	| IOT183 |	One being
+EDL	00:36:20,864	00:36:23,424	| IOT183 |	That we think analytics is synonymous with
+EDL	00:36:23,424	00:36:24,192	| IOT183 |	Strategy
+EDL	00:36:24,192	00:36:25,216	| IOT183 |	And as such
+EDL	00:36:25,728	00:36:28,288	| IOT183 |	Cuz it's this key capability we should naps work
+EDL	00:36:29,056	00:36:30,848	| IOT183 |	Instead we needed to develop
+EDL	00:36:30,848	00:36:32,128	| IOT183 |	Those capabilities in house
+EDL	00:36:32,896	00:36:35,456	| IOT183 |	And because it's that important that relevant
+EDL	00:36:35,456	00:36:37,504	| IOT183 |	Toonami the growth and direction of Art
+EDL	00:36:38,528	00:36:39,040	| IOT183 |	Future
+EDL	00:36:39,552	00:36:41,600	| IOT183 |	The analects wasn't so much about technology
+EDL	00:36:42,112	00:36:43,136	| IOT183 |	Tencent about
+EDL	00:36:43,136	00:36:47,232	| IOT183 |	How many weird sounding things I could get in and get the objectives to pay for like Pig
+EDL	00:36:47,232	00:36:48,000	| IOT183 |	Baidu
+EDL	00:36:48,000	00:36:50,560	| IOT183 |	Spark and whatever it was really around
+EDL	00:36:51,072	00:36:51,584	| IOT183 |	Change manager
+EDL	00:36:52,352	00:36:53,376	| IOT183 |	How do you get
+EDL	00:36:53,888	00:36:55,936	| IOT183 |	An organization of 13000 people
+EDL	00:36:56,448	00:36:59,008	| IOT183 |	Already got a hundred plus years
+EDL	00:36:59,008	00:36:59,520	| IOT183 |	Process
+EDL	00:37:00,032	00:37:02,848	| IOT183 |	History and everything else on the way they do things
+EDL	00:37:03,616	00:37:05,152	| IOT183 |	To fundamentally alter
+EDL	00:37:05,920	00:37:07,200	| IOT183 |	That way of doing business
+EDL	00:37:07,968	00:37:09,760	| IOT183 |	So how did you do
+EDL	00:37:09,760	00:37:10,784	| IOT183 |	Pick a project
+EDL	00:37:11,808	00:37:12,576	| IOT183 |	Pick up
+EDL	00:37:12,576	00:37:13,088	| IOT183 |	System
+EDL	00:37:13,600	00:37:15,392	| IOT183 |	You're kind of talking philosophically the lips
+EDL	00:37:17,440	00:37:21,280	| IOT183 |	So yeah so it's really important so we set about creating an analytics roadmap
+EDL	00:37:21,792	00:37:24,864	| IOT183 |	Which was our strategy is a three-year strategy for how to act
+EDL	00:37:26,912	00:37:28,448	| IOT183 |	And fundamentally create that chain
+EDL	00:37:28,960	00:37:34,336	| IOT183 |	The route map in and of itself the process to create it was the first step in creating the change
+EDL	00:37:34,336	00:37:37,152	| IOT183 |	We gave it The Guiding principles we gave it
+EDL	00:37:37,152	00:37:40,224	| IOT183 |	Architectural high-level architecture what we wanted to accomplish
+EDL	00:37:40,224	00:37:44,064	| IOT183 |	We really executed the change through a whole series of workshops that we
+EDL	00:37:44,064	00:37:45,344	| IOT183 |	We did it
+EDL	00:37:47,648	00:37:51,488	| IOT183 |	The first of which was to identify where the value was that we
+EDL	00:37:52,512	00:37:54,560	| IOT183 |	And more than just Fanta results
+EDL	00:37:54,560	00:37:57,120	| IOT183 |	Conan just on financial results you
+EDL	00:37:57,632	00:37:59,424	| IOT183 |	Send it when I called the Grim Reaper affect which
+EDL	00:37:59,936	00:38:02,752	| IOT183 |	I'm here and I'm using air quotes I'm here to help
+EDL	00:38:03,264	00:38:06,336	| IOT183 |	And you cut the budget just once and then you're never invited back
+EDL	00:38:07,104	00:38:10,688	| IOT183 |	And so we knew we needed to get outside of just the narrow or myopic
+EDL	00:38:11,200	00:38:11,712	| IOT183 |	Benefit
+EDL	00:38:12,992	00:38:16,064	| IOT183 |	The workshops really helped us do that we would go eat
+EDL	00:38:16,064	00:38:18,368	| IOT183 |	Speak with the executives and then later we do
+EDL	00:38:18,368	00:38:19,392	| IOT183 |	For the workshops with
+EDL	00:38:19,392	00:38:20,160	| IOT183 |	13 * 2
+EDL	00:38:20,160	00:38:21,696	| IOT183 |	Identify
+EDL	00:38:21,696	00:38:22,464	| IOT183 |	Pain points
+EDL	00:38:22,976	00:38:24,768	| IOT183 |	What kind of value they thought they
+EDL	00:38:24,768	00:38:26,560	| IOT183 |	Create Beyond just the dollars
+EDL	00:38:26,560	00:38:29,888	| IOT183 |	Sense that process also help us uncover
+EDL	00:38:29,888	00:38:31,680	| IOT183 |	Talent within our own organization
+EDL	00:38:32,960	00:38:37,568	| IOT183 |	We as a company didn't think we had if I well we're just going to have to build the organization from
+EDL	00:38:38,080	00:38:41,408	| IOT183 |	Hiring everyone from the outside there's no one inside the company
+EDL	00:38:43,200	00:38:44,480	| IOT183 |	Can you walk with you
+EDL	00:38:46,272	00:38:50,880	| IOT183 |	An example of one of the workshops that what the team did what they were trying to tell you to tackle
+EDL	00:38:50,880	00:38:54,464	| IOT183 |	Sure sure so. It's important who was in the workshop
+EDL	00:38:54,464	00:38:58,816	| IOT183 |	So the first workshops we would typically do they were about 2 hours long
+EDL	00:38:58,816	00:39:01,120	| IOT183 |	And in the workshop we had a purse
+EDL	00:39:01,120	00:39:03,936	| IOT183 |	Me or someone from the Enterprise analytics area
+EDL	00:39:03,936	00:39:05,216	| IOT183 |	Meaning we also brought in
+EDL	00:39:05,216	00:39:06,752	| IOT183 |	Consulting outside support
+EDL	00:39:06,752	00:39:08,288	| IOT183 |	We wanted to bring him
+EDL	00:39:08,288	00:39:11,616	| IOT183 |	Someone to facilitate that conversation that kind of been there done that
+EDL	00:39:12,128	00:39:13,408	| IOT183 |	So that they could help
+EDL	00:39:13,408	00:39:14,944	| IOT183 |	Guide the conversation
+EDL	00:39:14,944	00:39:16,736	| IOT183 |	As a neutral third-party
+EDL	00:39:16,736	00:39:18,272	| IOT183 |	I think it also layer in
+EDL	00:39:18,272	00:39:20,576	| IOT183 |	Hey I've seen this elsewhere here something
+EDL	00:39:20,576	00:39:21,856	| IOT183 |	Hangouts you haven't thought of where you
+EDL	00:39:22,624	00:39:24,928	| IOT183 |	And then of course we also brought it with
+EDL	00:39:24,928	00:39:26,720	| IOT183 |	Our organization is not
+EDL	00:39:26,720	00:39:28,256	| IOT183 |	Part of the information technology
+EDL	00:39:28,256	00:39:29,792	| IOT183 |	Organization where I actually like I said
+EDL	00:39:30,560	00:39:32,352	| IOT183 |	If analytics is strategies
+EDL	00:39:32,352	00:39:32,864	| IOT183 |	Strategies
+EDL	00:39:33,888	00:39:36,704	| IOT183 |	But we did bring it because there a key player in
+EDL	00:39:37,216	00:39:37,984	| IOT183 |	Getting access
+EDL	00:39:37,984	00:39:39,776	| IOT183 |	Most of the data standing up
+EDL	00:39:39,776	00:39:40,800	| IOT183 |	System
+EDL	00:39:40,800	00:39:41,312	| IOT183 |	Keeping it patched
+EDL	00:39:42,848	00:39:45,920	| IOT183 |	And then we also started at least the first conversations
+EDL	00:39:45,920	00:39:46,688	| IOT183 |	2 hour one
+EDL	00:39:47,200	00:39:48,992	| IOT183 |	Executive Suite to the major organ
+EDL	00:39:50,016	00:39:53,344	| IOT183 |	That typically the way the process will always start with
+EDL	00:39:53,344	00:39:54,368	| IOT183 |	What is Analytics
+EDL	00:39:54,880	00:39:56,416	| IOT183 |	Write just a simple question
+EDL	00:39:56,928	00:40:02,304	| IOT183 |	Trying to get everybody to bring out their ideas have a conversation around largely to coalesce around that
+EDL	00:40:02,816	00:40:04,608	| IOT183 |	Forward-looking view up
+EDL	00:40:04,608	00:40:05,888	| IOT183 |	You want to use Analytics
+EDL	00:40:05,888	00:40:07,424	| IOT183 |	Freedom Valu black
+EDL	00:40:07,424	00:40:07,936	| IOT183 |	Predictive
+EDL	00:40:09,472	00:40:11,776	| IOT183 |	That was usually the first 30 to 45 minutes
+EDL	00:40:12,288	00:40:14,592	| IOT183 |	And the remainder the conversation was on
+EDL	00:40:14,592	00:40:15,360	| IOT183 |	High-level paint
+EDL	00:40:16,384	00:40:18,176	| IOT183 |	Where in your organization
+EDL	00:40:18,176	00:40:19,712	| IOT183 |	You really see opportunity
+EDL	00:40:20,992	00:40:25,344	| IOT183 |	Interspersed into that we would give them a state of what is the art of the possible
+EDL	00:40:25,344	00:40:27,136	| IOT183 |	That was tuned to the area
+EDL	00:40:27,136	00:40:28,672	| IOT183 |	Supply chain
+EDL	00:40:28,672	00:40:31,232	| IOT183 |	It was another reason why we brought third party
+EDL	00:40:31,232	00:40:32,256	| IOT183 |	Military wise
+EDL	00:40:33,024	00:40:35,584	| IOT183 |	Have a conversation Saved By the way supply chain
+EDL	00:40:36,096	00:40:37,120	| IOT183 |	Outside of our industry
+EDL	00:40:39,424	00:40:40,192	| IOT183 |	What's your summer
+EDL	00:40:40,192	00:40:41,728	| IOT183 |	Interesting things you can do
+EDL	00:40:42,240	00:40:45,568	| IOT183 |	We'll use that is kind of a way to stir the pot and help create
+EDL	00:40:46,080	00:40:46,592	| IOT183 |	Interest
+EDL	00:40:47,872	00:40:51,200	| IOT183 |	We would ask him vaguely high-level questions but where's your data
+EDL	00:40:51,712	00:40:53,248	| IOT183 |	Where your Key Systems those switches
+EDL	00:40:53,760	00:40:54,784	| IOT183 |	That's the first
+EDL	00:40:54,784	00:40:55,296	| IOT183 |	Conversation
+EDL	00:40:56,064	00:40:58,112	| IOT183 |	We then would go to in-depth conversation
+EDL	00:40:59,136	00:41:00,672	| IOT183 |	Update full day
+EDL	00:41:00,672	00:41:03,232	| IOT183 |	Then based on the areas that they identified in that
+EDL	00:41:04,768	00:41:06,048	| IOT183 |	How long did this process
+EDL	00:41:07,072	00:41:08,096	| IOT183 |	Within different word
+EDL	00:41:09,120	00:41:10,656	| IOT183 |	About a 3-month process
+EDL	00:41:11,680	00:41:15,520	| IOT183 |	We spend another two months after that though harmonizing all the results
+EDL	00:41:15,520	00:41:16,544	| IOT183 |	We found so we
+EDL	00:41:16,544	00:41:19,872	| IOT183 |	At the end of the day we created not only a series of use cases
+EDL	00:41:19,872	00:41:20,384	| IOT183 |	Christmas tree
+EDL	00:41:21,664	00:41:23,200	| IOT183 |	This is of interest to us
+EDL	00:41:23,200	00:41:24,736	| IOT183 |	This is the value we think we
+EDL	00:41:24,736	00:41:25,248	| IOT183 |	Free from it
+EDL	00:41:25,760	00:41:27,296	| IOT183 |	Here's where the data we think
+EDL	00:41:27,296	00:41:28,832	| IOT183 |	We need for that is
+EDL	00:41:28,832	00:41:30,624	| IOT183 |	And here's the rough Bar Association we might want
+EDL	00:41:31,648	00:41:37,280	| IOT183 |	We have a synthesizer harmonize all that because obviously how one team might make an assumption of Valium
+EDL	00:41:37,280	00:41:38,304	| IOT183 |	Different than another
+EDL	00:41:38,816	00:41:39,840	| IOT183 |	We need a time to come
+EDL	00:41:40,352	00:41:42,656	| IOT183 |	Bring all that stuff together so roughly from
+EDL	00:41:42,656	00:41:44,960	| IOT183 |	Initiation to about the six-month mark
+EDL	00:41:45,472	00:41:46,240	| IOT183 |	Is how long it took
+EDL	00:41:46,240	00:41:47,776	| IOT183 |	To go through the full process
+EDL	00:41:48,288	00:41:51,360	| IOT183 |	Workshops interviews executive updates and then
+EDL	00:41:51,360	00:41:54,943	| IOT183 |	Harmonization and ultimately creating this roadmap in terms of where we
+EDL	00:41:56,735	00:41:58,527	| IOT183 |	Okay so now you have a road map
+EDL	00:41:58,527	00:42:01,087	| IOT183 |	This when you brought inventors or
+EDL	00:42:01,599	00:42:03,391	| IOT183 |	Did you have them in beforehand like
+EDL	00:42:03,903	00:42:05,183	| IOT183 |	What's after the route
+EDL	00:42:05,695	00:42:10,559	| IOT183 |	Yeah well so there's one key question you have to ask while doing the roadmap that we had to get in
+EDL	00:42:11,071	00:42:12,095	| IOT183 |	And that is
+EDL	00:42:12,863	00:42:14,911	| IOT183 |	What kind of way do you want to cross
+EDL	00:42:15,935	00:42:17,471	| IOT183 |	Another word for towards
+EDL	00:42:17,983	00:42:22,079	| IOT183 |	The places with the low-hanging fruit or readily available data
+EDL	00:42:22,079	00:42:23,103	| IOT183 |	Or do you want it
+EDL	00:42:23,103	00:42:24,895	| IOT183 |	Step back and take a more Enterprise
+EDL	00:42:25,663	00:42:27,711	| IOT183 |	We call them that no business unit left
+EDL	00:42:27,711	00:42:28,479	| IOT183 |	Behind strategy
+EDL	00:42:29,247	00:42:31,551	| IOT183 |	But we went around we surveyed all the senior
+EDL	00:42:32,831	00:42:35,391	| IOT183 |	With focusing on one or two areas
+EDL	00:42:35,903	00:42:37,439	| IOT183 |	But that creates the halves
+EDL	00:42:37,439	00:42:38,207	| IOT183 |	And the Have Nots
+EDL	00:42:38,719	00:42:39,999	| IOT183 |	And you may be a have
+EDL	00:42:40,511	00:42:43,583	| IOT183 |	But you're likely going to be a half not are you okay with that
+EDL	00:42:44,095	00:42:46,399	| IOT183 |	By the way if we do the Haves and Have Nots
+EDL	00:42:46,399	00:42:47,679	| IOT183 |	We might go a little faster
+EDL	00:42:48,191	00:42:48,703	| IOT183 |	To start with
+EDL	00:42:49,215	00:42:51,519	| IOT183 |	But it might create some unintended
+EDL	00:42:52,031	00:42:54,591	| IOT183 |	It's right because the Have Nots my team up and go well
+EDL	00:42:55,103	00:42:59,199	| IOT183 |	I really didn't work for me
+EDL	00:42:59,199	00:43:03,295	| IOT183 |	Alt-right terrible Silo don't want to create silage from the
+EDL	00:43:03,807	00:43:05,343	| IOT183 |	Heading into a person every one of the leaders
+EDL	00:43:05,855	00:43:06,623	| IOT183 |	Demon energy said
+EDL	00:43:07,135	00:43:08,415	| IOT183 |	We want you to go with the Enterprise
+EDL	00:43:09,439	00:43:12,767	| IOT183 |	Which was really great because it allowed us to take a longer View
+EDL	00:43:13,791	00:43:16,863	| IOT183 |	And it's far more comprehensive you about how to
+EDL	00:43:17,375	00:43:18,143	| IOT183 |	Roulette
+EDL	00:43:18,143	00:43:20,191	| IOT183 |	Architected and ultimately emblem
+EDL	00:43:21,215	00:43:26,591	| IOT183 |	So when we got the business cases and all the roadmap in the strategy that we
+EDL	00:43:26,591	00:43:27,359	| IOT183 |	You said okay this is what word
+EDL	00:43:27,871	00:43:28,639	| IOT183 |	2
+EDL	00:43:28,639	00:43:30,175	| IOT183 |	It been created the next
+EDL	00:43:30,175	00:43:32,991	| IOT183 |	Fertilprep to do which is okay now we have to go pick tools
+EDL	00:43:33,503	00:43:36,063	| IOT183 |	That conform with our architecture on our strategy
+EDL	00:43:36,575	00:43:37,855	| IOT183 |	We need to hire
+EDL	00:43:37,855	00:43:38,623	| IOT183 |	Do we have
+EDL	00:43:38,623	00:43:39,647	| IOT183 |	Literally knows that
+EDL	00:43:40,159	00:43:42,719	| IOT183 |	And we have to do this in a very short amount of time because
+EDL	00:43:43,231	00:43:46,559	| IOT183 |	Company wants to start recognizing benefits as soon as they
+EDL	00:43:47,839	00:43:50,143	| IOT183 |	So we went down a couple Tracker boats hiring
+EDL	00:43:50,143	00:43:50,655	| IOT183 |	And
+EDL	00:43:51,167	00:43:56,031	| IOT183 |	Going out until you shoot a whole bunch of rfps for particular components that we went through
+EDL	00:43:56,543	00:43:58,847	| IOT183 |	Define nauseous the tools like
+EDL	00:43:59,615	00:44:00,383	| IOT183 |	Yale tour guide
+EDL	00:44:00,895	00:44:03,711	| IOT183 |	Are you going to govern your data what are you going to store it in
+EDL	00:44:04,735	00:44:06,015	| IOT183 |	But also
+EDL	00:44:06,015	00:44:07,295	| IOT183 |	Some more importantly was
+EDL	00:44:07,807	00:44:10,111	| IOT183 |	Are you going to enhance the data that you already got
+EDL	00:44:10,623	00:44:14,719	| IOT183 |	We knew from the very moment that we started that our data wasn't very good
+EDL	00:44:14,719	00:44:16,255	| IOT183 |	And there was a lot of data we just didn't
+EDL	00:44:17,535	00:44:20,351	| IOT183 |	And so we knew we had to augment our data as much as we
+EDL	00:44:20,351	00:44:20,863	| IOT183 |	We had a manager
+EDL	00:44:23,423	00:44:24,959	| IOT183 |	Relaunch recipes
+EDL	00:44:25,471	00:44:27,007	| IOT183 |	We Begin the hiring process
+EDL	00:44:27,775	00:44:30,591	| IOT183 |	And by the end of the year we had selected
+EDL	00:44:31,103	00:44:33,663	| IOT183 |	Vendors that we thought we really wanted
+EDL	00:44:33,663	00:44:38,527	| IOT183 |	And we had also begun rnfl pirate we did not finish the hiring though
+EDL	00:44:38,527	00:44:39,295	| IOT183 |	About
+EDL	00:44:39,295	00:44:41,087	| IOT183 |	Really up until about the last two weeks
+EDL	00:44:41,855	00:44:42,879	| IOT183 |	So the me
+EDL	00:44:42,879	00:44:44,415	| IOT183 |	On the vendor side
+EDL	00:44:44,415	00:44:45,695	| IOT183 |	What kinds of things
+EDL	00:44:46,207	00:44:46,975	| IOT183 |	You decide to
+EDL	00:44:46,975	00:44:47,743	| IOT183 |	So what are they
+EDL	00:44:51,327	00:44:54,655	| IOT183 |	So I would say that I like to explain things
+EDL	00:44:54,655	00:44:56,703	| IOT183 |	The two are senior Executives using
+EDL	00:44:56,703	00:44:57,215	| IOT183 |	Cartoons
+EDL	00:44:57,727	00:45:01,311	| IOT183 |	RIT infrastructure and our human capital
+EDL	00:45:01,311	00:45:03,359	| IOT183 |	Spring from the womb and
+EDL	00:45:03,359	00:45:05,663	| IOT183 |	Work effort something 30 years in our industry
+EDL	00:45:06,175	00:45:08,479	| IOT183 |	Knowing the ins-and-outs about analytics
+EDL	00:45:08,991	00:45:13,599	| IOT183 |	And so far everything into four different categories of things using a card
+EDL	00:45:14,111	00:45:15,135	| IOT183 |	Arthur really
+EDL	00:45:15,135	00:45:18,719	| IOT183 |	Simple easy to understand we said really there for parts to RL example
+EDL	00:45:19,487	00:45:19,999	| IOT183 |	The first
+EDL	00:45:20,511	00:45:24,095	| IOT183 |	Human capital write the driver or the passengers are really important
+EDL	00:45:24,607	00:45:28,703	| IOT183 |	They're going to tell you where you're going and they're going to steer the car
+EDL	00:45:29,983	00:45:31,263	| IOT183 |	Second part of it is
+EDL	00:45:31,263	00:45:34,335	| IOT183 |	The fuel for the car which is your data right
+EDL	00:45:34,335	00:45:38,175	| IOT183 |	How do you move your data how do you manage your data how do you augment
+EDL	00:45:38,175	00:45:39,455	| IOT183 |	Governor
+EDL	00:45:39,455	00:45:41,759	| IOT183 |	That's the second major category
+EDL	00:45:43,295	00:45:44,575	| IOT183 |	The third was the engine
+EDL	00:45:45,087	00:45:47,391	| IOT183 |	Consumes the fuel to create the
+EDL	00:45:47,391	00:45:49,695	| IOT183 |	Does the mechanical energy to move you down the road
+EDL	00:45:51,999	00:45:54,047	| IOT183 |	It is the inside itself right
+EDL	00:45:56,351	00:46:02,751	| IOT183 |	I had a meeting with Executives and said I'd like to talk to you about a generalized autoregressive conditional heteroskedasticity
+EDL	00:46:02,751	00:46:04,543	| IOT183 |	Fastest way to end a meeting right
+EDL	00:46:04,543	00:46:05,055	| IOT183 |	Beijing
+EDL	00:46:05,567	00:46:07,103	| IOT183 |	Don't want to talk about that
+EDL	00:46:07,103	00:46:09,407	| IOT183 |	But you say I'd like to talk about
+EDL	00:46:09,407	00:46:12,223	| IOT183 |	I'm inside a really cool inside that we did for your area
+EDL	00:46:12,735	00:46:14,271	| IOT183 |	That resonates far more
+EDL	00:46:14,271	00:46:17,343	| IOT183 |	I've got to find a way to take the math that you built in the engine
+EDL	00:46:17,855	00:46:20,415	| IOT183 |	Visualize it and created and put it in a way that
+EDL	00:46:20,415	00:46:21,951	| IOT183 |	Really helps Executives understand
+EDL	00:46:21,951	00:46:22,719	| IOT183 |	Just what the hell
+EDL	00:46:22,719	00:46:26,559	| IOT183 |	In my car exhaust right
+EDL	00:46:26,559	00:46:29,631	| IOT183 |	It helps you see what the engine produce
+EDL	00:46:29,631	00:46:34,495	| IOT183 |	But it also helps you monitor what's happening what's going on
+EDL	00:46:35,775	00:46:38,079	| IOT183 |	And so forth
+EDL	00:46:38,079	00:46:39,615	| IOT183 |	Key components of what we're doing
+EDL	00:46:40,383	00:46:42,687	| IOT183 |	And we're going to try and RFP and
+EDL	00:46:42,687	00:46:43,967	| IOT183 |	Find Partners to helping
+EDL	00:46:45,503	00:46:47,551	| IOT183 |	Obviously human capital were going to hire
+EDL	00:46:48,063	00:46:50,367	| IOT183 |	How we did it that's how we went about structuring it
+EDL	00:46:50,879	00:46:55,999	| IOT183 |	And each of those areas that we also had to be mindful because the company isn't just trying to transform using Analytics
+EDL	00:46:56,511	00:46:58,303	| IOT183 |	Trying to transform everything
+EDL	00:46:58,303	00:46:59,071	| IOT183 |	All at once
+EDL	00:46:59,583	00:47:03,423	| IOT183 |	We are doing our smart meter deployment or Ami deployment going on right now
+EDL	00:47:03,423	00:47:07,775	| IOT183 |	We are at the same time changing out roughly 70% of our it infrastructure
+EDL	00:47:08,799	00:47:09,567	| IOT183 |	Adult management
+EDL	00:47:10,079	00:47:13,407	| IOT183 |	You name it it's all in there and then change out
+EDL	00:47:13,407	00:47:16,735	| IOT183 |	The same time we are trying to rebuild our infrastructure for Analytics
+EDL	00:47:17,247	00:47:20,063	| IOT183 |	We're attempting to launch products and services with our customers
+EDL	00:47:20,063	00:47:21,599	| IOT183 |	Remake and rebuild our grid
+EDL	00:47:22,111	00:47:25,183	| IOT183 |	Shelley Angela not all this change going on simultaneously
+EDL	00:47:25,951	00:47:31,071	| IOT183 |	So we had two in that contact we had to also coordinate with all those other teams and go like
+EDL	00:47:31,583	00:47:37,471	| IOT183 |	NRP for this but we need you all to be part of that RFP process because while you're putting in your things
+EDL	00:47:37,471	00:47:39,775	| IOT183 |	We have to put in our time we all got to sing Kumbaya
+EDL	00:47:40,287	00:47:43,871	| IOT183 |	And have one big group hug at the end of this to make sure that we're going in the same direction
+EDL	00:47:44,639	00:47:46,431	| IOT183 |	So those were all resolved
+EDL	00:47:46,431	00:47:47,455	| IOT183 |	Credited sent out
+EDL	00:47:48,735	00:47:50,271	| IOT183 |	Yes absolutely.
+EDL	00:47:50,783	00:47:51,807	| IOT183 |	So now you
+EDL	00:47:51,807	00:47:53,343	| IOT183 |	Biot that are thieves out
+EDL	00:47:53,855	00:47:55,391	| IOT183 |	Starting on YouTube
+EDL	00:47:55,903	00:47:57,183	| IOT183 |	Where are you and what are your
+EDL	00:47:57,951	00:47:59,231	| IOT183 |	Shores
+EDL	00:47:59,231	00:48:01,023	| IOT183 |	You really get a diversity of responses
+EDL	00:48:01,535	00:48:03,839	| IOT183 |	In or instance we got a whole bunch of results
+EDL	00:48:07,935	00:48:09,727	| IOT183 |	Anyone tried to do what
+EDL	00:48:09,727	00:48:10,239	| IOT183 |	You were doing
+EDL	00:48:10,751	00:48:13,823	| IOT183 |	And our executive became a little worried they were like
+EDL	00:48:13,823	00:48:15,871	| IOT183 |	We really like what you're doing the world so nervous about it
+EDL	00:48:16,383	00:48:18,943	| IOT183 |	We had to talk to them through about How We Do lyrics
+EDL	00:48:18,943	00:48:19,455	| IOT183 |	Re-implement
+EDL	00:48:19,967	00:48:23,551	| IOT183 |	Risking the process to select even vendors and partners
+EDL	00:48:24,063	00:48:27,903	| IOT183 |	Which is to say that an alarm strategy was really built around Flex
+EDL	00:48:27,903	00:48:28,671	| IOT183 |	Ability
+EDL	00:48:28,671	00:48:30,207	| IOT183 |	Around standards
+EDL	00:48:30,207	00:48:33,535	| IOT183 |	Around broad industry acceptance not just our own engine
+EDL	00:48:35,327	00:48:36,351	| IOT183 |	We found that
+EDL	00:48:36,863	00:48:37,631	| IOT183 |	Taper example
+EDL	00:48:38,655	00:48:40,191	| IOT183 |	Open source is great
+EDL	00:48:40,191	00:48:42,751	| IOT183 |	But at the same time I have a CFO I have a
+EDL	00:48:42,751	00:48:43,775	| IOT183 |	General counsel
+EDL	00:48:43,775	00:48:47,871	| IOT183 |	Eva CEO and they worry incessantly over the operations of our business
+EDL	00:48:48,639	00:48:54,783	| IOT183 |	Are compromised in wanting to get the flexibility and the growth in the capability that open source off
+EDL	00:48:55,551	00:48:57,087	| IOT183 |	Was to buy a license
+EDL	00:48:58,111	00:48:59,647	| IOT183 |	After all Hadoop is
+EDL	00:48:59,647	00:49:01,695	| IOT183 |	And itself an open-source capability but
+EDL	00:49:01,695	00:49:02,463	| IOT183 |	License
+EDL	00:49:03,743	00:49:06,047	| IOT183 |	Similarly we went with a platform
+EDL	00:49:06,047	00:49:09,631	| IOT183 |	What size because it really was broadly used
+EDL	00:49:09,631	00:49:10,911	| IOT183 |	Well beyond
+EDL	00:49:10,911	00:49:12,703	| IOT183 |	I never really intended just for RN
+EDL	00:49:13,471	00:49:15,263	| IOT183 |	We knew we could Flex
+EDL	00:49:15,263	00:49:16,031	| IOT183 |	Really quickly
+EDL	00:49:16,543	00:49:21,663	| IOT183 |	On any number of problems that are Executives might come up with whether it was a safety
+EDL	00:49:22,431	00:49:22,943	| IOT183 |	Customer
+EDL	00:49:23,711	00:49:26,783	| IOT183 |	Audit supply chain nuclear anything they could come up with
+EDL	00:49:27,295	00:49:30,367	| IOT183 |	If we picked those tools and conform to those prints
+EDL	00:49:31,391	00:49:33,439	| IOT183 |	And did you also as you were evaluating them
+EDL	00:49:34,207	00:49:37,023	| IOT183 |	Test how well these things could work together in these
+EDL	00:49:37,023	00:49:38,559	| IOT183 |	Player's head work together
+EDL	00:49:38,559	00:49:39,071	| IOT183 |	Correctly
+EDL	00:49:39,583	00:49:40,351	| IOT183 |	Because
+EDL	00:49:40,351	00:49:43,167	| IOT183 |	These things have to work together as a system and that could be
+EDL	00:49:44,703	00:49:48,287	| IOT183 |	Yeah oh yeah could be a huge pain point in Nebraska
+EDL	00:49:48,287	00:49:48,799	| IOT183 |	That's why
+EDL	00:49:49,311	00:49:53,919	| IOT183 |	We in the rfps as well as in our roadmap development we spent a lot of time talking
+EDL	00:49:53,919	00:49:54,943	| IOT183 |	Architecture
+EDL	00:49:54,943	00:49:56,735	| IOT183 |	And about how those different pieces
+EDL	00:49:56,735	00:49:58,783	| IOT183 |	Integrate well with each other
+EDL	00:49:58,783	00:50:02,367	| IOT183 |	We really wanted to make sure that to the extent you're going to pick
+EDL	00:50:02,879	00:50:03,903	| IOT183 |	One solution
+EDL	00:50:03,903	00:50:10,047	| IOT183 |	That it work well in an ecosystem and had a proven track record of working well on ecosystem
+EDL	00:50:11,327	00:50:13,375	| IOT183 |	Studio Luxe year-and-a-half
+EDL	00:50:13,375	00:50:15,167	| IOT183 |	So what came after that where we ended
+EDL	00:50:15,935	00:50:18,495	| IOT183 |	Yeah so we started we continue to hire
+EDL	00:50:18,495	00:50:20,543	| IOT183 |	We started out with hiring five data scientist
+EDL	00:50:20,543	00:50:23,615	| IOT183 |	3D to Engineers one director for the organization
+EDL	00:50:23,615	00:50:25,919	| IOT183 |	As well as a data governance manager in an agile
+EDL	00:50:26,943	00:50:29,759	| IOT183 |	Savory necessary early components
+EDL	00:50:30,271	00:50:35,647	| IOT183 |	Infamous meeting with our CFO general counsel saying what we've got lots of different ways to prioritize use
+EDL	00:50:35,647	00:50:36,415	| IOT183 |	This case is here
+EDL	00:50:36,415	00:50:37,695	| IOT183 |	What do you want to start with
+EDL	00:50:38,207	00:50:40,255	| IOT183 |	And there at least 8 different ways we came up
+EDL	00:50:42,559	00:50:46,399	| IOT183 |	Yeah which means if you have a way to prioritize you have no way to prioritize
+EDL	00:50:46,399	00:50:47,679	| IOT183 |	The end
+EDL	00:50:48,447	00:50:50,239	| IOT183 |	Customer is our number one issue right now
+EDL	00:50:50,239	00:50:51,519	| IOT183 |	You really need to work on customers
+EDL	00:50:52,287	00:50:54,591	| IOT183 |	Go find some easy winds are from the customer
+EDL	00:50:55,615	00:50:56,895	| IOT183 |	So that's where we started
+EDL	00:50:56,895	00:51:02,015	| IOT183 |	With our while we were doing all the hiring everything else we've also started to try some of this risk
+EDL	00:51:03,039	00:51:06,111	| IOT183 |	In that time we prosecuted 19 of our initial 100
+EDL	00:51:06,111	00:51:06,879	| IOT183 |	42 use case
+EDL	00:51:08,159	00:51:10,975	| IOT183 |	142 use cases
+EDL	00:51:10,975	00:51:11,999	| IOT183 |	142
+EDL	00:51:13,535	00:51:15,839	| IOT183 |	Gas are really well and what's so funny is
+EDL	00:51:16,351	00:51:20,959	| IOT183 |	We did after we will start work on the 19 what's really important that we get back
+EDL	00:51:20,959	00:51:21,727	| IOT183 |	Hell
+EDL	00:51:21,727	00:51:23,007	| IOT183 |	All the executives
+EDL	00:51:23,007	00:51:26,079	| IOT183 |	What we've been up to but we kind of went quiet there at wework
+EDL	00:51:26,079	00:51:29,919	| IOT183 |	Wake of the RFP process if we were picking Solutions Contracting
+EDL	00:51:30,431	00:51:31,967	| IOT183 |	Tell everybody
+EDL	00:51:34,783	00:51:38,111	| IOT183 |	I'm afraid that was really meant to go around and talk to all the executives
+EDL	00:51:39,135	00:51:40,159	| IOT183 |	Here's what you saw
+EDL	00:51:40,159	00:51:41,695	| IOT183 |	Here's what we've done
+EDL	00:51:41,695	00:51:42,975	| IOT183 |	Are the results we've gotten
+EDL	00:51:42,975	00:51:43,743	| IOT183 |	Today
+EDL	00:51:43,743	00:51:45,279	| IOT183 |	19
+EDL	00:51:45,279	00:51:46,047	| IOT183 |	12
+EDL	00:51:46,047	00:51:47,071	| IOT183 |	That's r12x return
+EDL	00:51:47,583	00:51:49,887	| IOT183 |	The good part about the parade that was
+EDL	00:51:50,399	00:51:55,775	| IOT183 |	What person every executive every leadership team that we talked with reservation was blown away with the results
+EDL	00:51:55,775	00:51:57,311	| IOT183 |	Gotten so far
+EDL	00:51:57,311	00:52:01,663	| IOT183 |	Those were primarily all in a customer area everything from food forecasting to
+EDL	00:52:01,663	00:52:03,967	| IOT183 |	Segmentation and propensity models
+EDL	00:52:03,967	00:52:06,271	| IOT183 |	Things we could use again and again and again
+EDL	00:52:06,271	00:52:08,063	| IOT183 |	Providing instant benefits
+EDL	00:52:08,063	00:52:08,575	| IOT183 |	Company
+EDL	00:52:09,087	00:52:15,231	| IOT183 |	They were also some that we could use in our future deployments for technology Ami Advanced metering infrastructure
+EDL	00:52:15,231	00:52:17,279	| IOT183 |	Takes years to deploy
+EDL	00:52:17,279	00:52:20,351	| IOT183 |	We are ready now with some of those capabilities because we
+EDL	00:52:20,351	00:52:21,631	| IOT183 |	Filthy early stop
+EDL	00:52:21,631	00:52:22,399	| IOT183 |	Priortax
+EDL	00:52:23,935	00:52:25,727	| IOT183 |	We went around to the parade deck
+EDL	00:52:26,239	00:52:27,007	| IOT183 |	The unintended
+EDL	00:52:27,519	00:52:29,567	| IOT183 |	Someone into the consequence was that now
+EDL	00:52:29,567	00:52:33,407	| IOT183 |	All those Executives were so excited by what we had done already they wanted us to work on
+EDL	00:52:34,687	00:52:35,455	| IOT183 |	Right there feeling like half
+EDL	00:52:35,967	00:52:41,855	| IOT183 |	Right exactly into that triggered the next round of why we need to start hiring is
+EDL	00:52:41,855	00:52:46,463	| IOT183 |	We need to go ahead and staff up those capabilities but if your resources come on and shocks
+EDL	00:52:46,463	00:52:48,511	| IOT183 |	You really need to flex
+EDL	00:52:48,511	00:52:51,071	| IOT183 |	Capabilities that you bring in from the outside
+EDL	00:52:51,071	00:52:53,375	| IOT183 |	And so what we've been doing in that process
+EDL	00:52:53,887	00:52:55,423	| IOT183 |	We have Consulting agreements
+EDL	00:52:55,423	00:52:59,007	| IOT183 |	Long as we can form with the architecture in the standards of what we've done
+EDL	00:52:59,519	00:53:01,311	| IOT183 |	To use third parties to come in and
+EDL	00:53:01,311	00:53:02,079	| IOT183 |	Help us
+EDL	00:53:02,079	00:53:08,223	| IOT183 |	Manage our workload between your initial hiring to our next level of hiring a smoothie
+EDL	00:53:09,247	00:53:12,063	| IOT183 |	Capabilities for all these different organization saying
+EDL	00:53:12,063	00:53:14,111	| IOT183 |	Me too I want some of this stuff also
+EDL	00:53:14,623	00:53:18,207	| IOT183 |	Until these are things that can be easily codified in
+EDL	00:53:18,207	00:53:18,719	| IOT183 |	So
+EDL	00:53:19,487	00:53:19,999	| IOT183 |	Random
+EDL	00:53:21,535	00:53:22,815	| IOT183 |	People outside the organization
+EDL	00:53:24,351	00:53:26,399	| IOT183 |	Yasmin use case
+EDL	00:53:26,399	00:53:29,727	| IOT183 |	Development process from initial idea all the way to hand over
+EDL	00:53:30,751	00:53:34,335	| IOT183 |	We do not own any of the models at the end of the day that's really important
+EDL	00:53:34,847	00:53:38,175	| IOT183 |	From a change management perspective because of the results
+EDL	00:53:38,943	00:53:42,015	| IOT183 |	But if a business owns the model and they own the result and therefore they
+EDL	00:53:42,527	00:53:43,039	| IOT183 |	Change
+EDL	00:53:43,551	00:53:45,087	| IOT183 |	Just one of our key drivers
+EDL	00:53:45,087	00:53:47,135	| IOT183 |	But for us when we think about this
+EDL	00:53:47,135	00:53:48,927	| IOT183 |	Journey and pain
+EDL	00:53:48,927	00:53:51,231	| IOT183 |	Getting to where they were ization
+EDL	00:53:51,231	00:53:53,279	| IOT183 |	Has this innate capability
+EDL	00:53:53,279	00:53:56,607	| IOT183 |	Are you skis process has a really rigorous.
+EDL	00:53:56,607	00:53:58,655	| IOT183 |	Tatian process wrapped around it
+EDL	00:53:58,655	00:54:01,471	| IOT183 |	We also invited a lot of different players we invite in finance
+EDL	00:54:01,983	00:54:04,287	| IOT183 |	If you want them to document the benefits that are coming
+EDL	00:54:04,799	00:54:09,919	| IOT183 |	We don't think that keeps us honest and also keep us out of the Grim Reaper business of trying to cut other people's budget
+EDL	00:54:10,431	00:54:15,039	| IOT183 |	We bring an it because they are critically important that getting the data and getting access
+EDL	00:54:15,039	00:54:17,855	| IOT183 |	Make sure the infrastructure is up and running the way it ought to
+EDL	00:54:17,855	00:54:21,183	| IOT183 |	And we do that and of course the business units the customer themselves
+EDL	00:54:21,183	00:54:22,207	| IOT183 |	They're the domain X
+EDL	00:54:22,719	00:54:25,023	| IOT183 |	May we bring data science City engineering Adida governance
+EDL	00:54:25,535	00:54:31,935	| IOT183 |	We use that process Auto to dictate our order in which we govern data upgrade infrastructure Etc
+EDL	00:54:31,935	00:54:34,239	| IOT183 |	Use cases determine the order
+EDL	00:54:34,239	00:54:39,871	| IOT183 |	Exciting is probably not the right word but that was really educational that was a very good to dive into something that's so many
+EDL	00:54:41,407	00:54:41,919	| IOT183 |	Thank you
+EDL	00:54:42,687	00:54:49,087	| IOT183 |	Thank you appreciate it that's it for this week thanks so much for listening and remember if you'd like
+EDL	00:54:49,087	00:54:55,231	| IOT183 |	Moraiyo to sign up for my newsletter at Stacey on iot, will see you next week 

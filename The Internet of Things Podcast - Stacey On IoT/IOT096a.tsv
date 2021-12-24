@@ -1,0 +1,1178 @@
+EDL	Record In	Record Out	Clipname	Subtitle
+EDL	00:00:06,656	00:00:11,264	| IOT096a |	Hey everyone welcome to the Internet of Things podcast
+EDL	00:00:11,776	00:00:13,568	| IOT096a |	This is your host Stacey Higginbotham
+EDL	00:00:13,568	00:00:14,592	| IOT096a |	And this is your Coast
+EDL	00:00:15,104	00:00:16,128	| IOT096a |	Kevin tofel
+EDL	00:00:16,128	00:00:18,176	| IOT096a |	I don't know if you realize this but
+EDL	00:00:18,176	00:00:22,528	| IOT096a |	When I make these intros I actually gesture over to the
+EDL	00:00:23,040	00:00:23,808	| IOT096a |	Who's always sitting
+EDL	00:00:24,320	00:00:24,832	| IOT096a |	To my right
+EDL	00:00:25,344	00:00:31,744	| IOT096a |	We should invest in one of those telepresence things and you can actually be pointing to a little screen with my face on I can move around 2
+EDL	00:00:31,744	00:00:34,304	| IOT096a |	We have had requests
+EDL	00:00:34,304	00:00:35,072	| IOT096a |	To do this live
+EDL	00:00:35,840	00:00:37,632	| IOT096a |	Which I thought about that
+EDL	00:00:37,632	00:00:40,704	| IOT096a |	Since we do it so early in the morning I'm always a little underdressed
+EDL	00:00:43,008	00:00:45,824	| IOT096a |	Plus he'll have all the banter we have off the air
+EDL	00:00:50,944	00:00:52,992	| IOT096a |	He's just really cute cards people
+EDL	00:00:55,040	00:00:58,880	| IOT096a |	This week we have an awesome show for you we're going to talk about Google home partners
+EDL	00:00:59,904	00:01:03,488	| IOT096a |	And we've got some great news on the echo
+EDL	00:01:03,488	00:01:04,256	| IOT096a |	I think it's great
+EDL	00:01:04,256	00:01:06,304	| IOT096a |	Is Kevin's not so sure
+EDL	00:01:07,328	00:01:09,120	| IOT096a |	Ring raising a lot of money
+EDL	00:01:09,120	00:01:10,656	| IOT096a |	We got some updates on jaw bone
+EDL	00:01:11,168	00:01:14,240	| IOT096a |	We've got openhab2 oh if you don't know what this is
+EDL	00:01:15,008	00:01:16,800	| IOT096a |	And we're going to talk a little bit
+EDL	00:01:16,800	00:01:17,568	| IOT096a |	About
+EDL	00:01:17,568	00:01:18,848	| IOT096a |	Apple homekit
+EDL	00:01:18,848	00:01:21,152	| IOT096a |	Because I've been playing around with this and have some
+EDL	00:01:21,664	00:01:22,432	| IOT096a |	Opinions
+EDL	00:01:22,432	00:01:26,272	| IOT096a |	I guess this week is Susan Norris of P G & E
+EDL	00:01:26,272	00:01:29,856	| IOT096a |	Who's going to talk about Energy Efficiency programs at how startups can work with China
+EDL	00:01:31,392	00:01:31,904	| IOT096a |	But first
+EDL	00:01:32,416	00:01:34,976	| IOT096a |	Let's go to a message from our sponsor
+EDL	00:01:35,488	00:01:37,792	| IOT096a |	Our sponsor this week is June
+EDL	00:01:37,792	00:01:43,680	| IOT096a |	June makes an intelligent countertop convection oven that takes the guesswork out of cooking
+EDL	00:01:43,680	00:01:50,080	| IOT096a |	And let me tell you guys I love this thing it uses an HD internal camera along with the latest in art
+EDL	00:01:50,080	00:01:56,480	| IOT096a |	Artificial intelligence to identify the food that you're cooking it's a Jessup Reset program that they've developed
+EDL	00:01:56,480	00:02:02,880	| IOT096a |	And they close it and it's Android notification when it's done if you'd like and basically
+EDL	00:02:02,880	00:02:06,976	| IOT096a |	Is awesome I love this thing I actually bought one
+EDL	00:02:06,976	00:02:13,376	| IOT096a |	So in putting my money where my mouth is on this particular sponsor it has 100 day risk free guarantee
+EDL	00:02:13,376	00:02:19,776	| IOT096a |	Auntie for all purchases made before March 31st 2017
+EDL	00:02:19,776	00:02:26,176	| IOT096a |	The next two months you can test this out basically and ship it back if you don't like it
+EDL	00:02:26,176	00:02:32,576	| IOT096a |	June oven can be found at www.even.com
+EDL	00:02:32,576	00:02:35,904	| IOT096a |	It will also be at the June pop-up showroom which is located
+EDL	00:02:35,904	00:02:42,048	| IOT096a |	At The Village at Corte Madera in Marin County California if you're out that way
+EDL	00:02:43,584	00:02:46,656	| IOT096a |	Okay Kevin are we ready to get on with our show
+EDL	00:02:47,424	00:02:53,824	| IOT096a |	We are before we start only because we're going to talk about some Google stuff I just want to say to everybody who met
+EDL	00:02:53,824	00:02:55,360	| IOT096a |	Not already
+EDL	00:02:55,360	00:02:57,152	| IOT096a |	Regular listener where you been
+EDL	00:02:57,152	00:03:00,480	| IOT096a |	Google I mention that I am a full-time consultant for Google
+EDL	00:03:00,480	00:03:04,064	| IOT096a |	I do not work in their smart home iot efforts at
+EDL	00:03:04,064	00:03:08,160	| IOT096a |	Any way shape or form I should wear with Android and chrome folks in the Enterprise.
+EDL	00:03:08,160	00:03:08,928	| IOT096a |	Just want to get that out there
+EDL	00:03:09,696	00:03:11,488	| IOT096a |	And so far it hasn't affected
+EDL	00:03:11,488	00:03:12,256	| IOT096a |	Kevin's
+EDL	00:03:12,256	00:03:13,280	| IOT096a |	Wonderfully unbiased
+EDL	00:03:14,816	00:03:21,216	| IOT096a |	You know a lot of people are surprised that I have not yet bought a Google home which is what we're going to talk about instead I own four
+EDL	00:03:21,216	00:03:24,544	| IOT096a |	For Echo devices and I mention previous shows why that isn't
+EDL	00:03:24,544	00:03:29,152	| IOT096a |	We're going to continue to talk about that maybe I'll change her mind but it's not because
+EDL	00:03:29,152	00:03:33,248	| IOT096a |	So the news out this week on Google home is that they have
+EDL	00:03:33,248	00:03:34,016	| IOT096a |	Teamed up with
+EDL	00:03:34,528	00:03:36,576	| IOT096a |	WeMo Belkin products
+EDL	00:03:36,576	00:03:37,088	| IOT096a |	And
+EDL	00:03:37,856	00:03:38,880	| IOT096a |	Honeywell
+EDL	00:03:39,392	00:03:41,440	| IOT096a |	Works with the Honeywell
+EDL	00:03:41,952	00:03:43,232	| IOT096a |	Lyric thermostats
+EDL	00:03:44,768	00:03:49,376	| IOT096a |	I don't have a Honeywell thermostat but I do have WeMo products and I hooked it up
+EDL	00:03:49,376	00:03:50,912	| IOT096a |	The hookup process
+EDL	00:03:50,912	00:03:52,192	| IOT096a |	Super easy
+EDL	00:03:52,192	00:03:54,240	| IOT096a |	Basically when you go to the smart home section
+EDL	00:03:55,008	00:03:56,544	| IOT096a |	You can add a device and then you'll see
+EDL	00:03:57,056	00:03:58,080	| IOT096a |	The new options
+EDL	00:03:58,848	00:04:02,432	| IOT096a |	So let me just quickly ask because I don't have a Google home
+EDL	00:04:02,944	00:04:06,784	| IOT096a |	When you say go to the smart home options I'm assuming that's in the Google home
+EDL	00:04:06,784	00:04:07,552	| IOT096a |	App
+EDL	00:04:07,552	00:04:10,368	| IOT096a |	It isn't actually biscuits to something that drives me a little nut
+EDL	00:04:10,368	00:04:14,208	| IOT096a |	That's because Google home the app actually encompasses a lot of different
+EDL	00:04:14,720	00:04:15,744	| IOT096a |	It does the Chromecast
+EDL	00:04:16,256	00:04:17,280	| IOT096a |	Southern Stone
+EDL	00:04:17,280	00:04:19,071	| IOT096a |	So when do you actually go to the app
+EDL	00:04:19,839	00:04:21,119	| IOT096a |	You go to
+EDL	00:04:21,119	00:04:22,399	| IOT096a |	Video Star
+EDL	00:04:22,399	00:04:25,471	| IOT096a |	So I get YouTube as my first option Google Play Movies & TV
+EDL	00:04:26,495	00:04:29,567	| IOT096a |	I have to actually go to the drop-down menu to the
+EDL	00:04:29,567	00:04:30,591	| IOT096a |	The home control section
+EDL	00:04:34,175	00:04:37,503	| IOT096a |	Catch it again I don't have the app because I don't have Google home so I don't know how it works
+EDL	00:04:38,015	00:04:42,367	| IOT096a |	That sounds sort of similar to how you set up an echo with Smart Home Stuff although
+EDL	00:04:42,367	00:04:48,255	| IOT096a |	All the different options are pretty obvious on the main screen even there in a list on the left but
+EDL	00:04:48,255	00:04:49,023	| IOT096a |	Home
+EDL	00:04:51,327	00:04:54,143	| IOT096a |	What happens if you go to the
+EDL	00:04:54,143	00:04:55,679	| IOT096a |	Home control section in the drop top
+EDL	00:04:56,959	00:04:57,727	| IOT096a |	And
+EDL	00:04:57,727	00:04:58,495	| IOT096a |	You basically
+EDL	00:04:59,007	00:05:00,287	| IOT096a |	Do you click on a device
+EDL	00:05:00,799	00:05:05,663	| IOT096a |	You pull down the home control in the drop-down menu and there's a tiny little plus sign at the bottom when you hit that plus sign
+EDL	00:05:06,687	00:05:07,711	| IOT096a |	You get
+EDL	00:05:08,479	00:05:10,271	| IOT096a |	In those options are nest
+EDL	00:05:10,271	00:05:11,807	| IOT096a |	Philips Hue SmartThings
+EDL	00:05:11,807	00:05:12,575	| IOT096a |	WeMo
+EDL	00:05:12,575	00:05:13,343	| IOT096a |	And
+EDL	00:05:13,343	00:05:13,855	| IOT096a |	Honeywell
+EDL	00:05:15,391	00:05:16,159	| IOT096a |	Basically
+EDL	00:05:16,671	00:05:19,999	| IOT096a |	I've learned everything except for Honeywell and with WeMo
+EDL	00:05:19,999	00:05:21,535	| IOT096a |	Which is the latest and newest thing
+EDL	00:05:22,047	00:05:23,839	| IOT096a |	I noticed a couple things
+EDL	00:05:23,839	00:05:27,423	| IOT096a |	1 WeMo has historically been a little iffy about state
+EDL	00:05:27,423	00:05:29,471	| IOT096a |	If you switch between clap
+EDL	00:05:29,471	00:05:31,775	| IOT096a |	So knowing if it's on or off
+EDL	00:05:32,287	00:05:33,567	| IOT096a |	If I turn it off with like
+EDL	00:05:33,567	00:05:36,127	| IOT096a |	SmartThings sometimes it would be like
+EDL	00:05:36,127	00:05:38,431	| IOT096a |	When I try to turn it off using Echo would be like
+EDL	00:05:38,431	00:05:39,455	| IOT096a |	What will it now
+EDL	00:05:39,967	00:05:40,735	| IOT096a |	So
+EDL	00:05:40,735	00:05:42,015	| IOT096a |	With Google
+EDL	00:05:42,015	00:05:43,039	| IOT096a |	Home this hasn't been
+EDL	00:05:44,063	00:05:44,831	| IOT096a |	So that's good
+EDL	00:05:44,831	00:05:50,719	| IOT096a |	That is good cuz I actually see that cuz he's multiple phones IOS and Android and sometimes on
+EDL	00:05:50,719	00:05:51,487	| IOT096a |	The WeMo app
+EDL	00:05:51,999	00:05:55,583	| IOT096a |	Even though a light is on the switch shows it is off when I switch phones and
+EDL	00:05:55,583	00:05:56,351	| IOT096a |	So I've seen that
+EDL	00:05:56,863	00:05:59,935	| IOT096a |	On phone so that's good I don't know how they resolved that but
+EDL	00:05:59,935	00:06:00,959	| IOT096a |	That's good news
+EDL	00:06:00,959	00:06:03,007	| IOT096a |	So I went back and forth turning my
+EDL	00:06:03,519	00:06:05,055	| IOT096a |	WeMo switch on from my
+EDL	00:06:05,567	00:06:07,359	| IOT096a |	Echo and then turning it off
+EDL	00:06:07,359	00:06:07,871	| IOT096a |	Where's my Google home
+EDL	00:06:08,639	00:06:11,711	| IOT096a |	The other thing I noticed which is really nice is
+EDL	00:06:11,711	00:06:13,247	| IOT096a |	Google home you can actually say
+EDL	00:06:13,759	00:06:16,831	| IOT096a |	I'm just going to tell you one of my WeMo switches called Afro Circus
+EDL	00:06:16,831	00:06:20,927	| IOT096a |	It is from Madagascar 3 or 4 to my daughter named it
+EDL	00:06:21,439	00:06:22,207	| IOT096a |	Just
+EDL	00:06:22,207	00:06:22,975	| IOT096a |	So I
+EDL	00:06:25,535	00:06:27,071	| IOT096a |	Minor called mortar
+EDL	00:06:27,071	00:06:27,583	| IOT096a |	The Shire
+EDL	00:06:32,959	00:06:33,471	| IOT096a |	Okay
+EDL	00:06:33,983	00:06:37,055	| IOT096a |	So I say is Afro Circus on
+EDL	00:06:37,567	00:06:38,335	| IOT096a |	And it says
+EDL	00:06:38,847	00:06:40,639	| IOT096a |	Yes the afro circus is
+EDL	00:06:41,407	00:06:44,223	| IOT096a |	So it's kind of nice because you can't do that you can't
+EDL	00:06:44,223	00:06:45,759	| IOT096a |	Ask if something is on or off
+EDL	00:06:45,759	00:06:47,039	| IOT096a |	So it will tell me state
+EDL	00:06:47,039	00:06:48,319	| IOT096a |	The other thing is
+EDL	00:06:48,319	00:06:51,391	| IOT096a |	If I want the echo to do something I have to say
+EDL	00:06:51,391	00:06:52,415	| IOT096a |	Hey
+EDL	00:06:52,927	00:06:54,207	| IOT096a |	Turn on
+EDL	00:06:54,207	00:06:54,975	| IOT096a |	Afro Circus
+EDL	00:06:56,767	00:06:57,535	| IOT096a |	But with Google
+EDL	00:06:58,047	00:06:58,815	| IOT096a |	I can say
+EDL	00:06:59,327	00:06:59,839	| IOT096a |	Haji
+EDL	00:07:01,119	00:07:02,399	| IOT096a |	Turn Afro Circus on
+EDL	00:07:02,911	00:07:03,935	| IOT096a |	Or I can say
+EDL	00:07:03,935	00:07:04,447	| IOT096a |	Turn on
+EDL	00:07:05,727	00:07:07,007	| IOT096a |	With the echo
+EDL	00:07:07,007	00:07:12,895	| IOT096a |	Order of operations actually matters otherwise she would know what to do with Google
+EDL	00:07:14,175	00:07:14,687	| IOT096a |	Interesting
+EDL	00:07:15,967	00:07:16,991	| IOT096a |	Those are the two things
+EDL	00:07:17,759	00:07:18,527	| IOT096a |	That I've discovered
+EDL	00:07:19,039	00:07:19,807	| IOT096a |	So far
+EDL	00:07:19,807	00:07:22,111	| IOT096a |	Obviously this happened yesterday so I haven't
+EDL	00:07:24,415	00:07:25,183	| IOT096a |	Tivoli Lake
+EDL	00:07:25,951	00:07:26,975	| IOT096a |	Discover yunnan
+EDL	00:07:26,975	00:07:28,511	| IOT096a |	If it's going to throw some errors
+EDL	00:07:28,511	00:07:29,023	| IOT096a |	We'll talk about it next
+EDL	00:07:30,303	00:07:34,143	| IOT096a |	So even though I don't have a Google home I do have two WeMo switches
+EDL	00:07:34,143	00:07:39,007	| IOT096a |	And I actually will get to try this in the near future I don't have a time frame yet
+EDL	00:07:39,007	00:07:41,311	| IOT096a |	The reason I say that is because
+EDL	00:07:41,311	00:07:42,591	| IOT096a |	WeMo and Honeywell
+EDL	00:07:42,591	00:07:43,615	| IOT096a |	Coming to
+EDL	00:07:44,127	00:07:47,199	| IOT096a |	The assistant on the Google pixel as well
+EDL	00:07:47,711	00:07:49,759	| IOT096a |	It says Google this is an soon
+EDL	00:07:49,759	00:07:50,783	| IOT096a |	Kunming
+EDL	00:07:50,783	00:07:51,551	| IOT096a |	So
+EDL	00:07:51,551	00:07:54,879	| IOT096a |	Using Google Assistant I'll be able to do this and try it out as well as
+EDL	00:07:54,879	00:07:56,927	| IOT096a |	Imagine that expression
+EDL	00:07:57,439	00:07:58,207	| IOT096a |	I don't know yet but
+EDL	00:07:58,719	00:07:59,999	| IOT096a |	Give it a shot to
+EDL	00:08:00,767	00:08:01,279	| IOT096a |	Yay
+EDL	00:08:02,047	00:08:03,583	| IOT096a |	All right also in
+EDL	00:08:04,095	00:08:05,375	| IOT096a |	Voice controlled speakers
+EDL	00:08:05,375	00:08:06,143	| IOT096a |	We have
+EDL	00:08:06,655	00:08:08,703	| IOT096a |	The echo has a new wake word
+EDL	00:08:10,239	00:08:11,519	| IOT096a |	In my newsletter last week
+EDL	00:08:11,519	00:08:14,335	| IOT096a |	So if you got that you're already up on this news before everyone else
+EDL	00:08:15,615	00:08:16,383	| IOT096a |	But
+EDL	00:08:16,383	00:08:17,663	| IOT096a |	The new word is
+EDL	00:08:17,663	00:08:18,431	| IOT096a |	Computer
+EDL	00:08:18,943	00:08:19,711	| IOT096a |	Which is taken from
+EDL	00:08:20,991	00:08:21,503	| IOT096a |	Star Trek
+EDL	00:08:22,271	00:08:25,087	| IOT096a |	Yeah which I love the I love the fact that
+EDL	00:08:25,087	00:08:27,135	| IOT096a |	Star Trek fan always have been
+EDL	00:08:27,135	00:08:28,927	| IOT096a |	I love the fact that you can now
+EDL	00:08:28,927	00:08:30,975	| IOT096a |	Call your Echo computer in that respect
+EDL	00:08:31,487	00:08:34,815	| IOT096a |	But for practical purposes I do not like it and the reason why
+EDL	00:08:35,327	00:08:39,679	| IOT096a |	Because if you look at the existing wake words and looking at run through the 3 hours on that there are
+EDL	00:08:40,447	00:08:43,263	| IOT096a |	They're not common either they're not things you would say a lot
+EDL	00:08:43,775	00:08:45,055	| IOT096a |	The computer
+EDL	00:08:45,055	00:08:50,431	| IOT096a |	These days computers is use an awful lot in my house I don't know about you and I just
+EDL	00:08:50,431	00:08:51,711	| IOT096a |	It just would not work in my house
+EDL	00:08:52,991	00:08:55,039	| IOT096a |	Calling it phone or tablet
+EDL	00:08:55,039	00:08:56,319	| IOT096a |	No it's never going to work out
+EDL	00:08:57,087	00:08:59,391	| IOT096a |	I would challenge you to try it for
+EDL	00:08:59,391	00:09:00,159	| IOT096a |	24 hours
+EDL	00:09:00,159	00:09:05,279	| IOT096a |	Because I thought the same thing but we don't actually say it we say where's the laptop
+EDL	00:09:05,791	00:09:06,559	| IOT096a |	See
+EDL	00:09:06,559	00:09:08,351	| IOT096a |	So we don't actually say computer various
+EDL	00:09:09,119	00:09:09,887	| IOT096a |	Oh I'm so sorry
+EDL	00:09:10,399	00:09:10,911	| IOT096a |	Oh my God
+EDL	00:09:11,935	00:09:14,239	| IOT096a |	We're going to have to figure out if that's really a problem
+EDL	00:09:16,287	00:09:22,431	| IOT096a |	Going forward I don't think it's a problem for today cuz I doubt many people automatically to switch it over last night
+EDL	00:09:22,431	00:09:27,039	| IOT096a |	I love it on you
+EDL	00:09:28,319	00:09:32,415	| IOT096a |	That's fair I just swap it out for 24 hours see what happens
+EDL	00:09:32,927	00:09:33,951	| IOT096a |	And then next week we'll
+EDL	00:09:35,231	00:09:40,095	| IOT096a |	All right do I have to set it up on my computer I just said the word
+EDL	00:09:40,095	00:09:40,607	| IOT096a |	I'm kidding
+EDL	00:09:41,119	00:09:41,887	| IOT096a |	I will try it
+EDL	00:09:42,655	00:09:45,471	| IOT096a |	All right so that's probably enough of all of that
+EDL	00:09:45,471	00:09:46,495	| IOT096a |	Let's get the funding
+EDL	00:09:46,495	00:09:47,775	| IOT096a |	Because holy moly
+EDL	00:09:47,775	00:09:48,543	| IOT096a |	Ring
+EDL	00:09:48,543	00:09:52,895	| IOT096a |	Doorbell company has raised 109 million
+EDL	00:09:52,895	00:09:53,663	| IOT096a |	Dollars
+EDL	00:09:55,711	00:10:01,599	| IOT096a |	This comes on top of a 61.2 million year ago
+EDL	00:10:02,111	00:10:02,623	| IOT096a |	And
+EDL	00:10:03,647	00:10:07,487	| IOT096a |	Team on top of the 28 Million Dollar Round which is when Richard Branson actually gotten
+EDL	00:10:08,767	00:10:09,535	| IOT096a |	That's the
+EDL	00:10:13,887	00:10:15,167	| IOT096a |	209 million
+EDL	00:10:16,703	00:10:18,751	| IOT096a |	Dollar Tree
+EDL	00:10:20,543	00:10:23,103	| IOT096a |	This a lot of money it was led by
+EDL	00:10:23,103	00:10:24,127	| IOT096a |	Dfj
+EDL	00:10:24,127	00:10:25,151	| IOT096a |	Goldman Sachs
+EDL	00:10:26,943	00:10:29,247	| IOT096a |	Qualcomm
+EDL	00:10:31,295	00:10:31,807	| IOT096a |	I don't know
+EDL	00:10:34,367	00:10:37,183	| IOT096a |	One I would love to know them cuz I'm wondering why they needed
+EDL	00:10:37,183	00:10:37,951	| IOT096a |	Itchy raised
+EDL	00:10:38,463	00:10:39,231	| IOT096a |	Almost
+EDL	00:10:39,231	00:10:41,279	| IOT096a |	Enough money that's almost double what they previously
+EDL	00:10:41,791	00:10:43,327	| IOT096a |	Write this is like an IPA
+EDL	00:10:43,839	00:10:45,119	| IOT096a |	Kind of this is for a smoke
+EDL	00:10:45,887	00:10:47,167	| IOT096a |	What I think is happening
+EDL	00:10:47,167	00:10:50,751	| IOT096a |	They see that the market is going to be a make-or-break here for a lot of
+EDL	00:10:50,751	00:10:51,519	| IOT096a |	You're going to have to
+EDL	00:10:52,799	00:10:54,591	| IOT096a |	Grow massively
+EDL	00:10:54,591	00:10:58,431	| IOT096a |	And figure out your established business models and ring has actually put out a lot
+EDL	00:10:59,711	00:11:02,271	| IOT096a |	Different pieces of Hardware is part of their
+EDL	00:11:02,783	00:11:05,087	| IOT096a |	Jamie siminoff the CEO of ring calls it his
+EDL	00:11:08,927	00:11:09,695	| IOT096a |	They thought
+EDL	00:11:09,695	00:11:10,719	| IOT096a |	You know they're two doorbells
+EDL	00:11:11,231	00:11:12,255	| IOT096a |	They've got
+EDL	00:11:12,767	00:11:15,071	| IOT096a |	Outdoor camera and then they now have
+EDL	00:11:15,071	00:11:16,607	| IOT096a |	They launched at CES
+EDL	00:11:16,607	00:11:17,887	| IOT096a |	This outdoor camera
+EDL	00:11:17,887	00:11:18,655	| IOT096a |	Light
+EDL	00:11:18,655	00:11:21,983	| IOT096a |	So imagine if you've got a neighborhood full of rings
+EDL	00:11:22,495	00:11:23,775	| IOT096a |	What happens if
+EDL	00:11:23,775	00:11:27,359	| IOT096a |	1 triggers you know some weird activity and
+EDL	00:11:27,871	00:11:32,735	| IOT096a |	Maybe Simpson notification to the homeowner and the homeowners like yeah that was my package
+EDL	00:11:33,247	00:11:35,039	| IOT096a |	And then all the lights go on
+EDL	00:11:35,039	00:11:36,319	| IOT096a |	Everybody's ring down the
+EDL	00:11:37,343	00:11:39,647	| IOT096a |	Kind of like a coyote neighborhood watch
+EDL	00:11:40,159	00:11:40,927	| IOT096a |	Yes
+EDL	00:11:40,927	00:11:42,207	| IOT096a |	That's the vision
+EDL	00:11:42,719	00:11:44,511	| IOT096a |	It takes a lot of
+EDL	00:11:44,511	00:11:48,351	| IOT096a |	Product in marketing to get to that because that's not going to be useful
+EDL	00:11:49,119	00:11:50,911	| IOT096a |	Unless a lot of people have that's right
+EDL	00:11:51,423	00:11:55,519	| IOT096a |	Right right right you need to build up adoption to get the maximum benefit for the neighborhood
+EDL	00:11:56,031	00:11:57,823	| IOT096a |	And they got a lot of people that got a
+EDL	00:11:58,335	00:12:01,151	| IOT096a |	It says a thousand employees which is a ton of people
+EDL	00:12:03,455	00:12:07,039	| IOT096a |	My understanding is in this is what sources of Told Me Not
+EDL	00:12:07,039	00:12:07,807	| IOT096a |	Confirm
+EDL	00:12:08,575	00:12:09,087	| IOT096a |	Talk about this
+EDL	00:12:09,855	00:12:10,623	| IOT096a |	They're not profit
+EDL	00:12:11,391	00:12:14,463	| IOT096a |	So they've to make an IPO you got it prove that you're
+EDL	00:12:14,463	00:12:16,255	| IOT096a |	Profitable and then you have a good pasta
+EDL	00:12:17,279	00:12:20,607	| IOT096a |	And I don't know if they've actually achieved out yet
+EDL	00:12:21,631	00:12:22,399	| IOT096a |	Plains weather
+EDL	00:12:22,399	00:12:23,167	| IOT096a |	Candice Edition
+EDL	00:12:24,191	00:12:25,983	| IOT096a |	Yeah and it's interesting that
+EDL	00:12:26,495	00:12:30,335	| IOT096a |	Yes I read that looking at it on venturebeat who reported this
+EDL	00:12:30,335	00:12:32,895	| IOT096a |	It's also debt element involved as well so it's
+EDL	00:12:33,663	00:12:38,015	| IOT096a |	I don't know if that's part of the 109 or they have a line of credit or whatever
+EDL	00:12:38,015	00:12:39,807	| IOT096a |	I think it's back to the
+EDL	00:12:39,807	00:12:43,647	| IOT096a |	What you said earlier this is a make-or-break year for a lot of companies I think now that they have
+EDL	00:12:43,647	00:12:44,415	| IOT096a |	Grab this
+EDL	00:12:44,927	00:12:45,951	| IOT096a |	Chunk of change
+EDL	00:12:45,951	00:12:50,815	| IOT096a |	This is probably their make-or-break year if they're going to go hog-wild with marketing and train
+EDL	00:12:50,815	00:12:51,583	| IOT096a |	Achieve
+EDL	00:12:51,583	00:12:52,863	| IOT096a |	Jamie's vision
+EDL	00:12:52,863	00:12:53,887	| IOT096a |	Am I going to go quick
+EDL	00:12:54,655	00:12:55,167	| IOT096a |	It is
+EDL	00:12:55,935	00:12:59,007	| IOT096a |	Speaking of make-or-break years and companies that raised a lot of money
+EDL	00:12:59,775	00:13:00,287	| IOT096a |	Jawbone
+EDL	00:13:02,079	00:13:03,871	| IOT096a |	Jaw bone has
+EDL	00:13:03,871	00:13:07,455	| IOT096a |	I ever this down his jaw bone is giving out but really what happened is
+EDL	00:13:07,455	00:13:08,479	| IOT096a |	Jaw bone is
+EDL	00:13:08,991	00:13:10,015	| IOT096a |	Stopping
+EDL	00:13:10,015	00:13:13,343	| IOT096a |	It basically hasn't communicated with this customer since
+EDL	00:13:13,343	00:13:14,111	| IOT096a |	December
+EDL	00:13:14,111	00:13:14,623	| IOT096a |	The middle of December
+EDL	00:13:15,391	00:13:16,671	| IOT096a |	Is it the support
+EDL	00:13:16,671	00:13:17,695	| IOT096a |	MS support group
+EDL	00:13:17,695	00:13:18,463	| IOT096a |	This is the support
+EDL	00:13:19,487	00:13:19,999	| IOT096a |	So like
+EDL	00:13:20,511	00:13:23,327	| IOT096a |	Most of the fitness trackers have fairly good support
+EDL	00:13:24,095	00:13:24,607	| IOT096a |	People
+EDL	00:13:25,375	00:13:25,887	| IOT096a |	They buy them
+EDL	00:13:27,679	00:13:31,007	| IOT096a |	They wash them in the washing machine
+EDL	00:13:31,519	00:13:36,895	| IOT096a |	I'm in a lot of them you know if you if it if something happens to it within a year they're like will replace it so
+EDL	00:13:36,895	00:13:37,663	| IOT096a |	People have been
+EDL	00:13:38,175	00:13:39,967	| IOT096a |	Emailing with Jawbone support
+EDL	00:13:40,735	00:13:42,271	| IOT096a |	They're not getting anywhere
+EDL	00:13:42,271	00:13:44,319	| IOT096a |	Pazzo job and support has gone silent
+EDL	00:13:44,831	00:13:45,343	| IOT096a |	According to the bird
+EDL	00:13:46,367	00:13:49,183	| IOT096a |	And this is maybe not surprising
+EDL	00:13:49,183	00:13:50,463	| IOT096a |	Kevin you want to talk about
+EDL	00:13:51,231	00:13:51,743	| IOT096a |	What you think might be
+EDL	00:13:52,511	00:13:54,815	| IOT096a |	Well it kind of relates back to the
+EDL	00:13:54,815	00:13:55,839	| IOT096a |	The funding store
+EDL	00:13:55,839	00:14:00,959	| IOT096a |	I just talked about with ring and actions such as this when you might have company takes down and support
+EDL	00:14:01,727	00:14:02,751	| IOT096a |	Process
+EDL	00:14:02,751	00:14:04,543	| IOT096a |	And it has been known to have
+EDL	00:14:05,055	00:14:07,103	| IOT096a |	Sales problems with its Hardware
+EDL	00:14:07,103	00:14:09,919	| IOT096a |	It's almost like those are a series of steps to just train
+EDL	00:14:09,919	00:14:13,759	| IOT096a |	Keep the company going as long as possible as long as there's money
+EDL	00:14:13,759	00:14:15,039	| IOT096a |	While they trying
+EDL	00:14:15,039	00:14:17,599	| IOT096a |	Keen other money Thea true funding
+EDL	00:14:17,599	00:14:19,135	| IOT096a |	Through sales and like that
+EDL	00:14:19,647	00:14:20,159	| IOT096a |	And
+EDL	00:14:20,671	00:14:22,719	| IOT096a |	They're obviously not going to tell her
+EDL	00:14:22,719	00:14:23,487	| IOT096a |	They're doing
+EDL	00:14:24,255	00:14:27,583	| IOT096a |	They're going to try and keep things afloat for as long as I can.
+EDL	00:14:27,583	00:14:31,935	| IOT096a |	One of two things is going to happen to be there when I get some funding or a buyer or they're just going to
+EDL	00:14:32,447	00:14:33,215	| IOT096a |	Sold
+EDL	00:14:33,215	00:14:35,007	| IOT096a |	And I don't know which it is
+EDL	00:14:35,007	00:14:35,519	| IOT096a |	They don't
+EDL	00:14:36,799	00:14:43,199	| IOT096a |	You know when the money is gone the money is gone so that's the way I see this when I ask again I hope I'm wrong
+EDL	00:14:43,199	00:14:48,063	| IOT096a |	Their efforts behind creating like true medical devices as opposed to consumer
+EDL	00:14:49,343	00:14:51,647	| IOT096a |	Skip it and I forget what that was
+EDL	00:14:53,183	00:14:55,487	| IOT096a |	Don't bite about a year ago yeah
+EDL	00:14:55,487	00:14:56,767	| IOT096a |	Back in May I'm sorry
+EDL	00:15:00,607	00:15:01,887	| IOT096a |	Alright so that is
+EDL	00:15:02,399	00:15:08,799	| IOT096a |	Other news for people who love their Smart Homes and their smart home hubs and feel particularly
+EDL	00:15:08,799	00:15:09,311	| IOT096a |	Kiki
+EDL	00:15:10,079	00:15:12,639	| IOT096a |	Openhab which is the eclipse
+EDL	00:15:12,639	00:15:13,151	| IOT096a |	Open
+EDL	00:15:13,663	00:15:16,991	| IOT096a |	Smart home where is this the open-source version of
+EDL	00:15:16,991	00:15:18,271	| IOT096a |	Built on Eclipse
+EDL	00:15:18,271	00:15:19,039	| IOT096a |	Yes yes
+EDL	00:15:19,551	00:15:21,599	| IOT096a |	They've released openhab2
+EDL	00:15:23,903	00:15:25,951	| IOT096a |	Confess that I said I was going to do it
+EDL	00:15:25,951	00:15:26,463	| IOT096a |	Openhab
+EDL	00:15:27,487	00:15:28,255	| IOT096a |	Configuration
+EDL	00:15:28,255	00:15:28,767	| IOT096a |	And I
+EDL	00:15:30,559	00:15:36,959	| IOT096a |	It takes a little effort I mean you're not buying at a hub you're basically building a hub with a Raspberry Pi or a
+EDL	00:15:36,959	00:15:39,775	| IOT096a |	Anticodon and you're using it open have software so your
+EDL	00:15:39,775	00:15:41,055	| IOT096a |	Creating your own Hub so
+EDL	00:15:41,823	00:15:42,591	| IOT096a |	I was really into
+EDL	00:15:44,895	00:15:46,687	| IOT096a |	I looked at it and like all right
+EDL	00:15:46,687	00:15:49,759	| IOT096a |	Pi
+EDL	00:15:50,527	00:15:52,063	| IOT096a |	I got to get it
+EDL	00:15:52,063	00:15:55,391	| IOT096a |	So then I was looking at the pine64 Smart Home
+EDL	00:15:56,159	00:15:57,951	| IOT096a |	Care up there
+EDL	00:15:57,951	00:15:58,719	| IOT096a |	Do the smart
+EDL	00:15:58,719	00:15:59,487	| IOT096a |	Conversion
+EDL	00:15:59,487	00:16:01,023	| IOT096a |	No but I can always add
+EDL	00:16:01,535	00:16:03,071	| IOT096a |	To the pine64
+EDL	00:16:03,071	00:16:03,839	| IOT096a |	Yes
+EDL	00:16:03,839	00:16:05,887	| IOT096a |	I was looking at that and then
+EDL	00:16:05,887	00:16:07,935	| IOT096a |	I looked at the instructions and then I was like
+EDL	00:16:08,447	00:16:11,775	| IOT096a |	Holychild I am going to really find myself into
+EDL	00:16:12,287	00:16:13,055	| IOT096a |	So
+EDL	00:16:13,055	00:16:14,079	| IOT096a |	It's always been like a
+EDL	00:16:14,847	00:16:15,359	| IOT096a |	What to do but
+EDL	00:16:17,663	00:16:20,479	| IOT096a |	Because openhab2
+EDL	00:16:21,247	00:16:22,527	| IOT096a |	Apparently has a nice
+EDL	00:16:28,415	00:16:29,951	| IOT096a |	It's better
+EDL	00:16:29,951	00:16:30,719	| IOT096a |	Better
+EDL	00:16:35,071	00:16:36,351	| IOT096a |	It's not cloudconnect
+EDL	00:16:36,351	00:16:36,863	| IOT096a |	To the top logo
+EDL	00:16:37,375	00:16:37,887	| IOT096a |	And
+EDL	00:16:39,679	00:16:41,215	| IOT096a |	Nice dashboards
+EDL	00:16:41,727	00:16:42,495	| IOT096a |	Call this nice
+EDL	00:16:43,007	00:16:43,519	| IOT096a |	I don't know
+EDL	00:16:44,031	00:16:46,847	| IOT096a |	It's much cleaner and more modernized in the field
+EDL	00:16:51,455	00:16:52,223	| IOT096a |	It's pretty
+EDL	00:16:52,991	00:16:53,759	| IOT096a |	Pretty so
+EDL	00:16:53,759	00:16:55,039	| IOT096a |	I'm actually hoping
+EDL	00:16:55,807	00:16:57,599	| IOT096a |	To do this because
+EDL	00:16:57,599	00:16:59,135	| IOT096a |	I think I can I think I can
+EDL	00:16:59,647	00:17:00,671	| IOT096a |	Call Kevin
+EDL	00:17:00,671	00:17:01,695	| IOT096a |	I'm going to call Kevin
+EDL	00:17:02,719	00:17:08,863	| IOT096a |	I haven't gone through this and set up and had myself but I I set up a ton of different things on Raspberry Pi
+EDL	00:17:09,375	00:17:10,911	| IOT096a |	Brothers retropie with
+EDL	00:17:11,423	00:17:12,703	| IOT096a |	Game emulators
+EDL	00:17:12,703	00:17:13,215	| IOT096a |	Or
+EDL	00:17:13,727	00:17:15,775	| IOT096a |	Linux or whatever maybe
+EDL	00:17:15,775	00:17:18,079	| IOT096a |	It may look intimidating but I think
+EDL	00:17:18,079	00:17:19,103	| IOT096a |	You'll be surprised
+EDL	00:17:19,615	00:17:22,431	| IOT096a |	Two things one it will probably be simpler than you thought
+EDL	00:17:22,431	00:17:23,967	| IOT096a |	And to you will learn a lot
+EDL	00:17:23,967	00:17:29,343	| IOT096a |	It's actually good experience to have in a minute that's how you buy these raspberry pies and so on so forth anyway
+EDL	00:17:29,343	00:17:30,623	| IOT096a |	It's a tinker so
+EDL	00:17:30,623	00:17:32,415	| IOT096a |	I don't think it's going to be that bad in the benefit is
+EDL	00:17:32,927	00:17:34,975	| IOT096a |	Perspective or somebody doesn't like cloud-connected
+EDL	00:17:34,975	00:17:35,743	| IOT096a |	7/8 local
+EDL	00:17:36,255	00:17:39,071	| IOT096a |	And you pick and choose what radios you want you can
+EDL	00:17:39,583	00:17:40,607	| IOT096a |	Customize
+EDL	00:17:40,607	00:17:41,631	| IOT096a |	Door hardware
+EDL	00:17:41,631	00:17:42,911	| IOT096a |	To the way you want
+EDL	00:17:44,191	00:17:45,983	| IOT096a |	You should do is
+EDL	00:17:46,495	00:17:47,775	| IOT096a |	I want all the radios
+EDL	00:17:48,799	00:17:50,847	| IOT096a |	So what you're in your house you need all
+EDL	00:17:52,383	00:17:54,431	| IOT096a |	Not all of us have a hundred different things connected in her house
+EDL	00:17:54,943	00:17:55,455	| IOT096a |	Don't have that
+EDL	00:17:56,735	00:17:57,503	| IOT096a |	Yesterday
+EDL	00:17:59,295	00:18:02,623	| IOT096a |	I love the fact that you know what I look at my wife
+EDL	00:18:02,623	00:18:05,183	| IOT096a |	You only have basically f45
+EDL	00:18:05,183	00:18:05,695	| IOT096a |	Wifikill
+EDL	00:18:07,743	00:18:13,119	| IOT096a |	And then add your Bluetooth you see way they should be excited I'm like I'm not so bad
+EDL	00:18:13,631	00:18:14,911	| IOT096a |	But then I realized it
+EDL	00:18:14,911	00:18:15,423	| IOT096a |	That doesn't account
+EDL	00:18:16,447	00:18:16,959	| IOT096a |	Other stuff
+EDL	00:18:18,495	00:18:19,519	| IOT096a |	Sad
+EDL	00:18:19,519	00:18:20,287	| IOT096a |	All right
+EDL	00:18:20,287	00:18:21,055	| IOT096a |	So
+EDL	00:18:21,055	00:18:23,615	| IOT096a |	Let's see so that's open have news very exciting
+EDL	00:18:24,127	00:18:25,407	| IOT096a |	Stacey has a promise
+EDL	00:18:25,919	00:18:26,687	| IOT096a |	The promises
+EDL	00:18:27,199	00:18:28,735	| IOT096a |	Actually download and do this
+EDL	00:18:29,247	00:18:33,855	| IOT096a |	Alright this is kind of tie a couple pieces of news
+EDL	00:18:33,855	00:18:34,879	| IOT096a |	Together
+EDL	00:18:35,391	00:18:37,439	| IOT096a |	It's topical we might get a little political
+EDL	00:18:37,439	00:18:38,207	| IOT096a |	So just
+EDL	00:18:38,719	00:18:39,231	| IOT096a |	Retro
+EDL	00:18:40,511	00:18:42,559	| IOT096a |	Everybody everybody
+EDL	00:18:42,559	00:18:43,327	| IOT096a |	Let's take two deep breaths
+EDL	00:18:43,839	00:18:44,607	| IOT096a |	Okay
+EDL	00:18:44,607	00:18:45,119	| IOT096a |	So
+EDL	00:18:45,631	00:18:47,167	| IOT096a |	This week the FTC
+EDL	00:18:47,167	00:18:49,983	| IOT096a |	The Federal Trade Commission filed a complaint against
+EDL	00:18:49,983	00:18:51,263	| IOT096a |	The breath
+EDL	00:18:51,263	00:18:53,055	| IOT096a |	Which is a Bluetooth connected
+EDL	00:18:53,055	00:18:53,567	| IOT096a |	Breathalyzer
+EDL	00:18:54,335	00:18:54,847	| IOT096a |	And
+EDL	00:18:55,615	00:18:57,151	| IOT096a |	It also appeared on Shark Tank
+EDL	00:18:57,151	00:18:59,199	| IOT096a |	So if you've heard of it that's probably why
+EDL	00:18:59,199	00:18:59,711	| IOT096a |	If your Shark Tank
+EDL	00:19:00,479	00:19:00,991	| IOT096a |	So
+EDL	00:19:01,759	00:19:05,087	| IOT096a |	The FTC basically filed a complaint saying that
+EDL	00:19:05,855	00:19:08,927	| IOT096a |	The company lacks scientific evidence to back up their
+EDL	00:19:09,951	00:19:13,535	| IOT096a |	This is, this is what the FTC does it basically protects consumers against
+EDL	00:19:14,047	00:19:14,815	| IOT096a |	False
+EDL	00:19:15,583	00:19:17,375	| IOT096a |	It's one of its many sticks
+EDL	00:19:17,375	00:19:19,423	| IOT096a |	Well it's actually probably one of its few sticks
+EDL	00:19:19,423	00:19:19,935	| IOT096a |	It has to be
+EDL	00:19:21,983	00:19:24,799	| IOT096a |	So the FTC actually did this very recently
+EDL	00:19:24,799	00:19:25,823	| IOT096a |	Earlier in January
+EDL	00:19:26,847	00:19:29,663	| IOT096a |	D'link saying that it advertised it
+EDL	00:19:29,663	00:19:31,967	| IOT096a |	It's routers were more secure than they actually
+EDL	00:19:32,991	00:19:33,759	| IOT096a |	And so
+EDL	00:19:33,759	00:19:35,295	| IOT096a |	Once again FTC
+EDL	00:19:36,063	00:19:37,343	| IOT096a |	Basically
+EDL	00:19:37,343	00:19:37,855	| IOT096a |	People for bad advert
+EDL	00:19:39,135	00:19:42,719	| IOT096a |	What is interesting here is Edith Ramirez
+EDL	00:19:42,719	00:19:43,487	| IOT096a |	Chair
+EDL	00:19:43,487	00:19:45,791	| IOT096a |	Woman of the FTC actually step down
+EDL	00:19:45,791	00:19:46,815	| IOT096a |	Because she wasn't Obama
+EDL	00:19:47,839	00:19:49,375	| IOT096a |	And with the Trump Administration come
+EDL	00:19:50,143	00:19:53,215	| IOT096a |	I'm very curious how active the FTC is going
+EDL	00:19:53,215	00:19:53,727	| IOT096a |	To be here
+EDL	00:19:54,239	00:19:56,031	| IOT096a |	Consumers can always make
+EDL	00:19:56,031	00:19:56,799	| IOT096a |	Complaints
+EDL	00:19:56,799	00:19:58,335	| IOT096a |	But the FTC doesn't actually have
+EDL	00:19:58,335	00:19:59,103	| IOT096a |	Act on them
+EDL	00:19:59,103	00:19:59,615	| IOT096a |	And
+EDL	00:20:00,127	00:20:02,943	| IOT096a |	All of these connected devices
+EDL	00:20:02,943	00:20:03,455	| IOT096a |	There's
+EDL	00:20:03,967	00:20:05,759	| IOT096a |	A lot of opportunity
+EDL	00:20:05,759	00:20:07,295	| IOT096a |	For complaints coming
+EDL	00:20:07,295	00:20:08,575	| IOT096a |	Related to privacy
+EDL	00:20:09,087	00:20:12,671	| IOT096a |	Related to false advertising and I'm curious who will pick up the slack
+EDL	00:20:13,439	00:20:14,207	| IOT096a |	I bring this up
+EDL	00:20:14,719	00:20:15,743	| IOT096a |	Because
+EDL	00:20:15,743	00:20:16,255	| IOT096a |	Lily
+EDL	00:20:16,767	00:20:17,791	| IOT096a |	The maker of
+EDL	00:20:17,791	00:20:19,071	| IOT096a |	That robotic drone
+EDL	00:20:19,071	00:20:19,839	| IOT096a |	I guess it's just a drone
+EDL	00:20:20,351	00:20:21,887	| IOT096a |	The Drone that you basically
+EDL	00:20:21,887	00:20:22,911	| IOT096a |	Toss up in the air
+EDL	00:20:22,911	00:20:23,935	| IOT096a |	It follows you and takes pic
+EDL	00:20:24,447	00:20:25,471	| IOT096a |	Everyone is very excited about
+EDL	00:20:26,239	00:20:31,615	| IOT096a |	Lily is actually been sued by the San Francisco district attorney it filed a civil consumer protection suit
+EDL	00:20:32,127	00:20:35,455	| IOT096a |	Saying that the company had lied to customers with its launch video
+EDL	00:20:35,967	00:20:36,991	| IOT096a |	And
+EDL	00:20:36,991	00:20:40,575	| IOT096a |	It couldn't actually do any of that and so Lily basically said that
+EDL	00:20:40,575	00:20:41,855	| IOT096a |	It wasn't going to build its
+EDL	00:20:42,879	00:20:43,647	| IOT096a |	Cool drones
+EDL	00:20:43,647	00:20:44,415	| IOT096a |	Sings everybody
+EDL	00:20:45,951	00:20:46,463	| IOT096a |	The next day
+EDL	00:20:46,975	00:20:48,511	| IOT096a |	The San Francisco DEA was like
+EDL	00:20:50,559	00:20:51,839	| IOT096a |	The question here is
+EDL	00:20:53,119	00:20:55,167	| IOT096a |	Certain States going to
+EDL	00:20:55,679	00:20:57,983	| IOT096a |	Pick up the slack where the FTC
+EDL	00:20:57,983	00:21:04,127	| IOT096a |	Yeah that's that's going to be interesting because people especially with how easy it is to order online
+EDL	00:21:04,127	00:21:05,919	| IOT096a |	From other areas of the country
+EDL	00:21:06,431	00:21:08,223	| IOT096a |	Towel that will actually be effective
+EDL	00:21:08,735	00:21:10,527	| IOT096a |	Right people will find ways around that
+EDL	00:21:11,039	00:21:12,831	| IOT096a |	True now the publicity could be
+EDL	00:21:12,831	00:21:15,135	| IOT096a |	Be interesting and I would say a lot of these
+EDL	00:21:15,135	00:21:15,903	| IOT096a |	Companies are based in
+EDL	00:21:15,903	00:21:16,416	| IOT096a |	In California
+EDL	00:21:16,928	00:21:17,696	| IOT096a |	Which
+EDL	00:21:17,696	00:21:19,232	| IOT096a |	We already know is going
+EDL	00:21:20,256	00:21:23,072	| IOT096a |	Which Prides itself on becoming a thorn in the side of
+EDL	00:21:23,072	00:21:24,096	| IOT096a |	Current Administration
+EDL	00:21:24,608	00:21:25,120	| IOT096a |	So
+EDL	00:21:25,632	00:21:27,424	| IOT096a |	It kind of makes me wonder
+EDL	00:21:28,192	00:21:30,240	| IOT096a |	I think there's going to be jurisdiction in those cases if
+EDL	00:21:30,752	00:21:31,776	| IOT096a |	Companies based there
+EDL	00:21:31,776	00:21:33,568	| IOT096a |	And if anyone in California orders one
+EDL	00:21:34,336	00:21:35,360	| IOT096a |	Thank you for that
+EDL	00:21:35,360	00:21:40,736	| IOT096a |	So this is going to be a really interesting thing to watch I believe over the next
+EDL	00:21:40,736	00:21:41,760	| IOT096a |	You're so
+EDL	00:21:41,760	00:21:42,784	| IOT096a |	Because again
+EDL	00:21:42,784	00:21:47,648	| IOT096a |	Make a break here for iot for a lot of these companies that raise funding in 2012-2013
+EDL	00:21:48,416	00:21:48,928	| IOT096a |	So
+EDL	00:21:49,696	00:21:51,488	| IOT096a |	Keep an eye on this you guys
+EDL	00:21:52,256	00:21:53,024	| IOT096a |	Finally
+EDL	00:21:53,792	00:21:54,816	| IOT096a |	Let's go to
+EDL	00:21:55,328	00:21:56,096	| IOT096a |	Homekit
+EDL	00:21:56,608	00:21:58,400	| IOT096a |	What you been playing with them.
+EDL	00:21:58,912	00:22:00,448	| IOT096a |	So I set up a basic
+EDL	00:22:00,448	00:22:03,264	| IOT096a |	Home kit installation
+EDL	00:22:03,264	00:22:05,312	| IOT096a |	Text I have an iPad so that's going to be my
+EDL	00:22:05,824	00:22:06,336	| IOT096a |	Like living at home
+EDL	00:22:06,848	00:22:07,872	| IOT096a |	I didn't buy an Apple TV
+EDL	00:22:09,152	00:22:09,664	| IOT096a |	Thai pads
+EDL	00:22:10,432	00:22:12,224	| IOT096a |	Either can be a Gateway for the home stuff
+EDL	00:22:12,736	00:22:16,064	| IOT096a |	So I have is devices right now I have an eye devices
+EDL	00:22:16,064	00:22:17,600	| IOT096a |	Indoor switch
+EDL	00:22:17,600	00:22:18,368	| IOT096a |	Sewing Outlet
+EDL	00:22:19,136	00:22:21,440	| IOT096a |	I have Lutron smart Bridge
+EDL	00:22:22,208	00:22:22,720	| IOT096a |	Which is
+EDL	00:22:23,488	00:22:25,280	| IOT096a |	Controls now all of my Lutron.
+EDL	00:22:25,280	00:22:26,048	| IOT096a |	Devices
+EDL	00:22:26,048	00:22:27,072	| IOT096a |	I have
+EDL	00:22:27,072	00:22:28,096	| IOT096a |	The Philips Hue
+EDL	00:22:28,608	00:22:30,656	| IOT096a |	My Philips Hue Lights cuz the Hub is homekit
+EDL	00:22:30,656	00:22:31,424	| IOT096a |	Compatible
+EDL	00:22:31,424	00:22:32,448	| IOT096a |	I just want that out
+EDL	00:22:32,960	00:22:35,776	| IOT096a |	And then I also have the elegado
+EDL	00:22:35,776	00:22:36,544	| IOT096a |	Eve sensor
+EDL	00:22:37,568	00:22:40,384	| IOT096a |	And I have a couple of them I have a motion sensor
+EDL	00:22:40,384	00:22:42,176	| IOT096a |	I have the room sensor
+EDL	00:22:42,688	00:22:44,224	| IOT096a |	That does I believe
+EDL	00:22:44,224	00:22:44,736	| IOT096a |	Temperature in ear
+EDL	00:22:48,064	00:22:49,600	| IOT096a |	And I have the eve
+EDL	00:22:49,600	00:22:50,624	| IOT096a |	Light switch
+EDL	00:22:51,136	00:22:53,184	| IOT096a |	I feel like I have one more that I haven't set up
+EDL	00:22:53,184	00:22:53,696	| IOT096a |	But I don't remember
+EDL	00:22:55,488	00:22:57,280	| IOT096a |	With those things
+EDL	00:22:57,280	00:22:58,816	| IOT096a |	I've been trying some very basic stuff
+EDL	00:22:59,328	00:23:04,960	| IOT096a |	Their new door locks or anything like that because I think the only door lock right now is August and he don't have an August on my
+EDL	00:23:04,960	00:23:06,496	| IOT096a |	My door because my doors
+EDL	00:23:07,008	00:23:08,288	| IOT096a |	My front doors don't actually work
+EDL	00:23:08,800	00:23:09,568	| IOT096a |	My Backdoor
+EDL	00:23:10,336	00:23:10,848	| IOT096a |	Has
+EDL	00:23:13,152	00:23:14,944	| IOT096a |	So I may get one just to try that out though
+EDL	00:23:15,456	00:23:16,224	| IOT096a |	Because it feels like summer
+EDL	00:23:18,272	00:23:19,552	| IOT096a |	Set up on this
+EDL	00:23:19,552	00:23:20,576	| IOT096a |	Is super easy
+EDL	00:23:21,088	00:23:23,136	| IOT096a |	And what's important to know
+EDL	00:23:23,648	00:23:27,744	| IOT096a |	Is in some cases you don't actually even need to install the app
+EDL	00:23:27,744	00:23:28,256	| IOT096a |	For the
+EDL	00:23:30,304	00:23:31,072	| IOT096a |	Correct
+EDL	00:23:31,584	00:23:32,096	| IOT096a |	So
+EDL	00:23:32,864	00:23:36,960	| IOT096a |	I have the Philips Hue already connected in the Lutron Hub already can
+EDL	00:23:36,960	00:23:39,520	| IOT096a |	Connect it so those I basically opened
+EDL	00:23:39,520	00:23:40,800	| IOT096a |	The whole map from
+EDL	00:23:41,312	00:23:42,336	| IOT096a |	An iOS home screen
+EDL	00:23:43,360	00:23:44,896	| IOT096a |	Oh that's going to be terrible you guys
+EDL	00:23:45,920	00:23:50,528	| IOT096a |	And I was like add a new device and it actually saw that those devices were already on my network
+EDL	00:23:51,296	00:23:51,808	| IOT096a |	Clicked on them
+EDL	00:23:52,320	00:23:53,344	| IOT096a |	I added them
+EDL	00:23:53,344	00:23:54,624	| IOT096a |	I could put them in a room
+EDL	00:23:55,136	00:23:56,672	| IOT096a |	I can put them on
+EDL	00:23:56,672	00:23:57,696	| IOT096a |	The home screen
+EDL	00:23:57,696	00:23:58,208	| IOT096a |	Witches
+EDL	00:23:58,720	00:24:02,816	| IOT096a |	This is this is ridiculous you guys the home screen
+EDL	00:24:03,584	00:24:08,448	| IOT096a |	So in some cases I did like I have I have motion sensor setup for my laundry room in my closet
+EDL	00:24:09,216	00:24:10,496	| IOT096a |	Through the Hue and I was like
+EDL	00:24:11,520	00:24:12,288	| IOT096a |	Those are
+EDL	00:24:14,336	00:24:17,920	| IOT096a |	And it only saw the lights didn't see the motions
+EDL	00:24:17,920	00:24:18,688	| IOT096a |	Sensors for my
+EDL	00:24:18,688	00:24:19,200	| IOT096a |	Queue system
+EDL	00:24:20,224	00:24:20,736	| IOT096a |	Switch
+EDL	00:24:21,248	00:24:21,760	| IOT096a |	That's important
+EDL	00:24:23,552	00:24:24,064	| IOT096a |	It took
+EDL	00:24:24,832	00:24:25,600	| IOT096a |	Maybe
+EDL	00:24:26,112	00:24:26,880	| IOT096a |	92nd
+EDL	00:24:26,880	00:24:28,928	| IOT096a |	To do all of my lights
+EDL	00:24:28,928	00:24:29,696	| IOT096a |	From Hue and Lutron
+EDL	00:24:30,208	00:24:32,000	| IOT096a |	Which is about a dozen lights
+EDL	00:24:32,000	00:24:33,792	| IOT096a |	Name them classify them all of that
+EDL	00:24:34,304	00:24:37,888	| IOT096a |	The active setting this up basically involved
+EDL	00:24:38,656	00:24:39,680	| IOT096a |	Clicking on that
+EDL	00:24:39,680	00:24:40,448	| IOT096a |	Button
+EDL	00:24:40,448	00:24:41,728	| IOT096a |	Cuz it was self discovered in
+EDL	00:24:41,728	00:24:42,496	| IOT096a |	Chase
+EDL	00:24:42,496	00:24:43,008	| IOT096a |	And then
+EDL	00:24:43,776	00:24:47,104	| IOT096a |	Lighting up the code on the bottom of the bridges and then AB sees it
+EDL	00:24:47,104	00:24:48,384	| IOT096a |	Takes kind of a picture it's
+EDL	00:24:49,664	00:24:50,688	| IOT096a |	And it's like
+EDL	00:24:50,688	00:24:51,712	| IOT096a |	You're connected
+EDL	00:24:51,712	00:24:52,480	| IOT096a |	And it was
+EDL	00:24:52,480	00:24:53,248	| IOT096a |	Spokane
+EDL	00:24:54,016	00:24:55,296	| IOT096a |	So easy so they nailed that
+EDL	00:24:55,808	00:24:57,088	| IOT096a |	Yeah setup is
+EDL	00:24:57,088	00:24:58,880	| IOT096a |	I did this with ecobee
+EDL	00:24:58,880	00:25:00,928	| IOT096a |	As the only homekit device I have here
+EDL	00:25:00,928	00:25:02,720	| IOT096a |	And setup was
+EDL	00:25:02,720	00:25:04,512	| IOT096a |	Super simple just like you described
+EDL	00:25:04,512	00:25:05,024	| IOT096a |	That was awesome
+EDL	00:25:06,304	00:25:06,816	| IOT096a |	So
+EDL	00:25:07,328	00:25:09,376	| IOT096a |	If something hadn't been connected
+EDL	00:25:09,376	00:25:11,168	| IOT096a |	It already so with my
+EDL	00:25:11,168	00:25:12,704	| IOT096a |	My other stuff that already been online
+EDL	00:25:13,216	00:25:14,752	| IOT096a |	I also did the
+EDL	00:25:14,752	00:25:15,264	| IOT096a |	You stuff
+EDL	00:25:15,776	00:25:16,544	| IOT096a |	And
+EDL	00:25:16,544	00:25:18,592	| IOT096a |	Basically I didn't download the eve app
+EDL	00:25:20,128	00:25:20,896	| IOT096a |	Elgato
+EDL	00:25:20,896	00:25:22,176	| IOT096a |	So I didn't download that at all
+EDL	00:25:23,200	00:25:25,504	| IOT096a |	Instead I went to the home app and I've clicked
+EDL	00:25:26,016	00:25:27,296	| IOT096a |	Wants to add the device
+EDL	00:25:28,832	00:25:30,368	| IOT096a |	Because it was nearby and powered on
+EDL	00:25:31,136	00:25:33,440	| IOT096a |	It was like hey
+EDL	00:25:33,952	00:25:34,976	| IOT096a |	That's what I want to add
+EDL	00:25:35,488	00:25:36,512	| IOT096a |	And then
+EDL	00:25:37,280	00:25:42,400	| IOT096a |	I took the picture and boom it was on and then I got a notification saying hey there's a firmware update
+EDL	00:25:42,912	00:25:43,680	| IOT096a |	So
+EDL	00:25:43,680	00:25:44,448	| IOT096a |	Basically
+EDL	00:25:44,960	00:25:45,728	| IOT096a |	Nail in it
+EDL	00:25:45,728	00:25:46,240	| IOT096a |	On this side
+EDL	00:25:47,264	00:25:47,776	| IOT096a |	On the outside
+EDL	00:25:49,568	00:25:51,872	| IOT096a |	Getting things to work together is also
+EDL	00:25:52,640	00:25:53,920	| IOT096a |	Pretty rudimentary
+EDL	00:25:54,688	00:25:57,760	| IOT096a |	That's kind of where this falls down I wanted like some more
+EDL	00:25:57,760	00:25:58,784	| IOT096a |	Options for
+EDL	00:26:00,576	00:26:02,624	| IOT096a |	Cool style Integrations but
+EDL	00:26:02,624	00:26:03,904	| IOT096a |	The pretty-much
+EDL	00:26:03,904	00:26:05,184	| IOT096a |	Where they've been for
+EDL	00:26:05,184	00:26:07,488	| IOT096a |	Two or three years which is I program like
+EDL	00:26:07,488	00:26:08,512	| IOT096a |	Windows motion detector
+EDL	00:26:09,280	00:26:10,304	| IOT096a |	Comes off Iran
+EDL	00:26:10,816	00:26:11,584	| IOT096a |	Do this
+EDL	00:26:11,584	00:26:12,096	| IOT096a |	And that works
+EDL	00:26:13,120	00:26:13,888	| IOT096a |	Super fast
+EDL	00:26:13,888	00:26:17,728	| IOT096a |	And this is all in the automation tab of the home app if I recall
+EDL	00:26:19,776	00:26:23,360	| IOT096a |	Doing this like not like
+EDL	00:26:23,872	00:26:25,408	| IOT096a |	I also I will tell you guys that
+EDL	00:26:25,408	00:26:26,944	| IOT096a |	But I also have a challenge here
+EDL	00:26:26,944	00:26:27,968	| IOT096a |	Because
+EDL	00:26:27,968	00:26:28,992	| IOT096a |	I am not used to iPhone
+EDL	00:26:30,784	00:26:32,320	| IOT096a |	Apple nailed it on the setup
+EDL	00:26:32,320	00:26:34,112	| IOT096a |	And next week we're going to talk about
+EDL	00:26:34,112	00:26:35,648	| IOT096a |	How well it is
+EDL	00:26:35,648	00:26:36,160	| IOT096a |	When you live
+EDL	00:26:37,696	00:26:39,232	| IOT096a |	Final tip for you guys
+EDL	00:26:39,232	00:26:41,792	| IOT096a |	Remember last week I talked to you about stringify
+EDL	00:26:41,792	00:26:46,656	| IOT096a |	Stringify was that app that basically is a software-based home automation Hub it ties into Lots
+EDL	00:26:46,656	00:26:47,168	| IOT096a |	Some other things
+EDL	00:26:47,680	00:26:51,008	| IOT096a |	So I discovered that they have a math function
+EDL	00:26:51,776	00:26:53,568	| IOT096a |	Option as one of their triggers
+EDL	00:26:54,080	00:26:57,408	| IOT096a |	Actually it's really cool because it lets you
+EDL	00:26:57,408	00:27:01,760	| IOT096a |	Continuous Flow based on comparing numbers so you can actually put that in seoul
+EDL	00:27:02,528	00:27:04,064	| IOT096a |	After this time of day
+EDL	00:27:04,832	00:27:06,624	| IOT096a |	Turn the nest on
+EDL	00:27:07,392	00:27:09,184	| IOT096a |	If it is greater than
+EDL	00:27:09,952	00:27:10,720	| IOT096a |	This many took
+EDL	00:27:10,720	00:27:11,488	| IOT096a |	Greece
+EDL	00:27:11,488	00:27:13,024	| IOT096a |	Which is pretty cool
+EDL	00:27:13,024	00:27:16,864	| IOT096a |	That's interesting and then you can perform math operations
+EDL	00:27:16,864	00:27:17,632	| IOT096a |	Khon2 values
+EDL	00:27:18,400	00:27:19,424	| IOT096a |	And that's like
+EDL	00:27:19,424	00:27:21,472	| IOT096a |	Adding or doing other things
+EDL	00:27:21,472	00:27:24,032	| IOT096a |	I'm not 100% sure how to use that yet
+EDL	00:27:24,032	00:27:24,800	| IOT096a |	Cuz I haven't
+EDL	00:27:24,800	00:27:26,336	| IOT096a |	Haven't found a use for it
+EDL	00:27:26,336	00:27:27,104	| IOT096a |	But
+EDL	00:27:27,104	00:27:27,616	| IOT096a |	If you guys can
+EDL	00:27:29,920	00:27:31,456	| IOT096a |	They also have a text function
+EDL	00:27:31,456	00:27:31,968	| IOT096a |	And I should tell you
+EDL	00:27:32,736	00:27:35,296	| IOT096a |	That's basically continue the flow if the text
+EDL	00:27:35,296	00:27:36,576	| IOT096a |	Says this
+EDL	00:27:36,576	00:27:37,600	| IOT096a |	Continue the flow
+EDL	00:27:37,600	00:27:38,112	| IOT096a |	If the text
+EDL	00:27:38,624	00:27:39,136	| IOT096a |	Does not say
+EDL	00:27:39,904	00:27:41,184	| IOT096a |	This is good for things like
+EDL	00:27:41,696	00:27:44,256	| IOT096a |	Hey when I text the following
+EDL	00:27:44,768	00:27:47,328	| IOT096a |	To my smart home system to stringify
+EDL	00:27:48,352	00:27:48,864	| IOT096a |	Do this
+EDL	00:27:49,376	00:27:49,888	| IOT096a |	Is a mattress
+EDL	00:27:51,936	00:27:55,008	| IOT096a |	If that makes sense so basically it allows you to write text commands
+EDL	00:27:55,520	00:27:56,288	| IOT096a |	Do so
+EDL	00:27:56,288	00:27:57,568	| IOT096a |	Sometimes like for example
+EDL	00:27:58,848	00:27:59,616	| IOT096a |	Because our
+EDL	00:28:00,128	00:28:01,152	| IOT096a |	Like when I come into bed
+EDL	00:28:01,152	00:28:01,664	| IOT096a |	Late at night
+EDL	00:28:02,176	00:28:02,944	| IOT096a |	I don't actually want to
+EDL	00:28:03,456	00:28:04,480	| IOT096a |	Tell the echo
+EDL	00:28:05,248	00:28:06,016	| IOT096a |	But I try text
+EDL	00:28:07,296	00:28:09,600	| IOT096a |	So rats like an alternative
+EDL	00:28:11,648	00:28:13,440	| IOT096a |	Some of that sounds like what
+EDL	00:28:13,440	00:28:19,840	| IOT096a |	Zuckerberg is done with Jarvis cuz I know he's got text controls built-in for that same reason he doesn't want to wake somebody up with voice commands so
+EDL	00:28:19,840	00:28:21,632	| IOT096a |	Send a text to make something happen
+EDL	00:28:22,400	00:28:22,912	| IOT096a |	Exactly
+EDL	00:28:23,424	00:28:24,704	| IOT096a |	So I think this could
+EDL	00:28:25,216	00:28:26,240	| IOT096a |	Really handy actually for
+EDL	00:28:27,008	00:28:30,080	| IOT096a |	I don't know what actually let me think about this because right now
+EDL	00:28:30,592	00:28:34,944	| IOT096a |	One of the things I commonly do where I'd like to tell the echo something but I can't
+EDL	00:28:35,456	00:28:37,504	| IOT096a |	Is the middle of the night sometimes
+EDL	00:28:38,528	00:28:39,808	| IOT096a |	He tore my AC is just
+EDL	00:28:40,320	00:28:40,832	| IOT096a |	I wake up in a
+EDL	00:28:43,136	00:28:44,416	| IOT096a |	I couldn't get
+EDL	00:28:44,416	00:28:46,720	| IOT096a |	My smartphone and just use the app
+EDL	00:28:47,232	00:28:51,584	| IOT096a |	Turn it back which is probably just as reasonable is creating a flow
+EDL	00:28:51,584	00:28:52,608	| IOT096a |	To do the same thing
+EDL	00:28:53,120	00:28:55,936	| IOT096a |	And then cuz if I create a stringify flow
+EDL	00:28:55,936	00:28:57,216	| IOT096a |	I'm going to get my phone to text something
+EDL	00:28:57,984	00:28:59,520	| IOT096a |	In Massachusetts the appen
+EDL	00:29:02,592	00:29:03,872	| IOT096a |	Hours of fun in that
+EDL	00:29:04,640	00:29:05,920	| IOT096a |	So today I actually
+EDL	00:29:07,456	00:29:08,224	| IOT096a |	Everything else just
+EDL	00:29:09,248	00:29:10,016	| IOT096a |	Okay
+EDL	00:29:10,016	00:29:11,552	| IOT096a |	So that's it for this week's show
+EDL	00:29:12,320	00:29:14,624	| IOT096a |	Stay tuned because we have an awesome guess this way
+EDL	00:29:14,624	00:29:17,696	| IOT096a |	We have Susan Norris of Pacific Gas and
+EDL	00:29:17,696	00:29:18,208	| IOT096a |	Electric
+EDL	00:29:18,976	00:29:25,376	| IOT096a |	Who is going to talk to us about how the Internet of Things helps with conservation and energy-efficiency and what's
+EDL	00:29:25,376	00:29:26,656	| IOT096a |	Startups need to know
+EDL	00:29:26,656	00:29:33,056	| IOT096a |	What did companies about working with PG&E going to be awesome
+EDL	00:29:33,056	00:29:39,456	| IOT096a |	Hey everyone welcome back to the Internet of Things podcast this is
+EDL	00:29:39,456	00:29:45,856	| IOT096a |	Does your host today Susan Norris who is a senior manager in Peach
+EDL	00:29:45,856	00:29:46,880	| IOT096a |	Energy
+EDL	00:29:47,392	00:29:49,184	| IOT096a |	Efficiency products organization
+EDL	00:29:49,952	00:29:50,976	| IOT096a |	Hey Susan
+EDL	00:29:50,976	00:29:52,256	| IOT096a |	Man that title timeout
+EDL	00:29:52,256	00:29:55,328	| IOT096a |	But you want to tell people kind of Simply what you do
+EDL	00:29:55,328	00:30:00,192	| IOT096a |	We're really trying to inspire and Empower our customers to eliminate unnecessary energy use
+EDL	00:30:00,704	00:30:01,984	| IOT096a |	Which is still a mouthful
+EDL	00:30:02,752	00:30:05,056	| IOT096a |	That is but at least makes makes sense
+EDL	00:30:05,056	00:30:08,384	| IOT096a |	So you're one of the people behind the efforts to
+EDL	00:30:08,384	00:30:09,408	| IOT096a |	Take my old
+EDL	00:30:09,408	00:30:12,992	| IOT096a |	Incandescent bulbs out replacing with LEDs and maybe reminding me to
+EDL	00:30:13,504	00:30:16,064	| IOT096a |	Turn up the air-conditioning when I leave in the US
+EDL	00:30:16,064	00:30:19,392	| IOT096a |	And not just replace your light bulbs fit turn them off when you don't need
+EDL	00:30:19,904	00:30:21,952	| IOT096a |	What's the elimination of it when it's not enough
+EDL	00:30:23,232	00:30:25,024	| IOT096a |	Keyword there
+EDL	00:30:25,024	00:30:26,048	| IOT096a |	You're in California
+EDL	00:30:26,560	00:30:29,888	| IOT096a |	In California is he a Korean state has some very aggressive energy
+EDL	00:30:30,400	00:30:31,936	| IOT096a |	Conservation goals
+EDL	00:30:31,936	00:30:38,080	| IOT096a |	Do you guys have any official metrics that you're working towards internally or as a state
+EDL	00:30:38,080	00:30:40,384	| IOT096a |	Getting Gold by our Utility Commission
+EDL	00:30:40,384	00:30:41,408	| IOT096a |	To achieve
+EDL	00:30:41,408	00:30:42,432	| IOT096a |	Each year
+EDL	00:30:42,432	00:30:45,504	| IOT096a |	Demand which is measured in megabytes or gigabytes
+EDL	00:30:45,504	00:30:47,040	| IOT096a |	You said which is measured in
+EDL	00:30:47,552	00:30:50,624	| IOT096a |	Watt hours to kilowatt hours or megawatt hours
+EDL	00:30:50,624	00:30:52,672	| IOT096a |	And sperms which is the gas side
+EDL	00:30:53,696	00:30:54,464	| IOT096a |	Sing to me end
+EDL	00:30:54,464	00:30:57,536	| IOT096a |	Reducing usage overall and reducing gas
+EDL	00:30:59,328	00:31:00,352	| IOT096a |	And how are you guys doing
+EDL	00:31:02,400	00:31:03,680	| IOT096a |	Start over
+EDL	00:31:03,680	00:31:06,752	| IOT096a |	So it sounds like you guys have pretty big conservation
+EDL	00:31:06,752	00:31:10,080	| IOT096a |	Does that conflict with your goals to actually sell it
+EDL	00:31:11,104	00:31:17,504	| IOT096a |	The unique situation in California and investor-owned utilities are in is that we don't have that tension between
+EDL	00:31:17,504	00:31:18,528	| IOT096a |	Revenues from
+EDL	00:31:18,528	00:31:20,064	| IOT096a |	Selling our commodity to our cost
+EDL	00:31:20,576	00:31:21,088	| IOT096a |	And
+EDL	00:31:21,600	00:31:24,672	| IOT096a |	Ice cannibalizing that Revenue by doing energy-efficient
+EDL	00:31:25,696	00:31:32,096	| IOT096a |	And that's because we're a public utility that is decoupled which means that the revenues are disassociated from
+EDL	00:31:32,096	00:31:32,864	| IOT096a |	Commodity
+EDL	00:31:32,864	00:31:36,704	| IOT096a |	If we get our customers to reduce their energy consumption we don't take a hit Financial
+EDL	00:31:36,704	00:31:39,520	| IOT096a |	And that's a good thing because if you look at California that are cheap
+EDL	00:31:39,520	00:31:45,408	| IOT096a |	Consumption since we started implementing Energy Efficiency programs our population has grown
+EDL	00:31:45,408	00:31:46,176	| IOT096a |	That's not
+EDL	00:31:46,176	00:31:52,576	| IOT096a |	So one of the things that people are excited about with the Internet of Things smart home however you want to look at it
+EDL	00:31:52,576	00:31:53,344	| IOT096a |	Is it
+EDL	00:31:53,344	00:31:54,624	| IOT096a |	Really has huge
+EDL	00:31:54,624	00:31:57,440	| IOT096a |	Potential just cut down on energy use
+EDL	00:31:57,440	00:31:59,488	| IOT096a |	Even in my house just having
+EDL	00:31:59,488	00:32:02,816	| IOT096a |	Motion sensor switch is like the lowest hanging fruit ever
+EDL	00:32:02,816	00:32:04,352	| IOT096a |	Turn off the lights after I leave
+EDL	00:32:04,352	00:32:05,376	| IOT096a |	Leave saved me tons
+EDL	00:32:05,888	00:32:06,400	| IOT096a |	And
+EDL	00:32:06,912	00:32:08,704	| IOT096a |	You know things like The Nest Thermostat
+EDL	00:32:09,216	00:32:12,800	| IOT096a |	Honeywell lyric they all just turn down the heat when you leave and turn up your AC
+EDL	00:32:13,312	00:32:15,104	| IOT096a |	And that's got to be great so
+EDL	00:32:15,104	00:32:20,480	| IOT096a |	Is that enough gets a good start I am both terrified and thrilled about where things are going
+EDL	00:32:20,480	00:32:23,552	| IOT096a |	What terrifies me a little bit is that it a lot of this
+EDL	00:32:23,552	00:32:29,696	| IOT096a |	Technology in your newsletter and in your recent podcast from CES you talk about
+EDL	00:32:29,696	00:32:34,304	| IOT096a |	The proliferation of SmartThings and that is plug load that is going into home
+EDL	00:32:34,304	00:32:35,840	| IOT096a |	It's also a lot of batteries
+EDL	00:32:35,840	00:32:36,608	| IOT096a |	Switch
+EDL	00:32:36,608	00:32:37,632	| IOT096a |	A crate for the
+EDL	00:32:37,632	00:32:44,032	| IOT096a |	The environment and a lot of things getting plugged into outlets in homes and that that's a little terrifying for me in the space because they
+EDL	00:32:44,032	00:32:44,800	| IOT096a |	That's where
+EDL	00:32:44,800	00:32:46,336	| IOT096a |	A lot of those little hidden
+EDL	00:32:46,336	00:32:47,104	| IOT096a |	Usage
+EDL	00:32:47,616	00:32:48,640	| IOT096a |	Comes in
+EDL	00:32:48,640	00:32:49,920	| IOT096a |	That in
+EDL	00:32:49,920	00:32:54,016	| IOT096a |	In a 1D 2D cases isn't a lot but when you start to pile it on it becomes
+EDL	00:32:54,016	00:32:58,368	| IOT096a |	It becomes extensive and it used to be that everyone had one television in their home
+EDL	00:32:58,368	00:33:04,000	| IOT096a |	And now people even have televisions in the refrigerator than in their bathrooms and there are bedrooms and every bedroom
+EDL	00:33:05,024	00:33:06,560	| IOT096a |	When you start to pile it on
+EDL	00:33:07,072	00:33:13,472	| IOT096a |	It gets a little unwieldy for us when we're trying on our side when we're trying to eliminate that unnecessary and I
+EDL	00:33:13,472	00:33:15,520	| IOT096a |	How to use and even those products
+EDL	00:33:15,520	00:33:17,568	| IOT096a |	Don't look like they're consuming
+EDL	00:33:17,568	00:33:19,616	| IOT096a |	If it hasn't always on feature
+EDL	00:33:19,616	00:33:24,480	| IOT096a |	Like a smart TV or a game console or a computer
+EDL	00:33:24,480	00:33:28,064	| IOT096a |	It's still consuming energy even though you're not benefiting from the energy of cancer
+EDL	00:33:28,576	00:33:30,880	| IOT096a |	Those are the types of things that we're trying to
+EDL	00:33:31,392	00:33:32,160	| IOT096a |	Solve
+EDL	00:33:32,160	00:33:34,464	| IOT096a |	Forever either trying to solve sweat at
+EDL	00:33:34,464	00:33:35,744	| IOT096a |	Consumer level
+EDL	00:33:35,744	00:33:39,840	| IOT096a |	You Stacy can you just turn off the lights when you're not using them or when you don't need them
+EDL	00:33:39,840	00:33:40,864	| IOT096a |	Can you unplug your
+EDL	00:33:41,376	00:33:42,912	| IOT096a |	Computer or make sure that your
+EDL	00:33:43,424	00:33:45,984	| IOT096a |	Set-top box goes off and really turn
+EDL	00:33:45,984	00:33:46,496	| IOT096a |	Lights off when you
+EDL	00:33:47,520	00:33:48,544	| IOT096a |	Can you do that
+EDL	00:33:48,544	00:33:50,848	| IOT096a |	But it's better if we make it really simple for Custer
+EDL	00:33:51,360	00:33:54,944	| IOT096a |	To do that and that's where the manufacturers come in
+EDL	00:33:55,456	00:33:59,296	| IOT096a |	And so that's why it's exciting for me because I think a lot of disconnected
+EDL	00:33:59,296	00:34:00,064	| IOT096a |	Stuff
+EDL	00:34:00,064	00:34:02,624	| IOT096a |	Can help make it really easy for customers
+EDL	00:34:02,624	00:34:04,160	| IOT096a |	To take those actions
+EDL	00:34:04,160	00:34:05,952	| IOT096a |	So let's break this down a little bit
+EDL	00:34:05,952	00:34:08,000	| IOT096a |	Because you brought up two things one is
+EDL	00:34:08,000	00:34:09,280	| IOT096a |	More devices in the home
+EDL	00:34:09,280	00:34:09,792	| IOT096a |	Because they're connect
+EDL	00:34:12,864	00:34:15,168	| IOT096a |	Is
+EDL	00:34:15,168	00:34:16,704	| IOT096a |	Using their intelligence
+EDL	00:34:16,704	00:34:17,728	| IOT096a |	To help with conservation
+EDL	00:34:18,240	00:34:19,264	| IOT096a |	So let's start with a
+EDL	00:34:19,264	00:34:20,544	| IOT096a |	The first witch
+EDL	00:34:20,544	00:34:22,848	| IOT096a |	You kind of alluding to this vampire power consumption
+EDL	00:34:23,616	00:34:24,128	| IOT096a |	Challenge
+EDL	00:34:24,640	00:34:26,688	| IOT096a |	In one of the ways you can deal with that
+EDL	00:34:27,712	00:34:28,992	| IOT096a |	Maybe by installing
+EDL	00:34:28,992	00:34:30,272	| IOT096a |	Smart switches so
+EDL	00:34:31,296	00:34:32,064	| IOT096a |	You can plug your
+EDL	00:34:32,832	00:34:35,904	| IOT096a |	Killbox which is a notorious culprit into
+EDL	00:34:35,904	00:34:36,928	| IOT096a |	Connected Outlet
+EDL	00:34:36,928	00:34:38,464	| IOT096a |	And turn it off when the TV is actually
+EDL	00:34:39,232	00:34:40,000	| IOT096a |	Not on
+EDL	00:34:40,000	00:34:41,280	| IOT096a |	Yes
+EDL	00:34:41,280	00:34:42,048	| IOT096a |	Right
+EDL	00:34:42,048	00:34:45,120	| IOT096a |	Some of that dodos devices themselves
+EDL	00:34:45,120	00:34:46,400	| IOT096a |	Because they have
+EDL	00:34:47,168	00:34:50,240	| IOT096a |	Southstate you know they have they have hard drives in them that aren't
+EDL	00:34:50,752	00:34:52,800	| IOT096a |	Really designed to be completely
+EDL	00:34:53,312	00:34:53,824	| IOT096a |	Kilt
+EDL	00:34:54,848	00:34:55,360	| IOT096a |	Hi
+EDL	00:34:56,128	00:35:02,528	| IOT096a |	So that's where we're going with manufacturers and and I think consumers have a pretty with we just talked about set-top box
+EDL	00:35:02,528	00:35:04,832	| IOT096a |	Consumers have a pretty low tolerance
+EDL	00:35:04,832	00:35:06,112	| IOT096a |	Spread out startup time
+EDL	00:35:06,624	00:35:08,928	| IOT096a |	When you do completely power that unit off
+EDL	00:35:08,928	00:35:14,304	| IOT096a |	I want to see the channel Selections in the guide instantly when I turn on my television and those
+EDL	00:35:14,304	00:35:15,584	| IOT096a |	Device is currently
+EDL	00:35:16,096	00:35:17,376	| IOT096a |	Many of them have to reboot
+EDL	00:35:17,888	00:35:20,960	| IOT096a |	And so consumers don't have a high tolerance
+EDL	00:35:20,960	00:35:24,032	| IOT096a |	We're going to have to figure that out and manufacturers are going to
+EDL	00:35:24,032	00:35:28,384	| IOT096a |	I have to help figure that out but we're striving for is to have that device you
+EDL	00:35:28,384	00:35:30,688	| IOT096a |	The least amount of energy is necessary
+EDL	00:35:30,688	00:35:32,224	| IOT096a |	So let's go to the bigger issue
+EDL	00:35:32,224	00:35:34,784	| IOT096a |	Which is using the stuff to help conserve
+EDL	00:35:34,784	00:35:37,856	| IOT096a |	And I feel like there's kind of a couple steps here one is like
+EDL	00:35:38,368	00:35:44,768	| IOT096a |	And you can totally argue with me cuz you're smarter and actually deal with consumers in electricity
+EDL	00:35:44,768	00:35:46,816	| IOT096a |	What you're using and then
+EDL	00:35:46,816	00:35:47,584	| IOT096a |	Automated
+EDL	00:35:47,584	00:35:48,864	| IOT096a |	Ways to save
+EDL	00:35:48,864	00:35:49,888	| IOT096a |	Or replacing
+EDL	00:35:49,888	00:35:51,936	| IOT096a |	I guess replacing a device or automated
+EDL	00:35:51,936	00:35:53,216	| IOT096a |	Something to save energy
+EDL	00:35:53,216	00:35:54,496	| IOT096a |	Does that seem reasonable
+EDL	00:35:55,264	00:36:01,664	| IOT096a |	It doesn't and the way I look at it I always break it down into these two different factors and ultimately there two different factors that
+EDL	00:36:01,664	00:36:05,504	| IOT096a |	What is motivation somebody has to be motivated to want to take action
+EDL	00:36:06,016	00:36:12,416	| IOT096a |	And the second thing is you have to have the ability to do something about it so seeing how you're consuming energy
+EDL	00:36:12,416	00:36:16,256	| IOT096a |	Do your higher houses performing or how big that iceberg is underneath
+EDL	00:36:16,256	00:36:19,840	| IOT096a |	The polar bear and that it's melting and things that motivate you
+EDL	00:36:19,840	00:36:21,632	| IOT096a |	To do something about something
+EDL	00:36:22,656	00:36:24,448	| IOT096a |	Are very motivational but if you
+EDL	00:36:24,448	00:36:25,216	| IOT096a |	Really
+EDL	00:36:25,216	00:36:28,032	| IOT096a |	Feel like the solution to that is out of your reach
+EDL	00:36:28,032	00:36:32,384	| IOT096a |	You're going to get frustrated so so seeing consumption a lot of these
+EDL	00:36:32,384	00:36:34,688	| IOT096a |	Devices can show you your energy
+EDL	00:36:34,688	00:36:37,504	| IOT096a |	Consumption but they don't give you away to do anything about it
+EDL	00:36:38,016	00:36:42,880	| IOT096a |	And after a while you sit there and you're like okay so my TV is using energy when it's not on
+EDL	00:36:42,880	00:36:43,904	| IOT096a |	I don't know what to do about it
+EDL	00:36:44,416	00:36:46,720	| IOT096a |	So I think some of this connected stuff
+EDL	00:36:46,720	00:36:50,048	| IOT096a |	And that's where I've heard Kevin talk about we're getting towards the
+EDL	00:36:50,048	00:36:51,840	| IOT096a |	Smart part of the smart stuff
+EDL	00:36:51,840	00:36:54,144	| IOT096a |	When it really starts to interact
+EDL	00:36:55,168	00:37:00,032	| IOT096a |	That's when you I think we will all start to see this conservation effect of the technology
+EDL	00:37:00,032	00:37:06,432	| IOT096a |	You have two effects taking place you got what we call efficiency where if I get Stacy to take out an income
+EDL	00:37:06,432	00:37:08,736	| IOT096a |	Doesn't light bulb and put in an LED
+EDL	00:37:08,736	00:37:10,016	| IOT096a |	The Delta between those
+EDL	00:37:10,016	00:37:12,064	| IOT096a |	2 Technologies is efficient
+EDL	00:37:12,576	00:37:16,416	| IOT096a |	You Stacy the consumer still get the same benefit of the light
+EDL	00:37:16,416	00:37:17,440	| IOT096a |	But it's using less energy
+EDL	00:37:17,952	00:37:18,976	| IOT096a |	When I get
+EDL	00:37:18,976	00:37:21,280	| IOT096a |	The second measurement is conservation
+EDL	00:37:21,280	00:37:24,352	| IOT096a |	So I can get you to turn off that light when it's not needed
+EDL	00:37:24,864	00:37:26,400	| IOT096a |	That's an added bonus
+EDL	00:37:26,400	00:37:28,448	| IOT096a |	And a lot of this technology is
+EDL	00:37:28,448	00:37:31,776	| IOT096a |	Delivering both of those things so smart light bulbs
+EDL	00:37:31,776	00:37:35,872	| IOT096a |	Are helping deliver the conservation and the fact that it's an LED
+EDL	00:37:36,384	00:37:38,432	| IOT096a |	And not an incandescent it consumes less
+EDL	00:37:39,200	00:37:41,248	| IOT096a |	So what are some examples
+EDL	00:37:42,528	00:37:43,296	| IOT096a |	Because that's what
+EDL	00:37:43,296	00:37:44,064	| IOT096a |	People's brains go to
+EDL	00:37:44,064	00:37:45,344	| IOT096a |	Where this kind of Technology
+EDL	00:37:46,112	00:37:48,928	| IOT096a |	So we went from a top-loading washing machine
+EDL	00:37:49,440	00:37:52,512	| IOT096a |	To a front loading washing machine
+EDL	00:37:53,280	00:37:56,864	| IOT096a |	Lots and lots and lots of water you can actually wash way more clothes in it
+EDL	00:37:57,632	00:38:00,960	| IOT096a |	Then you could enact in a top-loading washing machine that's great
+EDL	00:38:00,960	00:38:03,008	| IOT096a |	Static Energy Efficiency move
+EDL	00:38:03,008	00:38:05,312	| IOT096a |	The challenge that I have with these washing machine
+EDL	00:38:05,312	00:38:06,592	| IOT096a |	Now is that many of them
+EDL	00:38:07,104	00:38:10,176	| IOT096a |	Still default the user to warm water
+EDL	00:38:10,176	00:38:11,968	| IOT096a |	Wash and Cold Water Rinse
+EDL	00:38:11,968	00:38:17,344	| IOT096a |	That's great it's not a war model Reds but why not just default them to cold water wash and cold water mint
+EDL	00:38:17,856	00:38:20,416	| IOT096a |	And then it's a washing machine was really smart
+EDL	00:38:20,416	00:38:25,024	| IOT096a |	It could prompt the consumers say are you sure you really want to do that or it can show them their energy
+EDL	00:38:25,792	00:38:26,560	| IOT096a |	Because once they're smart they
+EDL	00:38:30,144	00:38:32,960	| IOT096a |	Exactly it's actually tapping into their rate
+EDL	00:38:32,960	00:38:37,056	| IOT096a |	Order rate plan because if they're on a time of use plan it might say
+EDL	00:38:37,056	00:38:39,872	| IOT096a |	Are you sure you want to start your washing machine now
+EDL	00:38:39,872	00:38:42,432	| IOT096a |	It's costing you $0.22 a kilowatt hour
+EDL	00:38:42,432	00:38:45,248	| IOT096a |	But if you waited until after 9 p.m. it would only cost
+EDL	00:38:45,248	00:38:46,528	| IOT096a |	B12
+EDL	00:38:46,528	00:38:50,368	| IOT096a |	You know I think there's a huge opportunity for the technology system
+EDL	00:38:50,368	00:38:51,904	| IOT096a |	Start to interact
+EDL	00:38:51,904	00:38:52,928	| IOT096a |	Together
+EDL	00:38:52,928	00:38:54,208	| IOT096a |	In the home and
+EDL	00:38:54,720	00:38:59,584	| IOT096a |	Some of those use cases are the thermostat registering that you're no longer there
+EDL	00:38:59,584	00:39:02,144	| IOT096a |	Let's take down the lights for at least asked you whether
+EDL	00:39:02,144	00:39:02,656	| IOT096a |	You want
+EDL	00:39:03,168	00:39:05,728	| IOT096a |	The system to take down the lights that you've left on
+EDL	00:39:06,240	00:39:08,800	| IOT096a |	So let's talk about the user interface for the consumer
+EDL	00:39:09,312	00:39:13,152	| IOT096a |	Then we'll move to what startups need to do for you guys too
+EDL	00:39:13,152	00:39:17,760	| IOT096a |	Proviable to do this and then we'll talk about what you guys need to do to kind of
+EDL	00:39:17,760	00:39:19,296	| IOT096a |	On your end to make these sorts of
+EDL	00:39:19,296	00:39:21,088	| IOT096a |	Cool things like sending XS power.
+EDL	00:39:21,088	00:39:21,856	| IOT096a |	Your neighbor possible
+EDL	00:39:23,392	00:39:24,928	| IOT096a |	Chicken
+EDL	00:39:24,928	00:39:30,048	| IOT096a |	The user interface so right now I have to program everything to happen in my house
+EDL	00:39:30,048	00:39:33,376	| IOT096a |	Which is a lot of work on my end and I do it cuz I love it
+EDL	00:39:33,376	00:39:34,144	| IOT096a |	Most people are not
+EDL	00:39:34,912	00:39:36,704	| IOT096a |	Weather and you know how
+EDL	00:39:36,704	00:39:37,216	| IOT096a |	Right
+EDL	00:39:37,728	00:39:39,008	| IOT096a |	So how do you get
+EDL	00:39:39,008	00:39:40,800	| IOT096a |	Consumers and your customers
+EDL	00:39:41,312	00:39:42,336	| IOT096a |	To actually
+EDL	00:39:42,336	00:39:43,104	| IOT096a |	Program their lights
+EDL	00:39:44,640	00:39:45,408	| IOT096a |	Terre Haute their nest
+EDL	00:39:46,176	00:39:46,944	| IOT096a |	I think
+EDL	00:39:46,944	00:39:48,736	| IOT096a |	Today it's a pretty big challenge
+EDL	00:39:48,736	00:39:53,344	| IOT096a |	And I think that's one of the barriers that consumers have to really setting up these this
+EDL	00:39:53,344	00:39:54,112	| IOT096a |	System
+EDL	00:39:54,112	00:39:57,184	| IOT096a |	Approach I also think that some of the Technologies aren't
+EDL	00:39:57,184	00:40:02,304	| IOT096a |	Ready for that system approach because as you described they set up these walls
+EDL	00:40:02,304	00:40:05,376	| IOT096a |	Systems that unless I can see more dives into
+EDL	00:40:05,376	00:40:06,144	| IOT096a |	A closed
+EDL	00:40:06,144	00:40:08,960	| IOT096a |	System like a Lowe's Iris system
+EDL	00:40:09,472	00:40:15,360	| IOT096a |	Where everything just will automatically recognize and talk to itself so that becomes a simpler solution but it limits your
+EDL	00:40:15,872	00:40:19,200	| IOT096a |	Ability to add more stuff from that is not part of that system
+EDL	00:40:19,712	00:40:26,112	| IOT096a |	I also think that experiences when if your your power goes out in your Wi-Fi or your Wi-Fi goes down
+EDL	00:40:26,112	00:40:27,392	| IOT096a |	And all of that stuff
+EDL	00:40:27,392	00:40:31,744	| IOT096a |	Loses its connection it doesn't automatically always come back together
+EDL	00:40:32,256	00:40:33,024	| IOT096a |	And that's
+EDL	00:40:33,024	00:40:35,584	| IOT096a |	Going to be really frustrating for somebody who
+EDL	00:40:35,584	00:40:37,376	| IOT096a |	Decided they were going to take the time
+EDL	00:40:37,888	00:40:40,448	| IOT096a |	To hack this stuff together and then
+EDL	00:40:40,448	00:40:43,264	| IOT096a |	I have to do it again right honestly that is this
+EDL	00:40:45,568	00:40:48,896	| IOT096a |	When you spend that much money on something that you're like spending hours
+EDL	00:40:48,896	00:40:50,176	| IOT096a |	Fixing it or repairing it
+EDL	00:40:50,176	00:40:51,200	| IOT096a |	Yeah they're over there maybe something
+EDL	00:40:53,504	00:40:55,040	| IOT096a |	Susan I just want
+EDL	00:40:55,552	00:41:00,928	| IOT096a |	I do think that it's you know it's getting there and I think manufacturers are recognizing it I do think that there are
+EDL	00:41:00,928	00:41:04,000	| IOT096a |	Situations where consumers don't quite quote-unquote gat
+EDL	00:41:04,000	00:41:05,280	| IOT096a |	That use case
+EDL	00:41:05,280	00:41:11,680	| IOT096a |	And what really concerns me in if you do consider that diffusion of innovation model that innovator
+EDL	00:41:11,680	00:41:13,984	| IOT096a |	Innovate and innovators don't really
+EDL	00:41:13,984	00:41:14,752	| IOT096a |	Inform
+EDL	00:41:15,264	00:41:15,776	| IOT096a |	The next
+EDL	00:41:16,288	00:41:17,056	| IOT096a |	Group of
+EDL	00:41:17,056	00:41:20,640	| IOT096a |	Consumers those early adopters because innovators will try anything
+EDL	00:41:20,640	00:41:24,480	| IOT096a |	But early adopters actually have a strong influence on the early majority
+EDL	00:41:24,992	00:41:28,320	| IOT096a |	And if we don't get this right for the early adopters
+EDL	00:41:28,320	00:41:31,648	| IOT096a |	We're going to really struggle in this is that Chasm that they talked about Crossing
+EDL	00:41:31,648	00:41:33,952	| IOT096a |	In the chasm things like that so I really do have
+EDL	00:41:34,464	00:41:38,304	| IOT096a |	Something that space that we really need to nail this with the early adopters
+EDL	00:41:38,816	00:41:42,144	| IOT096a |	And get it right for that so with that in mind
+EDL	00:41:42,144	00:41:44,448	| IOT096a |	What do you want the startups
+EDL	00:41:44,448	00:41:45,984	| IOT096a |	Or established
+EDL	00:41:45,984	00:41:47,264	| IOT096a |	Tresor in the space
+EDL	00:41:47,776	00:41:49,312	| IOT096a |	What should they be thinking about
+EDL	00:41:49,824	00:41:51,104	| IOT096a |	To work with the
+EDL	00:41:51,104	00:41:53,407	| IOT096a |	Company
+EDL	00:41:53,407	00:41:55,711	| IOT096a |	Maybe it's just making life easier for
+EDL	00:41:55,711	00:41:58,271	| IOT096a |	For consumers what are the things they need to take into
+EDL	00:41:58,271	00:41:58,783	| IOT096a |	Consideration
+EDL	00:41:59,551	00:42:04,927	| IOT096a |	One thing I would love to just shout out to all the manufacturers and developers and whether their existing
+EDL	00:42:04,927	00:42:07,743	| IOT096a |	Organizations or whether they're just getting their feet wet in the
+EDL	00:42:07,743	00:42:08,767	| IOT096a |	Space is
+EDL	00:42:08,767	00:42:12,095	| IOT096a |	Utilities act across the country across the world
+EDL	00:42:12,095	00:42:12,863	| IOT096a |	How to play
+EDL	00:42:13,375	00:42:16,447	| IOT096a |	To help accelerate adoption of this technology in the marketplace
+EDL	00:42:17,471	00:42:19,007	| IOT096a |	Many utilities across the
+EDL	00:42:19,007	00:42:20,031	| IOT096a |	The world
+EDL	00:42:20,031	00:42:21,823	| IOT096a |	Actually have programs like ours
+EDL	00:42:22,335	00:42:25,407	| IOT096a |	That can can provide incentives for customers or can
+EDL	00:42:25,407	00:42:30,271	| IOT096a |	Do things in ways that try to accelerate adoption of this technology in the marketplace
+EDL	00:42:30,271	00:42:33,599	| IOT096a |	The challenge utilities have is that technology
+EDL	00:42:33,599	00:42:34,879	| IOT096a |	Have to have an effect
+EDL	00:42:35,391	00:42:36,671	| IOT096a |	A measurable effect
+EDL	00:42:37,439	00:42:39,231	| IOT096a |	That's where it gets a little tricky
+EDL	00:42:40,255	00:42:43,839	| IOT096a |	We have to be able to justify our return-on-investment
+EDL	00:42:43,839	00:42:46,911	| IOT096a |	So we have in our Ally and that Roi shows up for us
+EDL	00:42:47,423	00:42:48,191	| IOT096a |	As
+EDL	00:42:48,191	00:42:49,983	| IOT096a |	Savings or conservation
+EDL	00:42:49,983	00:42:54,079	| IOT096a |	We have to be able to measure that just like a bank would need to measure the
+EDL	00:42:54,079	00:42:56,639	| IOT096a |	The return on investment in monetary terms
+EDL	00:42:56,639	00:42:58,175	| IOT096a |	We have to register it as
+EDL	00:42:58,687	00:42:59,967	| IOT096a |	Savings so
+EDL	00:42:59,967	00:43:02,783	| IOT096a |	When I talk to manufacturers I often say
+EDL	00:43:02,783	00:43:04,319	| IOT096a |	You know it's great that your device
+EDL	00:43:04,831	00:43:09,439	| IOT096a |	Shows customers how much energy does consuming at this time and how much that energy is cost
+EDL	00:43:10,719	00:43:16,863	| IOT096a |	If that doesn't cause them to go take action and persistent action that action has to be has to be sticky
+EDL	00:43:16,863	00:43:19,423	| IOT096a |	Then I'm really I can't do anything with
+EDL	00:43:19,423	00:43:20,959	| IOT096a |	That's where it gets hard to measure
+EDL	00:43:20,959	00:43:25,055	| IOT096a |	And especially for talking about small loads but then residential homes
+EDL	00:43:25,055	00:43:26,591	| IOT096a |	Score in small businesses
+EDL	00:43:27,103	00:43:28,383	| IOT096a |	Those little tiny
+EDL	00:43:28,383	00:43:30,431	| IOT096a |	Little loads like light bulbs
+EDL	00:43:30,431	00:43:32,991	| IOT096a |	Better internet and then everybody uses them differently
+EDL	00:43:33,503	00:43:35,039	| IOT096a |	Televisions and
+EDL	00:43:35,039	00:43:36,319	| IOT096a |	Curling irons curling irons
+EDL	00:43:37,087	00:43:39,391	| IOT096a |	We can help from a Utility side
+EDL	00:43:39,391	00:43:42,463	| IOT096a |	It accelerating adoption of these Technologies in the mark
+EDL	00:43:42,463	00:43:48,863	| IOT096a |	Place with the technologies that was cells have to come in with a way for us to measure the effect and the
+EDL	00:43:48,863	00:43:52,447	| IOT096a |	How is it we have is that that process often takes a while
+EDL	00:43:52,959	00:43:55,007	| IOT096a |	Because we have to do field studies
+EDL	00:43:55,007	00:43:56,031	| IOT096a |	We also have
+EDL	00:43:56,031	00:44:01,407	| IOT096a |	There's a temperature effect of that device like a thermostat we have to do it over summer and winter
+EDL	00:44:01,407	00:44:04,479	| IOT096a |	We may have to do it in a variety of different climate zones
+EDL	00:44:04,479	00:44:07,039	| IOT096a |	California is Rife with climate zones
+EDL	00:44:07,039	00:44:12,415	| IOT096a |	Those processes take a while in order to really do the scientific study to
+EDL	00:44:12,415	00:44:16,255	| IOT096a |	Determine the actual effect of a piece of technology or a
+EDL	00:44:16,767	00:44:20,863	| IOT096a |	Combination of Technologies on a customer's usage
+EDL	00:44:20,863	00:44:23,935	| IOT096a |	Got it now you also mentioned a couple things that
+EDL	00:44:23,935	00:44:26,495	| IOT096a |	Like I imagine most startups or
+EDL	00:44:26,495	00:44:29,567	| IOT096a |	Manufacturers are like okay
+EDL	00:44:30,079	00:44:33,407	| IOT096a |	Then you have some other things like
+EDL	00:44:33,407	00:44:34,943	| IOT096a |	I don't know how much startups think about
+EDL	00:44:35,967	00:44:36,991	| IOT096a |	What else is there
+EDL	00:44:36,991	00:44:40,319	| IOT096a |	That you're like oh by the way you need this to those things definitely help
+EDL	00:44:40,831	00:44:45,951	| IOT096a |	To make sure there is a audio out there that has reviewed your technology and make sure it's
+EDL	00:44:45,951	00:44:46,719	| IOT096a |	If it needs
+EDL	00:44:47,231	00:44:49,023	| IOT096a |	Safety standards and
+EDL	00:44:49,023	00:44:53,631	| IOT096a |	Other qualities that are going to be promoted we don't want somebody's house to catch on fire
+EDL	00:44:54,399	00:44:55,679	| IOT096a |	Now what about security
+EDL	00:44:55,679	00:44:57,727	| IOT096a |	Because now that becomes
+EDL	00:44:57,727	00:44:59,007	| IOT096a |	Now everybody's like
+EDL	00:44:59,007	00:45:01,567	| IOT096a |	Crap I'll just connect and stuff it may not be the best thing
+EDL	00:45:02,591	00:45:03,359	| IOT096a |	Install
+EDL	00:45:03,359	00:45:06,175	| IOT096a |	That is a big concern of a lot of consumers
+EDL	00:45:06,687	00:45:08,991	| IOT096a |	And every time the news
+EDL	00:45:08,991	00:45:10,015	| IOT096a |	Comes out with the latest
+EDL	00:45:10,527	00:45:11,551	| IOT096a |	Breach and somebody's
+EDL	00:45:12,063	00:45:18,207	| IOT096a |	Smart technology stuff I mean I just watched an old episode of Modern Family Modern Family where the
+EDL	00:45:18,207	00:45:21,023	| IOT096a |	They were overhearing the neighbors baby monitor
+EDL	00:45:21,535	00:45:24,607	| IOT096a |	To be fair that was doable all the way back in the
+EDL	00:45:25,631	00:45:26,143	| IOT096a |	The 900
+EDL	00:45:26,911	00:45:28,191	| IOT096a |	But I do I do
+EDL	00:45:28,191	00:45:34,591	| IOT096a |	Do you think a lot of consumers are very concerned about the security and I think our responsibility I consider us it a trusted energy advisor
+EDL	00:45:34,591	00:45:39,199	| IOT096a |	And I think we're moving into this space where we need to also provide cuss
+EDL	00:45:39,199	00:45:40,223	| IOT096a |	Northwest
+EDL	00:45:40,223	00:45:42,015	| IOT096a |	Information on
+EDL	00:45:42,015	00:45:42,783	| IOT096a |	How they can
+EDL	00:45:42,783	00:45:44,319	| IOT096a |	Keep their systems as a
+EDL	00:45:44,319	00:45:50,207	| IOT096a |	Secure is possible and I actually just recently wrote a piece for our website so that that we could
+EDL	00:45:50,719	00:45:53,023	| IOT096a |	Just haven't have some references for customers
+EDL	00:45:53,535	00:45:56,351	| IOT096a |	To go online in and take a look at different
+EDL	00:45:56,351	00:45:57,631	| IOT096a |	Buying advice
+EDL	00:45:57,631	00:46:00,191	| IOT096a |	When they consider connecting SmartThings and then just
+EDL	00:46:00,191	00:46:01,215	| IOT096a |	Fundamentals
+EDL	00:46:01,215	00:46:04,799	| IOT096a |	Security things to consider like you know just make sure that you have your
+EDL	00:46:05,567	00:46:11,967	| IOT096a |	Most secure settings on your wireless system that you don't identify your home or your family address
+EDL	00:46:11,967	00:46:15,551	| IOT096a |	Or your family name or the device name in the
+EDL	00:46:16,063	00:46:17,343	| IOT096a |	In the description
+EDL	00:46:17,343	00:46:18,111	| IOT096a |	So that people
+EDL	00:46:18,623	00:46:24,767	| IOT096a |	Can't hack into it make sure you change the password to something strong and secure don't use the one that came with the product and don't use
+EDL	00:46:25,535	00:46:26,303	| IOT096a |	Something that you
+EDL	00:46:26,303	00:46:27,839	| IOT096a |	You use for other things
+EDL	00:46:27,839	00:46:29,119	| IOT096a |	Common Sense things
+EDL	00:46:29,631	00:46:31,679	| IOT096a |	But we are putting up on our website
+EDL	00:46:31,679	00:46:35,519	| IOT096a |	For our consumers to discover and we're trying to help them make
+EDL	00:46:35,519	00:46:41,663	| IOT096a |	Good decisions on how they repair things together so if they decide to go down the echo route what works
+EDL	00:46:43,455	00:46:47,039	| IOT096a |	Good luck with that it's a it's a pretty big challenge you know and I think
+EDL	00:46:47,039	00:46:53,439	| IOT096a |	You seen some of that the work that we've contracted with to get this list of technology so that we can try to figure out these cross
+EDL	00:46:53,439	00:46:56,767	| IOT096a |	Pairings that we might be able to help customers figure out
+EDL	00:46:59,327	00:47:00,351	| IOT096a |	How does
+EDL	00:47:00,351	00:47:01,631	| IOT096a |	PG&E
+EDL	00:47:01,631	00:47:02,399	| IOT096a |	Prepare
+EDL	00:47:02,399	00:47:03,167	| IOT096a |	Itself
+EDL	00:47:03,167	00:47:04,191	| IOT096a |	For things like
+EDL	00:47:04,191	00:47:10,591	| IOT096a |	Demand response that step one but then you think about the effect of Renewables on the grid how are you guys planning
+EDL	00:47:10,591	00:47:11,359	| IOT096a |	When to use Chi
+EDL	00:47:11,359	00:47:11,871	| IOT096a |	Coyote
+EDL	00:47:12,639	00:47:19,039	| IOT096a |	Operations we have several different initiatives across the organization that I am not fully tapped into
+EDL	00:47:19,039	00:47:25,439	| IOT096a |	Mattress pumps it's within our organization and customer Energy Solutions and said that Groot is always looking at
+EDL	00:47:25,439	00:47:29,279	| IOT096a |	How do we manage load on the Greyhound that stature megawatt in kilowatt
+EDL	00:47:29,791	00:47:30,815	| IOT096a |	That's your demand
+EDL	00:47:30,815	00:47:31,327	| IOT096a |	And
+EDL	00:47:32,095	00:47:33,375	| IOT096a |	Our demand is shifting
+EDL	00:47:33,887	00:47:40,287	| IOT096a |	Where will you have pizza man in the middle of the afternoon on those hot days in the summer when all the businesses were
+EDL	00:47:40,287	00:47:41,055	| IOT096a |	Hainan
+EDL	00:47:41,055	00:47:42,591	| IOT096a |	Consumers are also consuming
+EDL	00:47:43,103	00:47:45,663	| IOT096a |	With so much proliferation of solar
+EDL	00:47:45,663	00:47:47,199	| IOT096a |	In our territory
+EDL	00:47:47,199	00:47:49,247	| IOT096a |	The demand to shift it till later in the afternoon
+EDL	00:47:49,247	00:47:51,295	| IOT096a |	When the Sun Goes Down
+EDL	00:47:51,295	00:47:57,695	| IOT096a |	You don't have as much solar production I'm not sure how many people are actually aware of that that you're sober isn't producing when the Sun
+EDL	00:47:57,695	00:47:58,719	| IOT096a |	Isn't shining
+EDL	00:47:58,719	00:47:59,999	| IOT096a |	Which is an interesting
+EDL	00:47:59,999	00:48:04,607	| IOT096a |	And I'm so the demand has shifted to later in the afternoon to like 6 at night
+EDL	00:48:04,607	00:48:07,423	| IOT096a |	So for many years decades
+EDL	00:48:07,423	00:48:13,567	| IOT096a |	Steven Wilson asking our customers to reduce their energy consumption on those super hot days in the summer when the grid needs some early
+EDL	00:48:14,335	00:48:17,663	| IOT096a |	And now we're trying to ship everyone to realize that that
+EDL	00:48:17,663	00:48:18,943	| IOT096a |	Happening later
+EDL	00:48:18,943	00:48:19,711	| IOT096a |	When
+EDL	00:48:19,711	00:48:20,735	| IOT096a |	The sun goes down
+EDL	00:48:20,735	00:48:23,039	| IOT096a |	Consumers get home and start flipping things on
+EDL	00:48:23,039	00:48:25,343	| IOT096a |	To cook dinner and to get ready for their evening
+EDL	00:48:25,343	00:48:26,879	| IOT096a |	So we look at at
+EDL	00:48:27,391	00:48:33,791	| IOT096a |	Did opportunities in end the challenge that the utilities are going to have across the country in the world and this is how
+EDL	00:48:33,791	00:48:36,095	| IOT096a |	Having a lion you're up to with a lot of solar pain
+EDL	00:48:36,095	00:48:36,607	| IOT096a |	Coming online
+EDL	00:48:37,119	00:48:39,423	| IOT096a |	Where you're really moving from
+EDL	00:48:39,423	00:48:41,215	| IOT096a |	Customers being passive
+EDL	00:48:41,727	00:48:45,055	| IOT096a |	And receiving your your services gas and electricity
+EDL	00:48:45,055	00:48:47,103	| IOT096a |	At what we lovingly referred to as
+EDL	00:48:47,103	00:48:48,639	| IOT096a |	Cold beer and hot showers
+EDL	00:48:48,639	00:48:49,919	| IOT096a |	Stop static gauges
+EDL	00:48:50,687	00:48:51,711	| IOT096a |	Two more of a
+EDL	00:48:51,711	00:48:52,991	| IOT096a |	Prosumer
+EDL	00:48:52,991	00:48:54,271	| IOT096a |	Partnership
+EDL	00:48:54,271	00:48:56,831	| IOT096a |	Where we may need you to react
+EDL	00:48:57,599	00:48:59,391	| IOT096a |	And ask you to react to be a partner
+EDL	00:48:59,391	00:49:00,159	| IOT096a |	Frost
+EDL	00:49:00,159	00:49:05,791	| IOT096a |	Situation because you may have storage or you may have extrasolar that you can push back to the grid
+EDL	00:49:05,791	00:49:08,863	| IOT096a |	And some of that is happening today but some of that is really just
+EDL	00:49:08,863	00:49:10,655	| IOT096a |	Planning for the scenarios in the
+EDL	00:49:10,655	00:49:11,423	| IOT096a |	Teacher
+EDL	00:49:11,423	00:49:12,447	| IOT096a |	And pulling out together
+EDL	00:49:12,959	00:49:14,495	| IOT096a |	And looking at how those
+EDL	00:49:14,495	00:49:17,055	| IOT096a |	Integrated demand-side resources
+EDL	00:49:17,055	00:49:19,871	| IOT096a |	Fit into the whole transmission and distribution
+EDL	00:49:20,383	00:49:22,431	| IOT096a |	Infrastructure that's been around for a hundred years
+EDL	00:49:23,455	00:49:26,527	| IOT096a |	All right with Susan thank you so much for coming on the show today
+EDL	00:49:27,039	00:49:30,623	| IOT096a |	Thank you it's been a pleasure
+EDL	00:49:30,623	00:49:37,023	| IOT096a |	That's it for this week's podcast thank you for listening and if you want more Internet of Things news
+EDL	00:49:37,023	00:49:38,303	| IOT096a |	Sign up for my newsletter
+EDL	00:49:38,303	00:49:39,839	| IOT096a |	Tecidos Bank
+EDL	00:49:39,839	00:49:43,679	| IOT096a |	You can get it at Stacey on iot
+EDL	00:49:43,679	00:49:49,823	| IOT096a |	Come once again thanks for listening and we'll see you next week 

@@ -1,0 +1,1134 @@
+EDL	Record In	Record Out	Clipname	Subtitle
+EDL	00:00:08,704	00:00:13,056	| IOT102 |	Hey everyone welcome to the Internet of Things podcast this is your house Stacey Higginbotham
+EDL	00:00:14,848	00:00:16,640	| IOT102 |	Christy from CNET
+EDL	00:00:17,152	00:00:18,944	| IOT102 |	That's right we got right here
+EDL	00:00:18,944	00:00:19,712	| IOT102 |	Because Kevin is
+EDL	00:00:20,224	00:00:22,016	| IOT102 |	In California at the Google Cloud
+EDL	00:00:22,528	00:00:23,296	| IOT102 |	So
+EDL	00:00:23,296	00:00:25,600	| IOT102 |	Rai is going to be awesome with us today we are going to
+EDL	00:00:26,112	00:00:27,648	| IOT102 |	Have a message from our sponsor
+EDL	00:00:28,160	00:00:29,952	| IOT102 |	Spin dance talk about it training
+EDL	00:00:31,232	00:00:32,512	| IOT102 |	We're also going to have
+EDL	00:00:33,024	00:00:33,792	| IOT102 |	News
+EDL	00:00:33,792	00:00:36,864	| IOT102 |	Tons about things like the CIA hacking into television
+EDL	00:00:37,376	00:00:38,400	| IOT102 |	Amazon
+EDL	00:00:38,400	00:00:39,680	| IOT102 |	Update on that murder case
+EDL	00:00:40,448	00:00:42,496	| IOT102 |	Lots of rumors about Echo and things
+EDL	00:00:42,496	00:00:43,264	| IOT102 |	Become
+EDL	00:00:43,264	00:00:44,544	| IOT102 |	Some issues with Google home
+EDL	00:00:45,056	00:00:46,592	| IOT102 |	A new smart home Gateway
+EDL	00:00:46,592	00:00:48,128	| IOT102 |	Brand new first-time home
+EDL	00:00:48,896	00:00:50,432	| IOT102 |	My experience with
+EDL	00:00:50,432	00:00:51,200	| IOT102 |	Homekit
+EDL	00:00:51,200	00:00:54,528	| IOT102 |	And an update on my time with Lutron and SmartThings
+EDL	00:00:54,528	00:00:55,296	| IOT102 |	Things try to get that too
+EDL	00:00:56,320	00:00:57,600	| IOT102 |	Will also have
+EDL	00:00:57,600	00:00:59,904	| IOT102 |	An awesome guest Ross Harvey of the yield
+EDL	00:01:00,416	00:01:04,512	| IOT102 |	It's an agricultural company based in Australia and she talks about things like
+EDL	00:01:04,512	00:01:05,536	| IOT102 |	How did you
+EDL	00:01:05,536	00:01:06,048	| IOT102 |	Data-sharing
+EDL	00:01:06,816	00:01:07,840	| IOT102 |	And making money off of
+EDL	00:01:08,608	00:01:10,400	| IOT102 |	So it's got to be a good interview
+EDL	00:01:10,400	00:01:10,912	| IOT102 |	You stick around
+EDL	00:01:11,680	00:01:18,080	| IOT102 |	And now a message from our sponsor this week sponsor is Wolf SSL
+EDL	00:01:18,080	00:01:24,480	| IOT102 |	The world's top 5 Industrial Automation companies use SSL to secure everything from Factory floor
+EDL	00:01:24,480	00:01:30,880	| IOT102 |	Devices to their power beaters and they aren't alone
+EDL	00:01:30,880	00:01:34,464	| IOT102 |	Including Automotive
+EDL	00:01:34,464	00:01:35,744	| IOT102 |	Connected home
+EDL	00:01:35,744	00:01:36,768	| IOT102 |	Industrial
+EDL	00:01:36,768	00:01:38,304	| IOT102 |	Military and medical device
+EDL	00:01:38,304	00:01:42,144	| IOT102 |	Places with the Mirai botnet and the growing threat of ransomware attacks on the
+EDL	00:01:42,144	00:01:44,448	| IOT102 |	The Internet of Things companies have to pay attention to
+EDL	00:01:44,448	00:01:45,984	| IOT102 |	UTI medication
+EDL	00:01:45,984	00:01:48,288	| IOT102 |	Bad PR and their brand value
+EDL	00:01:48,288	00:01:49,824	| IOT102 |	Securing the iot
+EDL	00:01:49,824	00:01:53,664	| IOT102 |	It's hard but wolf SSL has experienced a specialized
+EDL	00:01:53,664	00:01:57,504	| IOT102 |	Expertise to help
+EDL	00:01:57,504	00:02:01,600	| IOT102 |	To find out more visit wolf ssl.com
+EDL	00:02:02,112	00:02:03,392	| IOT102 |	Well let's just get right into
+EDL	00:02:03,904	00:02:04,416	| IOT102 |	Because
+EDL	00:02:05,184	00:02:05,696	| IOT102 |	Got a lot of new
+EDL	00:02:06,720	00:02:08,256	| IOT102 |	So first up that everyone
+EDL	00:02:08,256	00:02:08,768	| IOT102 |	Probably think
+EDL	00:02:09,536	00:02:10,304	| IOT102 |	Is
+EDL	00:02:10,304	00:02:11,584	| IOT102 |	The CIA
+EDL	00:02:11,584	00:02:12,096	| IOT102 |	Hacking
+EDL	00:02:12,608	00:02:15,680	| IOT102 |	Well all kinds of stuff so they were Revelations this week that the
+EDL	00:02:17,216	00:02:18,496	| IOT102 |	He has a program to hack
+EDL	00:02:19,264	00:02:20,032	| IOT102 |	Smart TVs
+EDL	00:02:21,056	00:02:22,592	| IOT102 |	And a bunch of other devices
+EDL	00:02:22,592	00:02:24,640	| IOT102 |	And I thought of this and I was like oh my God
+EDL	00:02:25,408	00:02:28,992	| IOT102 |	Yes it is true that I thought it was the NSA but it's really the CIA
+EDL	00:02:28,992	00:02:29,504	| IOT102 |	Probably listening
+EDL	00:02:30,528	00:02:32,576	| IOT102 |	So what do you think about this guy
+EDL	00:02:34,880	00:02:36,416	| IOT102 |	I think that
+EDL	00:02:36,928	00:02:41,280	| IOT102 |	As long as you got cameras on our phones and microphones on our phones and computers and
+EDL	00:02:44,608	00:02:48,448	| IOT102 |	Stability idea of cameras and microphones on their body and their home
+EDL	00:02:55,104	00:02:55,872	| IOT102 |	Smart model
+EDL	00:02:55,872	00:02:56,896	| IOT102 |	But
+EDL	00:02:57,664	00:02:59,200	| IOT102 |	Tortas Ya
+EDL	00:02:59,200	00:02:59,968	| IOT102 |	Not just a Samsung
+EDL	00:03:00,992	00:03:03,040	| IOT102 |	Specific
+EDL	00:03:05,088	00:03:05,856	| IOT102 |	Confirmed
+EDL	00:03:05,856	00:03:08,672	| IOT102 |	La Santa Cecilia isn't confirming anything but
+EDL	00:03:08,672	00:03:11,488	| IOT102 |	I don't think it's a stretch to assume that the CIA is going to
+EDL	00:03:11,488	00:03:14,304	| IOT102 |	Microphones in
+EDL	00:03:14,304	00:03:18,400	| IOT102 |	Cameras inside
+EDL	00:03:19,680	00:03:25,568	| IOT102 |	Probably
+EDL	00:03:25,568	00:03:27,360	| IOT102 |	Cameras and microphones in their home in general
+EDL	00:03:29,920	00:03:31,456	| IOT102 |	Because I think the
+EDL	00:03:32,736	00:03:35,296	| IOT102 |	So I don't know that there are really strong guidelines
+EDL	00:03:35,296	00:03:36,832	| IOT102 |	People are aware of the people
+EDL	00:03:36,832	00:03:41,952	| IOT102 |	When it comes to devices in their home and in what the government is capable of what
+EDL	00:03:43,744	00:03:45,536	| IOT102 |	Just got a new frontier that
+EDL	00:03:45,536	00:03:46,816	| IOT102 |	People are figuring out as they go
+EDL	00:03:47,328	00:03:50,656	| IOT102 |	That hasn't dissuaded people from buying devices that have microphones and cameras
+EDL	00:03:53,472	00:03:54,496	| IOT102 |	I would remind people
+EDL	00:03:55,008	00:03:56,800	| IOT102 |	Not to commit crimes
+EDL	00:03:56,800	00:03:59,872	| IOT102 |	In front of their Amazon Echo or they're smart television
+EDL	00:04:00,640	00:04:01,920	| IOT102 |	For example
+EDL	00:04:02,432	00:04:05,248	| IOT102 |	There is the case of we brought this up before
+EDL	00:04:05,248	00:04:06,272	| IOT102 |	Cut the hot tub murder
+EDL	00:04:07,040	00:04:07,808	| IOT102 |	Scandalous
+EDL	00:04:08,320	00:04:12,416	| IOT102 |	This is a murder investigation actually that the police
+EDL	00:04:12,928	00:04:14,464	| IOT102 |	They were seeking the suspects
+EDL	00:04:14,464	00:04:18,303	| IOT102 |	Amazon Echo files because they wanted to understand who was in the home
+EDL	00:04:19,071	00:04:19,839	| IOT102 |	At the time
+EDL	00:04:20,351	00:04:21,887	| IOT102 |	And Amazon was fighting this
+EDL	00:04:22,399	00:04:23,935	| IOT102 |	Which good for them rightly so
+EDL	00:04:24,703	00:04:27,263	| IOT102 |	Saying it was over reach there other ways to get that info
+EDL	00:04:27,263	00:04:28,031	| IOT102 |	Formation
+EDL	00:04:28,031	00:04:28,543	| IOT102 |	And
+EDL	00:04:29,055	00:04:29,567	| IOT102 |	What happened
+EDL	00:04:30,079	00:04:31,871	| IOT102 |	Now is that
+EDL	00:04:32,383	00:04:34,687	| IOT102 |	Suspect basically agreed to let Amazon
+EDL	00:04:34,687	00:04:35,455	| IOT102 |	Pass those files
+EDL	00:04:36,479	00:04:37,247	| IOT102 |	So
+EDL	00:04:37,247	00:04:42,623	| IOT102 |	The good news is Amazon was really into fight the bad news is we don't actually we're not going to get a legal opinion anytime
+EDL	00:04:42,623	00:04:43,135	| IOT102 |	Time soon
+EDL	00:04:43,647	00:04:44,159	| IOT102 |	Weather this is
+EDL	00:04:45,183	00:04:46,975	| IOT102 |	Prosecutorial overreach or
+EDL	00:04:47,743	00:04:48,255	| IOT102 |	Legit
+EDL	00:04:49,535	00:04:51,583	| IOT102 |	What's a really good point I think and
+EDL	00:04:52,863	00:04:54,143	| IOT102 |	Sort of interesting
+EDL	00:04:54,143	00:04:55,935	| IOT102 |	In terms of
+EDL	00:04:55,935	00:04:58,495	| IOT102 |	Didn't hear you know that Amazon was going to turn it over after
+EDL	00:04:58,495	00:04:59,775	| IOT102 |	Suspect gave the okay
+EDL	00:04:59,775	00:05:05,407	| IOT102 |	I wonder if the conspiracy theorist in my young
+EDL	00:05:05,407	00:05:07,967	| IOT102 |	Could someone use the Amazon Echo to create an alibi
+EDL	00:05:07,967	00:05:14,367	| IOT102 |	You know could you sort of second voice command remotely or something somehow trick the echo to thinking that your home while you're out committing a crime and
+EDL	00:05:14,367	00:05:16,927	| IOT102 |	And tell the police
+EDL	00:05:16,927	00:05:17,439	| IOT102 |	Turn the lights off
+EDL	00:05:17,951	00:05:19,487	| IOT102 |	Go ahead Amazon show
+EDL	00:05:19,487	00:05:23,071	| IOT102 |	So I guess it's interesting
+EDL	00:05:23,071	00:05:25,375	| IOT102 |	Tac being kind of ahead of where the zeitgeist
+EDL	00:05:26,143	00:05:27,935	| IOT102 |	I like the way
+EDL	00:05:30,239	00:05:30,751	| IOT102 |	Oh
+EDL	00:05:31,519	00:05:34,591	| IOT102 |	Alright on the topic of the Echo Man
+EDL	00:05:34,591	00:05:36,127	| IOT102 |	Are worse
+EDL	00:05:36,127	00:05:36,895	| IOT102 |	Medi
+EDL	00:05:36,895	00:05:37,407	| IOT102 |	Rumors
+EDL	00:05:39,711	00:05:40,991	| IOT102 |	You actually put out
+EDL	00:05:45,343	00:05:46,623	| IOT102 |	Moments of brilliance
+EDL	00:05:46,623	00:05:48,415	| IOT102 |	We'll call it this is the Amazon tap
+EDL	00:05:48,927	00:05:50,463	| IOT102 |	No longer being
+EDL	00:05:50,463	00:05:52,255	| IOT102 |	Red-headed stepchild of the
+EDL	00:05:52,255	00:05:52,767	| IOT102 |	Echo family
+EDL	00:05:53,535	00:05:57,119	| IOT102 |	And so I'm assuming you're talking about
+EDL	00:05:57,631	00:05:59,679	| IOT102 |	And take it with you and still be able to
+EDL	00:06:00,191	00:06:00,959	| IOT102 |	Hands-free
+EDL	00:06:00,959	00:06:01,471	| IOT102 |	Chatting to
+EDL	00:06:02,239	00:06:03,263	| IOT102 |	Yeah yeah
+EDL	00:06:09,919	00:06:10,687	| IOT102 |	Point spread
+EDL	00:06:10,687	00:06:12,735	| IOT102 |	Before you couldn't even
+EDL	00:06:12,735	00:06:16,575	| IOT102 |	Activated remotely
+EDL	00:06:19,391	00:06:20,671	| IOT102 |	Now you can say
+EDL	00:06:20,671	00:06:26,559	| IOT102 |	Awkward wake it up and use it just like an echo
+EDL	00:06:26,559	00:06:31,679	| IOT102 |	I'm not quite as strong as the echo is
+EDL	00:06:31,679	00:06:34,495	| IOT102 |	So as a middle ground between those two
+EDL	00:06:38,335	00:06:44,479	| IOT102 |	You can't do with the echo or the echo. I think it's going to be a pretty intriguing option going for it I'm kind of curious to see what happen
+EDL	00:06:46,783	00:06:51,647	| IOT102 |	People get the memo that that the are the top in a lot better now and will see it'll be interesting
+EDL	00:06:52,159	00:06:52,927	| IOT102 |	So
+EDL	00:06:52,927	00:06:57,279	| IOT102 |	Now this raises the question should I buy a tap which cuz I I feel like my home
+EDL	00:07:00,095	00:07:01,119	| IOT102 |	I don't have enough of them
+EDL	00:07:01,631	00:07:03,167	| IOT102 |	So I'm like should I buy the
+EDL	00:07:03,167	00:07:04,447	| IOT102 |	Or should I hang
+EDL	00:07:04,447	00:07:06,495	| IOT102 |	Tight for a little bit because rumors last
+EDL	00:07:07,007	00:07:09,311	| IOT102 |	Where the Amazons going to unveil some
+EDL	00:07:09,823	00:07:11,871	| IOT102 |	She Who Shall Not Be Named power devices
+EDL	00:07:12,639	00:07:14,687	| IOT102 |	That will allow you to initiate
+EDL	00:07:14,687	00:07:15,455	| IOT102 |	Calls using Voice
+EDL	00:07:15,967	00:07:18,015	| IOT102 |	And it could also work as an intercom
+EDL	00:07:18,015	00:07:18,783	| IOT102 |	Comp system
+EDL	00:07:18,783	00:07:19,807	| IOT102 |	And this is from Rico
+EDL	00:07:20,575	00:07:23,903	| IOT102 |	And I'll be honest I was actually following the story so I
+EDL	00:07:24,415	00:07:25,183	| IOT102 |	Believe that this is
+EDL	00:07:25,695	00:07:26,207	| IOT102 |	Totally accurate
+EDL	00:07:26,719	00:07:27,231	| IOT102 |	So
+EDL	00:07:28,255	00:07:29,279	| IOT102 |	Should people wait
+EDL	00:07:31,327	00:07:32,863	| IOT102 |	That's a good question
+EDL	00:07:34,911	00:07:36,191	| IOT102 |	Especially if I already had him
+EDL	00:07:36,191	00:07:40,543	| IOT102 |	Echo or Echo dot access to Amazon cloud services
+EDL	00:07:40,543	00:07:43,615	| IOT102 |	I'll be stealing at my home with extra devices
+EDL	00:07:43,615	00:07:44,895	| IOT102 |	Just right now it's just
+EDL	00:07:45,407	00:07:46,943	| IOT102 |	Kind of the perfect
+EDL	00:07:46,943	00:07:47,967	| IOT102 |	Bad time to do it
+EDL	00:07:47,967	00:07:49,759	| IOT102 |	Because there are so many rumors out there
+EDL	00:07:51,807	00:07:53,599	| IOT102 |	Beltone call functionality rumors
+EDL	00:07:53,599	00:07:58,207	| IOT102 |	Also talk of media camera
+EDL	00:07:58,207	00:08:03,071	| IOT102 |	That might be voice activated in some way there was a week images that someone found
+EDL	00:08:03,071	00:08:06,911	| IOT102 |	Lycoming through Amazon.com of a camera that looks a little bit like
+EDL	00:08:06,911	00:08:08,959	| IOT102 |	The canary Flex a little table top camera
+EDL	00:08:08,959	00:08:12,799	| IOT102 |	With a very familiar blue ring around the lens so
+EDL	00:08:13,823	00:08:14,591	| IOT102 |	Yeah I don't know that
+EDL	00:08:15,103	00:08:17,663	| IOT102 |	We're going to want to rush into a product like that that is so
+EDL	00:08:17,663	00:08:18,943	| IOT102 |	ISO camera Focus
+EDL	00:08:18,943	00:08:23,807	| IOT102 |	Especially in light of everything going on in the news so different
+EDL	00:08:23,807	00:08:25,343	| IOT102 |	Expand what they've done so far
+EDL	00:08:25,343	00:08:28,927	| IOT102 |	And I will have a fun time seeing what actually comes to comes to life
+EDL	00:08:29,439	00:08:30,463	| IOT102 |	What are your
+EDL	00:08:30,463	00:08:31,231	| IOT102 |	Favorite features
+EDL	00:08:31,999	00:08:32,767	| IOT102 |	I'm assuming
+EDL	00:08:34,303	00:08:40,703	| IOT102 |	I do yeah yeah I was one of the lucky ones that got one of the discounted ones in the very beginning at 7 to pay tobruk
+EDL	00:08:40,703	00:08:41,727	| IOT102 |	Yeah I was so happy
+EDL	00:08:43,007	00:08:44,287	| IOT102 |	Iran time I felt like I was a winner
+EDL	00:08:48,127	00:08:51,967	| IOT102 |	Turn lights on and off my lifx bulbs that work really well with it
+EDL	00:08:51,967	00:08:58,367	| IOT102 |	Check the weather every morning on my way out the door you know I ask for music all the time through Spotify
+EDL	00:08:58,367	00:08:59,647	| IOT102 |	It's just a convenient
+EDL	00:08:59,647	00:09:01,439	| IOT102 |	Neat little piece of the future
+EDL	00:09:01,439	00:09:03,487	| IOT102 |	But yeah there's definitely a lot more of that
+EDL	00:09:03,487	00:09:09,887	| IOT102 |	It could do and I'm kind of excited to see what comes there could be some really big steps
+EDL	00:09:09,887	00:09:10,655	| IOT102 |	Olympics
+EDL	00:09:10,655	00:09:12,959	| IOT102 |	The intercom feature because
+EDL	00:09:12,959	00:09:14,495	| IOT102 |	We put things around the house
+EDL	00:09:15,007	00:09:16,543	| IOT102 |	I guess I have to re-up my
+EDL	00:09:18,847	00:09:19,615	| IOT102 |	Speaking of hard
+EDL	00:09:20,127	00:09:24,991	| IOT102 |	Since we're talking about these with Bruce Sterling once on my podcast called talking donkeys
+EDL	00:09:24,991	00:09:25,759	| IOT102 |	I kind of like that phrase
+EDL	00:09:28,575	00:09:29,343	| IOT102 |	Google home
+EDL	00:09:30,111	00:09:32,671	| IOT102 |	I don't know if you have one but I do and it stopped
+EDL	00:09:32,671	00:09:33,439	| IOT102 |	Working for me this week
+EDL	00:09:34,207	00:09:38,559	| IOT102 |	I went over to CNET and lo and behold they had a lovely story explaining that I was not alone
+EDL	00:09:39,327	00:09:40,863	| IOT102 |	That other people were having this issue
+EDL	00:09:44,959	00:09:50,847	| IOT102 |	First came out and then I didn't feel the need to pick up a Google home but we do have
+EDL	00:09:50,847	00:09:52,383	| IOT102 |	Peanut smart home as well
+EDL	00:09:52,383	00:09:56,479	| IOT102 |	Places about
+EDL	00:09:56,479	00:10:00,319	| IOT102 |	Difficulties with Google home that it kind of been bubbling the last month or so
+EDL	00:10:00,319	00:10:05,695	| IOT102 |	Especially with Google home controlling Philips hue light bulbs I'm not sure if you were using it for that in your home
+EDL	00:10:05,695	00:10:06,719	| IOT102 |	People that
+EDL	00:10:06,719	00:10:07,743	| IOT102 |	Work
+EDL	00:10:07,743	00:10:10,047	| IOT102 |	That have no problems with the Google home otherwise
+EDL	00:10:10,047	00:10:14,399	| IOT102 |	Or just totally unable to control their lights is really weird
+EDL	00:10:15,679	00:10:16,447	| IOT102 |	Performer when it comes
+EDL	00:10:16,447	00:10:18,495	| IOT102 |	Smart lighting so that that was sort of
+EDL	00:10:18,495	00:10:19,007	| IOT102 |	Eyebrows
+EDL	00:10:19,519	00:10:20,031	| IOT102 |	Verizon
+EDL	00:10:21,823	00:10:24,895	| IOT102 |	Because we're not able to replicate the issue on our end
+EDL	00:10:24,895	00:10:26,431	| IOT102 |	Able to confirm that sun
+EDL	00:10:26,431	00:10:27,711	| IOT102 |	Users are crazy
+EDL	00:10:28,223	00:10:30,271	| IOT102 |	How cold is right now and just put only tell us that they're working on
+EDL	00:10:31,039	00:10:34,367	| IOT102 |	I am one of those users who had issues and
+EDL	00:10:34,367	00:10:35,391	| IOT102 |	Actually last
+EDL	00:10:35,391	00:10:35,903	| IOT102 |	For 2 days
+EDL	00:10:37,183	00:10:38,463	| IOT102 |	These cloud dependencies
+EDL	00:10:38,975	00:10:40,767	| IOT102 |	A huge number
+EDL	00:10:40,767	00:10:41,535	| IOT102 |	People listen to the shower
+EDL	00:10:42,303	00:10:44,863	| IOT102 |	Probably right now are gleefully playing it
+EDL	00:10:47,935	00:10:51,775	| IOT102 |	So it was remarkably opaque and that was actually really frustrating
+EDL	00:10:52,287	00:10:52,799	| IOT102 |	As a user
+EDL	00:10:53,311	00:10:55,359	| IOT102 |	Because I did go online and I saw a lake
+EDL	00:10:56,127	00:10:56,895	| IOT102 |	I saw it
+EDL	00:10:56,895	00:10:58,943	| IOT102 |	Couple issues but Google's help was not
+EDL	00:11:00,223	00:11:00,735	| IOT102 |	So
+EDL	00:11:02,015	00:11:02,527	| IOT102 |	What is happening
+EDL	00:11:03,807	00:11:05,855	| IOT102 |	Yeah I know I think that the frustration
+EDL	00:11:05,855	00:11:10,463	| IOT102 |	People have a really telling the really indicative of how much people enjoy and
+EDL	00:11:10,463	00:11:11,743	| IOT102 |	Come to rely on using
+EDL	00:11:11,743	00:11:13,023	| IOT102 |	Voice control Platforms in their home
+EDL	00:11:19,935	00:11:22,751	| IOT102 |	Unplugging the router and plugging it back in
+EDL	00:11:30,943	00:11:36,319	| IOT102 |	And they've already come this thing that you know when the clock goes down to get frustrated but that's just sort of the way it is
+EDL	00:11:36,831	00:11:38,367	| IOT102 |	I don't know that makes Amazon like
+EDL	00:11:38,367	00:11:41,695	| IOT102 |	Time Warner Cable cable company of the future but but we'll see
+EDL	00:11:43,231	00:11:43,999	| IOT102 |	I think there's
+EDL	00:11:45,023	00:11:46,559	| IOT102 |	Actually this spring.
+EDL	00:11:47,071	00:11:48,607	| IOT102 |	So I have a question for you
+EDL	00:11:49,119	00:11:51,167	| IOT102 |	Because my Google home is in my master bath
+EDL	00:11:51,679	00:11:53,215	| IOT102 |	And I love talking to it when
+EDL	00:11:53,215	00:11:53,727	| IOT102 |	When I'm in the shower
+EDL	00:11:54,495	00:11:55,263	| IOT102 |	Play music
+EDL	00:11:55,263	00:11:56,543	| IOT102 |	What's the weather for the day
+EDL	00:11:57,311	00:11:59,103	| IOT102 |	News for the day all of this stuff
+EDL	00:11:59,615	00:12:01,663	| IOT102 |	It was kind of chilly here
+EDL	00:12:01,663	00:12:02,431	| IOT102 |	And I was
+EDL	00:12:02,431	00:12:03,199	| IOT102 |	Oh
+EDL	00:12:03,199	00:12:04,735	| IOT102 |	I should totally hook up
+EDL	00:12:04,735	00:12:06,783	| IOT102 |	My little shower heaters
+EDL	00:12:06,783	00:12:07,551	| IOT102 |	Have a little
+EDL	00:12:07,551	00:12:09,599	| IOT102 |	Heater light heater fan thing
+EDL	00:12:09,599	00:12:10,111	| IOT102 |	For my
+EDL	00:12:11,647	00:12:14,463	| IOT102 |	I forgot to turn it on and I was like I'm not getting out of the shower
+EDL	00:12:14,975	00:12:15,743	| IOT102 |	Water everywhere is like
+EDL	00:12:16,767	00:12:18,047	| IOT102 |	Slightly warmer bathroom
+EDL	00:12:18,047	00:12:18,815	| IOT102 |	When I get out but
+EDL	00:12:20,863	00:12:24,447	| IOT102 |	This is a perfect use case for the smart home because I can be there and say
+EDL	00:12:24,959	00:12:25,727	| IOT102 |	Google turn on
+EDL	00:12:28,543	00:12:29,311	| IOT102 |	What
+EDL	00:12:29,311	00:12:31,359	| IOT102 |	Do you recommend or are there
+EDL	00:12:33,151	00:12:36,223	| IOT102 |	Switches cuz I I don't want to stick like a normal switch on my
+EDL	00:12:36,223	00:12:38,527	| IOT102 |	Heater fan because I feel like that's probably a different
+EDL	00:12:39,039	00:12:40,063	| IOT102 |	Different device
+EDL	00:12:40,063	00:12:42,623	| IOT102 |	Do you have any recommendations there any knowledge about
+EDL	00:12:45,439	00:12:46,975	| IOT102 |	I got Standalone Appliance
+EDL	00:12:46,975	00:12:49,535	| IOT102 |	Heater that you plug in or is it true
+EDL	00:12:51,583	00:12:52,095	| IOT102 |	It's in the ceiling
+EDL	00:12:53,119	00:12:54,143	| IOT102 |	If you hit the button on a little
+EDL	00:12:54,655	00:12:55,167	| IOT102 |	Warming sand
+EDL	00:12:57,215	00:12:59,775	| IOT102 |	It's just a basic on off switch
+EDL	00:13:03,871	00:13:09,503	| IOT102 |	You can use a Smart Switch to turn a ceiling fan
+EDL	00:13:09,503	00:13:10,271	| IOT102 |	Smart Switch
+EDL	00:13:10,783	00:13:12,575	| IOT102 |	Should be able to handle so you can use
+EDL	00:13:12,575	00:13:13,855	| IOT102 |	Belkin WeMo light switch
+EDL	00:13:14,367	00:13:16,415	| IOT102 |	Pretty sure is Google home compatible
+EDL	00:13:16,415	00:13:19,231	| IOT102 |	Imo's products and
+EDL	00:13:19,231	00:13:20,767	| IOT102 |	A lot of smart switches coming out this
+EDL	00:13:20,767	00:13:24,095	| IOT102 |	CES in January
+EDL	00:13:24,095	00:13:29,727	| IOT102 |	So I'll ask him more often hopefully the coming months but right now if you want to do it I'd say Just Go With It WeMo light switch
+EDL	00:13:30,239	00:13:31,775	| IOT102 |	OC I was going to go with
+EDL	00:13:32,287	00:13:33,567	| IOT102 |	Can I go with the Lutron
+EDL	00:13:33,567	00:13:34,335	| IOT102 |	But that's just
+EDL	00:13:36,127	00:13:36,895	| IOT102 |	Okay
+EDL	00:13:36,895	00:13:38,943	| IOT102 |	But we were almost getting ahead of ourselves
+EDL	00:13:39,455	00:13:40,479	| IOT102 |	Is the Segway Direction
+EDL	00:13:40,479	00:13:40,991	| IOT102 |	You guys
+EDL	00:13:41,503	00:13:42,271	| IOT102 |	All right
+EDL	00:13:42,783	00:13:44,319	| IOT102 |	Before we go into some Lutron stuff
+EDL	00:13:44,831	00:13:47,135	| IOT102 |	Jesus has a new smart home Gateway
+EDL	00:13:47,903	00:13:51,487	| IOT102 |	And I looked at this and the first thing I saw was it didn't have
+EDL	00:13:51,487	00:13:52,255	| IOT102 |	Z-Wave in it
+EDL	00:13:52,767	00:13:53,279	| IOT102 |	And I was sad
+EDL	00:13:53,791	00:13:54,303	| IOT102 |	Because I have a lot of
+EDL	00:13:55,327	00:13:56,095	| IOT102 |	Running around the house
+EDL	00:13:56,095	00:13:57,631	| IOT102 |	And I also looked at it
+EDL	00:13:57,631	00:14:00,191	| IOT102 |	Said holy cow it is a ring of
+EDL	00:14:00,703	00:14:03,263	| IOT102 |	Light it looks like that GE Echo Power
+EDL	00:14:03,775	00:14:04,287	| IOT102 |	Latex
+EDL	00:14:11,711	00:14:14,783	| IOT102 |	See I don't know I feel like it's it looks a little too futuristic to go in my
+EDL	00:14:15,295	00:14:16,575	| IOT102 |	It's not it's not a devices
+EDL	00:14:18,623	00:14:19,391	| IOT102 |	Yeah
+EDL	00:14:19,391	00:14:23,231	| IOT102 |	Yeah I think that's a good point and I think that's smart
+EDL	00:14:23,743	00:14:25,023	| IOT102 |	Figured out that line
+EDL	00:14:25,023	00:14:25,791	| IOT102 |	Certo
+EDL	00:14:25,791	00:14:28,351	| IOT102 |	Between futuristic and inconspicuous
+EDL	00:14:29,375	00:14:30,911	| IOT102 |	Probably in Arizona
+EDL	00:14:30,911	00:14:33,727	| IOT102 |	Besides I think some people like Tech like that and some people don't
+EDL	00:14:34,239	00:14:36,287	| IOT102 |	And you know it's the type of thing that
+EDL	00:14:36,799	00:14:41,151	| IOT102 |	I think you could probably just hide behind your TV or wherever if you don't like the look of it
+EDL	00:14:41,151	00:14:42,687	| IOT102 |	But yeah
+EDL	00:14:43,711	00:14:45,247	| IOT102 |	Dimensions of it but that ring
+EDL	00:14:45,247	00:14:46,271	| IOT102 |	Looks looks
+EDL	00:14:46,271	00:14:47,807	| IOT102 |	Pretty sizable as far as how to go
+EDL	00:14:48,319	00:14:50,879	| IOT102 |	It looks so it's right next to in their Press paper
+EDL	00:14:50,879	00:14:52,159	| IOT102 |	It's right next to
+EDL	00:14:52,159	00:14:53,695	| IOT102 |	What they done is they've launched
+EDL	00:14:53,695	00:14:54,207	| IOT102 |	The Gateway
+EDL	00:14:54,719	00:14:55,743	| IOT102 |	And I should give you
+EDL	00:14:55,743	00:14:58,559	| IOT102 |	Spax its support zigbee Bluetooth and WiFi
+EDL	00:14:59,071	00:15:01,119	| IOT102 |	It manages all of the other Asus Smart Home
+EDL	00:15:01,631	00:15:04,447	| IOT102 |	Isis soda can Outlets I got some sensors that got blocked
+EDL	00:15:05,215	00:15:06,495	| IOT102 |	The guy that looks like a siren
+EDL	00:15:07,007	00:15:09,311	| IOT102 |	And the Gateway is probably the size of their lot
+EDL	00:15:13,407	00:15:16,479	| IOT102 |	And these are going to be launched on March 16
+EDL	00:15:16,479	00:15:17,503	| IOT102 |	So not quite
+EDL	00:15:18,015	00:15:18,783	| IOT102 |	There yet
+EDL	00:15:20,575	00:15:21,343	| IOT102 |	I kind of feel like
+EDL	00:15:21,855	00:15:24,415	| IOT102 |	Dear God do we need another
+EDL	00:15:25,183	00:15:31,583	| IOT102 |	The first criticisms a lot of people will think of when they see it you know we already have
+EDL	00:15:31,583	00:15:33,119	| IOT102 |	Several houses that are pretty well established
+EDL	00:15:33,631	00:15:34,655	| IOT102 |	Point you know I think
+EDL	00:15:34,655	00:15:37,215	| IOT102 |	Got a hard time catching up with wink and SmartThings
+EDL	00:15:37,215	00:15:40,287	| IOT102 |	Not there for a while
+EDL	00:15:41,055	00:15:43,359	| IOT102 |	Things you can do with it
+EDL	00:15:43,359	00:15:49,759	| IOT102 |	This point is going to be a market mover I think people are looking for more devices and more things that can do things and actually have a tangible
+EDL	00:15:49,759	00:15:50,783	| IOT102 |	Experience in their home
+EDL	00:15:50,783	00:15:52,575	| IOT102 |	As opposed to devices that just
+EDL	00:15:52,575	00:15:53,087	| IOT102 |	Can control
+EDL	00:15:58,207	00:15:59,487	| IOT102 |	But I don't know if you need
+EDL	00:15:59,487	00:16:04,863	| IOT102 |	Give a little bit
+EDL	00:16:04,863	00:16:07,167	| IOT102 |	Now I will say I think this would be cool
+EDL	00:16:07,167	00:16:09,471	| IOT102 |	So Jesus also announce this was
+EDL	00:16:09,471	00:16:10,495	| IOT102 |	Hcso
+EDL	00:16:10,495	00:16:11,007	| IOT102 |	Xxv
+EDL	00:16:12,543	00:16:14,079	| IOT102 |	Robots
+EDL	00:16:14,591	00:16:15,359	| IOT102 |	Zhengzhou
+EDL	00:16:15,359	00:16:17,919	| IOT102 |	And that's actually being produced
+EDL	00:16:17,919	00:16:19,199	| IOT102 |	You can actually buy it it's a
+EDL	00:16:19,199	00:16:20,991	| IOT102 |	It's like $600 but
+EDL	00:16:20,991	00:16:26,623	| IOT102 |	This is supposed to be a smart home robot and I think if you stuck all the smarts that are in the Gateway
+EDL	00:16:26,623	00:16:27,903	| IOT102 |	Is it also does robot
+EDL	00:16:28,415	00:16:28,927	| IOT102 |	Things like
+EDL	00:16:29,439	00:16:31,487	| IOT102 |	Talk to your kids and reach them
+EDL	00:16:31,487	00:16:31,999	| IOT102 |	Dancing
+EDL	00:16:32,767	00:16:34,559	| IOT102 |	Headed back companion robot idea
+EDL	00:16:37,375	00:16:38,655	| IOT102 |	Crazy expensive
+EDL	00:16:38,655	00:16:40,703	| IOT102 |	Compared to like just by spending like $100 on
+EDL	00:16:42,751	00:16:45,823	| IOT102 |	I don't know I'm like everything in a hug
+EDL	00:16:45,823	00:16:46,847	| IOT102 |	In a robot
+EDL	00:16:48,895	00:16:50,687	| IOT102 |	We saw a couple things like that
+EDL	00:16:50,687	00:16:52,991	| IOT102 |	CES this year I I don't know I think
+EDL	00:16:53,503	00:16:54,527	| IOT102 |	I think that idea
+EDL	00:16:56,831	00:16:57,599	| IOT102 |	Very nips
+EDL	00:16:57,599	00:17:00,927	| IOT102 |	Very much like a very specific kind of product
+EDL	00:17:00,927	00:17:02,463	| IOT102 |	A lot of people
+EDL	00:17:02,463	00:17:03,999	| IOT102 |	Wouldn't necessarily want
+EDL	00:17:03,999	00:17:05,535	| IOT102 |	And there's any practical sort of
+EDL	00:17:06,047	00:17:09,119	| IOT102 |	Questions about that informs of how to get rid your home of the upstairs
+EDL	00:17:09,119	00:17:13,471	| IOT102 |	What you step on it what if your dog plays with it
+EDL	00:17:17,823	00:17:18,591	| IOT102 |	Pinchos
+EDL	00:17:18,591	00:17:19,359	| IOT102 |	I like that you were the
+EDL	00:17:19,871	00:17:20,383	| IOT102 |	Practicality
+EDL	00:17:22,175	00:17:22,943	| IOT102 |	All right
+EDL	00:17:22,943	00:17:23,711	| IOT102 |	If you knew
+EDL	00:17:23,711	00:17:24,223	| IOT102 |	Small pieces
+EDL	00:17:24,991	00:17:26,783	| IOT102 |	Your Nest Thermostat now has two Factor
+EDL	00:17:28,319	00:17:29,087	| IOT102 |	To which I say
+EDL	00:17:30,623	00:17:32,415	| IOT102 |	I mean it is good from a security
+EDL	00:17:32,415	00:17:35,999	| IOT102 |	Prospective anytime you log in you're going to get two-factor you have the option of having to pee
+EDL	00:17:36,767	00:17:41,631	| IOT102 |	But if I'm thinking about looking into all the devices in my house that I'm constantly logging in and out of four
+EDL	00:17:42,143	00:17:43,935	| IOT102 |	Testing purposes or just
+EDL	00:17:43,935	00:17:45,215	| IOT102 |	Something glitches out
+EDL	00:17:45,215	00:17:45,727	| IOT102 |	I'm kind of like
+EDL	00:17:46,751	00:17:47,519	| IOT102 |	Okay
+EDL	00:17:47,519	00:17:48,031	| IOT102 |	That's a lot
+EDL	00:17:49,823	00:17:51,359	| IOT102 |	And that ride you got
+EDL	00:17:51,359	00:17:51,871	| IOT102 |	Adelaine camera
+EDL	00:17:54,943	00:18:00,063	| IOT102 |	Homekit compatible camera that will actually show you the seed directly in apple
+EDL	00:18:00,063	00:18:01,087	| IOT102 |	On your iPhone
+EDL	00:18:01,599	00:18:03,391	| IOT102 |	Onyx the D-Link omna
+EDL	00:18:03,391	00:18:05,695	| IOT102 |	Which is just a freshly out
+EDL	00:18:06,207	00:18:10,047	| IOT102 |	Reviews from
+EDL	00:18:10,047	00:18:11,071	| IOT102 |	Who's our camera crew
+EDL	00:18:11,583	00:18:13,631	| IOT102 |	And she wasn't totally whatever
+EDL	00:18:13,631	00:18:16,447	| IOT102 |	Appreciated The View
+EDL	00:18:16,447	00:18:20,799	| IOT102 |	Has a lot of the basic features done right but it was shocking
+EDL	00:18:20,799	00:18:22,847	| IOT102 |	To me at least that there weren't more
+EDL	00:18:22,847	00:18:24,895	| IOT102 |	Interesting things you can do with it because of the whole cake
+EDL	00:18:25,663	00:18:27,455	| IOT102 |	You can't even pull up the Apple
+EDL	00:18:27,455	00:18:28,479	| IOT102 |	Apple TV app
+EDL	00:18:28,479	00:18:28,991	| IOT102 |	Have to watch this
+EDL	00:18:29,503	00:18:30,527	| IOT102 |	You can do that with an s
+EDL	00:18:31,039	00:18:36,927	| IOT102 |	But this isn't the first Apple TV
+EDL	00:18:37,439	00:18:41,535	| IOT102 |	You can't do a whole lot of things of it through home I think it just would have revealed that homekit
+EDL	00:18:41,535	00:18:42,815	| IOT102 |	Despite having taken
+EDL	00:18:42,815	00:18:44,607	| IOT102 |	Next step forward in the last 6 months
+EDL	00:18:44,607	00:18:46,399	| IOT102 |	I still have work to do
+EDL	00:18:46,399	00:18:51,775	| IOT102 |	Interesting experience that makes
+EDL	00:18:52,287	00:18:56,127	| IOT102 |	Awesome and we'll talk about that in a minute but first we're going to talk about IBM and Salesforce
+EDL	00:18:56,895	00:18:57,663	| IOT102 |	Doing a
+EDL	00:18:57,663	00:18:58,431	| IOT102 |	Partnership
+EDL	00:18:58,431	00:19:00,223	| IOT102 |	This is on the industrial side you guys but
+EDL	00:19:00,735	00:19:03,551	| IOT102 |	This is a portico day I partnership
+EDL	00:19:03,551	00:19:04,319	| IOT102 |	Where
+EDL	00:19:04,319	00:19:05,343	| IOT102 |	Basically
+EDL	00:19:05,343	00:19:06,111	| IOT102 |	Be human
+EDL	00:19:06,111	00:19:08,415	| IOT102 |	Reading capabilities of Watson
+EDL	00:19:08,927	00:19:10,975	| IOT102 |	Will be tied in with salesforce's
+EDL	00:19:10,975	00:19:11,487	| IOT102 |	Einstein
+EDL	00:19:11,999	00:19:12,767	| IOT102 |	CRM
+EDL	00:19:14,303	00:19:16,863	| IOT102 |	Basically what I thought was most interesting
+EDL	00:19:16,863	00:19:19,423	| IOT102 |	About this is the fact that the two of them
+EDL	00:19:19,423	00:19:20,959	| IOT102 |	Are not doing a revenue-sharing
+EDL	00:19:21,727	00:19:23,007	| IOT102 |	They're actually just going to be
+EDL	00:19:23,519	00:19:24,543	| IOT102 |	Cross-selling
+EDL	00:19:24,543	00:19:25,055	| IOT102 |	And reselling
+EDL	00:19:25,567	00:19:27,359	| IOT102 |	I thought this was interesting because
+EDL	00:19:27,359	00:19:29,919	| IOT102 |	The way they've got this partnership structure there
+EDL	00:19:29,919	00:19:33,247	| IOT102 |	Doing a reselling agreement
+EDL	00:19:33,247	00:19:35,551	| IOT102 |	Agreement based on 10 of their algorithms and data that they
+EDL	00:19:36,063	00:19:37,087	| IOT102 |	Are using for this
+EDL	00:19:37,599	00:19:38,367	| IOT102 |	And
+EDL	00:19:38,367	00:19:39,903	| IOT102 |	Because data is such a
+EDL	00:19:39,903	00:19:40,927	| IOT102 |	Crucial element
+EDL	00:19:40,927	00:19:42,207	| IOT102 |	How you
+EDL	00:19:42,207	00:19:43,231	| IOT102 |	In The Internet of Things
+EDL	00:19:44,255	00:19:44,767	| IOT102 |	I thought
+EDL	00:19:45,279	00:19:45,791	| IOT102 |	Man
+EDL	00:19:46,303	00:19:52,191	| IOT102 |	I was hoping to see these big companies kind of start to model for us how we do these data sharing contract
+EDL	00:19:52,703	00:19:55,263	| IOT102 |	But instead it seems like they're sidestepping the issue
+EDL	00:19:55,263	00:19:55,775	| IOT102 |	Entirely
+EDL	00:19:56,287	00:19:57,311	| IOT102 |	Which might be smart
+EDL	00:19:57,823	00:19:59,103	| IOT102 |	But it doesn't bode well
+EDL	00:19:59,103	00:19:59,615	| IOT102 |	Personal startups
+EDL	00:20:00,127	00:20:01,407	| IOT102 |	This one actually be
+EDL	00:20:01,407	00:20:02,175	| IOT102 |	Real until
+EDL	00:20:02,687	00:20:03,199	| IOT102 |	The end of the show
+EDL	00:20:05,503	00:20:06,783	| IOT102 |	Headline generating stories
+EDL	00:20:10,367	00:20:11,647	| IOT102 |	Testing time
+EDL	00:20:12,415	00:20:13,951	| IOT102 |	Speaking of homekit
+EDL	00:20:13,951	00:20:14,463	| IOT102 |	So
+EDL	00:20:14,975	00:20:16,255	| IOT102 |	I've been trying
+EDL	00:20:16,255	00:20:19,327	| IOT102 |	Come in as a non-apple user this is been Lake
+EDL	00:20:20,351	00:20:21,887	| IOT102 |	I don't know this is like learning how to walk
+EDL	00:20:22,399	00:20:23,167	| IOT102 |	Grits
+EDL	00:20:23,167	00:20:24,447	| IOT102 |	My toes or something
+EDL	00:20:24,447	00:20:25,983	| IOT102 |	Just feel so utterly for
+EDL	00:20:25,983	00:20:26,495	| IOT102 |	Foreign to me
+EDL	00:20:27,007	00:20:28,543	| IOT102 |	But I've been giving it the old
+EDL	00:20:29,055	00:20:29,823	| IOT102 |	College try
+EDL	00:20:30,335	00:20:32,895	| IOT102 |	And I said everything up working with my
+EDL	00:20:32,895	00:20:33,663	| IOT102 |	My phone and that was
+EDL	00:20:34,943	00:20:39,807	| IOT102 |	It was so lovely I didn't feel like it was anything revolutionary it was super easy to set up
+EDL	00:20:39,807	00:20:40,831	| IOT102 |	Totally one at that
+EDL	00:20:41,599	00:20:47,999	| IOT102 |	But I decided I wanted to create it I wanted to use the Elgato Eve motion sensor
+EDL	00:20:47,999	00:20:49,535	| IOT102 |	Serta power my Hue Lights in
+EDL	00:20:49,535	00:20:50,303	| IOT102 |	Closet
+EDL	00:20:50,303	00:20:50,815	| IOT102 |	Because my
+EDL	00:20:51,583	00:20:52,863	| IOT102 |	My Hue motion sensor is actually a
+EDL	00:20:54,655	00:20:55,935	| IOT102 |	I bet you do this
+EDL	00:20:55,935	00:20:57,215	| IOT102 |	I needed to
+EDL	00:20:57,215	00:20:59,007	| IOT102 |	Run it through the Apple TV
+EDL	00:20:59,007	00:21:01,823	| IOT102 |	Or an iPad that sits in my house be
+EDL	00:21:01,823	00:21:02,335	| IOT102 |	Because
+EDL	00:21:02,847	00:21:04,383	| IOT102 |	When my phone is out otherwise it
+EDL	00:21:06,943	00:21:07,967	| IOT102 |	This was my challenge
+EDL	00:21:08,735	00:21:10,527	| IOT102 |	My iPhone is registered to me
+EDL	00:21:10,527	00:21:12,575	| IOT102 |	The iPad that lives in my house is registered
+EDL	00:21:13,087	00:21:13,855	| IOT102 |	Husband
+EDL	00:21:13,855	00:21:14,879	| IOT102 |	So after
+EDL	00:21:14,879	00:21:18,976	| IOT102 |	Some Googling and some sad noises on Twitter cuz I have my Google searches word
+EDL	00:21:18,976	00:21:19,488	| IOT102 |	Coming up
+EDL	00:21:20,512	00:21:21,792	| IOT102 |	I realized I had to
+EDL	00:21:22,560	00:21:23,072	| IOT102 |	Prove
+EDL	00:21:23,584	00:21:24,608	| IOT102 |	ICloud access
+EDL	00:21:25,376	00:21:27,424	| IOT102 |	On my devices which is something I never wanted to do
+EDL	00:21:29,216	00:21:29,728	| IOT102 |	Hate iTunes
+EDL	00:21:30,496	00:21:31,008	| IOT102 |	Hate this
+EDL	00:21:34,336	00:21:35,360	| IOT102 |	And then I needed to
+EDL	00:21:35,360	00:21:36,128	| IOT102 |	Fight
+EDL	00:21:36,128	00:21:36,896	| IOT102 |	My
+EDL	00:21:36,896	00:21:37,664	| IOT102 |	IPad basic
+EDL	00:21:38,176	00:21:38,944	| IOT102 |	To The Honky party
+EDL	00:21:40,992	00:21:44,320	| IOT102 |	And I did that and then my husband had to approve an email saying yes I do want
+EDL	00:21:45,856	00:21:46,368	| IOT102 |	Then
+EDL	00:21:47,648	00:21:48,928	| IOT102 |	Ocean Center
+EDL	00:21:48,928	00:21:50,464	| IOT102 |	For some reason I can't
+EDL	00:21:50,464	00:21:51,488	| IOT102 |	Included as part of
+EDL	00:21:51,488	00:21:53,024	| IOT102 |	My automation here
+EDL	00:21:53,024	00:21:54,304	| IOT102 |	So I'm just I'm flummoxed
+EDL	00:21:54,816	00:21:57,120	| IOT102 |	I don't I don't know why
+EDL	00:21:58,656	00:21:59,936	| IOT102 |	Yeah this is a nice
+EDL	00:22:01,216	00:22:03,264	| IOT102 |	CNET Smart Home
+EDL	00:22:08,384	00:22:11,200	| IOT102 |	We have a
+EDL	00:22:11,968	00:22:12,736	| IOT102 |	Product line
+EDL	00:22:13,248	00:22:14,528	| IOT102 |	On an Android phone that we
+EDL	00:22:14,528	00:22:16,320	| IOT102 |	Android apps
+EDL	00:22:16,320	00:22:19,904	| IOT102 |	Access between each other we need to sort of
+EDL	00:22:20,416	00:22:22,720	| IOT102 |	Step on each others toes a little bit it just
+EDL	00:22:22,720	00:22:24,000	| IOT102 |	Almost
+EDL	00:22:24,512	00:22:26,560	| IOT102 |	We had weird ones were notable instance where
+EDL	00:22:32,192	00:22:32,704	| IOT102 |	The office
+EDL	00:22:33,216	00:22:34,240	| IOT102 |	That's her at the home
+EDL	00:22:34,240	00:22:35,776	| IOT102 |	And we were trying to get this to work
+EDL	00:22:35,776	00:22:37,824	| IOT102 |	Describe your husband
+EDL	00:22:42,176	00:22:44,992	| IOT102 |	Would not work at a drive out there and then figured out in person
+EDL	00:22:45,504	00:22:50,112	| IOT102 |	But when she gets home from work that night all of the requests that we have been sending
+EDL	00:22:50,112	00:22:51,904	| IOT102 |	Your iPad and not her iPhone
+EDL	00:22:52,672	00:22:54,976	| IOT102 |	And so did so many little hiccups
+EDL	00:22:54,976	00:22:59,840	| IOT102 |	Especially when you have multiple users to share control
+EDL	00:22:59,840	00:23:02,144	| IOT102 |	It's still a big sticking point to the smart element
+EDL	00:23:05,472	00:23:06,496	| IOT102 |	So my request is
+EDL	00:23:07,008	00:23:08,032	| IOT102 |	Now that Apple has made
+EDL	00:23:08,544	00:23:10,336	| IOT102 |	Onboarding devices super easy
+EDL	00:23:11,104	00:23:13,664	| IOT102 |	If you live alone and you are going to be Soul commander of
+EDL	00:23:14,688	00:23:15,456	| IOT102 |	Tennis is probably
+EDL	00:23:16,224	00:23:16,992	| IOT102 |	For now with
+EDL	00:23:16,992	00:23:17,760	| IOT102 |	Trying to share access
+EDL	00:23:19,296	00:23:21,344	| IOT102 |	It did not I still things are still not working
+EDL	00:23:22,624	00:23:24,160	| IOT102 |	Offer that to you guys
+EDL	00:23:24,160	00:23:26,208	| IOT102 |	If you have suggestions about the
+EDL	00:23:26,720	00:23:31,584	| IOT102 |	Elgato motion sensor and why it's not showing up on some of my stuff feel free to email me because
+EDL	00:23:32,096	00:23:33,376	| IOT102 |	I don't understand
+EDL	00:23:34,144	00:23:35,424	| IOT102 |	And here's a little update for you
+EDL	00:23:35,936	00:23:37,728	| IOT102 |	So I promise you because this week
+EDL	00:23:39,776	00:23:40,288	| IOT102 |	Last week
+EDL	00:23:40,800	00:23:46,176	| IOT102 |	SmartThings and loutribe you talked about this partnership but now you can control your Lutron devices
+EDL	00:23:46,688	00:23:50,528	| IOT102 |	From your SmartThings Hub and this is done is a cloud-to-cloud integration
+EDL	00:23:51,040	00:23:51,808	| IOT102 |	And
+EDL	00:23:51,808	00:23:53,856	| IOT102 |	I was super excited about it because
+EDL	00:23:54,624	00:23:55,392	| IOT102 |	The wink
+EDL	00:23:55,392	00:23:56,416	| IOT102 |	In my house
+EDL	00:23:56,416	00:23:57,440	| IOT102 |	Does all of my Lutron
+EDL	00:23:57,952	00:24:00,000	| IOT102 |	Actually pal my Lutron Bridge does all of my
+EDL	00:24:00,768	00:24:01,280	| IOT102 |	Stop
+EDL	00:24:03,840	00:24:04,608	| IOT102 |	It was on the way
+EDL	00:24:04,608	00:24:05,376	| IOT102 |	And
+EDL	00:24:05,376	00:24:07,424	| IOT102 |	I was super excited because then I could
+EDL	00:24:07,424	00:24:08,448	| IOT102 |	My baby consolidate
+EDL	00:24:08,960	00:24:09,472	| IOT102 |	Onhub 4p
+EDL	00:24:10,240	00:24:12,032	| IOT102 |	I will never actually consolidate but
+EDL	00:24:12,544	00:24:13,568	| IOT102 |	Tell other people bacon
+EDL	00:24:13,568	00:24:14,080	| IOT102 |	Consolidate
+EDL	00:24:15,104	00:24:16,128	| IOT102 |	How nice for them
+EDL	00:24:16,128	00:24:16,896	| IOT102 |	So
+EDL	00:24:17,408	00:24:18,176	| IOT102 |	I set this up
+EDL	00:24:18,176	00:24:23,296	| IOT102 |	With the intention of trying it directly through SmartThings and then trying it through both Google home and
+EDL	00:24:23,808	00:24:26,880	| IOT102 |	Amazon Echo because both of those devices
+EDL	00:24:26,880	00:24:27,392	| IOT102 |	Scientist
+EDL	00:24:28,416	00:24:29,696	| IOT102 |	The sad news is
+EDL	00:24:30,720	00:24:32,000	| IOT102 |	When I
+EDL	00:24:32,000	00:24:32,768	| IOT102 |	Hooked it up
+EDL	00:24:32,768	00:24:35,840	| IOT102 |	I was able to authorize Lutron on my SmartThings account
+EDL	00:24:36,352	00:24:38,144	| IOT102 |	But when it started searching
+EDL	00:24:38,144	00:24:38,912	| IOT102 |	For devices
+EDL	00:24:39,680	00:24:41,216	| IOT102 |	It gave me a glitch
+EDL	00:24:41,216	00:24:44,032	| IOT102 |	And I uninstall things I reinstalled things
+EDL	00:24:44,800	00:24:46,336	| IOT102 |	Felt like I tried everything to get this work
+EDL	00:24:47,360	00:24:48,640	| IOT102 |	And after about an hour I have
+EDL	00:24:50,688	00:24:53,248	| IOT102 |	So I said I sent a note into smart
+EDL	00:24:53,760	00:24:54,528	| IOT102 |	Sporocyst
+EDL	00:24:55,808	00:24:58,368	| IOT102 |	And I'm still I've heard back from them but
+EDL	00:24:58,368	00:25:00,672	| IOT102 |	There's this lengthy process of like
+EDL	00:25:00,672	00:25:01,696	| IOT102 |	Can I look at ROBLOX
+EDL	00:25:02,208	00:25:04,256	| IOT102 |	What's the username on the account so I feel like
+EDL	00:25:04,768	00:25:06,816	| IOT102 |	I've had every 24 hours I get a request for
+EDL	00:25:07,328	00:25:08,864	| IOT102 |	Can I look at your information
+EDL	00:25:08,864	00:25:09,376	| IOT102 |	So I don't actually
+EDL	00:25:09,888	00:25:10,400	| IOT102 |	Resolution yet
+EDL	00:25:11,936	00:25:16,288	| IOT102 |	We have a ton of stuff in the smart home that we
+EDL	00:25:16,288	00:25:22,432	| IOT102 |	We test out of anything
+EDL	00:25:22,432	00:25:23,456	| IOT102 |	I will tell everybody
+EDL	00:25:24,224	00:25:26,016	| IOT102 |	Please send me your it works fine for me
+EDL	00:25:26,016	00:25:27,040	| IOT102 |	Funny stories because
+EDL	00:25:27,040	00:25:28,832	| IOT102 |	I feel like my house is such a
+EDL	00:25:28,832	00:25:30,368	| IOT102 |	Cluster of devices
+EDL	00:25:30,368	00:25:32,160	| IOT102 |	Integrations that a lot of things breaks
+EDL	00:25:32,672	00:25:33,184	| IOT102 |	It would not break free
+EDL	00:25:34,464	00:25:35,488	| IOT102 |	That is worth noting
+EDL	00:25:36,768	00:25:37,792	| IOT102 |	Absolutely
+EDL	00:25:37,792	00:25:38,560	| IOT102 |	Alright well
+EDL	00:25:39,072	00:25:41,632	| IOT102 |	Write thank you so much for
+EDL	00:25:41,632	00:25:42,400	| IOT102 |	Taking the place of Kevin
+EDL	00:25:42,912	00:25:44,192	| IOT102 |	You did an awesome job
+EDL	00:25:44,192	00:25:44,960	| IOT102 |	Kevin will be back neck
+EDL	00:25:46,752	00:25:47,776	| IOT102 |	Courage ride please
+EDL	00:25:48,544	00:25:50,080	| IOT102 |	Next time we need a guest host
+EDL	00:25:50,080	00:25:50,848	| IOT102 |	We're going to bring you back on
+EDL	00:25:52,896	00:25:54,176	| IOT102 |	Hey thanks a lot is great to be on
+EDL	00:25:54,688	00:25:58,016	| IOT102 |	Alright guy stay tuned for our guest this week
+EDL	00:25:58,016	00:25:59,040	| IOT102 |	Which is Ross
+EDL	00:25:59,040	00:26:00,064	| IOT102 |	RV of the year
+EDL	00:26:00,832	00:26:01,600	| IOT102 |	Which is an
+EDL	00:26:01,600	00:26:02,624	| IOT102 |	Agricultural
+EDL	00:26:05,440	00:26:06,976	| IOT102 |	Issues
+EDL	00:26:06,976	00:26:07,488	| IOT102 |	With this in
+EDL	00:26:09,024	00:26:10,304	| IOT102 |	Fabulous Australia
+EDL	00:26:10,304	00:26:16,704	| IOT102 |	Sexy should totally stick around to hear that but first let's do a message from our sponsor
+EDL	00:26:16,704	00:26:22,848	| IOT102 |	We are taking a break from this week's podcast for a message from our sponsor this week
+EDL	00:26:23,360	00:26:25,664	| IOT102 |	And I have Brian tollefson
+EDL	00:26:26,688	00:26:27,200	| IOT102 |	About
+EDL	00:26:28,480	00:26:29,248	| IOT102 |	Hey Brian
+EDL	00:26:29,760	00:26:30,528	| IOT102 |	Hey Stacy
+EDL	00:26:31,040	00:26:32,064	| IOT102 |	Alright so remind us
+EDL	00:26:34,624	00:26:37,952	| IOT102 |	Finans designs builds and manages iot software
+EDL	00:26:37,952	00:26:39,488	| IOT102 |	Fortune 500 firms
+EDL	00:26:39,488	00:26:41,792	| IOT102 |	Smaller manufacturers and even startups
+EDL	00:26:41,792	00:26:43,328	| IOT102 |	And over the last year
+EDL	00:26:43,328	00:26:45,888	| IOT102 |	We've been developing and delivering iot training is well
+EDL	00:26:46,400	00:26:47,936	| IOT102 |	That's really you need for a software developer
+EDL	00:26:48,704	00:26:49,728	| IOT102 |	How did that come about
+EDL	00:26:49,728	00:26:50,752	| IOT102 |	It is unique
+EDL	00:26:50,752	00:26:51,776	| IOT102 |	But it's been a great
+EDL	00:26:51,776	00:26:53,568	| IOT102 |	Set for Engineering Services
+EDL	00:26:53,568	00:26:54,592	| IOT102 |	It came about
+EDL	00:26:55,104	00:27:01,248	| IOT102 |	We kept hearing the same technical questions over and over and wanted a systematic way to answer them
+EDL	00:27:01,248	00:27:03,808	| IOT102 |	We kept getting the same questions about how to add wireless connection
+EDL	00:27:04,320	00:27:05,088	| IOT102 |	Your product
+EDL	00:27:05,088	00:27:07,648	| IOT102 |	Or what features were important when picking an IT platform
+EDL	00:27:08,160	00:27:10,464	| IOT102 |	That's interesting so how is the training struck
+EDL	00:27:10,976	00:27:13,024	| IOT102 |	It's a modular setup presentation
+EDL	00:27:13,024	00:27:15,072	| IOT102 |	Class of 2015 in 45 minutes
+EDL	00:27:15,840	00:27:17,888	| IOT102 |	And we can combine them in a variety of ways
+EDL	00:27:18,656	00:27:20,704	| IOT102 |	Sometimes it's just an hour
+EDL	00:27:20,704	00:27:24,032	| IOT102 |	On the phone with somebody but often it's a half day workshop
+EDL	00:27:24,032	00:27:25,568	| IOT102 |	Where we cover a variety of top
+EDL	00:27:26,080	00:27:28,640	| IOT102 |	We always start with a session that introduces
+EDL	00:27:28,640	00:27:30,176	| IOT102 |	And defines iot
+EDL	00:27:30,176	00:27:31,712	| IOT102 |	I can go in a lot of different
+EDL	00:27:31,712	00:27:34,272	| IOT102 |	Directions we have a number of technical presentation
+EDL	00:27:34,272	00:27:39,136	| IOT102 |	Including iot topologies embedded Technologies Wireless protocols cloud
+EDL	00:27:39,136	00:27:39,904	| IOT102 |	Computing in war
+EDL	00:27:44,512	00:27:48,096	| IOT102 |	It's definitely design for engineers but we work really hard to make it
+EDL	00:27:48,096	00:27:49,120	| IOT102 |	Accessible to business
+EDL	00:27:49,120	00:27:51,168	| IOT102 |	Does people designers marketers
+EDL	00:27:51,168	00:27:52,192	| IOT102 |	Really anyone
+EDL	00:27:52,192	00:27:53,216	| IOT102 |	Involved with develop
+EDL	00:27:53,984	00:27:57,312	| IOT102 |	It strategy
+EDL	00:27:57,312	00:27:58,592	| IOT102 |	Tackling coyote
+EDL	00:27:58,592	00:28:00,128	| IOT102 |	The first of firms that have
+EDL	00:28:00,128	00:28:01,920	| IOT102 |	Some sort of traditional software back
+EDL	00:28:02,688	00:28:05,504	| IOT102 |	Maybe they've done firmware before but they've never
+EDL	00:28:05,504	00:28:07,552	| IOT102 |	Developed a wireless protocol
+EDL	00:28:08,064	00:28:09,344	| IOT102 |	Or an over-the-air update
+EDL	00:28:09,344	00:28:10,880	| IOT102 |	Are training addresses the
+EDL	00:28:10,880	00:28:11,904	| IOT102 |	The needs for that group
+EDL	00:28:11,904	00:28:16,256	| IOT102 |	The second group that we see increasingly is his group I like to call corporate makers
+EDL	00:28:16,256	00:28:21,376	| IOT102 |	These are electrical engineers or mechanical engineers tasked with creating
+EDL	00:28:21,376	00:28:22,400	| IOT102 |	An initial iot
+EDL	00:28:22,912	00:28:23,680	| IOT102 |	Prototype
+EDL	00:28:23,680	00:28:28,032	| IOT102 |	They frequently are using maker grade Hardware like Arduino or Raspberry Pi
+EDL	00:28:28,032	00:28:30,848	| IOT102 |	These are awesome platforms we love our arrest
+EDL	00:28:30,848	00:28:32,384	| IOT102 |	Replies but they're really not the type
+EDL	00:28:33,664	00:28:34,176	| IOT102 |	Used to go to market
+EDL	00:28:34,688	00:28:39,040	| IOT102 |	So we've designer training to help penicillin the knowledge gaps for that group
+EDL	00:28:39,040	00:28:40,832	| IOT102 |	And help them figure out how to go to market
+EDL	00:28:41,344	00:28:42,624	| IOT102 |	Do you need to be on site.
+EDL	00:28:44,416	00:28:45,440	| IOT102 |	We can do it either way
+EDL	00:28:45,952	00:28:46,976	| IOT102 |	A lot of organization
+EDL	00:28:46,976	00:28:52,096	| IOT102 |	Have remote employees so we made sure that our training works well over Google hangouts or go to meetings
+EDL	00:28:52,608	00:28:54,144	| IOT102 |	But it's a lot of fun in that
+EDL	00:28:54,144	00:28:54,912	| IOT102 |	It works really well on
+EDL	00:28:54,912	00:28:55,424	| IOT102 |	On-site as well
+EDL	00:28:55,936	00:28:58,496	| IOT102 |	So where can people learn more about 7 dance in your iot
+EDL	00:28:59,264	00:29:03,616	| IOT102 |	They can visit our website it's been debts. Com or send us an email at hello it's been
+EDL	00:29:04,896	00:29:06,176	| IOT102 |	We'd be happy to preview
+EDL	00:29:06,176	00:29:07,712	| IOT102 |	Training with anyone who's in
+EDL	00:29:07,712	00:29:09,248	| IOT102 |	Any more. Iot
+EDL	00:29:09,248	00:29:10,528	| IOT102 |	Awesome thanks Brian
+EDL	00:29:16,160	00:29:21,792	| IOT102 |	Hey everyone welcome back to the Internet of Things podcast this is your host Stacey Higginbotham
+EDL	00:29:21,792	00:29:23,840	| IOT102 |	And today's guest is Ross
+EDL	00:29:23,840	00:29:26,656	| IOT102 |	Harvey who is founder and managing director at
+EDL	00:29:26,656	00:29:27,424	| IOT102 |	A company called
+EDL	00:29:27,936	00:29:28,448	| IOT102 |	The yield
+EDL	00:29:28,960	00:29:29,728	| IOT102 |	Hello rise
+EDL	00:29:30,752	00:29:33,312	| IOT102 |	Morning Sky see this morning in Australia or anyway
+EDL	00:29:33,312	00:29:38,688	| IOT102 |	I was going to say it is afternoon where I am but definitely morning where you are so today's podcast
+EDL	00:29:38,688	00:29:39,712	| IOT102 |	As I said about
+EDL	00:29:39,712	00:29:40,736	| IOT102 |	Agriculture
+EDL	00:29:40,736	00:29:43,040	| IOT102 |	But more about the business side so bras
+EDL	00:29:43,040	00:29:44,832	| IOT102 |	Why don't you tell me what you're doing
+EDL	00:29:45,856	00:29:50,720	| IOT102 |	What we do is take the guesswork out of growing and Simon Jacques
+EDL	00:29:50,720	00:29:51,744	| IOT102 |	Christmas Day
+EDL	00:29:51,744	00:29:53,536	| IOT102 |	Tympole and knowledge hungry
+EDL	00:29:54,048	00:29:56,608	| IOT102 |	And using Internet of Things technology
+EDL	00:29:56,608	00:29:59,424	| IOT102 |	We can help Growers make better and faster decisions
+EDL	00:30:00,192	00:30:03,264	| IOT102 |	This feels almost kind of akin to something like climate Corps
+EDL	00:30:03,776	00:30:06,336	| IOT102 |	Which measured weather now that was for insurance purposes
+EDL	00:30:06,848	00:30:09,920	| IOT102 |	Is it correct
+EDL	00:30:10,944	00:30:12,736	| IOT102 |	Actually not
+EDL	00:30:12,736	00:30:19,136	| IOT102 |	Went really genuinely and I are teepees nuts and we coming at it from completely with different front end of
+EDL	00:30:19,136	00:30:22,720	| IOT102 |	So we focus on intensive irrigated
+EDL	00:30:23,744	00:30:28,864	| IOT102 |	Where are the difference between microclimates not even down to a plant with
+EDL	00:30:28,864	00:30:29,632	| IOT102 |	Can they
+EDL	00:30:29,632	00:30:30,400	| IOT102 |	Absolutely critical
+EDL	00:30:32,448	00:30:35,264	| IOT102 |	At margin per hectare of an irrigated praying
+EDL	00:30:35,264	00:30:36,800	| IOT102 |	What fruits and trees and plants
+EDL	00:30:36,800	00:30:38,592	| IOT102 |	40 times what it is in Russia
+EDL	00:30:39,360	00:30:45,760	| IOT102 |	And really that's where a lot of the American egg parties which they are very inspiring
+EDL	00:30:45,760	00:30:51,136	| IOT102 |	Every light, cut their teeth in that mold broadyke are dropping in the five young cool cross
+EDL	00:30:51,136	00:30:52,160	| IOT102 |	Which starts at very different
+EDL	00:30:52,928	00:30:56,512	| IOT102 |	Technology because it's not your guy that it's huge guy out
+EDL	00:30:56,512	00:31:02,400	| IOT102 |	Looking at remote sensing and long-term public Doctrine and leveraging that wears wig
+EDL	00:31:02,400	00:31:03,168	| IOT102 |	Actually
+EDL	00:31:03,168	00:31:05,216	| IOT102 |	Putting Harbor on the ground so we do enjoy
+EDL	00:31:05,216	00:31:11,360	| IOT102 |	Hardware platform analytics user interface and really focus on the more common with us
+EDL	00:31:15,456	00:31:19,040	| IOT102 |	Okay so Rose can you give me a use case or an example of this
+EDL	00:31:21,344	00:31:22,624	| IOT102 |	Really real one of that
+EDL	00:31:22,624	00:31:26,464	| IOT102 |	I know the customers that we work with it produces bagged lettuce
+EDL	00:31:26,464	00:31:28,512	| IOT102 |	And they wanted to strides because it produces
+EDL	00:31:28,512	00:31:34,912	| IOT102 |	And so what we do is using our technology when measuring 9 environmental parameters at
+EDL	00:31:34,912	00:31:37,472	| IOT102 |	Agriculture things from
+EDL	00:31:37,472	00:31:41,824	| IOT102 |	Temperature humidity life witness fools of blight soil moisture temperature
+EDL	00:31:41,824	00:31:42,848	| IOT102 |	Ranger Prime
+EDL	00:31:43,616	00:31:50,016	| IOT102 |	And then what we do is we use these to help Growers make decisions on found decisions about when to plant when to irrigate
+EDL	00:31:50,016	00:31:51,552	| IOT102 |	Play Swing to protect
+EDL	00:31:51,552	00:31:53,088	| IOT102 |	Went to feed and when to harvest
+EDL	00:31:53,600	00:31:55,648	| IOT102 |	So we can together with Houston
+EDL	00:31:55,648	00:31:57,440	| IOT102 |	She's one of my customers
+EDL	00:31:57,440	00:32:00,768	| IOT102 |	It can take 4 weeks to grow lettuce
+EDL	00:32:00,768	00:32:01,536	| IOT102 |	In summer
+EDL	00:32:02,048	00:32:03,328	| IOT102 |	From plant to harvest
+EDL	00:32:03,328	00:32:04,608	| IOT102 |	Butthole bleaching winter
+EDL	00:32:04,608	00:32:10,752	| IOT102 |	And effectively they know that there's a difference United from Farm to Farm Road Road
+EDL	00:32:10,752	00:32:15,360	| IOT102 |	In terms of the time and distance that it takes from in terms of planting and harvesting
+EDL	00:32:15,360	00:32:16,640	| IOT102 |	But they don't have to
+EDL	00:32:16,640	00:32:18,688	| IOT102 |	So what I do is just have one Girls quiz
+EDL	00:32:19,712	00:32:21,760	| IOT102 |	And so what this company does he suggest
+EDL	00:32:21,760	00:32:23,552	| IOT102 |	Overproduce to make sure
+EDL	00:32:23,552	00:32:24,064	| IOT102 |	That it can make it
+EDL	00:32:25,344	00:32:31,744	| IOT102 |	Enter if we can just reduce their production by just one percentage point it's literally with
+EDL	00:32:31,744	00:32:33,024	| IOT102 |	With hundreds of thousands
+EDL	00:32:33,024	00:32:39,168	| IOT102 |	Is business
+EDL	00:32:40,192	00:32:42,752	| IOT102 |	But more interesting as well is
+EDL	00:32:42,752	00:32:46,080	| IOT102 |	We also use that same Dark Side to deal with things like she'll fly
+EDL	00:32:46,848	00:32:51,200	| IOT102 |	So when you cut lettuce and put in a baguette stops decomposing for the minute.
+EDL	00:32:52,224	00:32:55,296	| IOT102 |	And the thing that drives it is actually or continent
+EDL	00:32:55,296	00:32:56,064	| IOT102 |	The plant
+EDL	00:32:56,064	00:32:58,624	| IOT102 |	And so we make sure that as a by-product
+EDL	00:32:58,624	00:33:01,184	| IOT102 |	The work we're doing reindeer guiding and spring
+EDL	00:33:01,184	00:33:05,024	| IOT102 |	And then we can find that two got data together with processing data and
+EDL	00:33:05,024	00:33:07,328	| IOT102 |	Retail data and we can actually work at the
+EDL	00:33:07,328	00:33:08,352	| IOT102 |	Perfect time
+EDL	00:33:08,352	00:33:09,632	| IOT102 |	To have a sex
+EDL	00:33:09,632	00:33:13,728	| IOT102 |	And again we just take one day extension for that one day
+EDL	00:33:13,728	00:33:16,544	| IOT102 |	Then it's really really worth millions to the business
+EDL	00:33:16,544	00:33:17,312	| IOT102 |	So I think
+EDL	00:33:17,312	00:33:22,432	| IOT102 |	So maybe that's a really important thing about what the hughleys doing differently we think about the business problem
+EDL	00:33:22,432	00:33:23,456	| IOT102 |	And we think about the
+EDL	00:33:23,456	00:33:25,504	| IOT102 |	50 Cent problem through the value chain
+EDL	00:33:26,016	00:33:29,088	| IOT102 |	Then we design platform technology
+EDL	00:33:29,088	00:33:31,136	| IOT102 |	That allows us to
+EDL	00:33:31,136	00:33:32,416	| IOT102 |	Basically impact that
+EDL	00:33:32,416	00:33:34,976	| IOT102 |	Across the value chain and I think this is
+EDL	00:33:34,976	00:33:35,744	| IOT102 |	Really important
+EDL	00:33:35,744	00:33:40,608	| IOT102 |	In terms of Sam getting uptight goodbye to you see it's very difficult I think to get
+EDL	00:33:40,608	00:33:47,008	| IOT102 |	8 return on investment I'm just a single-use Kiest and I think that the value in artery is actually
+EDL	00:33:47,008	00:33:50,848	| IOT102 |	In half. Circulates in how you analyze it and how you can Bond it
+EDL	00:33:51,360	00:33:54,944	| IOT102 |	That's perfect because it's listening to what you just said
+EDL	00:33:55,456	00:33:57,248	| IOT102 |	You hit on a bunch of issues
+EDL	00:33:57,248	00:33:58,016	| IOT102 |	We talked about a lot
+EDL	00:33:58,784	00:33:59,552	| IOT102 |	Twitches
+EDL	00:33:59,552	00:34:03,648	| IOT102 |	You're dealing with different sources of data so not all of its your own some of it it sounds like
+EDL	00:34:04,416	00:34:04,928	| IOT102 |	The retailers
+EDL	00:34:05,440	00:34:06,208	| IOT102 |	Free public data sources
+EDL	00:34:06,720	00:34:09,024	| IOT102 |	You're also trying to
+EDL	00:34:09,024	00:34:09,792	| IOT102 |	Follow
+EDL	00:34:09,792	00:34:11,840	| IOT102 |	Supply chain all the way down to the
+EDL	00:34:11,840	00:34:13,120	| IOT102 |	Consumer even though
+EDL	00:34:13,120	00:34:14,912	| IOT102 |	You're not necessarily the company that can
+EDL	00:34:15,424	00:34:16,448	| IOT102 |	The consumer relationship
+EDL	00:34:16,960	00:34:20,032	| IOT102 |	I'd love to break this down a bit and talk first about
+EDL	00:34:20,032	00:34:21,568	| IOT102 |	How you guys
+EDL	00:34:21,568	00:34:22,336	| IOT102 |	Jet
+EDL	00:34:22,336	00:34:24,384	| IOT102 |	Your data and how that whole process of
+EDL	00:34:25,408	00:34:26,944	| IOT102 |	The retailer
+EDL	00:34:26,944	00:34:28,480	| IOT102 |	The suppliers data actually
+EDL	00:34:29,248	00:34:32,064	| IOT102 |	Best thing to say and this is
+EDL	00:34:32,064	00:34:34,624	| IOT102 |	Heights Taxi
+EDL	00:34:34,624	00:34:35,904	| IOT102 |	Boosting
+EDL	00:34:35,904	00:34:36,672	| IOT102 |	Is you
+EDL	00:34:36,672	00:34:37,696	| IOT102 |	To have
+EDL	00:34:37,696	00:34:38,976	| IOT102 |	Reliable
+EDL	00:34:38,976	00:34:39,744	| IOT102 |	Accurate
+EDL	00:34:40,768	00:34:41,536	| IOT102 |	And
+EDL	00:34:41,536	00:34:43,328	| IOT102 |	I think just like you want to know that
+EDL	00:34:43,328	00:34:45,632	| IOT102 |	Covenant to be food in the quality of it
+EDL	00:34:45,632	00:34:47,168	| IOT102 |	You need to know.
+EDL	00:34:47,168	00:34:49,216	| IOT102 |	Providence in the quality of Hadassah
+EDL	00:34:49,728	00:34:51,776	| IOT102 |	Because you can't do analytics without it
+EDL	00:34:52,288	00:34:53,056	| IOT102 |	So
+EDL	00:34:53,056	00:34:58,432	| IOT102 |	In our case we do hardware and we partnered together ird partner is boss
+EDL	00:34:58,944	00:35:00,736	| IOT102 |	Global business
+EDL	00:35:01,760	00:35:04,064	| IOT102 |	Potatoes in sensing technology
+EDL	00:35:04,064	00:35:07,648	| IOT102 |	And internet of things so we partnered with them as well as partner with Microsoft
+EDL	00:35:08,416	00:35:10,464	| IOT102 |	So what this gifts
+EDL	00:35:10,464	00:35:12,512	| IOT102 |	Is reliability and accuracy
+EDL	00:35:13,024	00:35:13,792	| IOT102 |	And
+EDL	00:35:13,792	00:35:14,816	| IOT102 |	If you don't get this
+EDL	00:35:14,816	00:35:20,192	| IOT102 |	It's really trying to the analytics art as I said you were using artificial intelligence to predict
+EDL	00:35:20,192	00:35:24,800	| IOT102 |	And in the case of art what's the solution which is a different product we have in Market
+EDL	00:35:24,800	00:35:26,336	| IOT102 |	We get 95%
+EDL	00:35:26,336	00:35:27,616	| IOT102 |	Accuracy 3 days app
+EDL	00:35:27,616	00:35:30,176	| IOT102 |	Hauntings like Slinky temperature in Deptford
+EDL	00:35:30,176	00:35:31,200	| IOT102 |	Critical to growing in
+EDL	00:35:31,712	00:35:32,224	| IOT102 |	Supply chain
+EDL	00:35:33,248	00:35:33,760	| IOT102 |	Really
+EDL	00:35:34,272	00:35:39,904	| IOT102 |	The important thing to understand is you must control calling the daughter this is why I get so frustrated
+EDL	00:35:42,208	00:35:42,976	| IOT102 |	Because
+EDL	00:35:42,976	00:35:46,816	| IOT102 |	You just do not platform fit right in. If I don't know to call you back.
+EDL	00:35:46,816	00:35:49,120	| IOT102 |	You don't know where they've just go garbage in garbage out
+EDL	00:35:49,120	00:35:50,400	| IOT102 |	I think that's a critical issue
+EDL	00:35:51,168	00:35:52,448	| IOT102 |	So then
+EDL	00:35:52,448	00:35:53,728	| IOT102 |	Second thing is about
+EDL	00:35:53,728	00:35:54,496	| IOT102 |	This is
+EDL	00:35:54,496	00:35:55,776	| IOT102 |	That's so we do Hardware
+EDL	00:35:58,080	00:36:01,408	| IOT102 |	Because we want to make sure that we have good reliable quality.
+EDL	00:36:01,920	00:36:02,432	| IOT102 |	And then
+EDL	00:36:02,944	00:36:04,224	| IOT102 |	Really the person
+EDL	00:36:04,224	00:36:09,344	| IOT102 |	Understanding the business model and the problems along the supply chain is really important
+EDL	00:36:09,344	00:36:11,392	| IOT102 |	Because what happens on Farm
+EDL	00:36:11,392	00:36:12,416	| IOT102 |	Ricochet
+EDL	00:36:12,416	00:36:16,256	| IOT102 |	Through the supply chain just like that example I gave of Life Witness
+EDL	00:36:16,256	00:36:17,536	| IOT102 |	And she'll flirt
+EDL	00:36:18,048	00:36:22,400	| IOT102 |	And so what main really matters is how you actually understand and stop
+EDL	00:36:22,912	00:36:28,032	| IOT102 |	Pieces problem and the value chain and how you been collaborate with others
+EDL	00:36:28,032	00:36:33,408	| IOT102 |	And I think that's really going to be incredibly important in an industry like Agriculture and food
+EDL	00:36:33,920	00:36:38,528	| IOT102 |	No one company can boil the ocean no one company can solve every problem
+EDL	00:36:38,528	00:36:40,576	| IOT102 |	What you really want to have to do is Glyburide
+EDL	00:36:40,576	00:36:42,624	| IOT102 |	And that has a whole lot of
+EDL	00:36:42,624	00:36:44,160	| IOT102 |	Passions about
+EDL	00:36:44,160	00:36:45,952	| IOT102 |	Your architecture
+EDL	00:36:45,952	00:36:46,976	| IOT102 |	The way you
+EDL	00:36:46,976	00:36:49,024	| IOT102 |	Design technology
+EDL	00:36:49,024	00:36:51,072	| IOT102 |	The white that you should upload
+EDL	00:36:51,072	00:36:52,352	| IOT102 |	Business model
+EDL	00:36:52,352	00:36:54,144	| IOT102 |	The white that you can recruit
+EDL	00:36:54,144	00:36:56,192	| IOT102 |	And the sub skills that you looking for
+EDL	00:36:56,192	00:37:01,824	| IOT102 |	It really has a very significant introduction on how you actually approach this and that's been very big learning
+EDL	00:37:03,104	00:37:05,152	| IOT102 |	So let's break that down even further
+EDL	00:37:05,664	00:37:06,432	| IOT102 |	Let's
+EDL	00:37:07,200	00:37:08,992	| IOT102 |	Because there was a
+EDL	00:37:09,504	00:37:11,040	| IOT102 |	I I wish
+EDL	00:37:11,040	00:37:11,808	| IOT102 |	I covet that roll
+EDL	00:37:12,576	00:37:13,344	| IOT102 |	So
+EDL	00:37:13,344	00:37:14,112	| IOT102 |	Actually what's my bow Target
+EDL	00:37:15,904	00:37:16,672	| IOT102 |	Want to
+EDL	00:37:16,672	00:37:19,232	| IOT102 |	How do you architect or how do you plan
+EDL	00:37:19,232	00:37:22,816	| IOT102 |	You're assuming this is both things like data normalization and also things
+EDL	00:37:22,816	00:37:23,840	| IOT102 |	Like apis and
+EDL	00:37:23,840	00:37:24,608	| IOT102 |	Terms of sending out
+EDL	00:37:25,632	00:37:26,656	| IOT102 |	So happy planner Arc
+EDL	00:37:26,656	00:37:27,680	| IOT102 |	Architecture and then
+EDL	00:37:27,680	00:37:28,448	| IOT102 |	Look at
+EDL	00:37:28,448	00:37:31,008	| IOT102 |	How you can establish a business relationship with
+EDL	00:37:31,776	00:37:32,288	| IOT102 |	Needs to share data
+EDL	00:37:32,800	00:37:34,080	| IOT102 |	Animal finally talk about the skills
+EDL	00:37:34,848	00:37:36,640	| IOT102 |	API Centric architecture
+EDL	00:37:36,640	00:37:40,480	| IOT102 |	Pretty cool and you not based on Open Standards as much as you can
+EDL	00:37:40,480	00:37:43,040	| IOT102 |	The other thing that we try to do is be agnostic
+EDL	00:37:43,040	00:37:48,928	| IOT102 |	Different types of technology and I know you and your listeners and explored issues about things like anti-war and
+EDL	00:37:49,440	00:37:51,232	| IOT102 |	Galaxy fox in NBA RT
+EDL	00:37:52,256	00:37:55,072	| IOT102 |	Really what we do is from Taiwan design
+EDL	00:37:55,584	00:37:56,352	| IOT102 |	Ethnocentric
+EDL	00:37:56,864	00:37:58,400	| IOT102 |	Picture design
+EDL	00:37:58,400	00:37:59,936	| IOT102 |	The God of destruction
+EDL	00:37:59,936	00:38:02,240	| IOT102 |	Madonna rockitecture to facilitate
+EDL	00:38:02,240	00:38:03,520	| IOT102 |	I'm sharing
+EDL	00:38:03,520	00:38:05,056	| IOT102 |	But we really
+EDL	00:38:05,056	00:38:08,128	| IOT102 |	Very very careful that how we do that and I'll come back to that
+EDL	00:38:08,128	00:38:11,456	| IOT102 |	Because the final thing that you really go to do so stinky patties
+EDL	00:38:11,456	00:38:16,064	| IOT102 |	Contract senior legal Arrangements
+EDL	00:38:16,064	00:38:17,856	| IOT102 |	As a business
+EDL	00:38:17,856	00:38:22,208	| IOT102 |	We are very focused on giving our customers
+EDL	00:38:22,208	00:38:24,000	| IOT102 |	Transparency
+EDL	00:38:24,000	00:38:26,048	| IOT102 |	Control and incentive to share
+EDL	00:38:26,816	00:38:28,608	| IOT102 |	Because fundamentally
+EDL	00:38:28,608	00:38:31,680	| IOT102 |	Really what you want is much more like that.
+EDL	00:38:31,680	00:38:32,448	| IOT102 |	Cooperative
+EDL	00:38:32,448	00:38:34,496	| IOT102 |	The market rather than terminal
+EDL	00:38:34,496	00:38:36,800	| IOT102 |	And the back to work
+EDL	00:38:36,800	00:38:38,336	| IOT102 |	Reply to Shannon episode
+EDL	00:38:38,336	00:38:39,360	| IOT102 |	But they also
+EDL	00:38:39,360	00:38:40,128	| IOT102 |	S2
+EDL	00:38:40,128	00:38:43,200	| IOT102 |	Be confident that their daughter is not going to be used against
+EDL	00:38:43,712	00:38:45,504	| IOT102 |	And so it is much around
+EDL	00:38:46,016	00:38:49,856	| IOT102 |	Cultural policy and privacy and security issues
+EDL	00:38:49,856	00:38:51,392	| IOT102 |	Messages about the technology
+EDL	00:38:51,392	00:38:56,256	| IOT102 |	Now let's talk about the skills that you look for then in the people you hire
+EDL	00:38:56,256	00:38:57,024	| IOT102 |	The people that you were
+EDL	00:38:59,072	00:39:00,352	| IOT102 |	What we do is
+EDL	00:39:00,352	00:39:06,752	| IOT102 |	We are very strong value spice business and this is really important to us when we founded the
+EDL	00:39:06,752	00:39:07,520	| IOT102 |	Company
+EDL	00:39:07,520	00:39:10,336	| IOT102 |	We had a very very clear purpose and that was
+EDL	00:39:10,336	00:39:12,384	| IOT102 |	How are we going to see the world without
+EDL	00:39:12,384	00:39:13,152	| IOT102 |	Wrecking the planet
+EDL	00:39:13,152	00:39:14,944	| IOT102 |	Not a time where
+EDL	00:39:14,944	00:39:16,992	| IOT102 |	You've got unprecedented
+EDL	00:39:16,992	00:39:19,040	| IOT102 |	Constraints
+EDL	00:39:19,040	00:39:20,064	| IOT102 |	Climate change
+EDL	00:39:20,064	00:39:22,624	| IOT102 |	Loss of arable land at the same time we have
+EDL	00:39:22,624	00:39:29,024	| IOT102 |	Have to purchase 70% more food by 2050 just to feed everyone and so having a very strong purpose and value
+EDL	00:39:29,024	00:39:32,352	| IOT102 |	Attracts a certain sort of paperwork to the business which is Christ
+EDL	00:39:34,144	00:39:39,264	| IOT102 |	Thai Spice and the other thing that we really really look for is collaborative skills
+EDL	00:39:39,264	00:39:40,800	| IOT102 |	And not being
+EDL	00:39:40,800	00:39:44,384	| IOT102 |	Fabulous technologist in doing really really cool things with.
+EDL	00:39:44,384	00:39:46,432	| IOT102 |	That's a given we do that
+EDL	00:39:46,432	00:39:47,200	| IOT102 |	Buckets
+EDL	00:39:47,712	00:39:52,320	| IOT102 |	But we also need to have people who can actually work with each other and communicate because
+EDL	00:39:52,320	00:39:54,880	| IOT102 |	And also the pieces matter what we're trying to do
+EDL	00:39:54,880	00:39:55,648	| IOT102 |	It's just
+EDL	00:39:55,648	00:39:57,952	| IOT102 |	Make it simple tightly complexity why
+EDL	00:39:58,720	00:40:00,768	| IOT102 |	And that means we do everything
+EDL	00:40:01,280	00:40:02,816	| IOT102 |	And and we
+EDL	00:40:02,816	00:40:04,096	| IOT102 |	Deliver a product.
+EDL	00:40:04,096	00:40:06,656	| IOT102 |	I know it's product as a subscription service
+EDL	00:40:07,168	00:40:08,448	| IOT102 |	That means you've got to have
+EDL	00:40:08,448	00:40:11,008	| IOT102 |	Making Janine's electrical engineering
+EDL	00:40:11,008	00:40:14,336	| IOT102 |	Systems engineer software Alabama what's the main exports yuan
+EDL	00:40:14,336	00:40:15,104	| IOT102 |	Design is
+EDL	00:40:15,104	00:40:17,664	| IOT102 |	Oldest working together
+EDL	00:40:17,664	00:40:19,968	| IOT102 |	To make the experience into a
+EDL	00:40:19,968	00:40:21,504	| IOT102 |	Beautiful thing
+EDL	00:40:21,504	00:40:22,272	| IOT102 |	Totally imagine
+EDL	00:40:22,272	00:40:26,880	| IOT102 |	I'm trying to think about what it means to be a business that is actually
+EDL	00:40:27,392	00:40:28,416	| IOT102 |	Delivering insights
+EDL	00:40:29,184	00:40:30,208	| IOT102 |	As opposed to
+EDL	00:40:30,720	00:40:33,024	| IOT102 |	Hardware solution or even software
+EDL	00:40:33,024	00:40:35,328	| IOT102 |	End the ability to figure that out is
+EDL	00:40:35,328	00:40:36,864	| IOT102 |	It's going to be what separates
+EDL	00:40:36,864	00:40:37,888	| IOT102 |	Successful iot come
+EDL	00:40:38,656	00:40:39,936	| IOT102 |	Companies that use iot
+EDL	00:40:40,448	00:40:41,216	| IOT102 |	From
+EDL	00:40:41,216	00:40:41,984	| IOT102 |	Unsuccessful
+EDL	00:40:42,752	00:40:43,776	| IOT102 |	So what
+EDL	00:40:49,152	00:40:52,736	| IOT102 |	I seriously can't get that he's really the issue he it because
+EDL	00:40:52,736	00:40:57,088	| IOT102 |	Coyotes Dream by technologist anyhow I love technology
+EDL	00:40:58,112	00:41:00,928	| IOT102 |	Because my thing I adore it's not really
+EDL	00:41:00,928	00:41:01,696	| IOT102 |	United
+EDL	00:41:01,696	00:41:05,792	| IOT102 |	Bro has a very round and round
+EDL	00:41:05,792	00:41:07,840	| IOT102 |	And you know they running a
+EDL	00:41:07,840	00:41:09,120	| IOT102 |	Complex system
+EDL	00:41:09,120	00:41:11,168	| IOT102 |	Rimini things interesting all the time
+EDL	00:41:11,680	00:41:13,984	| IOT102 |	And seriously
+EDL	00:41:13,984	00:41:16,032	| IOT102 |	Target customers the knowledge hungry
+EDL	00:41:16,032	00:41:21,920	| IOT102 |	I just wanted to check in to deliver kind of value proposition from Taiwan
+EDL	00:41:21,920	00:41:24,224	| IOT102 |	And you just got to focus on this
+EDL	00:41:24,224	00:41:25,760	| IOT102 |	And you know in some ways that
+EDL	00:41:26,272	00:41:27,040	| IOT102 |	When we
+EDL	00:41:27,040	00:41:30,368	| IOT102 |	We started the business we called the business the yield for racing
+EDL	00:41:30,368	00:41:34,464	| IOT102 |	Become effective that in agriculture, so you don't have a business
+EDL	00:41:34,464	00:41:40,864	| IOT102 |	I really thought long and hard that will how do we make so that's really embedded in our culture in the way that we go about so
+EDL	00:41:40,864	00:41:41,376	| IOT102 |	Sleeping problems
+EDL	00:41:42,656	00:41:43,680	| IOT102 |	Tonight
+EDL	00:41:43,680	00:41:44,192	| IOT102 |	Good name
+EDL	00:41:44,704	00:41:45,984	| IOT102 |	How do you think about
+EDL	00:41:45,984	00:41:46,496	| IOT102 |	Charging
+EDL	00:41:47,008	00:41:47,776	| IOT102 |	Fair
+EDL	00:41:47,776	00:41:49,312	| IOT102 |	Insights because that's
+EDL	00:41:49,312	00:41:50,336	| IOT102 |	There's a lot
+EDL	00:41:50,336	00:41:54,175	| IOT102 |	As you said a complicated things going into it there's relationships with
+EDL	00:41:54,175	00:41:54,943	| IOT102 |	With other companies
+EDL	00:41:55,455	00:41:56,223	| IOT102 |	So
+EDL	00:41:56,223	00:41:58,783	| IOT102 |	How do you break that down
+EDL	00:41:58,783	00:41:59,295	| IOT102 |	And figure out
+EDL	00:42:00,319	00:42:02,367	| IOT102 |	A price and one that's sustainable
+EDL	00:42:02,367	00:42:02,879	| IOT102 |	For your business
+EDL	00:42:09,023	00:42:11,839	| IOT102 |	Essentially what we do is we create
+EDL	00:42:11,839	00:42:18,239	| IOT102 |	Different digital solutions from the same knowledge infrastructure and we monetizing different light so let me give you a really concrete exam
+EDL	00:42:18,239	00:42:19,263	| IOT102 |	Optimus Prime
+EDL	00:42:19,775	00:42:21,567	| IOT102 |	Was it annoys registry
+EDL	00:42:22,079	00:42:22,847	| IOT102 |	So
+EDL	00:42:22,847	00:42:25,407	| IOT102 |	When it rains going to get runoff from the soil
+EDL	00:42:25,407	00:42:29,759	| IOT102 |	Because of oysters at filter animals like she may like contaminants that make it dangerous
+EDL	00:42:31,039	00:42:33,599	| IOT102 |	And so the food safety regulator says
+EDL	00:42:33,599	00:42:35,391	| IOT102 |	Shut down when we get
+EDL	00:42:35,391	00:42:36,415	| IOT102 |	With the risk of runoff
+EDL	00:42:36,415	00:42:38,463	| IOT102 |	The way that they were doing that in the
+EDL	00:42:38,463	00:42:42,303	| IOT102 |	Past what using rainfall which could be coming from
+EDL	00:42:42,303	00:42:42,815	| IOT102 |	Thomas White
+EDL	00:42:43,327	00:42:47,935	| IOT102 |	Is putting real-time sensing into the water that that way strengths
+EDL	00:42:48,447	00:42:49,215	| IOT102 |	And
+EDL	00:42:49,215	00:42:50,495	| IOT102 |	Been using
+EDL	00:42:52,031	00:42:58,175	| IOT102 |	Parental Guidance down we got 30% reduction in unnecessary closures just do that one
+EDL	00:42:58,175	00:42:58,943	| IOT102 |	Something
+EDL	00:42:58,943	00:43:00,991	| IOT102 |	And then using artificial intelligence
+EDL	00:43:00,991	00:43:02,271	| IOT102 |	Predicting it
+EDL	00:43:02,271	00:43:06,111	| IOT102 |	94% accuracy 3 days Upon A predictions of salinity
+EDL	00:43:06,111	00:43:09,183	| IOT102 |	Then what that means he's Growers can get product out of the water
+EDL	00:43:09,183	00:43:09,951	| IOT102 |	Felicia
+EDL	00:43:09,951	00:43:12,767	| IOT102 |	So effectively what we doing is giving them back
+EDL	00:43:12,767	00:43:15,071	| IOT102 |	20 days
+EDL	00:43:15,071	00:43:17,119	| IOT102 |	30 days a year harvesting
+EDL	00:43:17,119	00:43:17,887	| IOT102 |	Which is a big deal
+EDL	00:43:20,191	00:43:23,263	| IOT102 |	What's that noise infrastructure reduce in Enterprise
+EDL	00:43:23,263	00:43:25,823	| IOT102 |	Set of tools for Growers
+EDL	00:43:25,823	00:43:27,103	| IOT102 |	Ducks things like
+EDL	00:43:27,103	00:43:28,383	| IOT102 |	Fly fishing Chelan
+EDL	00:43:28,383	00:43:32,991	| IOT102 |	Actually Megan Harvest it does food safety and tracking end
+EDL	00:43:32,991	00:43:35,807	| IOT102 |	Consignment reports that happening
+EDL	00:43:35,807	00:43:37,599	| IOT102 |	The conditions of my necropolis
+EDL	00:43:37,599	00:43:40,415	| IOT102 |	Harveston to orders and purposes only certain things
+EDL	00:43:40,415	00:43:44,767	| IOT102 |	Entirely different digital product
+EDL	00:43:45,279	00:43:46,047	| IOT102 |	The regulator
+EDL	00:43:46,559	00:43:50,143	| IOT102 |	And we have two different safety Regulators using the product in Australia
+EDL	00:43:50,655	00:43:53,471	| IOT102 |	And so we take that same data but now what we've done is doing
+EDL	00:43:53,983	00:43:55,263	| IOT102 |	A view that allows
+EDL	00:43:55,263	00:43:56,287	| IOT102 |	Opposite the rules
+EDL	00:43:56,287	00:43:59,359	| IOT102 |	Malachi Croatia differently series 2
+EDL	00:43:59,359	00:44:02,175	| IOT102 |	Mama said conditions to use
+EDL	00:44:04,223	00:44:05,247	| IOT102 |	And then
+EDL	00:44:05,247	00:44:07,295	| IOT102 |	It is too bad I don't give it to researches
+EDL	00:44:07,807	00:44:09,599	| IOT102 |	Different nice guy so together they want
+EDL	00:44:09,599	00:44:12,671	| IOT102 |	Exit out of the cracked egg right through that
+EDL	00:44:12,671	00:44:14,719	| IOT102 |	Will give it to you free of charge
+EDL	00:44:14,719	00:44:17,791	| IOT102 |	But we really loud music
+EDL	00:44:17,791	00:44:18,815	| IOT102 |	Tripping into a product
+EDL	00:44:19,327	00:44:23,935	| IOT102 |	Imma things like disease management and animal husbandry so you can have better impact and we can get
+EDL	00:44:24,447	00:44:25,471	| IOT102 |	Something's out of the labyrinth
+EDL	00:44:25,983	00:44:26,751	| IOT102 |	Antipasto
+EDL	00:44:27,263	00:44:29,823	| IOT102 |	So that's sort of the wire that we approached it
+EDL	00:44:29,823	00:44:31,359	| IOT102 |	And then you know I can
+EDL	00:44:31,359	00:44:35,711	| IOT102 |	We already having discussions look to pick Lock and Dam the value China vat have that.
+EDL	00:44:37,759	00:44:43,135	| IOT102 |	And I mean I ate to lose weight working it out as we go how we might as well so that the bottom line is if you can guess
+EDL	00:44:43,647	00:44:44,927	| IOT102 |	Enough of the Thai prepositions
+EDL	00:44:46,975	00:44:49,023	| IOT102 |	Not everything on top of that is obviously
+EDL	00:44:50,303	00:44:52,351	| IOT102 |	In the mix here is
+EDL	00:44:52,351	00:44:53,887	| IOT102 |	Your algorithms
+EDL	00:44:53,887	00:44:54,911	| IOT102 |	Your data
+EDL	00:44:54,911	00:44:56,703	| IOT102 |	Mixed with other people's data
+EDL	00:44:56,703	00:44:57,727	| IOT102 |	Other people's algorithm
+EDL	00:44:59,007	00:45:00,543	| IOT102 |	And it sounds like there's some
+EDL	00:45:00,543	00:45:02,591	| IOT102 |	Quid pro quo happening with some of the
+EDL	00:45:02,591	00:45:04,383	| IOT102 |	These maybe it's exchange and date
+EDL	00:45:05,151	00:45:07,967	| IOT102 |	Is there a monetary absolutely absolutely
+EDL	00:45:07,967	00:45:13,855	| IOT102 |	Absolutely looking at the bottom at the end of the day you've got to come up with a Y that everyone feels good about it
+EDL	00:45:13,855	00:45:20,255	| IOT102 |	And that's really unique businesses that that when you boil it down you go to delivering value to different people working together
+EDL	00:45:20,255	00:45:24,095	| IOT102 |	And so what that means he's pulling back insane what's your eject
+EDL	00:45:24,863	00:45:26,143	| IOT102 |	What's Market
+EDL	00:45:26,143	00:45:31,775	| IOT102 |	What are you good at where we go. And if we work together can we buy Queen and how do we share the risk and reward
+EDL	00:45:31,775	00:45:33,311	| IOT102 |	It's just a different way of thinking
+EDL	00:45:33,823	00:45:38,431	| IOT102 |	And so what's been really interesting for us as a small fast growing business is
+EDL	00:45:38,431	00:45:39,455	| IOT102 |	Wishing someone
+EDL	00:45:39,455	00:45:41,247	| IOT102 |	The world's Giants in
+EDL	00:45:41,247	00:45:44,831	| IOT102 |	Technology and food how you make that relationship work
+EDL	00:45:44,831	00:45:45,855	| IOT102 |	Text example
+EDL	00:45:45,855	00:45:47,647	| IOT102 |	Huge company
+EDL	00:45:48,159	00:45:51,487	| IOT102 |	Imagine it's kind of like two little
+EDL	00:45:51,487	00:45:56,863	| IOT102 |	Coldwell South Korea
+EDL	00:45:56,863	00:45:59,423	| IOT102 |	Living in a different spice how do you make that work
+EDL	00:45:59,423	00:46:00,703	| IOT102 |	How do you serve
+EDL	00:46:00,703	00:46:03,775	| IOT102 |	Mitchell is Italian prepositions a box and now there's a lot of
+EDL	00:46:04,799	00:46:07,615	| IOT102 |	That's my stupid wife thinking about how to approach the business model
+EDL	00:46:07,615	00:46:10,687	| IOT102 |	To make that work you don't have signal things with Microsoft
+EDL	00:46:11,199	00:46:17,599	| IOT102 |	Ibogaine understanding incentives and drivers of people with lopsided what brake light City KPMG
+EDL	00:46:17,599	00:46:18,879	| IOT102 |	I think that
+EDL	00:46:20,927	00:46:22,975	| IOT102 |	Example with
+EDL	00:46:22,975	00:46:26,303	| IOT102 |	Food safety regulations retailers it's really a bat
+EDL	00:46:26,303	00:46:26,815	| IOT102 |	How do you
+EDL	00:46:28,095	00:46:31,167	| IOT102 |	How you put together Arrangement that Sky we're going to pay the bill
+EDL	00:46:31,167	00:46:32,447	| IOT102 |	The Christ value
+EDL	00:46:32,447	00:46:37,567	| IOT102 |	And then I lied on that is always late than they Tonight Show that I customers
+EDL	00:46:37,567	00:46:42,431	| IOT102 |	Current control what happens if the data and it's not used against them and they shine outside
+EDL	00:46:42,431	00:46:46,271	| IOT102 |	So do you have any advice for a companies that are trying to
+EDL	00:46:46,271	00:46:47,039	| IOT102 |	To work with
+EDL	00:46:47,039	00:46:47,551	| IOT102 |	Bigger company
+EDL	00:46:48,319	00:46:49,343	| IOT102 |	Mediate
+EDL	00:46:49,343	00:46:50,623	| IOT102 |	The types of companies you should look
+EDL	00:46:51,135	00:46:51,647	| IOT102 |	Characteristics
+EDL	00:46:53,695	00:46:55,231	| IOT102 |	Cuz I think this is a really tough
+EDL	00:46:55,231	00:46:55,999	| IOT102 |	Sting for a small
+EDL	00:46:58,047	00:47:00,095	| IOT102 |	Yeah it is it's really hot
+EDL	00:47:00,095	00:47:03,423	| IOT102 |	And to get it right
+EDL	00:47:03,423	00:47:04,191	| IOT102 |	And
+EDL	00:47:04,191	00:47:04,959	| IOT102 |	I think
+EDL	00:47:04,959	00:47:06,751	| IOT102 |	My advice would be
+EDL	00:47:07,519	00:47:10,335	| IOT102 |	Obviously you want to look for strategic partners
+EDL	00:47:10,335	00:47:11,615	| IOT102 |	Partners that
+EDL	00:47:11,615	00:47:17,759	| IOT102 |	Provide something you don't have any no I think it's a very good agricultural sign that good fences make good neighbors
+EDL	00:47:18,271	00:47:21,087	| IOT102 |	Showing people who got complimentary soda
+EDL	00:47:21,087	00:47:22,367	| IOT102 |	Technology in capability
+EDL	00:47:22,367	00:47:24,671	| IOT102 |	So that would be one the second is really
+EDL	00:47:24,671	00:47:25,951	| IOT102 |	Typed out you seriously
+EDL	00:47:26,463	00:47:29,023	| IOT102 |	Because when you're inviting
+EDL	00:47:29,023	00:47:29,791	| IOT102 |	Business broker
+EDL	00:47:30,559	00:47:31,583	| IOT102 |	And so you want to work
+EDL	00:47:32,095	00:47:35,935	| IOT102 |	People with his trust and trust is built on similar values
+EDL	00:47:36,447	00:47:40,799	| IOT102 |	Because it's nothing you can you know you have to pull back on that when you never got him down now it
+EDL	00:47:40,799	00:47:42,591	| IOT102 |	I think that's really important
+EDL	00:47:42,591	00:47:43,615	| IOT102 |	Do something
+EDL	00:47:43,615	00:47:44,383	| IOT102 |	Workout
+EDL	00:47:44,383	00:47:46,431	| IOT102 |	Business model how it might work
+EDL	00:47:46,431	00:47:49,759	| IOT102 |	And then sit back and say okay had a waiver take this out of Scouts
+EDL	00:47:50,271	00:47:51,039	| IOT102 |	All right
+EDL	00:47:51,039	00:47:53,855	| IOT102 |	Thank you so much for coming on the show this week
+EDL	00:47:53,855	00:47:54,623	| IOT102 |	This was awesome
+EDL	00:47:56,415	00:47:57,439	| IOT102 |	Greatly enjoyed
+EDL	00:47:57,439	00:47:59,999	| IOT102 |	Picasso I feel very privileged to be yet
+EDL	00:47:59,999	00:48:01,279	| IOT102 |	Gastonia program sites
+EDL	00:48:02,303	00:48:03,327	| IOT102 |	I can't wait to check back with
+EDL	00:48:03,327	00:48:04,095	| IOT102 |	Put you in a little while.
+EDL	00:48:04,095	00:48:04,607	| IOT102 |	See how things are
+EDL	00:48:05,375	00:48:08,703	| IOT102 |	Great thanks
+EDL	00:48:08,703	00:48:15,103	| IOT102 |	Well that's it for this week's podcast thank you for listening and as always if you'd like more iot news
+EDL	00:48:15,103	00:48:19,967	| IOT102 |	Please sign up for my newsletter you can buy it at Stacey on iot
+EDL	00:48:20,479	00:48:21,247	| IOT102 |	Dot-com
+EDL	00:48:21,759	00:48:22,527	| IOT102 |	Thanks
+EDL	00:48:22,527	00:48:23,551	| IOT102 |	See you next week 
