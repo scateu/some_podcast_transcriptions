@@ -1,6 +1,9 @@
 # Install gPoddder
 
-# https://github.com/hrmthw/srt2lrc/blob/master/srt2lrc.py
+
+# 
+
+```bash
 wget https://github.com/hrmthw/srt2lrc/raw/master/srt2lrc.py
 
 for i in *.mp3;do test -e  "$(basename -s .mp3 -a "$i" ).srt" ||  autosub "$i";done
@@ -22,6 +25,7 @@ id3v2 -r "APIC" *.mp3
 
 alias git-sync-watch='watch -n 60 "if [[ \$(git status --porcelain) ]] ;then echo Commiting; git pull; git add --all;git commit -m \".\";git push; else echo Nothing to commit.; fi"'
 
+```
 
 # TODO
 
