@@ -1,0 +1,4 @@
+1994050DECUSNewOrleansLinuxImplementationIssuesInLinux.mkv: 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux.srt
+	audio2srtvideo 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux.mp3
+1994050DECUSNewOrleansLinuxImplementationIssuesInLinux.srt: 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux.tsv
+	cat $< | tsv2srt > $@

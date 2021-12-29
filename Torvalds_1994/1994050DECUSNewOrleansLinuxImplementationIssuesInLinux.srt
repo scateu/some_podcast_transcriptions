@@ -41,7 +41,7 @@ There are lots of complications that don't necessarily exist in other programs, 
 
 11
 00:02:15,390 --> 00:02:41,630
-You want to keep it very simple and uh to do that, you usually have to kind of leave out the bits that look too complicated or or features that might be nice, but that are require too much complexity of the rest of the system.
+You want to keep it very simple and to do that, you usually have to kind of leave out the bits that look too complicated or or features that might be nice, but that are require too much complexity of the rest of the system.
 
 12
 00:02:44,110 --> 00:02:51,260
@@ -125,7 +125,7 @@ The code doesn't run as fast as it should, so I like to get the most out of the 
 
 32
 00:05:52,350 --> 00:06:08,370
-If it can do it, and if it can't, well tough luck uh Linux still gets pretty good performance even on a low end machine, so I try to also keep it.
+If it can do it, and if it can't, well tough luck Linux still gets pretty good performance even on a low end machine, so I try to also keep it.
 
 33
 00:06:09,070 --> 00:06:12,900
@@ -137,7 +137,7 @@ Just to make something like that, also, the final thing is.
 
 35
 00:06:18,070 --> 00:06:36,620
-I don't want to add a feature which may turn out to be hard to keep, so I don't want to add liMITs or things that could liMIT future expansion like the 640k liMITing doors.
+I don't want to add a feature which may turn out to be hard to keep up, so I don't want to add limits or things that could limit future expansion like the 640k limiting DOS.
 
 36
 00:06:36,620 --> 00:06:38,480
@@ -153,7 +153,7 @@ Like, for example.
 
 39
 00:06:49,850 --> 00:07:11,730
-People have asked for for a pc direct access to screen memory in order to to be able to write cursors, type programs with menus and so on, easier, easily, and I don't actually want to support that kind of thing because it then doesn't work to different machines at all.
+People have asked for for a PC direct access to screen memory in order to to be able to write cursors, type programs with menus and so on, easier, easily, and I don't actually want to support that kind of thing because it then doesn't port to different machines at all.
 
 40
 00:07:13,000 --> 00:07:16,160
@@ -161,7 +161,7 @@ So I tried to avoid things that lock us to some design.
 
 41
 00:07:19,570 --> 00:07:32,690
-Well, this has resulted in in the colonel is a that keep it simple design resulted in the monolithic colonel.
+Well, this has resulted in in the kernel is a that keep it simple design resulted in the monolithic kernel.
 
 42
 00:07:34,560 --> 00:07:43,220
@@ -173,23 +173,23 @@ The microkernel people think that microkernel are easier to write, and I think I
 
 44
 00:07:51,590 --> 00:08:22,610
-I think micro kernels are hard at right, especially if you don't have anything to start up from monolithic kernel may have some problems in keeping up the code and upgrading and so on, but it also makes it much easier to actually change the internals of the kernel completely without having to change several different subsistence, which may happen in microkernel Uh.
+I think micro kernels are hard at right, especially if you don't have anything to start up from. Monolithic kernel may have some problems in keeping up the code and upgrading and so on, but it also makes it much easier to actually change the internals of the kernel completely without having to change several different subsistence, which may happen in microkernel Uh.
 
 45
 00:08:22,610 --> 00:08:33,820
-Unbiased, the first coronavirus meanings which purported to be a microkernel and did it horribly badly ya.
+Unbiased, the first kernel I use from Minix which purported(传说) to be a microkernel and did it horribly badly.
 
 46
 00:08:34,900 --> 00:08:51,850
-So instead of having modularity due due to the basic design of the kernel like a microkernel dose, I've tried to make Linux reasonably modular so that there are separate some directories codes.
+So instead of having modularity due due to the basic design of the kernel like a microkernel DOS, I've tried to make Linux reasonably modular so that there are separate some directories codes.
 
 47
 00:08:51,850 --> 00:09:18,480
-Major pieces of the coronavirus, so on uh, when something looks like it could be ugly to implement, I'd rather skip it and trying to implement to make a kernel easier to program, especially because the two major problems in inviting and operating systems.
+Major pieces of the kernel, and so on. Also uh, when something looks like it could be ugly to implement, I'd rather skip it and trying to implement to make a kernel easier to program, especially because the two major problems in writing an operating systems.
 
 48
 00:09:18,930 --> 00:09:38,940
-Maybe uh race conditions and deadlocks due to locking, so what I did and what the original unix did was make the kernel non preemptive when a process runs in colonel mode, no other process will preempted unless the process yields control voluntarily.
+Maybe race conditions and deadlocks due to locking, so what I did and what the original UNIX did was make the kernel non preemptive(抢占) when a process runs in kernel mode, no other process will preempted unless the process yields control voluntarily.
 
 49
 00:09:41,330 --> 00:09:53,910
@@ -197,11 +197,11 @@ This leads to to a code that doesn't need any any locking on internal data struc
 
 50
 00:09:54,750 --> 00:10:16,940
-You still have races when it comes to to actually interrupt handling, and then you have races when you try to access use the code data, which might be swept out or when you try to do some I O, but those races at least know about so much, they're more dependable.
+You still have races when it comes to to actually interrupt handling, and then you have races when you try to access use the code data, which might be swept out or when you try to do some I/O, but those races at least know about so much, they're more dependable.
 
 51
 00:10:16,940 --> 00:10:40,000
-You know when when an interview can change your data structures and you also know when you actually access user code, the basic design, which is one of the problems right now, is that the whole kernel is kind of non portable.
+You know when when an interupt can change your data structures and you also know when you actually access user code, the basic design, which is one of the problems right now, is that the whole kernel is kind of non portable.
 
 52
 00:10:40,600 --> 00:10:52,230
@@ -213,11 +213,11 @@ But it's still pretty small.
 
 54
 00:10:54,340 --> 00:11:05,640
-It compiles in about 10 minutes if you have reasonable machine and of that, almost exactly half is levI's drivers.
+It compiles in about 10 minutes if you have reasonable machine and of that, almost exactly half is ????'s drivers.
 
 55
 00:11:06,130 --> 00:11:20,130
-It's actually within a line or two right now, which is just because the P C hardware has so many different devices, so it's kind of naturally machine specific the code.
+It's actually within a line or two right now, which is just because the PC hardware has so many different devices, so it's kind of naturally machine specific the code.
 
 56
 00:11:20,610 --> 00:11:29,180
@@ -233,15 +233,15 @@ On the other hand, the memory management code right now is less than 2000 lines.
 
 59
 00:11:42,040 --> 00:11:46,720
-If I remember correctly, so supporting that he isn't too bad.
+If I remember correctly, so porting that isn't too bad.
 
 60
 00:11:59,770 --> 00:12:22,440
-The development framework is is kind of set out by the fact that the whole development of Linux is completely open, and I put out my latest version of the kernel every two days or so, uh, the latest version right now is one dot 1 dot 12.
+The development framework is is kind of set out by the fact that the whole development of Linux is completely open, and I put out my latest version of the kernel about every two days or so, uh, the latest version right now is 1.1.12.
 
 61
 00:12:22,440 --> 00:12:49,530
-Which I put out the day before I left for uh my the alpha versions like this one, which I put out, may not even compile, and in fact, one dot 1 dot 12 doesn't, unless you add a line to a make file, but this does mean that people can test out my version.
+Which I put out the day before I left for my the alpha versions like this one, which I put out, may not even compile, and in fact, 1.1.12 doesn't link, unless you add a line to a Makefile, but this does mean that people can test out my version.
 
 62
 00:12:49,530 --> 00:13:10,660
@@ -249,19 +249,19 @@ My latest version and new changes against that and interactively kind of see all
 
 63
 00:13:10,660 --> 00:13:19,310
-There's a coding style standard, which is essentially that all code has to be anxiously.
+There's a coding style standard, which is essentially that all code has to be ANSI-C.
 
 64
 00:13:20,010 --> 00:13:24,960
-And the bracing style is the one through bracing style I.
+And the bracing style is the one through bracing style i.e
 
 65
 00:13:24,960 --> 00:13:29,470
-The one used in we are already carrying a rich book.
+The one used in we are already Kernighan & Ritchie book.
 
 66
 00:13:29,780 --> 00:13:42,870
-I'm not religious about this, so when I get a driver, which I know I can't keep up, I don't change the actual formatting, but the colonel.
+I'm not religious about this, so when I get a driver, which I know I can't keep up, I don't change the actual formatting, but the kernel.
 
 67
 00:13:42,870 --> 00:13:48,350
@@ -277,11 +277,11 @@ I can, for example, concentrate on the ones I consider mine.
 
 70
 00:14:14,260 --> 00:14:23,550
-I the kernel, the Fs and mm memory management sub director and people who write device driver.
+i.e. the kernel, the FS and MM memory management subdirectory and people who write device driver.
 
 71
 00:14:23,550 --> 00:14:32,540
-For example, there's a separate driver's subdirectory, which is artisan into character drivers, lock drivers and scarcely and stone.
+For example, there's a separate driver's subdirectory, which is partitioned into character drivers, loop drivers and SCSI and SAN.
 
 72
 00:14:32,540 --> 00:14:39,750
@@ -297,27 +297,27 @@ Uh, the other thing, the main benefit of actually having this kind of open devel
 
 75
 00:15:02,790 --> 00:15:20,320
-But it also means that that when a developer sends me some, so I'm patched to his driver as similar, I can put it in the same day, maybe make a new version the next day, and then the developer knows that's okay.
+But it also means that that when a developer sends me some patch to his driver as similar, I can put it in the same day, maybe make a new version the next day, and then the developer knows that's okay.
 
 76
-00:15:20,670 --> 00:15:44,380
-Learners predicting into his latest kernel now I need I can forget about these old problems and concentrate on the new, which sadly they always are in once so far, what this means in practice is that I'm at kind of the top of the hierarchy of developers, and under me.
+00:15:20,320 --> 00:15:44,380
+Linux predicting into his latest kernel now I need I can forget about these old problems and concentrate on the new, which sadly they always are in once so far, what this means in practice is that I'm at kind of the top of the hierarchy of developers, and under me.
 
 77
 00:15:44,380 --> 00:15:56,300
-I have a few trusted Karl developers I trust I have or there is one person who mainly handles the networking side of Linux.
+I have a few trusted kernel developers I trust I have or there is one person who mainly handles the networking side of Linux.
 
 78
 00:15:56,300 --> 00:16:23,080
-There's one person who mainly handles scarcity drivers, one for every file system except for the minix fs, which I brought myself and so on, so these are kind of trusted in their own areas, and under them, they may have a few more, which they trust to do minor patches to that part.
+There's one person who mainly handles SCSI drivers, one for every file system except for the Minix FS, which I brought myself and so on, so these are kind of trusted in their own areas, and under them, they may have a few more, which they trust to do minor patches to that part.
 
 79
 00:16:23,680 --> 00:16:48,160
-And the patches then go from downwards up to me and then into the standard kernel uh, this is a core team like hierarchy used in x and so on, because outside intervention is is actually encouraged and appreciated.
+And the patches then go from downwards up to me and then into the standard kernel uh, this is a core team like hierarchy used in XFree86 and so on, because outside intervention is is actually encouraged and appreciated.
 
 80
 00:16:48,160 --> 00:16:56,210
-So so you don't have to be uh recognized developer to actually send me a patch, and I do get patches by honest.
+So so you don't have to be recognized developer to actually send me a patch, and I do get patches by honest.
 
 81
 00:16:57,460 --> 00:17:08,670
@@ -361,15 +361,15 @@ The process may do.
 
 91
 00:18:29,560 --> 00:18:43,680
-It also takes care of of any process faults, so when a process tries to do something that's illegal like disabled interrupts, the colonel notices this and kills the processes.
+It also takes care of of any process faults, so when a process tries to do something that's illegal like disabled interrupts, the kernel notices this and kills the processes.
 
 92
 00:18:45,530 --> 00:18:56,620
-Uh, there's a separate file for handling the virtual 86 mild in the 366 processor, which is used by the dolls.
+Uh, there's a separate file for handling the virtual 86 mild in the 366 processor, which is used by the DOS.
 
 93
 00:18:58,410 --> 00:19:19,390
-I am possibly in the future that windows similar, so there's also the Linux kernel by itself is uses the flat address space of the 3 86, so it actually has only a code and data segment, which covered the whole address based on the process.
+I am possibly in the future that windows similar, so there's also the Linux kernel by itself is uses the flat address space of the 386, so it actually has only a code and data segment, which covered the whole address based on the process.
 
 94
 00:19:19,970 --> 00:19:23,140
@@ -377,23 +377,23 @@ But the process can ask for segments.
 
 95
 00:19:23,550 --> 00:19:44,680
-And the colonel will give it within reason up to 512 or something like that segments it could use if somebody really wants to use a segment to the architecture this year, again is used mainly for windows emulation, but.
+And the kernel will give it within reason up to 512 or something like that segments it could use if somebody really wants to use a segment to the architecture this year, again is used mainly for windows emulation, but.
 
 96
 00:19:50,220 --> 00:20:14,820
-Okay, I'll actually give a programming example of of a kind of I don't know how disease, because I never saw real UNIX source code before starting on Linux and after starting on Linux, I have actively tried to avoid it, plus it actually would take too much of my time.
+Okay, I'll actually give a programming example of of a kind of I don't know how different this is, because I never saw real UNIX source code before starting on Linux and after starting on Linux, I have actively tried to avoid it, plus it actually would take too much of my time.
 
 97
 00:20:14,820 --> 00:20:31,440
-So I it hasn't been a problem avoiding it, but traditionally in operating systems, the actual action of going to sleep or scheduling a process is closely tied to the state.
+So I it hasn't been a problem avoiding it, but traditionally in operating systems, the actual action of going to sleep or scheduling a process is closely tied to the state
 
 98
 00:20:31,440 --> 00:20:34,790
-The process is in which leads to some problems.
+the process is in which leads to some problems.
 
 99
 00:20:36,060 --> 00:21:01,620
-You have a special call, which is please now I'd like to sleep on this special, this action variable or whatever, which leads to race conditions, because you usually have something like this, you have if fa empty.
+You have a special call, which is please now I'd like to sleep on this special, this action variable or whatever, which leads to race conditions, because you usually have something like this, you have if some empty.
 
 100
 00:21:09,370 --> 00:21:13,710
@@ -413,11 +413,11 @@ The buffer might actually get filled, then would sleep on something that will ne
 
 104
 00:21:39,750 --> 00:22:09,570
-You have semi force and event comforts and so on, but and I knew of this, but I actually decided on a completely different uh solution, which was to have separate process, state and scheduling priMITives, so you have a process state which the process can set by itself here.
+You have semi force and event counters and so on, but and I knew of this, but I actually decided on a completely different solution, which was to have separate process, state and scheduling primitives, so you have a process state which the process can set by itself here.
 
 105
 00:22:10,370 --> 00:22:17,670
-The current process says that now I'm sleeping, but what it's actually is doing is it's lying to the colonel.
+The current process says that now I'm sleeping, but what it's actually is doing is it's lying to the kernel.
 
 106
 00:22:17,670 --> 00:22:28,080
@@ -445,7 +445,7 @@ This is actually has the evident advantage that sleeping on several different ev
 
 112
 00:23:42,050 --> 00:23:59,980
-If you have a sleep call, if you had a sleep call, which goes to sleep, you can't put many of them after each other because the first one will go to sleep, so so this actually works very well with the select semantics I mentioned order.
+If you have a sleep call, if you had a sleep call, which goes to sleep, you can't put many of them after each other because the first one will go to sleep, so so this actually works very well with the select() semantics I mentioned order.
 
 113
 00:24:02,060 --> 00:24:03,920
@@ -473,15 +473,15 @@ Internally, it just looks at the requests the users mix the user mix, and then t
 
 119
 00:24:45,250 --> 00:24:59,040
-Unlike at least bsd 3 4.3, which used a special I node for a normal file and then A V node for a virtual file or nfs.
+Unlike at least BSD 4.3, which used a special I-node for a normal file and then a V-node for a virtual file or NFS.
 
 120
-00:24:59,040 --> 00:25:02,820
-For example, Linux doesn't have separate dynamics.
+00:24:59,040 --> 00:25:03,990
+For example, Linux doesn't have separate I-nodes V-nodes.
 
 121
 00:25:03,990 --> 00:25:12,360
-Linux just has v nodes, and then, well, we call them I nodes because why not, they're the only thing we have.
+Linux just has V-nodes, and then, well, we call them I-nodes because why not, they're the only thing we have.
 
 122
 00:25:13,290 --> 00:25:21,000
@@ -501,7 +501,7 @@ Look up the basic UNIX semantics for mounting a file system.
 
 126
 00:25:49,080 --> 00:26:02,390
-So on, and then we have separate modules that actually implement each file system, and Linux has snow, no native file system at all.
+So on, and then we have separate modules that actually implement each file system, and Linux has no, no native file system at all.
 
 127
 00:26:03,340 --> 00:26:05,510
@@ -517,7 +517,7 @@ That's why the actual low level of file system components right now, there are 1
 
 130
 00:26:22,770 --> 00:26:51,080
-Which allows long file names, uh big partitions, I think up to 4 terabytes and size file sizes of up to 2 gigabytes, then there's X F S, which is similar but slightly different uh and um, the minix file system.
+Which allows long file names, big partitions, I think up to 4 terabytes and size file sizes of up to 2 gigabytes, then there's XFS, which is similar but slightly different and um, the Minix file system.
 
 131
 00:26:51,080 --> 00:26:58,550
@@ -525,15 +525,15 @@ Which is the original one, which is the same one as in the minix operating syste
 
 132
 00:26:58,550 --> 00:27:24,460
-Which I used to copy files over and then ah system 5 file system, which can mount scenic, coherent and some other system 5 performance uh more non unix file system type is the ms-dos file system.
+Which I used to copy files over and then System V file system, which can mount scenic, coherent and some other system 5 performance more non UNIX file system type is the ms-dos file system.
 
 133
 00:27:24,460 --> 00:27:33,910
-If you do use ms-dos, you can just mount your M S dos, partition or floppy or whatever, and it looks like a UNIX fast extended Linux.
+If you do use ms-dos, you can just mount your MSDOS, partition or floppy or whatever, and it looks like a UNIX fast extended Linux.
 
 134
 00:27:34,760 --> 00:27:58,340
-Of course, there are liMITations like 8 characters, adult and three characters, and then you don't have any separate protection rights, they will start it up at mount time and are the same for the whole file system, so you also there is also os 2 hpfs file system.
+Of course, there are limitations like 8 characters, adult and three characters, and then you don't have any separate protection rights, they will start it up at mount time and are the same for the whole file system, so you also there is also OS/2 HPFS file system.
 
 135
 00:27:58,340 --> 00:28:00,350
@@ -541,11 +541,11 @@ This one is currently read.
 
 136
 00:28:00,350 --> 00:28:15,320
-Only you can't write to the os 2 partition, but you can read your files from it, and there is the cd arm iso 9 6 6 0 file system used for most theaters.
+Only you can't write to the OS/2 partition, but you can read your files from it, and there is the CDROM ISO 9660 file system used for most theaters.
 
 137
 00:28:15,750 --> 00:28:21,140
-It has Rockridge extensions, so you get long families and symbolic things, and so on.
+It has ?Rockridge extensions, so you get long file names and symbolic things, and so on.
 
 138
 00:28:23,290 --> 00:28:24,980
@@ -553,23 +553,23 @@ There's a third file system.
 
 139
 00:28:24,980 --> 00:28:34,670
-Somebody call it the most fun you can have with the file system, which is the virtual truck file system.
+Somebody call it the most fun you can have with the file system, which is the virtual /proc file system.
 
 140
 00:28:35,180 --> 00:28:42,900
-I got the idea from what I've read of plan 9 and tried to get the best things of that.
+I got the idea from what I've read of Plan 9 and tried to get the best things of that.
 
 141
 00:28:43,750 --> 00:28:56,680
-It turns out that system 5 release 4 also has a proc file system, but don't confuse the Linux profile system and the system of five versions because the system 5 version is totally brain dead and useless.
+It turns out that System V release 4 also has a proc file system, but don't confuse the Linux proc file system and the System V versions because the System V version is totally brain dead and useless.
 
 142
 00:28:56,680 --> 00:29:15,950
-The Linux the Linux profile system is actually extremely useful, and uh, we've made away with all the kernel memory hacking you needed to do for processes like P S and who end up time and so on.
+The Linux the Linux profile system is actually extremely useful, and uh, we've made away with all the kernel memory hacking you needed to do for processes like ps and who and uptime and so on.
 
 143
 00:29:15,950 --> 00:29:23,740
-They just read the virtual system, and if you don't have uh an uptime binary.
+They just read the virtual system, and if you don't have an uptime binary.
 
 144
 00:29:23,740 --> 00:29:32,400
@@ -581,7 +581,7 @@ So on the actual uptime binary, then pretty face these two days hours minutes an
 
 146
 00:29:45,390 --> 00:29:53,030
-The profile system is a is completely internal to the kernel.
+The proc file system is a is completely internal to the kernel.
 
 147
 00:29:53,030 --> 00:29:55,560
@@ -589,11 +589,11 @@ It doesn't exist physically at all.
 
 148
 00:29:56,470 --> 00:30:07,190
-You just it just looks like a file system, other file system there's been talk about, and I have actually been implemented is a FDP file system.
+You just it just looks like a file system, other file system there's been talk about, and I have actually been implemented is a FTP file system.
 
 149
 00:30:07,770 --> 00:30:23,900
-Which looks like a file system, but when you do get a fight, it goes through the FDP protocol and gets it from some other, this is possible done actually as a user level file system, but it's not in the default colonel.
+Which looks like a file system, but when you do get a file, it goes through the FTP protocol and gets it from some other, this is possible done actually as a user level file system, but it's not in the default kernel.
 
 150
 00:30:24,270 --> 00:30:26,530
@@ -621,11 +621,11 @@ In fact, you don't need to implement them all, but they are divided into three l
 
 156
 00:33:15,720 --> 00:33:24,107
-For example, uh unnamed pipes which don't have any other semantics than the file operations.
+For example, unnamed pipes which don't have any other semantics than the file operations.
 
 157
 00:33:24,107 --> 00:33:30,920
-They they actually don't even have the the higher level vfs interfaces at all.
+They they actually don't even have the the higher level VFS interfaces at all.
 
 158
 00:33:43,720 --> 00:33:48,450
@@ -637,15 +637,15 @@ It's also one of the smallest parts.
 
 160
 00:33:53,060 --> 00:34:11,230
-But as memories, such a fundamental resource in a unix operating system in any operating system, in fact, you want to make the fullest possible use of the memory you have in a machine, especially on A P C.
+But as memories, such a fundamental resource in a UNIX operating system in any operating system, in fact, you want to make the fullest possible use of the memory you have in a machine, especially on a PC.
 
 161
-00:34:11,230 --> 00:34:16,410
-Where you may have only 8 megabytes and emax takes, oh.
+00:34:11,230 --> 00:34:17,410
+Where you may have only 8 megabytes and Emacs takes up all of that
 
 162
-00:34:16,410 --> 00:34:45,660
-That so when you have, but the colonel wants memory for internal resources like a buffer cash and for internal data structures like the e nodes and file uh, the user processes once memory for for actual code and data, ah, well, I take took up to mention file buffering already.
+00:34:17,410 --> 00:34:45,660
+so when you have, but the kernel wants memory for internal resources like a buffer cash and for internal data structures like the inodes and file, the user processes once memory for for actual code and data, ah, well, I take took up to mention file buffering already.
 
 163
 00:34:46,190 --> 00:35:02,670
@@ -673,7 +673,7 @@ So when a packet comes in, it's gone.
 
 169
 00:35:40,230 --> 00:35:54,030
-Ask for for this liMITed resource, uh, all other memories then used for either process memory or her buffers.
+Ask for for this limited resource, uh, all other memories then used for either process memory or her buffers.
 
 170
 00:35:54,670 --> 00:36:07,420
@@ -697,7 +697,7 @@ You can minimize free memory by starting up emax, so so to actually maximize the
 
 175
 00:37:10,770 --> 00:37:32,250
-Yeah, so Linux not just chairs memory by copyright between uh processes which have forked it, also shares memory with ah processes that share the same executable image or share the same shared library.
+Yeah, so Linux not just chairs memory by copyright between processes which have forked it, also shares memory with ah processes that share the same executable image or share the same shared library.
 
 176
 00:37:35,140 --> 00:37:47,670
@@ -709,7 +709,7 @@ It could also be mapped into several different programs as actual code.
 
 178
 00:37:57,970 --> 00:38:17,830
-And again, if you use the free comment on the pc Linux pc here, you usually get something like 8 or 10 megabytes of shared memory, which doesn't mean that it's shared like system 5 style ipc shared memory.
+And again, if you use the free comment on the PC Linux PC here, you usually get something like 8 or 10 megabytes of shared memory, which doesn't mean that it's shared like system 5 style ipc shared memory.
 
 179
 00:38:17,830 --> 00:38:20,980
@@ -725,7 +725,7 @@ So we just use one physical page for it on my home machine.
 
 182
 00:38:34,280 --> 00:38:49,690
-This means that I have 60 megabytes of physical ram and actually the colonel map scene about 24 megabytes of virtual memory.
+This means that I have 60 megabytes of physical ram and actually the kernel map scene about 24 megabytes of virtual memory.
 
 183
 00:38:49,690 --> 00:39:04,340
@@ -761,11 +761,11 @@ What this actually means is that we're separating the process structure.
 
 191
 00:40:20,228 --> 00:40:32,190
-Which has been one large structure into separate file system, memory management and and uh and register task parts.
+Which has been one large structure into separate file system, memory management and and and register task parts.
 
 192
 00:40:32,510 --> 00:41:08,860
-Which allows different threads to share the same memory management or maybe have different virtual memory, but share the same open files or share the same root I noted so on uh what's also being worked on and is actually in 1.1 point 12 colonel is an extended memory management, which allows better use of physical memory.
+Which allows different threads to share the same memory management or maybe have different virtual memory, but share the same open files or share the same root I noted so on what's also being worked on and is actually in 1.1 point 12 kernel is an extended memory management, which allows better use of physical memory.
 
 193
 00:41:10,750 --> 00:41:20,620
@@ -789,7 +789,7 @@ You can always map it in contiguousness several pages for user space application
 
 198
 00:41:57,100 --> 00:42:22,260
-But dma and some other applications actually want the physical memory to be contiguous, so we wanted to allow a possibility of uh allocating larger chunks currently 128 kilobytes, which is the dna liMIT on the pc at one time physically.
+But dma and some other applications actually want the physical memory to be contiguous, so we wanted to allow a possibility of allocating larger chunks currently 128 kilobytes, which is the dna limit on the PC at one time physically.
 
 199
 00:42:23,940 --> 00:42:32,130
@@ -821,7 +821,7 @@ But we're still looking into improving it further.
 
 206
 00:43:30,980 --> 00:44:00,880
-Uh, it's kind of awkward because it uses the original UNIX way of indexing file system buffers by the device buffer number they are in, while it would be more efficient for the for the actual file system to index them by by the you know they are associated with and uh where in that file.
+Uh, it's kind of awkward because it uses the original UNIX way of indexing file system buffers by the device buffer number they are in, while it would be more efficient for the for the actual file system to index them by by the you know they are associated with and where in that file.
 
 207
 00:44:00,880 --> 00:44:16,790
@@ -837,7 +837,7 @@ We're trying to make this more general, so eventually all kernel drivers will be
 
 210
 00:44:39,090 --> 00:44:50,550
-So you could do a colonel, which unloads the drivers as it notices that the device isn't there and so on.
+So you could do a kernel, which unloads the drivers as it notices that the device isn't there and so on.
 
 211
 00:44:52,770 --> 00:44:59,170
@@ -869,7 +869,7 @@ Yes, John west digital systems consulting, yeah, could you speak up.
 
 218
 00:45:53,510 --> 00:46:10,610
-John west, digital systems consulting are there any plans for a compressed file system uh there are patches available for a compressed file system, I've heard some horror stories of it.
+John west, digital systems consulting are there any plans for a compressed file system there are patches available for a compressed file system, I've heard some horror stories of it.
 
 219
 00:46:11,670 --> 00:46:21,670
