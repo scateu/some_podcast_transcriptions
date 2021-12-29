@@ -1,5 +1,19 @@
 https://archive.org/details/199405-decusnew-orleans
 
+---
+
+PART 1
+
+使用我做的vim插件基于机器识别的字幕校订了一个版本在此:
+
+https://github.com/scateu/some_podcast_transcriptions/blob/main/Torvalds_1994/199405DECUSNewOrleansLinusAnIntroductionToLinux.srt
+
+传了一份burn-in字幕的于B站:
+https://www.bilibili.com/video/BV13R4y1s7j5/
+
+https://archive.org/download/199405-decusnew-orleans/199405DECUSNewOrleansLinusAnIntroductionToLinux.mp3
+
+---
 
 曾经遗失的 Linus Torvalds 首次在大型会议上的演讲作者： John Hall 译者： LCTT Xingyu.Wang | 2021-12-28 00:17      
 这是承诺已久的、送给所有热爱 GNU/Linux 的好男孩、好女孩们的圣诞礼物。
