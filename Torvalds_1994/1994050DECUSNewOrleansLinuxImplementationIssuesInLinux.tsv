@@ -53,56 +53,59 @@ EDL	00:05:52,350	00:06:08,370	| 1994050DECUSNewOrleansLinuxImplementationIssuesI
 EDL	00:06:08,370	00:06:09,070	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	[ SPACE 0.7 secs ]
 EDL	00:06:09,070	00:06:12,900	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	It's usable, even even when you don't have a mascot processor. 
 EDL	00:06:12,900	00:06:18,070	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	Just to make something like that, also, the final thing is. 
-EDL	00:06:18,070	00:06:36,620	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	I don't want to add a feature which may turn out to be hard to keep, so I don't want to add liMITs or things that could liMIT future expansion like the 640k liMITing doors. 
+EDL	00:06:18,070	00:06:36,620	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	I don't want to add a feature which may turn out to be hard to keep up, so I don't want to add limits or things that could limit future expansion like the 640k limiting DOS. 
 EDL	00:06:36,620	00:06:38,480	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	I tried to avoid those. 
 EDL	00:06:38,480	00:06:39,490	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	[ SPACE 1.0 secs ]
 EDL	00:06:39,490	00:06:45,990	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	This means that some features people have asked for and that could be easy to implement. 
 EDL	00:06:45,990	00:06:47,700	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	[ SPACE 1.7 secs ]
 EDL	00:06:47,700	00:06:49,850	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	Like, for example. 
-EDL	00:06:49,850	00:07:11,730	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	People have asked for for a pc direct access to screen memory in order to to be able to write cursors, type programs with menus and so on, easier, easily, and I don't actually want to support that kind of thing because it then doesn't work to different machines at all. 
+EDL	00:06:49,850	00:07:11,730	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	People have asked for for a PC direct access to screen memory in order to to be able to write cursors, type programs with menus and so on, easier, easily, and I don't actually want to support that kind of thing because it then doesn't port to different machines at all. 
 EDL	00:07:11,730	00:07:13,000	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	[ SPACE 1.3 secs ]
 EDL	00:07:13,000	00:07:16,160	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	So I tried to avoid things that lock us to some design. 
 EDL	00:07:16,160	00:07:19,570	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	[ SPACE 3.4 secs ]
-EDL	00:07:19,570	00:07:32,690	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	Well, this has resulted in in the colonel is a that keep it simple design resulted in the monolithic colonel. 
+EDL	00:07:19,570	00:07:32,690	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	Well, this has resulted in in the kernel is a that keep it simple design resulted in the monolithic kernel. 
 EDL	00:07:32,690	00:07:34,560	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	[ SPACE 1.9 secs ]
 EDL	00:07:34,560	00:07:43,220	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	This is something of a debate in the ya operating system community. 
 EDL	00:07:43,220	00:07:44,500	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	[ SPACE 1.3 secs ]
 EDL	00:07:44,500	00:07:51,210	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	The microkernel people think that microkernel are easier to write, and I think I disagree strongly. 
 EDL	00:07:51,210	00:07:51,590	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	[ SPACE 0.4 secs ]
-EDL	00:07:51,590	00:08:22,610	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	I think micro kernels are hard at right, especially if you don't have anything to start up from monolithic kernel may have some problems in keeping up the code and upgrading and so on, but it also makes it much easier to actually change the internals of the kernel completely without having to change several different subsistence, which may happen in microkernel Uh. 
-EDL	00:08:22,610	00:08:33,820	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	Unbiased, the first coronavirus meanings which purported to be a microkernel and did it horribly badly ya. 
+EDL	00:07:51,590	00:08:22,610	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	I think micro kernels are hard at right, especially if you don't have anything to start up from. Monolithic kernel may have some problems in keeping up the code and upgrading and so on, but it also makes it much easier to actually change the internals of the kernel completely without having to change several different subsistence, which may happen in microkernel Uh. 
+EDL	00:08:22,610	00:08:33,820	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	Unbiased, the first kernel I use from Minix which purported(传说) to be a microkernel and did it horribly badly. 
 EDL	00:08:33,820	00:08:34,900	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	[ SPACE 1.1 secs ]
-EDL	00:08:34,900	00:08:51,850	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	So instead of having modularity due due to the basic design of the kernel like a microkernel dose, I've tried to make Linux reasonably modular so that there are separate some directories codes. 
-EDL	00:08:51,850	00:09:18,480	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	Major pieces of the coronavirus, so on uh, when something looks like it could be ugly to implement, I'd rather skip it and trying to implement to make a kernel easier to program, especially because the two major problems in inviting and operating systems. 
+EDL	00:08:34,900	00:08:51,850	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	So instead of having modularity due due to the basic design of the kernel like a microkernel DOS, I've tried to make Linux reasonably modular so that there are separate some directories codes. 
+EDL	00:08:51,850	00:09:18,480	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	Major pieces of the kernel, and so on. Also uh, when something looks like it could be ugly to implement, I'd rather skip it and trying to implement to make a kernel easier to program, especially because the two major problems in writing an operating systems. 
+
+* two major problems
+
 EDL	00:09:18,480	00:09:18,930	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	[ SPACE 0.4 secs ]
-EDL	00:09:18,930	00:09:38,940	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	Maybe uh race conditions and deadlocks due to locking, so what I did and what the original unix did was make the kernel non preemptive when a process runs in colonel mode, no other process will preempted unless the process yields control voluntarily. 
+EDL	00:09:18,930	00:09:38,940	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	Maybe uh race conditions and deadlocks due to locking, so what I did and what the original UNIX did was make the kernel non preemptive(抢占) when a process runs in kernel mode, no other process will preempted unless the process yields control voluntarily. 
 EDL	00:09:38,940	00:09:41,330	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	[ SPACE 2.4 secs ]
 EDL	00:09:41,330	00:09:53,910	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	This leads to to a code that doesn't need any any locking on internal data structures because you know you're not going to going to be interrupted by some other process. 
 EDL	00:09:53,910	00:09:54,750	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	[ SPACE 0.8 secs ]
-EDL	00:09:54,750	00:10:16,940	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	You still have races when it comes to to actually interrupt handling, and then you have races when you try to access use the code data, which might be swept out or when you try to do some I O, but those races at least know about so much, they're more dependable. 
-EDL	00:10:16,940	00:10:40,000	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	You know when when an interview can change your data structures and you also know when you actually access user code, the basic design, which is one of the problems right now, is that the whole kernel is kind of non portable. 
+EDL	00:09:54,750	00:10:16,940	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	You still have races when it comes to to actually interrupt handling, and then you have races when you try to access use the code data, which might be swept out or when you try to do some I/O, but those races at least know about so much, they're more dependable. 
+EDL	00:10:16,940	00:10:40,000	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	You know when when an interupt can change your data structures and you also know when you actually access user code, the basic design, which is one of the problems right now, is that the whole kernel is kind of non portable. 
 EDL	00:10:40,000	00:10:40,600	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	[ SPACE 0.6 secs ]
 EDL	00:10:40,600	00:10:52,230	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	It's less so than it was at one point, but still it's about 176000 lines right now, which is it's not the smallest UNIX kernel around. 
 EDL	00:10:52,230	00:10:54,340	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	But it's still pretty small. 
-EDL	00:10:54,340	00:11:05,640	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	It compiles in about 10 minutes if you have reasonable machine and of that, almost exactly half is levI's drivers. 
+EDL	00:10:54,340	00:11:05,640	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	It compiles in about 10 minutes if you have reasonable machine and of that, almost exactly half is ????'s drivers. 
 EDL	00:11:05,640	00:11:06,130	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	[ SPACE 0.5 secs ]
-EDL	00:11:06,130	00:11:20,130	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	It's actually within a line or two right now, which is just because the P C hardware has so many different devices, so it's kind of naturally machine specific the code. 
+EDL	00:11:06,130	00:11:20,130	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	It's actually within a line or two right now, which is just because the PC hardware has so many different devices, so it's kind of naturally machine specific the code. 
 EDL	00:11:20,130	00:11:20,610	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	[ SPACE 0.5 secs ]
 EDL	00:11:20,610	00:11:29,180	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	But also some of the design decisions I made earlier on were kind of bad in making it portable. 
 EDL	00:11:29,180	00:11:36,070	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	So I expect to have some problems importing the memory management code to a 64 bit machine and so on. 
 EDL	00:11:36,070	00:11:36,910	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	[ SPACE 0.8 secs ]
 EDL	00:11:36,910	00:11:42,040	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	On the other hand, the memory management code right now is less than 2000 lines. 
-EDL	00:11:42,040	00:11:46,720	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	If I remember correctly, so supporting that he isn't too bad. 
+EDL	00:11:42,040	00:11:46,720	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	If I remember correctly, so porting that isn't too bad. 
 EDL	00:11:46,720	00:11:59,770	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	[ SPACE 13.0 secs ]
-EDL	00:11:59,770	00:12:22,440	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	The development framework is is kind of set out by the fact that the whole development of Linux is completely open, and I put out my latest version of the kernel every two days or so, uh, the latest version right now is one dot 1 dot 12. 
-EDL	00:12:22,440	00:12:49,530	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	Which I put out the day before I left for uh my the alpha versions like this one, which I put out, may not even compile, and in fact, one dot 1 dot 12 doesn't, unless you add a line to a make file, but this does mean that people can test out my version. 
+EDL	00:11:59,770	00:12:22,440	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	The development framework is is kind of set out by the fact that the whole development of Linux is completely open, and I put out my latest version of the kernel about every two days or so, uh, the latest version right now is 1.1.12.
+EDL	00:12:22,440	00:12:49,530	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	Which I put out the day before I left for uh my the alpha versions like this one, which I put out, may not even compile, and in fact, 1.1.12 doesn't link, unless you add a line to a Makefile, but this does mean that people can test out my version. 
 EDL	00:12:49,530	00:13:10,660	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	My latest version and new changes against that and interactively kind of see all the changes down to the kernel in the last few days, ah to kind of control the problems that arise when many different persons work on the same sources. 
-EDL	00:13:10,660	00:13:19,310	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	There's a coding style standard, which is essentially that all code has to be anxiously. 
+EDL	00:13:10,660	00:13:19,310	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	There's a coding style standard, which is essentially that all code has to be ANSI-C. 
 EDL	00:13:19,310	00:13:20,010	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	[ SPACE 0.7 secs ]
-EDL	00:13:20,010	00:13:24,960	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	And the bracing style is the one through bracing style I. 
-EDL	00:13:24,960	00:13:29,470	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	The one used in we are already carrying a rich book. 
+EDL	00:13:20,010	00:13:24,960	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	And the bracing style is the one through bracing style i.e 
+EDL	00:13:24,960	00:13:29,470	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	The one used in we are already Kernighan & Ritchie book. 
 EDL	00:13:29,470	00:13:29,780	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	[ SPACE 0.3 secs ]
-EDL	00:13:29,780	00:13:42,870	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	I'm not religious about this, so when I get a driver, which I know I can't keep up, I don't change the actual formatting, but the colonel. 
+EDL	00:13:29,780	00:13:42,870	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	I'm not religious about this, so when I get a driver, which I know I can't keep up, I don't change the actual formatting, but the kernel. 
 EDL	00:13:42,870	00:13:48,350	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	For example, is always compiled with all warnings enabled, and if I get a warning. 
 EDL	00:13:48,350	00:14:07,460	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	I know something is wrong, so there's kind of type checking and so on, which helps avoid some of the problems you don't otherwise have with several persons working on the same sources, also due to the fact that major parts are in different subdirectories. 
 EDL	00:14:07,460	00:14:14,260	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	I can, for example, concentrate on the ones I consider mine. 
@@ -134,7 +137,7 @@ EDL	00:18:08,740	00:18:13,840	| 1994050DECUSNewOrleansLinuxImplementationIssuesI
 EDL	00:18:13,840	00:18:27,250	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	Maybe some other driver already has that interact also, the the process management actually does contain process management, so it takes care of any system called requests. 
 EDL	00:18:27,250	00:18:29,000	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	The process may do. 
 EDL	00:18:29,000	00:18:29,560	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	[ SPACE 0.6 secs ]
-EDL	00:18:29,560	00:18:43,680	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	It also takes care of of any process faults, so when a process tries to do something that's illegal like disabled interrupts, the colonel notices this and kills the processes. 
+EDL	00:18:29,560	00:18:43,680	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	It also takes care of of any process faults, so when a process tries to do something that's illegal like disabled interrupts, the kernel notices this and kills the processes. 
 EDL	00:18:43,680	00:18:45,530	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	[ SPACE 1.8 secs ]
 EDL	00:18:45,530	00:18:56,620	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	Uh, there's a separate file for handling the virtual 86 mild in the 366 processor, which is used by the dolls. 
 EDL	00:18:56,620	00:18:58,410	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	[ SPACE 1.8 secs ]
@@ -142,7 +145,7 @@ EDL	00:18:58,410	00:19:19,390	| 1994050DECUSNewOrleansLinuxImplementationIssuesI
 EDL	00:19:19,390	00:19:19,970	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	[ SPACE 0.6 secs ]
 EDL	00:19:19,970	00:19:23,140	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	But the process can ask for segments. 
 EDL	00:19:23,140	00:19:23,550	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	[ SPACE 0.4 secs ]
-EDL	00:19:23,550	00:19:44,680	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	And the colonel will give it within reason up to 512 or something like that segments it could use if somebody really wants to use a segment to the architecture this year, again is used mainly for windows emulation, but. 
+EDL	00:19:23,550	00:19:44,680	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	And the kernel will give it within reason up to 512 or something like that segments it could use if somebody really wants to use a segment to the architecture this year, again is used mainly for windows emulation, but. 
 EDL	00:19:44,680	00:19:50,220	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	[ SPACE 5.5 secs ]
 EDL	00:19:50,220	00:20:14,820	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	Okay, I'll actually give a programming example of of a kind of I don't know how disease, because I never saw real UNIX source code before starting on Linux and after starting on Linux, I have actively tried to avoid it, plus it actually would take too much of my time. 
 EDL	00:20:14,820	00:20:31,440	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	So I it hasn't been a problem avoiding it, but traditionally in operating systems, the actual action of going to sleep or scheduling a process is closely tied to the state. 
@@ -159,7 +162,7 @@ EDL	00:21:32,440	00:21:32,990	| 1994050DECUSNewOrleansLinuxImplementationIssuesI
 EDL	00:21:32,990	00:21:39,750	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	The buffer might actually get filled, then would sleep on something that will never happen to handle this. 
 EDL	00:21:39,750	00:22:09,570	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	You have semi force and event comforts and so on, but and I knew of this, but I actually decided on a completely different uh solution, which was to have separate process, state and scheduling priMITives, so you have a process state which the process can set by itself here. 
 EDL	00:22:09,570	00:22:10,370	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	[ SPACE 0.8 secs ]
-EDL	00:22:10,370	00:22:17,670	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	The current process says that now I'm sleeping, but what it's actually is doing is it's lying to the colonel. 
+EDL	00:22:10,370	00:22:17,670	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	The current process says that now I'm sleeping, but what it's actually is doing is it's lying to the kernel. 
 EDL	00:22:17,670	00:22:28,080	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	It's not going to sleep at all because the scheduling is separate, then it tests for the event in the example. 
 EDL	00:22:28,080	00:22:31,810	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	This would test if it's empty way. 
 EDL	00:22:31,810	00:22:49,500	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	Sleep, what the this advice, care and remove weight care are doing is setting up the information to to tell whatever routine that fills the buffer, which process to wake. 
@@ -200,10 +203,10 @@ EDL	00:26:07,310	00:26:22,220	| 1994050DECUSNewOrleansLinuxImplementationIssuesI
 EDL	00:26:22,220	00:26:22,770	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	[ SPACE 0.5 secs ]
 EDL	00:26:22,770	00:26:51,080	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	Which allows long file names, uh big partitions, I think up to 4 terabytes and size file sizes of up to 2 gigabytes, then there's X F S, which is similar but slightly different uh and um, the minix file system. 
 EDL	00:26:51,080	00:26:58,550	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	Which is the original one, which is the same one as in the minix operating system. 
-EDL	00:26:58,550	00:27:24,460	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	Which I used to copy files over and then ah system 5 file system, which can mount scenic, coherent and some other system 5 performance uh more non unix file system type is the ms-dos file system. 
+EDL	00:26:58,550	00:27:24,460	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	Which I used to copy files over and then ah system 5 file system, which can mount scenic, coherent and some other system 5 performance uh more non UNIX file system type is the ms-dos file system. 
 EDL	00:27:24,460	00:27:33,910	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	If you do use ms-dos, you can just mount your M S dos, partition or floppy or whatever, and it looks like a UNIX fast extended Linux. 
 EDL	00:27:33,910	00:27:34,760	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	[ SPACE 0.8 secs ]
-EDL	00:27:34,760	00:27:58,340	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	Of course, there are liMITations like 8 characters, adult and three characters, and then you don't have any separate protection rights, they will start it up at mount time and are the same for the whole file system, so you also there is also os 2 hpfs file system. 
+EDL	00:27:34,760	00:27:58,340	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	Of course, there are limitations like 8 characters, adult and three characters, and then you don't have any separate protection rights, they will start it up at mount time and are the same for the whole file system, so you also there is also os 2 hpfs file system. 
 EDL	00:27:58,340	00:28:00,350	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	This one is currently read. 
 EDL	00:28:00,350	00:28:15,320	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	Only you can't write to the os 2 partition, but you can read your files from it, and there is the cd arm iso 9 6 6 0 file system used for most theaters. 
 EDL	00:28:15,320	00:28:15,750	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	[ SPACE 0.4 secs ]
@@ -226,7 +229,7 @@ EDL	00:29:53,030	00:29:55,560	| 1994050DECUSNewOrleansLinuxImplementationIssuesI
 EDL	00:29:55,560	00:29:56,470	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	[ SPACE 0.9 secs ]
 EDL	00:29:56,470	00:30:07,190	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	You just it just looks like a file system, other file system there's been talk about, and I have actually been implemented is a FDP file system. 
 EDL	00:30:07,190	00:30:07,770	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	[ SPACE 0.6 secs ]
-EDL	00:30:07,770	00:30:23,900	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	Which looks like a file system, but when you do get a fight, it goes through the FDP protocol and gets it from some other, this is possible done actually as a user level file system, but it's not in the default colonel. 
+EDL	00:30:07,770	00:30:23,900	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	Which looks like a file system, but when you do get a fight, it goes through the FDP protocol and gets it from some other, this is possible done actually as a user level file system, but it's not in the default kernel. 
 EDL	00:30:23,900	00:30:24,270	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	[ SPACE 0.4 secs ]
 EDL	00:30:24,270	00:30:26,530	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	And I wouldn't trust it myself. 
 EDL	00:30:26,530	00:30:28,000	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	[ SPACE 1.5 secs ]
@@ -243,9 +246,9 @@ EDL	00:33:30,920	00:33:43,720	| 1994050DECUSNewOrleansLinuxImplementationIssuesI
 EDL	00:33:43,720	00:33:48,450	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	The perhaps most interesting part of the Linux kernel is actually with the memory management. 
 EDL	00:33:48,450	00:33:50,070	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	[ SPACE 1.6 secs ]
 EDL	00:33:50,070	00:33:53,060	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	It's also one of the smallest parts. 
-EDL	00:33:53,060	00:34:11,230	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	But as memories, such a fundamental resource in a unix operating system in any operating system, in fact, you want to make the fullest possible use of the memory you have in a machine, especially on A P C. 
+EDL	00:33:53,060	00:34:11,230	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	But as memories, such a fundamental resource in a UNIX operating system in any operating system, in fact, you want to make the fullest possible use of the memory you have in a machine, especially on A P C. 
 EDL	00:34:11,230	00:34:16,410	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	Where you may have only 8 megabytes and emax takes, oh. 
-EDL	00:34:16,410	00:34:45,660	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	That so when you have, but the colonel wants memory for internal resources like a buffer cash and for internal data structures like the e nodes and file uh, the user processes once memory for for actual code and data, ah, well, I take took up to mention file buffering already. 
+EDL	00:34:16,410	00:34:45,660	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	That so when you have, but the kernel wants memory for internal resources like a buffer cash and for internal data structures like the e nodes and file uh, the user processes once memory for for actual code and data, ah, well, I take took up to mention file buffering already. 
 EDL	00:34:45,660	00:34:46,190	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	[ SPACE 0.5 secs ]
 EDL	00:34:46,190	00:35:02,670	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	Also, there's shared memory, which then acts differently and then from use or normal use from memory and to maximize and optimize all this, I tried to a minimize free memory. 
 EDL	00:35:02,670	00:35:05,540	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	By definition, free memory is useless. 
@@ -256,7 +259,7 @@ EDL	00:35:33,420	00:35:34,430	| 1994050DECUSNewOrleansLinuxImplementationIssuesI
 EDL	00:35:34,430	00:35:37,100	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	This is mostly for network device drivers. 
 EDL	00:35:37,100	00:35:39,310	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	So when a packet comes in, it's gone. 
 EDL	00:35:39,310	00:35:40,230	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	[ SPACE 0.9 secs ]
-EDL	00:35:40,230	00:35:54,030	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	Ask for for this liMITed resource, uh, all other memories then used for either process memory or her buffers. 
+EDL	00:35:40,230	00:35:54,030	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	Ask for for this limited resource, uh, all other memories then used for either process memory or her buffers. 
 EDL	00:35:54,030	00:35:54,670	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	[ SPACE 0.6 secs ]
 EDL	00:35:54,670	00:36:07,420	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	So if the machine in this building is still up after this, you can go and look at it and type the free command, which so shows how much free memory you have. 
 EDL	00:36:07,420	00:36:08,580	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	[ SPACE 1.2 secs ]
@@ -271,12 +274,12 @@ EDL	00:37:35,140	00:37:47,670	| 1994050DECUSNewOrleansLinuxImplementationIssuesI
 EDL	00:37:47,670	00:37:48,140	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	[ SPACE 0.5 secs ]
 EDL	00:37:48,140	00:37:56,200	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	It could also be mapped into several different programs as actual code. 
 EDL	00:37:56,200	00:37:57,970	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	[ SPACE 1.8 secs ]
-EDL	00:37:57,970	00:38:17,830	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	And again, if you use the free comment on the pc Linux pc here, you usually get something like 8 or 10 megabytes of shared memory, which doesn't mean that it's shared like system 5 style ipc shared memory. 
+EDL	00:37:57,970	00:38:17,830	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	And again, if you use the free comment on the PC Linux PC here, you usually get something like 8 or 10 megabytes of shared memory, which doesn't mean that it's shared like system 5 style ipc shared memory. 
 EDL	00:38:17,830	00:38:20,980	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	It just means the Linux notice, okay. 
 EDL	00:38:20,980	00:38:27,270	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	All these processes and this file system buffer cash are actually having the same data. 
 EDL	00:38:27,270	00:38:27,750	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	[ SPACE 0.5 secs ]
 EDL	00:38:27,750	00:38:34,280	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	So we just use one physical page for it on my home machine. 
-EDL	00:38:34,280	00:38:49,690	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	This means that I have 60 megabytes of physical ram and actually the colonel map scene about 24 megabytes of virtual memory. 
+EDL	00:38:34,280	00:38:49,690	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	This means that I have 60 megabytes of physical ram and actually the kernel map scene about 24 megabytes of virtual memory. 
 EDL	00:38:49,690	00:39:04,340	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	At the same time by using that's 50 percent larger than than you actually having the machine by just reusing the pages as much as possible. 
 EDL	00:39:04,340	00:39:09,960	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	[ SPACE 5.6 secs ]
 EDL	00:39:09,960	00:39:18,160	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	Okay grill again getting close to the frozen to the end. 
@@ -293,7 +296,7 @@ EDL	00:40:12,750	00:40:14,180	| 1994050DECUSNewOrleansLinuxImplementationIssuesI
 EDL	00:40:14,180	00:40:20,228	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	What this actually means is that we're separating the process structure. 
 EDL	00:40:20,228	00:40:32,190	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	Which has been one large structure into separate file system, memory management and and uh and register task parts. 
 EDL	00:40:32,190	00:40:32,510	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	[ SPACE 0.3 secs ]
-EDL	00:40:32,510	00:41:08,860	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	Which allows different threads to share the same memory management or maybe have different virtual memory, but share the same open files or share the same root I noted so on uh what's also being worked on and is actually in 1.1 point 12 colonel is an extended memory management, which allows better use of physical memory. 
+EDL	00:40:32,510	00:41:08,860	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	Which allows different threads to share the same memory management or maybe have different virtual memory, but share the same open files or share the same root I noted so on uh what's also being worked on and is actually in 1.1 point 12 kernel is an extended memory management, which allows better use of physical memory. 
 EDL	00:41:08,860	00:41:10,750	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	[ SPACE 1.9 secs ]
 EDL	00:41:10,750	00:41:20,620	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	The earlier earlier Linux kernels had the problem that all memory management was done on a page by page basis and all three pages. 
 EDL	00:41:20,620	00:41:31,790	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	Where essentially on one long link, at least, which made it very hard to allocate physical contiguous memory of more than 4 kilobytes. 
@@ -302,7 +305,7 @@ EDL	00:41:32,770	00:41:36,340	| 1994050DECUSNewOrleansLinuxImplementationIssuesI
 EDL	00:41:36,340	00:41:44,710	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	So for most applications, this doesn't matter, because physical memory uh. 
 EDL	00:41:44,710	00:41:56,580	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	You can always map it in contiguousness several pages for user space applications, for example. 
 EDL	00:41:56,580	00:41:57,100	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	[ SPACE 0.5 secs ]
-EDL	00:41:57,100	00:42:22,260	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	But dma and some other applications actually want the physical memory to be contiguous, so we wanted to allow a possibility of uh allocating larger chunks currently 128 kilobytes, which is the dna liMIT on the pc at one time physically. 
+EDL	00:41:57,100	00:42:22,260	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	But dma and some other applications actually want the physical memory to be contiguous, so we wanted to allow a possibility of uh allocating larger chunks currently 128 kilobytes, which is the dna limit on the PC at one time physically. 
 EDL	00:42:22,260	00:42:23,940	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	[ SPACE 1.7 secs ]
 EDL	00:42:23,940	00:42:32,130	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	Also, what I'm looking into, but haven't even started on yet is is optimizing the file system. 
 EDL	00:42:32,130	00:42:49,380	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	It's currently works well and is pretty efficient, but at least the bsd crowd seemed to imply that finally, cache might improve performance noticeably. 
@@ -320,7 +323,7 @@ EDL	00:44:16,790	00:44:30,070	| 1994050DECUSNewOrleansLinuxImplementationIssuesI
 EDL	00:44:30,070	00:44:30,940	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	[ SPACE 0.9 secs ]
 EDL	00:44:30,940	00:44:38,180	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	We're trying to make this more general, so eventually all kernel drivers will be low. 
 EDL	00:44:38,180	00:44:39,090	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	[ SPACE 0.9 secs ]
-EDL	00:44:39,090	00:44:50,550	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	So you could do a colonel, which unloads the drivers as it notices that the device isn't there and so on. 
+EDL	00:44:39,090	00:44:50,550	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	So you could do a kernel, which unloads the drivers as it notices that the device isn't there and so on. 
 EDL	00:44:50,550	00:44:52,770	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	[ SPACE 2.2 secs ]
 EDL	00:44:52,770	00:44:59,170	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	Also, as was mentioned in the previous talk, we're plotting it to different architectures. 
 EDL	00:44:59,170	00:45:00,430	| 1994050DECUSNewOrleansLinuxImplementationIssuesInLinux |	[ SPACE 1.3 secs ]
