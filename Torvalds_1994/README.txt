@@ -11,7 +11,19 @@ https://github.com/scateu/some_podcast_transcriptions/blob/main/Torvalds_1994/19
 传了一份burn-in字幕的于B站:
 https://www.bilibili.com/video/BV13R4y1s7j5/
 
+于Youtube:
+https://youtu.be/zQaS2kbKIhU
+
+原始音频:
 https://archive.org/download/199405-decusnew-orleans/199405DECUSNewOrleansLinusAnIntroductionToLinux.mp3
+
+---
+
+PART 2
+
+https://www.bilibili.com/video/BV1434y1r7UG/
+
+https://youtu.be/ZPtxCat4oDM
 
 ---
 
