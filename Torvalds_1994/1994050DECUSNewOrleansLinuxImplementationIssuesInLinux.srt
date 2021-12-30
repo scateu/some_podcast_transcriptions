@@ -5,7 +5,7 @@ And it's gonna be a bit more technical than the first one, but it's not gonna be
 
 2
 00:00:09,570 --> 00:00:34,170
-It's just going to mention a few technical ah, I'm afraid I tried to make the kind of talks separate so that somebody coming in now could follow my speech, so it might cover a bit of the same ground covered in the previous ones, probably not too much, though.
+It's just going to mention a few technical things, I'm afraid I tried to make the kind of talks separate so that somebody coming in now could follow my speech, so it might cover a bit of the same ground covered in the previous ones, probably not too much, though.
 
 3
 00:00:40,490 --> 00:00:44,260
@@ -21,7 +21,7 @@ I consider ?mine the process management, the file system code and the memory man
 
 6
 00:01:15,620 --> 00:01:47,160
-I'll look at them a bit uh, they are actually not even the largest parts of the kernel, but they are kind of the basic blocks, and the ones I keep most under wraps do most of the things myself, then finally, I'll take a look at some of the working progress right now in the kernel coding part of the current.
+I'll look at them a bit uh, they are actually not even the largest parts of the kernel, but they are kind of the basic blocks, and the ones I keep most under wraps do most of the things myself, then finally, I'll take a look at some of the working progress right now in the kernel coding part of the kernel.
 
 7
 00:01:55,230 --> 00:01:56,760
@@ -161,7 +161,7 @@ So I tried to avoid things that lock us to some design.
 
 41
 00:07:19,570 --> 00:07:32,690
-Well, this has resulted in in the kernel is a that keep it simple design resulted in the monolithic kernel.
+Well, this has resulted in in the kernel is a) that keep it simple design resulted in the monolithic kernel.
 
 42
 00:07:34,560 --> 00:07:43,220
@@ -189,7 +189,7 @@ Major pieces of the kernel, and so on. Also uh, when something looks like it cou
 
 48
 00:09:18,930 --> 00:09:38,940
-Maybe race conditions and deadlocks due to locking, so what I did and what the original UNIX did was make the kernel non preemptive(抢占) when a process runs in kernel mode, no other process will preempted unless the process yields control voluntarily.
+Maybe race conditions and deadlocks due to locking, so what I did and what the original UNIX did was make the kernel non preemptible(抢占) when a process runs in kernel mode, no other process will preempted unless the process yields control voluntarily.
 
 49
 00:09:41,330 --> 00:09:53,910
@@ -213,7 +213,7 @@ But it's still pretty small.
 
 54
 00:10:54,340 --> 00:11:05,640
-It compiles in about 10 minutes if you have reasonable machine and of that, almost exactly half is ????'s drivers.
+It compiles in about 10 minutes if you have reasonable machine and of that, almost exactly half is devices' drivers.
 
 55
 00:11:06,130 --> 00:11:20,130
@@ -365,11 +365,11 @@ It also takes care of of any process faults, so when a process tries to do somet
 
 92
 00:18:45,530 --> 00:18:56,620
-Uh, there's a separate file for handling the virtual 86 mild in the 366 processor, which is used by the DOS.
+Uh, there's a separate file for handling the virtual 86 mild in the 366 processor, which is used by the DOS emulator
 
 93
 00:18:58,410 --> 00:19:19,390
-I am possibly in the future that windows similar, so there's also the Linux kernel by itself is uses the flat address space of the 386, so it actually has only a code and data segment, which covered the whole address based on the process.
+and possibly in the future that windows similar, so there's also the Linux kernel by itself is uses the flat address space of the 386, so it actually has only a code and data segment, which covered the whole address based on the process.
 
 94
 00:19:19,970 --> 00:19:23,140
@@ -473,15 +473,15 @@ Internally, it just looks at the requests the users mix the user mix, and then t
 
 119
 00:24:45,250 --> 00:24:59,040
-Unlike at least BSD 4.3, which used a special I-node for a normal file and then a V-node for a virtual file or NFS.
+Unlike at least BSD 4.3, which used a special Inode for a normal file and then a Vnode for a virtual file or NFS.
 
 120
 00:24:59,040 --> 00:25:03,990
-For example, Linux doesn't have separate I-nodes V-nodes.
+For example, Linux doesn't have separate Inodes Vnodes.
 
 121
 00:25:03,990 --> 00:25:12,360
-Linux just has V-nodes, and then, well, we call them I-nodes because why not, they're the only thing we have.
+Linux just has Vnodes, and then, well, we call them Inodes because why not, they're the only thing we have.
 
 122
 00:25:13,290 --> 00:25:21,000
@@ -493,7 +493,7 @@ I think 4.4 does it this way, too?
 
 124
 00:25:24,120 --> 00:25:41,870
-I'm not sure what this allows is kind of the basic blocks for any file system are in the vfs layer, notably buffer cash handling some name.
+I'm not sure what this allows is kind of the basic blocks for any file system are in the vfs layer, notably buffer cache handling some name.
 
 125
 00:25:41,870 --> 00:25:49,080
@@ -581,7 +581,7 @@ So on the actual uptime binary, then pretty face these two days hours minutes an
 
 146
 00:29:45,390 --> 00:29:53,030
-The proc file system is a is completely internal to the kernel.
+The proc file system is, completely internal to the kernel.
 
 147
 00:29:53,030 --> 00:29:55,560
@@ -593,7 +593,7 @@ You just it just looks like a file system, other file system there's been talk a
 
 149
 00:30:07,770 --> 00:30:23,900
-Which looks like a file system, but when you do get a file, it goes through the FTP protocol and gets it from some other, this is possible done actually as a user level file system, but it's not in the default kernel.
+Which looks like a file system, but when you do get a file, it goes through the FTP protocol and gets it from some other site, this is possible done actually as a user level file system, but it's not in the default kernel.
 
 150
 00:30:24,270 --> 00:30:26,530
@@ -617,7 +617,7 @@ It's a list of all the functions you need to implement in order to create the a 
 
 155
 00:32:51,720 --> 00:33:15,720
-In fact, you don't need to implement them all, but they are divided into three levels file operations, inode operations and super block operations uh, this allows you to do just a subset of the virtual file system code needed.
+In fact, you don't need to implement them all, but they are divided into three levels file operations, Inode operations and super block operations uh, this allows you to do just a subset of the virtual file system code needed.
 
 156
 00:33:15,720 --> 00:33:24,107
@@ -645,23 +645,23 @@ Where you may have only 8 megabytes and Emacs takes up all of that
 
 162
 00:34:17,410 --> 00:34:45,660
-so when you have, but the kernel wants memory for internal resources like a buffer cash and for internal data structures like the inodes and file, the user processes once memory for for actual code and data, ah, well, I take took up to mention file buffering already.
+so when you have, but the kernel wants memory for internal resources like a buffer cache and for internal data structures like the Inodes and file, the user processes once memory for for actual code and data, ah, well, I take took up to mention file buffering already.
 
 163
 00:34:46,190 --> 00:35:02,670
-Also, there's shared memory, which then acts differently and then from use or normal use from memory and to maximize and optimize all this, I tried to a minimize free memory.
+Also, there's shared memory, which then acts differently and then from use or normal use from memory and to maximize and optimize all this, I tried to a) minimize free memory.
 
 164
 00:35:02,670 --> 00:35:05,540
 By definition, free memory is useless.
 
 165
-00:35:05,540 --> 00:35:07,140
-You don't do anything with three minutes.
+00:35:05,540 --> 00:35:07,920
+You don't do anything with free memory
 
 166
 00:35:07,920 --> 00:35:33,420
-So while some other operating systems try to keep something like 10 percent of the memory free for potential use, Linux actually tries to keep something like 100 kilobytes on a 60 megabyte machine, which is kind of panic memory if if some interrupt needs memory now, it has 1 k to use.
+So while some other operating systems try to keep something like 10 percent of the memory free for potential use, Linux actually tries to keep something like 100 kilobytes on a 60 megabyte machine, which is kind of panic memory if if some interrupt needs memory now, it has 100k to use.
 
 167
 00:35:34,430 --> 00:35:37,100
@@ -673,7 +673,7 @@ So when a packet comes in, it's gone.
 
 169
 00:35:40,230 --> 00:35:54,030
-Ask for for this limited resource, uh, all other memories then used for either process memory or her buffers.
+Ask for for this limited resource, uh, all other memories then used for either process memory or for buffers.
 
 170
 00:35:54,670 --> 00:36:07,420
@@ -681,26 +681,26 @@ So if the machine in this building is still up after this, you can go and look a
 
 171
 00:36:08,580 --> 00:36:11,390
-It had such 2 megabytes of ram.
+It had 2 megabytes of ram.
 
 172
 00:36:11,390 --> 00:36:46,360
-When I installed Linux and it used 28 megabytes of death for buffer space to speed up if operations now when it's running x and whatever the buffer space automatically shrinks and only probably something like 7 megabytes or so, I used for buffers uh, just minimizing free memory isn't good enough.
+When I installed Linux and it used 28 megabytes of, that's for buffer space to speed up if operations. Now, when it's running X and whatever the buffer space automatically shrinks and only probably something like 7 megabytes or so, I used for buffers, just minimizing free memory isn't good enough.
 
 173
-00:36:46,360 --> 00:36:49,400
-You can minimize free memory by just using it.
+00:36:46,360 --> 00:36:50,650
+You can minimize free memory by just using it up
 
 174
 00:36:50,650 --> 00:37:10,770
-You can minimize free memory by starting up emax, so so to actually maximize the use of memory, you want to use memory efficiently, preferably in a way that you actually use the same page of physical memory several times.
+You can minimize free memory by starting up Emacs, so so to actually maximize the use of memory, you want to use memory efficiently, preferably in a way that you actually use the same page of physical memory several times.
 
 175
 00:37:10,770 --> 00:37:32,250
-Yeah, so Linux not just chairs memory by copyright between processes which have forked it, also shares memory with ah processes that share the same executable image or share the same shared library.
+Yeah, so Linux not just shares memory by copy ?on write? between processes which have forked. It also shares memory with ah processes that share the same executable image or share the same shared library.
 
 176
-00:37:35,140 --> 00:37:47,670
+00:37:35,140 --> 00:37:48,140
 Ah, it even shares memory with the buffer space, so the same physical page could contain the buffers for an executable.
 
 177
@@ -709,31 +709,31 @@ It could also be mapped into several different programs as actual code.
 
 178
 00:37:57,970 --> 00:38:17,830
-And again, if you use the free comment on the PC Linux PC here, you usually get something like 8 or 10 megabytes of shared memory, which doesn't mean that it's shared like system 5 style ipc shared memory.
+And again, if you use the free command on the PC Linux PC here, you usually get something like 8 or 10 megabytes of shared memory, which doesn't mean that it's shared like System V style IPC shared memory.
 
 179
 00:38:17,830 --> 00:38:20,980
-It just means the Linux notice, okay.
+It just means the Linux notice, okay,
 
 180
-00:38:20,980 --> 00:38:27,270
-All these processes and this file system buffer cash are actually having the same data.
+00:38:20,980 --> 00:38:27,750
+All these processes and this file system buffer cache are actually having the same data.
 
 181
-00:38:27,750 --> 00:38:34,280
-So we just use one physical page for it on my home machine.
+00:38:27,750 --> 00:38:32,177
+So we just use one physical page for it
 
 182
-00:38:34,280 --> 00:38:49,690
-This means that I have 60 megabytes of physical ram and actually the kernel map scene about 24 megabytes of virtual memory.
+00:38:32,177 --> 00:38:49,690
+On my home machine this means that I have 16 megabytes of physical ram and actually the kernel map seen about 24 megabytes of virtual memory.
 
 183
-00:38:49,690 --> 00:39:04,340
+00:38:49,690 --> 00:39:05,340
 At the same time by using that's 50 percent larger than than you actually having the machine by just reusing the pages as much as possible.
 
 184
 00:39:09,960 --> 00:39:18,160
-Okay grill again getting close to the frozen to the end.
+Okay. again getting close to the frozen to the end.
 
 185
 00:39:20,330 --> 00:39:27,990
@@ -745,351 +745,351 @@ We're working on kernel threads.
 
 187
 00:39:35,780 --> 00:39:58,140
-I'm not actually sure if it's a good idea because some timings have indicated that if you can thread in user space, it's usually much faster to do task switching and so on, so for some applications, you don't actually want kernel threads because kernel threads then have to take they have to be so generally.
+I'm not actually sure if it's a good idea because some timings have indicated that if you can thread in user space, it's usually much faster to do task switching and so on, so for some applications, you don't actually want kernel threads because kernel threads then have to take, they have to be so generally,
 
 188
 00:39:58,140 --> 00:40:02,130
-You automatically have to save more registers and so on.
+you automatically have to save more registers and so on.
 
 189
 00:40:03,190 --> 00:40:12,750
-On the other hand, kernel threads are useful for lots of things that we're still going to implement the method because it's an interesting idea.
+On the other hand, kernel threads are useful for lots of things so we're still going to implement the [inaudible] because it's an interesting idea.
 
 190
 00:40:14,180 --> 00:40:20,228
-What this actually means is that we're separating the process structure.
+What this actually means is that we're separating that process structure.
 
 191
-00:40:20,228 --> 00:40:32,190
+00:40:20,228 --> 00:40:32,510
 Which has been one large structure into separate file system, memory management and and and register task parts.
 
 192
-00:40:32,510 --> 00:41:08,860
-Which allows different threads to share the same memory management or maybe have different virtual memory, but share the same open files or share the same root I noted so on what's also being worked on and is actually in 1.1 point 12 kernel is an extended memory management, which allows better use of physical memory.
+00:40:32,510 --> 00:40:52,347
+Which allows different threads to share the same memory management or maybe have different virtual memory, but share the same open files or share the same root Inode so on.
 
 193
-00:41:10,750 --> 00:41:20,620
-The earlier earlier Linux kernels had the problem that all memory management was done on a page by page basis and all three pages.
+00:40:52,347 --> 00:41:10,750
+What's also being worked on and is actually in 1.1.12 kernel is an extended memory management, which allows better use of physical memory.
 
 194
-00:41:20,620 --> 00:41:31,790
-Where essentially on one long link, at least, which made it very hard to allocate physical contiguous memory of more than 4 kilobytes.
+00:41:10,750 --> 00:41:20,620
+The earlier earlier Linux kernels had the problem that all memory management was done on a page by page basis and all three pages
 
 195
-00:41:32,770 --> 00:41:36,340
-Which is the page system that three and 6 process.
+00:41:20,620 --> 00:41:32,770
+where essentially on one long link, at least, which made it very hard to allocate physical contiguous(邻近的) memory of more than 4 kilobytes.
 
 196
+00:41:32,770 --> 00:41:36,340
+Which is the page system that 386 processors.
+
+197
 00:41:36,340 --> 00:41:44,710
 So for most applications, this doesn't matter, because physical memory uh.
 
-197
-00:41:44,710 --> 00:41:56,580
+198
+00:41:44,710 --> 00:41:57,100
 You can always map it in contiguousness several pages for user space applications, for example.
 
-198
-00:41:57,100 --> 00:42:22,260
-But dma and some other applications actually want the physical memory to be contiguous, so we wanted to allow a possibility of allocating larger chunks currently 128 kilobytes, which is the dna limit on the PC at one time physically.
-
 199
+00:41:57,100 --> 00:42:22,260
+But DMA and some other applications actually want the physical memory to be contiguous, so we wanted to allow a possibility of allocating larger chunks currently 128 kilobytes, which is the DMA limit on the PC at one time physically.
+
+200
 00:42:23,940 --> 00:42:32,130
 Also, what I'm looking into, but haven't even started on yet is is optimizing the file system.
 
-200
-00:42:32,130 --> 00:42:49,380
-It's currently works well and is pretty efficient, but at least the bsd crowd seemed to imply that finally, cache might improve performance noticeably.
-
 201
-00:42:49,380 --> 00:42:54,070
-Uh, that's one thing I look into.
+00:42:32,130 --> 00:42:50,380
+It's currently works well and is pretty efficient, but at least the BSD crowd seemed to imply that file name ?cache might improve performance noticeably.
 
 202
-00:42:55,480 --> 00:43:09,540
-It shouldn't be too bad, but I also would like to make it's general enough that you could actually use it for things like nfs, which requires that you have time out and so on.
+00:42:50,380 --> 00:42:54,070
+Uh, that's one thing I look into.
 
 203
+00:42:55,480 --> 00:43:09,540
+It shouldn't be too bad, but I also would like to make it's general enough that you could actually use it for things like NFS, which requires that you have time ?out and so on.
+
+204
 00:43:12,180 --> 00:43:19,920
 Also just the file system cache in Linux is quite advanced.
 
-204
+205
 00:43:19,920 --> 00:43:26,490
 And in that it grows and shrinks dynamically and can share pages with user pages.
 
-205
+206
 00:43:26,490 --> 00:43:29,720
 But we're still looking into improving it further.
 
-206
-00:43:30,980 --> 00:44:00,880
-Uh, it's kind of awkward because it uses the original UNIX way of indexing file system buffers by the device buffer number they are in, while it would be more efficient for the for the actual file system to index them by by the you know they are associated with and where in that file.
-
 207
-00:44:00,880 --> 00:44:16,790
-They are, so we're looking into changing also what's older there to some extent, this loading kernel modules at runtime, so you could load a new driver.
+00:43:30,980 --> 00:43:58,907
+Uh, it's kind of awkward because it uses the original UNIX way of indexing file system buffers by the device and the buffer number they are in, while it would be more efficient for the actual file system to index them by the Inode you know they are associated with and
 
 208
-00:44:16,790 --> 00:44:30,070
-This is already used for them floppy tape driver, which isn't part of the standard kernel, but you just get a separate module compiled and linked it in.
+00:43:58,907 --> 00:44:05,704
+where in that file they are, so we're looking into changing that
 
 209
-00:44:30,940 --> 00:44:38,180
-We're trying to make this more general, so eventually all kernel drivers will be low.
+00:44:05,704 --> 00:44:16,790
+Also, what's older there to some extent, is loading kernel modules at runtime, so you could load a new driver.
 
 210
+00:44:16,790 --> 00:44:30,070
+This is already used for the floppy tape driver, which isn't part of the standard kernel, but you just get a separate module compiled and linked it in.
+
+211
+00:44:30,940 --> 00:44:38,180
+We're trying to make this more general, so eventually all kernel drivers will be loadable.
+
+212
 00:44:39,090 --> 00:44:50,550
 So you could do a kernel, which unloads the drivers as it notices that the device isn't there and so on.
 
-211
-00:44:52,770 --> 00:44:59,170
-Also, as was mentioned in the previous talk, we're plotting it to different architectures.
-
-212
-00:45:00,430 --> 00:45:04,400
-The 68 cake port did show some problems.
-
 213
-00:45:06,260 --> 00:45:31,620
-On the other hand, it didn't turn out to be too bad, but the 68 k is actually pretty close to the 3 86 in the pits, a 32 beats machine and has very similar memory management pointing to other architectures will probably show a lot of other problems in the Linux kernel in this area.
+00:44:52,770 --> 00:44:59,170
+Also, as was mentioned in the previous talk, we're porting it to different architectures.
 
 214
-00:45:34,700 --> 00:45:35,230
-That's it.
+00:45:00,430 --> 00:45:04,400
+The 68k port did show some problems.
 
 215
-00:45:35,230 --> 00:45:38,030
-I'm afraid, and thank you for me.
+00:45:06,260 --> 00:45:31,620
+On the other hand, it didn't turn out to be too bad, but the 68k is actually pretty close to the 386, in the bits, a 32-bits machine and has very similar memory management pointing to other architectures will probably show a lot of other problems in the Linux kernel in this area.
 
 216
+00:45:34,700 --> 00:45:38,030
+That's it.  I'm afraid, and thank you for me.
+
+217
 00:45:47,390 --> 00:45:48,520
 Are there any questions.
 
-217
-00:45:48,520 --> 00:45:53,510
-Yes, John west digital systems consulting, yeah, could you speak up.
-
 218
-00:45:53,510 --> 00:46:10,610
-John west, digital systems consulting are there any plans for a compressed file system there are patches available for a compressed file system, I've heard some horror stories of it.
+00:45:48,520 --> 00:45:53,510
+Yes, John West, Digital Systems Consulting, yeah, could you speak up.
 
 219
+00:45:53,510 --> 00:46:01,684
+John West, Digital Systems Consulting are there any plans for a compressed file system ?
+
+220
+00:46:01,684 --> 00:46:11,670
+There are patches available for a compressed file system, I've heard some horror stories of it.
+
+221
 00:46:11,670 --> 00:46:21,670
 And frankly, my personal opinion is that it doesn't pay others who have smaller disks, seem to disagree.
 
-220
-00:46:22,900 --> 00:46:34,600
-Uh, we'll see, uh, I don't like the idea because it makes demand loading kind of hard an issue.
-
-221
-00:46:34,600 --> 00:46:47,690
-You can resolve them, but it has problems, okay, jp versus university of Alaska, I was wondering if anyone's working on the Andrew file system for Linux.
-
 222
+00:46:22,900 --> 00:46:32,491
+Uh, we'll see, uh, I don't like the idea because it makes demand loading kind of hard
+
+223
+00:46:32,491 --> 00:46:39,156
+That's an issue you can resolve them, but it has problems, okay
+
+224
+00:46:39,156 --> 00:46:49,830
+J. P. Versus of University of Alaska, I was wondering if anyone's working on the Andrew File System for Linux.
+
+225
 00:46:49,830 --> 00:46:52,910
 I don't know if I can talk about that.
 
-223
-00:46:54,160 --> 00:47:08,870
-Actually, Andrew file system is proprietary, but we are working on extending the modules interface enough, but it could be used as a loadable module.
-
-224
-00:47:10,180 --> 00:47:20,020
-I'm not certain I like the idea to learn about linking in preparatory stuff like Andrew policies to mean Linux without having access to the source code.
-
-225
-00:47:20,710 --> 00:47:31,860
-But I also know that it wouldn't be so useful for MIT people that I'll probably allow it anyway, ah, from what I heard.
-
 226
-00:47:31,860 --> 00:47:48,980
-The Andrew file system is already reported and the person working on it who has been an active Linux you so far at least two years, is now looking into the notable interfaces, and he's optimistic about it.
+00:46:54,160 --> 00:47:08,870
+Actually, Andrew File System is proprietary, but we are working on extending the modules interface enough, but it could be used as a loadable module.
 
 227
+00:47:10,180 --> 00:47:20,020
+I'm not certain I like the idea to learn about linking in preparatory stuff like Andrew File System to Linux without having access to the source code.
+
+228
+00:47:20,710 --> 00:47:31,860
+But I also know that it would be so useful for MIT people that I'll probably allow it anyway, ah, from what I heard.
+
+229
+00:47:31,860 --> 00:47:48,980
+The Andrew File System is already ported and the person working on it who has been an active Linux you so far at least two years, is now looking into the loadable interfaces, and he's optimistic about it.
+
+230
 00:47:48,980 --> 00:47:53,430
 They're using it internally at MIT in at least some machines.
 
-228
-00:47:53,430 --> 00:48:06,650
-As far as I know, okay Reese political and gone group um, given that your first language is different than my first language.
-
-229
-00:48:07,540 --> 00:48:18,700
-Having not seen, the sources are the comments and the variable names, and such in English or yeah, the language, yeah, they are only in English.
-
-230
-00:48:18,700 --> 00:48:34,800
-I actually when I code, I think in English, and while my pronunciation may be kind of weird, I actually most most of the stuff I read is in English, so I think flew entertaining English, but I just talked it funny.
-
 231
+00:47:53,430 --> 00:47:56,122
+As far as I know, okay
+
+232
+00:47:56,122 --> 00:48:06,650
+Reese Political, Wall Gang Group, given that your first language is different than my first language.
+
+233
+00:48:07,540 --> 00:48:18,700
+Having not seen, the sources are the comments and the variable names, and such in English or yeah, the language, yeah, they are always in English.
+
+234
+00:48:18,700 --> 00:48:34,800
+I actually when I code, I think in English, and while my pronunciation may be kind of weird, I actually read most of the stuff I read is in English, so I think fluently in English, but I just talked it funny.
+
+235
 00:48:35,800 --> 00:48:44,620
 Okay, John West, Digital Systems Consulting, is there a is there an implementation of DCE for Linux.
 
-232
-00:48:45,380 --> 00:48:46,750
+236
+00:48:45,380 --> 00:48:47,400
 Or do you know of any underdevelopment.
 
-233
+237
 00:48:47,400 --> 00:48:51,140
-I have no idea at all East motive parts of DC.
+I have no idea at all. [inaudible]
 
-234
+238
 00:48:56,700 --> 00:48:59,290
-Okay, it's proprietor probably.
+Okay, it's proprietary probably.
 
-235
+239
 00:49:04,880 --> 00:49:06,890
 Okay, please.
 
-236
+240
 00:49:06,890 --> 00:49:11,530
 10 minutes, some more questions, and we can skip otherwise I make him tap dance.
 
-237
-00:49:15,200 --> 00:49:32,490
-We'll draw, just wait, are you nervous, do you feel lucky, what's your name, I'll put your card, oh, oh, you mean in drawing, okay, what do you want to draw, or do you want to draw now, she'll take a vote.
-
-238
-00:49:32,490 --> 00:49:43,670
-How do you people want to seem tap dances, okay, good that looked like a majority of you know, it was 3/4.
-
-239
-00:49:43,670 --> 00:49:56,090
-No way what's that the three of glorious, okay, we just want to hold this bag, check that I don't cheat ya, well, care.
-
-240
-00:50:01,280 --> 00:50:29,900
-Who was your first Robert Simon of principal engineer of net access products division, has already left, oh, next, who cares about team anyway, I guess I shouldn't give him all that pop Mary, be copine ski.
-
 241
-00:50:31,020 --> 00:50:35,400
-Sorry about the name, I probably conflict.
+00:49:15,200 --> 00:49:32,490
+We'll draw, just wait, are you nervous, do you feel lucky, what's your name, I'll pull your card, oh, oh, you mean in drawing, okay, what do you want to draw, or do you want to draw now, she'll take a vote.
 
 242
+00:49:32,490 --> 00:49:43,670
+How do you people want to him tap dances, okay, good that looked like a majority of you know, it was 3/4.
+
+243
+00:49:43,670 --> 00:49:56,090
+No way what's that the three quarters, okay, we just want to hold this bag, check that I don't cheat ya, well, care.
+
+244
+00:50:01,280 --> 00:50:04,045
+Who was your first?
+
+245
+00:50:04,045 --> 00:50:15,935
+Robert Simon of principal engineer of Net Access products division, has already left. OK.
+
+246
+00:50:15,935 --> 00:50:29,900
+next, who cares about him anyway. I guess I shouldn't give him all that pop Mary B. Koplinsky.
+
+247
+00:50:31,020 --> 00:50:35,400
+Sorry about the name, I probably mispronounce it totally
+
+248
 00:50:42,770 --> 00:50:43,360
 Congrats.
 
-243
+249
 00:50:53,260 --> 00:50:53,270
 Uh.
 
-244
+250
 00:51:00,090 --> 00:51:09,680
-And Wayne Shirley, engineering specialists from the okay.
+And Wayne Shirley, engineering specialists from Monsanto. okay.
 
-245
+251
 00:51:16,640 --> 00:51:17,450
 Congratulations to you.
 
-246
+252
 00:51:23,570 --> 00:51:23,750
 Thank you.
 
-247
+253
 00:51:25,110 --> 00:51:35,700
 Okay, okay, now you're ready to see him tap dance a few more questions, and we can skip the cats dancing.
 
-248
+254
 00:51:37,610 --> 00:51:55,540
-I'd see the tap dancing or stripping, so okay, you promise I could wear a bag of my what's up, you promise I could wear a hat on bag on my head if I straight, that's right, we did promise that okay, protect you.
+I'd see the tap dancing or stripping, so okay, you promise I could wear a bag of my what's up, you promise I could wear a hat on bag on my head if I ?straight, that's right, we did promise that okay, to protect your dignity
 
-249
+255
 00:51:55,540 --> 00:51:56,360
 Here's a question.
 
-250
+256
 00:51:57,650 --> 00:52:05,130
 I've heard discussion, various mailing lists in the news groups about a Kerberos implementation.
 
-251
-00:52:05,130 --> 00:52:06,800
+257
+00:52:05,130 --> 00:52:07,040
 Do you know anything about it?
 
-252
-00:52:06,800 --> 00:52:07,040
-Most.
+258
+00:52:07,040 --> 00:52:24,610
+What state it is in, I assume Kerberos shouldn't be any problem except and exporting it outside the US due to stupid regulations uh, it's not stupid, interesting.
 
-253
-00:52:07,040 --> 00:52:22,610
-What state it is in, I assume curbers shouldn't be any problem except and exporting it outside the US due to stupid regulations uh, it's not stupid.
+259
+00:52:24,610 --> 00:52:29,920
+okay, I don't see that it should be a problem.
 
-254
-00:52:22,610 --> 00:52:29,920
-Interesting, okay, I don't see that it should be a problem.
-
-255
+260
 00:52:29,920 --> 00:52:36,040
-I haven't fixed it because I'm the trusting kind of guy who doesn't care what people do it to my machine.
+I haven't [..] into it because I'm the trusting kind of guy who doesn't care what people do it to my machine.
 
-256
+261
 00:52:39,450 --> 00:52:40,130
 Okay, that's it.
 
-257
+262
 00:52:42,950 --> 00:52:43,150
 No one.
 
-258
+263
 00:52:53,070 --> 00:52:55,810
 The phone number, I'm going to the trade show.
 
-259
-00:53:06,190 --> 00:53:08,215
-You want to buy, but huh?
-
-260
-00:53:08,215 --> 00:53:15,960
-No, no doctors, you know, uh, kiddos, it's a lesser actually.
-
-261
+264
 00:53:15,960 --> 00:53:22,437
-I speak Swedish as my mother's son and one of those my parents were born in Finland.
+I speak Swedish as my mother's tougue and one of those my parents were born in Finland.
 
-262
+265
 00:53:22,437 --> 00:53:32,050
 I was born in Los Angeles, but I've learned something about you are connected on the Sunday talk instead of why I'll just.
 
-263
+266
 00:54:04,870 --> 00:54:07,575
 Well, I saw you coming up the elevator.
 
-264
+267
 00:54:07,575 --> 00:54:09,542
 Best play, the first that came in.
 
-265
+268
 00:54:09,542 --> 00:54:11,160
 I saw Linus, I could.
 
-266
-00:54:12,430 --> 00:54:18,850
-I don't want to turn around, but it's going to be A I spent the last three weeks on M I P server.
-
-267
-00:54:19,680 --> 00:54:19,770
-Oh, my god.
-
-268
-00:54:21,470 --> 00:54:24,410
-I could I didn't know about the yeah, it's a sunset.
-
 269
+00:54:12,430 --> 00:54:18,850
+I don't want to turn around. I spent the last three weeks on MIT server.
+
+270
+00:54:21,470 --> 00:54:24,410
+I didn't know about the distributions
+
+271
 00:54:27,670 --> 00:54:30,120
 I don't actually know which is easier.
 
-270
-00:54:30,120 --> 00:54:52,460
-I've used the sunset because it seems to be at the larger one way I got some good help from some other people here who told me that okay, okay files can be open to the just from this one on a purpose of spaces.
-
-271
-00:55:26,740 --> 00:55:31,310
-Ya, ya ya.
-
 272
-00:55:46,690 --> 00:55:47,870
-Okay, there's some.
+00:54:30,120 --> 00:54:52,460
+I've used the sunset because it seems to be at the larger one way I got some good help from some other people here who told me that okay, okay. how many files can be open to the just from this one on a purpose of spaces.
 
 273
-00:56:06,640 --> 00:56:12,440
-Oh, wow, my friend.
+00:55:46,690 --> 00:55:47,870
+Okay, there's some.
 
 274
 00:56:21,890 --> 00:56:23,390
