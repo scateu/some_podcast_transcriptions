@@ -25,6 +25,61 @@ https://www.bilibili.com/video/BV1434y1r7UG/
 
 https://youtu.be/ZPtxCat4oDM
 
+-----------------
+Slides timestamp
+-----------------
+
+TITLE: Slides for PART 2
+FCM: NON-DROP FRAME
+
+001  AX       V     C        00:00:00:00 00:00:27:21 01:00:00:00 01:00:27:21  
+M2   AX             000.0                00:00:00:00
+* FROM CLIP NAME: DECUS-Linux-Kernel-0.png
+
+002  AX       V     C        00:00:00:00 00:01:28:19 01:00:27:21 01:01:56:16  
+M2   AX             000.0                00:00:00:00
+* FROM CLIP NAME: DECUS-Linux-Kernel-1.png
+
+003  AX       V     C        00:00:00:00 00:05:24:08 01:01:56:16 01:07:21:00  
+M2   AX             000.0                00:00:00:00
+* FROM CLIP NAME: DECUS-Linux-Kernel-2.png
+
+004  AX       V     C        00:00:00:00 00:04:30:06 01:07:21:00 01:11:51:06  
+M2   AX             000.0                00:00:00:00
+* FROM CLIP NAME: DECUS-Linux-Kernel-3.png
+
+005  AX       V     C        00:00:00:00 00:05:29:05 01:11:51:06 01:17:20:11  
+M2   AX             000.0                00:00:00:00
+* FROM CLIP NAME: DECUS-Linux-Kernel-4.png
+
+006  AX       V     C        00:00:00:00 00:02:31:12 01:17:20:11 01:19:51:23  
+M2   AX             000.0                00:00:00:00
+* FROM CLIP NAME: DECUS-Linux-Kernel-5.png
+
+007  AX       V     C        00:00:00:00 00:04:12:05 01:19:51:23 01:24:04:04  
+M2   AX             000.0                00:00:00:00
+* FROM CLIP NAME: DECUS-Linux-Kernel-6.png
+
+008  AX       V     C        00:00:00:00 00:06:24:00 01:24:04:04 01:30:28:04  
+M2   AX             000.0                00:00:00:00
+* FROM CLIP NAME: DECUS-Linux-Kernel-7.png
+
+009  AX       V     C        00:00:00:00 00:01:34:11 01:32:03:17 01:33:38:04  
+M2   AX             000.0                00:00:00:00
+* FROM CLIP NAME: DECUS-Linux-Kernel-8.png
+
+010  AX       V     C        00:00:00:00 00:05:34:19 01:33:38:04 01:39:12:23  
+M2   AX             000.0                00:00:00:00
+* FROM CLIP NAME: DECUS-Linux-Kernel-9.png
+
+011  AX       V     C        00:00:00:00 00:06:24:00 01:39:12:23 01:45:36:23  
+M2   AX             000.0                00:00:00:00
+* FROM CLIP NAME: DECUS-Linux-Kernel-10.png
+
+012  AX       V     C        00:00:00:00 00:11:37:02 01:45:42:02 01:57:19:04  
+M2   AX             000.0                00:00:00:00
+* FROM CLIP NAME: DECUS-Linux-Kernel-0.png
+
 ---
 
 曾经遗失的 Linus Torvalds 首次在大型会议上的演讲作者： John Hall 译者： LCTT Xingyu.Wang | 2021-12-28 00:17      
@@ -60,26 +115,16 @@ Linus 对发表这些演讲感到非常紧张。这是他第一次在一个重�
 
 这就是给你的圣诞礼物，来自将近三十年前。 祝大家 “Linuxing” 快乐，无论你的宗教或信仰如何。
 
-资源
-《Linux 简介》
-幻灯片：
-
-https://img.linux.net.cn/static/pdf/DECUS-Linux-Intro.pdf
+资源 《Linux 简介》
+幻灯片： https://img.linux.net.cn/static/pdf/DECUS-Linux-Intro.pdf
 
 音频：
-
-
 《Linux 的实现问题》
-幻灯片：
-
-https://img.linux.net.cn/static/pdf/DECUS-Linux-Kernel.pdf
+幻灯片： https://img.linux.net.cn/static/pdf/DECUS-Linux-Kernel.pdf
 
 音频：
-
 
 via:  https://archive.org/details/199405-decusnew-orleans/199405DECUSNewOrleansLinusAnIntroductionToLinux.ogg 
-
 作者：John Hall 译者：wxy 校对：wxy
-
 本文由 LCTT 原创编译，Linux中国 荣誉推出
 
