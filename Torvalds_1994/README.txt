@@ -2,6 +2,17 @@ https://archive.org/details/199405-decusnew-orleans
 
 ---
 
+Torvalds 段子集
+
+'openlinux': https://www.bilibili.com/video/BV1ua411z7p7/
+BillGatesofFinland: https://www.bilibili.com/video/BV19m4y1Q7zD/
+Why ignorant: https://www.bilibili.com/video/BV1Wi4y1X7jg/
+Open and close it again: https://www.bilibili.com/video/BV1bP4y1n7Dh/
+I need WINE. this PPT written in Windows: https://www.bilibili.com/video/BV1zL411L7mG/
+Half Father: https://www.bilibili.com/video/BV1ZS4y1K7Jr/
+
+---
+
 PART 1
 
 使用我做的vim插件基于机器识别的字幕校订了一个版本在此:
